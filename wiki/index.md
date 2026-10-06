@@ -22,6 +22,7 @@
 - [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
 - [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
 - [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
+- [[concepts/voice-agents]]: speech-to-speech vs chained; latency, state machines, audio evals
 - [[concepts/decision-classifiers]]: fast calibrated classifiers (e.g. Jev) for bulk decisions
 - [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
@@ -47,6 +48,7 @@
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 - [[concepts/company-brain]]: shared org knowledge for agents; 4 layers
+- [[concepts/human-vs-ai-memory]]: what neuroscience says about agent memory
 - [[concepts/memory-consolidation]]: nightly "dreaming" jobs that clean memory
 - [[concepts/knowledge-graphs]]: ontologies agents use to understand an org
 - [[concepts/second-brain]]: external system so your head can think
@@ -74,14 +76,18 @@
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
+- [[people/meytar-zemer]]: neuroscientist (memory)
 - [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
+- [[people/shay-davidson]]: principal engineer, Lemonade
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--60-brain-memory]]: #60 Brain Memory (2026-01-11)
+- [[episodes/langtalks--61-voice-agents]]: #61 Voice Agents (2026-01-24)
 - [[episodes/langtalks--62-ai-rd-rollout]]: #62 AI R&D Rollout (2026-02-07)
 - [[episodes/langtalks--63-wake-up]]: #63 WAKE UP (2026-02-23)
 - [[episodes/langtalks--64-ai-coding-metrics]]: #64 AI Coding Metrics (2026-03-08)

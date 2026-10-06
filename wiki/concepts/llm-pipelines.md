@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # LLM Pipelines (vs agents) in production
@@ -17,6 +17,7 @@ updated: 2026-10-06
 - Rule-based pre-filters (regex, graphs) can come from domain experts or from Claude Code mining labeled data ([[episodes/langtalks--66-scaling-llmops]]).
 - Language-agnostic tooling: an OpenAI-compatible internal endpoint (AWS Bedrock Access Gateway) let Go, TypeScript, and Python teams use any SDK; LLM calls live inline in existing services, not separate "AI microservices" ([[episodes/langtalks--66-scaling-llmops]]).
 - A client SDK wraps prompts with their context-building logic and versions them, so swapping a prompt version is a one-line change and the prompt has one source of truth ([[episodes/langtalks--66-scaling-llmops]]).
+- Strategy flavors on one engine ("accurate" vs "fast" via config, e.g. skipping extra validation and using faster models) let a new channel (voice) reuse the same evals and feedback loop instead of forking the system ([[episodes/langtalks--61-voice-agents]]).
 
 ## Disagreements & open questions
 - Use an off-the-shelf proxy (features, but a dependency) or build a lean internal one (now easy with Claude Code)? ([[episodes/langtalks--66-scaling-llmops]])
@@ -27,4 +28,4 @@ updated: 2026-10-06
 - [ ] Version prompts together with their context-building code in a shared client SDK ([[episodes/langtalks--66-scaling-llmops]])
 
 ## Related
-[[concepts/llm-evals]] · [[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/ai-gateway]]
+[[concepts/llm-evals]] · [[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/ai-gateway]] · [[concepts/voice-agents]]

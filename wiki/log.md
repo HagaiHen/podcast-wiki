@@ -99,3 +99,13 @@ updated: concepts/{future-of-software-engineering (disagreement), coding-agent-w
 source: whisper
 created: episodes/langtalks--62-ai-rd-rollout, concepts/ai-rd-rollout, people/iko-azoulay
 updated: concepts/{ai-sdlc, ai-verification, autonomous-agents-outlook, coding-agent-workflow}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #61 Voice Agents (Shay Davidson)
+source: whisper
+created: episodes/langtalks--61-voice-agents, concepts/voice-agents, people/shay-davidson
+updated: concepts/{llm-evals, llm-pipelines}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #60 Brain Memory (Dr. Meytar Zemer)
+source: whisper (one short garbled passage)
+created: episodes/langtalks--60-brain-memory, concepts/human-vs-ai-memory, people/meytar-zemer
+updated: concepts/{memory-consolidation, autonomous-agents-outlook, knowledge-graphs}, shows/langtalks, hubs/knowledge-management, index, takeaways/to-try

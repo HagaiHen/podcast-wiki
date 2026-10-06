@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Autonomous Agents Outlook (where agents are heading)
@@ -19,6 +19,7 @@ updated: 2026-10-06
 - Humans become the bottleneck. The goal is agents that predict our feedback and keep working while we sleep ([[episodes/langtalks--63-wake-up]]).
 - The length of tasks agents can complete is growing exponentially (minutes for GPT-4 to hours for Opus 4.5); weeks- or months-long runs may follow, driven as much by orchestration frameworks as by models ([[episodes/langtalks--62-ai-rd-rollout]]).
 - "Alignment engineering" (tooling for alignment between humans and AI) may be the next hype after context engineering ([[episodes/langtalks--62-ai-rd-rollout]]).
+- The missing piece is continuous, goal-directed learning (learning while acting, as humans do to survive); current long-term memory is heuristic feature engineering around static models ([[episodes/langtalks--60-brain-memory]]).
 
 ## Disagreements & open questions
 - Will frontier labs pursue continuous learning/AGI or focus on monetizing current models ([[episodes/langtalks--63-wake-up]])?
@@ -26,4 +27,4 @@ updated: 2026-10-06
 ## Takeaways
 
 ## Related
-[[concepts/future-of-software-engineering]] · [[concepts/harness-engineering]] · [[concepts/ai-hype]]
+[[concepts/future-of-software-engineering]] · [[concepts/harness-engineering]] · [[concepts/ai-hype]] · [[concepts/human-vs-ai-memory]]

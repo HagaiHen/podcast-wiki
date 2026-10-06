@@ -104,3 +104,8 @@
 - [ ] Run a "no hand-written code" sprint — [[concepts/ai-rd-rollout]] · [[episodes/langtalks--62-ai-rd-rollout]]
 - [ ] Give PMs AI read access to the codebase — [[concepts/ai-rd-rollout]] · [[episodes/langtalks--62-ai-rd-rollout]]
 - [ ] Separate AI validation step per generated artifact — [[concepts/ai-verification]] · [[episodes/langtalks--62-ai-rd-rollout]]
+- [ ] State machine around realtime voice models — [[concepts/voice-agents]] · [[episodes/langtalks--61-voice-agents]]
+- [ ] Route complex voice intents to an existing text engine via one tool — [[concepts/voice-agents]] · [[episodes/langtalks--61-voice-agents]]
+- [ ] Judge voice calls from audio, not transcripts — [[concepts/voice-agents]] · [[episodes/langtalks--61-voice-agents]]
+- [ ] Task-aware memory extraction — [[concepts/human-vs-ai-memory]] · [[episodes/langtalks--60-brain-memory]]
+- [ ] Resolve memory conflicts by frequency, not just recency — [[concepts/human-vs-ai-memory]] · [[episodes/langtalks--60-brain-memory]]

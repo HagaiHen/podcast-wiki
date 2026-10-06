@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Knowledge Graphs & Ontology
@@ -15,6 +15,7 @@ updated: 2026-10-06
 - Key elements to extract: actors, interactions, time (relative urgency), rationales, dependencies ([[episodes/ai-engineering-podcast--company-brain]]).
 - Maintenance options include keeping only metadata/references plus cleanup jobs ([[episodes/ai-engineering-podcast--company-brain]]).
 - Topology maps help agents: a customer-validated map of Kubernetes resource relationships, serialized as YAML in the prompt, beat letting the agent rediscover them ([[episodes/langtalks--65-ai-sre]]).
+- Humans organize knowledge into schemas that speed encoding and retrieval. Agent memory stores facts independently, and it's unclear that GraphRAG matches how the brain does this ([[episodes/langtalks--60-brain-memory]]).
 
 ## Disagreements & open questions
 

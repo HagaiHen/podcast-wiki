@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-06
 ---
 # LLM Evals
@@ -26,6 +26,8 @@ updated: 2026-10-06
 - An existing paid data feed can serve as the eval set: Oligo's pipeline had to match the feed's 4% coverage, then grew to ~60% ([[episodes/langtalks--66-scaling-llmops]], [[people/avi-lumelsky]]).
 - Shadow runs: release v1.1 (and variants) silently beside v1.0 in production; an LLM judge scores each run and another compares pairs across thousands of real cases, on accuracy, tokens, and latency. New models get verdicts within hours or days on real traffic ([[episodes/langtalks--65-ai-sre]], [[people/asaf-savich]]).
 - Custom agents (testing agents, review agents, auto-merge) need a success baseline that rises per version: v0 writes tests at all, v1 at least one passes the build, v2 all pass. Label agent-authored PRs so you can join them with CI outcomes ([[episodes/langtalks--64-ai-coding-metrics]], [[people/liad-elidan]]).
+- Voice: feed the recorded *audio* to an audio-capable LLM judge (GPT-4 audio) to catch interruptions, noise, and bad audio that transcripts hide; post every call recording to Slack for team listening ([[episodes/langtalks--61-voice-agents]], [[people/shay-davidson]]).
+- Simulated callers ("avatars") with personas (chatty, angry, accented, other languages) per popular intent stress-test robustness; third-party services offer the same ([[episodes/langtalks--61-voice-agents]]).
 
 ## Disagreements & open questions
 
@@ -39,4 +41,4 @@ updated: 2026-10-06
 - [ ] Version custom agents against an explicit, rising success baseline ([[episodes/langtalks--64-ai-coding-metrics]])
 
 ## Related
-[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]] · [[concepts/ai-sre]] · [[concepts/ai-engineering-metrics]]
+[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]] · [[concepts/ai-sre]] · [[concepts/ai-engineering-metrics]] · [[concepts/voice-agents]]
