@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-06
+sources: 5
+updated: 2026-10-07
 ---
 # Personal AI Assistants ("claws")
 
@@ -22,6 +22,9 @@ updated: 2026-10-06
 - Chat apps limit UX for dev work (plans, markdown, voice, test environments); one host abandoned Telegram for his own React Native app ([[episodes/langtalks--71-claw-architectures]]).
 - The no-code alternative: n8n-style platforms give deterministic, cheap, visual workflows with LangChain agent nodes; see [[concepts/workflow-automation]] ([[episodes/langtalks--56-n8n]]).
 - Autonomous outreach: an OpenClaw agent waking hourly, armed with search, email, and phone tools, iterated toward reaching a hard-to-reach person ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
+
+- Missing piece: a package manager (npm/uv/pip-style) for personal-assistant skills and configurations, so you can pull someone's setup. Example: a pre-built OpenClaw package for a doctor answering WhatsApp leads, sold or distributed ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
+- Eitan built and shared an Israeli-restaurants skill that lets a coding agent find free tables and book on OnTopo and Tabit ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
 
 ## Disagreements & open questions
 - Would you trust a skill-level change for something critical? Skill changes rarely "break compilation" but are harder to evaluate ([[episodes/langtalks--72-personal-assistant-agent]]).

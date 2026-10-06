@@ -126,3 +126,7 @@
 - [ ] Give an autonomous agent an outcome + tools; ask what it learned — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--28-ai-marketing-enso]]
 - [ ] Feed post performance back into AI copywriting — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--28-ai-marketing-enso]]
 - [ ] Weigh one horizontal AI platform vs per-function point solutions — [[concepts/enterprise-ai-adoption]] · [[episodes/ignore-instructions--24-wonderful-road-to-100m]]
+- [ ] Ship side projects through widening feedback circles (10 → 100 → wider) — [[concepts/solo-builders]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
+- [ ] Open a WhatsApp beta-tester group for anything you build — [[concepts/solo-builders]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
+- [ ] Finish one side project end to end, even a symbolic launch — [[concepts/solo-builders]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
+- [ ] Build in public: post weekly about what you build — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]

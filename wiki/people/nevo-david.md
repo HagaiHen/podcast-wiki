@@ -8,5 +8,7 @@ Solo founder of Postiz (social-media post scheduling), bootstrapped; grew from $
 ## Appearances
 - [[episodes/langtalks--69-marketing-for-agents]]
 
+- [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]] (mentioned)
+
 ## Concepts
-[[concepts/agent-ready-products]]
+[[concepts/agent-ready-products]] · [[concepts/ai-growth-marketing]]

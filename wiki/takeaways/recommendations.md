@@ -18,4 +18,5 @@
 - Obsidian (+ Web Clipper browser extension + mobile app): read/edit the wiki, graph view for orphan notes — [[concepts/second-brain]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]
 
 ## People
+- Build Ship Grow and Squid Club: Israeli AI-builder communities — [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [[people/andrej-karpathy]]: his LLM Wiki post is the basis of this pattern — [[concepts/llm-wiki]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]

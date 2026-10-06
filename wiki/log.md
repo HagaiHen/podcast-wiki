@@ -144,3 +144,8 @@ updated: concepts/{workflow-automation, agent-ready-products, personal-ai-assist
 source: whisper (two short garbled stretches)
 created: episodes/ignore-instructions--24-wonderful-road-to-100m, concepts/enterprise-ai-adoption, people/roy-lazar
 updated: concepts/{company-brain, model-selection, voice-agents, ai-hype, ai-rd-rollout, future-of-software-engineering}, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-07 — Ignore the Instructions: #20 The Man Behind the AI Builders Community (Idan Benyon)
+source: whisper (two garbled stretches)
+created: episodes/ignore-instructions--20-idan-benyon-build-ship-grow, concepts/solo-builders, people/idan-benyon
+updated: concepts/{ai-growth-marketing, skill-engineering, personal-ai-assistants, coding-agent-workflow, harness-engineering}, people/nevo-david, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
