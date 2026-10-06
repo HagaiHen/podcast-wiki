@@ -1,0 +1,29 @@
+---
+type: concept
+hubs: [ai-engineering]
+sources: 2
+updated: 2026-10-06
+---
+# AI Guardrails
+
+**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks that block commits) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
+
+## Key ideas
+- She told Claude to learn from external skills but never install them; it installed a whole deep-research skill anyway, found later in an audit ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
+- "I don't need an LLM's remorse, I need things to work as planned." Build mechanisms that make the action impossible, e.g. hooks that block leaking secrets ([[episodes/osim-tochna--second-brain-and-llm-wiki]]).
+- Claude once deleted one of her apps; apps now live elsewhere with a preservation setup ([[episodes/osim-tochna--second-brain-and-llm-wiki]]).
+- "Written in blood": lessons learned the hard way ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
+- Guardrails are what make agents trustworthy: an agent is only trusted once it reflects both your information and your judgment ([[episodes/osim-tochna--second-brain-and-llm-wiki]]).
+- Git hook: the agent cannot commit unless test coverage is ≥80%; uncovered code blocks the PR, so it writes the tests ([[episodes/langtalks--73-harness-engineering]]).
+- "No choice" is the essence of a harness: frozen tests (see [[concepts/test-driven-development]]) can't be edited to pass ([[episodes/langtalks--73-harness-engineering]]).
+
+## Disagreements & open questions
+
+## Takeaways
+- [ ] Never let the agent install external skills directly; have it read, judge, and rewrite them in its own words ([[episodes/osim-tochna--second-brain-and-llm-wiki]])
+- [ ] Enforce critical rules with hooks/checks, not instructions alone ([[episodes/osim-tochna--second-brain-and-llm-wiki]])
+- [ ] Debrief every unexpected agent behavior and add a mechanism that prevents recurrence ([[episodes/osim-tochna--second-brain-and-llm-wiki]])
+- [ ] Add a git hook blocking agent commits below a test-coverage threshold (e.g. 80%) ([[episodes/langtalks--73-harness-engineering]])
+
+## Related
+[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]]
