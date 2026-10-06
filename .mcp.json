@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "spotify": {
+      "command": "/Users/hagaihen/.local/bin/uv",
+      "args": ["run", "--project", "/Users/hagaihen/projects/knowledgebase",
+               "/Users/hagaihen/projects/knowledgebase/tools/spotify_mcp.py"]
+    }
+  }
+}

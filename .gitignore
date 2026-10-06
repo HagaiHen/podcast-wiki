@@ -1,0 +1,5 @@
+.env
+.spotify_cache
+.venv/
+__pycache__/
+raw/.heard.json
