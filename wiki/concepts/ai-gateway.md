@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 3
 updated: 2026-10-06
 ---
 # AI Gateway
@@ -18,6 +18,8 @@ updated: 2026-10-06
 - Trust: audit logs, data residency (EU data stays in EU), retention. When a model required 30-day data retention, it became customer opt-in ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Avoid vendor lock-in: always have a tested plan B model or vendor ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Not magic: product teams still own knowing their prompts and detecting loops and abuse; the gateway supplies visibility ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Gateways are also the FinOps backbone: tagging calls and emitting telemetry is what makes accurate cost attribution possible ([[episodes/langtalks--67-finops-for-ai]]).
+- An OpenAI-compatible internal API with a mandatory project field shows per-feature production cost; a raw cloud bill for "Sonnet on Bedrock" doesn't ([[episodes/langtalks--66-scaling-llmops]]).
 
 ## Disagreements & open questions
 
@@ -27,4 +29,4 @@ updated: 2026-10-06
 - [ ] Keep a pre-tested fallback model/vendor for every AI feature ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 
 ## Related
-[[concepts/llm-evals]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]]
+[[concepts/llm-evals]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]] · [[concepts/ai-finops]]

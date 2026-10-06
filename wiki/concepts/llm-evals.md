@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # LLM Evals
@@ -23,6 +23,7 @@ updated: 2026-10-06
 - Privacy constraint: at Slack you can't read user data unless a user explicitly gives feedback, so you need clustering and topic-level signals without storing content ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Orchestrator/entry-point agents are far harder to evaluate than leaf agents with defined input/output ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Live demos expose non-determinism: a senior exec asked for an unrehearsed prompt mid-acquisition demo (it happened to answer even better) ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- An existing paid data feed can serve as the eval set: Oligo's pipeline had to match the feed's 4% coverage, then grew to ~60% ([[episodes/langtalks--66-scaling-llmops]], [[people/avi-lumelsky]]).
 
 ## Disagreements & open questions
 
@@ -34,4 +35,4 @@ updated: 2026-10-06
 - [ ] Cluster real user intents (manually at first) and turn known ones into eval sets before scaling ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]])
 
 ## Related
-[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]]
+[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]]

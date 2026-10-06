@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 4
 updated: 2026-10-06
 ---
 # LLM Cost Optimization
@@ -17,6 +17,10 @@ updated: 2026-10-06
 - Plan vs execute: plan with Opus, execute with Sonnet, Haiku, or another model, in products as in your own dev workflow ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Prompt routing mid-session breaks the model's cache. A gateway-level cache can add consistency ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - For pure classification at scale, a dedicated classifier can be ~30–100× cheaper and far faster than a small LLM with thinking (see [[concepts/decision-classifiers]], [[episodes/langtalks--74-jev]]).
+- Optimize whole traces, not single prompts: fewer tool calls, and smaller tool responses that keep the needed context (strip headers, reformat JSON to YAML) ([[episodes/langtalks--67-finops-for-ai]]).
+- Prompt compression is back: a community repo reportedly raised GPT 5.2 quality ~30% without extra cost or latency; startups mine traces for cheaper call patterns and caching ([[episodes/langtalks--67-finops-for-ai]]).
+- Iterative real-time analysis (re-asking with all prior events each time) benefits hugely from Bedrock prompt caching, since most input repeats ([[episodes/langtalks--66-scaling-llmops]]).
+- Rate limits: cross-region inference profiles gave ~5× the throughput of a region-pinned model (e.g. EU Sonnet → global), while staying compliant; some companies also spread load across multiple accounts ([[episodes/langtalks--66-scaling-llmops]]).
 
 ## Disagreements & open questions
 
@@ -24,6 +28,8 @@ updated: 2026-10-06
 - [ ] Order prompts stable-first (system prompt, then user/task data); no timestamps up front ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Constrain output length and structure to cut output-token cost ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Plan with a strong model, execute with a cheaper one ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
+- [ ] Trim and reformat tool responses (drop unused fields; JSON → YAML) before they reach the model ([[episodes/langtalks--67-finops-for-ai]])
+- [ ] Use cross-region inference (where compliant) to raise rate limits before buying capacity ([[episodes/langtalks--66-scaling-llmops]])
 
 ## Related
-[[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]]
+[[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]] · [[concepts/ai-finops]]

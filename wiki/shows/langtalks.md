@@ -6,6 +6,8 @@ type: show
 Hebrew podcast on LLMs, agents, and AI engineering practice (langtalks.ai).
 
 ## Episodes
+- [[episodes/langtalks--66-scaling-llmops]] (2026-04-12)
+- [[episodes/langtalks--67-finops-for-ai]] (2026-04-27)
 - [[episodes/langtalks--68-ai-sdlc]] (2026-05-24)
 - [[episodes/langtalks--69-marketing-for-agents]] (2026-06-08)
 - [[episodes/langtalks--70-our-claude-code-tips]] (2026-06-28)

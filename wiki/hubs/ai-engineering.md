@@ -6,6 +6,8 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/llm-pipelines]]: when a pipeline beats an agent
+- [[concepts/ai-finops]]: managing and attributing AI spend
 - [[concepts/ai-sdlc]]: AI across the software lifecycle
 - [[concepts/agent-ready-products]]: make products discoverable and usable by agents
 - [[concepts/coding-agent-workflow]]: day-to-day coding-agent practices

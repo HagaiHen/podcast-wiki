@@ -69,3 +69,13 @@ updated: concepts/{agent-security, skill-engineering, agent-workspaces}, shows/l
 source: whisper
 created: episodes/langtalks--68-ai-sdlc, concepts/ai-sdlc, people/yonatan-maor
 updated: concepts/{ai-verification, harness-engineering, skill-engineering, context-engineering, agent-ready-codebase}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #67 FinOps for AI (Yizhar Gilboa)
+source: whisper
+created: episodes/langtalks--67-finops-for-ai, concepts/ai-finops, people/yizhar-gilboa
+updated: concepts/{llm-cost-optimization, ai-gateway}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #66 Scaling LLMOps (Avi Lumelsky)
+source: whisper
+created: episodes/langtalks--66-scaling-llmops, concepts/llm-pipelines, people/avi-lumelsky
+updated: concepts/{model-selection, llm-cost-optimization, llm-evals, ai-gateway, ai-finops}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try

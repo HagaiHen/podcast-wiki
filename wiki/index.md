@@ -25,6 +25,8 @@
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
 - [[concepts/proactive-ai]]: the AI UX paradox; surface capabilities, bring answers to users
 - [[concepts/future-of-software-engineering]]: coding is dead, engineering isn't
+- [[concepts/llm-pipelines]]: deterministic LLM pipelines vs agents in production
+- [[concepts/ai-finops]]: attributing AI spend; per-developer benchmarks
 - [[concepts/ai-gateway]]: central routing, metering, security for LLM calls
 - [[concepts/llm-evals]]: offline + online evals, LLM-as-judge, model A/B tests
 - [[concepts/llm-cost-optimization]]: caching, concise outputs, plan vs execute
@@ -59,9 +61,11 @@
 - [[people/amit-bendor]]: host of Osim Tochna
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
 - [[people/dana-maman]]: AI builder, personal AI OS
+- [[people/avi-lumelsky]]: production LLM lead, Oligo
 - [[people/dor-cohen]]: AI infra lead, monday.com
 - [[people/gavriel-cohen]]: creator of NanoClaw
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
+- [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
 - [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
@@ -71,6 +75,8 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--66-scaling-llmops]]: #66 Scaling LLMOps (2026-04-12)
+- [[episodes/langtalks--67-finops-for-ai]]: #67 FinOps for AI (2026-04-27)
 - [[episodes/langtalks--68-ai-sdlc]]: #68 AI-SDLC (2026-05-24)
 - [[episodes/langtalks--69-marketing-for-agents]]: #69 Marketing for Agents (2026-06-08)
 - [[episodes/langtalks--70-our-claude-code-tips]]: #70 Our Claude Code Tips (2026-06-28)
