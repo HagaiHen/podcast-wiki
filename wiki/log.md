@@ -19,3 +19,13 @@ updated: concepts/{ai-verification, ai-guardrails, context-engineering} (summari
 ## 2026-10-06 — LangTalks: #73 Harness Engineering (re-ingest)
 source: whisper (re-transcribed, +4.8KB recovered)
 updated: episodes/langtalks--73-harness-engineering, concepts/{agent-ready-codebase, harness-engineering, ai-verification, ai-guardrails}, takeaways/to-try
+
+## 2026-10-06 — AI Engineering: Why Your LLM Costs So Much (Sharon Dahan)
+source: whisper
+created: episodes/ai-engineering-podcast--why-your-llm-costs-so-much, concepts/{llm-inference, model-selection, open-weight-models, ai-hype}, shows/ai-engineering-podcast, people/sharon-dahan
+updated: concepts/{context-engineering (3 sources), ai-guardrails (3 sources)}, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — AI Engineering: Company Brain (Roi Zalta)
+source: whisper
+created: episodes/ai-engineering-podcast--company-brain, concepts/{company-brain, rag, memory-consolidation, knowledge-graphs, agent-workspaces}, people/roi-zalta
+updated: concepts/{wiki-retrieval (disagreement added), open-knowledge-format, ai-guardrails}, shows/ai-engineering-podcast, hubs/{knowledge-management, ai-engineering}, index, takeaways/to-try

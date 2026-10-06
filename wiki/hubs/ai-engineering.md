@@ -6,6 +6,13 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/rag]]: retrieval-augmented generation
+- [[concepts/agent-workspaces]]: shared human+agent workspaces
+- [[concepts/company-brain]]: also Knowledge Management
+- [[concepts/llm-inference]]: GPUs, parallelism, KV cache, and price per token
+- [[concepts/model-selection]]: right-size the model; narrow the task
+- [[concepts/open-weight-models]]: open models as a cost lever
+- [[concepts/ai-hype]]: filter hype; build durable value
 - [[concepts/harness-engineering]]: environment that lets agents run long and correctly
 - [[concepts/agent-ready-codebase]]: make the repo operable by agents
 - [[concepts/test-driven-development]]: frozen failing tests keep agents honest

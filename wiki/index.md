@@ -14,6 +14,12 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
+- [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
+- [[concepts/llm-inference]]: what happens behind an API call and why it costs what it does
+- [[concepts/model-selection]]: small models + narrow tasks + context management
+- [[concepts/open-weight-models]]: cheap competitive open models; weights aren't code
+- [[concepts/ai-hype]]: wait a month; don't build what a prompt can
 - [[concepts/context-engineering]]: context makes the difference; keep it lean
 - [[concepts/wiki-retrieval]]: finding the right wiki page; guesses, ranking, RAG
 - [[concepts/ai-guardrails]]: enforce rules technically, not by instruction
@@ -22,6 +28,9 @@
 - [[concepts/open-knowledge-format]]: universal knowledge-file format (also Knowledge Management)
 
 ## Knowledge Management — [[hubs/knowledge-management]]
+- [[concepts/company-brain]]: shared org knowledge for agents; 4 layers
+- [[concepts/memory-consolidation]]: nightly "dreaming" jobs that clean memory
+- [[concepts/knowledge-graphs]]: ontologies agents use to understand an org
 - [[concepts/second-brain]]: external system so your head can think
 - [[concepts/personal-ai-os]]: one context for all of life and work
 - [[concepts/knowledge-rot]]: stale knowledge; routines that check themselves
@@ -29,6 +38,7 @@
 ## Unsorted
 
 ## Shows
+- [[shows/ai-engineering-podcast]]: AI Engineering (AI אנג׳נירינג)
 - [[shows/langtalks]]: LangTalks
 - [[shows/osim-tochna]]: Osim Tochna (עושים תוכנה)
 - [[shows/lazy-investing]]: Investing for the Lazy (השקעות לעצלנים)
@@ -37,10 +47,14 @@
 - [[people/amit-bendor]]: host of Osim Tochna
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
 - [[people/dana-maman]]: AI builder, personal AI OS
+- [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
+- [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/ai-engineering-podcast--company-brain]]: Company Brain (2026-09-06)
+- [[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]: Why Your LLM Costs So Much (2026-09-30)
 - [[episodes/langtalks--73-harness-engineering]]: #73 Harness Engineering (2026-09-15)
 - [[episodes/osim-tochna--second-brain-and-llm-wiki]]: Second Brain & LLM Wiki (2026-08-03)
 - [[episodes/lazy-investing--108-the-leverage-trap]]: #108 The Leverage Trap (2026-08-04)
