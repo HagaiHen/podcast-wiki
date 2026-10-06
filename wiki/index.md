@@ -16,6 +16,11 @@
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
 - [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
+- [[concepts/proactive-ai]]: the AI UX paradox; surface capabilities, bring answers to users
+- [[concepts/future-of-software-engineering]]: coding is dead, engineering isn't
+- [[concepts/ai-gateway]]: central routing, metering, security for LLM calls
+- [[concepts/llm-evals]]: offline + online evals, LLM-as-judge, model A/B tests
+- [[concepts/llm-cost-optimization]]: caching, concise outputs, plan vs execute
 - [[concepts/llm-inference]]: what happens behind an API call and why it costs what it does
 - [[concepts/model-selection]]: small models + narrow tasks + context management
 - [[concepts/open-weight-models]]: cheap competitive open models; weights aren't code
@@ -47,12 +52,17 @@
 - [[people/amit-bendor]]: host of Osim Tochna
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
 - [[people/dana-maman]]: AI builder, personal AI OS
+- [[people/dor-cohen]]: AI infra lead, monday.com
+- [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
+- [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/ai-engineering-podcast--the-ai-ux-paradox]]: The AI UX Paradox (2026-08-06)
+- [[episodes/ai-engineering-podcast--ai-infra-at-scale]]: AI Infra at Scale (2026-08-17)
 - [[episodes/ai-engineering-podcast--company-brain]]: Company Brain (2026-09-06)
 - [[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]: Why Your LLM Costs So Much (2026-09-30)
 - [[episodes/langtalks--73-harness-engineering]]: #73 Harness Engineering (2026-09-15)

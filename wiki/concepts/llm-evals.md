@@ -1,0 +1,37 @@
+---
+type: concept
+hubs: [ai-engineering]
+sources: 2
+updated: 2026-10-06
+---
+# LLM Evals
+
+**Summary:** How you know an AI feature works and keeps working, instead of "trust me bro" vibes after an hour of chatting. **Offline evals** run a curated dataset of representative cases before production: a lean set on every PR in CI, fuller runs on big changes, against a score threshold. **Online evals** continuously score real production sessions. Checks are code where the answer is deterministic (~80%) and LLM-as-judge where it isn't. A typical maturity path: manual conversation review → intent clustering → automated evals in CI ("eval-driven design", like TDD) → discovering *unknown* intents. New models get A/B tested by gradual rollout. Prompts are code: version, test, and observe them.
+
+## Key ideas
+- Offline evals guard against regressions from code, prompt, or ecosystem changes, and let you compare models on *your* use case ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
+- monday.com built an "offline eval skill" that scans a repo and generates a starter dataset for the team to refine ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Code checks for 0/1 facts (right tool used, right output structure): cheaper, faster, more precise. LLM-as-judge for the ~20% non-deterministic checks ("tomorrow morning" equals "morning tomorrow") ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Online evals: every few minutes, score production agent sessions; track whether quality holds, improves, or drops ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Model A/B tests: after offline validation, release a new model to a percentage of traffic and compare quality *and* cost before full switch ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Users of agent builders are often non-technical and won't notice a model change, but they'll feel worse results ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Prompts need per-model versions: Opus 5 self-checks sources on its own, so "verify your sources" instructions that helped Opus 4.8 now just waste tokens ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Non-determinism compounds: one non-deterministic step is hard to bound; multi-step agents multiply it, and models keep changing ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/matan-cohen]]).
+- Dotti's path: manually review conversations (with customer consent), cluster intents by hand, discover unsupported query types (e.g. "my last conversation with X" is metadata, not semantic), then encode known intents as offline evals in CI ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- "Eval-driven design": treat evals as tests, written first, like TDD ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- Known vs unknown: first seal what you know; then detect new intents users have that get bad answers, and add golden sets for them ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- Privacy constraint: at Slack you can't read user data unless a user explicitly gives feedback, so you need clustering and topic-level signals without storing content ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- Orchestrator/entry-point agents are far harder to evaluate than leaf agents with defined input/output ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- Live demos expose non-determinism: a senior exec asked for an unrehearsed prompt mid-acquisition demo (it happened to answer even better) ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+
+## Disagreements & open questions
+
+## Takeaways
+- [ ] Build a small offline eval set and run it in CI on every PR ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
+- [ ] Use code checks for deterministic criteria; reserve LLM-as-judge for subjective ones ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
+- [ ] Score a sample of production sessions continuously (online evals) ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
+- [ ] Roll out new models gradually as an A/B test, comparing quality and cost ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
+- [ ] Cluster real user intents (manually at first) and turn known ones into eval sets before scaling ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]])
+
+## Related
+[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]]

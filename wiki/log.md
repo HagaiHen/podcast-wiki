@@ -29,3 +29,13 @@ updated: concepts/{context-engineering (3 sources), ai-guardrails (3 sources)}, 
 source: whisper
 created: episodes/ai-engineering-podcast--company-brain, concepts/{company-brain, rag, memory-consolidation, knowledge-graphs, agent-workspaces}, people/roi-zalta
 updated: concepts/{wiki-retrieval (disagreement added), open-knowledge-format, ai-guardrails}, shows/ai-engineering-podcast, hubs/{knowledge-management, ai-engineering}, index, takeaways/to-try
+
+## 2026-10-06 — AI Engineering: AI Infra at Scale (Dor Cohen)
+source: whisper
+created: episodes/ai-engineering-podcast--ai-infra-at-scale, concepts/{ai-gateway, llm-evals, llm-cost-optimization}, people/dor-cohen
+updated: concepts/{model-selection, open-weight-models, ai-guardrails}, shows/ai-engineering-podcast, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — AI Engineering: The AI UX Paradox (Matan Cohen)
+source: whisper
+created: episodes/ai-engineering-podcast--the-ai-ux-paradox, concepts/{proactive-ai, future-of-software-engineering}, people/{matan-cohen, netanel-abergel}
+updated: concepts/{llm-evals, agent-workspaces, context-engineering}, shows/ai-engineering-podcast, hubs/ai-engineering, index, takeaways/to-try

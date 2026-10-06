@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Model Selection
 
-**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task's scope, reframe the question, and manage context aggressively, which often lets a small, cheap, fast model do the job. Big reasoning models are convenient because you can say little, but you pay in money and latency, which B2C margins and customer-facing agents can't afford.
+**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks. Plan with a strong model and execute with a cheaper one, keep prompts tuned per model version, and always have a tested fallback model so an outage or regression doesn't reach customers.
 
 ## Key ideas
 - A ~35B Qwen model insisted a car in a video wasn't changing lanes; a big model got it right but at negative ROI. Asking instead "does the line move from the left of the frame to the right?" made the small model correct ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -18,6 +18,9 @@ updated: 2026-10-06
 - B2C: one conversation can't cost the user's lifetime value, so stay on small models ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Consumer apps still make users choose models: partly marketing and psychology (launches like "Fable 5"); automatic routing via classifiers is coming ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - His coding defaults: Sonnet/Opus; Fable only for specific, patience-worthy cases; reasoning-heavy expensive models can over-research simple asks ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
+- Every product should have a primary and a pre-tested fallback model (downgrade a version, or switch to another vendor's family) ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
+- Developers must know their models well enough to tune prompts per model version ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Public benchmarks often don't match your environment; test on your own evals ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 
 ## Disagreements & open questions
 
@@ -27,4 +30,4 @@ updated: 2026-10-06
 - [ ] Set reasoning-token budgets instead of default effort levels where available ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]]
+[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]]

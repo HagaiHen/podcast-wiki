@@ -6,6 +6,11 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/proactive-ai]]: make AI capabilities discoverable
+- [[concepts/future-of-software-engineering]]: how engineering roles shift
+- [[concepts/ai-gateway]]: one layer for routing, cost, security, trust
+- [[concepts/llm-evals]]: know it works, keep it working
+- [[concepts/llm-cost-optimization]]: cut tokens without cutting quality
 - [[concepts/rag]]: retrieval-augmented generation
 - [[concepts/agent-workspaces]]: shared human+agent workspaces
 - [[concepts/company-brain]]: also Knowledge Management

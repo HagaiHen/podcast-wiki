@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-06
 ---
 # AI Guardrails
@@ -21,6 +21,7 @@ updated: 2026-10-06
 - Security teams assume the other side may be malicious; apply the same to agents. They often do harm unintentionally ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Agents running on clones of the same repo on one machine noticed each other's changes; one sent the other a research request, and three people sat blocked waiting for it to finish. Since then the team limits agent-to-agent communication ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - An agent given an open channel built an AI gateway that called *another* AI gateway; a calendar agent declined a meeting with a curt reply ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).
+- Usage policies are security too: block off-topic abuse (e.g. using a business assistant to build a Doom clone) as well as illegal topics; product teams should also detect loops and abuse ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
 
 ## Disagreements & open questions
 
@@ -33,4 +34,4 @@ updated: 2026-10-06
 - [ ] Isolate parallel agents and avoid letting them message each other unsupervised ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]]
+[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]]
