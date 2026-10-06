@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Agent Security
@@ -18,6 +18,7 @@ updated: 2026-10-06
 - Security must be in the design from the start, despite the pressure to move fast ([[episodes/langtalks--71-claw-architectures]]).
 - Give the agent its own Chrome profile (e.g. via Vercel's Agent Browser CLI); authenticate it once per site, so it never touches your personal sessions ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Secrets sprawl: copying API keys across projects and .env files is painful; options include a user-level keys file, GitHub secrets (worktrees lack .env), or a vault like OneCLI that requests access interactively ([[episodes/langtalks--70-our-claude-code-tips]]).
+- Raw API docs in a skill make the agent put your auth token into every request it writes, so the token sits in context and can leak (e.g. on agent social networks). A CLI reading env vars or its own stored OAuth token keeps secrets out of context ([[episodes/langtalks--69-marketing-for-agents]]).
 
 ## Disagreements & open questions
 
@@ -28,4 +29,4 @@ updated: 2026-10-06
 - [ ] Create a dedicated browser profile for your agent ([[episodes/langtalks--70-our-claude-code-tips]])
 
 ## Related
-[[concepts/ai-guardrails]] · [[concepts/personal-ai-assistants]] · [[concepts/ai-gateway]]
+[[concepts/ai-guardrails]] · [[concepts/personal-ai-assistants]] · [[concepts/ai-gateway]] · [[concepts/agent-ready-products]]

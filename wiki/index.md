@@ -11,10 +11,12 @@
 - [[concepts/fomo]]: others' gains push you into risk
 
 ## AI Engineering — [[hubs/ai-engineering]]
+- [[concepts/ai-sdlc]]: agent teams across the dev lifecycle; start at the edges
 - [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/agent-ready-products]]: selling to agents: skills, MCP, marketplaces, CLI auth
 - [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
 - [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
 - [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
@@ -60,6 +62,8 @@
 - [[people/dor-cohen]]: AI infra lead, monday.com
 - [[people/gavriel-cohen]]: creator of NanoClaw
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
+- [[people/yonatan-maor]]: CTO of Clears.ai
+- [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
 - [[people/sharon-dahan]]: inference architect at Impala
@@ -67,6 +71,8 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--68-ai-sdlc]]: #68 AI-SDLC (2026-05-24)
+- [[episodes/langtalks--69-marketing-for-agents]]: #69 Marketing for Agents (2026-06-08)
 - [[episodes/langtalks--70-our-claude-code-tips]]: #70 Our Claude Code Tips (2026-06-28)
 - [[episodes/langtalks--71-claw-architectures]]: #71 Claw Architectures (2026-07-26)
 - [[episodes/langtalks--72-personal-assistant-agent]]: #72 Personal Assistant Agent (2026-08-16)

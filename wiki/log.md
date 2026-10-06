@@ -59,3 +59,13 @@ updated: concepts/{personal-ai-assistants, skill-engineering, model-selection (d
 source: whisper
 created: episodes/langtalks--70-our-claude-code-tips, concepts/coding-agent-workflow
 updated: concepts/{harness-engineering, ai-verification, agent-security, context-engineering}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-06 — LangTalks: #69 Marketing for Agents (Nevo David)
+source: whisper
+created: episodes/langtalks--69-marketing-for-agents, concepts/agent-ready-products, people/nevo-david
+updated: concepts/{agent-security, skill-engineering, agent-workspaces}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #68 AI-SDLC (Yonatan Maor)
+source: whisper
+created: episodes/langtalks--68-ai-sdlc, concepts/ai-sdlc, people/yonatan-maor
+updated: concepts/{ai-verification, harness-engineering, skill-engineering, context-engineering, agent-ready-codebase}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try

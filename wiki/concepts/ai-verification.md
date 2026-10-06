@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-06
 ---
 # AI Verification
@@ -21,6 +21,7 @@ updated: 2026-10-06
 - With spec-driven development and proof of work (E2E tests, unit tests, linting), one host reports reading code diffs less and less ([[episodes/langtalks--71-claw-architectures]]).
 - Definition of done as a contract: the agent mustn't stop until it's met. For UI, design first (Pencil.dev or Claude Design with your design system) and require visual parity ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Some DoDs are hard to automate (e.g. is recorded voice free of echo?); agents also still produce odd UX logic that needs a human pass ([[episodes/langtalks--70-our-claude-code-tips]]).
+- Code review is *alignment*, not just a quality gate: an agent won't catch a PR introducing a technology the architect never approved, or drift between spec and implementation; feed it broader org context ([[episodes/langtalks--68-ai-sdlc]], [[people/yonatan-maor]]).
 
 ## Disagreements & open questions
 
@@ -31,4 +32,4 @@ updated: 2026-10-06
 - [ ] Define an explicit definition of done the agent can check itself against before finishing ([[episodes/langtalks--70-our-claude-code-tips]])
 
 ## Related
-[[concepts/ai-guardrails]] · [[concepts/wiki-retrieval]] · [[concepts/harness-engineering]]
+[[concepts/ai-guardrails]] · [[concepts/wiki-retrieval]] · [[concepts/harness-engineering]] · [[concepts/ai-sdlc]]

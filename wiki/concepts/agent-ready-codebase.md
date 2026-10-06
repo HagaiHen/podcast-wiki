@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Agent-Ready Codebase
@@ -17,6 +17,7 @@ updated: 2026-10-06
 
 - Pitfall: grabbing a popular skill (e.g. a code-reviewer with 100k GitHub stars) is a fine start, but the value is in custom skills encoding *your* deployment, design principles, tests, and team review norms ([[episodes/langtalks--73-harness-engineering]]).
 - The host adapted Superpowers' visual planning: deep, comprehensive HTML plans (even if they take 30 min) reviewed via a custom Chrome extension for in-browser comments, fed back as Markdown, to batch decisions and cut context switching across 6–7 parallel sessions ([[episodes/langtalks--73-harness-engineering]]).
+- Keep a docs folder of markdown inside the repo maintained by workflows. A one-off generator (e.g. DeepWiki) only describes current code, while decisions made in sessions need capturing; Claude Code memory scatters them ([[episodes/langtalks--68-ai-sdlc]]).
 
 ## Disagreements & open questions
 
@@ -27,4 +28,4 @@ updated: 2026-10-06
 - [ ] Write custom skills for your org's deploy, design, test, and review norms instead of relying on popular generic ones ([[episodes/langtalks--73-harness-engineering]])
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/context-engineering]] · [[concepts/ai-guardrails]]
+[[concepts/harness-engineering]] · [[concepts/context-engineering]] · [[concepts/ai-guardrails]] · [[concepts/ai-sdlc]]

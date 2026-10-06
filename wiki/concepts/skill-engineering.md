@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 4
 updated: 2026-10-06
 ---
 # Skill Engineering
@@ -19,6 +19,8 @@ updated: 2026-10-06
 - AI-native open source: NanoClaw rejects PRs that change core code. Contributors submit *skills* that teach your coding agent how to modify your fork (e.g. swap WhatsApp for Telegram), so the core stays lean ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
 - This enables Karpathy's "bespoke software": everyone runs a customized version on a stable, secure base ([[episodes/langtalks--71-claw-architectures]]).
 - Agent-operable projects: a CLAUDE.md for context plus a CLI usable by the operator, by Claude in the repo, and (with approvals) by agents in containers. Setup is a script that offers to run Claude on failures ([[episodes/langtalks--71-claw-architectures]]).
+- For product makers, a skill can simply be an MD file derived from public API docs; split into several files with references if large ([[episodes/langtalks--69-marketing-for-agents]]).
+- Org-wide skills marketplace with an owner: architects or a developer per team push skills; automation can promote repo-level decisions to org rules; skills can be applied by *process* (e.g. frontend work) rather than by team ([[episodes/langtalks--68-ai-sdlc]]).
 
 ## Disagreements & open questions
 
@@ -28,4 +30,4 @@ updated: 2026-10-06
 - [ ] Make your project agent-operable: CLAUDE.md for context + a CLI agents can call ([[episodes/langtalks--71-claw-architectures]])
 
 ## Related
-[[concepts/personal-ai-assistants]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-guardrails]] · [[concepts/agent-security]]
+[[concepts/personal-ai-assistants]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-guardrails]] · [[concepts/agent-security]] · [[concepts/agent-ready-products]]

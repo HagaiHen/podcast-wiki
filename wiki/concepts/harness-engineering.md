@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Harness Engineering
@@ -19,6 +19,7 @@ updated: 2026-10-06
 - Choose stacks for agent autonomy: TypeScript and cloud-first (React Native even for a mobile app) so agents can run and verify in the cloud with your laptop closed ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Every agent PR spins up a full preview environment (DB, services, load balancers) via Pulumi/Kubernetes, or MirrorD mirrors only the changed container into a shared dev cluster ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Prefer CLIs over MCPs where possible; they're simpler for agents ([[episodes/langtalks--70-our-claude-code-tips]]).
+- The biggest blocker is often plain DevOps: no per-developer environment, shared broken staging, no log access. Map where developers copy-paste between systems and wire those gaps (MCP, tokens, CLI, environment infra) ([[episodes/langtalks--68-ai-sdlc]]).
 
 ## Disagreements & open questions
 - Cost: providers moved from flat ~$200/month plans to token billing, and companies push to cut spend (cheaper models, open source). The hosts argue against blind token minimization, but warn against "token-maxing" too: use harness hooks and OpenTelemetry to evaluate what's actually happening ([[episodes/langtalks--73-harness-engineering]]).
@@ -27,6 +28,7 @@ updated: 2026-10-06
 - [ ] When an agent fails, ask it which capability/tool it lacks to verify itself, and build that ([[episodes/langtalks--73-harness-engineering]])
 - [ ] Track productivity per token over time as the harness KPI ([[episodes/langtalks--73-harness-engineering]])
 - [ ] Give each agent PR its own preview environment (IaC or container mirroring) ([[episodes/langtalks--70-our-claude-code-tips]])
+- [ ] Map every copy-paste step in your dev loop and replace it with agent-accessible tooling ([[episodes/langtalks--68-ai-sdlc]])
 
 ## Related
-[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]]
+[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]]

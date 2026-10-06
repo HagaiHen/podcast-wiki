@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-06
 ---
 # Agent Workspaces (the new workplace)
@@ -19,6 +19,7 @@ updated: 2026-10-06
 - A "PA Network" WhatsApp group of 30–40 agents shared skills and deployed sites, which showed that chat is the wrong medium and humans should engage only at decision points ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Lesson: instead of 40 people each building their own agent, build team agents with identity and a guild for collective knowledge (monday.com's "AI teammates") ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Agents acting with user tokens create "AI slop" noise in shared tools; colleagues stop taking it seriously ([[episodes/langtalks--72-personal-assistant-agent]]).
+- Second voice for "SaaS is not dead": classic SaaS revenue (e.g. Figma) keeps growing while agents add new demand ([[episodes/langtalks--69-marketing-for-agents]]).
 
 ## Disagreements & open questions
 

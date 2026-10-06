@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-06
 ---
 # Context Engineering
@@ -20,6 +20,7 @@ updated: 2026-10-06
 - When a long Claude Code session degrades after compaction, have it write what it knows to an MD file and start fresh ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Context is king for personalization: decompose it into personal, team, group, and org layers, with permissions so nothing leaks ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/matan-cohen]]).
 - Skill descriptions consume context: with 100+ skills the listing gets truncated, silently hiding skills ([[episodes/langtalks--70-our-claude-code-tips]]).
+- Global and repo instruction files fill context fast and aren't relevant to every task. Keep them focused, and retrieve decisions made *in the area you're touching* dynamically ([[episodes/langtalks--68-ai-sdlc]]).
 
 ## Disagreements & open questions
 
