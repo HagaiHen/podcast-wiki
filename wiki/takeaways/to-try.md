@@ -130,3 +130,5 @@
 - [ ] Open a WhatsApp beta-tester group for anything you build — [[concepts/solo-builders]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [ ] Finish one side project end to end, even a symbolic launch — [[concepts/solo-builders]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [ ] Build in public: post weekly about what you build — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
+- [ ] Before fine-tuning, split knowledge into memorize (needed for planning) vs retrieve — [[concepts/continual-learning]] · [[episodes/explainable--164-gilad-levi-continual-learning]]
+- [ ] For any AI product, write down what value survives a competitor swapping in a better model — [[concepts/ai-moats]] · [[episodes/explainable--164-gilad-levi-continual-learning]]

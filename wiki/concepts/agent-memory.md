@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering, knowledge-management]
-sources: 2
-updated: 2026-10-06
+sources: 3
+updated: 2026-10-07
 ---
 # Agent Memory (short- and long-term, governed)
 
@@ -21,6 +21,7 @@ updated: 2026-10-06
 - Good memory also cuts tokens and cost; it's context engineering of the future ([[episodes/langtalks--57-memory]]).
 - Start with the file system before a vector DB: most agent work is episodic, so files for PRDs, plans, and to-dos give persistence, git history, and human review; semantic memory retrieval is rarely the first or second thing you need ([[episodes/langtalks--55-context-engineering]]).
 - Claude Code memory levels: project, user, enterprise ([[episodes/langtalks--55-context-engineering]]).
+- Critique of memory systems: retrieval, memory graphs, and summarization only choose which notes to re-read from an ever-growing stack, like an employee rereading all their notes each morning. The problem is ill-posed because data isn't distilled as it arrives. Humans change a little with every input ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 
 ## Disagreements & open questions
 - Bitter lesson (scale data and compute) versus algorithmic innovation: Friedman expects new memory architectures; the hosts sense today's memory is feature engineering awaiting a learned solution ([[episodes/langtalks--57-memory]]).
@@ -32,4 +33,4 @@ updated: 2026-10-06
 - [ ] Use files (PRD, plan, to-do) as the agent's working memory before building a vector memory ([[episodes/langtalks--55-context-engineering]])
 
 ## Related
-[[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/context-engineering]] · [[concepts/company-brain]]
+[[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/context-engineering]] · [[concepts/company-brain]] · [[concepts/continual-learning]]

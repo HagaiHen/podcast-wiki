@@ -19,6 +19,10 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/continual-learning]]: models that keep learning after training
+- [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
+- [[concepts/llm-reasoning]]: token-space vs latent reasoning; RL reasoning
+- [[concepts/ai-moats]]: tech as business card; good-enough products; lab economics
 - [[concepts/solo-builders]]: AI builders without VC; shipping, finishing, distribution
 - [[concepts/enterprise-ai-adoption]]: selling applied AI to enterprises; FDEs; AI OS
 - [[concepts/ai-growth-marketing]]: agentic growth hacking, autonomous outreach, personalization
@@ -65,6 +69,7 @@
 ## Unsorted
 
 ## Shows
+- [[shows/explainable]]: ExplAInable
 - [[shows/ai-engineering-podcast]]: AI Engineering (AI אנג׳נירינג)
 - [[shows/ignore-instructions]]: Ignore the Instructions (תתעלם מההוראות)
 - [[shows/langtalks]]: LangTalks
@@ -86,6 +91,7 @@
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
+- [[people/gilad-levi]]: founder of Manifold (continual learning)
 - [[people/idan-benyon]]: founder of Build Ship Grow community
 - [[people/meytar-zemer]]: neuroscientist (memory)
 - [[people/micky-haslavsky]]: founder at enso (agentic marketing)
@@ -101,6 +107,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/explainable--164-gilad-levi-continual-learning]]: #164 Child Prodigy, Transformers and Continual Learning (2026-09-22)
 - [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]: #20 The Man Behind the AI Builders Community (2026-03-24)
 - [[episodes/ignore-instructions--24-wonderful-road-to-100m]]: #24 On the Way to $100M Revenue (2026-06-18)
 - [[episodes/ignore-instructions--28-ai-marketing-enso]]: #28 How AI Is Changing Marketing (2026-09-08)

@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-10-06
+sources: 4
+updated: 2026-10-07
 ---
 # AI Hype & Durable Value
 
@@ -15,6 +15,7 @@ updated: 2026-10-06
 - Benchmarks "endanger humanity every week", then the model can't do your task ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Jev was overhyped: a classifier, not an LLM replacement. Benchmark on your own data and A/B test before switching ([[episodes/langtalks--74-jev]]).
 - Counterpoint to waiting: Wonderful builds features that are "half-broken" on current models, betting model progress makes them work, rather than adding restrictions around today's limits ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
+- Example of churn: a colleague told Levi to switch to Codex ("Claude Code is dead"), then back to Claude Code a week later. Tools like alphaXiv feel five years old a week after launch; you're expected to be a year-long expert in something released this week ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 
 ## Disagreements & open questions
 
@@ -23,4 +24,4 @@ updated: 2026-10-06
 - [ ] Sanity-check product ideas: could a prompt recreate this in 10 minutes? ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/model-selection]] · [[concepts/decision-classifiers]]
+[[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/ai-moats]]

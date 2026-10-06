@@ -149,3 +149,8 @@ updated: concepts/{company-brain, model-selection, voice-agents, ai-hype, ai-rd-
 source: whisper (two garbled stretches)
 created: episodes/ignore-instructions--20-idan-benyon-build-ship-grow, concepts/solo-builders, people/idan-benyon
 updated: concepts/{ai-growth-marketing, skill-engineering, personal-ai-assistants, coding-agent-workflow, harness-engineering}, people/nevo-david, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-07 — ExplAInable: #164 Child Prodigy, Transformers and Continual Learning (Gilad Levi)
+source: whisper
+created: episodes/explainable--164-gilad-levi-continual-learning, concepts/{continual-learning, llm-pretraining, llm-reasoning, ai-moats}, people/gilad-levi, shows/explainable
+updated: concepts/{agent-memory, rag, ai-hype}, hubs/ai-engineering, index, takeaways/to-try
