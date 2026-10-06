@@ -118,3 +118,8 @@
 - [ ] Backfill memory from historical PR discussions — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]
 - [ ] Build automations one reliable step at a time — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]
 - [ ] Assign an automation owner for non-technical teams — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]
+- [ ] Sub-agents read large files, return only answers/snippets — [[concepts/context-engineering]] · [[episodes/langtalks--55-context-engineering]]
+- [ ] Specific, actionable API errors for agents; keep errors in context — [[concepts/context-engineering]] · [[episodes/langtalks--55-context-engineering]]
+- [ ] Trace audit: trim context you scroll past — [[concepts/context-engineering]] · [[episodes/langtalks--55-context-engineering]]
+- [ ] Files as agent working memory before vector memory — [[concepts/agent-memory]] · [[episodes/langtalks--55-context-engineering]]
+- [ ] Stable tool list + logit masking instead of tool swapping — [[concepts/llm-cost-optimization]] · [[episodes/langtalks--55-context-engineering]]

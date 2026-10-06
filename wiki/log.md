@@ -129,3 +129,8 @@ updated: concepts/{memory-consolidation, human-vs-ai-memory, context-engineering
 source: whisper
 created: episodes/langtalks--56-n8n, concepts/workflow-automation, people/shay-shitrit
 updated: concepts/{personal-ai-assistants, ai-sdlc}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-06 — LangTalks: #55 Context Engineering
+source: whisper
+created: episodes/langtalks--55-context-engineering
+updated: concepts/{context-engineering (summary rewritten), agent-memory, multi-agent-orchestration (disagreement), llm-cost-optimization}, shows/langtalks, index, takeaways/{to-try, recommendations}

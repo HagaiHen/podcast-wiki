@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering, knowledge-management]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Agent Memory (short- and long-term, governed)
@@ -19,6 +19,8 @@ updated: 2026-10-06
 - Merging parallel agent sessions needs their *intent* (in the sessions), not just their code ([[episodes/langtalks--57-memory]]).
 - Cold start: backfill (e.g. 12 months of GitHub discussions) rather than only learning going forward ([[episodes/langtalks--57-memory]]).
 - Good memory also cuts tokens and cost; it's context engineering of the future ([[episodes/langtalks--57-memory]]).
+- Start with the file system before a vector DB: most agent work is episodic, so files for PRDs, plans, and to-dos give persistence, git history, and human review; semantic memory retrieval is rarely the first or second thing you need ([[episodes/langtalks--55-context-engineering]]).
+- Claude Code memory levels: project, user, enterprise ([[episodes/langtalks--55-context-engineering]]).
 
 ## Disagreements & open questions
 - Bitter lesson (scale data and compute) versus algorithmic innovation: Friedman expects new memory architectures; the hosts sense today's memory is feature engineering awaiting a learned solution ([[episodes/langtalks--57-memory]]).
@@ -27,6 +29,7 @@ updated: 2026-10-06
 - [ ] Track each rule's usage and acceptance rate and prune rules that don't earn their place ([[episodes/langtalks--57-memory]])
 - [ ] Ingest memory per source type with links back to originals instead of one giant encoding ([[episodes/langtalks--57-memory]])
 - [ ] Backfill memory from historical PR discussions to avoid cold start ([[episodes/langtalks--57-memory]])
+- [ ] Use files (PRD, plan, to-do) as the agent's working memory before building a vector memory ([[episodes/langtalks--55-context-engineering]])
 
 ## Related
 [[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/context-engineering]] · [[concepts/company-brain]]

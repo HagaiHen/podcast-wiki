@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Multi-Agent Orchestration
@@ -15,7 +15,9 @@ updated: 2026-10-06
 - Coding leads: structure plus existing reliability tools (compilers, linters). Claude Code lets users define subagents rather than shipping opinionated built-ins; consolidation and built-in agents may follow ([[episodes/langtalks--58-reinvent-predictions]]).
 - Autonomous agents are moving from broad "AI teammate" ambitions (the Devin wave) to narrow niches, with an orchestrator over many specialists, possibly the path to AGI ([[episodes/langtalks--58-reinvent-predictions]]).
 
+
 ## Disagreements & open questions
+- Hosts' caution: most successful agents in practice are *single* agents with narrow helper sub-agents (e.g. answer a question from one document), not full multi-agent systems ([[episodes/langtalks--55-context-engineering]]).
 
 ## Takeaways
 - [ ] Keep each sub-agent's capability description auto-generated from its actual tools so the orchestrator stays current ([[episodes/langtalks--58-reinvent-predictions]])

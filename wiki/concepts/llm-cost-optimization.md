@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-06
 ---
 # LLM Cost Optimization
@@ -21,6 +21,7 @@ updated: 2026-10-06
 - Prompt compression is back: a community repo reportedly raised GPT 5.2 quality ~30% without extra cost or latency; startups mine traces for cheaper call patterns and caching ([[episodes/langtalks--67-finops-for-ai]]).
 - Iterative real-time analysis (re-asking with all prior events each time) benefits hugely from Bedrock prompt caching, since most input repeats ([[episodes/langtalks--66-scaling-llmops]]).
 - Rate limits: cross-region inference profiles gave ~5× the throughput of a region-pinned model (e.g. EU Sonnet → global), while staying compliant; some companies also spread load across multiple accounts ([[episodes/langtalks--66-scaling-llmops]]).
+- Tool overload (100+ tools) hurts, but swapping tool subsets per step breaks the KV cache. Manus masks token logits to restrict tool choice while keeping the prefix stable ([[episodes/langtalks--55-context-engineering]]).
 
 ## Disagreements & open questions
 
@@ -30,6 +31,7 @@ updated: 2026-10-06
 - [ ] Plan with a strong model, execute with a cheaper one ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Trim and reformat tool responses (drop unused fields; JSON → YAML) before they reach the model ([[episodes/langtalks--67-finops-for-ai]])
 - [ ] Use cross-region inference (where compliant) to raise rate limits before buying capacity ([[episodes/langtalks--66-scaling-llmops]])
+- [ ] Keep the tool list stable and restrict choices via logit masking/constrained decoding rather than swapping tools mid-session ([[episodes/langtalks--55-context-engineering]])
 
 ## Related
 [[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]] · [[concepts/ai-finops]]

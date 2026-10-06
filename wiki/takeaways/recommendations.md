@@ -4,6 +4,8 @@
 - *Investing for the Lazy* (השקעות לעצלנים) by [[people/tamir]] — host's own book — [[episodes/lazy-investing--108-the-leverage-trap]]
 
 ## Tools
+- Manus blog post "Context Engineering for AI Agents: Lessons from Building Manus" and LangChain's "Context Engineering for Agents" — [[episodes/langtalks--55-context-engineering]]
+- LangSmith / Langfuse: tracing to audit agent context — [[episodes/langtalks--55-context-engineering]]
 - n8n: no-code automation + AI agents; start on cloud, self-host later — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]
 - Pencil.dev: design UI with your design system before agent implementation — [[episodes/langtalks--70-our-claude-code-tips]]
 - MirrorD: mirror one changed container into a shared dev cluster — [[episodes/langtalks--70-our-claude-code-tips]]

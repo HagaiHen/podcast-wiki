@@ -94,6 +94,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--55-context-engineering]]: #55 Context Engineering (2025-10-11)
 - [[episodes/langtalks--56-n8n]]: #56 n8n (2025-10-25)
 - [[episodes/langtalks--57-memory]]: #57 Memory (2025-11-16)
 - [[episodes/langtalks--58-reinvent-predictions]]: #58 re:Invent 2026 Predictions (2025-12-07)
