@@ -6,6 +6,7 @@ type: hub
 Capturing, organizing, and keeping personal knowledge alive, now largely delegated to LLMs.
 
 ## Concepts
+- [[concepts/agent-memory]]: agent memory (also AI Engineering)
 - [[concepts/human-vs-ai-memory]]: neuroscience of memory vs agent memory
 - [[concepts/company-brain]]: org-wide shared knowledge for agents
 - [[concepts/memory-consolidation]]: nightly consolidation of agent memory

@@ -119,3 +119,8 @@ updated: concepts/{model-selection, decision-classifiers, llm-pipelines}, shows/
 source: whisper
 created: episodes/langtalks--58-reinvent-predictions, concepts/multi-agent-orchestration, people/shuki-cohen
 updated: concepts/{small-language-models, voice-agents, llm-evals, ai-gateway, model-selection}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #57 Memory (Itamar Friedman)
+source: whisper
+created: episodes/langtalks--57-memory, concepts/agent-memory, people/itamar-friedman
+updated: concepts/{memory-consolidation, human-vs-ai-memory, context-engineering}, shows/langtalks, hubs/{ai-engineering, knowledge-management}, index, takeaways/to-try

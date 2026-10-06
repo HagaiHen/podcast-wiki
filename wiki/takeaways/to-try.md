@@ -113,3 +113,6 @@
 - [ ] Compose real documents into synthetic labeled training data — [[concepts/small-language-models]] · [[episodes/langtalks--59-slms]]
 - [ ] Check licenses before LLM-labeling training data — [[concepts/small-language-models]] · [[episodes/langtalks--59-slms]]
 - [ ] Auto-generate sub-agent capability descriptions from their actual tools — [[concepts/multi-agent-orchestration]] · [[episodes/langtalks--58-reinvent-predictions]]
+- [ ] Track rule usage/acceptance; prune low-value rules — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]
+- [ ] Per-source-type memory ingestion with links to originals — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]
+- [ ] Backfill memory from historical PR discussions — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]

@@ -50,6 +50,7 @@
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 - [[concepts/company-brain]]: shared org knowledge for agents; 4 layers
+- [[concepts/agent-memory]]: short/long-term agent memory with governance
 - [[concepts/human-vs-ai-memory]]: what neuroscience says about agent memory
 - [[concepts/memory-consolidation]]: nightly "dreaming" jobs that clean memory
 - [[concepts/knowledge-graphs]]: ontologies agents use to understand an org
@@ -75,6 +76,7 @@
 - [[people/elad-granot]]: AI researcher, Trullion
 - [[people/gavriel-cohen]]: creator of NanoClaw
 - [[people/iko-azoulay]]: EVP Technology, Salt Security
+- [[people/itamar-friedman]]: CEO of Qodo
 - [[people/liad-elidan]]: CEO of Milestone
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
@@ -90,6 +92,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--57-memory]]: #57 Memory (2025-11-16)
 - [[episodes/langtalks--58-reinvent-predictions]]: #58 re:Invent 2026 Predictions (2025-12-07)
 - [[episodes/langtalks--59-slms]]: #59 SLMs (2025-12-28)
 - [[episodes/langtalks--60-brain-memory]]: #60 Brain Memory (2026-01-11)

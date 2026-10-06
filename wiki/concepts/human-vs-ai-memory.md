@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Human vs AI Memory
@@ -18,6 +18,7 @@ updated: 2026-10-06
 - Schemas speed encoding and retrieval but cause errors ("beach, sun…" falsely recalls "towel"). Role prompts ("you're a neuroscientist") may work by activating a schema in the weights ([[episodes/langtalks--60-brain-memory]]).
 - AI memory example (Mem0 v1): an LLM with a generic prompt extracts memories from messages into a vector DB (optionally a graph), with metadata filters; background dedupe in which the newest wins conflicts. Hosts question task-agnostic extraction and "newest wins" ([[episodes/langtalks--60-brain-memory]]).
 - Academia now lags industry; big papers come from companies, unlike the AlexNet era ([[episodes/langtalks--60-brain-memory]]).
+- Friedman doesn't consider human memory the ideal design ("mine is terrible"); expect memory architectures that differ from the brain, with LLMs trained to use them ([[episodes/langtalks--57-memory]]).
 
 ## Disagreements & open questions
 - Should AI memory imitate human memory at all, given its decay and distortions, or aim for precise but salience-aware storage ([[episodes/langtalks--60-brain-memory]])?
@@ -27,4 +28,4 @@ updated: 2026-10-06
 - [ ] Prefer frequency/consistency over recency when resolving conflicting memories ([[episodes/langtalks--60-brain-memory]])
 
 ## Related
-[[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/autonomous-agents-outlook]] · [[concepts/second-brain]]
+[[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/autonomous-agents-outlook]] · [[concepts/second-brain]] · [[concepts/agent-memory]]
