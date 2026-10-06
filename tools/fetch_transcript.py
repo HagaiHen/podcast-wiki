@@ -137,7 +137,8 @@ def whisper_text(item):
         req = urllib.request.Request(enclosure.get("url"), headers=UA)
         with urllib.request.urlopen(req, timeout=60) as r, open(audio, "wb") as f:
             shutil.copyfileobj(r, f)
-        result = mlx_whisper.transcribe(str(audio), path_or_hf_repo=WHISPER_MODEL)
+        print(f"transcribing {item.findtext('title', '')[:60]}", file=sys.stderr, flush=True)
+        result = mlx_whisper.transcribe(str(audio), path_or_hf_repo=WHISPER_MODEL, verbose=False)  # verbose=False = tqdm progress bar on stderr
     text = "\n".join(seg["text"].strip() for seg in result.get("segments", [])) or result["text"].strip()
     return text, result.get("language")
 

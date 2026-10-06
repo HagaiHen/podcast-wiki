@@ -3,3 +3,4 @@
 .venv/
 __pycache__/
 raw/.heard.json
+raw/.test3.json
