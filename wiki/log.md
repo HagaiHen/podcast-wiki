@@ -154,3 +154,8 @@ updated: concepts/{ai-growth-marketing, skill-engineering, personal-ai-assistant
 source: whisper
 created: episodes/explainable--164-gilad-levi-continual-learning, concepts/{continual-learning, llm-pretraining, llm-reasoning, ai-moats}, people/gilad-levi, shows/explainable
 updated: concepts/{agent-memory, rag, ai-hype}, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-07 — ExplAInable: #163 A Million Dollars a Month: The Expensive Secret of AI Agents
+source: whisper
+created: episodes/explainable--163-hidden-cost-of-agents
+updated: concepts/{llm-cost-optimization, ai-gateway, ai-verification, ai-guardrails, future-of-software-engineering, llm-reasoning}, shows/explainable, index, takeaways/to-try

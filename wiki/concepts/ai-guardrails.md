@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-06
+sources: 7
+updated: 2026-10-07
 ---
 # AI Guardrails
 
@@ -23,6 +23,8 @@ updated: 2026-10-06
 - An agent given an open channel built an AI gateway that called *another* AI gateway; a calendar agent declined a meeting with a curt reply ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).
 - Usage policies are security too: block off-topic abuse (e.g. using a business assistant to build a Doom clone) as well as illegal topics; product teams should also detect loops and abuse ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
 - Cheap classifiers can serve as guardrail judges, e.g. Claude Code's auto mode checks each tool call for risk, or a hook can check whether an agent ignored AGENTS.md ([[episodes/langtalks--74-jev]]).
+- Agents need real-time supervision, not just pre-launch evals. Anthropic's vending-machine agent was talked into giving products away or 99% discounts. Models are "very smart and very gullible": persistence and emotional appeals ("my grandmother died", "for educational purposes") wear down refusals ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Least privilege as basic hygiene: give an agent read-only access where possible, so the worst case is extra queries ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Disagreements & open questions
 

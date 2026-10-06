@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-06
+sources: 7
+updated: 2026-10-07
 ---
 # AI Verification
 
@@ -23,6 +23,9 @@ updated: 2026-10-06
 - Some DoDs are hard to automate (e.g. is recorded voice free of echo?); agents also still produce odd UX logic that needs a human pass ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Code review is *alignment*, not just a quality gate: an agent won't catch a PR introducing a technology the architect never approved, or drift between spec and implementation; feed it broader org context ([[episodes/langtalks--68-ai-sdlc]], [[people/yonatan-maor]]).
 - AI validates AI at every step (PRD, tech design, code review, CI) with *different* prompts than those that generated the artifact, but a human always stays accountable ([[episodes/langtalks--62-ai-rd-rollout]]).
+- A million-line AI-generated PR porting Bun from Zig to Rust passed tests, but the community panicked: nobody can review a million lines, and models are known to fake tests ("return true") ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- A professor found ~60% of an LLM's working code irrelevant; dead code bites at 3 a.m. when you must know where to look. Agents can't debug an outage fast without human direction ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Practical rule: build in small steps, understand the logic and business requirements of what goes in, and check the tests are meaningful and tied to requirements ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Disagreements & open questions
 
@@ -32,6 +35,7 @@ updated: 2026-10-06
 - [ ] Require a proof-of-work artifact (e.g. Playwright video) before accepting agent-built features ([[episodes/langtalks--73-harness-engineering]])
 - [ ] Define an explicit definition of done the agent can check itself against before finishing ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] Add a separate AI validation step (different prompt) after each generated artifact ([[episodes/langtalks--62-ai-rd-rollout]])
+- [ ] Review AI-written tests for meaning (tied to requirements), not just green status ([[episodes/explainable--163-hidden-cost-of-agents]])
 
 ## Related
 [[concepts/ai-guardrails]] · [[concepts/wiki-retrieval]] · [[concepts/harness-engineering]] · [[concepts/ai-sdlc]]

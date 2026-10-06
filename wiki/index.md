@@ -107,6 +107,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/explainable--163-hidden-cost-of-agents]]: #163 A Million Dollars a Month: The Expensive Secret of AI Agents (2026-09-13)
 - [[episodes/explainable--164-gilad-levi-continual-learning]]: #164 Child Prodigy, Transformers and Continual Learning (2026-09-22)
 - [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]: #20 The Man Behind the AI Builders Community (2026-03-24)
 - [[episodes/ignore-instructions--24-wonderful-road-to-100m]]: #24 On the Way to $100M Revenue (2026-06-18)

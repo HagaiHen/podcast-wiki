@@ -132,3 +132,6 @@
 - [ ] Build in public: post weekly about what you build — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [ ] Before fine-tuning, split knowledge into memorize (needed for planning) vs retrieve — [[concepts/continual-learning]] · [[episodes/explainable--164-gilad-levi-continual-learning]]
 - [ ] For any AI product, write down what value survives a competitor swapping in a better model — [[concepts/ai-moats]] · [[episodes/explainable--164-gilad-levi-continual-learning]]
+- [ ] Audit which skills, hooks, and plugins load into every agent session; drop the unused ones — [[concepts/llm-cost-optimization]] · [[episodes/explainable--163-hidden-cost-of-agents]]
+- [ ] Write a fallback plan for when your primary model vendor is down, degraded, or blocks you — [[concepts/ai-gateway]] · [[episodes/explainable--163-hidden-cost-of-agents]]
+- [ ] Review AI-written tests for meaning, not just green status — [[concepts/ai-verification]] · [[episodes/explainable--163-hidden-cost-of-agents]]

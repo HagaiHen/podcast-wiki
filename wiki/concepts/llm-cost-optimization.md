@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-06
+sources: 6
+updated: 2026-10-07
 ---
 # LLM Cost Optimization
 
@@ -22,6 +22,10 @@ updated: 2026-10-06
 - Iterative real-time analysis (re-asking with all prior events each time) benefits hugely from Bedrock prompt caching, since most input repeats ([[episodes/langtalks--66-scaling-llmops]]).
 - Rate limits: cross-region inference profiles gave ~5× the throughput of a region-pinned model (e.g. EU Sonnet → global), while staying compliant; some companies also spread load across multiple accounts ([[episodes/langtalks--66-scaling-llmops]]).
 - Tool overload (100+ tools) hurts, but swapping tool subsets per step breaks the KV cache. Manus masks token logits to restrict tool choice while keeping the prefix stable ([[episodes/langtalks--55-context-engineering]]).
+- Agents are expensive at scale: the OpenClaw creator reportedly ran 100 Codex agents nonstop for a month for ~$1M in tokens. An agency estimates ~$500k just to build a working multi-agent system (team, architecture, memory, RAG), before infra and tokens ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Subscriptions are subsidized: a heavy Claude Max $200 user would cost ~$1.5–2k at API prices (~1:10). If vendors switch to AWS-style metered billing, economics change ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Every skill, hook, and plugin loaded into context costs tokens on each send; a big context window fills fast and burns the weekly quota ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Inference optimization is a growing role: minimize $/1M tokens while meeting the SLA, since every token costs GPU time and electricity ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Disagreements & open questions
 
@@ -32,6 +36,7 @@ updated: 2026-10-06
 - [ ] Trim and reformat tool responses (drop unused fields; JSON → YAML) before they reach the model ([[episodes/langtalks--67-finops-for-ai]])
 - [ ] Use cross-region inference (where compliant) to raise rate limits before buying capacity ([[episodes/langtalks--66-scaling-llmops]])
 - [ ] Keep the tool list stable and restrict choices via logit masking/constrained decoding rather than swapping tools mid-session ([[episodes/langtalks--55-context-engineering]])
+- [ ] Audit which skills, hooks, and plugins load into every agent session; drop the unused ones ([[episodes/explainable--163-hidden-cost-of-agents]])
 
 ## Related
 [[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]] · [[concepts/ai-finops]]

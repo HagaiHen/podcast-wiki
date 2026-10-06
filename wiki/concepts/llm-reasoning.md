@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-07
 ---
 # LLM Reasoning
@@ -15,6 +15,7 @@ updated: 2026-10-07
 - Verifiers try to judge whether reasoning was good, but "good reasoning" and "thought enough" are ill-defined ([[episodes/explainable--164-gilad-levi-continual-learning]]).
 - Latent reasoning (e.g. latent language models) is more expressive, but has stability issues, and rewarding reasoning that isn't words is even harder; the logic parallels latent diffusion ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Host's framing: "models don't think, they generate tokens; what we call thinking is generating more tokens" ([[episodes/explainable--164-gilad-levi-continual-learning]]).
+- Agents excel in code and math (and some physics) because of RL with verifiable rewards (RLVR): answers can be checked automatically. Taste-driven domains (an essay on Greek philosophy, which emoji to send) have no verifier, so "agents will replace everyone" may hold mostly inside tech ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Disagreements & open questions
 - Is token-space reasoning hiding what models "really" do (a safety concern), or is it just an under-expressive mechanism that should be replaced? Levi leans toward the latter ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).

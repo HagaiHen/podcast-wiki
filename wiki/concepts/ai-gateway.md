@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-06
+sources: 5
+updated: 2026-10-07
 ---
 # AI Gateway
 
@@ -21,6 +21,8 @@ updated: 2026-10-06
 - Gateways are also the FinOps backbone: tagging calls and emitting telemetry is what makes accurate cost attribution possible ([[episodes/langtalks--67-finops-for-ai]]).
 - An OpenAI-compatible internal API with a mandatory project field shows per-feature production cost; a raw cloud bill for "Sonnet on Bedrock" doesn't ([[episodes/langtalks--66-scaling-llmops]]).
 - MCP gateways: tools are now the API for models, so they need provisioning (central auth, add/remove tools, policies, guardrails). Server-side tool execution (OpenAI Responses API, AWS AgentCore) cuts round-trips. AgentCore bundles memory, code runtime, browser, identity, and policy for production ([[episodes/langtalks--58-reinvent-predictions]]).
+- Vendor lock-in has more than one face: vendors ship features (managed agents, vaults) to pull you deeper; under load a vendor may silently serve a weaker model; outages stop teams cold ("Claude is down, go home"); and an account can be banned outright (an Argentinian company reportedly lost all Anthropic access). Plan a fallback ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- The same prompt can break across two models from the same vendor; OpenRouter and OpenAI-compatible APIs reduce switching cost ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Disagreements & open questions
 
@@ -28,6 +30,7 @@ updated: 2026-10-06
 - [ ] Route all LLM calls through a gateway with per-feature spend limits and alerts ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Strip PII before prompts leave your system ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Keep a pre-tested fallback model/vendor for every AI feature ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
+- [ ] Write a fallback plan for when your primary model vendor is down, degraded, or blocks you ([[episodes/explainable--163-hidden-cost-of-agents]])
 
 ## Related
 [[concepts/llm-evals]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]] · [[concepts/ai-finops]]
