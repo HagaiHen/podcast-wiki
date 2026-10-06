@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 6
 updated: 2026-10-06
 ---
 # Model Selection
@@ -24,6 +24,8 @@ updated: 2026-10-06
 - Gavriel Cohen follows Anthropic's view that agents aren't portable across providers: each lab's models behave differently, so he didn't build model-switching ([[episodes/langtalks--71-claw-architectures]]).
 - Start with the biggest model, then find the smallest that meets the KPI: NVIDIA's open Nemotron (~33B active) matched Claude Sonnet 4.5 on CVE enrichment at a fraction of the cost; ~70B models suffice to flag crypto miners ([[episodes/langtalks--66-scaling-llmops]], [[people/avi-lumelsky]]).
 - Small models sometimes grasp a narrow task *better* (e.g. spotting repeated base64 encoding as suspicious) ([[episodes/langtalks--66-scaling-llmops]]).
+- Beyond picking among API models: training a small task-specific model can beat a general LLM on accuracy and speed; see [[concepts/small-language-models]] ([[episodes/langtalks--59-slms]]).
+- Niche models: some aim to be best under real-time latency, others at long context or specific tasks. Per-intent compute (as GPT-5 varies thinking) may come to inference stacks. Smaller models gain ground as ROI starts to matter ([[episodes/langtalks--58-reinvent-predictions]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).
@@ -34,4 +36,4 @@ updated: 2026-10-06
 - [ ] Set reasoning-token budgets instead of default effort levels where available ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/llm-pipelines]]
+[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/llm-pipelines]] · [[concepts/small-language-models]]

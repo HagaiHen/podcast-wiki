@@ -6,6 +6,8 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/multi-agent-orchestration]]: orchestrating specialist agents
+- [[concepts/small-language-models]]: when to train small models
 - [[concepts/voice-agents]]: building phone/voice agents
 - [[concepts/ai-rd-rollout]]: org-wide AI adoption
 - [[concepts/autonomous-agents-outlook]]: speculation on autonomy and AGI

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Voice Agents
@@ -19,6 +19,7 @@ updated: 2026-10-06
 - Fine-tuning the voice on about a minute of well-recorded speech improved tone more than prompting ([[episodes/langtalks--61-voice-agents]]).
 - Quirks: speech-to-speech models sometimes laugh, change pitch, play "hold music", or answer in the user's own voice ([[episodes/langtalks--61-voice-agents]]).
 - Disclosure that it's an AI makes ~30% of callers start with one word; a short, refined reply ("I can help with a lot, tell me more, or I'll transfer you") builds trust ([[episodes/langtalks--61-voice-agents]]).
+- Infra gap: delegating reasoning asynchronously so the speech model can start talking and weave in the answer later; async tool calling (Nova Sonic 2 keeps speaking while tools run). Voice evals are far less deterministic than text, and replaying or editing parts of a conversation is hard ([[episodes/langtalks--58-reinvent-predictions]]).
 
 ## Disagreements & open questions
 - Speech-to-speech versus chained: Lemonade chose realtime for naturalness; the host's 911 product chose chained for robustness, now reconsidering as multimodal improves ([[episodes/langtalks--61-voice-agents]]).

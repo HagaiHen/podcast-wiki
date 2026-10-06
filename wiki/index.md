@@ -15,6 +15,7 @@
 - [[concepts/ai-rd-rollout]]: adopting AI across an engineering org
 - [[concepts/ai-sdlc]]: agent teams across the dev lifecycle; start at the edges
 - [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
+- [[concepts/multi-agent-orchestration]]: orchestrator + specialist agents; pitfalls
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
@@ -23,6 +24,7 @@
 - [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
 - [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
 - [[concepts/voice-agents]]: speech-to-speech vs chained; latency, state machines, audio evals
+- [[concepts/small-language-models]]: fine-tuned small models for narrow tasks
 - [[concepts/decision-classifiers]]: fast calibrated classifiers (e.g. Jev) for bulk decisions
 - [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
@@ -70,6 +72,7 @@
 - [[people/asaf-savich]]: AI dev lead, Komodor
 - [[people/avi-lumelsky]]: production LLM lead, Oligo
 - [[people/dor-cohen]]: AI infra lead, monday.com
+- [[people/elad-granot]]: AI researcher, Trullion
 - [[people/gavriel-cohen]]: creator of NanoClaw
 - [[people/iko-azoulay]]: EVP Technology, Salt Security
 - [[people/liad-elidan]]: CEO of Milestone
@@ -81,11 +84,14 @@
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
 - [[people/shay-davidson]]: principal engineer, Lemonade
+- [[people/shuki-cohen]]: VP Data, AI21
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--58-reinvent-predictions]]: #58 re:Invent 2026 Predictions (2025-12-07)
+- [[episodes/langtalks--59-slms]]: #59 SLMs (2025-12-28)
 - [[episodes/langtalks--60-brain-memory]]: #60 Brain Memory (2026-01-11)
 - [[episodes/langtalks--61-voice-agents]]: #61 Voice Agents (2026-01-24)
 - [[episodes/langtalks--62-ai-rd-rollout]]: #62 AI R&D Rollout (2026-02-07)

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-06
 ---
 # AI Gateway
@@ -20,6 +20,7 @@ updated: 2026-10-06
 - Not magic: product teams still own knowing their prompts and detecting loops and abuse; the gateway supplies visibility ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Gateways are also the FinOps backbone: tagging calls and emitting telemetry is what makes accurate cost attribution possible ([[episodes/langtalks--67-finops-for-ai]]).
 - An OpenAI-compatible internal API with a mandatory project field shows per-feature production cost; a raw cloud bill for "Sonnet on Bedrock" doesn't ([[episodes/langtalks--66-scaling-llmops]]).
+- MCP gateways: tools are now the API for models, so they need provisioning (central auth, add/remove tools, policies, guardrails). Server-side tool execution (OpenAI Responses API, AWS AgentCore) cuts round-trips. AgentCore bundles memory, code runtime, browser, identity, and policy for production ([[episodes/langtalks--58-reinvent-predictions]]).
 
 ## Disagreements & open questions
 

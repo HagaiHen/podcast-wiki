@@ -109,3 +109,7 @@
 - [ ] Judge voice calls from audio, not transcripts — [[concepts/voice-agents]] · [[episodes/langtalks--61-voice-agents]]
 - [ ] Task-aware memory extraction — [[concepts/human-vs-ai-memory]] · [[episodes/langtalks--60-brain-memory]]
 - [ ] Resolve memory conflicts by frequency, not just recency — [[concepts/human-vs-ai-memory]] · [[episodes/langtalks--60-brain-memory]]
+- [ ] Benchmark a fine-tuned small model vs your LLM for segmentation/classification steps — [[concepts/small-language-models]] · [[episodes/langtalks--59-slms]]
+- [ ] Compose real documents into synthetic labeled training data — [[concepts/small-language-models]] · [[episodes/langtalks--59-slms]]
+- [ ] Check licenses before LLM-labeling training data — [[concepts/small-language-models]] · [[episodes/langtalks--59-slms]]
+- [ ] Auto-generate sub-agent capability descriptions from their actual tools — [[concepts/multi-agent-orchestration]] · [[episodes/langtalks--58-reinvent-predictions]]

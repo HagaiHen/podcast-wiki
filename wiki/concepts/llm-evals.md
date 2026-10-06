@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 7
 updated: 2026-10-06
 ---
 # LLM Evals
@@ -28,6 +28,7 @@ updated: 2026-10-06
 - Custom agents (testing agents, review agents, auto-merge) need a success baseline that rises per version: v0 writes tests at all, v1 at least one passes the build, v2 all pass. Label agent-authored PRs so you can join them with CI outcomes ([[episodes/langtalks--64-ai-coding-metrics]], [[people/liad-elidan]]).
 - Voice: feed the recorded *audio* to an audio-capable LLM judge (GPT-4 audio) to catch interruptions, noise, and bad audio that transcripts hide; post every call recording to Slack for team listening ([[episodes/langtalks--61-voice-agents]], [[people/shay-davidson]]).
 - Simulated callers ("avatars") with personas (chatty, angry, accented, other languages) per popular intent stress-test robustness; third-party services offer the same ([[episodes/langtalks--61-voice-agents]]).
+- Defining what makes output good is becoming a core PM skill. Expect simulated business environments for RL and reward/feedback endpoints from model providers in 2026 ([[episodes/langtalks--58-reinvent-predictions]]).
 
 ## Disagreements & open questions
 

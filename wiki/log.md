@@ -109,3 +109,13 @@ updated: concepts/{llm-evals, llm-pipelines}, shows/langtalks, hubs/ai-engineeri
 source: whisper (one short garbled passage)
 created: episodes/langtalks--60-brain-memory, concepts/human-vs-ai-memory, people/meytar-zemer
 updated: concepts/{memory-consolidation, autonomous-agents-outlook, knowledge-graphs}, shows/langtalks, hubs/knowledge-management, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #59 SLMs (Dr. Elad Granot)
+source: whisper
+created: episodes/langtalks--59-slms, concepts/small-language-models, people/elad-granot
+updated: concepts/{model-selection, decision-classifiers, llm-pipelines}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #58 re:Invent 2026 Predictions (Shuki Cohen)
+source: whisper
+created: episodes/langtalks--58-reinvent-predictions, concepts/multi-agent-orchestration, people/shuki-cohen
+updated: concepts/{small-language-models, voice-agents, llm-evals, ai-gateway, model-selection}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try

@@ -6,6 +6,8 @@ type: show
 Hebrew podcast on LLMs, agents, and AI engineering practice (langtalks.ai).
 
 ## Episodes
+- [[episodes/langtalks--58-reinvent-predictions]] (2025-12-07)
+- [[episodes/langtalks--59-slms]] (2025-12-28)
 - [[episodes/langtalks--60-brain-memory]] (2026-01-11)
 - [[episodes/langtalks--61-voice-agents]] (2026-01-24)
 - [[episodes/langtalks--62-ai-rd-rollout]] (2026-02-07)

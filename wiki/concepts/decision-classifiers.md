@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Decision Classifiers (e.g. Jev)
@@ -15,6 +15,7 @@ updated: 2026-10-06
 - Alternative: cache a system prompt on a cheap LLM and fan out parallel calls; zero-shot classifiers on Hugging Face do similar things ([[episodes/langtalks--74-jev]]).
 - Use cases: pre-filter 1,000 repos or 10,000 Notion pages down to 20–50 before an agent looks; decide which Slack events an agent should react to; PR risk low/medium/high; rank DOM elements for browser agents; judge risky tool calls; check whether an agent ignored AGENTS.md (as a hook) ([[episodes/langtalks--74-jev]]).
 - Failure mode: when wrong, there's no signal or way to steer. It denied that 19 Sep 2026 was a Saturday even though the state said so ([[episodes/langtalks--74-jev]]).
+- Fine-tuned small models (segmentation and classification heads) are the in-house alternative to hosted classifiers, with task-specific losses ([[episodes/langtalks--59-slms]]).
 
 ## Disagreements & open questions
 - Is it the start of a new model family? Possibly, but like RAG it may not be worth the engineering once agents get fast and cheap enough ([[episodes/langtalks--74-jev]]).
@@ -25,4 +26,4 @@ updated: 2026-10-06
 - [ ] If adopting a new model provider, keep a fallback to your existing LLM path ([[episodes/langtalks--74-jev]])
 
 ## Related
-[[concepts/rag]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]]
+[[concepts/rag]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]] · [[concepts/small-language-models]]
