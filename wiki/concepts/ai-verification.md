@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-06
 ---
 # AI Verification
@@ -22,6 +22,7 @@ updated: 2026-10-06
 - Definition of done as a contract: the agent mustn't stop until it's met. For UI, design first (Pencil.dev or Claude Design with your design system) and require visual parity ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Some DoDs are hard to automate (e.g. is recorded voice free of echo?); agents also still produce odd UX logic that needs a human pass ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Code review is *alignment*, not just a quality gate: an agent won't catch a PR introducing a technology the architect never approved, or drift between spec and implementation; feed it broader org context ([[episodes/langtalks--68-ai-sdlc]], [[people/yonatan-maor]]).
+- AI validates AI at every step (PRD, tech design, code review, CI) with *different* prompts than those that generated the artifact, but a human always stays accountable ([[episodes/langtalks--62-ai-rd-rollout]]).
 
 ## Disagreements & open questions
 
@@ -30,6 +31,7 @@ updated: 2026-10-06
 - [ ] Before any deletion the agent proposes, ask it to prove where the data is backed up ([[episodes/osim-tochna--second-brain-and-llm-wiki]])
 - [ ] Require a proof-of-work artifact (e.g. Playwright video) before accepting agent-built features ([[episodes/langtalks--73-harness-engineering]])
 - [ ] Define an explicit definition of done the agent can check itself against before finishing ([[episodes/langtalks--70-our-claude-code-tips]])
+- [ ] Add a separate AI validation step (different prompt) after each generated artifact ([[episodes/langtalks--62-ai-rd-rollout]])
 
 ## Related
 [[concepts/ai-guardrails]] · [[concepts/wiki-retrieval]] · [[concepts/harness-engineering]] · [[concepts/ai-sdlc]]

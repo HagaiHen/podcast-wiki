@@ -100,3 +100,7 @@
 - [ ] Baseline engineering productivity before AI attribution — [[concepts/ai-engineering-metrics]] · [[episodes/langtalks--64-ai-coding-metrics]]
 - [ ] Track code survival of AI vs human code — [[concepts/ai-engineering-metrics]] · [[episodes/langtalks--64-ai-coding-metrics]]
 - [ ] Rising success baseline per custom-agent version — [[concepts/llm-evals]] · [[episodes/langtalks--64-ai-coding-metrics]]
+- [ ] Start a GenAI guild of early adopters — [[concepts/ai-rd-rollout]] · [[episodes/langtalks--62-ai-rd-rollout]]
+- [ ] Run a "no hand-written code" sprint — [[concepts/ai-rd-rollout]] · [[episodes/langtalks--62-ai-rd-rollout]]
+- [ ] Give PMs AI read access to the codebase — [[concepts/ai-rd-rollout]] · [[episodes/langtalks--62-ai-rd-rollout]]
+- [ ] Separate AI validation step per generated artifact — [[concepts/ai-verification]] · [[episodes/langtalks--62-ai-rd-rollout]]

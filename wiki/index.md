@@ -12,6 +12,7 @@
 
 ## AI Engineering — [[hubs/ai-engineering]]
 - [[concepts/ai-sre]]: agents that investigate and heal production
+- [[concepts/ai-rd-rollout]]: adopting AI across an engineering org
 - [[concepts/ai-sdlc]]: agent teams across the dev lifecycle; start at the edges
 - [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
@@ -25,6 +26,7 @@
 - [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
 - [[concepts/proactive-ai]]: the AI UX paradox; surface capabilities, bring answers to users
+- [[concepts/autonomous-agents-outlook]]: where autonomous agents are heading; open questions
 - [[concepts/future-of-software-engineering]]: coding is dead, engineering isn't
 - [[concepts/llm-pipelines]]: deterministic LLM pipelines vs agents in production
 - [[concepts/ai-engineering-metrics]]: adoption → productivity → quality of AI coding
@@ -67,6 +69,7 @@
 - [[people/avi-lumelsky]]: production LLM lead, Oligo
 - [[people/dor-cohen]]: AI infra lead, monday.com
 - [[people/gavriel-cohen]]: creator of NanoClaw
+- [[people/iko-azoulay]]: EVP Technology, Salt Security
 - [[people/liad-elidan]]: CEO of Milestone
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
@@ -79,6 +82,8 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--62-ai-rd-rollout]]: #62 AI R&D Rollout (2026-02-07)
+- [[episodes/langtalks--63-wake-up]]: #63 WAKE UP (2026-02-23)
 - [[episodes/langtalks--64-ai-coding-metrics]]: #64 AI Coding Metrics (2026-03-08)
 - [[episodes/langtalks--65-ai-sre]]: #65 AI SRE (2026-03-21)
 - [[episodes/langtalks--66-scaling-llmops]]: #66 Scaling LLMOps (2026-04-12)

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 3
 updated: 2026-10-06
 ---
 # Coding-Agent Workflow (practical setup)
@@ -19,6 +19,8 @@ updated: 2026-10-06
 - Terminal: Warp with a tab per project and a pane per task, so context switches happen per project ([[episodes/langtalks--70-our-claude-code-tips]]).
 - Use idle subscription windows at night for routines: deep code and security reviews, Linear ticket dedupe ([[episodes/langtalks--70-our-claude-code-tips]]).
 - A keep-awake tool lets Claude Code keep running with the MacBook lid closed (handling heat and hotspot) ([[episodes/langtalks--70-our-claude-code-tips]]).
+- The scarce skill is managing *your own* attention across parallel agents, not the agent's context: you must move up from bits and bytes to the bigger picture while agents work ([[episodes/langtalks--63-wake-up]]).
+- BMAD (a spec-driven framework) is overkill end to end, but its early analyst stage (Five Whys, Six Thinking Hats) surfaces product angles before code ([[episodes/langtalks--62-ai-rd-rollout]]).
 
 ## Disagreements & open questions
 

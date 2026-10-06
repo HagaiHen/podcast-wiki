@@ -89,3 +89,13 @@ updated: concepts/{llm-evals, context-engineering, knowledge-graphs}, shows/lang
 source: whisper
 created: episodes/langtalks--64-ai-coding-metrics, concepts/ai-engineering-metrics, people/liad-elidan
 updated: concepts/{llm-evals, ai-sdlc, ai-finops}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #63 WAKE UP
+source: whisper
+created: episodes/langtalks--63-wake-up, concepts/autonomous-agents-outlook
+updated: concepts/{future-of-software-engineering (disagreement), coding-agent-workflow, harness-engineering}, shows/langtalks, hubs/ai-engineering, index
+
+## 2026-10-06 — LangTalks: #62 AI R&D Rollout (Iko Azoulay)
+source: whisper
+created: episodes/langtalks--62-ai-rd-rollout, concepts/ai-rd-rollout, people/iko-azoulay
+updated: concepts/{ai-sdlc, ai-verification, autonomous-agents-outlook, coding-agent-workflow}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try

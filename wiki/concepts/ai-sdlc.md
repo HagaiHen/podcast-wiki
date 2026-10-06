@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # AI-SDLC (agents across the dev lifecycle)
@@ -17,6 +17,10 @@ updated: 2026-10-06
 - Adoption friction: making developers decide upfront between remote and local execution failed; mid-flow gates where they can steer, and easy handoff to local work, help ([[episodes/langtalks--68-ai-sdlc]]).
 - Start at the edges: bug triage, on-call investigation and routing; the core flow is mentally harder because developers sign off on that work ([[episodes/langtalks--68-ai-sdlc]]).
 - Measuring the AI-SDLC needs a data lake joining Git, Jira, CI/CD, and agent telemetry; see [[concepts/ai-engineering-metrics]] ([[episodes/langtalks--64-ai-coding-metrics]]).
+- A detailed spec is a *contract* between developer, machine, and product. Then a tech design grounded in repo context, then task breakdown. Don't jump from PRD to implementation ([[episodes/langtalks--62-ai-rd-rollout]], [[people/iko-azoulay]]).
+- Spec review as a ritual: engineers bring an AI-refined spec back to product, mixing technical decisions into requirements early ([[episodes/langtalks--62-ai-rd-rollout]]).
+- Next: product creates working-mock PRs on real data (tools like Autonomy AI); hierarchical, cross-repo context, since most features span 3–4 repos; less rigid, more interactive artifacts, because huge generated specs go unread ([[episodes/langtalks--62-ai-rd-rollout]]).
+- Scrum rituals (dailies, retros, sprints) will change when agents do most of an epic ([[episodes/langtalks--62-ai-rd-rollout]]).
 
 ## Disagreements & open questions
 - Org knowledge and skill sharing remain unsolved; every team does it differently ([[episodes/langtalks--68-ai-sdlc]]).
@@ -27,4 +31,4 @@ updated: 2026-10-06
 - [ ] Route agent tasks to human review by blast radius, not line count ([[episodes/langtalks--68-ai-sdlc]])
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]]
+[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]] · [[concepts/ai-rd-rollout]]
