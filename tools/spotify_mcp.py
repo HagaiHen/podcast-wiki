@@ -24,18 +24,28 @@ def load_env():
                 os.environ.setdefault(key.strip(), value.strip())
 
 
-def client():
+def ensure_token(auth):
+    """Fail fast instead of blocking forever on a browser login (unattended runs)."""
+    if not auth.validate_token(auth.cache_handler.get_cached_token()):
+        sys.exit("Spotify login missing or expired: run `uv run tools/spotify_mcp.py --auth`")
+
+
+def client(interactive=False):
     import spotipy
     from spotipy.cache_handler import CacheFileHandler
     from spotipy.oauth2 import SpotifyPKCE
 
     load_env()
-    return spotipy.Spotify(auth_manager=SpotifyPKCE(  # PKCE: no client secret to store
+    auth = SpotifyPKCE(  # PKCE: no client secret to store
         client_id=os.environ["SPOTIFY_CLIENT_ID"],
         redirect_uri="http://127.0.0.1:8888/callback",
         scope=SCOPE,
         cache_handler=CacheFileHandler(cache_path=str(ROOT / ".spotify_cache")),
-    ))
+        open_browser=interactive,
+    )
+    if not interactive:
+        ensure_token(auth)
+    return spotipy.Spotify(auth_manager=auth)
 
 
 def progress(ep):
@@ -101,6 +111,24 @@ def selftest():
     assert got[0]["show_name"] == "Show" and got[0]["progress"] == 0.6
     assert set(got[0]) == {"id", "show_name", "show_id", "title", "release_date", "description",
                            "duration_ms", "progress", "spotify_url", "language"}
+    # unattended runs must fail fast, never wait for a browser login
+    class FakeCache:
+        def get_cached_token(self):
+            return None
+
+    class FakeAuth:
+        cache_handler = FakeCache()
+
+        def validate_token(self, token):
+            return token
+
+    try:
+        ensure_token(FakeAuth())
+        raise AssertionError("missing token should exit")
+    except SystemExit as e:
+        assert "--auth" in str(e)
+    FakeCache.get_cached_token = lambda self: {"access_token": "x"}
+    ensure_token(FakeAuth())  # valid cached token: no exit
     print("selftest ok")
 
 
@@ -109,7 +137,7 @@ if __name__ == "__main__":
     if arg == "--selftest":
         selftest()
     elif arg == "--auth":
-        print("Logged in as", client().current_user()["display_name"])
+        print("Logged in as", client(interactive=True).current_user()["display_name"])
     elif arg == "--list":
         print(json.dumps(heard_episodes(client()), ensure_ascii=False, indent=1))
     else:

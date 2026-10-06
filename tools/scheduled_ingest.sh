@@ -6,8 +6,11 @@ cd "$(dirname "$0")/.."
 echo "=== $(date) ==="
 mkdir -p raw
 uv run tools/spotify_mcp.py --list > raw/.heard.json
-uv run tools/fetch_transcript.py raw/.heard.json
+uv run tools/fetch_transcript.py raw/.heard.json  # also appends skipped episodes to wiki/log.md
 if [ -n "$(uv run tools/fetch_transcript.py --pending)" ]; then
-  claude -p "Follow the Wiki update procedure in CLAUDE.md for every file listed by \`uv run tools/fetch_transcript.py --pending\`. Then, if anything changed, run: git add raw wiki && git commit -m \"ingest: scheduled\"" \
-    --allowedTools "Read,Write,Edit,Glob,Grep,Bash(uv run tools/fetch_transcript.py --pending),Bash(git add:*),Bash(git commit:*)"
+  # Claude reads untrusted transcripts, so it may only write inside wiki/ and run no git itself.
+  claude -p "Follow the Wiki update procedure in CLAUDE.md for every file listed by \`uv run tools/fetch_transcript.py --pending\`." \
+    --permission-mode default --allowedTools "Read,Glob,Grep,Edit(wiki/**),Write(wiki/**),Bash(uv run tools/fetch_transcript.py --pending)"
 fi
+git add raw wiki
+git diff --cached --quiet || git commit -q -m "ingest: scheduled"

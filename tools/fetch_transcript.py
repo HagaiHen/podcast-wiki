@@ -11,6 +11,7 @@ import shutil
 import sys
 import tempfile
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -24,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TIMESTAMP = re.compile(r"\d{1,2}:\d{2}[:.,\d]*\s*-->")
 RAW = ROOT / "raw"
 EPISODES = ROOT / "wiki" / "episodes"
+LOG = ROOT / "wiki" / "log.md"
 SEEN = RAW / ".seen"
 PODCAST_NS = "{https://podcastindex.org/namespace/1.0}"
 TRANSCRIPT_PREFERENCE = ("text/vtt", "application/x-subrip", "application/srt",
@@ -54,9 +56,10 @@ def parse_date(s):
         return None
 
 
-def match_episode(items, title, release_date, max_days=2):
-    """items: [(rss_title, pubDate, payload)]. Exact normalized title wins (closest date breaks
-    ties); otherwise one title containing the other, but only within max_days of release_date."""
+def match_episode(items, title, release_date, max_days=2, max_exact_days=7):
+    """items: [(rss_title, pubDate, payload)]. Exact normalized title within max_exact_days wins
+    (an undated exact match only if it's the sole one); otherwise one title containing the other,
+    within max_days. Generic titles ("Trailer") must not grab an old or unrelated episode."""
     want, want_date = normalize(title), parse_date(release_date)
 
     def days(pub):
@@ -64,8 +67,11 @@ def match_episode(items, title, release_date, max_days=2):
         return abs((d - want_date).days) if d and want_date else None
 
     exact = [(days(pub), payload) for t, pub, payload in items if normalize(t) == want]
-    if exact:
-        return min(exact, key=lambda e: 10**6 if e[0] is None else e[0])[1]
+    dated = [e for e in exact if e[0] is not None and e[0] <= max_exact_days]
+    if dated:
+        return min(dated, key=lambda e: e[0])[1]
+    if len(exact) == 1 and exact[0][0] is None:
+        return exact[0][1]
     loose = []
     for t, pub, payload in items:
         n, d = normalize(t), days(pub)
@@ -100,8 +106,8 @@ def find_item(show_name, title, release_date):
     """RSS <item> for the episode, or None if no feed/episode matches. Network errors raise."""
     query = urllib.parse.urlencode({"media": "podcast", "entity": "podcast", "term": show_name, "limit": 5})
     results = json.loads(get(f"https://itunes.apple.com/search?{query}"))["results"]
-    results.sort(key=lambda r: normalize(r.get("collectionName", "")) != normalize(show_name))  # exact name first
-    for result in results[:3]:
+    same_name = [r for r in results if normalize(r.get("collectionName", "")) == normalize(show_name)]
+    for result in same_name or results[:3]:  # only fall back to other shows when no name matches
         if not result.get("feedUrl"):
             continue
         try:
@@ -122,7 +128,14 @@ def transcript_text(item):
     rank = {t: i for i, t in enumerate(TRANSCRIPT_PREFERENCE)}
     for tag in sorted(tags, key=lambda t: rank.get(t.get("type"), len(rank))):
         if tag.get("url"):
-            text = to_text(get(tag.get("url")).decode("utf-8", "replace"), tag.get("type", ""))
+            try:
+                text = to_text(get(tag.get("url")).decode("utf-8", "replace"), tag.get("type", ""))
+            except urllib.error.HTTPError as e:
+                if e.code >= 500:
+                    raise  # transient: skip episode, retry next run
+                continue  # 4xx: dead transcript link, try next tag / Whisper
+            except ValueError:
+                continue  # malformed transcript (bad JSON etc.)
             if text.strip():
                 return text, None
     return None, None
@@ -138,8 +151,13 @@ def whisper_text(item):
     with tempfile.TemporaryDirectory() as tmp:
         audio = Path(tmp) / "episode-audio"
         req = urllib.request.Request(enclosure.get("url"), headers=UA)
-        with urllib.request.urlopen(req, timeout=60) as r, open(audio, "wb") as f:
-            shutil.copyfileobj(r, f)
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r, open(audio, "wb") as f:
+                shutil.copyfileobj(r, f)
+        except urllib.error.HTTPError as e:
+            if e.code >= 500:
+                raise
+            return None, None  # audio permanently gone: fall back to description
         print(f"transcribing {item.findtext('title', '')[:60]}", file=sys.stderr, flush=True)
         result = mlx_whisper.transcribe(
             str(audio), path_or_hf_repo=WHISPER_MODEL,
@@ -168,10 +186,18 @@ def fetch(ep):
                 text, language = fn(item)
                 if text:
                     return text, source, language
-    except Exception as e:  # ponytail: any failure = retry next run; a permanently broken step shows up as repeated skips in log.md
+    except Exception as e:  # ponytail: any other failure = retry next run; repeated skips show up in wiki/log.md
         print(f"skip {ep['id']} ({ep['title']}): {e}", file=sys.stderr)
+        log_skip(ep, e)
         return None
     return ep.get("description") or "", "description", None
+
+
+def log_skip(ep, error, log=None):
+    log = log or LOG  # resolved at call time so tests can redirect it
+    if log.exists():
+        with open(log, "a", encoding="utf-8") as f:
+            f.write(f"\n## {date.today().isoformat()} — skipped: {ep['title']}\n{ep.get('show_name', '')}: {error}\n")
 
 
 def raw_path(ep):
@@ -263,6 +289,10 @@ def selftest():
     assert match_episode(items, "Zone 2 Training with Peter", "2025-03-05") is None  # loose needs date
     assert match_episode(items, "Intro to habits", "2026-03-05") is None  # "intro" is old
     assert match_episode([], "anything", "2026-03-05") is None
+    # exact title from a different year must not match; undated exact match only if unique
+    assert match_episode([("Trailer", "Mon, 05 Mar 2018 08:00:00 +0000", "old")], "Trailer", "2026-03-05") is None
+    assert match_episode([("Trailer", None, "only")], "Trailer", "2026-03-05") == "only"
+    assert match_episode([("Trailer", None, "a"), ("Trailer", None, "b")], "Trailer", "2026-03-05") is None
     # to_text
     vtt = "WEBVTT\n\n1\n00:00:01.000 --> 00:00:03.000\n<v Alice>Hello there</v>\n\n2\n00:00:03.000 --> 00:00:05.000\nHello there\nGeneral idea\n"
     assert to_text(vtt, "text/vtt") == "Hello there\nGeneral idea"
@@ -300,13 +330,45 @@ def selftest():
         mark_seen([{"id": "a", "title": "A"}, {"id": "c", "title": "C"}], seen)  # no duplicate "a"
         assert seen_ids(seen) == {"a", "b", "c"}
         assert seen.read_text(encoding="utf-8").count("a  #") == 1
+    # permanent transcript errors (4xx, malformed) fall through to the next source; 5xx is transient
+    import urllib.error
+    real_get = globals()["get"]
+    item = ET.fromstring('<item xmlns:podcast="https://podcastindex.org/namespace/1.0">'
+                         '<podcast:transcript url="http://x/t.vtt" type="text/vtt"/></item>')
+    try:
+        def gone(url, timeout=60):
+            raise urllib.error.HTTPError(url, 404, "Not Found", None, None)
+        globals()["get"] = gone
+        assert transcript_text(item) == (None, None)
+        def down(url, timeout=60):
+            raise urllib.error.HTTPError(url, 503, "Unavailable", None, None)
+        globals()["get"] = down
+        try:
+            transcript_text(item)
+            raise AssertionError("5xx should propagate")
+        except urllib.error.HTTPError:
+            pass
+    finally:
+        globals()["get"] = real_get
+    # skips are appended to the wiki log
+    with tempfile.TemporaryDirectory() as tmp:
+        log = Path(tmp) / "log.md"
+        log.write_text("# Ingest log\n", encoding="utf-8")
+        log_skip(ep, OSError("network down"), log)
+        assert "skipped: Part 2: \"Rome\"" in log.read_text(encoding="utf-8")
+        assert "network down" in log.read_text(encoding="utf-8")
     # fetch: transient error -> None (retry later); no match -> description
     real_find_item = globals()["find_item"]
     try:
         def network_down(*_):
             raise OSError("network down")
         globals()["find_item"] = network_down
-        assert fetch(ep) is None
+        real_log = globals()["LOG"]
+        globals()["LOG"] = Path(tempfile.mkdtemp()) / "none.md"  # nonexistent: log_skip is a no-op
+        try:
+            assert fetch(ep) is None
+        finally:
+            globals()["LOG"] = real_log
         globals()["find_item"] = lambda *_: None
         assert fetch(ep) == ("desc text", "description", None)
     finally:
