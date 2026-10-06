@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Agent-Ready Products (marketing to agents)
@@ -18,6 +18,7 @@ updated: 2026-10-06
 - Big companies are moving too: Stripe's CLI, a bank (Mercury), Salesforce going "headless" for agents ([[episodes/langtalks--69-marketing-for-agents]]).
 - Consumers: with ~1B ChatGPT monthly users asking it which insurance to buy, providers it can't quote get skipped ([[episodes/langtalks--69-marketing-for-agents]]).
 - SaaS isn't dead: old users keep using classic SaaS; agents open *additional* demand few serve yet ([[episodes/langtalks--69-marketing-for-agents]]).
+- An ecosystem is rebuilding the internet for agents: AgentMail (inboxes), Resend (email), Browser Use and similar (web UI), agent phone services, Tavily (search). Most software was built for eyes and clicks ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
 
 ## Disagreements & open questions
 
@@ -27,4 +28,4 @@ updated: 2026-10-06
 - [ ] Ship a CLI with OAuth login so tokens never enter the agent's context ([[episodes/langtalks--69-marketing-for-agents]])
 
 ## Related
-[[concepts/skill-engineering]] · [[concepts/agent-security]] · [[concepts/agent-workspaces]]
+[[concepts/skill-engineering]] · [[concepts/agent-security]] · [[concepts/agent-workspaces]] · [[concepts/ai-growth-marketing]]

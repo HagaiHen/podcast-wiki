@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Workflow Automation (no-code + AI agents)
@@ -17,6 +17,7 @@ updated: 2026-10-06
 - n8n vs Make/Zapier/Flowise/Langflow: spans simple to complex, strong LangChain-based agent nodes (also composable from raw LangChain components), per-workflow-run pricing instead of per step ([[episodes/langtalks--56-n8n]]).
 - Getting from 30–40% to 90%+ reliability is the real work: execution history replayed in the editor for debugging; built-in evals; manual review of low-risk outputs (e.g. labels) at first ([[episodes/langtalks--56-n8n]]).
 - Non-developers skipping SDLC stages is powerful but risky: those processes exist for security and quality ([[episodes/langtalks--56-n8n]]).
+- Haslavsky's split: ~99% of production agents are scripted agentic workflows (n8n to Lovable-built scripts); autonomous agents (OpenClaw, Hermes) add learning by iteration ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
 
 ## Disagreements & open questions
 - No-code builders vs conversational assistants: n8n's visual interface is easy to read but unnatural to build in; chat-built dynamic workflows may replace it ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -26,4 +27,4 @@ updated: 2026-10-06
 - [ ] Assign an automation owner to serve non-technical teams' small workflow requests ([[episodes/langtalks--56-n8n]])
 
 ## Related
-[[concepts/personal-ai-assistants]] · [[concepts/ai-sdlc]] · [[concepts/llm-evals]]
+[[concepts/personal-ai-assistants]] · [[concepts/ai-sdlc]] · [[concepts/llm-evals]] · [[concepts/ai-growth-marketing]]

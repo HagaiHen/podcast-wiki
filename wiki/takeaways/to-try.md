@@ -123,3 +123,5 @@
 - [ ] Trace audit: trim context you scroll past — [[concepts/context-engineering]] · [[episodes/langtalks--55-context-engineering]]
 - [ ] Files as agent working memory before vector memory — [[concepts/agent-memory]] · [[episodes/langtalks--55-context-engineering]]
 - [ ] Stable tool list + logit masking instead of tool swapping — [[concepts/llm-cost-optimization]] · [[episodes/langtalks--55-context-engineering]]
+- [ ] Give an autonomous agent an outcome + tools; ask what it learned — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--28-ai-marketing-enso]]
+- [ ] Feed post performance back into AI copywriting — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--28-ai-marketing-enso]]

@@ -19,6 +19,7 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/ai-growth-marketing]]: agentic growth hacking, autonomous outreach, personalization
 - [[concepts/agent-ready-products]]: selling to agents: skills, MCP, marketplaces, CLI auth
 - [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
 - [[concepts/workflow-automation]]: no-code automation + agents (n8n)
@@ -63,6 +64,7 @@
 
 ## Shows
 - [[shows/ai-engineering-podcast]]: AI Engineering (AI אנג׳נירינג)
+- [[shows/ignore-instructions]]: Ignore the Instructions (תתעלם מההוראות)
 - [[shows/langtalks]]: LangTalks
 - [[shows/osim-tochna]]: Osim Tochna (עושים תוכנה)
 - [[shows/lazy-investing]]: Investing for the Lazy (השקעות לעצלנים)
@@ -83,6 +85,7 @@
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
 - [[people/meytar-zemer]]: neuroscientist (memory)
+- [[people/micky-haslavsky]]: founder at enso (agentic marketing)
 - [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
@@ -94,6 +97,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/ignore-instructions--28-ai-marketing-enso]]: #28 How AI Is Changing Marketing (2026-09-08)
 - [[episodes/langtalks--55-context-engineering]]: #55 Context Engineering (2025-10-11)
 - [[episodes/langtalks--56-n8n]]: #56 n8n (2025-10-25)
 - [[episodes/langtalks--57-memory]]: #57 Memory (2025-11-16)
