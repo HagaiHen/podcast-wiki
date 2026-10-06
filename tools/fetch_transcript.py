@@ -2,6 +2,7 @@
 
   uv run tools/fetch_transcript.py <episodes.json>   # fetch new episodes, print new raw paths
   uv run tools/fetch_transcript.py --pending         # raw files with no wiki episode page yet
+  uv run tools/fetch_transcript.py --mark-seen <episodes.json>  # never ingest these (unless already ingested)
   uv run tools/fetch_transcript.py --selftest
 """
 import json
@@ -23,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TIMESTAMP = re.compile(r"\d{1,2}:\d{2}[:.,\d]*\s*-->")
 RAW = ROOT / "raw"
 EPISODES = ROOT / "wiki" / "episodes"
+SEEN = RAW / ".seen"
 PODCAST_NS = "{https://podcastindex.org/namespace/1.0}"
 TRANSCRIPT_PREFERENCE = ("text/vtt", "application/x-subrip", "application/srt",
                          "application/json", "text/html", "text/plain")
@@ -198,6 +200,22 @@ def ingested_ids(raw=RAW):
     return ids
 
 
+def seen_ids(path=SEEN):
+    """Spotify ids the user chose never to ingest (one per line, '#' comments allowed)."""
+    if not path.exists():
+        return set()
+    return {line.split("#")[0].strip() for line in path.read_text(encoding="utf-8").splitlines()} - {""}
+
+
+def mark_seen(episodes, path=SEEN):
+    known = seen_ids(path)
+    with open(path, "a", encoding="utf-8") as f:
+        for ep in episodes:
+            if ep["id"] not in known:
+                f.write(f"{ep['id']}  # {ep.get('show_name', '')} — {ep['title']}\n")
+                known.add(ep["id"])
+
+
 def pending(raw=RAW, episodes_dir=EPISODES, root=ROOT):
     pages = " ".join(p.read_text(encoding="utf-8") for p in episodes_dir.glob("*.md")) if episodes_dir.exists() else ""
     rels = (str(p.relative_to(root)) for p in sorted(raw.rglob("*.md")))
@@ -205,7 +223,7 @@ def pending(raw=RAW, episodes_dir=EPISODES, root=ROOT):
 
 
 def process(episodes):
-    done = ingested_ids()
+    done = ingested_ids() | seen_ids()
     for ep in episodes:
         if ep["id"] in done:
             continue
@@ -274,6 +292,14 @@ def selftest():
         assert ingested_ids(raw) == {"ep1", "ep2"}
         (episodes_dir / "e.md").write_text(f"raw: {raw / 'show1' / 'a.md'}", encoding="utf-8")
         assert pending(raw, episodes_dir, root=Path(tmp).parent) == [str((raw / "show1" / "b.md").relative_to(Path(tmp).parent))]
+    # seen list: ids skipped forever; comments and blank lines ignored; missing file = empty
+    with tempfile.TemporaryDirectory() as tmp:
+        seen = Path(tmp) / ".seen"
+        assert seen_ids(seen) == set()
+        mark_seen([{"id": "a", "title": "A"}, {"id": "b", "title": "B: x"}], seen)
+        mark_seen([{"id": "a", "title": "A"}, {"id": "c", "title": "C"}], seen)  # no duplicate "a"
+        assert seen_ids(seen) == {"a", "b", "c"}
+        assert seen.read_text(encoding="utf-8").count("a  #") == 1
     # fetch: transient error -> None (retry later); no match -> description
     real_find_item = globals()["find_item"]
     try:
@@ -292,6 +318,9 @@ if __name__ == "__main__":
     arg = sys.argv[1] if len(sys.argv) > 1 else ""
     if arg == "--selftest":
         selftest()
+    elif arg == "--mark-seen":  # mark every not-yet-ingested episode in the file as seen
+        done = ingested_ids()
+        mark_seen([e for e in json.loads(Path(sys.argv[2]).read_text(encoding="utf-8")) if e["id"] not in done])
     elif arg == "--pending":
         print("\n".join(pending()))
     elif arg:
