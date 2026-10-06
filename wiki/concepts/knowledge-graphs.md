@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Knowledge Graphs & Ontology
@@ -14,10 +14,11 @@ updated: 2026-10-06
 - Databricks Genie Ontology ranks "snippets" (docs, tables, dashboards, markdown, *people*) with a relevance model (OntoRank) and can tell an agent "this only lives with this person; go ask him" ([[episodes/ai-engineering-podcast--company-brain]]).
 - Key elements to extract: actors, interactions, time (relative urgency), rationales, dependencies ([[episodes/ai-engineering-podcast--company-brain]]).
 - Maintenance options include keeping only metadata/references plus cleanup jobs ([[episodes/ai-engineering-podcast--company-brain]]).
+- Topology maps help agents: a customer-validated map of Kubernetes resource relationships, serialized as YAML in the prompt, beat letting the agent rediscover them ([[episodes/langtalks--65-ai-sre]]).
 
 ## Disagreements & open questions
 
 ## Takeaways
 
 ## Related
-[[concepts/company-brain]] · [[concepts/rag]]
+[[concepts/company-brain]] · [[concepts/rag]] · [[concepts/ai-sre]]

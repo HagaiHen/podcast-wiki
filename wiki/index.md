@@ -11,6 +11,7 @@
 - [[concepts/fomo]]: others' gains push you into risk
 
 ## AI Engineering — [[hubs/ai-engineering]]
+- [[concepts/ai-sre]]: agents that investigate and heal production
 - [[concepts/ai-sdlc]]: agent teams across the dev lifecycle; start at the edges
 - [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
@@ -26,6 +27,7 @@
 - [[concepts/proactive-ai]]: the AI UX paradox; surface capabilities, bring answers to users
 - [[concepts/future-of-software-engineering]]: coding is dead, engineering isn't
 - [[concepts/llm-pipelines]]: deterministic LLM pipelines vs agents in production
+- [[concepts/ai-engineering-metrics]]: adoption → productivity → quality of AI coding
 - [[concepts/ai-finops]]: attributing AI spend; per-developer benchmarks
 - [[concepts/ai-gateway]]: central routing, metering, security for LLM calls
 - [[concepts/llm-evals]]: offline + online evals, LLM-as-judge, model A/B tests
@@ -61,9 +63,11 @@
 - [[people/amit-bendor]]: host of Osim Tochna
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
 - [[people/dana-maman]]: AI builder, personal AI OS
+- [[people/asaf-savich]]: AI dev lead, Komodor
 - [[people/avi-lumelsky]]: production LLM lead, Oligo
 - [[people/dor-cohen]]: AI infra lead, monday.com
 - [[people/gavriel-cohen]]: creator of NanoClaw
+- [[people/liad-elidan]]: CEO of Milestone
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
@@ -75,6 +79,8 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--64-ai-coding-metrics]]: #64 AI Coding Metrics (2026-03-08)
+- [[episodes/langtalks--65-ai-sre]]: #65 AI SRE (2026-03-21)
 - [[episodes/langtalks--66-scaling-llmops]]: #66 Scaling LLMOps (2026-04-12)
 - [[episodes/langtalks--67-finops-for-ai]]: #67 FinOps for AI (2026-04-27)
 - [[episodes/langtalks--68-ai-sdlc]]: #68 AI-SDLC (2026-05-24)

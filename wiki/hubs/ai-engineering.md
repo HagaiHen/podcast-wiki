@@ -6,6 +6,8 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/ai-engineering-metrics]]: measuring coding-agent impact
+- [[concepts/ai-sre]]: AI for production reliability
 - [[concepts/llm-pipelines]]: when a pipeline beats an agent
 - [[concepts/ai-finops]]: managing and attributing AI spend
 - [[concepts/ai-sdlc]]: AI across the software lifecycle

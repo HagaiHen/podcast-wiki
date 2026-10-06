@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # AI-SDLC (agents across the dev lifecycle)
@@ -16,6 +16,7 @@ updated: 2026-10-06
 - Routing by blast radius: one line in auth may need human eyes, while 100 low-risk lines may not. Complexity also decides whether a plan is required. SRE-type fixes such as reverts can ship without human review ([[episodes/langtalks--68-ai-sdlc]]).
 - Adoption friction: making developers decide upfront between remote and local execution failed; mid-flow gates where they can steer, and easy handoff to local work, help ([[episodes/langtalks--68-ai-sdlc]]).
 - Start at the edges: bug triage, on-call investigation and routing; the core flow is mentally harder because developers sign off on that work ([[episodes/langtalks--68-ai-sdlc]]).
+- Measuring the AI-SDLC needs a data lake joining Git, Jira, CI/CD, and agent telemetry; see [[concepts/ai-engineering-metrics]] ([[episodes/langtalks--64-ai-coding-metrics]]).
 
 ## Disagreements & open questions
 - Org knowledge and skill sharing remain unsolved; every team does it differently ([[episodes/langtalks--68-ai-sdlc]]).
@@ -26,4 +27,4 @@ updated: 2026-10-06
 - [ ] Route agent tasks to human review by blast radius, not line count ([[episodes/langtalks--68-ai-sdlc]])
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]]
+[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]]

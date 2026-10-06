@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # AI FinOps (attributing and managing AI spend)
@@ -18,6 +18,7 @@ updated: 2026-10-06
 - AI in production costs much more than AI for coding; companies still happily open the tap for coding when it boosts productivity ([[episodes/langtalks--67-finops-for-ai]]).
 - Prediction: the theoretical $1–2k/month per-developer ceiling will break; money becomes tokens, intelligence, energy ([[episodes/langtalks--67-finops-for-ai]]).
 - Mandatory project tags on an internal LLM API answer whether, say, the back office is half the Bedrock bill or negligible ([[episodes/langtalks--66-scaling-llmops]]).
+- Spend should be read alongside productivity metrics: productivity per dollar ([[episodes/langtalks--64-ai-coding-metrics]]).
 
 ## Disagreements & open questions
 - Is cost even the issue? One host argues flat $200 subscriptions make it moot and the real question is business impact ([[episodes/langtalks--67-finops-for-ai]]).
@@ -28,4 +29,4 @@ updated: 2026-10-06
 - [ ] Compute full unit economics per AI feature (tokens + infra + tools) ([[episodes/langtalks--67-finops-for-ai]])
 
 ## Related
-[[concepts/ai-gateway]] · [[concepts/llm-cost-optimization]] · [[concepts/harness-engineering]]
+[[concepts/ai-gateway]] · [[concepts/llm-cost-optimization]] · [[concepts/harness-engineering]] · [[concepts/ai-engineering-metrics]]

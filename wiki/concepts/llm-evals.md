@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 5
 updated: 2026-10-06
 ---
 # LLM Evals
@@ -24,6 +24,8 @@ updated: 2026-10-06
 - Orchestrator/entry-point agents are far harder to evaluate than leaf agents with defined input/output ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Live demos expose non-determinism: a senior exec asked for an unrehearsed prompt mid-acquisition demo (it happened to answer even better) ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - An existing paid data feed can serve as the eval set: Oligo's pipeline had to match the feed's 4% coverage, then grew to ~60% ([[episodes/langtalks--66-scaling-llmops]], [[people/avi-lumelsky]]).
+- Shadow runs: release v1.1 (and variants) silently beside v1.0 in production; an LLM judge scores each run and another compares pairs across thousands of real cases, on accuracy, tokens, and latency. New models get verdicts within hours or days on real traffic ([[episodes/langtalks--65-ai-sre]], [[people/asaf-savich]]).
+- Custom agents (testing agents, review agents, auto-merge) need a success baseline that rises per version: v0 writes tests at all, v1 at least one passes the build, v2 all pass. Label agent-authored PRs so you can join them with CI outcomes ([[episodes/langtalks--64-ai-coding-metrics]], [[people/liad-elidan]]).
 
 ## Disagreements & open questions
 
@@ -33,6 +35,8 @@ updated: 2026-10-06
 - [ ] Score a sample of production sessions continuously (online evals) ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Roll out new models gradually as an A/B test, comparing quality and cost ([[episodes/ai-engineering-podcast--ai-infra-at-scale]])
 - [ ] Cluster real user intents (manually at first) and turn known ones into eval sets before scaling ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]])
+- [ ] Shadow-run candidate versions beside production and compare pairwise with an LLM judge ([[episodes/langtalks--65-ai-sre]])
+- [ ] Version custom agents against an explicit, rising success baseline ([[episodes/langtalks--64-ai-coding-metrics]])
 
 ## Related
-[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]]
+[[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]] · [[concepts/ai-sre]] · [[concepts/ai-engineering-metrics]]

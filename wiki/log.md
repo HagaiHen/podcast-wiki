@@ -79,3 +79,13 @@ updated: concepts/{llm-cost-optimization, ai-gateway}, shows/langtalks, hubs/ai-
 source: whisper
 created: episodes/langtalks--66-scaling-llmops, concepts/llm-pipelines, people/avi-lumelsky
 updated: concepts/{model-selection, llm-cost-optimization, llm-evals, ai-gateway, ai-finops}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #65 AI SRE (Asaf Savich)
+source: whisper
+created: episodes/langtalks--65-ai-sre, concepts/ai-sre, people/asaf-savich
+updated: concepts/{llm-evals, context-engineering, knowledge-graphs}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #64 AI Coding Metrics (Liad Elidan)
+source: whisper
+created: episodes/langtalks--64-ai-coding-metrics, concepts/ai-engineering-metrics, people/liad-elidan
+updated: concepts/{llm-evals, ai-sdlc, ai-finops}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
