@@ -159,3 +159,8 @@ updated: concepts/{agent-memory, rag, ai-hype}, hubs/ai-engineering, index, take
 source: whisper
 created: episodes/explainable--163-hidden-cost-of-agents
 updated: concepts/{llm-cost-optimization, ai-gateway, ai-verification, ai-guardrails, future-of-software-engineering, llm-reasoning}, shows/explainable, index, takeaways/to-try
+
+## 2026-10-07 — ExplAInable: #157 Cracking Hebrew: Training Hebatron
+source: whisper
+created: episodes/explainable--157-training-hebatron, concepts/hebrew-llms
+updated: concepts/{llm-pretraining, llm-evals, open-weight-models}, shows/explainable, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

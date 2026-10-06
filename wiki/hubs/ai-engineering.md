@@ -6,6 +6,7 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/hebrew-llms]]: building Hebrew language models
 - [[concepts/continual-learning]]: learning after deployment
 - [[concepts/llm-pretraining]]: pre-training craft
 - [[concepts/llm-reasoning]]: how models reason

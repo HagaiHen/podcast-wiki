@@ -4,6 +4,7 @@
 - *Investing for the Lazy* (השקעות לעצלנים) by [[people/tamir]] — host's own book — [[episodes/lazy-investing--108-the-leverage-trap]]
 
 ## Tools
+- Hebatron: open Hebrew LLM (Nemotron-based) — [[episodes/explainable--157-training-hebatron]]
 - Manus blog post "Context Engineering for AI Agents: Lessons from Building Manus" and LangChain's "Context Engineering for Agents" — [[episodes/langtalks--55-context-engineering]]
 - LangSmith / Langfuse: tracing to audit agent context — [[episodes/langtalks--55-context-engineering]]
 - n8n: no-code automation + AI agents; start on cloud, self-host later — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]

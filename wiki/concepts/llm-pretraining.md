@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-07
 ---
 # LLM Pre-training
@@ -16,6 +16,10 @@ updated: 2026-10-07
 - Folklore: multi-head latent attention (low-rank shared embeddings saving ~90% compute) existed quietly before DeepSeek published it. If you don't know such tricks, you won't invent them ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Academic papers now test on 1–7B models without money for scale, so results are "vibe papers": recommendations, not validation. The best evaluation is whether users use it ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Storage and interconnect, not just GPUs, are major unspoken bottlenecks ([[episodes/explainable--164-gilad-levi-continual-learning]]).
+- Batch size can be the hidden lever: per *An Empirical Model of Large-Batch Training*, ~250B tokens should span ~25k–100k steps. Raising the global batch from 2M to ~16.5M tokens and scaling the learning rate by √(batch ratio) (~2.9× for 8×; *Don't Decay the Learning Rate, Increase the Batch Size*) made Hebatron's benchmarks jump after ~200 failed runs ([[episodes/explainable--157-training-hebatron]]).
+- Data order matters, not just mix: the last gains came from training on the same datasets in a different order. With 20 datasets the search space explodes, so intuition beats theory ([[episodes/explainable--157-training-hebatron]]).
+- SFT needs loss masking (loss only on responses, not user input), which complicates sequence packing (filling the context with several texts to avoid padding); NeMo/Megatron Bridge handles packing for pre-training but not masked SFT well ([[episodes/explainable--157-training-hebatron]]).
+- Infra economics: NeMo/Megatron Bridge doubled throughput vs DeepSpeed (halving cost). B300 Blackwell GPUs cost ~2× H200 but ran ~7× faster (2k → 14k tokens/s), cutting a full CPT run from a projected ~$200k to tens of thousands. Budget-capped bookings (e.g. ~$20k per two-day 64-GPU cluster) force experiments to be planned a week ahead ([[episodes/explainable--157-training-hebatron]]).
 
 ## Disagreements & open questions
 - Can transformers be understood from inside? Interpretability researchers (e.g. at Anthropic) try to localize facts in MLPs; Levi thinks the general problem is like predicting a three-body system: sub-problems yes, the whole no ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -23,4 +27,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]]
+[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]]

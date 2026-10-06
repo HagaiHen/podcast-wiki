@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-06
+sources: 8
+updated: 2026-10-07
 ---
 # LLM Evals
 
@@ -29,6 +29,9 @@ updated: 2026-10-06
 - Voice: feed the recorded *audio* to an audio-capable LLM judge (GPT-4 audio) to catch interruptions, noise, and bad audio that transcripts hide; post every call recording to Slack for team listening ([[episodes/langtalks--61-voice-agents]], [[people/shay-davidson]]).
 - Simulated callers ("avatars") with personas (chatty, angry, accented, other languages) per popular intent stress-test robustness; third-party services offer the same ([[episodes/langtalks--61-voice-agents]]).
 - Defining what makes output good is becoming a core PM skill. Expect simulated business environments for RL and reward/feedback endpoints from model providers in 2026 ([[episodes/langtalks--58-reinvent-predictions]]).
+- Loss, benchmarks, and arena preference decouple: across ~200 Hebatron runs, train and validation loss fell while benchmarks got worse, and benchmarks didn't predict arena preference. Use loss and benchmarks only as negative signals (a big drop means trouble) ([[episodes/explainable--157-training-hebatron]]).
+- The team released the version that scored ~3 points lower on benchmarks because users preferred it in the arena: users use models, they don't run benchmarks ([[episodes/explainable--157-training-hebatron]]).
+- Arenas can be gamed too (the Meta Llama arena controversy) ([[episodes/explainable--157-training-hebatron]]).
 
 ## Disagreements & open questions
 
@@ -40,6 +43,7 @@ updated: 2026-10-06
 - [ ] Cluster real user intents (manually at first) and turn known ones into eval sets before scaling ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]])
 - [ ] Shadow-run candidate versions beside production and compare pairwise with an LLM judge ([[episodes/langtalks--65-ai-sre]])
 - [ ] Version custom agents against an explicit, rising success baseline ([[episodes/langtalks--64-ai-coding-metrics]])
+- [ ] Treat loss and benchmark drops as alarms, but pick releases by user or arena preference ([[episodes/explainable--157-training-hebatron]])
 
 ## Related
 [[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]] · [[concepts/ai-sre]] · [[concepts/ai-engineering-metrics]] · [[concepts/voice-agents]]

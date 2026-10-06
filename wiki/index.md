@@ -19,6 +19,7 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
 - [[concepts/continual-learning]]: models that keep learning after training
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
 - [[concepts/llm-reasoning]]: token-space vs latent reasoning; RL reasoning
@@ -107,6 +108,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/explainable--157-training-hebatron]]: #157 Cracking Hebrew: Training Hebatron (2026-06-16)
 - [[episodes/explainable--163-hidden-cost-of-agents]]: #163 A Million Dollars a Month: The Expensive Secret of AI Agents (2026-09-13)
 - [[episodes/explainable--164-gilad-levi-continual-learning]]: #164 Child Prodigy, Transformers and Continual Learning (2026-09-22)
 - [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]: #20 The Man Behind the AI Builders Community (2026-03-24)

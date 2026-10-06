@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-06
+sources: 3
+updated: 2026-10-07
 ---
 # Open-Weight Models
 
@@ -16,6 +16,7 @@ updated: 2026-10-06
 - monday.com doesn't call Chinese vendors' APIs; it runs models via sub-processors (AWS, Google, NVIDIA) under existing security and data-residency contracts, inside its VPC ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
 - Use-case fit: coding output is largely value-neutral; conversation differs (e.g. answers about Taiwan) ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - US enterprise customers may not want Chinese models, so model choice must stay with the customer, with transparency ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- "Open" varies: NVIDIA Nemotron released weights, training data, and SFT data, which made continued pre-training reproducible. Licenses ruled out some candidates (commercial use) ([[episodes/explainable--157-training-hebatron]]).
 
 ## Disagreements & open questions
 
@@ -23,4 +24,4 @@ updated: 2026-10-06
 - [ ] Benchmark an open-weight model (e.g. GLM, Kimi, Qwen) on your workload for cost savings ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/model-selection]] · [[concepts/llm-inference]] · [[concepts/ai-guardrails]] · [[concepts/ai-gateway]]
+[[concepts/model-selection]] · [[concepts/llm-inference]] · [[concepts/ai-guardrails]] · [[concepts/ai-gateway]] · [[concepts/hebrew-llms]]
