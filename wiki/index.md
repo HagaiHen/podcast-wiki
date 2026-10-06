@@ -68,6 +68,9 @@
 - [[concepts/knowledge-rot]]: stale knowledge; routines that check themselves
 
 ## Unsorted
+- [[concepts/biohacking]]: N=1 self-experiments, sensors, caveats (health)
+- [[concepts/personal-genomics]]: whole-genome sequencing, drug responses (health)
+- [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
 
 ## Shows
 - [[shows/explainable]]: ExplAInable
@@ -108,6 +111,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/explainable--152-biohacking-like-a-data-scientist]]: #152 Biohacking Like a Data Scientist (2026-04-15)
 - [[episodes/explainable--157-training-hebatron]]: #157 Cracking Hebrew: Training Hebatron (2026-06-16)
 - [[episodes/explainable--163-hidden-cost-of-agents]]: #163 A Million Dollars a Month: The Expensive Secret of AI Agents (2026-09-13)
 - [[episodes/explainable--164-gilad-levi-continual-learning]]: #164 Child Prodigy, Transformers and Continual Learning (2026-09-22)

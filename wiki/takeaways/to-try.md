@@ -137,3 +137,7 @@
 - [ ] Review AI-written tests for meaning, not just green status — [[concepts/ai-verification]] · [[episodes/explainable--163-hidden-cost-of-agents]]
 - [ ] Adapting a model to a new language: compare tokenizer tokens-per-word first — [[concepts/hebrew-llms]] · [[episodes/explainable--157-training-hebatron]]
 - [ ] Use loss and benchmark drops as alarms, but pick releases by user preference — [[concepts/llm-evals]] · [[episodes/explainable--157-training-hebatron]]
+- [ ] Try a CGM or ketone meter for a few weeks to see real responses to meals or fasting — [[concepts/biohacking]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
+- [ ] Self-experiments: alternate conditions A-B-A-B to reduce time effects — [[concepts/biohacking]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
+- [ ] Consider whole-genome sequencing and check pharmacogenomic variants before you need the drugs — [[concepts/personal-genomics]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
+- [ ] Ask whether a medical risk number accounts for evidence you already have — [[concepts/bayesian-updating]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]

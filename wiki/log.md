@@ -164,3 +164,8 @@ updated: concepts/{llm-cost-optimization, ai-gateway, ai-verification, ai-guardr
 source: whisper
 created: episodes/explainable--157-training-hebatron, concepts/hebrew-llms
 updated: concepts/{llm-pretraining, llm-evals, open-weight-models}, shows/explainable, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-07 — ExplAInable: #152 Biohacking Like a Data Scientist
+source: whisper
+created: episodes/explainable--152-biohacking-like-a-data-scientist, concepts/{biohacking, personal-genomics, bayesian-updating}
+updated: shows/explainable, index, takeaways/to-try
