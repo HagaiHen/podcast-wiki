@@ -27,12 +27,11 @@ def load_env():
 def client():
     import spotipy
     from spotipy.cache_handler import CacheFileHandler
-    from spotipy.oauth2 import SpotifyOAuth
+    from spotipy.oauth2 import SpotifyPKCE
 
     load_env()
-    return spotipy.Spotify(auth_manager=SpotifyOAuth(
+    return spotipy.Spotify(auth_manager=SpotifyPKCE(  # PKCE: no client secret to store
         client_id=os.environ["SPOTIFY_CLIENT_ID"],
-        client_secret=os.environ["SPOTIFY_CLIENT_SECRET"],
         redirect_uri="http://127.0.0.1:8888/callback",
         scope=SCOPE,
         cache_handler=CacheFileHandler(cache_path=str(ROOT / ".spotify_cache")),
