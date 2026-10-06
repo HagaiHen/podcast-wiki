@@ -13,6 +13,7 @@ import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from itertools import groupby
 from datetime import date
 from email.utils import parsedate_to_datetime
 from html import unescape
@@ -138,9 +139,22 @@ def whisper_text(item):
         with urllib.request.urlopen(req, timeout=60) as r, open(audio, "wb") as f:
             shutil.copyfileobj(r, f)
         print(f"transcribing {item.findtext('title', '')[:60]}", file=sys.stderr, flush=True)
-        result = mlx_whisper.transcribe(str(audio), path_or_hf_repo=WHISPER_MODEL, verbose=False)  # verbose=False = tqdm progress bar on stderr
-    text = "\n".join(seg["text"].strip() for seg in result.get("segments", [])) or result["text"].strip()
-    return text, result.get("language")
+        result = mlx_whisper.transcribe(
+            str(audio), path_or_hf_repo=WHISPER_MODEL,
+            verbose=False,  # tqdm progress bar on stderr
+            condition_on_previous_text=False,  # feeding prior output back in causes repetition loops that drop content
+        )
+    segments = collapse_repeats([seg["text"].strip() for seg in result.get("segments", [])])
+    return "\n".join(segments) or result["text"].strip(), result.get("language")
+
+
+def collapse_repeats(lines, max_run=2):
+    """A line repeated more than max_run times in a row is a Whisper loop: keep one copy."""
+    out = []
+    for line, group in groupby(lines):
+        run = len(list(group))
+        out += [line] * (run if run <= max_run else 1)
+    return out
 
 
 def fetch(ep):
@@ -238,6 +252,11 @@ def selftest():
     assert to_text(srt, "application/x-subrip") == "First line\nSecond line"
     assert to_text('{"segments": [{"body": "a"}, {"body": "b"}]}', "application/json") == "a b"
     assert to_text("<p>Hi &amp; bye</p>\n<p>next</p>", "text/html") == "Hi & bye next"
+    # collapse_repeats: Whisper repetition loops collapse to one line; normal repeats survive
+    loop = ["a", "b"] + ["loop line"] * 22 + ["c"]
+    assert collapse_repeats(loop) == ["a", "b", "loop line", "c"]
+    assert collapse_repeats(["yes", "yes", "no"]) == ["yes", "yes", "no"]  # 2 in a row is normal speech
+    assert collapse_repeats([]) == []
     # render + ingested_ids roundtrip (quotes/colons/Hebrew in title survive frontmatter)
     import tempfile
     ep = {"id": "ep1", "show_name": "עושים היסטוריה", "show_id": "show1", "title": 'Part 2: "Rome"',
