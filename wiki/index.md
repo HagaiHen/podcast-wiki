@@ -14,6 +14,9 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
+- [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
+- [[concepts/decision-classifiers]]: fast calibrated classifiers (e.g. Jev) for bulk decisions
 - [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
 - [[concepts/proactive-ai]]: the AI UX paradox; surface capabilities, bring answers to users
@@ -61,6 +64,8 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--72-personal-assistant-agent]]: #72 Personal Assistant Agent (2026-08-16)
+- [[episodes/langtalks--74-jev]]: #74 Jev (2026-09-22)
 - [[episodes/ai-engineering-podcast--the-ai-ux-paradox]]: The AI UX Paradox (2026-08-06)
 - [[episodes/ai-engineering-podcast--ai-infra-at-scale]]: AI Infra at Scale (2026-08-17)
 - [[episodes/ai-engineering-podcast--company-brain]]: Company Brain (2026-09-06)

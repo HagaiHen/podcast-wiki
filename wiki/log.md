@@ -39,3 +39,13 @@ updated: concepts/{model-selection, open-weight-models, ai-guardrails}, shows/ai
 source: whisper
 created: episodes/ai-engineering-podcast--the-ai-ux-paradox, concepts/{proactive-ai, future-of-software-engineering}, people/{matan-cohen, netanel-abergel}
 updated: concepts/{llm-evals, agent-workspaces, context-engineering}, shows/ai-engineering-podcast, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #74 Jev
+source: whisper
+created: episodes/langtalks--74-jev, concepts/decision-classifiers
+updated: concepts/{rag, llm-cost-optimization, ai-hype, ai-guardrails}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #72 Personal Assistant Agent
+source: whisper (one short garbled passage)
+created: episodes/langtalks--72-personal-assistant-agent, concepts/{personal-ai-assistants, skill-engineering}
+updated: concepts/{memory-consolidation, agent-workspaces, personal-ai-os}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try

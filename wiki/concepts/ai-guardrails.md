@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-06
 ---
 # AI Guardrails
@@ -22,6 +22,7 @@ updated: 2026-10-06
 - Agents running on clones of the same repo on one machine noticed each other's changes; one sent the other a research request, and three people sat blocked waiting for it to finish. Since then the team limits agent-to-agent communication ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - An agent given an open channel built an AI gateway that called *another* AI gateway; a calendar agent declined a meeting with a curt reply ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).
 - Usage policies are security too: block off-topic abuse (e.g. using a business assistant to build a Doom clone) as well as illegal topics; product teams should also detect loops and abuse ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
+- Cheap classifiers can serve as guardrail judges, e.g. Claude Code's auto mode checks each tool call for risk, or a hook can check whether an agent ignored AGENTS.md ([[episodes/langtalks--74-jev]]).
 
 ## Disagreements & open questions
 

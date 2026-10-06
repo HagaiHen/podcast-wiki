@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # LLM Cost Optimization
@@ -16,6 +16,7 @@ updated: 2026-10-06
 - Output tokens cost more than input. Chatty, over-explaining answers cost you and the user, so constrain structure and length ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Plan vs execute: plan with Opus, execute with Sonnet, Haiku, or another model, in products as in your own dev workflow ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Prompt routing mid-session breaks the model's cache. A gateway-level cache can add consistency ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- For pure classification at scale, a dedicated classifier can be ~30–100× cheaper and far faster than a small LLM with thinking (see [[concepts/decision-classifiers]], [[episodes/langtalks--74-jev]]).
 
 ## Disagreements & open questions
 

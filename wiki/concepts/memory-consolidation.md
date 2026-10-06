@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Memory Consolidation ("Dreaming")
@@ -12,6 +12,7 @@ updated: 2026-10-06
 - Humans absorb lots of junk daily yet function, thanks to sleep and dreaming. Agents need the equivalent "cron jobs" ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).
 - Nightly job: take everything discussed today, clean it, connect memories, update information, and decide what not to keep ([[episodes/ai-engineering-podcast--company-brain]]).
 - Outcome evidence: feed back which agent tasks passed CI, failed, reached production, or were rolled back, as team-level context for agents and humans ([[episodes/ai-engineering-podcast--company-brain]]).
+- Learning from corrections: a nightly job compares the agent's decisions (meeting tags, email drafts) with the user's edits and infers rules ([[episodes/langtalks--72-personal-assistant-agent]]).
 
 ## Disagreements & open questions
 

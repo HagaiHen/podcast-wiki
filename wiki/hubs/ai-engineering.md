@@ -6,6 +6,9 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/personal-ai-assistants]]: assistants for operational work
+- [[concepts/skill-engineering]]: building and sharing agent skills
+- [[concepts/decision-classifiers]]: cheap, calibrated decisions at scale
 - [[concepts/proactive-ai]]: make AI capabilities discoverable
 - [[concepts/future-of-software-engineering]]: how engineering roles shift
 - [[concepts/ai-gateway]]: one layer for routing, cost, security, trust

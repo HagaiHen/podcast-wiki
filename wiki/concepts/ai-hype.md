@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # AI Hype & Durable Value
@@ -13,6 +13,7 @@ updated: 2026-10-06
 - Companies need stable processes; chasing the next thing isn't right. If it's good, it will stay, and you won't miss it ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Don't build what can be built in 10 minutes with a prompt ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Benchmarks "endanger humanity every week", then the model can't do your task ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
+- Jev was overhyped: a classifier, not an LLM replacement. Benchmark on your own data and A/B test before switching ([[episodes/langtalks--74-jev]]).
 
 ## Disagreements & open questions
 
@@ -21,4 +22,4 @@ updated: 2026-10-06
 - [ ] Sanity-check product ideas: could a prompt recreate this in 10 minutes? ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/model-selection]]
+[[concepts/model-selection]] · [[concepts/decision-classifiers]]

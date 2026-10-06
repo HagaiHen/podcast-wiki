@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Agent Workspaces (the new workplace)
@@ -18,10 +18,11 @@ updated: 2026-10-06
 - It became too eager, messaging people at 2am and nudging him constantly, until he "retired" her and rebuilt on monday's platform ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - A "PA Network" WhatsApp group of 30–40 agents shared skills and deployed sites, which showed that chat is the wrong medium and humans should engage only at decision points ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Lesson: instead of 40 people each building their own agent, build team agents with identity and a guild for collective knowledge (monday.com's "AI teammates") ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- Agents acting with user tokens create "AI slop" noise in shared tools; colleagues stop taking it seriously ([[episodes/langtalks--72-personal-assistant-agent]]).
 
 ## Disagreements & open questions
 
 ## Takeaways
 
 ## Related
-[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]]
+[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]]
