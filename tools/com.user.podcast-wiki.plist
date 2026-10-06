@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.user.podcast-wiki</string>
+  <key>ProgramArguments</key>
+  <array><string>/Users/hagaihen/projects/knowledgebase/tools/scheduled_ingest.sh</string></array>
+  <key>StartInterval</key><integer>21600</integer>
+  <key>EnvironmentVariables</key>
+  <dict><key>PATH</key><string>/Users/hagaihen/.local/bin:/opt/homebrew/bin:/usr/bin:/bin</string></dict>
+  <key>StandardOutPath</key><string>/Users/hagaihen/Library/Logs/podcast-wiki.log</string>
+  <key>StandardErrorPath</key><string>/Users/hagaihen/Library/Logs/podcast-wiki.log</string>
+</dict>
+</plist>
