@@ -21,7 +21,6 @@ updated: 2026-10-07
 - A keep-awake tool lets Claude Code keep running with the MacBook lid closed (handling heat and hotspot) ([[episodes/langtalks--70-our-claude-code-tips]]).
 - The scarce skill is managing *your own* attention across parallel agents, not the agent's context: you must move up from bits and bytes to the bigger picture while agents work ([[episodes/langtalks--63-wake-up]]).
 - BMAD (a spec-driven framework) is overkill end to end, but its early analyst stage (Five Whys, Six Thinking Hats) surfaces product angles before code ([[episodes/langtalks--62-ai-rd-rollout]]).
-
 - Not every heavy user wants orchestration UIs: Idan runs 6–7 terminal tabs of Claude Code side by side and skips worktree-based tools ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - The fun of Claude Code produces "project inflation": many half-finished side projects, feeling spread too thin ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
 

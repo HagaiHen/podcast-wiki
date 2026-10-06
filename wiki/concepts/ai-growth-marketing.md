@@ -18,7 +18,6 @@ updated: 2026-10-07
 - Model: Forward Deployed Marketers plus hundreds of agents, against the old ~5 people per client ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
 - Other uses: an adaptive interview agent screened 300+ candidates in a morning; Manus for research; no AI on finances ("bad at numbers") ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
 - Copywriting tip: feed real performance data (likes, comments, reach) back so the AI learns what works, rather than relying on taste ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
-
 - When software gets 10× cheaper you hear about 10× more products; distribution, not building, is the bottleneck ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - Build in public: Idan grew from 2k to 13k LinkedIn followers in six months writing about his daily building, which brought first users. Talking about internal go-to-market tools attracts investors and customers ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - AI content engines: small teams auto-generate natural-looking TikTok videos (e.g. motion-graphics skills, AI avatars), post across several accounts, plug their app every few posts, and run 3–4 apps through the engine to see what catches. One three-to-four-person team makes hundreds of thousands of dollars a year ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
@@ -31,7 +30,6 @@ updated: 2026-10-07
 ## Takeaways
 - [ ] Give an autonomous agent an outcome (e.g. reach a person, find converting copy) plus tools, and ask it to report what it learned ([[episodes/ignore-instructions--28-ai-marketing-enso]])
 - [ ] Feed post performance data back into your AI copywriting loop ([[episodes/ignore-instructions--28-ai-marketing-enso]])
-
 - [ ] Build in public: post weekly about what you build day to day ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
 
 ## Related

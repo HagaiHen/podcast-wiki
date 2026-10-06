@@ -21,7 +21,6 @@ updated: 2026-10-07
 - Prefer CLIs over MCPs where possible; they're simpler for agents ([[episodes/langtalks--70-our-claude-code-tips]]).
 - The biggest blocker is often plain DevOps: no per-developer environment, shared broken staging, no log access. Map where developers copy-paste between systems and wire those gaps (MCP, tokens, CLI, environment infra) ([[episodes/langtalks--68-ai-sdlc]]).
 - The single most valuable investment for R&D orgs now: an internal platform for agents (environments, docs for internal tools, dev setups) ([[episodes/langtalks--63-wake-up]]).
-
 - Infra is catching up for long-running agents: Vercel and Cloudflare (Durable Objects) make stateless serverless functions stateful, replacing a 4–5-piece stack (queues, Redis memory). Sandboxes (Cloudflare, Vercel, Daytona, E2B) run agent code without risk ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 
 ## Disagreements & open questions

@@ -21,7 +21,6 @@ updated: 2026-10-07
 - Agent-operable projects: a CLAUDE.md for context plus a CLI usable by the operator, by Claude in the repo, and (with approvals) by agents in containers. Setup is a script that offers to run Claude on failures ([[episodes/langtalks--71-claw-architectures]]).
 - For product makers, a skill can simply be an MD file derived from public API docs; split into several files with references if large ([[episodes/langtalks--69-marketing-for-agents]]).
 - Org-wide skills marketplace with an owner: architects or a developer per team push skills; automation can promote repo-level decisions to org rules; skills can be applied by *process* (e.g. frontend work) rather than by team ([[episodes/langtalks--68-ai-sdlc]]).
-
 - A skill packages a specialization with a very high level of detail to produce a high-quality result. Adoption is still thin in big tech: in one Apple Haifa talk, most had used Claude Code, half knew sub-agents, about three used skills ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 
 ## Disagreements & open questions
