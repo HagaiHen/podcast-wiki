@@ -17,7 +17,7 @@ updated: 2026-10-06
 - Frontend proof of work: a Playwright MCP/browser the agent controls (DOM, logs, snapshots) that records a video of the feature clicked through end to end ([[episodes/langtalks--73-harness-engineering]]).
 - A custom agent browser profile can hand off to a human when intervention is needed and record sessions built in ([[episodes/langtalks--73-harness-engineering]]).
 - Add PR-time agents that check code standards, security, and review quality ([[episodes/langtalks--73-harness-engineering]]).
-- Tracing (OpenTelemetry, VictoriaLogs) lets the harness query what the code actually did ([[episodes/langtalks--73-harness-engineering]]).
+- Tracing (OpenTelemetry, VictoriaLogs) lets the harness query what the code actually did. In microservices a change touches several services, and without queryable logs the agent is blind ([[episodes/langtalks--73-harness-engineering]]).
 
 ## Disagreements & open questions
 

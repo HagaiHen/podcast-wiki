@@ -15,6 +15,7 @@ updated: 2026-10-06
 - "Written in blood": lessons learned the hard way ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
 - Guardrails are what make agents trustworthy: an agent is only trusted once it reflects both your information and your judgment ([[episodes/osim-tochna--second-brain-and-llm-wiki]]).
 - Git hook: the agent cannot commit unless test coverage is ≥80%; uncovered code blocks the PR, so it writes the tests ([[episodes/langtalks--73-harness-engineering]]).
+- Same caution from a different angle: popular external skills are a starting point, not a drop-in; customize them (see [[concepts/agent-ready-codebase]], [[episodes/langtalks--73-harness-engineering]]).
 - "No choice" is the essence of a harness: frozen tests (see [[concepts/test-driven-development]]) can't be edited to pass ([[episodes/langtalks--73-harness-engineering]]).
 
 ## Disagreements & open questions

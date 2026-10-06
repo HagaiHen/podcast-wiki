@@ -29,3 +29,4 @@
 - [ ] Require proof-of-work (e.g. Playwright video) for agent-built features — [[concepts/ai-verification]] · [[episodes/langtalks--73-harness-engineering]]
 - [ ] Git hook blocking commits below 80% coverage — [[concepts/ai-guardrails]] · [[episodes/langtalks--73-harness-engineering]]
 - [ ] When correcting an agent, state the reason so it persists — [[concepts/context-engineering]] · [[episodes/langtalks--73-harness-engineering]]
+- [ ] Write custom skills for your org's deploy/design/test/review norms — [[concepts/agent-ready-codebase]] · [[episodes/langtalks--73-harness-engineering]]

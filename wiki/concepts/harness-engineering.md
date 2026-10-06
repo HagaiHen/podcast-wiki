@@ -18,7 +18,7 @@ updated: 2026-10-06
 - Success metric: productivity per token, rising over time not only with smarter models but with each internal tool you add ([[episodes/langtalks--73-harness-engineering]]).
 
 ## Disagreements & open questions
-- Cost: some push to cut agent token spend; the hosts argue tech companies can't afford not to invest, but still measure productivity per token ([[episodes/langtalks--73-harness-engineering]]).
+- Cost: providers moved from flat ~$200/month plans to token billing, and companies push to cut spend (cheaper models, open source). The hosts argue against blind token minimization, but warn against "token-maxing" too: use harness hooks and OpenTelemetry to evaluate what's actually happening ([[episodes/langtalks--73-harness-engineering]]).
 
 ## Takeaways
 - [ ] When an agent fails, ask it which capability/tool it lacks to verify itself, and build that ([[episodes/langtalks--73-harness-engineering]])

@@ -11,6 +11,11 @@ created: episodes/osim-tochna--second-brain-and-llm-wiki, concepts/{llm-wiki, se
 updated: index, takeaways/to-try, takeaways/recommendations
 
 ## 2026-10-06 — LangTalks: #73 Harness Engineering
-source: whisper (partial: repetition loop mid-episode, some content lost)
+source: whisper (re-transcribed after repetition-loop fix; full content)
 created: episodes/langtalks--73-harness-engineering, concepts/{harness-engineering, agent-ready-codebase, test-driven-development}, shows/langtalks
 updated: concepts/{ai-verification, ai-guardrails, context-engineering} (summaries rewritten, sources 1→2), hubs/ai-engineering, index, takeaways/to-try, takeaways/recommendations
+
+
+## 2026-10-06 — LangTalks: #73 Harness Engineering (re-ingest)
+source: whisper (re-transcribed, +4.8KB recovered)
+updated: episodes/langtalks--73-harness-engineering, concepts/{agent-ready-codebase, harness-engineering, ai-verification, ai-guardrails}, takeaways/to-try
