@@ -5,3 +5,4 @@ __pycache__/
 raw/.heard.json
 raw/.test3.json
 raw/.batch.json
+wiki/.obsidian/workspace*.json
