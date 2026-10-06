@@ -139,3 +139,8 @@ updated: concepts/{context-engineering (summary rewritten), agent-memory, multi-
 source: whisper (repetition loop mid-episode, some content lost)
 created: episodes/ignore-instructions--28-ai-marketing-enso, concepts/ai-growth-marketing, shows/ignore-instructions, people/micky-haslavsky
 updated: concepts/{workflow-automation, agent-ready-products, personal-ai-assistants, model-selection}, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-07 — Ignore the Instructions: #24 On the Way to $100M Revenue (Roy Lazar)
+source: whisper (two short garbled stretches)
+created: episodes/ignore-instructions--24-wonderful-road-to-100m, concepts/enterprise-ai-adoption, people/roy-lazar
+updated: concepts/{company-brain, model-selection, voice-agents, ai-hype, ai-rd-rollout, future-of-software-engineering}, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/to-try

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
+sources: 8
 updated: 2026-10-06
 ---
 # Model Selection
@@ -27,6 +27,7 @@ updated: 2026-10-06
 - Beyond picking among API models: training a small task-specific model can beat a general LLM on accuracy and speed; see [[concepts/small-language-models]] ([[episodes/langtalks--59-slms]]).
 - Niche models: some aim to be best under real-time latency, others at long context or specific tasks. Per-intent compute (as GPT-5 varies thinking) may come to inference stacks. Smaller models gain ground as ROI starts to matter ([[episodes/langtalks--58-reinvent-predictions]]).
 - For copywriting (incl. Hebrew), the host finds GPT 5.6 the best; Fable is "genius but hard to talk to" ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
+- Model-agnostic by design: every component (builders, runners) can use Gemini, OpenAI, Anthropic, or xAI behind a generic interface; an ML team keeps benchmarking and swapping per component. A better open-source voice-activity model was adopted within two days ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Future of Software Engineering
@@ -21,6 +21,7 @@ updated: 2026-10-06
 - Two possible paths: smaller R&D orgs, or the same headcount shipping far more (raising the question of whether customers can absorb it) ([[episodes/langtalks--63-wake-up]]).
 - Entry-level jobs get much harder; deep fundamentals (logic, architecture, distributed systems) are needed to handle the last 5% where agents get stuck. Seniors who "were in the trenches" have an edge ([[episodes/langtalks--63-wake-up]]).
 - Companies whose moat was the software itself face commoditization ([[episodes/langtalks--63-wake-up]]).
+- Wonderful "officially stopped writing code" ~6 months before the episode; developers aren't attached to code, so libraries get replaced via "Codex, please implement" overnight ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).

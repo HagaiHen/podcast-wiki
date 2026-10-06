@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
@@ -16,6 +16,7 @@ updated: 2026-10-06
 - GenAI guild: early adopters share success stories in wider forums, run internal workshops, and generate ideas, pulling laggards forward ([[episodes/langtalks--62-ai-rd-rollout]]).
 - The "no-code sprint": he suggested a sprint of writing no code by hand. Harder at first, and people sometimes take pushback hard, but those who push through make the shift ([[episodes/langtalks--62-ai-rd-rollout]]).
 - Give product people access too (Cursor plus repos) so they can ask the code instead of asking engineers ([[episodes/langtalks--62-ai-rd-rollout]]).
+- A dedicated AI-enablement person can find internal "customers" and build Slack-channel agents for them (e.g. an analyst agent answering a GM's data questions, with a human analyst verifying SQL; a marketing copywriter agent) ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).

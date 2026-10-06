@@ -19,6 +19,7 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/enterprise-ai-adoption]]: selling applied AI to enterprises; FDEs; AI OS
 - [[concepts/ai-growth-marketing]]: agentic growth hacking, autonomous outreach, personalization
 - [[concepts/agent-ready-products]]: selling to agents: skills, MCP, marketplaces, CLI auth
 - [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
@@ -92,11 +93,13 @@
 - [[people/shay-davidson]]: principal engineer, Lemonade
 - [[people/shay-shitrit]]: founder of Lab17 (n8n automations)
 - [[people/shuki-cohen]]: VP Data, AI21
+- [[people/roy-lazar]]: Wonderful (enterprise applied AI)
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/ignore-instructions--24-wonderful-road-to-100m]]: #24 On the Way to $100M Revenue (2026-06-18)
 - [[episodes/ignore-instructions--28-ai-marketing-enso]]: #28 How AI Is Changing Marketing (2026-09-08)
 - [[episodes/langtalks--55-context-engineering]]: #55 Context Engineering (2025-10-11)
 - [[episodes/langtalks--56-n8n]]: #56 n8n (2025-10-25)

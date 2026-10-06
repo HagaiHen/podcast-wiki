@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Company Brain
@@ -21,6 +21,7 @@ updated: 2026-10-06
 - Authority weighting: naive approaches trust C-level over junior employees; better to weight by information type (a developer outranks the CEO on code) and by usage ([[episodes/ai-engineering-podcast--company-brain]]).
 - Maybe the center shouldn't be the company but its customers ([[episodes/ai-engineering-podcast--company-brain]]).
 - Domain-expert knowledge, not frontier models, is the durable edge (Satya Nadella, as cited) ([[episodes/ai-engineering-podcast--company-brain]]).
+- Wonderful's internal "Wonder" agent connects to Drive, calendars, public Slack, Salesforce, the product, and Snowflake so nobody asks colleagues factual questions. It ranges from "why is prod broken?" to cross-data research (e.g. FDE background vs delivery speed); next step: taking actions ([[episodes/ignore-instructions--24-wonderful-road-to-100m]], [[people/roy-lazar]]).
 
 ## Disagreements & open questions
 - Who builds it? Agents will build the brain that gives agents context, so whose context builds it? Humans may lose the ability to read or audit the org's context ([[episodes/ai-engineering-podcast--company-brain]]).
@@ -32,4 +33,4 @@ updated: 2026-10-06
 - [ ] Weight sources by type and authority (email > chat; official docs > personal notes) ([[episodes/ai-engineering-podcast--company-brain]])
 
 ## Related
-[[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/personal-ai-os]] · [[concepts/llm-wiki]]
+[[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/personal-ai-os]] · [[concepts/llm-wiki]] · [[concepts/enterprise-ai-adoption]]

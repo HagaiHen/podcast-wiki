@@ -125,3 +125,4 @@
 - [ ] Stable tool list + logit masking instead of tool swapping — [[concepts/llm-cost-optimization]] · [[episodes/langtalks--55-context-engineering]]
 - [ ] Give an autonomous agent an outcome + tools; ask what it learned — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--28-ai-marketing-enso]]
 - [ ] Feed post performance back into AI copywriting — [[concepts/ai-growth-marketing]] · [[episodes/ignore-instructions--28-ai-marketing-enso]]
+- [ ] Weigh one horizontal AI platform vs per-function point solutions — [[concepts/enterprise-ai-adoption]] · [[episodes/ignore-instructions--24-wonderful-road-to-100m]]
