@@ -6,6 +6,8 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/coding-agent-workflow]]: day-to-day coding-agent practices
+- [[concepts/agent-security]]: secure agents against prompt injection and misuse
 - [[concepts/personal-ai-assistants]]: assistants for operational work
 - [[concepts/skill-engineering]]: building and sharing agent skills
 - [[concepts/decision-classifiers]]: cheap, calibrated decisions at scale

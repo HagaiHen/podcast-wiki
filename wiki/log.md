@@ -49,3 +49,13 @@ updated: concepts/{rag, llm-cost-optimization, ai-hype, ai-guardrails}, shows/la
 source: whisper (one short garbled passage)
 created: episodes/langtalks--72-personal-assistant-agent, concepts/{personal-ai-assistants, skill-engineering}
 updated: concepts/{memory-consolidation, agent-workspaces, personal-ai-os}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #71 Claw Architectures (Gavriel Cohen)
+source: whisper
+created: episodes/langtalks--71-claw-architectures, concepts/agent-security, people/gavriel-cohen
+updated: concepts/{personal-ai-assistants, skill-engineering, model-selection (disagreement), ai-verification}, shows/langtalks, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #70 Our Claude Code Tips
+source: whisper
+created: episodes/langtalks--70-our-claude-code-tips, concepts/coding-agent-workflow
+updated: concepts/{harness-engineering, ai-verification, agent-security, context-engineering}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

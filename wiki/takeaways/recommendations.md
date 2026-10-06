@@ -4,6 +4,11 @@
 - *Investing for the Lazy* (השקעות לעצלנים) by [[people/tamir]] — host's own book — [[episodes/lazy-investing--108-the-leverage-trap]]
 
 ## Tools
+- Pencil.dev: design UI with your design system before agent implementation — [[episodes/langtalks--70-our-claude-code-tips]]
+- MirrorD: mirror one changed container into a shared dev cluster — [[episodes/langtalks--70-our-claude-code-tips]]
+- Vercel Agent Browser CLI: agent-driven browser with its own profile — [[episodes/langtalks--70-our-claude-code-tips]]
+- OneCLI: credential vault/proxy for agents — [[concepts/agent-security]] · [[episodes/langtalks--71-claw-architectures]]
+- Warp terminal: tabs per project, panes per task — [[episodes/langtalks--70-our-claude-code-tips]]
 - Superpowers (Claude Code plugin): spec/plan workflow with visual planning in a browser — [[episodes/langtalks--73-harness-engineering]]
 - Playwright MCP: lets agents drive a browser and record proof-of-work videos — [[concepts/ai-verification]] · [[episodes/langtalks--73-harness-engineering]]
 - OpenTelemetry / VictoriaLogs: tracing the agent can query — [[concepts/ai-verification]] · [[episodes/langtalks--73-harness-engineering]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Model Selection
@@ -21,8 +21,10 @@ updated: 2026-10-06
 - Every product should have a primary and a pre-tested fallback model (downgrade a version, or switch to another vendor's family) ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
 - Developers must know their models well enough to tune prompts per model version ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Public benchmarks often don't match your environment; test on your own evals ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Gavriel Cohen follows Anthropic's view that agents aren't portable across providers: each lab's models behave differently, so he didn't build model-switching ([[episodes/langtalks--71-claw-architectures]]).
 
 ## Disagreements & open questions
+- Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).
 
 ## Takeaways
 - [ ] Before upgrading a model, narrow the task and rephrase the question; retest on the small model ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])

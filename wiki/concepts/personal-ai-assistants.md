@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-06
 ---
 # Personal AI Assistants ("claws")
@@ -16,6 +16,10 @@ updated: 2026-10-06
 - Versus n8n/Zapier: those are deterministic and cheap at scale but unnatural to build. Anthropic's dynamic workflows add a conversational step that *generates* deterministic code ([[episodes/langtalks--72-personal-assistant-agent]]).
 - Identity problem: with user tokens, every comment or task looks like the user made it, which floods tools with noise ("your agent made 70 tasks"). Giving agents their own identities is costly per tool ([[episodes/langtalks--72-personal-assistant-agent]]).
 - Self-healing: an MCP files structured GitHub issues from user complaints (or detected break-in attempts); a cloud agent SDK in GitHub Actions implements fixes; a rules engine auto-merges small, generic fixes; the user is notified to retry ([[episodes/langtalks--72-personal-assistant-agent]]).
+- Claw architecture (NanoClaw): an orchestrator process routes messages to per-agent containers, spins them up on demand and down when idle; channels unified via an SDK (e.g. Vercel Chat SDK) ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
+- Harness choice matters: NanoClaw runs on the Claude Agent SDK (covered by subscription, existing skills and plugins work, Anthropic tunes it); OpenClaw uses its own harness (Pi); Hermes sells its own credits ([[episodes/langtalks--71-claw-architectures]]).
+- Harnesses are consolidating (Claude Code, Codex, OpenCode, Pi); claws should be the application/orchestration layer, not rebuild harnesses ([[episodes/langtalks--71-claw-architectures]]).
+- Chat apps limit UX for dev work (plans, markdown, voice, test environments); one host abandoned Telegram for his own React Native app ([[episodes/langtalks--71-claw-architectures]]).
 
 ## Disagreements & open questions
 - Would you trust a skill-level change for something critical? Skill changes rarely "break compilation" but are harder to evaluate ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -26,4 +30,4 @@ updated: 2026-10-06
 - [ ] Route user complaints about an internal agent into structured issues that an agent can triage and fix ([[episodes/langtalks--72-personal-assistant-agent]])
 
 ## Related
-[[concepts/skill-engineering]] · [[concepts/personal-ai-os]] · [[concepts/agent-workspaces]] · [[concepts/memory-consolidation]]
+[[concepts/skill-engineering]] · [[concepts/personal-ai-os]] · [[concepts/agent-workspaces]] · [[concepts/memory-consolidation]] · [[concepts/agent-security]]

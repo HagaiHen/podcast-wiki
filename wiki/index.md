@@ -11,9 +11,11 @@
 - [[concepts/fomo]]: others' gains push you into risk
 
 ## AI Engineering — [[hubs/ai-engineering]]
+- [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
 - [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
 - [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
 - [[concepts/decision-classifiers]]: fast calibrated classifiers (e.g. Jev) for bulk decisions
@@ -56,6 +58,7 @@
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
 - [[people/dana-maman]]: AI builder, personal AI OS
 - [[people/dor-cohen]]: AI infra lead, monday.com
+- [[people/gavriel-cohen]]: creator of NanoClaw
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
@@ -64,6 +67,8 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--70-our-claude-code-tips]]: #70 Our Claude Code Tips (2026-06-28)
+- [[episodes/langtalks--71-claw-architectures]]: #71 Claw Architectures (2026-07-26)
 - [[episodes/langtalks--72-personal-assistant-agent]]: #72 Personal Assistant Agent (2026-08-16)
 - [[episodes/langtalks--74-jev]]: #74 Jev (2026-09-22)
 - [[episodes/ai-engineering-podcast--the-ai-ux-paradox]]: The AI UX Paradox (2026-08-06)

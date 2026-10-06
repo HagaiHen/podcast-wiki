@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-06
 ---
 # Context Engineering
@@ -19,6 +19,7 @@ updated: 2026-10-06
 - A ship-ERP troubleshooting agent with many subagents failed because one middle agent's context was too big; it "choked". Splitting the context raised eval success from 85% to 97%, with no fine-tuning ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - When a long Claude Code session degrades after compaction, have it write what it knows to an MD file and start fresh ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 - Context is king for personalization: decompose it into personal, team, group, and org layers, with permissions so nothing leaks ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/matan-cohen]]).
+- Skill descriptions consume context: with 100+ skills the listing gets truncated, silently hiding skills ([[episodes/langtalks--70-our-claude-code-tips]]).
 
 ## Disagreements & open questions
 
