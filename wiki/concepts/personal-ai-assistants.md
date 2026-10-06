@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-06
 ---
 # Personal AI Assistants ("claws")
@@ -20,6 +20,7 @@ updated: 2026-10-06
 - Harness choice matters: NanoClaw runs on the Claude Agent SDK (covered by subscription, existing skills and plugins work, Anthropic tunes it); OpenClaw uses its own harness (Pi); Hermes sells its own credits ([[episodes/langtalks--71-claw-architectures]]).
 - Harnesses are consolidating (Claude Code, Codex, OpenCode, Pi); claws should be the application/orchestration layer, not rebuild harnesses ([[episodes/langtalks--71-claw-architectures]]).
 - Chat apps limit UX for dev work (plans, markdown, voice, test environments); one host abandoned Telegram for his own React Native app ([[episodes/langtalks--71-claw-architectures]]).
+- The no-code alternative: n8n-style platforms give deterministic, cheap, visual workflows with LangChain agent nodes; see [[concepts/workflow-automation]] ([[episodes/langtalks--56-n8n]]).
 
 ## Disagreements & open questions
 - Would you trust a skill-level change for something critical? Skill changes rarely "break compilation" but are harder to evaluate ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -30,4 +31,4 @@ updated: 2026-10-06
 - [ ] Route user complaints about an internal agent into structured issues that an agent can triage and fix ([[episodes/langtalks--72-personal-assistant-agent]])
 
 ## Related
-[[concepts/skill-engineering]] · [[concepts/personal-ai-os]] · [[concepts/agent-workspaces]] · [[concepts/memory-consolidation]] · [[concepts/agent-security]]
+[[concepts/skill-engineering]] · [[concepts/personal-ai-os]] · [[concepts/agent-workspaces]] · [[concepts/memory-consolidation]] · [[concepts/agent-security]] · [[concepts/workflow-automation]]

@@ -21,6 +21,7 @@
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
 - [[concepts/agent-ready-products]]: selling to agents: skills, MCP, marketplaces, CLI auth
 - [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
+- [[concepts/workflow-automation]]: no-code automation + agents (n8n)
 - [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
 - [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
 - [[concepts/voice-agents]]: speech-to-speech vs chained; latency, state machines, audio evals
@@ -86,12 +87,14 @@
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
 - [[people/shay-davidson]]: principal engineer, Lemonade
+- [[people/shay-shitrit]]: founder of Lab17 (n8n automations)
 - [[people/shuki-cohen]]: VP Data, AI21
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/langtalks--56-n8n]]: #56 n8n (2025-10-25)
 - [[episodes/langtalks--57-memory]]: #57 Memory (2025-11-16)
 - [[episodes/langtalks--58-reinvent-predictions]]: #58 re:Invent 2026 Predictions (2025-12-07)
 - [[episodes/langtalks--59-slms]]: #59 SLMs (2025-12-28)

@@ -6,6 +6,7 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/workflow-automation]]: no-code automations and agents
 - [[concepts/agent-memory]]: agent memory and its governance
 - [[concepts/multi-agent-orchestration]]: orchestrating specialist agents
 - [[concepts/small-language-models]]: when to train small models

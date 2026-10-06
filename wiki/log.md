@@ -124,3 +124,8 @@ updated: concepts/{small-language-models, voice-agents, llm-evals, ai-gateway, m
 source: whisper
 created: episodes/langtalks--57-memory, concepts/agent-memory, people/itamar-friedman
 updated: concepts/{memory-consolidation, human-vs-ai-memory, context-engineering}, shows/langtalks, hubs/{ai-engineering, knowledge-management}, index, takeaways/to-try
+
+## 2026-10-06 — LangTalks: #56 n8n (Shay Shitrit)
+source: whisper
+created: episodes/langtalks--56-n8n, concepts/workflow-automation, people/shay-shitrit
+updated: concepts/{personal-ai-assistants, ai-sdlc}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

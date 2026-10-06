@@ -116,3 +116,5 @@
 - [ ] Track rule usage/acceptance; prune low-value rules — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]
 - [ ] Per-source-type memory ingestion with links to originals — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]
 - [ ] Backfill memory from historical PR discussions — [[concepts/agent-memory]] · [[episodes/langtalks--57-memory]]
+- [ ] Build automations one reliable step at a time — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]
+- [ ] Assign an automation owner for non-technical teams — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]
