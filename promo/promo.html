@@ -42,6 +42,8 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 #mute:focus-visible{outline:5px solid var(--coral);outline-offset:4px}
 #paused[hidden],#mute[hidden],#bar[hidden]{display:none}
 #bar{position:absolute;left:40px;right:260px;bottom:52px;z-index:7;display:flex;align-items:center;gap:24px;font:600 24px var(--mono);color:var(--fg);font-variant-numeric:tabular-nums}
+#pp{flex:none;width:64px;height:64px;border:0;border-radius:50%;background:var(--fg);color:var(--ink);font-size:26px;cursor:pointer;display:grid;place-items:center}
+#pp:focus-visible{outline:4px solid var(--coral);outline-offset:4px}
 #seek{flex:1;min-width:0;height:28px;accent-color:var(--coral);cursor:pointer}
 #seek:focus-visible{outline:4px solid var(--coral);outline-offset:6px}
 #paused{position:absolute;inset:0;z-index:6;display:grid;place-items:center;background:#14112a99;pointer-events:none}
@@ -124,7 +126,7 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 </section>
 
 </div>
-<div id="bar"><input id="seek" type="range" min="0" max="30" step="0.01" value="0" aria-label="Seek"><span id="time">0:00 / 0:30</span></div><button id="mute" type="button" aria-pressed="true">🔇 Unmute</button><div id="paused" hidden><span>▶</span></div><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
+<div id="bar"><button id="pp" type="button" aria-label="Pause">❚❚</button><input id="seek" type="range" min="0" max="30" step="0.01" value="0" aria-label="Seek"><span id="time">0:00 / 0:30</span></div><button id="mute" type="button" aria-pressed="true">🔇 Unmute</button><div id="paused" hidden><span>▶</span></div><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
 <script>
 const B=60/86, DUR=43*B, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
 const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
@@ -143,7 +145,7 @@ function seek(t){
 }
 const st=document.getElementById('stage');function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}addEventListener('resize',fit);fit();
 window.seek=seek; window.DUR=DUR;
-const sk=document.getElementById('seek'),tm=document.getElementById('time'),bar=document.getElementById('bar'),st2=document.getElementById('stage'),aud=document.getElementById('aud'),mb=document.getElementById('mute'),pz=document.getElementById('paused');
+const pp=document.getElementById('pp'),sk=document.getElementById('seek'),tm=document.getElementById('time'),bar=document.getElementById('bar'),st2=document.getElementById('stage'),aud=document.getElementById('aud'),mb=document.getElementById('mute'),pz=document.getElementById('paused');
 if(!navigator.webdriver){
   let t0=performance.now(),frozen=false,ft=0;
   aud.muted=true; aud.play().catch(()=>{});            // muted autoplay is allowed; sound needs a click
@@ -155,10 +157,11 @@ if(!navigator.webdriver){
   sk.addEventListener('input',()=>{drag=true;jump(+sk.value)});
   sk.addEventListener('change',()=>{drag=false});
   bar.addEventListener('click',e=>e.stopPropagation());
+  pp.addEventListener('click',()=>toggle());
   function toggle(){
     if(!frozen){ft=now();frozen=true;aud.pause()}
     else{frozen=false;t0=performance.now()-ft*1000;aud.currentTime=ft;aud.play().catch(()=>{})}
-    pz.hidden=!frozen}
+    pz.hidden=!frozen;pp.textContent=frozen?'▶':'❚❚';pp.setAttribute('aria-label',frozen?'Play':'Pause')}
   function mute(e){e&&e.stopPropagation();aud.muted=!aud.muted;
     if(!frozen&&aud.paused){aud.currentTime=now();aud.play().catch(()=>{})}
     mb.textContent=aud.muted?'🔇 Unmute':'🔊 Mute';mb.setAttribute('aria-pressed',aud.muted)}
