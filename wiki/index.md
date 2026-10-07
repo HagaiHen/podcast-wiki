@@ -127,6 +127,7 @@
 - [[people/shuki-cohen]]: VP Data, AI21
 - [[people/pavel-gurevich]]: founder of Tenzai (AI pentesting)
 - [[people/ohad-parush]]: Chief R&D Officer at Gong
+- [[people/roni-goldshmidt]]: AI researcher at Nexar
 - [[people/roy-lazar]]: Wonderful (enterprise applied AI)
 - [[people/roy-mann]]: co-founder and co-CEO of monday.com
 - [[people/ryan-vogel]]: OpenCode founding team
@@ -138,6 +139,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--nexar-roni-goldshmidt]]: AI Models That Understand the World (2026-04-23)
 - [[episodes/hidden-layers--twine-nadav-erez]]: Digital Employees in Cybersecurity (2026-05-03)
 - [[episodes/hidden-layers--vega-gili-kanfo]]: Securing Data Sources in the AI Era (2026-05-18)
 - [[episodes/hidden-layers--nanoclaw-gavriel-cohen]]: Building Secure AI Agents for Organizations (2026-05-21)

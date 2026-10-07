@@ -161,3 +161,4 @@
 - [ ] Map each agent against the lethal trifecta and remove a leg where possible — [[concepts/agent-security]] · [[episodes/hidden-layers--alice-avi-golan]]
 - [ ] Audit permissions before rolling out a workspace AI assistant — [[concepts/agent-security]] · [[episodes/hidden-layers--cyera-shiran-bareli]]
 - [ ] For write-capable agents, approve a deterministic plan and keep audit logs plus undo — [[concepts/ai-guardrails]] · [[episodes/hidden-layers--twine-nadav-erez]]
+- [ ] Route privacy-sensitive subtasks to a local open model via a skill — [[concepts/open-weight-models]] · [[episodes/hidden-layers--nexar-roni-goldshmidt]]

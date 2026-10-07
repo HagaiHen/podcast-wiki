@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-07
 ---
 # World Models (beyond next-token prediction)
@@ -16,6 +16,10 @@ updated: 2026-10-07
 - JEPA limits: it's non-generative, so it can't produce text, and it's unproven at scale; one paper shows it needs data with particular distributional properties ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
 - Gaussian splats represent images as sums of Gaussians, which have no order, so transformers drop positional encoding to become set-invariant ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
 - New paradigms start as underdogs (LeCun and Bengio struggled to publish on neural nets), but with AI money even a $1B+ lab is an underdog bet ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
+- Evidence from Nexar: fine-tuned apples-to-apples on ~2M driving clips (crashes and near misses vs normal driving), V-JEPA 2 beat autoregressive video models (Cosmos, VideoMAE) by about 7 points on collision prediction. It generalized to other customers' cameras and resolutions, and even to generated videos of colliding dinosaurs, horses, and spaceships it never saw ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- Latent prediction skips unpredictable detail: an autoregressive model wastes capacity tracing a falling leaf's exact path, while a latent model learns "the leaf swirled and fell" ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- Vision models need far fewer parameters than language: V-JEPA tops out around 1B (with 300M and 700M variants), perhaps because physics is lawful while language is ambiguous ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- Attention maps show the model looking ahead along each moving object's path, anticipating where it will be ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 
 ## Disagreements & open questions
 - More compute vs new architectures: Levi grants that "add compute and data" keeps working for many cases (ViT, AlphaFold 3) but argues diminishing returns (10× compute for 99% → 99.9%) open the door to cheaper approaches ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).

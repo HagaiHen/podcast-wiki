@@ -28,5 +28,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--twine-nadav-erez]] (host)
 
+- [[episodes/hidden-layers--nexar-roni-goldshmidt]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

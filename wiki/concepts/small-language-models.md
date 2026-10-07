@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # Small Language Models (SLMs)
@@ -24,6 +24,8 @@ updated: 2026-10-07
 - From POC to production: a big-model agent workflow that took three days on large customer networks (vs five hours expected) was fixed by splitting tasks across small fine-tuned models with an orchestrator, then optimizing inference from driver to model configuration ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - At hundreds of millions of files a day, frontier LLMs are ~100× too expensive for classification. Cyera trains its own encoder-decoder models, self-hosted with GPU-optimized inference, which are cheaper, faster, and more accurate because guardrails and context are built in (a lawyer's brochure phone number isn't sensitive) ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
 - Logs too big for context: have a model write code (e.g. pandas over the logs) in a self-hosted sandbox instead of reading raw logs. Vega is distilling this from strong-model runs into small Qwen models (4B, 30B-A3B), possibly split into a coder and a summarizer ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
+- Edge recipe: train the best model without constraints, then distill. Nexar's 300M V-JEPA teacher taught 86M and 22M ViT students to match its internal features, nearly matching it. Latency fell from ~2.5 s per window to ~30 ms end to end on a Jetson Thor after moving preprocessing from CPU to GPU, fp16, and torch.compile kernel fusion ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- Small vision-language models can reason: a fine-tuned 2B Qwen handles video Q&A and textual explanations of alerts ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 
 ## Disagreements & open questions
 - Regression or evolution? Granot argues returning to small models is evolution, built on what LLMs taught us ([[episodes/langtalks--59-slms]]).

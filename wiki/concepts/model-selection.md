@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 10
+sources: 11
 updated: 2026-10-07
 ---
 # Model Selection
@@ -30,6 +30,7 @@ updated: 2026-10-07
 - Model-agnostic by design: every component (builders, runners) can use Gemini, OpenAI, Anthropic, or xAI behind a generic interface; an ML team keeps benchmarking and swapping per component. A better open-source voice-activity model was adopted within two days ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 - Frontier models pass POCs easily but often fail production on unit economics and latency: re-touching a whole retail catalog for Christmas with a giant model is "a 5-kilo hammer for adding snowflakes". Smaller, controllable models win such jobs ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 - Match architecture to the problem: encoders for extraction (business-context NER), fine-tuned open decoders where an explanation is needed (risk scoring people can trust, since a bare "88" means nothing), and frontier models mainly for prototyping and ground truth ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
+- Profile before optimizing: most of Nexar's 2.5 s latency was CPU preprocessing, not inference, and moving it to the GPU took hours rather than the planned quarter ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).

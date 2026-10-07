@@ -263,3 +263,8 @@ updated: concepts/{knowledge-graphs, skill-engineering, small-language-models, a
 source: whisper
 created: episodes/hidden-layers--twine-nadav-erez, people/nadav-erez
 updated: concepts/{agent-workspaces, ai-guardrails, skill-engineering, agent-memory}, people/uri-eliabayev, shows/hidden-layers, index, takeaways/to-try
+
+## 2026-10-07 — Hidden Layers: AI Models That Understand the World (Roni Goldshmidt)
+source: whisper
+created: episodes/hidden-layers--nexar-roni-goldshmidt, people/roni-goldshmidt
+updated: concepts/{world-models, open-weight-models, small-language-models, model-selection}, people/uri-eliabayev, shows/hidden-layers, index, takeaways/to-try
