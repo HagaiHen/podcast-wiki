@@ -87,6 +87,7 @@
 ## People
 - [[people/amit-bendor]]: host of Osim Tochna
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
+- [[people/doron-bleiberg]]: AWS solutions architect
 - [[people/dana-maman]]: AI builder, personal AI OS
 - [[people/asaf-savich]]: AI dev lead, Komodor
 - [[people/avi-lumelsky]]: production LLM lead, Oligo
@@ -120,6 +121,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/startup-for-startup--354-reliable-agents-lean-context]]: #354 Reliable Agents Without Overloading Context (2026-06-16)
 - [[episodes/startup-for-startup--362-agent-architecture-fit]]: #362 Matching Agent Architecture to the Problem (2026-08-11)
 - [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)
 - [[episodes/startup-ideas--webmcp-clearly-explained]]: WebMCP Clearly Explained (2026-08-26)

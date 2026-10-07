@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
+sources: 10
 updated: 2026-10-07
 ---
 # LLM Evals
@@ -34,6 +34,7 @@ updated: 2026-10-07
 - Arenas can be gamed too (the Meta Llama arena controversy) ([[episodes/explainable--157-training-hebatron]]).
 - End-to-end agent evals as nightly labs: build realistic apps across stacks, plant known issues to form ground truth, run the full agent several times per lab, and track recall, precision (false positives), runtime, cost, and unsafe actions. At Tenzai this costs hundreds of thousands of dollars a month in tokens, before production ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Results pick the model per sub-agent, and the best choice changes daily as models ship (e.g. Claude better at one sub-task, GPT-5.5 at another) ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Use evals to decide what goes into context: questions the model answers correctly in every run need no injected knowledge. Phrase eval questions without implicit hints ("what's wrong?" presumes something is), as in survey design ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 
 ## Disagreements & open questions
 

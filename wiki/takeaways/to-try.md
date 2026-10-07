@@ -151,3 +151,4 @@
 - [ ] Run one project with an agent team for a month: build, execute, hire/fire, automate — [[concepts/solo-builders]] · [[episodes/startup-ideas--grok-bot-one-person-company]]
 - [ ] Before building an agent, classify the job and solve only that problem type — [[concepts/agent-architectures]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]
 - [ ] Give agents the goal and review their plan instead of dictating micro-tasks — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]
+- [ ] Rewrite "don't" rules in agent prompts as positive instructions — [[concepts/context-engineering]] · [[episodes/startup-for-startup--354-reliable-agents-lean-context]]

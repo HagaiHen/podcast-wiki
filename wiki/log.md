@@ -188,3 +188,8 @@ updated: concepts/{decision-classifiers, agent-ready-products, agent-workspaces,
 source: whisper
 created: episodes/startup-for-startup--362-agent-architecture-fit, concepts/agent-architectures, people/roy-mann, shows/startup-for-startup
 updated: concepts/{agent-workspaces, harness-engineering, workflow-automation, ai-rd-rollout}, people/netanel-abergel, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-07 — Startup for Startup: #354 Reliable Agents Without Overloading Context
+source: whisper
+created: episodes/startup-for-startup--354-reliable-agents-lean-context, people/doron-bleiberg
+updated: concepts/{context-engineering, skill-engineering, llm-evals}, shows/startup-for-startup, index, takeaways/to-try

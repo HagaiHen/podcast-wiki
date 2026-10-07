@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-06
+sources: 10
+updated: 2026-10-07
 ---
 # Context Engineering
 
@@ -32,6 +32,10 @@ updated: 2026-10-06
 - Compaction is a fallback; if used, tell it what to focus on. Alternatively, dump state to files at ~100k tokens, reset, and continue ([[episodes/langtalks--55-context-engineering]]).
 - Health check: open your traces (LangSmith, Langfuse). The more you scroll past irrelevant content, the worse your context engineering ([[episodes/langtalks--55-context-engineering]]).
 - As a *user* of coding agents you also do context engineering, e.g. @-mentioning the right files ([[episodes/langtalks--55-context-engineering]]).
+- Prohibitions backfire: "don't", "never", "avoid" draw attention to the unwanted behavior. Say what you want instead ("output Markdown" rather than "not JSON"; "answer from the user's point of view" rather than "don't leak internals") ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
+- Prevention over correction: if-this-then-that patches added after failures fight attention already pointed the wrong way; shape the initial context instead ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
+- Don't re-teach what the model knows: benchmark it several times and inject only what it gets wrong; known knowledge costs tokens, latency, and attention ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
+- Every prompt part has a cost: the system prompt rides on every request with high attention, so keep it minimal; load task instructions, skills, domain knowledge, and tool details only when needed, even injecting tool-specific knowledge via hooks at invocation ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 
 ## Disagreements & open questions
 
@@ -42,6 +46,7 @@ updated: 2026-10-06
 - [ ] Have sub-agents read large files and return only answers or snippets to the main agent ([[episodes/langtalks--55-context-engineering]])
 - [ ] Return specific, actionable errors from APIs that agents call, and keep errors in context ([[episodes/langtalks--55-context-engineering]])
 - [ ] Audit a trace: if you scroll past lots of irrelevant content, trim the context ([[episodes/langtalks--55-context-engineering]])
+- [ ] Rewrite "don't" rules in agent prompts as positive instructions ([[episodes/startup-for-startup--354-reliable-agents-lean-context]])
 
 ## Related
 [[concepts/wiki-retrieval]] · [[concepts/llm-wiki]] · [[concepts/agent-ready-codebase]] · [[concepts/model-selection]] · [[concepts/agent-memory]]

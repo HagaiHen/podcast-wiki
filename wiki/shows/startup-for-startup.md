@@ -7,3 +7,4 @@ monday.com's Hebrew podcast for founders and startup teams, including a monthly 
 
 ## Episodes
 - [[episodes/startup-for-startup--362-agent-architecture-fit]] (2026-08-11)
+- [[episodes/startup-for-startup--354-reliable-agents-lean-context]] (2026-06-16)
