@@ -17,4 +17,4 @@ Getting started: let the AI interview you, sketch your life domains on paper, st
 
 **Show:** [[shows/osim-tochna]]
 
-**Concepts:** [[concepts/llm-wiki]] · [[concepts/second-brain]] · [[concepts/personal-ai-os]] · [[concepts/context-engineering]] · [[concepts/wiki-retrieval]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/knowledge-rot]] · [[concepts/open-knowledge-format]]
+**Concepts:** [[concepts/llm-wiki]] · [[concepts/second-brain]] · [[concepts/context-engineering]] · [[concepts/wiki-retrieval]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/knowledge-rot]] · [[concepts/open-knowledge-format]]

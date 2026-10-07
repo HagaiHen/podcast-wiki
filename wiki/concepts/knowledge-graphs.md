@@ -24,4 +24,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/company-brain]] · [[concepts/rag]] · [[concepts/ai-sre]]
+[[concepts/second-brain]] · [[concepts/rag]] · [[concepts/ai-sre]]

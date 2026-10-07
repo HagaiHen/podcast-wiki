@@ -16,4 +16,4 @@ Lessons: define KPIs before experimenting; prefer deterministic *pipelines* over
 
 **Show:** [[shows/langtalks]]
 
-**Concepts:** [[concepts/llm-pipelines]] · [[concepts/model-selection]] · [[concepts/llm-cost-optimization]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/ai-finops]]
+**Concepts:** [[concepts/llm-pipelines]] · [[concepts/model-selection]] · [[concepts/llm-cost-optimization]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]]

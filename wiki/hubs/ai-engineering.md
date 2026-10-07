@@ -31,7 +31,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/ai-engineering-metrics]]: measuring coding-agent impact
 - [[concepts/ai-sre]]: AI for production reliability
 - [[concepts/llm-pipelines]]: when a pipeline beats an agent
-- [[concepts/ai-finops]]: managing and attributing AI spend
+- [[concepts/llm-cost-optimization]]: measuring (FinOps attribution) and reducing LLM spend
 - [[concepts/ai-sdlc]]: AI across the software lifecycle
 - [[concepts/agent-ready-products]]: make products discoverable and usable by agents
 - [[concepts/coding-agent-workflow]]: day-to-day coding-agent practices
@@ -43,10 +43,9 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/future-of-software-engineering]]: how engineering roles shift
 - [[concepts/ai-gateway]]: one layer for routing, cost, security, trust
 - [[concepts/llm-evals]]: know it works, keep it working
-- [[concepts/llm-cost-optimization]]: cut tokens without cutting quality
 - [[concepts/rag]]: retrieval-augmented generation
 - [[concepts/agent-workspaces]]: shared human+agent workspaces
-- [[concepts/company-brain]]: also Knowledge Management
+- [[concepts/second-brain]]: also Knowledge Management
 - [[concepts/llm-inference]]: GPUs, parallelism, KV cache, and price per token
 - [[concepts/model-selection]]: right-size the model; narrow the task
 - [[concepts/open-weight-models]]: open models as a cost lever

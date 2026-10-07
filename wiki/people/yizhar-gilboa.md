@@ -9,4 +9,4 @@ Co-founder and CTO of Finout (cloud and AI cost management across cloud provider
 - [[episodes/langtalks--67-finops-for-ai]]
 
 ## Concepts
-[[concepts/ai-finops]]
+[[concepts/llm-cost-optimization]]

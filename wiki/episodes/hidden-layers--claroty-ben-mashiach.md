@@ -17,4 +17,4 @@ AI lowers the barrier to attack, which makes knowing your own network's baseline
 
 **Show:** [[shows/hidden-layers]]
 
-**Concepts:** [[concepts/ai-cybersecurity]] · [[concepts/decision-classifiers]] · [[concepts/company-brain]]
+**Concepts:** [[concepts/ai-cybersecurity]] · [[concepts/decision-classifiers]] · [[concepts/second-brain]]

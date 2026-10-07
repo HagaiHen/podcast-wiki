@@ -26,4 +26,4 @@ updated: 2026-10-07
 - [ ] After any restructure, ask the AI to verify system integrity: links and routines still work ([[episodes/osim-tochna--second-brain-and-llm-wiki]])
 
 ## Related
-[[concepts/second-brain]] · [[concepts/wiki-retrieval]] · [[concepts/open-knowledge-format]] · [[concepts/knowledge-rot]] · [[concepts/company-brain]]
+[[concepts/second-brain]] · [[concepts/wiki-retrieval]] · [[concepts/open-knowledge-format]] · [[concepts/knowledge-rot]]

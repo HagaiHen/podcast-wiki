@@ -282,3 +282,9 @@ updated: concepts/{ai-cybersecurity, ai-guardrails, llm-evals}, people/uri-eliab
 ## 2026-10-07 — lint
 fixed: mechanical clean (0 issues); stale summaries 6 (agent-security, skill-engineering, knowledge-graphs, agent-workspaces, harness-engineering, open-weight-models); missing cross-links added
 suggested: none new (AI-economics page still pending from previous lint)
+
+## 2026-10-07 — dream: merged company-brain, personal-ai-os → second-brain
+updated: concepts/second-brain (personal / work / org scale), relinked episodes, people, hubs, index
+
+## 2026-10-07 — dream: merged ai-finops → llm-cost-optimization
+updated: concepts/llm-cost-optimization (measuring / reducing), relinked episodes, people, hubs, index

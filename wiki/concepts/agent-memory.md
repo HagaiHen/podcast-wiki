@@ -34,4 +34,4 @@ updated: 2026-10-07
 - [ ] Use files (PRD, plan, to-do) as the agent's working memory before building a vector memory ([[episodes/langtalks--55-context-engineering]])
 
 ## Related
-[[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/context-engineering]] · [[concepts/company-brain]] · [[concepts/continual-learning]]
+[[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/context-engineering]] · [[concepts/second-brain]] · [[concepts/continual-learning]]

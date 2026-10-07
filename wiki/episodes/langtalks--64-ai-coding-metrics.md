@@ -16,4 +16,4 @@ Hosts add: separate usage from utilization, check whether buggy code was spec-dr
 
 **Show:** [[shows/langtalks]]
 
-**Concepts:** [[concepts/ai-engineering-metrics]] · [[concepts/ai-sdlc]] · [[concepts/llm-evals]] · [[concepts/ai-finops]]
+**Concepts:** [[concepts/ai-engineering-metrics]] · [[concepts/ai-sdlc]] · [[concepts/llm-evals]] · [[concepts/llm-cost-optimization]]

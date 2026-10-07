@@ -9,4 +9,4 @@ Founder of a product-strategy consultancy (name transcribed as "Salted Mine"), A
 - [[episodes/osim-tochna--second-brain-and-llm-wiki]]
 
 ## Concepts
-[[concepts/second-brain]] · [[concepts/personal-ai-os]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/knowledge-rot]] · [[concepts/wiki-retrieval]]
+[[concepts/second-brain]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/knowledge-rot]] · [[concepts/wiki-retrieval]]

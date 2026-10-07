@@ -16,4 +16,4 @@ Optimization ideas: prompt and trace compression, slimmer tool responses (e.g. J
 
 **Show:** [[shows/langtalks]]
 
-**Concepts:** [[concepts/ai-finops]] · [[concepts/llm-cost-optimization]] · [[concepts/ai-gateway]]
+**Concepts:** [[concepts/llm-cost-optimization]] · [[concepts/ai-gateway]]

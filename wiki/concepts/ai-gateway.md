@@ -33,4 +33,4 @@ updated: 2026-10-07
 - [ ] Write a fallback plan for when your primary model vendor is down, degraded, or blocks you ([[episodes/explainable--163-hidden-cost-of-agents]])
 
 ## Related
-[[concepts/llm-evals]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]] · [[concepts/ai-finops]]
+[[concepts/llm-evals]] · [[concepts/llm-cost-optimization]] · [[concepts/model-selection]] · [[concepts/ai-guardrails]]

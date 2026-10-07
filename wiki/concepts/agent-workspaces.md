@@ -33,4 +33,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]] · [[concepts/agent-architectures]]
+[[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]] · [[concepts/agent-architectures]]

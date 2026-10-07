@@ -16,4 +16,4 @@ Also: humans as knowledge nodes, agents and humans sharing workspaces and boards
 
 **Show:** [[shows/ai-engineering-podcast]]
 
-**Concepts:** [[concepts/company-brain]] · [[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/agent-workspaces]] · [[concepts/open-knowledge-format]] · [[concepts/wiki-retrieval]] · [[concepts/ai-guardrails]]
+**Concepts:** [[concepts/second-brain]] · [[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/agent-workspaces]] · [[concepts/open-knowledge-format]] · [[concepts/wiki-retrieval]] · [[concepts/ai-guardrails]]

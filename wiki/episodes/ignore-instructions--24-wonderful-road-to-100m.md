@@ -19,4 +19,4 @@ Internally: their own stack built ahead of open-source libraries, model-agnostic
 
 **Show:** [[shows/ignore-instructions]]
 
-**Concepts:** [[concepts/enterprise-ai-adoption]] · [[concepts/company-brain]] · [[concepts/model-selection]] · [[concepts/voice-agents]] · [[concepts/ai-hype]] · [[concepts/ai-rd-rollout]]
+**Concepts:** [[concepts/enterprise-ai-adoption]] · [[concepts/second-brain]] · [[concepts/model-selection]] · [[concepts/voice-agents]] · [[concepts/ai-hype]] · [[concepts/ai-rd-rollout]]

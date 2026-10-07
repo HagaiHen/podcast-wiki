@@ -19,4 +19,4 @@ updated: 2026-10-06
 ## Takeaways
 
 ## Related
-[[concepts/llm-wiki]] · [[concepts/company-brain]]
+[[concepts/llm-wiki]] · [[concepts/second-brain]]

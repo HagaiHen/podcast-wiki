@@ -19,4 +19,4 @@ Advice: wait two weeks before chasing a trend, remember the 80/20 gap after the 
 
 **Show:** [[shows/osim-tochna]]
 
-**Concepts:** [[concepts/multimodal-llms]] · [[concepts/llm-evals]] · [[concepts/agent-security]] · [[concepts/ai-finops]] · [[concepts/future-of-software-engineering]] · [[concepts/ai-hype]]
+**Concepts:** [[concepts/multimodal-llms]] · [[concepts/llm-evals]] · [[concepts/agent-security]] · [[concepts/llm-cost-optimization]] · [[concepts/future-of-software-engineering]] · [[concepts/ai-hype]]

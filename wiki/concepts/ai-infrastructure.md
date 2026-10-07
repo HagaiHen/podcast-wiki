@@ -25,4 +25,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/llm-inference]] · [[concepts/llm-pretraining]] · [[concepts/ai-finops]]
+[[concepts/llm-inference]] · [[concepts/llm-pretraining]] · [[concepts/llm-cost-optimization]]

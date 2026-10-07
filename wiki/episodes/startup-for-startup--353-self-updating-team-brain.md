@@ -20,4 +20,4 @@ Costs: private conversations leaked into git history (repo wiped more than once)
 
 **Show:** [[shows/startup-for-startup]]
 
-**Concepts:** [[concepts/company-brain]] · [[concepts/llm-wiki]] · [[concepts/ai-guardrails]]
+**Concepts:** [[concepts/second-brain]] · [[concepts/llm-wiki]] · [[concepts/ai-guardrails]]

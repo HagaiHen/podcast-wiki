@@ -49,10 +49,9 @@
 - [[concepts/future-of-software-engineering]]: coding is dead, engineering isn't
 - [[concepts/llm-pipelines]]: deterministic LLM pipelines vs agents in production
 - [[concepts/ai-engineering-metrics]]: adoption → productivity → quality of AI coding
-- [[concepts/ai-finops]]: attributing AI spend; per-developer benchmarks
+- [[concepts/llm-cost-optimization]]: measuring (FinOps attribution) and reducing LLM spend
 - [[concepts/ai-gateway]]: central routing, metering, security for LLM calls
 - [[concepts/llm-evals]]: offline + online evals, LLM-as-judge, model A/B tests
-- [[concepts/llm-cost-optimization]]: caching, concise outputs, plan vs execute
 - [[concepts/llm-inference]]: what happens behind an API call and why it costs what it does
 - [[concepts/model-selection]]: small models + narrow tasks + context management
 - [[concepts/open-weight-models]]: cheap competitive open models; weights aren't code
@@ -65,13 +64,11 @@
 - [[concepts/open-knowledge-format]]: universal knowledge-file format (also Knowledge Management)
 
 ## Knowledge Management — [[hubs/knowledge-management]]
-- [[concepts/company-brain]]: shared org knowledge for agents; 4 layers
+- [[concepts/second-brain]]: external brain maintained by an LLM, at personal, work and org scale
 - [[concepts/agent-memory]]: short/long-term agent memory with governance
 - [[concepts/human-vs-ai-memory]]: what neuroscience says about agent memory
 - [[concepts/memory-consolidation]]: nightly "dreaming" jobs that clean memory
 - [[concepts/knowledge-graphs]]: ontologies agents use to understand an org
-- [[concepts/second-brain]]: external system so your head can think
-- [[concepts/personal-ai-os]]: one context for all of life and work
 - [[concepts/knowledge-rot]]: stale knowledge; routines that check themselves
 
 ## Unsorted

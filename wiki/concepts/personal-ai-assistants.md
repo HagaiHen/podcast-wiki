@@ -37,4 +37,4 @@ updated: 2026-10-07
 - [ ] Route user complaints about an internal agent into structured issues that an agent can triage and fix ([[episodes/langtalks--72-personal-assistant-agent]])
 
 ## Related
-[[concepts/skill-engineering]] · [[concepts/personal-ai-os]] · [[concepts/agent-workspaces]] · [[concepts/memory-consolidation]] · [[concepts/agent-security]] · [[concepts/workflow-automation]]
+[[concepts/skill-engineering]] · [[concepts/second-brain]] · [[concepts/agent-workspaces]] · [[concepts/memory-consolidation]] · [[concepts/agent-security]] · [[concepts/workflow-automation]]

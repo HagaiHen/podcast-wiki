@@ -9,4 +9,4 @@ Solutions engineer for data & AI at Microsoft, working with "digital native" AI 
 - [[episodes/ai-engineering-podcast--company-brain]]
 
 ## Concepts
-[[concepts/company-brain]] · [[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/agent-workspaces]]
+[[concepts/second-brain]] · [[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/agent-workspaces]]

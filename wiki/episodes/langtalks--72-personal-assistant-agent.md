@@ -18,4 +18,4 @@ A self-healing loop: users' complaints become GitHub issues, an agent SDK propos
 
 **Show:** [[shows/langtalks]]
 
-**Concepts:** [[concepts/personal-ai-assistants]] · [[concepts/skill-engineering]] · [[concepts/memory-consolidation]] · [[concepts/agent-workspaces]] · [[concepts/personal-ai-os]]
+**Concepts:** [[concepts/personal-ai-assistants]] · [[concepts/skill-engineering]] · [[concepts/memory-consolidation]] · [[concepts/agent-workspaces]] · [[concepts/second-brain]]

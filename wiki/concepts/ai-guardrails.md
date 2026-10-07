@@ -47,4 +47,4 @@ updated: 2026-10-07
 - [ ] For write-capable agents, require approval of a deterministic plan and keep audit logs plus undo ([[episodes/hidden-layers--twine-nadav-erez]])
 
 ## Related
-[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]]
+[[concepts/ai-verification]] · [[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]]

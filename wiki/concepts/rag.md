@@ -25,4 +25,4 @@ updated: 2026-10-07
 - [ ] Start with (agentic) RAG and expert-graded evals before building anything more complex ([[episodes/ai-engineering-podcast--company-brain]])
 
 ## Related
-[[concepts/wiki-retrieval]] · [[concepts/company-brain]] · [[concepts/knowledge-graphs]] · [[concepts/decision-classifiers]] · [[concepts/continual-learning]]
+[[concepts/wiki-retrieval]] · [[concepts/second-brain]] · [[concepts/knowledge-graphs]] · [[concepts/decision-classifiers]] · [[concepts/continual-learning]]

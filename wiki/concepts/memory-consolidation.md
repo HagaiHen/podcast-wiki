@@ -23,4 +23,4 @@ updated: 2026-10-06
 - [ ] Feed agent task outcomes (CI results, rollbacks) back as context ([[episodes/ai-engineering-podcast--company-brain]])
 
 ## Related
-[[concepts/company-brain]] · [[concepts/knowledge-rot]] · [[concepts/human-vs-ai-memory]] · [[concepts/agent-memory]]
+[[concepts/second-brain]] · [[concepts/knowledge-rot]] · [[concepts/human-vs-ai-memory]] · [[concepts/agent-memory]]

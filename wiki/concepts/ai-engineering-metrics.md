@@ -27,4 +27,4 @@ updated: 2026-10-07
 - [ ] Check whether bug-prone code came from spec-driven sessions and used internal tools ([[episodes/langtalks--64-ai-coding-metrics]])
 
 ## Related
-[[concepts/ai-sdlc]] · [[concepts/ai-finops]] · [[concepts/llm-evals]]
+[[concepts/ai-sdlc]] · [[concepts/llm-cost-optimization]] · [[concepts/llm-evals]]
