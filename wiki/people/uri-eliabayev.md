@@ -20,5 +20,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--cyera-shiran-bareli]] (host)
 
+- [[episodes/hidden-layers--tenable-tom-barnea]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

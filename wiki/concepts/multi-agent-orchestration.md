@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-07
 ---
 # Multi-Agent Orchestration
@@ -19,6 +19,7 @@ updated: 2026-10-07
 - Adversarial review panel: have sub-agents critique a work product in three rounds, taking output from ~50% to ~90% done; turn your own feedback into a review skill ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 - Four-week ramp: build the team → execute with no tinkering → hire and fire agents → automate ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 - "Sous-chef" decomposition: an orchestrator draws on a company knowledge base of how expert researchers approach a task, breaks it into steps, dispatches them to specialized agents, and an aggregator draws the conclusion. Dream reuses this pattern well beyond cyber ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
+- Risk moves to the connections: in orchestrated multi-agent workflows each agent may be safe and correctly permissioned alone, while the links between them open new paths ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
 
 ## Disagreements & open questions
 - Hosts' caution: most successful agents in practice are *single* agents with narrow helper sub-agents (e.g. answer a question from one document), not full multi-agent systems ([[episodes/langtalks--55-context-engineering]]).

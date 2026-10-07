@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
+sources: 10
 updated: 2026-10-07
 ---
 # AI Guardrails
@@ -28,6 +28,8 @@ updated: 2026-10-07
 - Shared-memory agents leak: a team brain synced private, partly recorded conversations into a git repo whose history everyone could read, forcing the team to wipe and recreate the repo more than once and add skill-level guardrails ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Security is layered: guardrails baked into model weights, wrappers around the model (system prompt, classifiers, keyword blocks), the harness, and your own enterprise layers; never rely on one vendor's layer ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 - At scale, 1-in-100 errors (money sent to the wrong account) are catastrophic, which keeps many enterprises shipping only unambitious FAQ chatbots ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- Over-reliance is a risk category of its own: employees asking an assistant how to mix chemicals, medical questions, or a teacher letting it set a student's grade. Decisions that need a domain expert shouldn't be delegated ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- Detecting AI misuse needs AI: semantic classifiers trained on carefully labeled examples (catching paraphrased attacks, not just exact phrases) plus tightly scoped judge agents in production, built by security researchers paired with data scientists ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
 
 ## Disagreements & open questions
 

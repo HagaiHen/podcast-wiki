@@ -243,3 +243,8 @@ updated: concepts/{ai-cybersecurity, decision-classifiers, company-brain}, peopl
 source: whisper
 created: episodes/hidden-layers--cyera-shiran-bareli, people/shiran-bareli
 updated: concepts/{small-language-models, agent-security, model-selection, llm-evals}, people/uri-eliabayev, shows/hidden-layers, index, takeaways/to-try
+
+## 2026-10-07 — Hidden Layers: Securing AI Tool Use in the Organization (Tom Barnea)
+source: whisper
+created: episodes/hidden-layers--tenable-tom-barnea, people/tom-barnea
+updated: concepts/{agent-security, ai-guardrails, multi-agent-orchestration}, people/uri-eliabayev, shows/hidden-layers, index

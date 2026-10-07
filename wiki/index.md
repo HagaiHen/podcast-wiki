@@ -131,10 +131,12 @@
 - [[people/shiran-bareli]]: VP Research at Cyera
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
+- [[people/tom-barnea]]: AI-security detections at Tenable
 - [[people/uri-eliabayev]]: host of Hidden Layers
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--tenable-tom-barnea]]: Securing AI Tool Use in the Organization (2026-05-26)
 - [[episodes/hidden-layers--cyera-shiran-bareli]]: Advanced AI Research at a Cyber Company (2026-05-31)
 - [[episodes/hidden-layers--claroty-ben-mashiach]]: AI Protecting the Most Sensitive Facilities (2026-06-02)
 - [[episodes/hidden-layers--dream-eran-hoffman]]: AI Defending Countries From Cyberattacks (2026-06-18)

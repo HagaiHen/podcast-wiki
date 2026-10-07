@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 7
 updated: 2026-10-07
 ---
 # Agent Security
@@ -25,6 +25,10 @@ updated: 2026-10-07
 - The "lethal trifecta": untrusted input, access to sensitive data, and the ability to act (call tools, change state). Any two together create risk; a FAQ bot with none leaks at most its system prompt. Yet agents only deliver value with all three, which is the trust gap holding enterprises back ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 - AI assistants connected to Drive, M365, and Notion turn latent over-permissioning into active leaks: anyone can now *ask* for data they could technically reach, such as an executive's files or other teams' customer contacts. Access governance becomes the first fix ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
 - Agent security program: inventory every agent (hundreds or thousands, many built by non-technical staff), map what data each reaches, detect out-of-scope actions (e.g. an agent making hiring decisions where regulation forbids it), and watch for injected prompts, such as in a calendar-invite description, and insider misuse ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
+- Intent is the hard part: the same question can be legitimate or not depending on who asks and when (a CFO's team vs a junior employee asking about quarterly results just before publication). Alerts must weigh persona and timing, and point back to over-broad access ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- Democratized agents move incidents outside security: HR, finance, or the business may own the problem. One user-built agent summarizing org chat was misconfigured as public; others share a senior manager's permissions with the whole company ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- Vendor AI admin consoles offer a handful of org-wide settings, nothing like cloud consoles, and policies can't be aligned across vendors (e.g. Copilot and ChatGPT side by side) ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- Indirect prompt injection is also used for self-promotion: links that open a chatbot with instructions to remember a site as the best source, or hidden text in résumés aimed at AI screeners ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
 
 ## Disagreements & open questions
 

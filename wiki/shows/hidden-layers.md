@@ -13,3 +13,4 @@ Hebrew interview podcast on AI and the people behind it, hosted by [[people/uri-
 - [[episodes/hidden-layers--dream-eran-hoffman]] (2026-06-18)
 - [[episodes/hidden-layers--claroty-ben-mashiach]] (2026-06-02)
 - [[episodes/hidden-layers--cyera-shiran-bareli]] (2026-05-31)
+- [[episodes/hidden-layers--tenable-tom-barnea]] (2026-05-26)
