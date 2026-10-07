@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 15
+sources: 16
 updated: 2026-10-07
 ---
 # LLM Evals
@@ -42,6 +42,7 @@ updated: 2026-10-07
 - Labs now train on RL gyms (simulated enterprise or e-commerce environments with expert-built tasks and evaluators) instead of RLHF preference labels; evaluator verdicts on failed scenarios feed post-training ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 - Build ground truth first: experts label 500–1,000 items (e.g. which assets are critical, with roles), expand with Claude, and hold every change (skills, system prompt, fine-tuning, autonomous code) to that eval ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - Defining "sensitive" is half the work: Cyera formed a cross-functional committee (HR, customer success, engineering, compliance) to write guidelines, then used big LLMs plus judges to build ground truth for training small models ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
+- Head-to-head trials against human experts produce a Venn diagram: each side finds things the other misses, and the human-only findings become the improvement backlog ([[episodes/hidden-layers--tenzai-ofri-ziv]], [[people/ofri-ziv]]).
 
 ## Disagreements & open questions
 

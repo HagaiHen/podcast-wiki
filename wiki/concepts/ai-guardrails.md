@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
+sources: 12
 updated: 2026-10-07
 ---
 # AI Guardrails
@@ -33,6 +33,7 @@ updated: 2026-10-07
 - "Control membrane": map every action and context to an approval level (password reset auto-allowed; disabling a user or messaging staff on Teams needs a named human). Only designated admins set these, enterprise-wide ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 - Approve a deterministic plan, not a promise: the agent produces a formal plan, and nothing AI-driven sits between the approval click and execution; add audit logs and one-click undo ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 - Make the agent able to fail honestly: deterministic validation on every tool call (does this user exist?), an "I don't know" path, and a "raise issue" tool for async tasks, tuned so the model doesn't abuse it to dodge work ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- Thoroughness vs restraint: an agent prompted to be relentless also needs brakes when it runs against live systems. Deterministic checkpoints flag risky operations and ask whether that's really intended, without blunting the agent's usefulness ([[episodes/hidden-layers--tenzai-ofri-ziv]], [[people/ofri-ziv]]).
 
 ## Disagreements & open questions
 

@@ -273,3 +273,8 @@ updated: concepts/{world-models, open-weight-models, small-language-models, mode
 source: whisper
 created: episodes/hidden-layers--qodo-itamar-friedman
 updated: concepts/{ai-verification, agent-ready-codebase, model-selection, ai-sdlc}, people/{itamar-friedman, uri-eliabayev}, shows/hidden-layers, index
+
+## 2026-10-07 — Hidden Layers: Building an AI Security Tester (Ofri Ziv)
+source: whisper (high-level summary)
+created: episodes/hidden-layers--tenzai-ofri-ziv, people/ofri-ziv
+updated: concepts/{ai-cybersecurity, ai-guardrails, llm-evals}, people/uri-eliabayev, shows/hidden-layers, index

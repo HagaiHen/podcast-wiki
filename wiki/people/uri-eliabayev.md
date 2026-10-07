@@ -32,5 +32,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--qodo-itamar-friedman]] (host)
 
+- [[episodes/hidden-layers--tenzai-ofri-ziv]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]
