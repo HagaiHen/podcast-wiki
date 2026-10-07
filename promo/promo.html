@@ -122,6 +122,7 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 
 </div>
 <div id="snd"><div>
+<button type="button" id="pause" aria-pressed="false">❚❚ Pause</button>
 <button type="button" data-src="music/hiphop-shop.mp3" data-title="Hip-Hop Shop" aria-pressed="false">▶ Hip-Hop Shop</button>
 <button type="button" data-src="music/hiphop-music.mp3" data-title="Hip Hop Music" aria-pressed="false">▶ Hip Hop Music</button>
 <button type="button" data-src="music/hiphop-vlog.mp3" data-title="Hip-Hop Vlog" aria-pressed="false">▶ Hip-Hop Vlog</button>
@@ -145,12 +146,22 @@ function seek(t){
 }
 const st=document.getElementById('stage');function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}addEventListener('resize',fit);fit();
 window.seek=seek; window.DUR=DUR;
-const snd=document.getElementById('snd'),aud=document.getElementById('aud');
-if(!navigator.webdriver){let t0=performance.now();(function f(){seek(aud.paused?((performance.now()-t0)/1000)%DUR:aud.currentTime);requestAnimationFrame(f)})();
-  const btns=[...snd.querySelectorAll('button')],credit=document.getElementById('credit');
+const snd=document.getElementById('snd'),aud=document.getElementById('aud'),pb=document.getElementById('pause');
+if(!navigator.webdriver){
+  let t0=performance.now(),frozen=false,ft=0,music=false;
+  const now=()=>frozen?ft:music?aud.currentTime:((performance.now()-t0)/1000)%DUR;
+  (function f(){seek(now());requestAnimationFrame(f)})();
+  const label=()=>{pb.textContent=frozen?'▶ Play':'❚❚ Pause';pb.setAttribute('aria-pressed',frozen)};
+  function toggle(){
+    if(!frozen){ft=now();frozen=true;aud.pause()}
+    else{frozen=false;if(music){aud.currentTime=ft;aud.play().catch(()=>{})}else t0=performance.now()-ft*1000}
+    label()}
+  pb.onclick=toggle;
+  addEventListener('keydown',e=>{if(e.code==='Space'&&e.target.tagName!=='BUTTON'){e.preventDefault();toggle()}});
+  const btns=[...snd.querySelectorAll('button[data-src]')],credit=document.getElementById('credit');
   btns.forEach(b=>b.onclick=()=>{const on=b.getAttribute('aria-pressed')==='true';
-    if(on){aud.pause();t0=performance.now()-aud.currentTime*1000}
-    else{aud.src=b.dataset.src;aud.currentTime=0;aud.play().catch(()=>{});credit.textContent=`"${b.dataset.title}" · Pixabay (royalty-free)`}
-    btns.forEach(x=>{const p=x===b&&!on;x.setAttribute('aria-pressed',p);x.textContent=(p?'❚❚ ':'▶ ')+x.dataset.title})})}
+    if(on){if(!frozen)t0=performance.now()-aud.currentTime*1000;music=false;aud.pause()}
+    else{music=true;frozen=false;label();aud.src=b.dataset.src;aud.currentTime=0;aud.play().catch(()=>{});credit.textContent=`"${b.dataset.title}" · Pixabay (royalty-free)`}
+    btns.forEach(x=>{const p=x===b&&!on;x.setAttribute('aria-pressed',p);x.textContent=(p?'🔊 ':'▶ ')+x.dataset.title})})}
 else{snd.hidden=true;seek(0)}
 </script>
