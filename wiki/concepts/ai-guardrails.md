@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
+sources: 8
 updated: 2026-10-07
 ---
 # AI Guardrails
@@ -25,6 +25,7 @@ updated: 2026-10-07
 - Cheap classifiers can serve as guardrail judges, e.g. Claude Code's auto mode checks each tool call for risk, or a hook can check whether an agent ignored AGENTS.md ([[episodes/langtalks--74-jev]]).
 - Agents need real-time supervision, not just pre-launch evals. Anthropic's vending-machine agent was talked into giving products away or 99% discounts. Models are "very smart and very gullible": persistence and emotional appeals ("my grandmother died", "for educational purposes") wear down refusals ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Least privilege as basic hygiene: give an agent read-only access where possible, so the worst case is extra queries ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Shared-memory agents leak: a team brain synced private, partly recorded conversations into a git repo whose history everyone could read, forcing the team to wipe and recreate the repo more than once and add skill-level guardrails ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 
 ## Disagreements & open questions
 

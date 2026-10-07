@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-07
 ---
 # Company Brain
@@ -22,8 +22,14 @@ updated: 2026-10-07
 - Maybe the center shouldn't be the company but its customers ([[episodes/ai-engineering-podcast--company-brain]]).
 - Domain-expert knowledge, not frontier models, is the durable edge (Satya Nadella, as cited) ([[episodes/ai-engineering-podcast--company-brain]]).
 - Wonderful's internal "Wonder" agent connects to Drive, calendars, public Slack, Salesforce, the product, and Snowflake so nobody asks colleagues factual questions. It ranges from "why is prod broken?" to cross-data research (e.g. FDE background vs delivery speed); next step: taking actions ([[episodes/ignore-instructions--24-wonderful-road-to-100m]], [[people/roy-lazar]]).
+- Early-stage teams generate "shadow data" (customer meetings, Slack and WhatsApp threads, hallway and late-night architecture debates) that matters most precisely when there's no product yet ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- monday's Harmony team brain: every member's machine runs a Claude skill every ~30 minutes that pulls new items via their own MCPs (note-taker, Slack, WhatsApp, docs), updates a shared git wiki, and pushes, so each person is a node and the brain stays alive without per-person workflows ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- Delivery surfaces: a Wikipedia-style site for morning reading, the repo inside Cursor or Claude for builders, Figma MCP plus the brain for designers, and a WhatsApp agent for anyone, including people on vacation or reserve duty ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- Results: a vision deck for the CEO in hours instead of weeks; Google Ads messaging written by Claude from the brain, which knows more than any single member; alignment across product and go-to-market without extra syncs. Next: autonomous per-discipline agents built on top of the brain ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- Culture shift: meetings without the note-taker became "unheard of", and the team even records in-person conversations ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 
 ## Disagreements & open questions
+- Total transparency, bug or feature? Everything recorded or written becomes visible to the whole team; the guest now sees it as a feature ("everyone knows everything"), while acknowledging people still want to gossip in meetings and must switch the note-taker off to do so ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Who builds it? Agents will build the brain that gives agents context, so whose context builds it? Humans may lose the ability to read or audit the org's context ([[episodes/ai-engineering-podcast--company-brain]]).
 
 ## Takeaways
@@ -31,6 +37,7 @@ updated: 2026-10-07
 - [ ] Build team-level context before attempting company-wide ([[episodes/ai-engineering-podcast--company-brain]])
 - [ ] Capture the "missing why": record decisions with their reasons ([[episodes/ai-engineering-podcast--company-brain]])
 - [ ] Weight sources by type and authority (email > chat; official docs > personal notes) ([[episodes/ai-engineering-podcast--company-brain]])
+- [ ] Prototype a team brain locally (note-taker + Slack MCPs into a small git wiki) before automating it ([[episodes/startup-for-startup--353-self-updating-team-brain]])
 
 ## Related
-[[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/personal-ai-os]] · [[concepts/llm-wiki]] · [[concepts/enterprise-ai-adoption]]
+[[concepts/rag]] · [[concepts/memory-consolidation]] · [[concepts/knowledge-graphs]] · [[concepts/personal-ai-os]] · [[concepts/llm-wiki]] · [[concepts/enterprise-ai-adoption]] · [[concepts/llm-wiki]]

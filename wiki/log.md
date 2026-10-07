@@ -193,3 +193,8 @@ updated: concepts/{agent-workspaces, harness-engineering, workflow-automation, a
 source: whisper
 created: episodes/startup-for-startup--354-reliable-agents-lean-context, people/doron-bleiberg
 updated: concepts/{context-engineering, skill-engineering, llm-evals}, shows/startup-for-startup, index, takeaways/to-try
+
+## 2026-10-07 — Startup for Startup: #353 How We Built a Self-Updating Team Brain
+source: whisper
+created: episodes/startup-for-startup--353-self-updating-team-brain
+updated: concepts/{company-brain, llm-wiki, ai-guardrails}, shows/startup-for-startup, index, takeaways/to-try

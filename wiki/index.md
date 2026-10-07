@@ -121,6 +121,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/startup-for-startup--353-self-updating-team-brain]]: #353 How We Built a Self-Updating Team Brain (2026-06-09)
 - [[episodes/startup-for-startup--354-reliable-agents-lean-context]]: #354 Reliable Agents Without Overloading Context (2026-06-16)
 - [[episodes/startup-for-startup--362-agent-architecture-fit]]: #362 Matching Agent Architecture to the Problem (2026-08-11)
 - [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)

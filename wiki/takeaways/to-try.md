@@ -152,3 +152,4 @@
 - [ ] Before building an agent, classify the job and solve only that problem type — [[concepts/agent-architectures]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]
 - [ ] Give agents the goal and review their plan instead of dictating micro-tasks — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]
 - [ ] Rewrite "don't" rules in agent prompts as positive instructions — [[concepts/context-engineering]] · [[episodes/startup-for-startup--354-reliable-agents-lean-context]]
+- [ ] Prototype a team brain locally (note-taker + Slack MCPs into a small git wiki) before automating — [[concepts/company-brain]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]
