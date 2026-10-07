@@ -24,6 +24,7 @@
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
 - [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
+- [[concepts/world-models]]: JEPA, video and 3D world models, beyond next-token
 - [[concepts/continual-learning]]: models that keep learning after training
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
 - [[concepts/llm-reasoning]]: token-space vs latent reasoning; RL reasoning
@@ -127,6 +128,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--manifold-gilad-levi]]: Has a Replacement for Transformers Been Found? (2026-07-06)
 - [[episodes/hidden-layers--nvidia-gilad-shainer]]: Making Sense of Nvidia's Technology (2026-09-27)
 - [[episodes/osim-tochna--gong-ai-for-developers]]: Gong Rolls Out AI for Developers (2025-11-03)
 - [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]: AI in Production: Reality vs Imagination (2026-02-23)

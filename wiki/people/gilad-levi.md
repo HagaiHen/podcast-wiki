@@ -8,5 +8,7 @@ Founder of Manifold, an Israeli AI lab working on continual learning; former chi
 ## Appearances
 - [[episodes/explainable--164-gilad-levi-continual-learning]]
 
+- [[episodes/hidden-layers--manifold-gilad-levi]]
+
 ## Concepts
-[[concepts/continual-learning]] · [[concepts/llm-pretraining]] · [[concepts/llm-reasoning]] · [[concepts/ai-moats]]
+[[concepts/continual-learning]] · [[concepts/llm-pretraining]] · [[concepts/llm-reasoning]] · [[concepts/ai-moats]] · [[concepts/world-models]]

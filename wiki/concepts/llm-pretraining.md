@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-07
 ---
 # LLM Pre-training
@@ -20,6 +20,7 @@ updated: 2026-10-07
 - Data order matters, not just mix: the last gains came from training on the same datasets in a different order. With 20 datasets the search space explodes, so intuition beats theory ([[episodes/explainable--157-training-hebatron]]).
 - SFT needs loss masking (loss only on responses, not user input), which complicates sequence packing (filling the context with several texts to avoid padding); NeMo/Megatron Bridge handles packing for pre-training but not masked SFT well ([[episodes/explainable--157-training-hebatron]]).
 - Infra economics: NeMo/Megatron Bridge doubled throughput vs DeepSpeed (halving cost). B300 Blackwell GPUs cost ~2× H200 but ran ~7× faster (2k → 14k tokens/s), cutting a full CPT run from a projected ~$200k to tens of thousands. Budget-capped bookings (e.g. ~$20k per two-day 64-GPU cluster) force experiments to be planned a week ahead ([[episodes/explainable--157-training-hebatron]]).
+- Transformers have dominated for nine years (RNNs lasted about two) because of parallelism and scale, which brought emergent in-context learning and reasoning. Diminishing returns (10× compute for 99% → 99.9%) leave room for cheaper rivals ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
 
 ## Disagreements & open questions
 - Can transformers be understood from inside? Interpretability researchers (e.g. at Anthropic) try to localize facts in MLPs; Levi thinks the general problem is like predicting a three-body system: sub-problems yes, the whole no ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -27,4 +28,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]] · [[concepts/ai-infrastructure]]
+[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]] · [[concepts/ai-infrastructure]] · [[concepts/world-models]]

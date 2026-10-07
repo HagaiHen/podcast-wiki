@@ -213,3 +213,8 @@ updated: concepts/{ai-rd-rollout, ai-engineering-metrics, test-driven-developmen
 source: whisper
 created: episodes/hidden-layers--nvidia-gilad-shainer, concepts/ai-infrastructure, people/{gilad-shainer, uri-eliabayev}, shows/hidden-layers
 updated: concepts/{llm-inference, llm-pretraining} (links), hubs/ai-engineering, index
+
+## 2026-10-07 — Hidden Layers: Has a Replacement for Transformers Been Found? (Gilad Levi)
+source: whisper
+created: episodes/hidden-layers--manifold-gilad-levi, concepts/world-models
+updated: concepts/{continual-learning, ai-moats, llm-pretraining}, people/{gilad-levi, uri-eliabayev}, shows/hidden-layers, hubs/ai-engineering, index
