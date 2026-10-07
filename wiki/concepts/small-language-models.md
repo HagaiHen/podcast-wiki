@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # Small Language Models (SLMs)
@@ -22,6 +22,7 @@ updated: 2026-10-07
 - Custom training is opening up: AWS Nova Forge continues training from early foundation checkpoints on your data mix (more data than fine-tuning, but escaping local minima and catastrophic forgetting); Thinking Machines' Tinker is similar ([[episodes/langtalks--58-reinvent-predictions]], [[people/shuki-cohen]]).
 - Encoder-only small models for classification are very fast and reliable ([[episodes/langtalks--58-reinvent-predictions]]).
 - From POC to production: a big-model agent workflow that took three days on large customer networks (vs five hours expected) was fixed by splitting tasks across small fine-tuned models with an orchestrator, then optimizing inference from driver to model configuration ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
+- At hundreds of millions of files a day, frontier LLMs are ~100× too expensive for classification. Cyera trains its own encoder-decoder models, self-hosted with GPU-optimized inference, which are cheaper, faster, and more accurate because guardrails and context are built in (a lawyer's brochure phone number isn't sensitive) ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
 
 ## Disagreements & open questions
 - Regression or evolution? Granot argues returning to small models is evolution, built on what LLMs taught us ([[episodes/langtalks--59-slms]]).

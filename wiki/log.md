@@ -238,3 +238,8 @@ updated: concepts/{ai-cybersecurity, multi-agent-orchestration, small-language-m
 source: whisper
 created: episodes/hidden-layers--claroty-ben-mashiach, people/ben-mashiach
 updated: concepts/{ai-cybersecurity, decision-classifiers, company-brain}, people/uri-eliabayev, shows/hidden-layers, index
+
+## 2026-10-07 — Hidden Layers: Advanced AI Research at a Cyber Company (Shiran Bareli)
+source: whisper
+created: episodes/hidden-layers--cyera-shiran-bareli, people/shiran-bareli
+updated: concepts/{small-language-models, agent-security, model-selection, llm-evals}, people/uri-eliabayev, shows/hidden-layers, index, takeaways/to-try

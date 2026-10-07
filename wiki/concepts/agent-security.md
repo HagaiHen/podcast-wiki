@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # Agent Security
@@ -23,6 +23,8 @@ updated: 2026-10-07
 - Over-eager sanitization breaks legitimate input (stripping asterisks and ampersands users needed in logs) ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 - Exposed personal agents: a Shodan search found OpenClaw instances on an open port with no authentication, giving access to files and photos. Run such agents on a separate virtual WhatsApp number, not your own, which got banned for spam after 500 accidental messages ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 - The "lethal trifecta": untrusted input, access to sensitive data, and the ability to act (call tools, change state). Any two together create risk; a FAQ bot with none leaks at most its system prompt. Yet agents only deliver value with all three, which is the trust gap holding enterprises back ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- AI assistants connected to Drive, M365, and Notion turn latent over-permissioning into active leaks: anyone can now *ask* for data they could technically reach, such as an executive's files or other teams' customer contacts. Access governance becomes the first fix ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
+- Agent security program: inventory every agent (hundreds or thousands, many built by non-technical staff), map what data each reaches, detect out-of-scope actions (e.g. an agent making hiring decisions where regulation forbids it), and watch for injected prompts, such as in a calendar-invite description, and insider misuse ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
 
 ## Disagreements & open questions
 
@@ -33,6 +35,7 @@ updated: 2026-10-07
 - [ ] Create a dedicated browser profile for your agent ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] If you run a personal agent (OpenClaw-style), verify it isn't reachable from the internet and give it its own phone number ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]])
 - [ ] Map each agent against the lethal trifecta (untrusted input, sensitive data, actions) and remove a leg where possible ([[episodes/hidden-layers--alice-avi-golan]])
+- [ ] Before rolling out a workspace AI assistant, audit who can access what: the assistant will surface every over-permission ([[episodes/hidden-layers--cyera-shiran-bareli]])
 
 ## Related
 [[concepts/ai-guardrails]] · [[concepts/personal-ai-assistants]] · [[concepts/ai-gateway]] · [[concepts/agent-ready-products]] · [[concepts/ai-cybersecurity]] · [[concepts/multimodal-llms]] · [[concepts/ai-red-teaming]]

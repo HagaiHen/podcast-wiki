@@ -18,5 +18,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--claroty-ben-mashiach]] (host)
 
+- [[episodes/hidden-layers--cyera-shiran-bareli]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]
