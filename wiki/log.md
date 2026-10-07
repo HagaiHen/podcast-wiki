@@ -198,3 +198,8 @@ updated: concepts/{context-engineering, skill-engineering, llm-evals}, shows/sta
 source: whisper
 created: episodes/startup-for-startup--353-self-updating-team-brain
 updated: concepts/{company-brain, llm-wiki, ai-guardrails}, shows/startup-for-startup, index, takeaways/to-try
+
+## 2026-10-07 — Osim Tochna: AI in Production: Reality vs Imagination
+source: whisper
+created: episodes/osim-tochna--ai-in-production-reality-vs-imagination, concepts/multimodal-llms
+updated: concepts/{llm-evals, agent-security, ai-finops, future-of-software-engineering, ai-hype}, shows/osim-tochna, people/amit-bendor, hubs/ai-engineering, index, takeaways/to-try

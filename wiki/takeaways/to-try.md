@@ -153,3 +153,6 @@
 - [ ] Give agents the goal and review their plan instead of dictating micro-tasks — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]
 - [ ] Rewrite "don't" rules in agent prompts as positive instructions — [[concepts/context-engineering]] · [[episodes/startup-for-startup--354-reliable-agents-lean-context]]
 - [ ] Prototype a team brain locally (note-taker + Slack MCPs into a small git wiki) before automating — [[concepts/company-brain]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]
+- [ ] For vision features, test empty/black and adversarial-text images before launch — [[concepts/multimodal-llms]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
+- [ ] Try visual hints (marking the region of interest) before upgrading to a pricier model — [[concepts/multimodal-llms]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
+- [ ] Verify any personal agent (OpenClaw-style) isn't internet-reachable and has its own phone number — [[concepts/agent-security]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]

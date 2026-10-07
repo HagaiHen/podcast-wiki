@@ -21,6 +21,7 @@
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
+- [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
 - [[concepts/continual-learning]]: models that keep learning after training
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
@@ -121,6 +122,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]: AI in Production: Reality vs Imagination (2026-02-23)
 - [[episodes/startup-for-startup--353-self-updating-team-brain]]: #353 How We Built a Self-Updating Team Brain (2026-06-09)
 - [[episodes/startup-for-startup--354-reliable-agents-lean-context]]: #354 Reliable Agents Without Overloading Context (2026-06-16)
 - [[episodes/startup-for-startup--362-agent-architecture-fit]]: #362 Matching Agent Architecture to the Problem (2026-08-11)

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 10
+sources: 11
 updated: 2026-10-07
 ---
 # LLM Evals
@@ -35,6 +35,8 @@ updated: 2026-10-07
 - End-to-end agent evals as nightly labs: build realistic apps across stacks, plant known issues to form ground truth, run the full agent several times per lab, and track recall, precision (false positives), runtime, cost, and unsafe actions. At Tenzai this costs hundreds of thousands of dollars a month in tokens, before production ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Results pick the model per sub-agent, and the best choice changes daily as models ship (e.g. Claude better at one sub-task, GPT-5.5 at another) ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Use evals to decide what goes into context: questions the model answers correctly in every run need no injected knowledge. Phrase eval questions without implicit hints ("what's wrong?" presumes something is), as in survey design ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
+- LLM-as-judge needs few degrees of freedom: a 0–100 score was too lenient ("cleaned the top shelf"), so CyberArk moved to 0/50/100. The judge also errs: it scored "clicked on the Chrome browser button" 0 against the label "clicked on Chrome", so judged results still need manual review, or a judge for the judge ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
+- An agent running Opus 4.5 iterated on prompts and preprocessing against the eval harness for hours and lifted accuracy from 76% to the 80s ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 
 ## Disagreements & open questions
 

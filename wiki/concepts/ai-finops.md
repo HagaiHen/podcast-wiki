@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-10-06
+sources: 4
+updated: 2026-10-07
 ---
 # AI FinOps (attributing and managing AI spend)
 
@@ -19,6 +19,7 @@ updated: 2026-10-06
 - Prediction: the theoretical $1–2k/month per-developer ceiling will break; money becomes tokens, intelligence, energy ([[episodes/langtalks--67-finops-for-ai]]).
 - Mandatory project tags on an internal LLM API answer whether, say, the back office is half the Bedrock bill or negligible ([[episodes/langtalks--66-scaling-llmops]]).
 - Spend should be read alongside productivity metrics: productivity per dollar ([[episodes/langtalks--64-ai-coding-metrics]]).
+- Hidden production costs demos skip: calling a model on another cloud (e.g. Gemini from AWS infrastructure) adds data egress fees; EU customers may forbid data leaving Europe, so global routing for capacity overflow is off-limits; you must verify the vendor isn't logging or retaining data ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 
 ## Disagreements & open questions
 - Is cost even the issue? One host argues flat $200 subscriptions make it moot and the real question is business impact ([[episodes/langtalks--67-finops-for-ai]]).

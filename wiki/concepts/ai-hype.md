@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # AI Hype & Durable Value
@@ -17,6 +17,7 @@ updated: 2026-10-07
 - Counterpoint to waiting: Wonderful builds features that are "half-broken" on current models, betting model progress makes them work, rather than adding restrictions around today's limits ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 - Example of churn: a colleague told Levi to switch to Codex ("Claude Code is dead"), then back to Claude Code a week later. Tools like alphaXiv feel five years old a week after launch; you're expected to be a year-long expert in something released this week ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Gartner-style peak of inflated expectations: there may be a dip, but the long-tail compounding effect is large and shows up in unexpected places ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Veteran's rule: wait about two weeks before chasing a new tool; if it's still exciting, try it. Remember the 80/20 gap between a hackathon POC and production. Like the client-side framework churn of the past, nobody gets fired for learning a trend a month later ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 
 ## Disagreements & open questions
 

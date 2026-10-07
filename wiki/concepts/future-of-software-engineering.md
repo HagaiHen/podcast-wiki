@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-07
 ---
 # Future of Software Engineering
@@ -26,6 +26,8 @@ updated: 2026-10-07
 - Roles will shift as mobile and full-stack once appeared: pure "code monkeys" may go, while architecture, design, cost, and ops roles grow. Agents act as force multipliers that raise expectations and make you always-available (remote agent control) ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Advice: learn what surrounds the LLM (ops, cost, verification), agent infrastructure (protocols, runtimes, memory; e.g. Anthropic buying Bun, OpenAI buying uv/ruff), and the hardware layer, which brings strong job security. Humans become agent orchestrators ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Paradox: if agents replace most workers, who buys the products (Jira, Slack, Office) built for them? Alternatively, a Star Trek future where people pursue hobbies ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- "The end of programmers" vs the front line: building one multimodal feature to GA took 1.5 years of evals, cost, security, compliance, and plain old CI and networking work. Easy POCs, like website builders before them, raise the bar for what's expected rather than ending the job ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]], [[people/amit-bendor]]).
+- Build vs buy: buying SaaS offloads liability (security, compliance such as data-access requests under EU or Israeli law, with fines on revenue). Saving a few million by vibe-coding your own system exposes you to far larger risks ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).

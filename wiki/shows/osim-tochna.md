@@ -7,3 +7,4 @@ Hebrew software-development podcast, hosted by [[people/amit-bendor]].
 
 ## Episodes
 - [[episodes/osim-tochna--second-brain-and-llm-wiki]] (2026-08-03)
+- [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]] (2026-02-23)
