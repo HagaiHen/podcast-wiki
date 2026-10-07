@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-07
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
@@ -22,6 +22,11 @@ updated: 2026-10-07
 - More than 20% of monday's code is written by agents ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
 - The main blocker is mindset: people micro-manage agents with 100 small tasks instead of stating the goal and reviewing the agent's plan; when something breaks, connect tools (e.g. a browser) and tell it to check itself rather than dictating fixes ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
 - Separate fundamentals (model and infra progress, which is steady and logical) from product hype ("the movie app doesn't actually work"); try things hands-on, since month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
+- Three org responses to coding AI: cautious minimum, shallow enthusiasm (licenses plus one training), and a small group that rebuilds practices. Passive "take it and see" doesn't reach depth ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Someone must own it: at Gong the Developer Experience team owns AI adoption (Claude Code in Docker per Anthropic's security guidance, manifests, practices), plus a training team running hands-on sessions on developers' own code ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Top-down mandate works: on one new product, an all-senior team *had* to work with Claude Code, and seniors became the most hooked; it shone on unfamiliar tech and less on integrating with existing React code ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- No caps on sessions or tokens; the cost stays reasonable ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Bottom-up: managers and team leads build weekend side projects (search features, prototypes), and the fast gratification is addictive and spreads ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).
@@ -31,6 +36,7 @@ updated: 2026-10-07
 - [ ] Try a "no hand-written code" sprint to force the workflow shift ([[episodes/langtalks--62-ai-rd-rollout]])
 - [ ] Give product managers read access to the codebase via an AI tool ([[episodes/langtalks--62-ai-rd-rollout]])
 - [ ] Give agents the goal and review their plan, instead of dictating micro-tasks ([[episodes/startup-for-startup--362-agent-architecture-fit]])
+- [ ] Name an owner (e.g. developer-experience team) for AI adoption, with hands-on sessions on real code ([[episodes/osim-tochna--gong-ai-for-developers]])
 
 ## Related
 [[concepts/ai-sdlc]] · [[concepts/ai-engineering-metrics]] · [[concepts/coding-agent-workflow]]

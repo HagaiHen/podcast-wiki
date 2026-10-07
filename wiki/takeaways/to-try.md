@@ -156,3 +156,4 @@
 - [ ] For vision features, test empty/black and adversarial-text images before launch — [[concepts/multimodal-llms]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
 - [ ] Try visual hints (marking the region of interest) before upgrading to a pricier model — [[concepts/multimodal-llms]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
 - [ ] Verify any personal agent (OpenClaw-style) isn't internet-reachable and has its own phone number — [[concepts/agent-security]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
+- [ ] Name an owner for AI adoption and run hands-on sessions on real code — [[concepts/ai-rd-rollout]] · [[episodes/osim-tochna--gong-ai-for-developers]]

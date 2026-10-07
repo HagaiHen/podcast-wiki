@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-06
+sources: 2
+updated: 2026-10-07
 ---
 # Test-Driven Development (for agents)
 
@@ -12,6 +12,7 @@ updated: 2026-10-06
 - Red: tests fail because the feature doesn't exist; green: the same tests pass after implementation ([[episodes/langtalks--73-harness-engineering]]).
 - The agent may not modify tests to make them pass, only code. "No choice" is the essence of a harness ([[episodes/langtalks--73-harness-engineering]]).
 - Good engineering practices humans found too costly to maintain become cheap with agents ([[episodes/langtalks--73-harness-engineering]]).
+- AI revives TDD: for a migration (Parquet to Apache Iceberg), have Claude write the tests first, run old and new paths in parallel, compare outputs, then refactor and generalize ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Disagreements & open questions
 

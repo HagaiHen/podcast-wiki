@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-06
+sources: 2
+updated: 2026-10-07
 ---
 # AI Engineering Metrics (measuring coding-agent impact)
 
@@ -17,6 +17,7 @@ updated: 2026-10-06
 - Usage versus utilization: logging in daily differs from *how* it's used. Go deeper with the percent of PR code AI-generated, PRs reviewed by custom agents, and whether buggy lines came from planned, spec-driven sessions or a quick phone session ([[episodes/langtalks--64-ai-coding-metrics]]).
 - If a developer's agents rarely use the internal MCP and their bug rate is high, that's concrete coaching feedback ([[episodes/langtalks--64-ai-coding-metrics]]).
 - "Cursor vs Claude Code?" is answerable per org only with these metrics ([[episodes/langtalks--64-ai-coding-metrics]]).
+- Token usage per developer as an adoption metric: it shows usage, not quality, and can reward junk code or wasted context. Gong is still deciding between time-to-maturity of features, bug counts, and refactoring capability ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Disagreements & open questions
 

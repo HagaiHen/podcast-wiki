@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # Future of Software Engineering
@@ -28,6 +28,8 @@ updated: 2026-10-07
 - Paradox: if agents replace most workers, who buys the products (Jira, Slack, Office) built for them? Alternatively, a Star Trek future where people pursue hobbies ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - "The end of programmers" vs the front line: building one multimodal feature to GA took 1.5 years of evals, cost, security, compliance, and plain old CI and networking work. Easy POCs, like website builders before them, raise the bar for what's expected rather than ending the job ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]], [[people/amit-bendor]]).
 - Build vs buy: buying SaaS offloads liability (security, compliance such as data-access requests under EU or Israeli law, with fines on revenue). Saving a few million by vibe-coding your own system exposes you to far larger risks ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
+- AI as pair programmer brings back XP's pair programming, but you're only as good as your pair: seniors can hold a deeper dialogue with it. Gong keeps hiring aggressively ("hire 200, get the impact of 300") and calls fears of no more juniors "fake" ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Learning a language still matters: "vibe coding will bridge it" is shallow and fails in practice ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).

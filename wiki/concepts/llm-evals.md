@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
+sources: 12
 updated: 2026-10-07
 ---
 # LLM Evals
@@ -37,6 +37,8 @@ updated: 2026-10-07
 - Use evals to decide what goes into context: questions the model answers correctly in every run need no injected knowledge. Phrase eval questions without implicit hints ("what's wrong?" presumes something is), as in survey design ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 - LLM-as-judge needs few degrees of freedom: a 0–100 score was too lenient ("cleaned the top shelf"), so CyberArk moved to 0/50/100. The judge also errs: it scored "clicked on the Chrome browser button" 0 against the label "clicked on Chrome", so judged results still need manual review, or a judge for the judge ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 - An agent running Opus 4.5 iterated on prompts and preprocessing against the eval harness for hours and lifted accuracy from 76% to the 80s ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
+- Gong's "DS2" (data scientist 2.0) role owns prompt templates (machines write the actual prompts), evals, judges, gold sets, and production monitors. Recruits come from data science, product, and QA ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Continuous calibration (CI/CC/CD): an LLM feature is never done, since models, tools, and competition keep changing, so prompts, tools, and context need constant re-tuning against evals ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Disagreements & open questions
 

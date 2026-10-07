@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
+sources: 8
 updated: 2026-10-07
 ---
 # AI Verification
@@ -26,6 +26,8 @@ updated: 2026-10-07
 - A million-line AI-generated PR porting Bun from Zig to Rust passed tests, but the community panicked: nobody can review a million lines, and models are known to fake tests ("return true") ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - A professor found ~60% of an LLM's working code irrelevant; dead code bites at 3 a.m. when you must know where to look. Agents can't debug an outage fast without human direction ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Practical rule: build in small steps, understand the logic and business requirements of what goes in, and check the tests are meaningful and tied to requirements ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Mandatory AI review on every PR (backward compatibility, dependencies, SQL injection, XSS, circular dependencies) that *flags* rather than blocks, with a human override button. AI can survey a many-file commit more broadly than a human reviewer ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Design-first: have the agent analyze alternatives with criteria (cost, ease of migration, maintenance) and write a plan before code; afterwards, sync the design doc back to Confluence from the code so docs stay a source of truth ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Disagreements & open questions
 - How much code must humans read? With spec-driven development and proof of work, one LangTalks host reads diffs less and less ([[episodes/langtalks--71-claw-architectures]]); the ExplAInable hosts argue you must understand what goes in, or you can't fix it at 3 a.m., and that tests alone can be faked ([[episodes/explainable--163-hidden-cost-of-agents]]).

@@ -114,6 +114,7 @@
 - [[people/shay-shitrit]]: founder of Lab17 (n8n automations)
 - [[people/shuki-cohen]]: VP Data, AI21
 - [[people/pavel-gurevich]]: founder of Tenzai (AI pentesting)
+- [[people/ohad-parush]]: Chief R&D Officer at Gong
 - [[people/roy-lazar]]: Wonderful (enterprise applied AI)
 - [[people/roy-mann]]: co-founder and co-CEO of monday.com
 - [[people/ryan-vogel]]: OpenCode founding team
@@ -122,6 +123,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/osim-tochna--gong-ai-for-developers]]: Gong Rolls Out AI for Developers (2025-11-03)
 - [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]: AI in Production: Reality vs Imagination (2026-02-23)
 - [[episodes/startup-for-startup--353-self-updating-team-brain]]: #353 How We Built a Self-Updating Team Brain (2026-06-09)
 - [[episodes/startup-for-startup--354-reliable-agents-lean-context]]: #354 Reliable Agents Without Overloading Context (2026-06-16)
