@@ -228,3 +228,8 @@ updated: concepts/{agent-security, ai-guardrails, llm-evals, open-weight-models}
 source: whisper
 created: episodes/hidden-layers--bria-misha-feinstein, concepts/image-generation, people/misha-feinstein
 updated: concepts/{ai-moats, open-weight-models, model-selection}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index
+
+## 2026-10-07 — Hidden Layers: AI Defending Countries From Cyberattacks (Eran Hoffman)
+source: whisper
+created: episodes/hidden-layers--dream-eran-hoffman, people/eran-hoffman
+updated: concepts/{ai-cybersecurity, multi-agent-orchestration, small-language-models, llm-evals, skill-engineering}, people/uri-eliabayev, shows/hidden-layers, index

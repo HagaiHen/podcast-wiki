@@ -99,6 +99,7 @@
 - [[people/avi-lumelsky]]: production LLM lead, Oligo
 - [[people/dor-cohen]]: AI infra lead, monday.com
 - [[people/elad-granot]]: AI researcher, Trullion
+- [[people/eran-hoffman]]: Chief R&D Officer at Dream
 - [[people/gavriel-cohen]]: creator of NanoClaw
 - [[people/iko-azoulay]]: EVP Technology, Salt Security
 - [[people/itamar-friedman]]: CEO of Qodo
@@ -132,6 +133,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--dream-eran-hoffman]]: AI Defending Countries From Cyberattacks (2026-06-18)
 - [[episodes/hidden-layers--bria-misha-feinstein]]: Training an Image Foundation Model From Scratch (2026-06-24)
 - [[episodes/hidden-layers--alice-avi-golan]]: Keeping Strong AI Models From Going Rogue (2026-07-01)
 - [[episodes/hidden-layers--manifold-gilad-levi]]: Has a Replacement for Transformers Been Found? (2026-07-06)

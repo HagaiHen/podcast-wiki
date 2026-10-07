@@ -14,5 +14,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--bria-misha-feinstein]] (host)
 
+- [[episodes/hidden-layers--dream-eran-hoffman]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

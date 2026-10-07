@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-07
 ---
 # AI and Cybersecurity
@@ -19,6 +19,8 @@ updated: 2026-10-07
 - Many real findings are business-logic and integration gaps (microservices wired wrongly, infrastructure config, double-spend style flows), not classic coding mistakes ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Security demand grows while the case for buying generic SaaS weakens: companies can build more themselves, but cyber risk only rises ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Open-weight models are what matter about "Chinese models": US companies are also working on strong open models, and broad openness with incremental capability helps defenders keep up ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Government and critical-infrastructure defense adds constraints: on-prem and air-gapped deployments without cloud monitoring, demanding customers who want every failure explained, and a high cost per bug (sometimes a flight to fix it) ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
+- AI commoditizes attackers and turns zero-days into hours while patching can take months, so defense must respond faster and grow more autonomous: "don't bring a knife to a gunfight". Containment should be fine-grained (block one rule or endpoint) rather than "disconnect everything" ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 
 ## Disagreements & open questions
 - Restricted release vs broad verified access: the host argues that with very high-stakes capabilities (state actors), caution and responsible-disclosure-style delays make sense; Gurevich counters that selective early access isn't disclosure and leaves most defenders blind ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]).

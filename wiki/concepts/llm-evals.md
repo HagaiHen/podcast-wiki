@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 13
+sources: 14
 updated: 2026-10-07
 ---
 # LLM Evals
@@ -40,6 +40,7 @@ updated: 2026-10-07
 - Gong's "DS2" (data scientist 2.0) role owns prompt templates (machines write the actual prompts), evals, judges, gold sets, and production monitors. Recruits come from data science, product, and QA ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Continuous calibration (CI/CC/CD): an LLM feature is never done, since models, tools, and competition keep changing, so prompts, tools, and context need constant re-tuning against evals ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Labs now train on RL gyms (simulated enterprise or e-commerce environments with expert-built tasks and evaluators) instead of RLHF preference labels; evaluator verdicts on failed scenarios feed post-training ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- Build ground truth first: experts label 500–1,000 items (e.g. which assets are critical, with roles), expand with Claude, and hold every change (skills, system prompt, fine-tuning, autonomous code) to that eval ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 
 ## Disagreements & open questions
 
