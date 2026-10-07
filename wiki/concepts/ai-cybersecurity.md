@@ -32,4 +32,4 @@ updated: 2026-10-07
 - [ ] Raise human pentest frequency from yearly to quarterly or monthly, and test integrated staging, not just code ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]])
 
 ## Related
-[[concepts/agent-security]] · [[concepts/harness-engineering]] · [[concepts/open-weight-models]] · [[concepts/ai-verification]]
+[[concepts/agent-security]] · [[concepts/harness-engineering]] · [[concepts/open-weight-models]] · [[concepts/ai-verification]] · [[concepts/ai-red-teaming]]

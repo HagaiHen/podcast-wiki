@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # Skill Engineering
 
-**Summary:** Agent skills are mini software: a prompt describing a workflow (what, how, when) plus resources such as scripts, CLIs, or MCP calls. They replace functions and modules, or n8n graphs, combining deterministic code with LLM flexibility, and they let non-developers "contribute code". Sharing them is the hard part: forks diverge, external APIs change under them, and there's no good versioning or dependency management yet.
+**Summary:** Agent skills are mini software: a prompt describing a workflow (what, how, when) plus resources such as scripts, CLIs, or MCP calls. They combine deterministic code with LLM flexibility and let non-developers, especially domain experts, contribute and measure improvements. In practice one orchestrator agent loading skills by scenario beats a separate agent per page or alert type. Skills are also a cost and attention tool: load them progressively, not all up front. They have a ceiling, after which teams fine-tune models. Sharing is still hard: forks diverge, external APIs change, and versioning and dependency management are immature.
 
 ## Key ideas
 - Even "complex" capabilities, like letting an agent message you, can be a few lines of skill plus an API or CLI and token setup ([[episodes/langtalks--72-personal-assistant-agent]]).

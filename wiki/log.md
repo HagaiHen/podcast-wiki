@@ -278,3 +278,7 @@ updated: concepts/{ai-verification, agent-ready-codebase, model-selection, ai-sd
 source: whisper (high-level summary)
 created: episodes/hidden-layers--tenzai-ofri-ziv, people/ofri-ziv
 updated: concepts/{ai-cybersecurity, ai-guardrails, llm-evals}, people/uri-eliabayev, shows/hidden-layers, index
+
+## 2026-10-07 — lint
+fixed: mechanical clean (0 issues); stale summaries 6 (agent-security, skill-engineering, knowledge-graphs, agent-workspaces, harness-engineering, open-weight-models); missing cross-links added
+suggested: none new (AI-economics page still pending from previous lint)

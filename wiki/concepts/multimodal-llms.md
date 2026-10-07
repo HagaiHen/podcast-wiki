@@ -22,4 +22,4 @@ updated: 2026-10-07
 - [ ] Try visual hints (marking the region of interest) before upgrading to a pricier model ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]])
 
 ## Related
-[[concepts/llm-evals]] · [[concepts/model-selection]] · [[concepts/agent-security]] · [[concepts/ai-guardrails]]
+[[concepts/llm-evals]] · [[concepts/model-selection]] · [[concepts/agent-security]] · [[concepts/ai-guardrails]] · [[concepts/image-generation]]

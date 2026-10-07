@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # Agent Workspaces (the new workplace)
 
-**Summary:** Work is moving into shared spaces where humans and agents collaborate: channels where agents (yours and colleagues') work in loops, and boards where agents drive tasks and flag when they need a human. Agents increasingly get real identities (accounts, email, persona) and work as team members rather than per-person clones, sharing skills and collective knowledge. People shift from proactive to reactive, reviewing and unblocking at decision points. Chat is a transitional medium. Whoever owns the workspace controls where context is born, the current "holy grail".
+**Summary:** Work is moving into shared spaces where humans and agents collaborate: channels where agents work in loops, and boards where agents drive tasks and flag when they need a human. Agents increasingly get real identities (accounts, email, persona) and work as team members, or "digital employees" that own a KPI rather than wait for prompts, sharing skills and collective knowledge instead of per-person clones. Trust grows in stages, from read-only suggestions to manually assigned work to owning a queue, and once teams rely on them there's no going back. People shift from proactive to reactive, reviewing and unblocking at decision points. Chat is a transitional medium, and whoever owns the workspace controls where context is born.
 
 ## Key ideas
 - Agents increasingly do most of the work and humans give final tuning and approval, in shared channels with plug-ins (e.g. Grok Bots; an open-source workspace associated with Jack Dorsey) ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).

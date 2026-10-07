@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # Open-Weight Models
 
-**Summary:** Open-weight models, notably Chinese ones like GLM, Kimi, and Qwen, now compete strongly at a fraction of the price (estimates range from ~20–30% cheaper to a fifth or tenth of the cost; GLM 5.2 is said to approach Opus), pushing proprietary providers to cut prices. Enterprise fear has faded since open weights are not code and can run inside trusted clouds (AWS, Google, NVIDIA) in your own VPC rather than via Chinese APIs. Choose use cases carefully: fine for coding, but conversational answers can reflect different training values. Give customers transparency and the choice to opt in.
+**Summary:** Open-weight models, notably Chinese ones like GLM, Kimi, and Qwen, trail the frontier by roughly six months at a fraction of the price, pushing proprietary providers to cut prices. Enterprise fear has faded since weights can run inside trusted clouds or your own VPC. They win where you need real fine-tuning or LoRA on domain data, privacy (local subtasks routed from a main agent), or edge deployment. "Open" varies (weights only vs data and recipes too). Self-hosting isn't automatically cheaper than a cheap hosted model. Choose use cases carefully: conversational answers can reflect different training values.
 
 ## Key ideas
 - Chinese models (GLM, Kimi) "give a phenomenal fight"; proprietary prices are starting to drop ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).

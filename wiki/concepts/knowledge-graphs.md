@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # Knowledge Graphs & Ontology
 
-**Summary:** Representing knowledge as entities and relationships (an ontology) rather than documents. Hard for humans to read, but valuable to agents for understanding how an organization works: who, what, when, why, and what depends on what. Popularized in enterprises by Palantir; tools like Microsoft's GraphRAG and Databricks' Genie Ontology bring it to AI stacks.
+**Summary:** Representing knowledge as entities and relationships (an ontology) rather than documents. Hard for humans to read, but valuable to agents for understanding how an organization works: who, what, when, why, and what depends on what. A graph gives agents a map instead of a flashlight, so they don't exhaust themselves querying one spot at a time or misread an empty result from a slightly wrong filter as "nothing happened". Popularized in enterprises by Palantir; GraphRAG and Databricks' Genie Ontology bring it to AI stacks, and security platforms build hybrid graphs (batch-built, plus live queries for freshness).
 
 ## Key ideas
 - Ontologies help agents grasp an org's relationships, metrics, and mechanics ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).

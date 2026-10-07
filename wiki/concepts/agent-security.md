@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # Agent Security
 
-**Summary:** Assume your agent will be turned against you. Anything it reads (an email, a PR, a website) can carry a prompt injection, so even "your" agent may act maliciously, and with several users or agents on one machine, users can't be trusted either. Secure designs don't rely on the agent behaving: isolate it at the OS level, keep credentials out of its environment entirely, and execute sensitive actions outside its sandbox under policy and human approval.
+**Summary:** Assume your agent will be turned against you. Anything it reads (an email, a PR, a website, a calendar invite) can carry a prompt injection, and with several users or agents on one machine, users can't be trusted either. Secure designs don't rely on the agent behaving: isolate it at the OS level, keep credentials out of its environment, hard-wire what it can reach, and execute sensitive actions outside its sandbox under policy and human approval. Small, auditable codebases beat trust in the author. In enterprises the risk compounds: workspace assistants turn latent over-permissioning into one-question leaks, employee-built agents get shared too widely, and intent depends on who asks and when. Map each agent against the "lethal trifecta" (untrusted input, sensitive data, ability to act), keep an inventory, and detect out-of-scope actions.
 
 ## Key ideas
 - Threat model: once connected to email, anyone who mails you can prompt-inject it. The agent lives in "red" territory, working for you but in a hostile environment ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).

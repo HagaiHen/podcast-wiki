@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # Harness Engineering
 
-**Summary:** Designing the environment around a coding agent so it can work autonomously for long sessions (40–50 minutes, not 5) and converge on correct, production-ready code. The agent must be able to understand the project, act like a developer (run code, tests, environments), and get reward signals telling it whether it's on track. Guardrails are *enforced* in the flow rather than requested. Gains compound: each internal tool lets agents run longer and better.
+**Summary:** Designing the environment around a coding agent, or any task agent, so it can work autonomously for long sessions and converge on correct, production-ready results. The agent must understand the project, act like a practitioner (run code, tests, environments, browsers), and get reward signals telling it whether it's on track. Guardrails are *enforced* in the flow rather than requested. A harness is built and torn down at once: add scaffolding where the model falls short, and remove it as new models make it redundant. Purpose-built harnesses beat generic ones, measuring where you stand matters as much as the harness, and infrastructure (durable objects, sandboxes) is catching up for long-running agents.
 
 ## Key ideas
 - Terminology: the harness is Claude Code, Codex, Cursor agent; tools like NanoClaw/OpenClaw are orchestrators that *use* a harness ([[episodes/langtalks--73-harness-engineering]]).

@@ -27,4 +27,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/continual-learning]] · [[concepts/llm-pretraining]] · [[concepts/multimodal-llms]]
+[[concepts/continual-learning]] · [[concepts/llm-pretraining]] · [[concepts/multimodal-llms]] · [[concepts/image-generation]] · [[concepts/small-language-models]]
