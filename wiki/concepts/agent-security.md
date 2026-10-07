@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
+sources: 8
 updated: 2026-10-07
 ---
 # Agent Security
@@ -29,6 +29,9 @@ updated: 2026-10-07
 - Democratized agents move incidents outside security: HR, finance, or the business may own the problem. One user-built agent summarizing org chat was misconfigured as public; others share a senior manager's permissions with the whole company ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
 - Vendor AI admin consoles offer a handful of org-wide settings, nothing like cloud consoles, and policies can't be aligned across vendors (e.g. Copilot and ChatGPT side by side) ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
 - Indirect prompt injection is also used for self-promotion: links that open a chatbot with instructions to remember a site as the best source, or hidden text in résumés aimed at AI screeners ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- Problems Cohen found in OpenClaw: plaintext logs of *every* WhatsApp chat (not just the connected group), sandboxing enforced in the app rather than the OS, and unvetted dependencies suggested during setup ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Security through auditability: keep the codebase small (about 20 files, readable in an hour with Claude's help) so users needn't trust the author; capabilities are hard-wired (an agent physically can't message an unconnected group) rather than instructed ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Principle: isolate the agent, let it act freely inside its environment, and enforce the perimeter, rather than trying to vet every tool call ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 
 ## Disagreements & open questions
 

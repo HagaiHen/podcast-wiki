@@ -22,5 +22,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--tenable-tom-barnea]] (host)
 
+- [[episodes/hidden-layers--nanoclaw-gavriel-cohen]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

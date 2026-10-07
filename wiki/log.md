@@ -248,3 +248,8 @@ updated: concepts/{small-language-models, agent-security, model-selection, llm-e
 source: whisper
 created: episodes/hidden-layers--tenable-tom-barnea, people/tom-barnea
 updated: concepts/{agent-security, ai-guardrails, multi-agent-orchestration}, people/uri-eliabayev, shows/hidden-layers, index
+
+## 2026-10-07 — Hidden Layers: Building Secure AI Agents for Organizations (Gavriel Cohen)
+source: whisper
+created: episodes/hidden-layers--nanoclaw-gavriel-cohen
+updated: concepts/{personal-ai-assistants, agent-security, llm-wiki}, people/{gavriel-cohen, uri-eliabayev}, shows/hidden-layers, index

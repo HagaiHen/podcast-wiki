@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # Personal AI Assistants ("claws")
@@ -24,6 +24,9 @@ updated: 2026-10-07
 - Autonomous outreach: an OpenClaw agent waking hourly, armed with search, email, and phone tools, iterated toward reaching a hard-to-reach person ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
 - Missing piece: a package manager (npm/uv/pip-style) for personal-assistant skills and configurations, so you can pull someone's setup. Example: a pre-built OpenClaw package for a doctor answering WhatsApp leads, sold or distributed ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - Eitan built and shared an Israeli-restaurants skill that lets a coding agent find free tables and book on OnTopo and Tabit ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
+- Why claws work: coding agent + persistent environment (files, scripts, installed packages survive) + messaging app + internet. From that, memory, self-built tools, scheduled jobs, and initiative emerge, e.g. an agent that set itself a daily cron job to check stroller prices and message when they drop ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Within a day of joining a two-founder WhatsApp group, an agent was running the sales pipeline: morning summaries, task assignments, and follow-up reminders from forwarded emails ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Next step: from one assistant per employee to teams managing dozens or hundreds of agents (CI/CD, error triage, leads) ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 
 ## Disagreements & open questions
 - Would you trust a skill-level change for something critical? Skill changes rarely "break compilation" but are harder to evaluate ([[episodes/langtalks--72-personal-assistant-agent]]).

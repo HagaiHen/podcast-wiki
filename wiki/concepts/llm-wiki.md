@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-07
 ---
 # LLM Wiki (Karpathy pattern)
@@ -17,6 +17,7 @@ updated: 2026-10-07
 - Team adoption: monday's Harmony team applied the pattern to a 20-person org. The key difference from RAG is persistence: a librarian who remembers yesterday's question. Useful answers (e.g. a competitor pricing table a PM researched) are written back, so the next question needs no re-research ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Their schema: concepts, domains, entities (companies, people by role), decisions, and action items, all interlinked; one meeting can update 15 pages. Raw items are stored so nothing is re-processed (saves tokens) ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Advice: start with basic, manual, local versions to prove value, before cloud CI and scale ("bicycle before car") ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- Singapore's foreign minister published his own NanoClaw fork with a Karpathy-style LLM wiki for memory, using it to draft speeches, answer questions, and research as a "second brain" ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 
 ## Disagreements & open questions
 - File layout: Dana keeps Karpathy's flat three layers; Amit experimented with a tree by domain (research, engineering…) aimed at fast, correct lookup. Both agree it keeps getting reorganized ([[episodes/osim-tochna--second-brain-and-llm-wiki]]).

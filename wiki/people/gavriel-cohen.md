@@ -8,5 +8,7 @@ Creator of NanoClaw (popular open-source, security-focused personal agent) and C
 ## Appearances
 - [[episodes/langtalks--71-claw-architectures]]
 
+- [[episodes/hidden-layers--nanoclaw-gavriel-cohen]]
+
 ## Concepts
-[[concepts/agent-security]] · [[concepts/personal-ai-assistants]] · [[concepts/skill-engineering]]
+[[concepts/agent-security]] · [[concepts/personal-ai-assistants]] · [[concepts/skill-engineering]] · [[concepts/llm-wiki]]
