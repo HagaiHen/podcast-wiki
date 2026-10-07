@@ -23,4 +23,4 @@
 
 ## People
 - Build Ship Grow and Squid Club: Israeli AI-builder communities — [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
-- [[people/andrej-karpathy]]: his LLM Wiki post is the basis of this pattern — [[concepts/llm-wiki]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]
+- [[people/andrej-karpathy]]: his LLM Wiki post is the basis of this pattern — [[concepts/llm-wiki]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]
