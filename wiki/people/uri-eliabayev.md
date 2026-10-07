@@ -24,5 +24,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--nanoclaw-gavriel-cohen]] (host)
 
+- [[episodes/hidden-layers--vega-gili-kanfo]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
+sources: 8
 updated: 2026-10-07
 ---
 # Skill Engineering
@@ -24,6 +24,7 @@ updated: 2026-10-07
 - A skill packages a specialization with a very high level of detail to produce a high-quality result. Adoption is still thin in big tech: in one Apple Haifa talk, most had used Claude Code, half knew sub-agents, about three used skills ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - Progressive disclosure is a cost and attention principle, not just tidiness: loading all skills or tasks up front wastes tokens and pulls attention toward things that won't run ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 - Skills split system prompts and speed ramp-up, but hit a ceiling; past it, fine-tune models on collected context and data, sometimes automatically at the customer site in a feedback loop ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
+- One orchestrator plus skills beat a dedicated workflow per alert type: the investigation agent loads skills by scenario (cloud → AWS or GCP). Domain experts, not R&D, should be able to add or edit skills and measure their impact on evals ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
 
 ## Disagreements & open questions
 

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-07
 ---
 # Small Language Models (SLMs)
@@ -23,6 +23,7 @@ updated: 2026-10-07
 - Encoder-only small models for classification are very fast and reliable ([[episodes/langtalks--58-reinvent-predictions]]).
 - From POC to production: a big-model agent workflow that took three days on large customer networks (vs five hours expected) was fixed by splitting tasks across small fine-tuned models with an orchestrator, then optimizing inference from driver to model configuration ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - At hundreds of millions of files a day, frontier LLMs are ~100× too expensive for classification. Cyera trains its own encoder-decoder models, self-hosted with GPU-optimized inference, which are cheaper, faster, and more accurate because guardrails and context are built in (a lawyer's brochure phone number isn't sensitive) ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
+- Logs too big for context: have a model write code (e.g. pandas over the logs) in a self-hosted sandbox instead of reading raw logs. Vega is distilling this from strong-model runs into small Qwen models (4B, 30B-A3B), possibly split into a coder and a summarizer ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
 
 ## Disagreements & open questions
 - Regression or evolution? Granot argues returning to small models is evolution, built on what LLMs taught us ([[episodes/langtalks--59-slms]]).

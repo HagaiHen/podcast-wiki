@@ -253,3 +253,8 @@ updated: concepts/{agent-security, ai-guardrails, multi-agent-orchestration}, pe
 source: whisper
 created: episodes/hidden-layers--nanoclaw-gavriel-cohen
 updated: concepts/{personal-ai-assistants, agent-security, llm-wiki}, people/{gavriel-cohen, uri-eliabayev}, shows/hidden-layers, index
+
+## 2026-10-07 — Hidden Layers: Securing Data Sources in the AI Era (Gili Kanfo)
+source: whisper
+created: episodes/hidden-layers--vega-gili-kanfo, people/gili-kanfo
+updated: concepts/{knowledge-graphs, skill-engineering, small-language-models, ai-sre}, people/uri-eliabayev, shows/hidden-layers, index

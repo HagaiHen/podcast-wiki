@@ -111,6 +111,7 @@
 - [[people/ben-mashiach]]: Director of Data & AI at Claroty
 - [[people/billy-howell]]: runs a newsletter with a GrokBot agent team
 - [[people/gilad-shainer]]: Nvidia SVP, networking
+- [[people/gili-kanfo]]: AI lead at Vega
 - [[people/gilad-levi]]: founder of Manifold (continual learning)
 - [[people/greg-isenberg]]: host of The Startup Ideas Podcast
 - [[people/idan-benyon]]: founder of Build Ship Grow community
@@ -136,6 +137,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--vega-gili-kanfo]]: Securing Data Sources in the AI Era (2026-05-18)
 - [[episodes/hidden-layers--nanoclaw-gavriel-cohen]]: Building Secure AI Agents for Organizations (2026-05-21)
 - [[episodes/hidden-layers--tenable-tom-barnea]]: Securing AI Tool Use in the Organization (2026-05-26)
 - [[episodes/hidden-layers--cyera-shiran-bareli]]: Advanced AI Research at a Cyber Company (2026-05-31)

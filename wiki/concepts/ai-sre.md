@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-06
+sources: 2
+updated: 2026-10-07
 ---
 # AI SRE (agents for production reliability)
 
@@ -17,6 +17,7 @@ updated: 2026-10-06
 - Topology as context: for a customer with very complex CRD relationships, a validated map of their environment in the preprompt (as YAML, easier for LLMs than graphs) raised investigation quality several levels ([[episodes/langtalks--65-ai-sre]]).
 - Customers want the full cycle: why wait for a human on call while the service is down? Prevention (spotting services heading for trouble, restructuring hotspots) comes next ([[episodes/langtalks--65-ai-sre]]).
 - Bringing in third-party data (APMs, Grafana, cloud providers) makes evaluation harder, since the inputs are outside your control ([[episodes/langtalks--65-ai-sre]]).
+- Security-operations analogue: reduce alert noise at the source ("shift left", suggesting detection fixes rather than auto-editing them) before any investigating agent runs. Measure fewer alerts needing review and a sane verdict distribution; a humble agent should be allowed to say "inconclusive" ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
 
 ## Disagreements & open questions
 - Is the goal just restoring production, or a deeper root-cause fix ([[episodes/langtalks--65-ai-sre]])?

@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 3
-updated: 2026-10-06
+sources: 4
+updated: 2026-10-07
 ---
 # Knowledge Graphs & Ontology
 
@@ -16,6 +16,8 @@ updated: 2026-10-06
 - Maintenance options include keeping only metadata/references plus cleanup jobs ([[episodes/ai-engineering-podcast--company-brain]]).
 - Topology maps help agents: a customer-validated map of Kubernetes resource relationships, serialized as YAML in the prompt, beat letting the agent rediscover them ([[episodes/langtalks--65-ai-sre]]).
 - Humans organize knowledge into schemas that speed encoding and retrieval. Agent memory stores facts independently, and it's unclear that GraphRAG matches how the brain does this ([[episodes/langtalks--60-brain-memory]]).
+- Give agents a map, not a flashlight: query tools let an agent illuminate one spot at a time, and it exhausts itself or stops at the first hit. A context graph of resolved entities and relationships (an ontology over normalized data) answers in one place. Build it in batches, and combine it with live queries for freshness ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
+- Silent failures motivate it: a query filtering on a slightly wrong value ("uri" vs "Uri") runs fine and returns nothing, which an agent reads as "no activity", whereas a human would sense something off ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
 
 ## Disagreements & open questions
 
