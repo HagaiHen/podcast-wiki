@@ -74,6 +74,7 @@
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
 
 ## Shows
+- [[shows/the-startup-ideas-podcast]]: The Startup Ideas Podcast
 - [[shows/explainable]]: ExplAInable
 - [[shows/ai-engineering-podcast]]: AI Engineering (AI אנג׳נירינג)
 - [[shows/ignore-instructions]]: Ignore the Instructions (תתעלם מההוראות)
@@ -96,7 +97,9 @@
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
+- [[people/billy-howell]]: runs a newsletter with a GrokBot agent team
 - [[people/gilad-levi]]: founder of Manifold (continual learning)
+- [[people/greg-isenberg]]: host of The Startup Ideas Podcast
 - [[people/idan-benyon]]: founder of Build Ship Grow community
 - [[people/meytar-zemer]]: neuroscientist (memory)
 - [[people/micky-haslavsky]]: founder at enso (agentic marketing)
@@ -108,11 +111,15 @@
 - [[people/shuki-cohen]]: VP Data, AI21
 - [[people/pavel-gurevich]]: founder of Tenzai (AI pentesting)
 - [[people/roy-lazar]]: Wonderful (enterprise applied AI)
+- [[people/ryan-vogel]]: OpenCode founding team
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)
+- [[episodes/startup-ideas--webmcp-clearly-explained]]: WebMCP Clearly Explained (2026-08-26)
+- [[episodes/startup-ideas--grok-bot-one-person-company]]: Grok Bot: One-Person Company with Agents (2026-08-21)
 - [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]: #26 When AI Models Get Really Good at Cyber (2026-07-20)
 - [[episodes/explainable--152-biohacking-like-a-data-scientist]]: #152 Biohacking Like a Data Scientist (2026-04-15)
 - [[episodes/explainable--157-training-hebatron]]: #157 Cracking Hebrew: Training Hebatron (2026-06-16)

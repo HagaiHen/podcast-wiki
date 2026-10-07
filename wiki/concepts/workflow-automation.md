@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # Workflow Automation (no-code + AI agents)
@@ -18,6 +18,7 @@ updated: 2026-10-07
 - Getting from 30–40% to 90%+ reliability is the real work: execution history replayed in the editor for debugging; built-in evals; manual review of low-risk outputs (e.g. labels) at first ([[episodes/langtalks--56-n8n]]).
 - Non-developers skipping SDLC stages is powerful but risky: those processes exist for security and quality ([[episodes/langtalks--56-n8n]]).
 - Haslavsky's split: ~99% of production agents are scripted agentic workflows (n8n to Lovable-built scripts); autonomous agents (OpenClaw, Hermes) add learning by iteration ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
+- Build → execute → automate: once an agent workflow works, move deterministic steps (formatting 100 two-sentence blurbs) to a cheap Make.com + API automation for consistency and lower cost, keeping the agent for judgment (filtering the best items) ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]]).
 
 ## Disagreements & open questions
 - No-code builders vs conversational assistants: n8n's visual interface is easy to read but unnatural to build in; chat-built dynamic workflows may replace it ([[episodes/langtalks--72-personal-assistant-agent]]).

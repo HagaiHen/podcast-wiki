@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-06
+sources: 5
+updated: 2026-10-07
 ---
 # Agent Workspaces (the new workplace)
 
@@ -20,10 +20,13 @@ updated: 2026-10-06
 - Lesson: instead of 40 people each building their own agent, build team agents with identity and a guild for collective knowledge (monday.com's "AI teammates") ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
 - Agents acting with user tokens create "AI slop" noise in shared tools; colleagues stop taking it seriously ([[episodes/langtalks--72-personal-assistant-agent]]).
 - Second voice for "SaaS is not dead": classic SaaS revenue (e.g. Figma) keeps growing while agents add new demand ([[episodes/langtalks--69-marketing-for-agents]]).
+- GrokBot agent teams: each agent is a DM thread with a distinct shape and color (the constraint keeps you mission-focused). Agents live on a cloud machine, message each other, and run routines; the human talks mostly to a chief-of-staff agent but can go direct, as at a real company ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]]).
+- One project per account: tokens and context bleed don't stretch across several businesses; Howell pays for a second account to keep a Shopify experiment separate ([[episodes/startup-ideas--grok-bot-one-person-company]]).
+- Keep agents' work on their own machine and deliver results to one place (chat, Notion) to avoid "where is that file?" overhead ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 
 ## Disagreements & open questions
 
 ## Takeaways
 
 ## Related
-[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]]
+[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]]

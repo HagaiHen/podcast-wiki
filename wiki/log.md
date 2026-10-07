@@ -178,3 +178,8 @@ updated: concepts/{harness-engineering, llm-evals, ai-moats, ai-rd-rollout, ai-h
 ## 2026-10-07 — lint
 fixed: sources-mismatch 2 (rag, workflow-automation); stale updated dates 6; takeaway drift 2 (ai-engineering-metrics, decision-classifiers → to-try); silent contradictions 2 (model-selection portability gains Wonderful; ai-verification code-reading disagreement); stale summaries 4 (model-selection, ai-verification, llm-evals, ai-guardrails); missing cross-links 6
 suggested: a concept page for AI economics (lab losses, subsidies, token pricing), now spread across ai-moats, llm-cost-optimization, ai-hype
+
+## 2026-10-07 — The Startup Ideas Podcast: Jev Is Here; WebMCP Clearly Explained; Grok Bot: One-Person Company
+source: transcript (all three)
+created: episodes/startup-ideas--{jev-is-here, webmcp-clearly-explained, grok-bot-one-person-company}, shows/the-startup-ideas-podcast, people/{ryan-vogel, billy-howell, greg-isenberg}
+updated: concepts/{decision-classifiers, agent-ready-products, agent-workspaces, multi-agent-orchestration, solo-builders, workflow-automation}, index, takeaways/{to-try, recommendations}

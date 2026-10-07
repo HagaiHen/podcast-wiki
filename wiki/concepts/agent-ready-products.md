@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-07
 ---
 # Agent-Ready Products (marketing to agents)
@@ -19,6 +19,11 @@ updated: 2026-10-07
 - Consumers: with ~1B ChatGPT monthly users asking it which insurance to buy, providers it can't quote get skipped ([[episodes/langtalks--69-marketing-for-agents]]).
 - SaaS isn't dead: old users keep using classic SaaS; agents open *additional* demand few serve yet ([[episodes/langtalks--69-marketing-for-agents]]).
 - An ecosystem is rebuilding the internet for agents: AgentMail (inboxes), Resend (email), Browser Use and similar (web UI), agent phone services, Tavily (search). Most software was built for eyes and clicks ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
+- WebMCP (experimental in Chrome, from Google and Microsoft): a site exposes a concise tool list (search, compare, add to cart, apply coupon) that the user's *own* agent calls in the browser, manipulating the visible UI ([[episodes/startup-ideas--webmcp-clearly-explained]]).
+- Spectrum of agent access, from headless to UI-bound: raw API → MCP server → computer use (screenshots, slow) → browser MCP (DOM parsing, fragile) → WebMCP → in-app agent. WebMCP inherits the logged-in session, so there are no API keys or OAuth, and tools can be conditional on login state ([[episodes/startup-ideas--webmcp-clearly-explained]]).
+- Users want their one agent, carrying their context, to use your product, rather than your in-app agent (whose tokens you pay for) ([[episodes/startup-ideas--webmcp-clearly-explained]]).
+- SEO (can Google understand it?) → AEO (can AI cite it?) → agent readiness (can the agent finish the job?) ([[episodes/startup-ideas--webmcp-clearly-explained]], [[people/greg-isenberg]]).
+- Best early fits: compatibility-heavy commerce (espresso gear, camera systems, car parts), SaaS admin consoles, read-only self-service in banking and insurance, and internal tools ([[episodes/startup-ideas--webmcp-clearly-explained]]).
 
 ## Disagreements & open questions
 
@@ -26,6 +31,7 @@ updated: 2026-10-07
 - [ ] Publish a skill (MD from your API docs) and an MCP server for your product ([[episodes/langtalks--69-marketing-for-agents]])
 - [ ] Submit to GitHub awesome lists, ClawHub, and the ChatGPT/Claude marketplaces ([[episodes/langtalks--69-marketing-for-agents]])
 - [ ] Ship a CLI with OAuth login so tokens never enter the agent's context ([[episodes/langtalks--69-marketing-for-agents]])
+- [ ] Pick your product's top 3 user journeys and test whether an agent can complete them end to end ([[episodes/startup-ideas--webmcp-clearly-explained]])
 
 ## Related
 [[concepts/skill-engineering]] · [[concepts/agent-security]] · [[concepts/agent-workspaces]] · [[concepts/ai-growth-marketing]]

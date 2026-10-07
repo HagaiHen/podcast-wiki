@@ -145,3 +145,7 @@
 - [ ] Raise pentest frequency to quarterly or monthly and test integrated staging — [[concepts/ai-cybersecurity]] · [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]
 - [ ] Check whether bug-prone code came from spec-driven sessions and used internal tools — [[concepts/ai-engineering-metrics]] · [[episodes/langtalks--64-ai-coding-metrics]]
 - [ ] If adopting a new model provider, keep a fallback to your existing LLM path — [[concepts/decision-classifiers]] · [[episodes/langtalks--74-jev]]
+- [ ] List workflow decision points (triage, lead quality, routing) and try a decision model on one — [[concepts/decision-classifiers]] · [[episodes/startup-ideas--jev-is-here]]
+- [ ] Test whether an agent can complete your product's top 3 user journeys — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--webmcp-clearly-explained]]
+- [ ] Add a five-line daily brief (done / blocked / needs me) to each recurring agent — [[concepts/multi-agent-orchestration]] · [[episodes/startup-ideas--grok-bot-one-person-company]]
+- [ ] Run one project with an agent team for a month: build, execute, hire/fire, automate — [[concepts/solo-builders]] · [[episodes/startup-ideas--grok-bot-one-person-company]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 3
 updated: 2026-10-07
 ---
 # Solo Builders (Build → Ship → Grow)
@@ -20,6 +20,9 @@ updated: 2026-10-07
 - Finishing: Claude Code is so fun, like a computer game, that people start projects and never finish them. Proposed fix: an "ADHD coach" orchestrator over the coding agent that pushes toward even symbolic launches ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
 - Timing matters: a community member built a personal assistant six months before OpenClaw but didn't talk about it enough; speed is now decisive ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - Pick ideas close to your own life and expertise ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
+- Agent-run small businesses: a 6,000-subscriber local newsletter run by a GrokBot team found its own sponsor from the inbox. Niche newsletters, AI-sourced Shopify stores, and SEO directories reinforce each other (a directory feeds a newsletter, referral leads become sponsors) ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]]).
+- Pitfalls: agents stall on choices (three weeks undecided on where content lives), so the human decides; open-ended research runs for weeks, so ask for top-3 recommendations ([[episodes/startup-ideas--grok-bot-one-person-company]]).
+- Agent-readiness services as a business: an agent-conversion agency for local businesses ($2–10k setup plus a monthly retainer) or an "agent mystery shopper" that reports where agents get stuck. The arbitrage exists while the tech is experimental ([[episodes/startup-ideas--webmcp-clearly-explained]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Do bootstrapped AI products need VC at all? Both agree big funds aren't going anywhere, but a parallel non-VC layer is forming and its financing model is still unclear ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
@@ -28,6 +31,7 @@ updated: 2026-10-07
 - [ ] Ship side projects early: 10 friends → ~100 trusted reviewers → wider circles, iterating each time ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
 - [ ] Open a WhatsApp beta-tester group for anything you build ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
 - [ ] Finish one side project end to end, even a symbolic launch ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
+- [ ] Run one project with an agent team for a month: build, execute, hire and fire, automate ([[episodes/startup-ideas--grok-bot-one-person-company]])
 
 ## Related
 [[concepts/ai-growth-marketing]] · [[concepts/coding-agent-workflow]] · [[concepts/agent-ready-products]] · [[concepts/future-of-software-engineering]] · [[concepts/ai-moats]]

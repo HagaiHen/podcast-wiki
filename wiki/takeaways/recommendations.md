@@ -4,6 +4,9 @@
 - *Investing for the Lazy* (השקעות לעצלנים) by [[people/tamir]] — host's own book — [[episodes/lazy-investing--108-the-leverage-trap]]
 
 ## Tools
+- Jev (decision model; instant access via Vercel AI Gateway) — [[episodes/startup-ideas--jev-is-here]]
+- WebMCP (Chrome flag; demo shop Crema & Co) — [[episodes/startup-ideas--webmcp-clearly-explained]]
+- GrokBot (agent teams), Beehiiv, Astro + Cloudflare + Porkbun site stack, Import Yeti — [[episodes/startup-ideas--grok-bot-one-person-company]]
 - Hebatron: open Hebrew LLM (Nemotron-based) — [[episodes/explainable--157-training-hebatron]]
 - Manus blog post "Context Engineering for AI Agents: Lessons from Building Manus" and LangChain's "Context Engineering for Agents" — [[episodes/langtalks--55-context-engineering]]
 - LangSmith / Langfuse: tracing to audit agent context — [[episodes/langtalks--55-context-engineering]]
