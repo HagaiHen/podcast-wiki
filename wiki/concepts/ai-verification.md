@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
+sources: 9
 updated: 2026-10-07
 ---
 # AI Verification
@@ -28,8 +28,12 @@ updated: 2026-10-07
 - Practical rule: build in small steps, understand the logic and business requirements of what goes in, and check the tests are meaningful and tied to requirements ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Mandatory AI review on every PR (backward compatibility, dependencies, SQL injection, XSS, circular dependencies) that *flags* rather than blocks, with a human override button. AI can survey a many-file commit more broadly than a human reviewer ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Design-first: have the agent analyze alternatives with criteria (cost, ease of migration, maintenance) and write a plan before code; afterwards, sync the design doc back to Confluence from the code so docs stay a source of truth ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Generation and review have opposite incentives: coding agents are built to finish and please (they rarely refuse), while a reviewer must stop you and explore every case, a "criminal mind" like hardware verification. So review needs different technology (memory, context collection, continuous learning), not the coding agent with another prompt ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
+- "Code quality" becomes measurable by splitting it: direct intent (vs the ticket or Figma), architectural intent, maintainability and best-practice rules, testability, and compliance. Tribal knowledge (PR discussions, Slack, code later changed) can be mined into rules and skills, with violations tracked over time ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
+- Best practice: review during generation (inject "why CPU here when every past project used GPU?") rather than only at the end ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
 
 ## Disagreements & open questions
+- Should the code generator also review its own code? Anthropic launched Claude Code review (validating that review is worth $15–25 each); Friedman calls its results underwhelming and argues for an independent reviewer because of expertise and conflict of interest, like observability and security that AWS never displaced ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
 - How much code must humans read? With spec-driven development and proof of work, one LangTalks host reads diffs less and less ([[episodes/langtalks--71-claw-architectures]]); the ExplAInable hosts argue you must understand what goes in, or you can't fix it at 3 a.m., and that tests alone can be faked ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Takeaways

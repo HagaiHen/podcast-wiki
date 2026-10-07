@@ -8,5 +8,7 @@ CEO of Qodo (AI code review, code quality, and testing); previous startup acquir
 ## Appearances
 - [[episodes/langtalks--57-memory]]
 
+- [[episodes/hidden-layers--qodo-itamar-friedman]]
+
 ## Concepts
 [[concepts/agent-memory]]

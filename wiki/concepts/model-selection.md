@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
+sources: 12
 updated: 2026-10-07
 ---
 # Model Selection
@@ -31,6 +31,7 @@ updated: 2026-10-07
 - Frontier models pass POCs easily but often fail production on unit economics and latency: re-touching a whole retail catalog for Christmas with a giant model is "a 5-kilo hammer for adding snowflakes". Smaller, controllable models win such jobs ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 - Match architecture to the problem: encoders for extraction (business-context NER), fine-tuned open decoders where an explanation is needed (risk scoring people can trust, since a bare "88" means nothing), and frontier models mainly for prototyping and ground truth ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
 - Profile before optimizing: most of Nexar's 2.5 s latency was CPU preprocessing, not inference, and moving it to the GPU took hours rather than the planned quarter ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- More context or more thinking can hurt. In deliberate workflows (not free agents), lower the reasoning budget on some nodes to cut variance ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).

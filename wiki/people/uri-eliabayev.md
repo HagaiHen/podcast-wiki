@@ -30,5 +30,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--nexar-roni-goldshmidt]] (host)
 
+- [[episodes/hidden-layers--qodo-itamar-friedman]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

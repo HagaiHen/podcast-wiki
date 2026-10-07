@@ -18,3 +18,4 @@ Hebrew interview podcast on AI and the people behind it, hosted by [[people/uri-
 - [[episodes/hidden-layers--vega-gili-kanfo]] (2026-05-18)
 - [[episodes/hidden-layers--twine-nadav-erez]] (2026-05-03)
 - [[episodes/hidden-layers--nexar-roni-goldshmidt]] (2026-04-23)
+- [[episodes/hidden-layers--qodo-itamar-friedman]] (2026-03-31)

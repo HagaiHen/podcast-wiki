@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-06
+sources: 5
+updated: 2026-10-07
 ---
 # AI-SDLC (agents across the dev lifecycle)
 
@@ -22,6 +22,7 @@ updated: 2026-10-06
 - Next: product creates working-mock PRs on real data (tools like Autonomy AI); hierarchical, cross-repo context, since most features span 3–4 repos; less rigid, more interactive artifacts, because huge generated specs go unread ([[episodes/langtalks--62-ai-rd-rollout]]).
 - Scrum rituals (dailies, retros, sprints) will change when agents do most of an epic ([[episodes/langtalks--62-ai-rd-rollout]]).
 - Personas outside R&D can now skip lifecycle stages (product prototyping, ops building their own automations): great for prototypes and internal tools, risky for production ([[episodes/langtalks--56-n8n]]).
+- For complex software, more AI-written code brings more production bugs and less shared understanding, so leading companies apply AI across the whole SDLC (review, testing, governance) rather than celebrating generation alone ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
 
 ## Disagreements & open questions
 - Org knowledge and skill sharing remain unsolved; every team does it differently ([[episodes/langtalks--68-ai-sdlc]]).

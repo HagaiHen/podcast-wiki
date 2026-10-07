@@ -139,6 +139,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--qodo-itamar-friedman]]: How Do You Review AI-Written Code? (2026-03-31)
 - [[episodes/hidden-layers--nexar-roni-goldshmidt]]: AI Models That Understand the World (2026-04-23)
 - [[episodes/hidden-layers--twine-nadav-erez]]: Digital Employees in Cybersecurity (2026-05-03)
 - [[episodes/hidden-layers--vega-gili-kanfo]]: Securing Data Sources in the AI Era (2026-05-18)

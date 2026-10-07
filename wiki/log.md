@@ -268,3 +268,8 @@ updated: concepts/{agent-workspaces, ai-guardrails, skill-engineering, agent-mem
 source: whisper
 created: episodes/hidden-layers--nexar-roni-goldshmidt, people/roni-goldshmidt
 updated: concepts/{world-models, open-weight-models, small-language-models, model-selection}, people/uri-eliabayev, shows/hidden-layers, index, takeaways/to-try
+
+## 2026-10-07 — Hidden Layers: How Do You Review AI-Written Code? (Itamar Friedman)
+source: whisper
+created: episodes/hidden-layers--qodo-itamar-friedman
+updated: concepts/{ai-verification, agent-ready-codebase, model-selection, ai-sdlc}, people/{itamar-friedman, uri-eliabayev}, shows/hidden-layers, index
