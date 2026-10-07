@@ -1,0 +1,146 @@
+<title>Podcast Wiki Promo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+/* layout: one 1920x1080 stage, scenes stacked, driven by seek(t) */
+:root{color-scheme:dark;--ink:#14112a;--panel:#211c3f;--line:#3a3366;--fg:#f3efff;--mute:#a49cc9;--coral:#ff7a59;--sky:#7cc6ff;--gold:#ffd166;
+--display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Instrument Sans",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+html,body{margin:0;background:var(--ink);overflow:hidden;height:100%}
+#stage{transform-origin:0 0}
+#stage{width:1920px;height:1080px;position:relative;background:radial-gradient(1200px 700px at 80% 10%,#2a2154 0,var(--ink) 70%);color:var(--fg);font-family:var(--body);overflow:hidden}
+canvas#wave{position:absolute;left:0;bottom:0;width:1920px;height:300px;opacity:.5}
+.scene{position:absolute;inset:0;padding:120px 160px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;gap:28px;opacity:0}
+[data-in]{opacity:0}
+h1{font-family:var(--display);font-weight:800;font-size:124px;line-height:1;margin:0;letter-spacing:-2px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;margin:0;letter-spacing:-1px;text-wrap:balance}
+.lead{font-size:44px;color:var(--mute);max-width:1400px;line-height:1.3;margin:0}
+.eyebrow{font-family:var(--mono);font-size:26px;letter-spacing:4px;text-transform:uppercase;color:var(--coral)}
+.c{color:var(--coral)}.s{color:var(--sky)}.g{color:var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:20px}
+.step{background:var(--panel);border:2px solid var(--line);border-radius:22px;padding:36px 32px;display:flex;flex-direction:column;gap:14px}
+.step b{font-family:var(--display);font-size:40px}.step span{font-size:28px;color:var(--mute);line-height:1.35}
+.step i{font-style:normal;font-family:var(--mono);font-size:24px;color:var(--coral)}
+.page{background:#fbfaff;color:#1d1838;border-radius:20px;padding:44px 56px;width:1180px;box-shadow:0 40px 120px #0008;display:flex;flex-direction:column;gap:18px}
+.page .fm{font-family:var(--mono);font-size:22px;color:#7a7499}
+.page h3{font-family:var(--display);font-size:56px;margin:0}
+.page li{font-size:27px;line-height:1.4;list-style:none;padding-left:0}
+.chip{display:inline-block;font-family:var(--mono);font-size:20px;background:#ece7ff;color:#5a3fd6;border-radius:8px;padding:2px 10px;margin-left:6px}
+.row{display:flex;gap:60px;align-items:center}
+.side{display:flex;flex-direction:column;gap:30px;flex:1}
+.side p{font-size:38px;margin:0;line-height:1.3}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.quote{background:var(--panel);border:2px solid var(--line);border-radius:22px;padding:40px;font-size:34px;line-height:1.4}
+.quote small{display:block;margin-top:18px;font-family:var(--mono);font-size:22px;color:var(--mute)}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+.stat{display:flex;flex-direction:column;gap:6px}
+.stat b{font-family:var(--display);font-size:150px;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:32px;color:var(--mute)}
+.term{background:#0b0918;border:2px solid var(--line);border-radius:20px;padding:40px 48px;font-family:var(--mono);font-size:32px;line-height:1.6;width:1300px;min-height:420px;box-sizing:border-box}
+.term .p{color:var(--coral)}.term .o{color:var(--mute)}.term .ok{color:#7be0a5}
+</style><div id="stage"><canvas id="wave" width="1920" height="300"></canvas>
+
+<section class="scene" data-start="0" data-end="5">
+  <div class="eyebrow" data-in="0.2">You listen. Then you forget.</div>
+  <h1 data-in="0.5">Hours of podcasts every week.</h1>
+  <h1 data-in="1.8" class="c">How much do you actually remember?</h1>
+</section>
+
+<section class="scene" data-start="5" data-end="10">
+  <div class="eyebrow" data-in="0.2">Meet</div>
+  <h1 data-in="0.4" style="font-size:180px">Podcast Wiki</h1>
+  <p class="lead" data-in="1.2">Your Spotify listening history, turned into a knowledge base that Claude writes and keeps up to date.</p>
+</section>
+
+<section class="scene" data-start="10" data-end="19">
+  <div class="eyebrow" data-in="0">How it works</div>
+  <h2 data-in="0.2">From earbuds to knowledge in four steps</h2>
+  <div class="steps">
+    <div class="step" data-in="1.0"><i>01 · listen</i><b>Spotify</b><span>Pulls the episodes you've actually heard. You pick which ones to keep.</span></div>
+    <div class="step" data-in="2.2"><i>02 · transcribe</i><b>Transcripts</b><span>Published transcripts when they exist, local Whisper when they don't. Hebrew and English.</span></div>
+    <div class="step" data-in="3.4"><i>03 · synthesize</i><b>Claude</b><span>Reads every episode and merges it into topic pages, in English.</span></div>
+    <div class="step" data-in="4.6"><i>04 · learn</i><b>Obsidian wiki</b><span>Concepts, people, shows and a to-do list, all cross-linked.</span></div>
+  </div>
+</section>
+
+<section class="scene" data-start="19" data-end="28">
+  <div class="row">
+    <div class="page" data-in="0.2">
+      <div class="fm">type: concept · sources: 8 · hubs: ai-engineering</div>
+      <h3>Agent Security</h3>
+      <ul style="margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+        <li data-in="1.0">Map each agent against the "lethal trifecta": untrusted input, sensitive data, ability to act. <span class="chip">Hidden Layers</span><span class="chip">Avi Golan</span></li>
+        <li data-in="1.8">Keep API keys out of the agent; inject them through a proxy. <span class="chip">LangTalks #71</span></li>
+        <li data-in="2.6">AI assistants turn over-permissioning into one-question leaks. <span class="chip">Hidden Layers</span><span class="chip">Shiran Bareli</span></li>
+        <li data-in="3.4">Guardrails on every call are too expensive. Limit the blast radius. <span class="chip">Osim Tochna</span></li>
+      </ul>
+    </div>
+    <div class="side">
+      <p data-in="4.4"><b class="c">One topic.</b></p>
+      <p data-in="5.0"><b class="s">Eight episodes.</b></p>
+      <p data-in="5.6"><b class="g">Every claim linked to who said it.</b></p>
+    </div>
+  </div>
+</section>
+
+<section class="scene" data-start="28" data-end="34">
+  <div class="eyebrow" data-in="0">Disagreements & open questions</div>
+  <h2 data-in="0.2">When experts disagree, you see both sides</h2>
+  <div class="vs">
+    <div class="quote" data-in="1.2">With high-stakes cyber capabilities, restricted release and delays make sense.<small>Host · Ignore the Instructions #26</small></div>
+    <div class="quote" data-in="2.2">Selective early access isn't disclosure. It leaves most defenders blind.<small>Pavel Gurevich · same episode</small></div>
+  </div>
+  <p class="lead" data-in="3.4">Nothing gets silently overwritten. Conflicts are flagged with both sources.</p>
+</section>
+
+<section class="scene" data-start="34" data-end="40">
+  <div class="eyebrow" data-in="0">So far</div>
+  <div class="stats">
+    <div class="stat" data-in="0.3"><b data-count="56">0</b><span>episodes</span></div>
+    <div class="stat" data-in="0.6"><b data-count="9">0</b><span>shows</span></div>
+    <div class="stat" data-in="0.9"><b class="c" data-count="71">0</b><span>concept pages</span></div>
+    <div class="stat" data-in="1.2"><b data-count="47">0</b><span>people</span></div>
+    <div class="stat" data-in="1.5"><b class="g" data-count="162">0</b><span>things to try</span></div>
+  </div>
+  <p class="lead" data-in="3.0">AI agents, security, startups, investing. Hebrew and English sources, one English wiki.</p>
+</section>
+
+<section class="scene" data-start="40" data-end="48">
+  <div class="eyebrow" data-in="0">How to use it</div>
+  <h2 data-in="0.2">Two commands in Claude Code</h2>
+  <div class="term" data-in="0.6">
+    <div><span class="p">❯ </span><span data-type="/ingest-podcasts" data-at="1.0"></span></div>
+    <div class="o" data-in="2.4">  ✓ 3 new episodes transcribed</div>
+    <div class="o" data-in="2.9">  ✓ 11 concept pages updated · 2 created</div>
+    <div class="o" data-in="3.4">  ✓ 6 takeaways added to to-try.md</div>
+    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="4.2"></span></div>
+    <div class="ok" data-in="5.4">  clean · 4 summaries refreshed · cross-links added</div>
+  </div>
+  <p class="lead" data-in="6.0" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
+</section>
+
+<section class="scene" data-start="48" data-end="54">
+  <h1 data-in="0.2">Stop forgetting<br>what you <span class="c">hear.</span></h1>
+  <p class="lead" data-in="1.4">Learn topics across episodes. Get a checklist of things to try.</p>
+  <div class="eyebrow" data-in="2.4" style="color:var(--sky)">Podcast Wiki · built with Claude Code</div>
+</section>
+
+</div>
+<script>
+const DUR=54, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
+const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+function seek(t){
+  for(const s of scenes){
+    const a=+s.dataset.start,b=+s.dataset.end,lt=t-a;
+    const vis=Math.min(ease(lt/0.5),ease((b-t)/0.4));
+    s.style.opacity=t>=a&&t<b?vis:0;
+    s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-+e.dataset.in)/0.6);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
+    s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-+e.dataset.at)*14));e.textContent=e.dataset.type.slice(0,n)+(lt>+e.dataset.at-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
+    s.querySelectorAll('[data-count]').forEach(e=>{e.textContent=Math.round(+e.dataset.count*ease((lt-0.3)/1.6))});
+  }
+  cx.clearRect(0,0,1920,300);
+  [['#ff7a59',0],['#7cc6ff',2],['#ffd166',4]].forEach(([c,o])=>{cx.beginPath();cx.strokeStyle=c;cx.lineWidth=3;
+    for(let x=0;x<=1920;x+=8){const y=150+Math.sin(x/90+t*2+o)*40*Math.sin(x/400+t*.7+o)+Math.sin(x/37+t*3)*8;x?cx.lineTo(x,y):cx.moveTo(x,y)}cx.stroke()});
+}
+const st=document.getElementById('stage');function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}addEventListener('resize',fit);fit();
+window.seek=seek; window.DUR=DUR;
+if(!navigator.webdriver){const t0=performance.now();(function f(){seek(((performance.now()-t0)/1000)%DUR);requestAnimationFrame(f)})()}else seek(0);
+</script>
