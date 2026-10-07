@@ -36,6 +36,8 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 .stat span{font-size:32px;color:var(--mute)}
 .term{background:#0b0918;border:2px solid var(--line);border-radius:20px;padding:40px 48px;font-family:var(--mono);font-size:32px;line-height:1.6;width:1300px;min-height:420px;box-sizing:border-box}
 .term .p{color:var(--coral)}.term .o{color:var(--mute)}.term .ok{color:#7be0a5}
+#snd{position:absolute;right:24px;bottom:24px;z-index:5;font:600 16px var(--body);color:var(--ink);background:var(--fg);border:0;border-radius:999px;padding:12px 20px;cursor:pointer}
+#snd:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
 </style><div id="stage"><canvas id="wave" width="1920" height="300"></canvas>
 
 <section class="scene" data-start="0" data-end="5">
@@ -124,6 +126,7 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 </section>
 
 </div>
+<button id="snd" type="button">▶ Play with sound</button><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
 <script>
 const DUR=54, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
 const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
@@ -142,5 +145,8 @@ function seek(t){
 }
 const st=document.getElementById('stage');function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}addEventListener('resize',fit);fit();
 window.seek=seek; window.DUR=DUR;
-if(!navigator.webdriver){const t0=performance.now();(function f(){seek(((performance.now()-t0)/1000)%DUR);requestAnimationFrame(f)})()}else seek(0);
+const snd=document.getElementById('snd'),aud=document.getElementById('aud');
+if(!navigator.webdriver){let t0=performance.now();(function f(){seek(aud.paused?((performance.now()-t0)/1000)%DUR:aud.currentTime);requestAnimationFrame(f)})();
+  snd.onclick=()=>{if(aud.paused){aud.currentTime=0;aud.play().catch(()=>{});snd.textContent='❚❚ Mute'}else{aud.pause();t0=performance.now()-aud.currentTime*1000;snd.textContent='▶ Play with sound'}}}
+else{snd.hidden=true;seek(0)}
 </script>
