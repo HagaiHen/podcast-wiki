@@ -45,89 +45,79 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 #snd small{font:13px var(--body);color:var(--mute)}
 </style><div id="stage"><canvas id="wave" width="1920" height="300"></canvas>
 
-<section class="scene" data-start="0" data-end="5">
-  <div class="eyebrow" data-in="0.2">You listen. Then you forget.</div>
-  <h1 data-in="0.5">Hours of podcasts every week.</h1>
-  <h1 data-in="1.8" class="c">How much do you actually remember?</h1>
+<section class="scene" data-start="0" data-end="3.5">
+  <div class="eyebrow" data-in="0.1">You listen. Then you forget.</div>
+  <h1 data-in="0.3">Hours of podcasts every week.</h1>
+  <h1 data-in="1.2" class="c">How much do you actually remember?</h1>
 </section>
 
-<section class="scene" data-start="5" data-end="10">
-  <div class="eyebrow" data-in="0.2">Meet</div>
-  <h1 data-in="0.4" style="font-size:180px">Podcast Wiki</h1>
-  <p class="lead" data-in="1.2">Your Spotify listening history, turned into a knowledge base that Claude writes and keeps up to date.</p>
+<section class="scene" data-start="3.5" data-end="7">
+  <div class="eyebrow" data-in="0.1">Meet</div>
+  <h1 data-in="0.25" style="font-size:180px">Podcast Wiki</h1>
+  <p class="lead" data-in="0.8">Your Spotify listening history, turned into a knowledge base that Claude writes and keeps up to date.</p>
 </section>
 
-<section class="scene" data-start="10" data-end="19">
+<section class="scene" data-start="7" data-end="12.5">
   <div class="eyebrow" data-in="0">How it works</div>
-  <h2 data-in="0.2">From earbuds to knowledge in four steps</h2>
+  <h2 data-in="0.1">From earbuds to knowledge in four steps</h2>
   <div class="steps">
-    <div class="step" data-in="1.0"><i>01 · listen</i><b>Spotify</b><span>Pulls the episodes you've actually heard. You pick which ones to keep.</span></div>
-    <div class="step" data-in="2.2"><i>02 · transcribe</i><b>Transcripts</b><span>Published transcripts when they exist, local Whisper when they don't. Hebrew and English.</span></div>
-    <div class="step" data-in="3.4"><i>03 · synthesize</i><b>Claude</b><span>Reads every episode and merges it into topic pages, in English.</span></div>
-    <div class="step" data-in="4.6"><i>04 · learn</i><b>Obsidian wiki</b><span>Concepts, people, shows and a to-do list, all cross-linked.</span></div>
+    <div class="step" data-in="0.5"><i>01 · listen</i><b>Spotify</b><span>Pulls the episodes you've actually heard. You pick which ones to keep.</span></div>
+    <div class="step" data-in="1.1"><i>02 · transcribe</i><b>Transcripts</b><span>Published transcripts when they exist, local Whisper when they don't. Hebrew and English.</span></div>
+    <div class="step" data-in="1.7"><i>03 · synthesize</i><b>Claude</b><span>Reads every episode and merges it into topic pages, in English.</span></div>
+    <div class="step" data-in="2.3"><i>04 · learn</i><b>Obsidian wiki</b><span>Concepts, people, shows and a to-do list, all cross-linked.</span></div>
   </div>
 </section>
 
-<section class="scene" data-start="19" data-end="28">
+<section class="scene" data-start="12.5" data-end="18.5">
   <div class="row">
-    <div class="page" data-in="0.2">
-      <div class="fm">type: concept · sources: 8 · hubs: ai-engineering</div>
-      <h3>Agent Security</h3>
+    <div class="page" data-in="0.1">
+      <div class="fm">type: concept · sources: 7 · hubs: ai-engineering</div>
+      <h3>Harness Engineering</h3>
       <ul style="margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
-        <li data-in="1.0">Map each agent against the "lethal trifecta": untrusted input, sensitive data, ability to act. <span class="chip">Hidden Layers</span><span class="chip">Avi Golan</span></li>
-        <li data-in="1.8">Keep API keys out of the agent; inject them through a proxy. <span class="chip">LangTalks #71</span></li>
-        <li data-in="2.6">AI assistants turn over-permissioning into one-question leaks. <span class="chip">Hidden Layers</span><span class="chip">Shiran Bareli</span></li>
-        <li data-in="3.4">Guardrails on every call are too expensive. Limit the blast radius. <span class="chip">Osim Tochna</span></li>
+        <li data-in="0.5">Ask the agent what it's missing to verify its own work, then build that tool. <span class="chip">LangTalks #73</span></li>
+        <li data-in="0.9">Every agent PR spins up a full preview environment. <span class="chip">LangTalks #70</span></li>
+        <li data-in="1.3">The biggest blocker is often plain DevOps: no per-developer environment, no log access. <span class="chip">LangTalks #68</span></li>
+        <li data-in="1.7">Durable Objects and sandboxes let long-running agents keep state safely. <span class="chip">Ignore the Instructions #20</span><span class="chip">Idan Benyon</span></li>
       </ul>
     </div>
     <div class="side">
-      <p data-in="4.4"><b class="c">One topic.</b></p>
-      <p data-in="5.0"><b class="s">Eight episodes.</b></p>
-      <p data-in="5.6"><b class="g">Every claim linked to who said it.</b></p>
+      <p data-in="2.4"><b class="c">One topic.</b></p>
+      <p data-in="2.8"><b class="s">Seven episodes.</b></p>
+      <p data-in="3.2"><b class="g">Every claim linked to who said it.</b></p>
     </div>
   </div>
 </section>
 
-<section class="scene" data-start="28" data-end="34">
-  <div class="eyebrow" data-in="0">Disagreements & open questions</div>
-  <h2 data-in="0.2">When experts disagree, you see both sides</h2>
-  <div class="vs">
-    <div class="quote" data-in="1.2">Keep iterating your copy with an AI collaborator until it lands.<small>Host · Ignore the Instructions #28</small></div>
-    <div class="quote" data-in="2.2">Copy barely matters. Timing and early engagement drive virality.<small>Micky Haslavsky · same episode</small></div>
-  </div>
-  <p class="lead" data-in="3.4">Nothing gets silently overwritten. Conflicts are flagged with both sources.</p>
-</section>
-
-<section class="scene" data-start="34" data-end="40">
+<section class="scene" data-start="18.5" data-end="22.5">
   <div class="eyebrow" data-in="0">So far</div>
   <div class="stats">
-    <div class="stat" data-in="0.3"><b data-count="56">0</b><span>episodes</span></div>
-    <div class="stat" data-in="0.6"><b data-count="9">0</b><span>shows</span></div>
-    <div class="stat" data-in="0.9"><b class="c" data-count="71">0</b><span>concept pages</span></div>
-    <div class="stat" data-in="1.2"><b data-count="47">0</b><span>people</span></div>
-    <div class="stat" data-in="1.5"><b class="g" data-count="162">0</b><span>things to try</span></div>
+    <div class="stat" data-in="0.2"><b data-count="56">0</b><span>episodes</span></div>
+    <div class="stat" data-in="0.35"><b data-count="9">0</b><span>shows</span></div>
+    <div class="stat" data-in="0.5"><b class="c" data-count="71">0</b><span>concept pages</span></div>
+    <div class="stat" data-in="0.65"><b data-count="47">0</b><span>people</span></div>
+    <div class="stat" data-in="0.8"><b class="g" data-count="162">0</b><span>things to try</span></div>
   </div>
-  <p class="lead" data-in="3.0">AI agents, security, startups, investing. Hebrew and English sources, one English wiki.</p>
+  <p class="lead" data-in="1.8">AI agents, startups, investing. Hebrew and English sources, one English wiki.</p>
 </section>
 
-<section class="scene" data-start="40" data-end="48">
+<section class="scene" data-start="22.5" data-end="27.5">
   <div class="eyebrow" data-in="0">How to use it</div>
-  <h2 data-in="0.2">Two commands in Claude Code</h2>
-  <div class="term" data-in="0.6">
-    <div><span class="p">❯ </span><span data-type="/ingest-podcasts" data-at="1.0"></span></div>
-    <div class="o" data-in="2.4">  ✓ 3 new episodes transcribed</div>
-    <div class="o" data-in="2.9">  ✓ 11 concept pages updated · 2 created</div>
-    <div class="o" data-in="3.4">  ✓ 6 takeaways added to to-try.md</div>
-    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="4.2"></span></div>
-    <div class="ok" data-in="5.4">  clean · 4 summaries refreshed · cross-links added</div>
+  <h2 data-in="0.1">Two commands in Claude Code</h2>
+  <div class="term" data-in="0.3">
+    <div><span class="p">❯ </span><span data-type="/ingest-podcasts" data-at="0.5"></span></div>
+    <div class="o" data-in="1.4">  ✓ 3 new episodes transcribed</div>
+    <div class="o" data-in="1.65">  ✓ 11 concept pages updated · 2 created</div>
+    <div class="o" data-in="1.9">  ✓ 6 takeaways added to to-try.md</div>
+    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="2.2"></span></div>
+    <div class="ok" data-in="2.9">  clean · 4 summaries refreshed · cross-links added</div>
   </div>
-  <p class="lead" data-in="6.0" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
+  <p class="lead" data-in="3.3" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
 </section>
 
-<section class="scene" data-start="48" data-end="54">
-  <h1 data-in="0.2">Stop forgetting<br>what you <span class="c">hear.</span></h1>
-  <p class="lead" data-in="1.4">Learn topics across episodes. Get a checklist of things to try.</p>
-  <div class="eyebrow" data-in="2.4" style="color:var(--sky)">Podcast Wiki · built with Claude Code</div>
+<section class="scene" data-start="27.5" data-end="30">
+  <h1 data-in="0.1">Stop forgetting<br>what you <span class="c">hear.</span></h1>
+  <p class="lead" data-in="0.7">Learn topics across episodes. Get a checklist of things to try.</p>
+  <div class="eyebrow" data-in="1.2" style="color:var(--sky)">Podcast Wiki · built with Claude Code</div>
 </section>
 
 </div>
@@ -138,16 +128,16 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 <button type="button" data-src="music/hiphop-beat.mp3" data-title="Hip Hop Beat" aria-pressed="false">▶ Hip Hop Beat</button>
 </div><small id="credit">Music: Pixabay (royalty-free)</small></div><audio id="aud" preload="none" loop></audio>
 <script>
-const DUR=54, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
+const DUR=30, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
 const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
 function seek(t){
   for(const s of scenes){
     const a=+s.dataset.start,b=+s.dataset.end,lt=t-a;
     const vis=Math.min(ease(lt/0.5),ease((b-t)/0.4));
     s.style.opacity=t>=a&&t<b?vis:0;
-    s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-+e.dataset.in)/0.6);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
-    s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-+e.dataset.at)*14));e.textContent=e.dataset.type.slice(0,n)+(lt>+e.dataset.at-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
-    s.querySelectorAll('[data-count]').forEach(e=>{e.textContent=Math.round(+e.dataset.count*ease((lt-0.3)/1.6))});
+    s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-+e.dataset.in)/0.45);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
+    s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-+e.dataset.at)*22));e.textContent=e.dataset.type.slice(0,n)+(lt>+e.dataset.at-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
+    s.querySelectorAll('[data-count]').forEach(e=>{e.textContent=Math.round(+e.dataset.count*ease((lt-0.2)/1.2))});
   }
   cx.clearRect(0,0,1920,300);
   [['#ff7a59',0],['#7cc6ff',2],['#ffd166',4]].forEach(([c,o])=>{cx.beginPath();cx.strokeStyle=c;cx.lineWidth=3;
