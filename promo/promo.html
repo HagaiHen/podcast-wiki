@@ -15,8 +15,11 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 .lead{font-size:44px;color:var(--mute);max-width:1400px;line-height:1.3;margin:0}
 .eyebrow{font-family:var(--mono);font-size:26px;letter-spacing:4px;text-transform:uppercase;color:var(--coral)}
 .tag{font-size:60px;font-weight:600;line-height:1.2;color:var(--fg);max-width:1500px;text-wrap:balance}
-.tagscene{align-items:center;text-align:center}
-.tagscene .tag{font-family:var(--display);font-weight:800;font-size:96px;line-height:1.08;letter-spacing:-1px;max-width:1600px}
+.titlescene{align-items:center;text-align:center;gap:20px}
+.titlescene h1{font-size:280px;letter-spacing:-4px}
+.titlescene .tag{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.08;letter-spacing:-1px;max-width:1600px;margin:0 auto;padding-top:24px}
+.grow{display:grid;grid-template-rows:0fr;width:100%}
+.grow>div{overflow:hidden;min-height:0}
 .c{color:var(--coral)}.s{color:var(--sky)}.g{color:var(--gold)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:20px}
 .step{background:var(--panel);border:2px solid var(--line);border-radius:22px;padding:36px 32px;display:flex;flex-direction:column;gap:14px}
@@ -73,13 +76,12 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
   <h1 data-in="1" class="c">How much do you actually remember?</h1>
 </section>
 
-<section class="scene" data-start="4" data-end="8">
+<section class="scene titlescene" data-start="4" data-end="12">
   <div class="eyebrow" data-in="0">Meet</div>
-  <h1 data-in="0" style="font-size:180px">Podcast Wiki</h1>
-</section>
-
-<section class="scene tagscene" data-start="8" data-end="12">
-  <p class="lead tag" data-in="0">Your <span class="s">Spotify listening history</span>, turned into a <span class="c">knowledge base</span> that Claude writes and keeps up to date.</p>
+  <h1 data-in="0" data-morph="2.5">Podcast Wiki</h1>
+  <div class="grow" data-grow="2.5"><div>
+    <p class="lead tag" data-in="2.75">Your <span class="s">Spotify listening history</span>, turned into a <span class="c">knowledge base</span> that Claude writes and keeps up to date.</p>
+  </div></div>
 </section>
 
 <section class="scene" data-start="12" data-end="19">
@@ -158,6 +160,8 @@ function seek(t){
     s.style.opacity=t>=a&&t<b?vis:0;
     s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-e.dataset.in*B)/0.35);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
     s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-e.dataset.at*B)*22));e.textContent=e.dataset.type.slice(0,n)+(lt>e.dataset.at*B-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
+    s.querySelectorAll('[data-morph]').forEach(e=>{const k=ease((lt-e.dataset.morph*B)/0.5);e.style.fontSize=(280-130*k)+'px'});
+    s.querySelectorAll('[data-grow]').forEach(e=>{e.style.gridTemplateRows=ease((lt-e.dataset.grow*B)/0.5)+'fr'});
     s.querySelectorAll('[data-count]').forEach(e=>{const d=e.closest('[data-in]').dataset.in*B;e.textContent=Math.round(+e.dataset.count*ease((lt-d)/1.2))});
   }
   cx.clearRect(0,0,1920,300);
