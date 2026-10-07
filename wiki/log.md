@@ -233,3 +233,8 @@ updated: concepts/{ai-moats, open-weight-models, model-selection}, people/uri-el
 source: whisper
 created: episodes/hidden-layers--dream-eran-hoffman, people/eran-hoffman
 updated: concepts/{ai-cybersecurity, multi-agent-orchestration, small-language-models, llm-evals, skill-engineering}, people/uri-eliabayev, shows/hidden-layers, index
+
+## 2026-10-07 — Hidden Layers: AI Protecting the Most Sensitive Facilities (Ben Mashiach)
+source: whisper
+created: episodes/hidden-layers--claroty-ben-mashiach, people/ben-mashiach
+updated: concepts/{ai-cybersecurity, decision-classifiers, company-brain}, people/uri-eliabayev, shows/hidden-layers, index

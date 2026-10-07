@@ -16,5 +16,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--dream-eran-hoffman]] (host)
 
+- [[episodes/hidden-layers--claroty-ben-mashiach]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

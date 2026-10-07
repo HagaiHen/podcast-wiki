@@ -108,6 +108,7 @@
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
 - [[people/avi-golan]]: Alice (AI safety, red teaming)
+- [[people/ben-mashiach]]: Director of Data & AI at Claroty
 - [[people/billy-howell]]: runs a newsletter with a GrokBot agent team
 - [[people/gilad-shainer]]: Nvidia SVP, networking
 - [[people/gilad-levi]]: founder of Manifold (continual learning)
@@ -133,6 +134,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--claroty-ben-mashiach]]: AI Protecting the Most Sensitive Facilities (2026-06-02)
 - [[episodes/hidden-layers--dream-eran-hoffman]]: AI Defending Countries From Cyberattacks (2026-06-18)
 - [[episodes/hidden-layers--bria-misha-feinstein]]: Training an Image Foundation Model From Scratch (2026-06-24)
 - [[episodes/hidden-layers--alice-avi-golan]]: Keeping Strong AI Models From Going Rogue (2026-07-01)

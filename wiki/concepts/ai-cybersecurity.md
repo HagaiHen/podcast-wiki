@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
+sources: 3
 updated: 2026-10-07
 ---
 # AI and Cybersecurity
@@ -21,6 +21,7 @@ updated: 2026-10-07
 - Open-weight models are what matter about "Chinese models": US companies are also working on strong open models, and broad openness with incremental capability helps defenders keep up ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Government and critical-infrastructure defense adds constraints: on-prem and air-gapped deployments without cloud monitoring, demanding customers who want every failure explained, and a high cost per bug (sometimes a flight to fix it) ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - AI commoditizes attackers and turns zero-days into hours while patching can take months, so defense must respond faster and grow more autonomous: "don't bring a knife to a gunfight". Containment should be fine-grained (block one rule or endpoint) rather than "disconnect everything" ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
+- Cyber-physical systems (hospital devices, factory robots, data-center power and cooling) are increasingly network-connected, so the risk is physical harm, not just data loss. Defense starts with a precise inventory and behavioral baseline of every asset; AI-lowered attack barriers make knowing your own "home field" matter more ([[episodes/hidden-layers--claroty-ben-mashiach]], [[people/ben-mashiach]]).
 
 ## Disagreements & open questions
 - Restricted release vs broad verified access: the host argues that with very high-stakes capabilities (state actors), caution and responsible-disclosure-style delays make sense; Gurevich counters that selective early access isn't disclosure and leaves most defenders blind ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]).

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # Decision Classifiers (e.g. Jev)
@@ -20,6 +20,9 @@ updated: 2026-10-07
 - Startup lens: find a business with an expensive queue of incoming information (leads, support tickets, quote requests) and put a decision model at the front to route each item to a human, an LLM, or the bin by confidence ([[episodes/startup-ideas--jev-is-here]], [[people/greg-isenberg]]).
 - More uses: lead scoring on a contact form, picking short-form clips from a word-level transcript, and fast browser control (Browser Use booked a flight in 7.1 s). Poor where real judgment is needed: a minute-by-minute Bitcoin buy/sell signal flopped ([[episodes/startup-ideas--jev-is-here]]).
 - Hack: making each next letter a decision lets it "generate" text slowly, showing it's not built for conversation ([[episodes/startup-ideas--jev-is-here]]).
+- Real-world classification resists clean hierarchies: in device identification an Xbox and a surgical robot can look alike until one late feature, so you can't simply split "animals → mammals → dogs" ([[episodes/hidden-layers--claroty-ben-mashiach]], [[people/ben-mashiach]]).
+- Domain experts and data scientists must co-build features (e.g. an expert's fingerprint-then-hash idea handed to a model); a latent-space map of unclassified items turns expert labeling into "quests" ([[episodes/hidden-layers--claroty-ben-mashiach]], [[people/ben-mashiach]]).
+- Beyond classification, named-entity extraction pulls model, serial number, and OS version from raw text blobs; LLM embeddings place items semantically for grouping and policy ([[episodes/hidden-layers--claroty-ben-mashiach]], [[people/ben-mashiach]]).
 
 ## Disagreements & open questions
 - Is it the start of a new model family? Possibly, but like RAG it may not be worth the engineering once agents get fast and cheap enough ([[episodes/langtalks--74-jev]]).

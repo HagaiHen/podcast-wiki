@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # Company Brain
@@ -27,6 +27,7 @@ updated: 2026-10-07
 - Delivery surfaces: a Wikipedia-style site for morning reading, the repo inside Cursor or Claude for builders, Figma MCP plus the brain for designers, and a WhatsApp agent for anyone, including people on vacation or reserve duty ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Results: a vision deck for the CEO in hours instead of weeks; Google Ads messaging written by Claude from the brain, which knows more than any single member; alignment across product and go-to-market without extra syncs. Next: autonomous per-discipline agents built on top of the brain ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Culture shift: meetings without the note-taker became "unheard of", and the team even records in-person conversations ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- Claroty's agentic assistant "Clar" was built after an internal tour collecting best practices from different departments, so the model reflects the company's cumulative expertise and can take operational actions, not just report ([[episodes/hidden-layers--claroty-ben-mashiach]], [[people/ben-mashiach]]).
 
 ## Disagreements & open questions
 - Total transparency, bug or feature? Everything recorded or written becomes visible to the whole team; the guest now sees it as a feature ("everyone knows everything"), while acknowledging people still want to gossip in meetings and must switch the note-taker off to do so ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
