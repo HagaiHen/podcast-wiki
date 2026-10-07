@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
+sources: 9
 updated: 2026-10-07
 ---
 # AI Guardrails
@@ -26,6 +26,8 @@ updated: 2026-10-07
 - Agents need real-time supervision, not just pre-launch evals. Anthropic's vending-machine agent was talked into giving products away or 99% discounts. Models are "very smart and very gullible": persistence and emotional appeals ("my grandmother died", "for educational purposes") wear down refusals ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Least privilege as basic hygiene: give an agent read-only access where possible, so the worst case is extra queries ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Shared-memory agents leak: a team brain synced private, partly recorded conversations into a git repo whose history everyone could read, forcing the team to wipe and recreate the repo more than once and add skill-level guardrails ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
+- Security is layered: guardrails baked into model weights, wrappers around the model (system prompt, classifiers, keyword blocks), the harness, and your own enterprise layers; never rely on one vendor's layer ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- At scale, 1-in-100 errors (money sent to the wrong account) are catastrophic, which keeps many enterprises shipping only unambitious FAQ chatbots ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 
 ## Disagreements & open questions
 
@@ -38,4 +40,4 @@ updated: 2026-10-07
 - [ ] Isolate parallel agents and avoid letting them message each other unsupervised ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]]
+[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]]

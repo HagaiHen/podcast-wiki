@@ -21,6 +21,7 @@
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
 - [[concepts/ai-infrastructure]]: AI factories, GPU networking, power and optics
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
+- [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
 - [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
@@ -104,6 +105,7 @@
 - [[people/matan-cohen]]: Head of Slack Israel, Dotti co-founder
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
+- [[people/avi-golan]]: Alice (AI safety, red teaming)
 - [[people/billy-howell]]: runs a newsletter with a GrokBot agent team
 - [[people/gilad-shainer]]: Nvidia SVP, networking
 - [[people/gilad-levi]]: founder of Manifold (continual learning)
@@ -128,6 +130,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--alice-avi-golan]]: Keeping Strong AI Models From Going Rogue (2026-07-01)
 - [[episodes/hidden-layers--manifold-gilad-levi]]: Has a Replacement for Transformers Been Found? (2026-07-06)
 - [[episodes/hidden-layers--nvidia-gilad-shainer]]: Making Sense of Nvidia's Technology (2026-09-27)
 - [[episodes/osim-tochna--gong-ai-for-developers]]: Gong Rolls Out AI for Developers (2025-11-03)

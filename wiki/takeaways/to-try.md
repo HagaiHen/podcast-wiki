@@ -157,3 +157,5 @@
 - [ ] Try visual hints (marking the region of interest) before upgrading to a pricier model — [[concepts/multimodal-llms]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
 - [ ] Verify any personal agent (OpenClaw-style) isn't internet-reachable and has its own phone number — [[concepts/agent-security]] · [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]
 - [ ] Name an owner for AI adoption and run hands-on sessions on real code — [[concepts/ai-rd-rollout]] · [[episodes/osim-tochna--gong-ai-for-developers]]
+- [ ] Write an agent policy before launch (what it may say/do, competitors, regulated advice) — [[concepts/ai-red-teaming]] · [[episodes/hidden-layers--alice-avi-golan]]
+- [ ] Map each agent against the lethal trifecta and remove a leg where possible — [[concepts/agent-security]] · [[episodes/hidden-layers--alice-avi-golan]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 12
+sources: 13
 updated: 2026-10-07
 ---
 # LLM Evals
@@ -39,6 +39,7 @@ updated: 2026-10-07
 - An agent running Opus 4.5 iterated on prompts and preprocessing against the eval harness for hours and lifted accuracy from 76% to the 80s ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 - Gong's "DS2" (data scientist 2.0) role owns prompt templates (machines write the actual prompts), evals, judges, gold sets, and production monitors. Recruits come from data science, product, and QA ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Continuous calibration (CI/CC/CD): an LLM feature is never done, since models, tools, and competition keep changing, so prompts, tools, and context need constant re-tuning against evals ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Labs now train on RL gyms (simulated enterprise or e-commerce environments with expert-built tasks and evaluators) instead of RLHF preference labels; evaluator verdicts on failed scenarios feed post-training ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 
 ## Disagreements & open questions
 

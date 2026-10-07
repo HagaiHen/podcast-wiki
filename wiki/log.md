@@ -218,3 +218,8 @@ updated: concepts/{llm-inference, llm-pretraining} (links), hubs/ai-engineering,
 source: whisper
 created: episodes/hidden-layers--manifold-gilad-levi, concepts/world-models
 updated: concepts/{continual-learning, ai-moats, llm-pretraining}, people/{gilad-levi, uri-eliabayev}, shows/hidden-layers, hubs/ai-engineering, index
+
+## 2026-10-07 — Hidden Layers: Keeping Strong AI Models From Going Rogue (Avi Golan)
+source: whisper
+created: episodes/hidden-layers--alice-avi-golan, concepts/ai-red-teaming, people/avi-golan
+updated: concepts/{agent-security, ai-guardrails, llm-evals, open-weight-models}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/to-try

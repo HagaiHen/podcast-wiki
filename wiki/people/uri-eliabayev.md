@@ -10,5 +10,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--manifold-gilad-levi]] (host)
 
+- [[episodes/hidden-layers--alice-avi-golan]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]
