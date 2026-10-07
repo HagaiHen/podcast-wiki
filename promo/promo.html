@@ -36,108 +36,101 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 .stat span{font-size:32px;color:var(--mute)}
 .term{background:#0b0918;border:2px solid var(--line);border-radius:20px;padding:40px 48px;font-family:var(--mono);font-size:32px;line-height:1.6;width:1300px;min-height:420px;box-sizing:border-box}
 .term .p{color:var(--coral)}.term .o{color:var(--mute)}.term .ok{color:#7be0a5}
-#snd{position:absolute;right:24px;bottom:24px;z-index:5;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
-#snd[hidden]{display:none}
-#snd div{display:flex;gap:8px}
-#snd button{font:600 16px var(--body);color:var(--fg);background:#ffffff1a;border:1px solid #ffffff33;border-radius:999px;padding:10px 18px;cursor:pointer}
-#snd button[aria-pressed="true"]{color:var(--ink);background:var(--fg)}
-#snd button:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
-#snd small{font:13px var(--body);color:var(--mute)}
-</style><div id="stage"><canvas id="wave" width="1920" height="300"></canvas>
+#stage{cursor:pointer}
+#stage:focus-visible{outline:6px solid var(--coral);outline-offset:-6px}
+#hint{position:absolute;left:50%;bottom:48px;transform:translateX(-50%);z-index:5;font:600 30px var(--body);color:var(--ink);background:var(--fg);border-radius:999px;padding:18px 36px;pointer-events:none}
+#paused[hidden],#hint[hidden]{display:none}
+#paused{position:absolute;inset:0;z-index:6;display:grid;place-items:center;background:#14112a99;pointer-events:none}
+#paused span{width:220px;height:220px;border-radius:50%;background:var(--fg);color:var(--ink);display:grid;place-items:center;font-size:90px;padding-left:16px;box-sizing:border-box}
+</style><div id="stage" tabindex="0" role="button" aria-label="Play or pause the promo"><canvas id="wave" width="1920" height="300"></canvas>
 
-<section class="scene" data-start="0" data-end="3.5">
-  <div class="eyebrow" data-in="0.1">You listen. Then you forget.</div>
-  <h1 data-in="0.3">Hours of podcasts every week.</h1>
-  <h1 data-in="1.2" class="c">How much do you actually remember?</h1>
+<section class="scene" data-start="0" data-end="4">
+  <div class="eyebrow" data-in="0">You listen. Then you forget.</div>
+  <h1 data-in="0">Hours of podcasts every week.</h1>
+  <h1 data-in="1" class="c">How much do you actually remember?</h1>
 </section>
 
-<section class="scene" data-start="3.5" data-end="7">
-  <div class="eyebrow" data-in="0.1">Meet</div>
-  <h1 data-in="0.25" style="font-size:180px">Podcast Wiki</h1>
-  <p class="lead" data-in="0.8">Your Spotify listening history, turned into a knowledge base that Claude writes and keeps up to date.</p>
+<section class="scene" data-start="4" data-end="8">
+  <div class="eyebrow" data-in="0">Meet</div>
+  <h1 data-in="0" style="font-size:180px">Podcast Wiki</h1>
+  <p class="lead" data-in="1">Your Spotify listening history, turned into a knowledge base that Claude writes and keeps up to date.</p>
 </section>
 
-<section class="scene" data-start="7" data-end="12.5">
+<section class="scene" data-start="8" data-end="16">
   <div class="eyebrow" data-in="0">How it works</div>
-  <h2 data-in="0.1">From earbuds to knowledge in four steps</h2>
+  <h2 data-in="0">From earbuds to knowledge in four steps</h2>
   <div class="steps">
-    <div class="step" data-in="0.5"><i>01 · listen</i><b>Spotify</b><span>Pulls the episodes you've actually heard. You pick which ones to keep.</span></div>
-    <div class="step" data-in="1.1"><i>02 · transcribe</i><b>Transcripts</b><span>Published transcripts when they exist, local Whisper when they don't. Hebrew and English.</span></div>
-    <div class="step" data-in="1.7"><i>03 · synthesize</i><b>Claude</b><span>Reads every episode and merges it into topic pages, in English.</span></div>
-    <div class="step" data-in="2.3"><i>04 · learn</i><b>Obsidian wiki</b><span>Concepts, people, shows and a to-do list, all cross-linked.</span></div>
+    <div class="step" data-in="1"><i>01 · listen</i><b>Spotify</b><span>Pulls the episodes you've actually heard. You pick which ones to keep.</span></div>
+    <div class="step" data-in="2"><i>02 · transcribe</i><b>Transcripts</b><span>Published transcripts when they exist, local Whisper when they don't. Hebrew and English.</span></div>
+    <div class="step" data-in="3"><i>03 · synthesize</i><b>Claude</b><span>Reads every episode and merges it into topic pages, in English.</span></div>
+    <div class="step" data-in="4"><i>04 · learn</i><b>Obsidian wiki</b><span>Concepts, people, shows and a to-do list, all cross-linked.</span></div>
   </div>
 </section>
 
-<section class="scene" data-start="12.5" data-end="18.5">
+<section class="scene" data-start="16" data-end="24">
   <div class="row">
-    <div class="page" data-in="0.1">
+    <div class="page" data-in="0">
       <div class="fm">type: concept · sources: 7 · hubs: ai-engineering</div>
       <h3>Harness Engineering</h3>
       <ul style="margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
-        <li data-in="0.5">Ask the agent what it's missing to verify its own work, then build that tool. <span class="chip">LangTalks #73</span></li>
-        <li data-in="0.9">Every agent PR spins up a full preview environment. <span class="chip">LangTalks #70</span></li>
-        <li data-in="1.3">The biggest blocker is often plain DevOps: no per-developer environment, no log access. <span class="chip">LangTalks #68</span></li>
-        <li data-in="1.7">Durable Objects and sandboxes let long-running agents keep state safely. <span class="chip">Ignore the Instructions #20</span><span class="chip">Idan Benyon</span></li>
+        <li data-in="1">Ask the agent what it's missing to verify its own work, then build that tool. <span class="chip">LangTalks #73</span></li>
+        <li data-in="1.5">Every agent PR spins up a full preview environment. <span class="chip">LangTalks #70</span></li>
+        <li data-in="2">The biggest blocker is often plain DevOps: no per-developer environment, no log access. <span class="chip">LangTalks #68</span></li>
+        <li data-in="2.5">Durable Objects and sandboxes let long-running agents keep state safely. <span class="chip">Ignore the Instructions #20</span><span class="chip">Idan Benyon</span></li>
       </ul>
     </div>
     <div class="side">
-      <p data-in="2.4"><b class="c">One topic.</b></p>
-      <p data-in="2.8"><b class="s">Seven episodes.</b></p>
-      <p data-in="3.2"><b class="g">Every claim linked to who said it.</b></p>
+      <p data-in="3.5"><b class="c">One topic.</b></p>
+      <p data-in="4"><b class="s">Seven episodes.</b></p>
+      <p data-in="4.5"><b class="g">Every claim linked to who said it.</b></p>
     </div>
   </div>
 </section>
 
-<section class="scene" data-start="18.5" data-end="22.5">
+<section class="scene" data-start="24" data-end="30">
   <div class="eyebrow" data-in="0">So far</div>
   <div class="stats">
-    <div class="stat" data-in="0.2"><b data-count="56">0</b><span>episodes</span></div>
-    <div class="stat" data-in="0.35"><b data-count="9">0</b><span>shows</span></div>
-    <div class="stat" data-in="0.5"><b class="c" data-count="71">0</b><span>concept pages</span></div>
-    <div class="stat" data-in="0.65"><b data-count="47">0</b><span>people</span></div>
-    <div class="stat" data-in="0.8"><b class="g" data-count="162">0</b><span>things to try</span></div>
+    <div class="stat" data-in="0.5"><b data-count="56">0</b><span>episodes</span></div>
+    <div class="stat" data-in="1"><b data-count="9">0</b><span>shows</span></div>
+    <div class="stat" data-in="1.5"><b class="c" data-count="71">0</b><span>concept pages</span></div>
+    <div class="stat" data-in="2"><b data-count="47">0</b><span>people</span></div>
+    <div class="stat" data-in="2.5"><b class="g" data-count="162">0</b><span>things to try</span></div>
   </div>
-  <p class="lead" data-in="1.8">AI agents, startups, investing. Hebrew and English sources, one English wiki.</p>
+  <p class="lead" data-in="3.5">AI agents, startups, investing. Hebrew and English sources, one English wiki.</p>
 </section>
 
-<section class="scene" data-start="22.5" data-end="27.5">
+<section class="scene" data-start="30" data-end="38">
   <div class="eyebrow" data-in="0">How to use it</div>
-  <h2 data-in="0.1">Two commands in Claude Code</h2>
-  <div class="term" data-in="0.3">
-    <div><span class="p">❯ </span><span data-type="/ingest-podcasts" data-at="0.5"></span></div>
-    <div class="o" data-in="1.4">  ✓ 3 new episodes transcribed</div>
-    <div class="o" data-in="1.65">  ✓ 11 concept pages updated · 2 created</div>
-    <div class="o" data-in="1.9">  ✓ 6 takeaways added to to-try.md</div>
-    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="2.2"></span></div>
-    <div class="ok" data-in="2.9">  clean · 4 summaries refreshed · cross-links added</div>
+  <h2 data-in="0">Two commands in Claude Code</h2>
+  <div class="term" data-in="0.5">
+    <div><span class="p">❯ </span><span data-type="/ingest-podcasts" data-at="1"></span></div>
+    <div class="o" data-in="2">  ✓ 3 new episodes transcribed</div>
+    <div class="o" data-in="2.5">  ✓ 11 concept pages updated · 2 created</div>
+    <div class="o" data-in="3">  ✓ 6 takeaways added to to-try.md</div>
+    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="3.5"></span></div>
+    <div class="ok" data-in="4.5">  clean · 4 summaries refreshed · cross-links added</div>
   </div>
-  <p class="lead" data-in="3.3" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
+  <p class="lead" data-in="5" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
 </section>
 
-<section class="scene" data-start="27.5" data-end="30">
-  <h1 data-in="0.1">Stop forgetting<br>what you <span class="c">hear.</span></h1>
-  <p class="lead" data-in="0.7">Learn topics across episodes. Get a checklist of things to try.</p>
-  <div class="eyebrow" data-in="1.2" style="color:var(--sky)">Podcast Wiki · built with Claude Code</div>
+<section class="scene" data-start="38" data-end="43">
+  <h1 data-in="0">Stop forgetting<br>what you <span class="c">hear.</span></h1>
+  <p class="lead" data-in="1">Learn topics across episodes. Get a checklist of things to try.</p>
+  <div class="eyebrow" data-in="2" style="color:var(--sky)">Podcast Wiki · built with Claude Code</div>
 </section>
 
 </div>
-<div id="snd"><div>
-<button type="button" id="pause" aria-pressed="false">❚❚ Pause</button>
-<button type="button" data-src="music/hiphop-shop.mp3" data-title="Hip-Hop Shop" aria-pressed="false">▶ Hip-Hop Shop</button>
-<button type="button" data-src="music/hiphop-music.mp3" data-title="Hip Hop Music" aria-pressed="false">▶ Hip Hop Music</button>
-<button type="button" data-src="music/hiphop-vlog.mp3" data-title="Hip-Hop Vlog" aria-pressed="false">▶ Hip-Hop Vlog</button>
-<button type="button" data-src="music/upbeat-hiphop.mp3" data-title="Upbeat Hip Hop" aria-pressed="false">▶ Upbeat Hip Hop</button>
-</div><small id="credit">Music: Pixabay (royalty-free)</small></div><audio id="aud" preload="none" loop></audio>
+<div id="hint">▶ Click to play with sound</div><div id="paused" hidden><span>▶</span></div><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
 <script>
-const DUR=30, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
+const B=60/86, DUR=43*B, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
 const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
 function seek(t){
   for(const s of scenes){
-    const a=+s.dataset.start,b=+s.dataset.end,lt=t-a;
-    const vis=Math.min(ease(lt/0.5),ease((b-t)/0.4));
+    const a=s.dataset.start*B,b=s.dataset.end*B,lt=t-a;
+    const vis=Math.min(ease(lt/0.25),ease((b-t)/0.2));
     s.style.opacity=t>=a&&t<b?vis:0;
-    s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-+e.dataset.in)/0.45);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
-    s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-+e.dataset.at)*22));e.textContent=e.dataset.type.slice(0,n)+(lt>+e.dataset.at-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
+    s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-e.dataset.in*B)/0.35);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
+    s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-e.dataset.at*B)*22));e.textContent=e.dataset.type.slice(0,n)+(lt>e.dataset.at*B-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
     s.querySelectorAll('[data-count]').forEach(e=>{e.textContent=Math.round(+e.dataset.count*ease((lt-0.2)/1.2))});
   }
   cx.clearRect(0,0,1920,300);
@@ -146,22 +139,16 @@ function seek(t){
 }
 const st=document.getElementById('stage');function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}addEventListener('resize',fit);fit();
 window.seek=seek; window.DUR=DUR;
-const snd=document.getElementById('snd'),aud=document.getElementById('aud'),pb=document.getElementById('pause');
+const st2=document.getElementById('stage'),aud=document.getElementById('aud'),hint=document.getElementById('hint'),pz=document.getElementById('paused');
 if(!navigator.webdriver){
-  let t0=performance.now(),frozen=false,ft=0,music=false;
-  const now=()=>frozen?ft:music?aud.currentTime:((performance.now()-t0)/1000)%DUR;
+  let t0=performance.now(),started=false,frozen=false,ft=0;
+  const now=()=>frozen?ft:started?aud.currentTime:((performance.now()-t0)/1000)%DUR;
   (function f(){seek(now());requestAnimationFrame(f)})();
-  const label=()=>{pb.textContent=frozen?'▶ Play':'❚❚ Pause';pb.setAttribute('aria-pressed',frozen)};
   function toggle(){
-    if(!frozen){ft=now();frozen=true;aud.pause()}
-    else{frozen=false;if(music){aud.currentTime=ft;aud.play().catch(()=>{})}else t0=performance.now()-ft*1000}
-    label()}
-  pb.onclick=toggle;
-  addEventListener('keydown',e=>{if(e.code==='Space'&&e.target.tagName!=='BUTTON'){e.preventDefault();toggle()}});
-  const btns=[...snd.querySelectorAll('button[data-src]')],credit=document.getElementById('credit');
-  btns.forEach(b=>b.onclick=()=>{const on=b.getAttribute('aria-pressed')==='true';
-    if(on){if(!frozen)t0=performance.now()-aud.currentTime*1000;music=false;aud.pause()}
-    else{music=true;frozen=false;label();aud.src=b.dataset.src;aud.currentTime=0;aud.play().catch(()=>{});credit.textContent=`"${b.dataset.title}" · Pixabay (royalty-free)`}
-    btns.forEach(x=>{const p=x===b&&!on;x.setAttribute('aria-pressed',p);x.textContent=(p?'🔊 ':'▶ ')+x.dataset.title})})}
-else{snd.hidden=true;seek(0)}
+    if(!started){started=true;hint.hidden=true;aud.currentTime=0;aud.play().catch(()=>{});return}
+    if(!frozen){ft=aud.currentTime;frozen=true;aud.pause()}else{frozen=false;aud.currentTime=ft;aud.play().catch(()=>{})}
+    pz.hidden=!frozen}
+  st2.addEventListener('click',toggle);
+  addEventListener('keydown',e=>{if(e.code==='Space'||e.code==='Enter'){e.preventDefault();toggle()}});
+}else{hint.hidden=true;seek(0)}
 </script>
