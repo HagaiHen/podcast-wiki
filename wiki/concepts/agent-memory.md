@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering, knowledge-management]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # Agent Memory (short- and long-term, governed)
@@ -22,6 +22,7 @@ updated: 2026-10-07
 - Start with the file system before a vector DB: most agent work is episodic, so files for PRDs, plans, and to-dos give persistence, git history, and human review; semantic memory retrieval is rarely the first or second thing you need ([[episodes/langtalks--55-context-engineering]]).
 - Claude Code memory levels: project, user, enterprise ([[episodes/langtalks--55-context-engineering]]).
 - Critique of memory systems: retrieval, memory graphs, and summarization only choose which notes to re-read from an ever-growing stack, like an employee rereading all their notes each morning. The problem is ill-posed because data isn't distilled as it arrives. Humans change a little with every input ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
+- Two layers for a domain agent: a constantly enriched data layer (what permissions actually allow) and a knowledge layer of org policies and exceptions ("never auto-disable the CEO"), learned from every interaction so customers needn't repeat themselves ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Disagreements & open questions
 - Bitter lesson (scale data and compute) versus algorithmic innovation: Friedman expects new memory architectures; the hosts sense today's memory is feature engineering awaiting a learned solution ([[episodes/langtalks--57-memory]]).

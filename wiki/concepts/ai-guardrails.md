@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 10
+sources: 11
 updated: 2026-10-07
 ---
 # AI Guardrails
@@ -30,6 +30,9 @@ updated: 2026-10-07
 - At scale, 1-in-100 errors (money sent to the wrong account) are catastrophic, which keeps many enterprises shipping only unambitious FAQ chatbots ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 - Over-reliance is a risk category of its own: employees asking an assistant how to mix chemicals, medical questions, or a teacher letting it set a student's grade. Decisions that need a domain expert shouldn't be delegated ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
 - Detecting AI misuse needs AI: semantic classifiers trained on carefully labeled examples (catching paraphrased attacks, not just exact phrases) plus tightly scoped judge agents in production, built by security researchers paired with data scientists ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- "Control membrane": map every action and context to an approval level (password reset auto-allowed; disabling a user or messaging staff on Teams needs a named human). Only designated admins set these, enterprise-wide ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- Approve a deterministic plan, not a promise: the agent produces a formal plan, and nothing AI-driven sits between the approval click and execution; add audit logs and one-click undo ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- Make the agent able to fail honestly: deterministic validation on every tool call (does this user exist?), an "I don't know" path, and a "raise issue" tool for async tasks, tuned so the model doesn't abuse it to dodge work ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Disagreements & open questions
 
@@ -40,6 +43,7 @@ updated: 2026-10-07
 - [ ] Add a git hook blocking agent commits below a test-coverage threshold (e.g. 80%) ([[episodes/langtalks--73-harness-engineering]])
 - [ ] Give agents least-privilege access (e.g. no destructive DB rights) ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 - [ ] Isolate parallel agents and avoid letting them message each other unsupervised ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
+- [ ] For write-capable agents, require approval of a deterministic plan and keep audit logs plus undo ([[episodes/hidden-layers--twine-nadav-erez]])
 
 ## Related
 [[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]]

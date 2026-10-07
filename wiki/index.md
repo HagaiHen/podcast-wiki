@@ -118,6 +118,7 @@
 - [[people/meytar-zemer]]: neuroscientist (memory)
 - [[people/micky-haslavsky]]: founder at enso (agentic marketing)
 - [[people/misha-feinstein]]: CTO of Bria
+- [[people/nadav-erez]]: CTO of Twine (digital employees)
 - [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
@@ -137,6 +138,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--twine-nadav-erez]]: Digital Employees in Cybersecurity (2026-05-03)
 - [[episodes/hidden-layers--vega-gili-kanfo]]: Securing Data Sources in the AI Era (2026-05-18)
 - [[episodes/hidden-layers--nanoclaw-gavriel-cohen]]: Building Secure AI Agents for Organizations (2026-05-21)
 - [[episodes/hidden-layers--tenable-tom-barnea]]: Securing AI Tool Use in the Organization (2026-05-26)

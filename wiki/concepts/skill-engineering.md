@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
+sources: 9
 updated: 2026-10-07
 ---
 # Skill Engineering
@@ -25,6 +25,7 @@ updated: 2026-10-07
 - Progressive disclosure is a cost and attention principle, not just tidiness: loading all skills or tasks up front wastes tokens and pulls attention toward things that won't run ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 - Skills split system prompts and speed ramp-up, but hit a ceiling; past it, fine-tune models on collected context and data, sometimes automatically at the customer site in a feedback loop ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - One orchestrator plus skills beat a dedicated workflow per alert type: the investigation agent loads skills by scenario (cloud → AWS or GCP). Domain experts, not R&D, should be able to add or edit skills and measure their impact on evals ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
+- Scoped per-page agents broke because users ask anything anywhere; one agent selecting from well-described skills improved evals immediately. A "screen awareness" skill lets users ask about what they're looking at ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Disagreements & open questions
 

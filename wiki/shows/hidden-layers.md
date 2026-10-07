@@ -16,3 +16,4 @@ Hebrew interview podcast on AI and the people behind it, hosted by [[people/uri-
 - [[episodes/hidden-layers--tenable-tom-barnea]] (2026-05-26)
 - [[episodes/hidden-layers--nanoclaw-gavriel-cohen]] (2026-05-21)
 - [[episodes/hidden-layers--vega-gili-kanfo]] (2026-05-18)
+- [[episodes/hidden-layers--twine-nadav-erez]] (2026-05-03)

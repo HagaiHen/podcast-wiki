@@ -26,5 +26,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--vega-gili-kanfo]] (host)
 
+- [[episodes/hidden-layers--twine-nadav-erez]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

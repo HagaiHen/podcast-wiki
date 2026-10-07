@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 7
 updated: 2026-10-07
 ---
 # Agent Workspaces (the new workplace)
@@ -25,6 +25,8 @@ updated: 2026-10-07
 - Keep agents' work on their own machine and deliver results to one place (chat, Notion) to avoid "where is that file?" overhead ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 - monday's "Sphera agents" path: everyone building their own agents led to hundreds, with cost and quality out of control. They moved to team-level agents with identities (Slack, GitHub, monday users) that the whole team assigns work to and gives feedback, which improves the shared harness ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
 - Naming and identity change expectations: people hold a named agent to human standards and forgive its mistakes less ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
+- Digital employee vs copilot: you don't prompt it each time; it owns a KPI (Twine's "Alex": everyone has exactly the access they need) and works continuously, turning quarterly reviews into daily ones ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- Onboarding an agent like an employee: it reverse-engineers practice from a year of tickets when policy is unwritten or a 150-page document. Customers' trust grows from comments on tickets, to manually assigned tickets, to the full queue; once employees rely on it, nobody wants to go back ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Disagreements & open questions
 

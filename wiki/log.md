@@ -258,3 +258,8 @@ updated: concepts/{personal-ai-assistants, agent-security, llm-wiki}, people/{ga
 source: whisper
 created: episodes/hidden-layers--vega-gili-kanfo, people/gili-kanfo
 updated: concepts/{knowledge-graphs, skill-engineering, small-language-models, ai-sre}, people/uri-eliabayev, shows/hidden-layers, index
+
+## 2026-10-07 — Hidden Layers: Digital Employees in Cybersecurity (Nadav Erez)
+source: whisper
+created: episodes/hidden-layers--twine-nadav-erez, people/nadav-erez
+updated: concepts/{agent-workspaces, ai-guardrails, skill-engineering, agent-memory}, people/uri-eliabayev, shows/hidden-layers, index, takeaways/to-try
