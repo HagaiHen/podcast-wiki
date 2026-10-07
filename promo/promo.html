@@ -61,7 +61,7 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 #seek:focus-visible{outline:4px solid var(--coral);outline-offset:8px}
 #time{flex:none;font:500 17px var(--mono);color:var(--mute);font-variant-numeric:tabular-nums}
 #time b{color:var(--fg);font-weight:600}
-#paused{position:absolute;inset:0;z-index:5;display:grid;place-items:center;background:#14112a66;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);pointer-events:none;animation:pin .25s ease-out}
+#paused{position:absolute;inset:0;z-index:5;display:grid;place-items:center;background:#14112a33;pointer-events:none;animation:pin .25s ease-out}
 #paused span{width:180px;height:180px;border-radius:50%;background:#ffffffeb;color:var(--ink);display:grid;place-items:center;box-shadow:0 30px 80px #0008}
 #paused svg{width:76px;height:76px;margin-left:10px}
 @keyframes pin{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:none}}
@@ -125,16 +125,17 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 
 <section class="scene" data-start="30" data-end="38">
   <div class="eyebrow" data-in="0">How to use it</div>
-  <h2 data-in="0">Two commands in Claude Code</h2>
+  <h2 data-in="0">Three commands in Claude Code</h2>
   <div class="term" data-in="0.5">
     <div><span class="p">❯ </span><span data-type="/ingest-podcasts" data-at="1"></span></div>
-    <div class="o" data-in="2">  ✓ 3 new episodes transcribed</div>
-    <div class="o" data-in="2.5">  ✓ 11 concept pages updated · 2 created</div>
-    <div class="o" data-in="3">  ✓ 6 takeaways added to to-try.md</div>
-    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="3.5"></span></div>
-    <div class="ok" data-in="4.5">  clean · 4 summaries refreshed · cross-links added</div>
+    <div class="o" data-in="1.75">  ✓ 3 new episodes transcribed · 11 concept pages updated</div>
+    <div class="o" data-in="2">  ✓ 6 takeaways added to to-try.md</div>
+    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/lint-wiki" data-at="2.75"></span></div>
+    <div class="ok" data-in="3.5">  clean · 4 summaries refreshed · cross-links added</div>
+    <div style="margin-top:16px"><span class="p">❯ </span><span data-type="/dream" data-at="4.25"></span></div>
+    <div class="ok" data-in="5">  memory consolidated · 4 added · 2 merged · 1 pruned</div>
   </div>
-  <p class="lead" data-in="5" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
+  <p class="lead" data-in="5.75" style="font-size:36px">Or let it run on a schedule every 6 hours. New episodes show up on their own.</p>
 </section>
 
 <section class="scene" data-start="38" data-end="43">
@@ -155,7 +156,7 @@ function seek(t){
     s.style.opacity=t>=a&&t<b?vis:0;
     s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-e.dataset.in*B)/0.35);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
     s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-e.dataset.at*B)*22));e.textContent=e.dataset.type.slice(0,n)+(lt>e.dataset.at*B-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
-    s.querySelectorAll('[data-count]').forEach(e=>{e.textContent=Math.round(+e.dataset.count*ease((lt-0.2)/1.2))});
+    s.querySelectorAll('[data-count]').forEach(e=>{const d=e.closest('[data-in]').dataset.in*B;e.textContent=Math.round(+e.dataset.count*ease((lt-d)/1.2))});
   }
   cx.clearRect(0,0,1920,300);
   [['#ff7a59',0],['#7cc6ff',2],['#ffd166',4]].forEach(([c,o])=>{cx.beginPath();cx.strokeStyle=c;cx.lineWidth=3;
