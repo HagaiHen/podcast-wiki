@@ -21,6 +21,26 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 .titlescene .tag{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.08;letter-spacing:-1px;max-width:1500px;margin:0 auto;padding-top:24px;text-align:center}
 .grow{display:grid;grid-template-rows:0fr;width:100%}
 .grow>div{overflow:hidden;min-height:0}
+.flow{display:grid;grid-template-columns:1fr 50px 1.25fr 50px 1.1fr 50px 1.1fr;align-items:stretch;margin-top:24px}
+.fbox{background:var(--panel);border:2px solid var(--line);border-radius:22px;padding:26px 26px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.flab{font-style:normal;font-family:var(--mono);font-size:21px;color:var(--coral)}
+.farr{display:grid;place-items:center;font-size:44px;color:var(--coral);font-weight:800}
+.sp{display:flex;gap:16px;align-items:center}
+.spdot{flex:none;width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#1ed760,#0e7a39)}
+.sp b{display:block;font-family:var(--display);font-size:30px}
+.sp div span{display:block;font-size:22px;color:var(--mute);line-height:1.3}
+.heard{font-family:var(--mono);font-size:20px;color:#7be0a5}
+.wave{display:flex;align-items:center;gap:5px;height:64px}
+.wave i{flex:1;background:var(--sky);border-radius:4px;height:8px}
+.he{font-family:var(--body);font-size:26px;line-height:1.5;color:var(--fg)}
+.he mark{background:transparent;color:inherit;border-radius:6px;padding:0 6px}
+.claim p{font-family:var(--display);font-size:36px;line-height:1.2;margin:0}
+.claim p b{color:var(--gold)}
+.who{font-family:var(--mono);font-size:19px;color:var(--mute)}
+.pg{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#ffffff0d;border-radius:12px;padding:12px 16px;font-size:24px}
+.pg b{font-family:var(--display);font-size:30px;color:var(--gold);font-variant-numeric:tabular-nums;display:inline-block}
+.pg b.new{font-size:20px;font-family:var(--mono);color:var(--ink);background:#7be0a5;border-radius:8px;padding:2px 10px}
+.pg b.new:empty{background:transparent;padding:0}
 .c{color:var(--coral)}.s{color:var(--sky)}.g{color:var(--gold)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:20px}
 .step{background:var(--panel);border:2px solid var(--line);border-radius:22px;padding:36px 32px;display:flex;flex-direction:column;gap:14px}
@@ -87,12 +107,24 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 
 <section class="scene" data-start="12" data-end="19">
   <div class="eyebrow" data-in="0">How it works</div>
-  <h2 data-in="0">From earbuds to knowledge in four steps</h2>
-  <div class="steps">
-    <div class="step" data-in="1"><i>01 · listen</i><b>Spotify</b><span>Pulls the episodes you've actually heard. You pick which ones to keep.</span></div>
-    <div class="step" data-in="2"><i>02 · transcribe</i><b>Transcripts</b><span>Published transcripts when they exist, local Whisper when they don't. Hebrew and English.</span></div>
-    <div class="step" data-in="3"><i>03 · synthesize</i><b>Claude</b><span>Reads every episode and merges it into topic pages, in English.</span></div>
-    <div class="step" data-in="4"><i>04 · learn</i><b>Obsidian wiki</b><span>Concepts, people, shows and a to-do list, all cross-linked.</span></div>
+  <h2 data-in="0">One episode in. Many pages updated.</h2>
+  <div class="flow">
+    <div class="fbox" data-in="0.5"><i class="flab">01 · you listen</i>
+      <div class="sp"><span class="spdot"></span><div><b>Osim Tochna</b><span>AI in production: reality vs imagination</span></div></div>
+      <div class="heard">✓ listened on Spotify</div></div>
+    <div class="farr" data-in="1.25">→</div>
+    <div class="fbox" data-in="1.5"><i class="flab">02 · transcribed</i>
+      <div class="wave" data-wave="1.5" data-wend="3"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="he"><div data-in="2">“At first the score was 0 to 100,</div><div data-in="2.25">then we saw that’s no good,</div><div data-in="2.5"><mark data-hl="3">so let’s do 0, 50 and 100.”</mark></div></div></div>
+    <div class="farr" data-in="3">→</div>
+    <div class="fbox claim" data-in="3.25"><i class="flab">03 · Claude extracts</i>
+      <p>Keep LLM judges simple: score <b>0&nbsp;/&nbsp;50&nbsp;/&nbsp;100</b>.</p>
+      <span class="who">Osim Tochna · Feb 2026</span></div>
+    <div class="farr" data-in="4.25">→</div>
+    <div class="fbox pages" data-in="4.5"><i class="flab">04 · wiki updated</i>
+      <div class="pg" data-in="4.75"><span>LLM Evals</span><b data-tick="5" data-a="15" data-b="16">15</b></div>
+      <div class="pg" data-in="5"><span>LLM Cost Optimization</span><b data-tick="5.25" data-a="8" data-b="9">8</b></div>
+      <div class="pg" data-in="5.25"><span>Multimodal LLMs</span><b class="new" data-tick="5.5" data-a="" data-b="NEW"></b></div></div>
   </div>
 </section>
 
@@ -163,6 +195,10 @@ function seek(t){
     s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-e.dataset.at*B)*22));e.textContent=e.dataset.type.slice(0,n)+(lt>e.dataset.at*B-.5&&n<e.dataset.type.length+6&&Math.floor(lt*3)%2?'▌':'')});
     s.querySelectorAll('[data-morph]').forEach(e=>{const k=ease((lt-e.dataset.morph*B)/0.5);e.style.fontSize=(+e.dataset.from+(e.dataset.to-e.dataset.from)*k)+'px'});
     s.querySelectorAll('[data-grow]').forEach(e=>{e.style.gridTemplateRows=ease((lt-e.dataset.grow*B)/0.5)+'fr'});
+    s.querySelectorAll('[data-wave]').forEach(w=>{const a=w.dataset.wave*B,e=w.dataset.wend*B,on=lt>a&&lt<e,dn=lt>=e;
+      [...w.children].forEach((b,i)=>{b.style.height=(on?10+50*Math.abs(Math.sin(i*1.7+lt*9)*Math.sin(i*.4+lt*3)):dn?6:8)+'px';b.style.opacity=dn?.35:1})});
+    s.querySelectorAll('[data-hl]').forEach(e=>{const k=ease((lt-e.dataset.hl*B)/0.3);e.style.backgroundColor=`rgba(255,122,89,${.45*k})`});
+    s.querySelectorAll('[data-tick]').forEach(e=>{const d=lt-e.dataset.tick*B;e.textContent=d>=0?e.dataset.b:e.dataset.a;e.style.transform=`scale(${d>=0&&d<.3?1.35-d:1})`});
     s.querySelectorAll('[data-count]').forEach(e=>{const d=e.closest('[data-in]').dataset.in*B;e.textContent=Math.round(+e.dataset.count*ease((lt-d)/1.2))});
   }
   cx.clearRect(0,0,1920,300);
