@@ -38,8 +38,9 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 .term .p{color:var(--coral)}.term .o{color:var(--mute)}.term .ok{color:#7be0a5}
 #stage{cursor:pointer}
 #stage:focus-visible{outline:6px solid var(--coral);outline-offset:-6px}
-#hint{position:absolute;left:50%;bottom:48px;transform:translateX(-50%);z-index:5;font:600 30px var(--body);color:var(--ink);background:var(--fg);border-radius:999px;padding:18px 36px;pointer-events:none}
-#paused[hidden],#hint[hidden]{display:none}
+#mute{position:absolute;right:40px;bottom:40px;z-index:7;font:600 28px var(--body);color:var(--ink);background:var(--fg);border:0;border-radius:999px;padding:16px 30px;cursor:pointer}
+#mute:focus-visible{outline:5px solid var(--coral);outline-offset:4px}
+#paused[hidden],#mute[hidden]{display:none}
 #paused{position:absolute;inset:0;z-index:6;display:grid;place-items:center;background:#14112a99;pointer-events:none}
 #paused span{width:220px;height:220px;border-radius:50%;background:var(--fg);color:var(--ink);display:grid;place-items:center;font-size:90px;padding-left:16px;box-sizing:border-box}
 </style><div id="stage" tabindex="0" role="button" aria-label="Play or pause the promo"><canvas id="wave" width="1920" height="300"></canvas>
@@ -120,7 +121,7 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 </section>
 
 </div>
-<div id="hint">▶ Click to play with sound</div><div id="paused" hidden><span>▶</span></div><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
+<button id="mute" type="button" aria-pressed="true">🔇 Unmute</button><div id="paused" hidden><span>▶</span></div><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
 <script>
 const B=60/86, DUR=43*B, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
 const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
@@ -139,16 +140,22 @@ function seek(t){
 }
 const st=document.getElementById('stage');function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}addEventListener('resize',fit);fit();
 window.seek=seek; window.DUR=DUR;
-const st2=document.getElementById('stage'),aud=document.getElementById('aud'),hint=document.getElementById('hint'),pz=document.getElementById('paused');
+const st2=document.getElementById('stage'),aud=document.getElementById('aud'),mb=document.getElementById('mute'),pz=document.getElementById('paused');
 if(!navigator.webdriver){
-  let t0=performance.now(),started=false,frozen=false,ft=0;
-  const now=()=>frozen?ft:started?aud.currentTime:((performance.now()-t0)/1000)%DUR;
+  let t0=performance.now(),frozen=false,ft=0;
+  aud.muted=true; aud.play().catch(()=>{});            // muted autoplay is allowed; sound needs a click
+  const now=()=>frozen?ft:!aud.paused?aud.currentTime:((performance.now()-t0)/1000)%DUR;
   (function f(){seek(now());requestAnimationFrame(f)})();
   function toggle(){
-    if(!started){started=true;hint.hidden=true;aud.currentTime=0;aud.play().catch(()=>{});return}
-    if(!frozen){ft=aud.currentTime;frozen=true;aud.pause()}else{frozen=false;aud.currentTime=ft;aud.play().catch(()=>{})}
+    if(!frozen){ft=now();frozen=true;aud.pause()}
+    else{frozen=false;t0=performance.now()-ft*1000;aud.currentTime=ft;aud.play().catch(()=>{})}
     pz.hidden=!frozen}
+  function mute(e){e&&e.stopPropagation();aud.muted=!aud.muted;
+    if(!frozen&&aud.paused){aud.currentTime=now();aud.play().catch(()=>{})}
+    mb.textContent=aud.muted?'🔇 Unmute':'🔊 Mute';mb.setAttribute('aria-pressed',aud.muted)}
+  mb.addEventListener('click',mute);
   st2.addEventListener('click',toggle);
-  addEventListener('keydown',e=>{if(e.code==='Space'||e.code==='Enter'){e.preventDefault();toggle()}});
-}else{hint.hidden=true;seek(0)}
+  addEventListener('keydown',e=>{if(e.target.tagName==='BUTTON')return;
+    if(e.code==='Space'||e.code==='Enter'){e.preventDefault();toggle()}else if(e.code==='KeyM')mute()});
+}else{mb.hidden=true;seek(0)}
 </script>
