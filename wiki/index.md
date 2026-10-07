@@ -23,6 +23,7 @@
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
 - [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
+- [[concepts/image-generation]]: professional image generation; licensed data, JSON control
 - [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
 - [[concepts/world-models]]: JEPA, video and 3D world models, beyond next-token
@@ -113,6 +114,7 @@
 - [[people/idan-benyon]]: founder of Build Ship Grow community
 - [[people/meytar-zemer]]: neuroscientist (memory)
 - [[people/micky-haslavsky]]: founder at enso (agentic marketing)
+- [[people/misha-feinstein]]: CTO of Bria
 - [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
@@ -130,6 +132,7 @@
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--bria-misha-feinstein]]: Training an Image Foundation Model From Scratch (2026-06-24)
 - [[episodes/hidden-layers--alice-avi-golan]]: Keeping Strong AI Models From Going Rogue (2026-07-01)
 - [[episodes/hidden-layers--manifold-gilad-levi]]: Has a Replacement for Transformers Been Found? (2026-07-06)
 - [[episodes/hidden-layers--nvidia-gilad-shainer]]: Making Sense of Nvidia's Technology (2026-09-27)

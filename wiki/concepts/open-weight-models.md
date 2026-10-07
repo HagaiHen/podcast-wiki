@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-07
 ---
 # Open-Weight Models
@@ -18,6 +18,7 @@ updated: 2026-10-07
 - US enterprise customers may not want Chinese models, so model choice must stay with the customer, with transparency ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - "Open" varies: NVIDIA Nemotron released weights, training data, and SFT data, which made continued pre-training reproducible. Licenses ruled out some candidates (commercial use) ([[episodes/explainable--157-training-hebatron]]).
 - Prediction: within 6–12 months more enterprises will fine-tune open-weight models on their own agents' failure cases ("shift left" into the weights), especially where data is rare (cyber, medical, drug research) ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- Bria ships its image foundation models with weights, so enterprises can keep training on proprietary data, run on-prem at a capped license cost, and avoid generic outputs ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 
 ## Disagreements & open questions
 

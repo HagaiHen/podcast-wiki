@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
+sources: 9
 updated: 2026-10-07
 ---
 # Model Selection
@@ -28,6 +28,7 @@ updated: 2026-10-07
 - Niche models: some aim to be best under real-time latency, others at long context or specific tasks. Per-intent compute (as GPT-5 varies thinking) may come to inference stacks. Smaller models gain ground as ROI starts to matter ([[episodes/langtalks--58-reinvent-predictions]]).
 - For copywriting (incl. Hebrew), the host finds GPT 5.6 the best; Fable is "genius but hard to talk to" ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
 - Model-agnostic by design: every component (builders, runners) can use Gemini, OpenAI, Anthropic, or xAI behind a generic interface; an ML team keeps benchmarking and swapping per component. A better open-source voice-activity model was adopted within two days ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
+- Frontier models pass POCs easily but often fail production on unit economics and latency: re-touching a whole retail catalog for Christmas with a giant model is "a 5-kilo hammer for adding snowflakes". Smaller, controllable models win such jobs ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).

@@ -12,5 +12,7 @@ Host of Hidden Layers, an Israeli AI interview podcast.
 
 - [[episodes/hidden-layers--alice-avi-golan]] (host)
 
+- [[episodes/hidden-layers--bria-misha-feinstein]] (host)
+
 ## Concepts
 [[concepts/ai-infrastructure]]

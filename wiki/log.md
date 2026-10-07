@@ -223,3 +223,8 @@ updated: concepts/{continual-learning, ai-moats, llm-pretraining}, people/{gilad
 source: whisper
 created: episodes/hidden-layers--alice-avi-golan, concepts/ai-red-teaming, people/avi-golan
 updated: concepts/{agent-security, ai-guardrails, llm-evals, open-weight-models}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-07 — Hidden Layers: Training an Image Foundation Model From Scratch (Misha Feinstein)
+source: whisper
+created: episodes/hidden-layers--bria-misha-feinstein, concepts/image-generation, people/misha-feinstein
+updated: concepts/{ai-moats, open-weight-models, model-selection}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index

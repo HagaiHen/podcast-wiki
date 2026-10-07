@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # AI Moats (beyond the model)
@@ -19,6 +19,7 @@ updated: 2026-10-07
 - Building on model vendors means competing with them: vendors move into every vertical (code, legal, design). The test is whether you create enough alpha to justify your margin on tokens ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Agent companies reaching escape velocity (coding, voice) train a fallback model of their own: better economics they can pass to customers, which frontier labs can't match at ~$1 per million tokens ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Frontier LLMs have "zero distribution moat": no migration cost and precise benchmarks mean users switch weekly, so labs fight brutally; even toilet paper has more stickiness. Technology that learns its user continually is sticky by design ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
+- Frontier models commoditize their users: everyone using the same model gets the same results as their competitors. Differentiation needs access to the model's guts (inject your data, fine-tune) ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 
 ## Disagreements & open questions
 - Will one frontier lab collapse? The host expects one to; Levi doubts the causality but agrees the market is moving in an unhealthy direction ([[episodes/explainable--164-gilad-levi-continual-learning]]).
@@ -27,4 +28,4 @@ updated: 2026-10-07
 - [ ] When building on AI, write down what value remains if a competitor swaps in a better model tomorrow ([[episodes/explainable--164-gilad-levi-continual-learning]])
 
 ## Related
-[[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]] · [[concepts/solo-builders]]
+[[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]] · [[concepts/solo-builders]] · [[concepts/image-generation]]
