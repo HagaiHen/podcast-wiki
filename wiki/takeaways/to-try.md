@@ -149,3 +149,5 @@
 - [ ] Test whether an agent can complete your product's top 3 user journeys — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--webmcp-clearly-explained]]
 - [ ] Add a five-line daily brief (done / blocked / needs me) to each recurring agent — [[concepts/multi-agent-orchestration]] · [[episodes/startup-ideas--grok-bot-one-person-company]]
 - [ ] Run one project with an agent team for a month: build, execute, hire/fire, automate — [[concepts/solo-builders]] · [[episodes/startup-ideas--grok-bot-one-person-company]]
+- [ ] Before building an agent, classify the job and solve only that problem type — [[concepts/agent-architectures]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]
+- [ ] Give agents the goal and review their plan instead of dictating micro-tasks — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--362-agent-architecture-fit]]

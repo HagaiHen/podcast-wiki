@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
@@ -19,6 +19,9 @@ updated: 2026-10-07
 - A dedicated AI-enablement person can find internal "customers" and build Slack-channel agents for them (e.g. an analyst agent answering a GM's data questions, with a human analyst verifying SQL; a marketing copywriter agent) ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 - Measured acceleration is modest overall: the host estimates 10–20% at Mixtiles (a few × in places, none in others). Gurevich sees ~3× on new products, where a founder can clear old processes. A flatter org with far more seniors than juniors; dashboards give way to asking Claude to investigate ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Little acceleration in sales and G&A. Gurevich argues automated outbound is a step backward and pushes enterprise sales back to in-person meetings, since buyers stake their careers on vendors ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- More than 20% of monday's code is written by agents ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
+- The main blocker is mindset: people micro-manage agents with 100 small tasks instead of stating the goal and reviewing the agent's plan; when something breaks, connect tools (e.g. a browser) and tell it to check itself rather than dictating fixes ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
+- Separate fundamentals (model and infra progress, which is steady and logical) from product hype ("the movie app doesn't actually work"); try things hands-on, since month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).
@@ -27,6 +30,7 @@ updated: 2026-10-07
 - [ ] Start a GenAI guild of early adopters to share success stories and run workshops ([[episodes/langtalks--62-ai-rd-rollout]])
 - [ ] Try a "no hand-written code" sprint to force the workflow shift ([[episodes/langtalks--62-ai-rd-rollout]])
 - [ ] Give product managers read access to the codebase via an AI tool ([[episodes/langtalks--62-ai-rd-rollout]])
+- [ ] Give agents the goal and review their plan, instead of dictating micro-tasks ([[episodes/startup-for-startup--362-agent-architecture-fit]])
 
 ## Related
 [[concepts/ai-sdlc]] · [[concepts/ai-engineering-metrics]] · [[concepts/coding-agent-workflow]]

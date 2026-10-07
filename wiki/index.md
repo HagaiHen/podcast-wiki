@@ -19,6 +19,7 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
 - [[concepts/continual-learning]]: models that keep learning after training
@@ -74,6 +75,7 @@
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
 
 ## Shows
+- [[shows/startup-for-startup]]: Startup for Startup (monday.com)
 - [[shows/the-startup-ideas-podcast]]: The Startup Ideas Podcast
 - [[shows/explainable]]: ExplAInable
 - [[shows/ai-engineering-podcast]]: AI Engineering (AI אנג׳נירינג)
@@ -111,12 +113,14 @@
 - [[people/shuki-cohen]]: VP Data, AI21
 - [[people/pavel-gurevich]]: founder of Tenzai (AI pentesting)
 - [[people/roy-lazar]]: Wonderful (enterprise applied AI)
+- [[people/roy-mann]]: co-founder and co-CEO of monday.com
 - [[people/ryan-vogel]]: OpenCode founding team
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/startup-for-startup--362-agent-architecture-fit]]: #362 Matching Agent Architecture to the Problem (2026-08-11)
 - [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)
 - [[episodes/startup-ideas--webmcp-clearly-explained]]: WebMCP Clearly Explained (2026-08-26)
 - [[episodes/startup-ideas--grok-bot-one-person-company]]: Grok Bot: One-Person Company with Agents (2026-08-21)

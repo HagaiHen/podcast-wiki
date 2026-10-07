@@ -8,5 +8,7 @@ R&D director at monday.com leading AI Engineering; co-host of [[shows/ai-enginee
 ## Appearances
 - [[episodes/ai-engineering-podcast--the-ai-ux-paradox]] (and host of all AI Engineering episodes)
 
+- [[episodes/startup-for-startup--362-agent-architecture-fit]]
+
 ## Concepts
-[[concepts/agent-workspaces]] · [[concepts/future-of-software-engineering]]
+[[concepts/agent-workspaces]] · [[concepts/future-of-software-engineering]] · [[concepts/agent-architectures]]

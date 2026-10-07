@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # Agent Workspaces (the new workplace)
@@ -23,10 +23,12 @@ updated: 2026-10-07
 - GrokBot agent teams: each agent is a DM thread with a distinct shape and color (the constraint keeps you mission-focused). Agents live on a cloud machine, message each other, and run routines; the human talks mostly to a chief-of-staff agent but can go direct, as at a real company ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]]).
 - One project per account: tokens and context bleed don't stretch across several businesses; Howell pays for a second account to keep a Shopify experiment separate ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 - Keep agents' work on their own machine and deliver results to one place (chat, Notion) to avoid "where is that file?" overhead ([[episodes/startup-ideas--grok-bot-one-person-company]]).
+- monday's "Sphera agents" path: everyone building their own agents led to hundreds, with cost and quality out of control. They moved to team-level agents with identities (Slack, GitHub, monday users) that the whole team assigns work to and gives feedback, which improves the shared harness ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
+- Naming and identity change expectations: people hold a named agent to human standards and forgive its mistakes less ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
 
 ## Disagreements & open questions
 
 ## Takeaways
 
 ## Related
-[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]]
+[[concepts/company-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]] · [[concepts/agent-architectures]]

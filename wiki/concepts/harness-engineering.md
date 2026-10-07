@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 7
 updated: 2026-10-07
 ---
 # Harness Engineering
@@ -26,6 +26,8 @@ updated: 2026-10-07
 - A purpose-built harness beats generic ones; agent companies with enough traction and data eventually train their own model on open weights for cost and speed (as Cursor did with Composer) ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Long tasks (8–12 hours) need a cloud environment, memory across runs, and coverage reporting: the agent should show where it looked, not just "found nothing" ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Measuring where you stand can matter as much as the harness itself ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- "Harness" is overloaded: Mann reserves it for the loop that runs skills and tools, with an OS-like layer, applications, and plugins built above it, like CPU → OS → apps ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
+- 3D-printer analogy: early printers needed constant fixing; modern ones add a hundred engineering layers (laser bed scans) so a 40-hour print just works. Agents "don't fully work yet", and roughly a decade of engineering above the LLM is the opportunity (and why forward-deployed engineers exist) ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 
 ## Disagreements & open questions
 - Cost: providers moved from flat ~$200/month plans to token billing, and companies push to cut spend (cheaper models, open source). The hosts argue against blind token minimization, but warn against "token-maxing" too: use harness hooks and OpenTelemetry to evaluate what's actually happening ([[episodes/langtalks--73-harness-engineering]]).
@@ -37,4 +39,4 @@ updated: 2026-10-07
 - [ ] Map every copy-paste step in your dev loop and replace it with agent-accessible tooling ([[episodes/langtalks--68-ai-sdlc]])
 
 ## Related
-[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]] · [[concepts/ai-cybersecurity]]
+[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]] · [[concepts/ai-cybersecurity]] · [[concepts/agent-architectures]]

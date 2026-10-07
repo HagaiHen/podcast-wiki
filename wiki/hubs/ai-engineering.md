@@ -6,6 +6,7 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
+- [[concepts/agent-architectures]]: matching agent structure to the job
 - [[concepts/ai-cybersecurity]]: AI's impact on security testing and defense
 - [[concepts/hebrew-llms]]: building Hebrew language models
 - [[concepts/continual-learning]]: learning after deployment

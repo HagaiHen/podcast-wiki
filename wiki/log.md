@@ -183,3 +183,8 @@ suggested: a concept page for AI economics (lab losses, subsidies, token pricing
 source: transcript (all three)
 created: episodes/startup-ideas--{jev-is-here, webmcp-clearly-explained, grok-bot-one-person-company}, shows/the-startup-ideas-podcast, people/{ryan-vogel, billy-howell, greg-isenberg}
 updated: concepts/{decision-classifiers, agent-ready-products, agent-workspaces, multi-agent-orchestration, solo-builders, workflow-automation}, index, takeaways/{to-try, recommendations}
+
+## 2026-10-07 — Startup for Startup: #362 Matching Agent Architecture to the Problem
+source: whisper
+created: episodes/startup-for-startup--362-agent-architecture-fit, concepts/agent-architectures, people/roy-mann, shows/startup-for-startup
+updated: concepts/{agent-workspaces, harness-engineering, workflow-automation, ai-rd-rollout}, people/netanel-abergel, hubs/ai-engineering, index, takeaways/to-try
