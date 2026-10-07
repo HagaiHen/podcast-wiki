@@ -288,3 +288,7 @@ updated: concepts/second-brain (personal / work / org scale), relinked episodes,
 
 ## 2026-10-07 — dream: merged ai-finops → llm-cost-optimization
 updated: concepts/llm-cost-optimization (measuring / reducing), relinked episodes, people, hubs, index
+
+## 2026-10-07 — lint
+fixed: missing-cross-links 3 (llm-inference, model-selection, harness-engineering → llm-cost-optimization)
+suggested: none new

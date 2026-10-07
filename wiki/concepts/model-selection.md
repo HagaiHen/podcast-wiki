@@ -42,4 +42,4 @@ updated: 2026-10-07
 - [ ] Set reasoning-token budgets instead of default effort levels where available ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/llm-pipelines]] · [[concepts/small-language-models]]
+[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/llm-pipelines]] · [[concepts/small-language-models]] · [[concepts/llm-cost-optimization]]

@@ -39,4 +39,4 @@ updated: 2026-10-07
 - [ ] Map every copy-paste step in your dev loop and replace it with agent-accessible tooling ([[episodes/langtalks--68-ai-sdlc]])
 
 ## Related
-[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]] · [[concepts/ai-cybersecurity]] · [[concepts/agent-architectures]]
+[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]] · [[concepts/ai-cybersecurity]] · [[concepts/agent-architectures]] · [[concepts/llm-cost-optimization]]

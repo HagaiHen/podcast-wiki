@@ -24,4 +24,4 @@ updated: 2026-10-06
 - [ ] For latency-insensitive bulk workloads, use batch/async inference rather than real-time APIs ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/model-selection]] · [[concepts/open-weight-models]] · [[concepts/ai-infrastructure]]
+[[concepts/model-selection]] · [[concepts/open-weight-models]] · [[concepts/ai-infrastructure]] · [[concepts/llm-cost-optimization]]
