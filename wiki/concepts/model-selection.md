@@ -2,11 +2,11 @@
 type: concept
 hubs: [ai-engineering]
 sources: 8
-updated: 2026-10-06
+updated: 2026-10-07
 ---
 # Model Selection
 
-**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks. Plan with a strong model and execute with a cheaper one, keep prompts tuned per model version, and always have a tested fallback model so an outage or regression doesn't reach customers.
+**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks: start with the biggest model, then find the smallest that meets the KPI. Plan with a strong model and execute with a cheaper one, and keep prompts tuned per model version. Whether to build model-agnostic (swap per component, keep a tested fallback) or commit to one lab's models is contested.
 
 ## Key ideas
 - A ~35B Qwen model insisted a car in a video wasn't changing lanes; a big model got it right but at negative ROI. Asking instead "does the line move from the left of the frame to the right?" made the small model correct ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -30,7 +30,7 @@ updated: 2026-10-06
 - Model-agnostic by design: every component (builders, runners) can use Gemini, OpenAI, Anthropic, or xAI behind a generic interface; an ML team keeps benchmarking and swapping per component. A better open-source voice-activity model was adopted within two days ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 
 ## Disagreements & open questions
-- Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).
+- Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).
 
 ## Takeaways
 - [ ] Before upgrading a model, narrow the task and rephrase the question; retest on the small model ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])

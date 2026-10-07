@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-06
+sources: 3
+updated: 2026-10-07
 ---
 # Workflow Automation (no-code + AI agents)
 

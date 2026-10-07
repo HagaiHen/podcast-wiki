@@ -31,4 +31,4 @@ updated: 2026-10-06
 - [ ] Check model licenses before using an LLM to label training data ([[episodes/langtalks--59-slms]])
 
 ## Related
-[[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/llm-pipelines]] · [[concepts/open-weight-models]] · [[concepts/multi-agent-orchestration]]
+[[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/llm-pipelines]] · [[concepts/open-weight-models]] · [[concepts/multi-agent-orchestration]] · [[concepts/hebrew-llms]]

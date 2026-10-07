@@ -143,3 +143,5 @@
 - [ ] Ask whether a medical risk number accounts for evidence you already have — [[concepts/bayesian-updating]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Add automated security testing to the release process for agent-written code — [[concepts/ai-cybersecurity]] · [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]
 - [ ] Raise pentest frequency to quarterly or monthly and test integrated staging — [[concepts/ai-cybersecurity]] · [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]
+- [ ] Check whether bug-prone code came from spec-driven sessions and used internal tools — [[concepts/ai-engineering-metrics]] · [[episodes/langtalks--64-ai-coding-metrics]]
+- [ ] If adopting a new model provider, keep a fallback to your existing LLM path — [[concepts/decision-classifiers]] · [[episodes/langtalks--74-jev]]

@@ -26,4 +26,4 @@ updated: 2026-10-07
 - [ ] When building on AI, write down what value remains if a competitor swaps in a better model tomorrow ([[episodes/explainable--164-gilad-levi-continual-learning]])
 
 ## Related
-[[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]]
+[[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]] · [[concepts/solo-builders]]

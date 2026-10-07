@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # AI Verification
 
-**Summary:** Don't trust what an agent says it did; make it prove it. Read its outputs instead of "bypass reading", demand evidence ("show me, prove it"), and build concrete, proportional checks: open and quote sources, check links and logic. For code, verification becomes *proof of work*: after aligning on spec and plan, the agent must show the feature running end to end, e.g. driving a browser via Playwright and recording a video. Each check, once built, becomes a guardrail, so the effort drops over time.
+**Summary:** Don't trust what an agent says it did; make it prove it. Read its outputs instead of "bypass reading", demand evidence ("show me, prove it"), and build concrete, proportional checks: open and quote sources, check links and logic. For code, verification becomes *proof of work*: after aligning on spec and plan, the agent must show the feature running end to end (e.g. a recorded browser run), with tracing so the harness can see what the code did. Green tests aren't enough on their own, since models can fake them and huge AI-written diffs are unreviewable, so build in small steps and check that tests match requirements. Each check, once built, becomes a guardrail, so the effort drops over time.
 
 ## Key ideas
 - An article she'd polished turned out to have wrong links, wrong references, and wrong content: the retrieval had been *guessing* ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
@@ -28,6 +28,7 @@ updated: 2026-10-07
 - Practical rule: build in small steps, understand the logic and business requirements of what goes in, and check the tests are meaningful and tied to requirements ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Disagreements & open questions
+- How much code must humans read? With spec-driven development and proof of work, one LangTalks host reads diffs less and less ([[episodes/langtalks--71-claw-architectures]]); the ExplAInable hosts argue you must understand what goes in, or you can't fix it at 3 a.m., and that tests alone can be faked ([[episodes/explainable--163-hidden-cost-of-agents]]).
 
 ## Takeaways
 - [ ] Have the agent fact-check by opening and quoting each source, never from memory ([[episodes/osim-tochna--second-brain-and-llm-wiki]])

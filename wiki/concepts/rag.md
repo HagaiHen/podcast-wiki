@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
+sources: 4
 updated: 2026-10-07
 ---
 # RAG (Retrieval-Augmented Generation)

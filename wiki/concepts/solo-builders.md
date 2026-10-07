@@ -30,4 +30,4 @@ updated: 2026-10-07
 - [ ] Finish one side project end to end, even a symbolic launch ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
 
 ## Related
-[[concepts/ai-growth-marketing]] · [[concepts/coding-agent-workflow]] · [[concepts/agent-ready-products]] · [[concepts/future-of-software-engineering]]
+[[concepts/ai-growth-marketing]] · [[concepts/coding-agent-workflow]] · [[concepts/agent-ready-products]] · [[concepts/future-of-software-engineering]] · [[concepts/ai-moats]]

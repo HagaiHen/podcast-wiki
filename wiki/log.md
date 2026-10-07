@@ -174,3 +174,7 @@ updated: shows/explainable, index, takeaways/to-try
 source: whisper
 created: episodes/ignore-instructions--26-ai-cyber-pavel-gurevich, concepts/ai-cybersecurity, people/pavel-gurevich
 updated: concepts/{harness-engineering, llm-evals, ai-moats, ai-rd-rollout, ai-hype}, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-07 — lint
+fixed: sources-mismatch 2 (rag, workflow-automation); stale updated dates 6; takeaway drift 2 (ai-engineering-metrics, decision-classifiers → to-try); silent contradictions 2 (model-selection portability gains Wonderful; ai-verification code-reading disagreement); stale summaries 4 (model-selection, ai-verification, llm-evals, ai-guardrails); missing cross-links 6
+suggested: a concept page for AI economics (lab losses, subsidies, token pricing), now spread across ai-moats, llm-cost-optimization, ai-hype

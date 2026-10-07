@@ -2,7 +2,7 @@
 type: concept
 hubs: [ai-engineering]
 sources: 3
-updated: 2026-10-06
+updated: 2026-10-07
 ---
 # Voice Agents
 

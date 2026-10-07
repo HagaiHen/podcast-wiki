@@ -2,7 +2,7 @@
 type: concept
 hubs: [ai-engineering]
 sources: 2
-updated: 2026-10-06
+updated: 2026-10-07
 ---
 # Agent-Ready Products (marketing to agents)
 

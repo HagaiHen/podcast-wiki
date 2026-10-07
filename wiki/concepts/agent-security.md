@@ -29,4 +29,4 @@ updated: 2026-10-06
 - [ ] Create a dedicated browser profile for your agent ([[episodes/langtalks--70-our-claude-code-tips]])
 
 ## Related
-[[concepts/ai-guardrails]] · [[concepts/personal-ai-assistants]] · [[concepts/ai-gateway]] · [[concepts/agent-ready-products]]
+[[concepts/ai-guardrails]] · [[concepts/personal-ai-assistants]] · [[concepts/ai-gateway]] · [[concepts/agent-ready-products]] · [[concepts/ai-cybersecurity]]

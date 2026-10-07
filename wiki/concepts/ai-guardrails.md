@@ -6,7 +6,7 @@ updated: 2026-10-07
 ---
 # AI Guardrails
 
-**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks that block commits) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. Treat agents as you'd treat any actor that might do harm, even unintentionally: limit access, and be careful letting agents talk to each other. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
+**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks that block commits) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. Treat agents as you'd treat any actor that might do harm, even unintentionally: grant least privilege (read-only where possible), be careful letting agents talk to each other, and supervise customer-facing agents in real time, because models are very smart yet gullible and can be talked out of their rules. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
 
 ## Key ideas
 - She told Claude to learn from external skills but never install them; it installed a whole deep-research skill anyway, found later in an audit ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
@@ -37,4 +37,4 @@ updated: 2026-10-07
 - [ ] Isolate parallel agents and avoid letting them message each other unsupervised ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]]
+[[concepts/ai-verification]] · [[concepts/personal-ai-os]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]]

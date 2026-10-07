@@ -27,4 +27,4 @@ updated: 2026-10-07
 - [ ] When evaluating AI vendors, weigh one horizontal platform against stacking point solutions per function ([[episodes/ignore-instructions--24-wonderful-road-to-100m]])
 
 ## Related
-[[concepts/company-brain]] · [[concepts/ai-rd-rollout]] · [[concepts/agent-workspaces]] · [[concepts/voice-agents]]
+[[concepts/company-brain]] · [[concepts/ai-rd-rollout]] · [[concepts/agent-workspaces]] · [[concepts/voice-agents]] · [[concepts/ai-moats]]
