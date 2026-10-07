@@ -27,4 +27,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]]
+[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]] · [[concepts/ai-infrastructure]]

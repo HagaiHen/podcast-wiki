@@ -208,3 +208,8 @@ updated: concepts/{llm-evals, agent-security, ai-finops, future-of-software-engi
 source: whisper
 created: episodes/osim-tochna--gong-ai-for-developers, people/ohad-parush
 updated: concepts/{ai-rd-rollout, ai-engineering-metrics, test-driven-development, llm-evals, ai-verification, future-of-software-engineering}, shows/osim-tochna, people/amit-bendor, index, takeaways/to-try
+
+## 2026-10-07 — Hidden Layers: Making Sense of Nvidia's Technology (Gilad Shainer)
+source: whisper
+created: episodes/hidden-layers--nvidia-gilad-shainer, concepts/ai-infrastructure, people/{gilad-shainer, uri-eliabayev}, shows/hidden-layers
+updated: concepts/{llm-inference, llm-pretraining} (links), hubs/ai-engineering, index

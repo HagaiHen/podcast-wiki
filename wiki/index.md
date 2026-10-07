@@ -19,6 +19,7 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/ai-infrastructure]]: AI factories, GPU networking, power and optics
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
 - [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
@@ -76,6 +77,7 @@
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
 
 ## Shows
+- [[shows/hidden-layers]]: Hidden Layers
 - [[shows/startup-for-startup]]: Startup for Startup (monday.com)
 - [[shows/the-startup-ideas-podcast]]: The Startup Ideas Podcast
 - [[shows/explainable]]: ExplAInable
@@ -102,6 +104,7 @@
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
 - [[people/billy-howell]]: runs a newsletter with a GrokBot agent team
+- [[people/gilad-shainer]]: Nvidia SVP, networking
 - [[people/gilad-levi]]: founder of Manifold (continual learning)
 - [[people/greg-isenberg]]: host of The Startup Ideas Podcast
 - [[people/idan-benyon]]: founder of Build Ship Grow community
@@ -120,9 +123,11 @@
 - [[people/ryan-vogel]]: OpenCode founding team
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
+- [[people/uri-eliabayev]]: host of Hidden Layers
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--nvidia-gilad-shainer]]: Making Sense of Nvidia's Technology (2026-09-27)
 - [[episodes/osim-tochna--gong-ai-for-developers]]: Gong Rolls Out AI for Developers (2025-11-03)
 - [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]: AI in Production: Reality vs Imagination (2026-02-23)
 - [[episodes/startup-for-startup--353-self-updating-team-brain]]: #353 How We Built a Self-Updating Team Brain (2026-06-09)
