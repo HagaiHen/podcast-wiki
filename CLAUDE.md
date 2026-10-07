@@ -15,7 +15,7 @@ A Karpathy-style LLM wiki built from podcasts the user listens to on Spotify. Cl
 - `wiki/index.md` — every page, one line each, grouped by hub ("Unsorted" for concepts with no hub page yet).
 - `wiki/log.md` — append-only ingest log.
 
-Tools: `uv run tools/fetch_transcript.py --pending` lists raw files not yet in the wiki. `/ingest-podcasts` runs the whole pipeline. `uv run tools/lint_wiki.py` runs mechanical wiki checks; `/lint-wiki` runs the full lint (checks + judgment pass + fixes).
+Tools: `uv run tools/fetch_transcript.py --pending` lists raw files not yet in the wiki. `/ingest-podcasts` runs the whole pipeline. `uv run tools/lint_wiki.py` runs mechanical wiki checks; `/lint-wiki` runs the full lint (checks + judgment pass + fixes). `/dream` consolidates Claude's project memory from recent sessions (`uv run tools/dream_replay.py` replays them).
 
 ## Conventions
 
