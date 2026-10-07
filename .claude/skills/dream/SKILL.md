@@ -1,11 +1,11 @@
 ---
 name: dream
-description: Memory consolidation ("dreaming") for Claude's file-based memory in this project. Replays recent sessions, extracts what should change future behavior, merges related memories, updates stale ones, prunes the rest and rewrites MEMORY.md. Use on /dream, "consolidate memory", or at the end of a long working day.
+description: Consolidation ("dreaming") for this project, at two levels. (A) Claude's file-based memory — replays recent sessions, extracts what should change future behavior, merges, updates and prunes memories, rewrites MEMORY.md. (B) The wiki — finds concept pages that are the same underlying idea (e.g. second-brain / company-brain) and merges them into one general page. Use on /dream, "consolidate memory", "consolidate the wiki", or at the end of a long working day.
 ---
 
 # Dream: consolidate memory
 
-The brain replays the day during sleep, keeps what matters, generalizes, and wakes up fresh. This skill does the same for Claude's memory directory. It is built from the wiki's own synthesis: [[concepts/memory-consolidation]], [[concepts/agent-memory]], [[concepts/human-vs-ai-memory]], [[concepts/knowledge-rot]].
+The brain replays the day during sleep, keeps what matters, generalizes, and wakes up fresh. This skill does the same at two levels: Claude's memory directory (Part A) and the wiki's concept pages (Part B), where separately ingested episodes produced near-duplicate concepts that should become one general truth. It is built from the wiki's own synthesis: [[concepts/memory-consolidation]], [[concepts/agent-memory]], [[concepts/human-vs-ai-memory]], [[concepts/knowledge-rot]].
 
 ## Principles (from the wiki)
 
@@ -20,7 +20,7 @@ The brain replays the day during sleep, keeps what matters, generalizes, and wak
 | **Fight rot.** Dropped projects, renamed files and finished work keep resurfacing unless someone says so. | Dana Maman ([[episodes/osim-tochna--second-brain-and-llm-wiki]]) |
 | **Stay inspectable.** Plain-language files the user can read and veto. | [[episodes/langtalks--57-memory]] |
 
-## Steps
+## Part A: Claude's memory
 
 ### 0. Load
 Memory lives at `~/.claude/projects/<cwd with / replaced by ->/memory/` (the replay header prints it). Read `MEMORY.md` and every memory file. The format and the four types (`user`, `feedback`, `project`, `reference`) are defined in the system prompt's memory section. Follow it exactly.
@@ -56,8 +56,30 @@ Delete memories that are contradicted, obsolete (finished or abandoned work), du
 - Rewrite `MEMORY.md`: one line per memory (`- [Title](file.md) — hook`), grouped by type, no memory content in it.
 - Run `uv run tools/dream_replay.py --stamp` to record this dream, so the next replay starts here.
 
-### 7. Report
-Reply with a short table, *Added / Updated / Merged / Pruned*, one line each with the memory name, followed by any open questions. The memory directory is outside the repo, so there's nothing to commit. Don't touch `wiki/` or `raw/`.
+## Part B: The wiki
+
+Episodes get ingested one at a time, so the same idea lands on several concept pages under different names (a person's *second brain*, an org's *company brain*, the *LLM wiki* that maintains either). Lint only checks that pages are well-formed. Dreaming generalizes them.
+
+### 7. Find clusters
+Read `wiki/index.md` and the Summary of every concept page. List clusters of 2+ pages that describe **the same underlying idea**, even at a different scale (personal vs org), from a different angle, or under a different name. The test: *would a reader learning this topic want one page, with the differences as sections?* Pages that only share a domain (both "about memory") are not a cluster. Wiki-structure pages belong to a cluster too. Check `wiki/log.md` for earlier "kept separate" decisions, and revisit them with this test.
+
+For each cluster, propose: the surviving slug (the most general name, or a new one), the pages folded into it, and a one-line why.
+
+### 8. Confirm
+Interactive run: show the proposals as a numbered list and ask which to apply. Headless/nightly run (`claude -p`): don't merge. Put the proposals in the report and stop Part B.
+
+### 9. Merge (each approved cluster)
+1. **Write the merged page** to the template in `CLAUDE.md`. Rewrite the Summary as one synthesis. Keep **every** claim with its episode and person links. Differences become sub-headings under Key ideas (e.g. "Personal scale" / "Org scale") or go to Disagreements. Union the Takeaways and Related links. Set `hubs`, set `sources` to the number of distinct episodes linked, and set `updated`.
+2. **Delete** the folded pages.
+3. **Relink:** `grep -rl "concepts/<old>" wiki/` and rewrite every `[[concepts/<old>]]` (including `|alias` forms) to the survivor, in episodes, people, hubs, takeaways and other concepts. Drop self-links and duplicate links that this creates.
+4. **Index and hubs:** remove the old lines and update the survivor's line.
+5. **Log:** append `## YYYY-MM-DD — dream: merged <old>, <old> → <survivor>` to `wiki/log.md`.
+6. Run `uv run tools/lint_wiki.py`, and fix it until it prints `clean`.
+
+Never edit `raw/`. Commit the wiki changes as `dream: merge <old> into <survivor>`.
+
+### 10. Report
+Reply with a short table, *Added / Updated / Merged / Pruned*, one line each with the memory or concept name. Mark Part A rows `memory` and Part B rows `wiki`. Follow it with any open questions and any unapplied cluster proposals. The memory directory is outside the repo, so only Part B changes get committed.
 
 ## Scheduling
 Dreaming fits a nightly run, when compute is idle and cheaper ([[episodes/langtalks--57-memory]]). It can be added to the existing launchd job as `claude -p "/dream"`, but only when the user asks.
