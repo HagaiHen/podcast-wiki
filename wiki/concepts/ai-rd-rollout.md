@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-06
+sources: 3
+updated: 2026-10-07
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
 
@@ -17,6 +17,8 @@ updated: 2026-10-06
 - The "no-code sprint": he suggested a sprint of writing no code by hand. Harder at first, and people sometimes take pushback hard, but those who push through make the shift ([[episodes/langtalks--62-ai-rd-rollout]]).
 - Give product people access too (Cursor plus repos) so they can ask the code instead of asking engineers ([[episodes/langtalks--62-ai-rd-rollout]]).
 - A dedicated AI-enablement person can find internal "customers" and build Slack-channel agents for them (e.g. an analyst agent answering a GM's data questions, with a human analyst verifying SQL; a marketing copywriter agent) ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
+- Measured acceleration is modest overall: the host estimates 10–20% at Mixtiles (a few × in places, none in others). Gurevich sees ~3× on new products, where a founder can clear old processes. A flatter org with far more seniors than juniors; dashboards give way to asking Claude to investigate ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Little acceleration in sales and G&A. Gurevich argues automated outbound is a step backward and pushes enterprise sales back to in-person meetings, since buyers stake their careers on vendors ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).

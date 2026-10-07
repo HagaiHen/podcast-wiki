@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
+sources: 6
 updated: 2026-10-07
 ---
 # Harness Engineering
@@ -22,6 +22,10 @@ updated: 2026-10-07
 - The biggest blocker is often plain DevOps: no per-developer environment, shared broken staging, no log access. Map where developers copy-paste between systems and wire those gaps (MCP, tokens, CLI, environment infra) ([[episodes/langtalks--68-ai-sdlc]]).
 - The single most valuable investment for R&D orgs now: an internal platform for agents (environments, docs for internal tools, dev setups) ([[episodes/langtalks--63-wake-up]]).
 - Infra is catching up for long-running agents: Vercel and Cloudflare (Durable Objects) make stateless serverless functions stateful, replacing a 4–5-piece stack (queues, Redis memory). Sandboxes (Cloudflare, Vercel, Daytona, E2B) run agent code without risk ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
+- A harness is two opposite processes at once: *building* scaffolding where the model's freestyle intuition falls short (tools, memory, execution environment, what not to do) and *removing* it as new models make steps redundant or bloat the prompt, "like a startup" ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- A purpose-built harness beats generic ones; agent companies with enough traction and data eventually train their own model on open weights for cost and speed (as Cursor did with Composer) ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Long tasks (8–12 hours) need a cloud environment, memory across runs, and coverage reporting: the agent should show where it looked, not just "found nothing" ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Measuring where you stand can matter as much as the harness itself ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 
 ## Disagreements & open questions
 - Cost: providers moved from flat ~$200/month plans to token billing, and companies push to cut spend (cheaper models, open source). The hosts argue against blind token minimization, but warn against "token-maxing" too: use harness hooks and OpenTelemetry to evaluate what's actually happening ([[episodes/langtalks--73-harness-engineering]]).
@@ -33,4 +37,4 @@ updated: 2026-10-07
 - [ ] Map every copy-paste step in your dev loop and replace it with agent-accessible tooling ([[episodes/langtalks--68-ai-sdlc]])
 
 ## Related
-[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]]
+[[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]] · [[concepts/ai-cybersecurity]]

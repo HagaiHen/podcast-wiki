@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
+sources: 5
 updated: 2026-10-07
 ---
 # AI Hype & Durable Value
@@ -16,6 +16,7 @@ updated: 2026-10-07
 - Jev was overhyped: a classifier, not an LLM replacement. Benchmark on your own data and A/B test before switching ([[episodes/langtalks--74-jev]]).
 - Counterpoint to waiting: Wonderful builds features that are "half-broken" on current models, betting model progress makes them work, rather than adding restrictions around today's limits ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 - Example of churn: a colleague told Levi to switch to Codex ("Claude Code is dead"), then back to Claude Code a week later. Tools like alphaXiv feel five years old a week after launch; you're expected to be a year-long expert in something released this week ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
+- Gartner-style peak of inflated expectations: there may be a dip, but the long-tail compounding effect is large and shows up in unexpected places ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 
 ## Disagreements & open questions
 

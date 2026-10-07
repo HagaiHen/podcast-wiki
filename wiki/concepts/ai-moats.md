@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-07
 ---
 # AI Moats (beyond the model)
@@ -16,6 +16,8 @@ updated: 2026-10-07
 - Labs fight fires (Gemini, Anthropic, OpenAI, DeepSeek releases) and cut product lines. OpenAI said in 2023 it would try many lines and see what sticks; Anthropic cut far fewer ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Lose-now-earn-later works (Lime, Sequoia-style) but has never been tried past a trillion dollars. Google IPO'd at ~$20B and grew ~100×; a $2T IPO in a market roughly 4× that can't. Public pension money then carries the bet ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Big incumbents aren't dying: Microsoft has compliance, Apple has MacBooks (~$4–5T) and stays out of models, Amazon dominates the layer below, and Nvidia (~$5.5T) is the backbone ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
+- Building on model vendors means competing with them: vendors move into every vertical (code, legal, design). The test is whether you create enough alpha to justify your margin on tokens ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
+- Agent companies reaching escape velocity (coding, voice) train a fallback model of their own: better economics they can pass to customers, which frontier labs can't match at ~$1 per million tokens ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 
 ## Disagreements & open questions
 - Will one frontier lab collapse? The host expects one to; Levi doubts the causality but agrees the market is moving in an unhealthy direction ([[episodes/explainable--164-gilad-levi-continual-learning]]).
@@ -24,4 +26,4 @@ updated: 2026-10-07
 - [ ] When building on AI, write down what value remains if a competitor swaps in a better model tomorrow ([[episodes/explainable--164-gilad-levi-continual-learning]])
 
 ## Related
-[[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]]
+[[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]]

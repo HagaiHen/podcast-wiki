@@ -19,6 +19,7 @@
 - [[concepts/harness-engineering]]: environment that lets agents run autonomously and correctly
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
+- [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
 - [[concepts/continual-learning]]: models that keep learning after training
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
@@ -105,12 +106,14 @@
 - [[people/shay-davidson]]: principal engineer, Lemonade
 - [[people/shay-shitrit]]: founder of Lab17 (n8n automations)
 - [[people/shuki-cohen]]: VP Data, AI21
+- [[people/pavel-gurevich]]: founder of Tenzai (AI pentesting)
 - [[people/roy-lazar]]: Wonderful (enterprise applied AI)
 - [[people/sharon-dahan]]: inference architect at Impala
 - [[people/tamir]]: host of Investing for the Lazy
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]: #26 When AI Models Get Really Good at Cyber (2026-07-20)
 - [[episodes/explainable--152-biohacking-like-a-data-scientist]]: #152 Biohacking Like a Data Scientist (2026-04-15)
 - [[episodes/explainable--157-training-hebatron]]: #157 Cracking Hebrew: Training Hebatron (2026-06-16)
 - [[episodes/explainable--163-hidden-cost-of-agents]]: #163 A Million Dollars a Month: The Expensive Secret of AI Agents (2026-09-13)

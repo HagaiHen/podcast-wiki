@@ -169,3 +169,8 @@ updated: concepts/{llm-pretraining, llm-evals, open-weight-models}, shows/explai
 source: whisper
 created: episodes/explainable--152-biohacking-like-a-data-scientist, concepts/{biohacking, personal-genomics, bayesian-updating}
 updated: shows/explainable, index, takeaways/to-try
+
+## 2026-10-07 — Ignore the Instructions: #26 When AI Models Get Really Good at Cyber (Pavel Gurevich)
+source: whisper
+created: episodes/ignore-instructions--26-ai-cyber-pavel-gurevich, concepts/ai-cybersecurity, people/pavel-gurevich
+updated: concepts/{harness-engineering, llm-evals, ai-moats, ai-rd-rollout, ai-hype}, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/to-try

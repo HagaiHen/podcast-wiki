@@ -141,3 +141,5 @@
 - [ ] Self-experiments: alternate conditions A-B-A-B to reduce time effects — [[concepts/biohacking]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Consider whole-genome sequencing and check pharmacogenomic variants before you need the drugs — [[concepts/personal-genomics]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Ask whether a medical risk number accounts for evidence you already have — [[concepts/bayesian-updating]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
+- [ ] Add automated security testing to the release process for agent-written code — [[concepts/ai-cybersecurity]] · [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]
+- [ ] Raise pentest frequency to quarterly or monthly and test integrated staging — [[concepts/ai-cybersecurity]] · [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]
