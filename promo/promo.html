@@ -36,8 +36,13 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 .stat span{font-size:32px;color:var(--mute)}
 .term{background:#0b0918;border:2px solid var(--line);border-radius:20px;padding:40px 48px;font-family:var(--mono);font-size:32px;line-height:1.6;width:1300px;min-height:420px;box-sizing:border-box}
 .term .p{color:var(--coral)}.term .o{color:var(--mute)}.term .ok{color:#7be0a5}
-#snd{position:absolute;right:24px;bottom:24px;z-index:5;font:600 16px var(--body);color:var(--ink);background:var(--fg);border:0;border-radius:999px;padding:12px 20px;cursor:pointer}
-#snd:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+#snd{position:absolute;right:24px;bottom:24px;z-index:5;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+#snd[hidden]{display:none}
+#snd div{display:flex;gap:8px}
+#snd button{font:600 16px var(--body);color:var(--fg);background:#ffffff1a;border:1px solid #ffffff33;border-radius:999px;padding:10px 18px;cursor:pointer}
+#snd button[aria-pressed="true"]{color:var(--ink);background:var(--fg)}
+#snd button:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+#snd small{font:13px var(--body);color:var(--mute)}
 </style><div id="stage"><canvas id="wave" width="1920" height="300"></canvas>
 
 <section class="scene" data-start="0" data-end="5">
@@ -87,8 +92,8 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
   <div class="eyebrow" data-in="0">Disagreements & open questions</div>
   <h2 data-in="0.2">When experts disagree, you see both sides</h2>
   <div class="vs">
-    <div class="quote" data-in="1.2">With high-stakes cyber capabilities, restricted release and delays make sense.<small>Host · Ignore the Instructions #26</small></div>
-    <div class="quote" data-in="2.2">Selective early access isn't disclosure. It leaves most defenders blind.<small>Pavel Gurevich · same episode</small></div>
+    <div class="quote" data-in="1.2">Keep iterating your copy with an AI collaborator until it lands.<small>Host · Ignore the Instructions #28</small></div>
+    <div class="quote" data-in="2.2">Copy barely matters. Timing and early engagement drive virality.<small>Micky Haslavsky · same episode</small></div>
   </div>
   <p class="lead" data-in="3.4">Nothing gets silently overwritten. Conflicts are flagged with both sources.</p>
 </section>
@@ -126,7 +131,12 @@ h2{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;ma
 </section>
 
 </div>
-<button id="snd" type="button">▶ Play with sound</button><audio id="aud" src="soundtrack.mp3" preload="auto" loop></audio>
+<div id="snd"><div>
+<button type="button" data-src="music/trap-beat.mp3" data-title="Trap Beat" aria-pressed="false">▶ Trap Beat</button>
+<button type="button" data-src="music/racing-brass.mp3" data-title="Racing Brass" aria-pressed="false">▶ Racing Brass</button>
+<button type="button" data-src="music/power-training.mp3" data-title="Power" aria-pressed="false">▶ Power</button>
+<button type="button" data-src="music/hiphop-beat.mp3" data-title="Hip Hop Beat" aria-pressed="false">▶ Hip Hop Beat</button>
+</div><small id="credit">Music: Pixabay (royalty-free)</small></div><audio id="aud" preload="none" loop></audio>
 <script>
 const DUR=54, scenes=[...document.querySelectorAll('.scene')], cv=document.getElementById('wave'), cx=cv.getContext('2d');
 const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
@@ -147,6 +157,10 @@ const st=document.getElementById('stage');function fit(){const k=Math.min(innerW
 window.seek=seek; window.DUR=DUR;
 const snd=document.getElementById('snd'),aud=document.getElementById('aud');
 if(!navigator.webdriver){let t0=performance.now();(function f(){seek(aud.paused?((performance.now()-t0)/1000)%DUR:aud.currentTime);requestAnimationFrame(f)})();
-  snd.onclick=()=>{if(aud.paused){aud.currentTime=0;aud.play().catch(()=>{});snd.textContent='❚❚ Mute'}else{aud.pause();t0=performance.now()-aud.currentTime*1000;snd.textContent='▶ Play with sound'}}}
+  const btns=[...snd.querySelectorAll('button')],credit=document.getElementById('credit');
+  btns.forEach(b=>b.onclick=()=>{const on=b.getAttribute('aria-pressed')==='true';
+    if(on){aud.pause();t0=performance.now()-aud.currentTime*1000}
+    else{aud.src=b.dataset.src;aud.currentTime=0;aud.play().catch(()=>{});credit.textContent=`"${b.dataset.title}" · Pixabay (royalty-free)`}
+    btns.forEach(x=>{const p=x===b&&!on;x.setAttribute('aria-pressed',p);x.textContent=(p?'❚❚ ':'▶ ')+x.dataset.title})})}
 else{snd.hidden=true;seek(0)}
 </script>
