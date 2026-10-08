@@ -3,7 +3,7 @@ name: site
 on:
   push:
     branches: [podcast-wiki]
-    paths: [wiki/**, .github/workflows/site.yml]
+    paths: [wiki/**, tools/site_titles.py, .github/workflows/site.yml]
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +24,7 @@ jobs:
         run: |
           npm ci
           rm -rf content && cp -r ../wiki content
+          python3 ../tools/site_titles.py content
           curl -fsSL -o content/podcast-wiki-promo.mp4 https://github.com/HagaiHen/podcast-wiki/releases/download/v0.1.0/podcast-wiki-promo.mp4  # kept out of git: the plugin directory refuses files over 5 MiB
           sed -i \
             -e 's|pageTitle: "Quartz 4"|pageTitle: "Podcast Wiki"|' \
