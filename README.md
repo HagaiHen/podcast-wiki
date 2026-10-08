@@ -44,6 +44,17 @@ The wiki is plain Markdown with Obsidian wikilinks (`[[concepts/zone-2-training]
 
 > **Note:** `raw/` (the full transcripts) is kept local and is not in this repo. Those transcripts are the podcasters' content; the wiki is a synthesis in my own words, linking back to each episode on Spotify.
 
+## Install as a Claude Code plugin
+
+Requires macOS on Apple Silicon, [uv](https://docs.astral.sh/uv/), `ffmpeg`, and a Spotify account. In Claude Code:
+
+```
+/plugin marketplace add HagaiHen/podcast-wiki
+/plugin install podcast-wiki@podcast-wiki
+```
+
+Then open Claude Code in an empty folder and run `/podcast-wiki:setup`. It copies the tools, creates `wiki/`, and walks you through the Spotify login. After that, `/podcast-wiki:ingest-podcasts` builds your wiki.
+
 ## Run it yourself
 
 Requires macOS on Apple Silicon (for mlx-whisper), [uv](https://docs.astral.sh/uv/), `ffmpeg`, and [Claude Code](https://claude.com/claude-code).
