@@ -14,3 +14,4 @@ if [ -n "$(uv run tools/fetch_transcript.py --pending)" ]; then
 fi
 git add wiki
 git diff --cached --quiet || git commit -q -m "ingest: scheduled"
+git push -q || echo "push failed; commits stay local until the next run"
