@@ -1,0 +1,170 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Podcast Wiki demo</title>
+<!-- 60s demo video built from a real /podcast-wiki:demo run. Render: uv run --with playwright python promo/render.py promo/podcast-wiki-demo.mp4 promo/demo-video.html -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root{--ink:#14112a;--panel:#211c3f;--line:#3a3366;--fg:#f3efff;--mute:#a49cc9;--coral:#ff7a59;--sky:#7cc6ff;--gold:#ffd166;--green:#7be0a5;
+--display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Instrument Sans",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+html,body{margin:0;background:var(--ink);overflow:hidden;height:100%}
+#stage{width:1920px;height:1080px;position:absolute;left:0;top:0;transform-origin:0 0;overflow:hidden;color:var(--fg);font-family:var(--body);
+  background:radial-gradient(1200px 700px at 80% 10%,#2a2154 0,var(--ink) 70%)}
+.scene{position:absolute;inset:0;padding:90px 140px 170px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;opacity:0}
+.eyebrow{font-family:var(--mono);font-size:26px;letter-spacing:4px;text-transform:uppercase;color:var(--coral)}
+h1{font-family:var(--display);font-weight:800;font-size:130px;line-height:1;margin:22px 0;letter-spacing:-2px}
+h1 .c{color:var(--coral)} h1 .g{color:var(--gold)}
+.lead{font-size:42px;color:var(--mute);margin:0}
+.term{background:#0b0918;border:2px solid var(--line);border-radius:22px;padding:36px 46px;font-family:var(--mono);font-size:30px;line-height:1.55;
+  width:1500px;height:640px;box-sizing:border-box;margin:0 auto;overflow:hidden;position:relative}
+.term .bar{display:flex;gap:10px;margin-bottom:22px}.term .bar i{width:16px;height:16px;border-radius:50%;background:#3a3366}
+.p{color:var(--coral)} .o{color:var(--mute)} .ok{color:var(--green)} .ep{color:var(--gold)} .nw{color:var(--green)} .up{color:var(--sky)}
+#tin div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tview{height:520px;overflow:hidden}
+.speed{position:absolute;top:30px;right:40px;font-family:var(--mono);font-size:24px;color:var(--ink);background:var(--gold);border-radius:10px;padding:4px 14px}
+.stats{display:flex;gap:90px;margin-top:40px}.stat b{display:block;font-family:var(--display);font-size:170px;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:34px;color:var(--mute)}
+.chips{display:flex;gap:16px;flex-wrap:wrap;margin-top:44px}.chips span{font-family:var(--mono);font-size:30px;background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:10px 20px}
+.win{width:1320px;height:780px;margin:-30px auto 0;background:#fbfaff;color:#1d1838;border-radius:22px;box-shadow:0 40px 120px #0009;overflow:hidden;position:relative}
+.win .tab{height:54px;background:#ece9f7;display:flex;align-items:center;padding:0 26px;font-family:var(--mono);font-size:21px;color:#6a6491;gap:10px}
+.win .tab i{width:14px;height:14px;border-radius:50%;background:#cfc9e8}
+.dview{height:726px;overflow:hidden}#doc{padding:30px 60px;font-size:27px;line-height:1.45}
+#doc h3{font-family:var(--display);font-size:62px;margin:0 0 18px}
+#doc h4{font-family:var(--display);font-size:38px;margin:30px 0 12px;padding:6px 14px;border-radius:12px}
+#doc p{margin:0 0 10px} #doc li{margin:0 0 12px;list-style:none;padding-left:26px;position:relative}
+#doc li:before{content:"•";position:absolute;left:4px;color:#8b84b8}
+#doc code{font-family:var(--mono);font-size:.85em;background:#efecf8;border-radius:6px;padding:0 6px}
+.chip{display:inline-block;font-family:var(--mono);font-size:19px;border-radius:7px;padding:1px 9px;margin:0 2px;white-space:nowrap;vertical-align:2px}
+.chip.ep{background:#ece7ff;color:#5a3fd6}.chip.pp{background:#ffe9e2;color:#c2410c}.chip.cc{background:#e3f6ec;color:#17784a}
+#graph{position:absolute;left:0;top:0}
+.legend{position:absolute;left:150px;bottom:190px;display:flex;flex-direction:column;gap:12px;font-family:var(--mono);font-size:26px}
+.legend span:before{content:"";display:inline-block;width:20px;height:20px;border-radius:50%;margin-right:12px;vertical-align:-2px;background:var(--c)}
+.topics{columns:2;column-gap:80px;font-size:36px;margin:40px 0 0;padding:0;list-style:none}.topics li{margin:0 0 14px;break-inside:avoid}
+.topics li:before{content:"→ ";color:var(--coral)}
+.install{font-family:var(--mono);font-size:40px;line-height:1.7;background:#0b0918;border:2px solid var(--line);border-radius:20px;padding:34px 50px;margin:36px 0 30px}
+#cap{position:absolute;left:0;right:0;bottom:70px;text-align:center;font-family:var(--display);font-weight:800;font-size:52px;letter-spacing:-.5px;
+  text-shadow:0 4px 24px #000c}
+#cap span{background:#14112ad9;border-radius:18px;padding:12px 30px;box-decoration-break:clone}
+</style>
+<div id="stage">
+
+<section class="scene" data-s="0" data-e="6">
+  <div class="eyebrow" data-in="0">Podcast Wiki · Claude Code plugin</div>
+  <h1 data-in=".5">Every podcast you finish<br>→ <span class="g">a wiki, by topic.</span></h1>
+  <p class="lead" data-in="1.5">Watch it build one from 3 sample episodes.</p>
+</section>
+
+<section class="scene" data-s="6" data-e="34">
+  <div class="term"><div class="bar"><i></i><i></i><i></i></div><div class="tview"><div id="tin">
+    <div><span class="p">~/podcast-demo $ </span><span data-type="claude" data-at="0"></span></div>
+    <div data-show="2.5"><span class="p">&gt; </span><span data-type="/podcast-wiki:demo" data-at="3"></span></div>
+    <div id="log"></div></div></div>
+    <div class="speed" data-show="8">4× speed</div>
+  </div>
+</section>
+
+<section class="scene" data-s="34" data-e="40">
+  <div class="eyebrow" data-in="0">Done in about a minute</div>
+  <div class="stats">
+    <div class="stat" data-in=".3"><b data-count="4">0</b><span>topic pages</span></div>
+    <div class="stat" data-in=".6"><b data-count="3">0</b><span>episodes</span></div>
+    <div class="stat" data-in=".9"><b data-count="2">0</b><span>shows</span></div>
+  </div>
+  <div class="chips" data-in="1.6"><span>tests-first-ai-coding</span><span>ai-code-review</span><span>measuring-ai-coding</span><span>ai-agent-costs</span></div>
+</section>
+
+<section class="scene" data-s="40" data-e="65">
+  <div class="win"><div class="tab"><i></i><i></i><i></i>&nbsp; wiki/concepts/tests-first-ai-coding.md</div>
+    <div class="dview"><div id="doc">
+<h3>Tests-First AI Coding</h3>
+<p><b>Summary:</b> When agents write the code, the bottleneck moves from writing code to knowing whether it is right, so the tests become the real specification. Sam&#x27;s team has humans write failing tests first and freezes them so the agent cannot edit them, which nearly eliminated &quot;passed but wrong&quot; incidents and makes review short. Frozen tests also act as a stop condition that keeps agent cost down. Priya disagrees for most teams: she lets the agent write code and tests together, then reviews the tests and uses mutation testing, keeping tests-first for well-specified backend logic.</p>
+<h4>Key ideas</h4>
+<li>Writing code got cheap; verifying it got expensive. Humans write failing tests, the agent codes until they pass (<span class="chip ep">build-log--tests-before-agents</span>, <span class="chip pp">sam</span>)</li>
+<li>An agent that writes its own tests &quot;grades its own homework&quot; and can write a test that matches its bug; freeze <code>tests/</code> during agent tasks (<span class="chip ep">build-log--tests-before-agents</span>, <span class="chip pp">sam</span>)</li>
+<li>Tests-first is slower the first week, then faster, because reviewers read small tests instead of 600 lines of generated code (<span class="chip ep">build-log--tests-before-agents</span>, <span class="chip pp">sam</span>)</li>
+<li>If agent PRs keep getting reverted, the tests are too weak: &quot;the agent is only as good as the definition of done you give it&quot; (<span class="chip ep">build-log--tests-before-agents</span>, <span class="chip pp">sam</span>)</li>
+<li>Frozen tests double as a stop condition: the agent stops when tests pass instead of polishing forever (<span class="chip ep">build-log--cost-of-agents</span>, <span class="chip pp">sam</span>)</li>
+<li>Agent writes code and tests together; humans review the tests afterwards, and mutation testing flags weak tests (<span class="chip ep">signal-and-noise--ai-code-review-in-practice</span>, <span class="chip pp">priya</span>)</li>
+<h4 class="dis">Disagreements &amp; open questions</h4>
+<li><b>Write tests first?</b> Sam says humans must write and freeze the tests first, or the agent grades its own homework (<span class="chip ep">build-log--tests-before-agents</span>, <span class="chip pp">sam</span>). Priya calls it overrated for most teams: slow up front, and for UI or exploratory work you don&#x27;t yet know the right behavior; a human reading agent-written tests &quot;closes most of that gap&quot; (<span class="chip ep">signal-and-noise--ai-code-review-in-practice</span>, <span class="chip pp">priya</span>).</li>
+<li>Common ground: both agree on tests-first for well-specified backend logic. Open: where exactly the line sits for UI and product work.</li>
+<h4>Takeaways</h4>
+<li>☐ Pick one repo, adopt &quot;tests first, tests frozen&quot;, and track the agent-PR revert rate (<span class="chip ep">build-log--tests-before-agents</span>)</li>
+<li>☐ If the agent writes its own tests, run mutation testing to catch weak ones (<span class="chip ep">signal-and-noise--ai-code-review-in-practice</span>)</li>
+<h4>Related</h4>
+<p><span class="chip cc">ai-code-review</span> · <span class="chip cc">measuring-ai-coding</span> · <span class="chip cc">ai-agent-costs</span></p>
+    </div></div></div>
+</section>
+
+<section class="scene" data-s="65" data-e="73"><canvas id="graph" width="1920" height="1080"></canvas>
+  <div class="legend" data-in=".2"><span style="--c:#ffd166">topics</span><span style="--c:#b8a9ff">episodes</span><span style="--c:#ff9b80">people</span><span style="--c:#7cc6ff">shows</span></div>
+</section>
+
+<section class="scene" data-s="73" data-e="80">
+  <div class="eyebrow" data-in="0">My real one, live</div>
+  <div class="stats">
+    <div class="stat" data-in=".2"><b data-count="69">0</b><span>topics</span></div>
+    <div class="stat" data-in=".4"><b data-count="60">0</b><span>episodes</span></div>
+    <div class="stat" data-in=".6"><b data-count="9">0</b><span>shows</span></div>
+  </div>
+  <ul class="topics" data-in="1.4"><li>LLM Evals</li><li>Harness Engineering</li><li>Context Engineering</li><li>Agent Memory</li><li>RAG</li><li>Second Brain</li><li>Multi-Agent Orchestration</li><li>Index Investing</li></ul>
+</section>
+
+<section class="scene" data-s="80" data-e="86.2">
+  <div class="eyebrow" data-in="0">Free &amp; open source</div>
+  <div class="install" data-in=".4"><span class="p">/plugin</span> marketplace add HagaiHen/podcast-wiki<br><span class="p">/plugin</span> install podcast-wiki@podcast-wiki<br><span class="ok">/podcast-wiki:demo</span></div>
+  <h1 data-in="1" style="font-size:76px">github.com/HagaiHen/<span class="c">podcast-wiki</span></h1>
+</section>
+
+<div id="cap"><span></span></div>
+</div>
+<script>
+const B=60/86, DUR=86.2*B;
+const TERM=[["ep", "\u25b8 The Build Log (demo): Ep. 12: Write the tests before the agent writes the code"], ["new", "concepts/tests-first-ai-coding"], ["new", "concepts/ai-code-review"], ["new", "concepts/measuring-ai-coding"], ["new", "episodes/build-log--tests-before-agents"], ["ep", "\u25b8 Signal & Noise (demo): AI code review in practice: what to automate, what to keep"], ["new", "episodes/signal-and-noise--ai-code-review-in-practice"], ["upd", "concepts/tests-first-ai-coding (disagreement added)"], ["upd", "concepts/ai-code-review"], ["upd", "concepts/measuring-ai-coding"], ["ep", "\u25b8 The Build Log (demo): Ep. 14: What AI agents really cost a small team"], ["new", "concepts/ai-agent-costs"], ["new", "episodes/build-log--cost-of-agents"], ["upd", "concepts/tests-first-ai-coding"], ["upd", "concepts/ai-code-review"], ["upd", "concepts/measuring-ai-coding"], ["ok", "\u2714 python3 tools/lint_wiki.py \u2192 clean"]], G={"nodes": [{"id": "episodes/build-log--cost-of-agents", "k": "episodes", "x": 1479.542797791075, "y": 505.3766296226007}, {"id": "episodes/signal-and-noise--ai-code-review-in-practice", "k": "episodes", "x": 771.6803483337704, "y": 605.1379315689927}, {"id": "episodes/build-log--tests-before-agents", "k": "episodes", "x": 1344.5127378739405, "y": 294.2913640373779}, {"id": "people/maya", "k": "people", "x": 1595.4672756553334, "y": 399.59196272615327}, {"id": "people/sam", "k": "people", "x": 1247.1672571047256, "y": 708.2350767222403}, {"id": "people/priya", "k": "people", "x": 920.5693423956511, "y": 354.49347816388297}, {"id": "people/leo", "k": "people", "x": 641.4478141545966, "y": 803.1678338910742}, {"id": "concepts/ai-code-review", "k": "concepts", "x": 1030.4020693249036, "y": 616.8425528166393}, {"id": "concepts/tests-first-ai-coding", "k": "concepts", "x": 1232.833433800881, "y": 542.6784190672852}, {"id": "concepts/measuring-ai-coding", "k": "concepts", "x": 1102.0595006081485, "y": 440.5338747522461}, {"id": "concepts/ai-agent-costs", "k": "concepts", "x": 1506.5712560328975, "y": 716.2325626401279}, {"id": "shows/signal-and-noise", "k": "shows", "x": 404.61570567184316, "y": 754.4009055066422}, {"id": "shows/build-log", "k": "shows", "x": 1640.0, "y": 150.0}], "edges": [["concepts/ai-agent-costs", "people/sam"], ["concepts/tests-first-ai-coding", "episodes/build-log--cost-of-agents"], ["concepts/ai-agent-costs", "people/maya"], ["concepts/measuring-ai-coding", "episodes/build-log--tests-before-agents"], ["episodes/build-log--tests-before-agents", "people/sam"], ["concepts/ai-code-review", "people/leo"], ["concepts/tests-first-ai-coding", "people/priya"], ["people/leo", "shows/signal-and-noise"], ["episodes/build-log--tests-before-agents", "people/maya"], ["episodes/build-log--tests-before-agents", "shows/build-log"], ["concepts/measuring-ai-coding", "concepts/tests-first-ai-coding"], ["concepts/measuring-ai-coding", "episodes/build-log--cost-of-agents"], ["concepts/measuring-ai-coding", "people/priya"], ["concepts/tests-first-ai-coding", "episodes/signal-and-noise--ai-code-review-in-practice"], ["concepts/ai-code-review", "people/sam"], ["concepts/ai-agent-costs", "episodes/build-log--cost-of-agents"], ["concepts/measuring-ai-coding", "episodes/signal-and-noise--ai-code-review-in-practice"], ["concepts/ai-agent-costs", "concepts/tests-first-ai-coding"], ["episodes/build-log--cost-of-agents", "people/sam"], ["episodes/build-log--cost-of-agents", "people/maya"], ["episodes/signal-and-noise--ai-code-review-in-practice", "people/priya"], ["concepts/ai-agent-costs", "concepts/measuring-ai-coding"], ["concepts/ai-code-review", "episodes/build-log--tests-before-agents"], ["episodes/build-log--cost-of-agents", "shows/build-log"], ["concepts/ai-code-review", "episodes/build-log--cost-of-agents"], ["concepts/tests-first-ai-coding", "people/sam"], ["concepts/tests-first-ai-coding", "people/maya"], ["episodes/signal-and-noise--ai-code-review-in-practice", "shows/signal-and-noise"], ["concepts/ai-code-review", "concepts/tests-first-ai-coding"], ["people/maya", "shows/build-log"], ["concepts/ai-code-review", "people/priya"], ["concepts/measuring-ai-coding", "people/sam"], ["concepts/ai-code-review", "concepts/measuring-ai-coding"], ["episodes/signal-and-noise--ai-code-review-in-practice", "people/leo"], ["concepts/ai-code-review", "episodes/signal-and-noise--ai-code-review-in-practice"], ["concepts/tests-first-ai-coding", "episodes/build-log--tests-before-agents"]]};
+const CAPS=[[6,14,"One command. No Spotify needed for the demo."],[14,34,"3 sample episodes → topic pages"],[34,40,"Pages merged across episodes"],
+  [40,55,"Every claim links to its episode"],[55,65,"Guests disagree? Both views stay. Nothing is overwritten."],[65,73,"Episodes, topics and people, all linked"],
+  [73,80,"My real wiki: built the same way"],[80,86.2,"Try it in a minute"]];
+const scenes=[...document.querySelectorAll('.scene')], ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const log=document.getElementById('log');
+TERM.forEach(([k,s])=>{const d=document.createElement('div');d.dataset.k=k;
+  d.innerHTML=k=='ep'?`<span class="ep">${s}</span>`:k=='new'?`<span class="nw">  + ${s}</span>`:k=='upd'?`<span class="up">  ~ ${s}</span>`:`<span class="ok">${s}</span>`;log.appendChild(d)});
+const doc=document.getElementById('doc'), dis=doc.querySelector('h4.dis');
+const cv=document.getElementById('graph'), gx=cv.getContext('2d'), COL={concepts:'#ffd166',episodes:'#b8a9ff',people:'#ff9b80',shows:'#7cc6ff'};
+const byId=Object.fromEntries(G.nodes.map(n=>[n.id,n]));
+function seek(t){
+  const bt=t/B;
+  for(const s of scenes){
+    const a=+s.dataset.s,b=+s.dataset.e,lt=bt-a, on=bt>=a&&bt<b;
+    s.style.opacity=on?Math.min(ease(lt/0.4),ease((b-bt)/0.3)):0;
+    if(!on) continue;
+    s.querySelectorAll('[data-in]').forEach(e=>{const p=ease((lt-e.dataset.in)/0.6);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*30}px)`});
+    s.querySelectorAll('[data-show]').forEach(e=>e.style.opacity=lt>=e.dataset.show?1:0);
+    s.querySelectorAll('[data-type]').forEach(e=>{const n=Math.max(0,Math.floor((lt-e.dataset.at)*14));e.textContent=e.dataset.type.slice(0,n)+(n<e.dataset.type.length&&lt>e.dataset.at-1&&Math.floor(bt*2)%2?'▌':'')});
+    s.querySelectorAll('[data-count]').forEach(e=>{const d=+e.closest('[data-in]').dataset.in;e.textContent=Math.round(+e.dataset.count*ease((lt-d)/2))});
+  }
+  // terminal log: lines appear between beat 14 and 33, scrolling up
+  const shown=Math.max(0,Math.min(TERM.length,Math.floor((bt-14)/19*TERM.length)+1*(bt>=14)));
+  [...log.children].forEach((d,i)=>d.style.display=i<shown?'block':'none');
+  const extra=Math.max(0,shown+2-11); document.getElementById('tin').style.transform=`translateY(${-extra*46.5}px)`;
+  // concept page: scroll to Key ideas, then to Disagreements and highlight it
+  const target=dis?dis.offsetTop-40:0, mid=target*0.45;
+  const y=bt<44?0:bt<52?mid*ease((bt-44)/8):bt<56?mid+(target-mid)*ease((bt-52)/4):target;
+  doc.style.transform=`translateY(${-y}px)`;
+  if(dis) dis.style.background=`rgba(255,209,102,${0.55*ease((bt-56)/2)})`;
+  // graph
+  gx.clearRect(0,0,1920,1080);
+  if(bt>=65&&bt<73){const lt=bt-65;
+    G.edges.forEach(([a,b],i)=>{const p=ease((lt-1-i*0.06)/1);if(p<=0)return;const A=byId[a],Bn=byId[b];
+      gx.strokeStyle='rgba(164,156,201,.45)';gx.lineWidth=2;gx.beginPath();gx.moveTo(A.x,A.y);gx.lineTo(A.x+(Bn.x-A.x)*p,A.y+(Bn.y-A.y)*p);gx.stroke()});
+    G.nodes.forEach((n,i)=>{const p=ease((lt-i*0.08)/0.6);if(p<=0)return;const r=(n.k=='concepts'?24:15)*p;
+      gx.fillStyle=COL[n.k];gx.beginPath();gx.arc(n.x,n.y,r,0,7);gx.fill();
+      gx.globalAlpha=p;gx.fillStyle='#f3efff';gx.font=(n.k=='concepts'?'600 26px ':'22px ')+'Instrument Sans';gx.textAlign='center';
+      gx.fillText(n.id.split('/')[1].replace(/^.*--/,''),n.x,n.y-r-12);gx.globalAlpha=1});}
+  // caption
+  const c=CAPS.find(([a,b])=>bt>=a&&bt<b), cap=document.querySelector('#cap span');
+  cap.textContent=c?c[2]:''; cap.parentElement.style.opacity=c?Math.min(ease((bt-c[0])/0.4),ease((c[1]-bt)/0.3)):0;
+}
+const st=document.getElementById('stage');
+function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`}
+addEventListener('resize',fit);fit();
+window.seek=seek;window.DUR=DUR;
+if(!navigator.webdriver){const t0=performance.now();(function f(){seek(((performance.now()-t0)/1000)%DUR);requestAnimationFrame(f)})()}
+</script>
