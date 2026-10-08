@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 16
-updated: 2026-10-07
+sources: 17
+updated: 2026-10-08
 ---
 # LLM Evals
 
@@ -43,6 +43,8 @@ updated: 2026-10-07
 - Build ground truth first: experts label 500–1,000 items (e.g. which assets are critical, with roles), expand with Claude, and hold every change (skills, system prompt, fine-tuning, autonomous code) to that eval ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - Defining "sensitive" is half the work: Cyera formed a cross-functional committee (HR, customer success, engineering, compliance) to write guidelines, then used big LLMs plus judges to build ground truth for training small models ([[episodes/hidden-layers--cyera-shiran-bareli]], [[people/shiran-bareli]]).
 - Head-to-head trials against human experts produce a Venn diagram: each side finds things the other misses, and the human-only findings become the improvement backlog ([[episodes/hidden-layers--tenzai-ofri-ziv]], [[people/ofri-ziv]]).
+- "Council of the wise": several LLMs score each agent PR, combined with deterministic signals (did CI pass on the first try, did developers add commits afterwards) into a weighted score. At first it gave visibility more than quality; over time it enables before/after checks, such as whether adding a skill degraded the agent ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]], [[people/netanel-abergel]])
+- Failures feed back automatically: a failed CI check goes back into the same agent session that opened the PR, which fixes it and saves the lesson to memory (e.g. required PR labels and task links) ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
 

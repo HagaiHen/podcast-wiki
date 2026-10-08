@@ -297,3 +297,8 @@ suggested: none new
 source: whisper
 created: episodes/osim-tochna--running-llms-at-scale, people/{mike-erlihson, kfir-schneider}
 updated: concepts/{llm-inference, ai-infrastructure, open-weight-models, llm-cost-optimization, future-of-software-engineering}, people/amit-bendor, shows/osim-tochna, index, takeaways/{to-try, recommendations}
+
+## 2026-10-08 — AI Engineering: Atlas: From Agent to AI Teammate
+source: whisper
+created: episodes/ai-engineering-podcast--atlas-ai-teammate, people/tomer-brook
+updated: concepts/{agent-workspaces, ai-sdlc, ai-guardrails, ai-verification, llm-evals, memory-consolidation, llm-wiki, future-of-software-engineering}, people/netanel-abergel, shows/ai-engineering-podcast, index, takeaways/to-try

@@ -120,6 +120,7 @@
 - [[people/nadav-erez]]: CTO of Twine (digital employees)
 - [[people/nevo-david]]: solo founder of Postiz
 - [[people/netanel-abergel]]: AI Engineering lead at monday.com, podcast host
+- [[people/tomer-brook]]: Engineering manager, monday.com agentic developer platform (Atlas)
 - [[people/roi-zalta]]: data & AI solutions engineer, Microsoft
 - [[people/shay-davidson]]: principal engineer, Lemonade
 - [[people/shay-shitrit]]: founder of Lab17 (n8n automations)
@@ -191,6 +192,7 @@
 - [[episodes/langtalks--74-jev]]: #74 Jev (2026-09-22)
 - [[episodes/ai-engineering-podcast--the-ai-ux-paradox]]: The AI UX Paradox (2026-08-06)
 - [[episodes/ai-engineering-podcast--ai-infra-at-scale]]: AI Infra at Scale (2026-08-17)
+- [[episodes/ai-engineering-podcast--atlas-ai-teammate]]: Atlas: From Agent to AI Teammate (2026-08-27)
 - [[episodes/ai-engineering-podcast--company-brain]]: Company Brain (2026-09-06)
 - [[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]: Why Your LLM Costs So Much (2026-09-30)
 - [[episodes/langtalks--73-harness-engineering]]: #73 Harness Engineering (2026-09-15)

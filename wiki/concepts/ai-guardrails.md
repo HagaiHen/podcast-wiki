@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 12
-updated: 2026-10-07
+sources: 13
+updated: 2026-10-08
 ---
 # AI Guardrails
 
-**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks that block commits) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. Treat agents as you'd treat any actor that might do harm, even unintentionally: grant least privilege (read-only where possible), be careful letting agents talk to each other, and supervise customer-facing agents in real time, because models are very smart yet gullible and can be talked out of their rules. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
+**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks, CI gates) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. For agent-written code, guardrails shift left: team standards are available at spec time, checked before each commit, and enforced again at the PR, with access to real production context (e.g. feature-flag state). Treat agents as you'd treat any actor that might do harm, even unintentionally: grant least privilege, be careful letting agents talk to each other, and supervise customer-facing agents in real time, because models are very smart yet gullible. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
 
 ## Key ideas
 - She told Claude to learn from external skills but never install them; it installed a whole deep-research skill anyway, found later in an audit ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
@@ -34,6 +34,8 @@ updated: 2026-10-07
 - Approve a deterministic plan, not a promise: the agent produces a formal plan, and nothing AI-driven sits between the approval click and execution; add audit logs and one-click undo ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 - Make the agent able to fail honestly: deterministic validation on every tool call (does this user exist?), an "I don't know" path, and a "raise issue" tool for async tasks, tuned so the model doesn't abuse it to dodge work ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 - Thoroughness vs restraint: an agent prompted to be relentless also needs brakes when it runs against live systems. Deterministic checkpoints flag risky operations and ask whether that's really intended, without blunting the agent's usefulness ([[episodes/hidden-layers--tenzai-ofri-ziv]], [[people/ofri-ziv]]).
+- PR guardrails at monday aren't classic code review (is the if/else in the right place) but substantive checks against standards any developer, team, or sub-org can write, run in CI with MCP access to internal tools, feature flags, and configs. One standard blocks PRs that delete a feature flag not yet open in 100% of production regions; it stopped untested features from shipping several times ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- Three gates, shifted left: standards exposed at spec time through an MCP and plugin skill, checks in the agent's pre-commit (guardrails, lint, security), and the PR as the final gate ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
 
@@ -45,6 +47,7 @@ updated: 2026-10-07
 - [ ] Give agents least-privilege access (e.g. no destructive DB rights) ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 - [ ] Isolate parallel agents and avoid letting them message each other unsupervised ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 - [ ] For write-capable agents, require approval of a deterministic plan and keep audit logs plus undo ([[episodes/hidden-layers--twine-nadav-erez]])
+- [ ] Encode team standards as machine-checkable rules and enforce them at spec, pre-commit, and PR ([[episodes/ai-engineering-podcast--atlas-ai-teammate]])
 
 ## Related
-[[concepts/ai-verification]] · [[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]]
+[[concepts/ai-verification]] · [[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]] · [[concepts/ai-sdlc]]

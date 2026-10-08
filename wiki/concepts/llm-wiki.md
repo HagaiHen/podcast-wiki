@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 3
-updated: 2026-10-07
+sources: 4
+updated: 2026-10-08
 ---
 # LLM Wiki (Karpathy pattern)
 
@@ -18,6 +18,7 @@ updated: 2026-10-07
 - Their schema: concepts, domains, entities (companies, people by role), decisions, and action items, all interlinked; one meeting can update 15 pages. Raw items are stored so nothing is re-processed (saves tokens) ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Advice: start with basic, manual, local versions to prove value, before cloud CI and scale ("bicycle before car") ([[episodes/startup-for-startup--353-self-updating-team-brain]]).
 - Singapore's foreign minister published his own NanoClaw fork with a Karpathy-style LLM wiki for memory, using it to draft speeches, answer questions, and research as a "second brain" ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Team context for agent teammates: boards, docs, GitHub, and the team's public and private channels sync to a file system, an LLM wiki runs on it, and agents consume it, alongside memory at the agent and task-session level ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
 - File layout: Dana keeps Karpathy's flat three layers; Amit experimented with a tree by domain (research, engineering…) aimed at fast, correct lookup. Both agree it keeps getting reorganized ([[episodes/osim-tochna--second-brain-and-llm-wiki]]).

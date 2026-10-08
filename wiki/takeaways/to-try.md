@@ -149,6 +149,8 @@
 - [ ] Learn inference by running a small model locally (Ollama, then vLLM) and comparing throughput with and without continuous batching — [[concepts/llm-inference]] · [[episodes/osim-tochna--running-llms-at-scale]]
 - [ ] Keep fixed system prompts identical across requests so their KV cache can be shared — [[concepts/llm-inference]] · [[episodes/osim-tochna--running-llms-at-scale]]
 - [ ] Match cloud commitments to actual usage and steer the autoscaler's spot/on-demand mix by commitment utilization — [[concepts/llm-cost-optimization]] · [[episodes/osim-tochna--running-llms-at-scale]]
+- [ ] Start agent adoption with one concrete problem (e.g. bug duty) and its guardrails before expanding — [[concepts/ai-sdlc]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
+- [ ] Encode team standards as machine-checkable rules and enforce them at spec, pre-commit, and PR — [[concepts/ai-guardrails]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 
@@ -168,6 +170,7 @@
 - [ ] Task-aware memory extraction — [[concepts/human-vs-ai-memory]] · [[episodes/langtalks--60-brain-memory]]
 - [ ] Resolve memory conflicts by frequency, not just recency — [[concepts/human-vs-ai-memory]] · [[episodes/langtalks--60-brain-memory]]
 - [ ] Prototype a team brain locally (note-taker + Slack MCPs into a small git wiki) before automating — [[concepts/second-brain]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]
+- [ ] Run a retro on each finished agent session and write the lessons back to memory — [[concepts/memory-consolidation]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
 
 ## Unsorted
 

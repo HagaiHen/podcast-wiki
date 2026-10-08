@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-07
+sources: 8
+updated: 2026-10-08
 ---
 # Future of Software Engineering
 
-**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential.
+**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential.
 
 ## Key ideas
 - "Coding is dead, but engineering definitely isn't" ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/netanel-abergel]]).
@@ -32,6 +32,8 @@ updated: 2026-10-07
 - Learning a language still matters: "vibe coding will bridge it" is shallow and fails in practice ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Inference optimization as job security: everyone builds agents, and they all have to run somewhere. Training is concentrated in few companies, but every company does inference, and low-level work (kernels, distributed serving) is still where coding agents are least autonomous ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 - The new bottleneck is imagination, not coding skill: a mathematician who says he can't write code builds with Claude and Codex, and advises everyone to dream big because tools now realize much of it ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
+- "Writing code is dead; the engineering of how a system should look, behave, and run is where our value is." As with open source, why write code an agent has already written ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
+- Thought experiment: adding 1,000 developers a year breaks the senior-mentors-junior review model; only AI guardrails that encode learned standards can support that growth ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).
@@ -40,4 +42,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/agent-workspaces]] · [[concepts/autonomous-agents-outlook]] · [[concepts/llm-inference]]
+[[concepts/harness-engineering]] · [[concepts/agent-workspaces]] · [[concepts/autonomous-agents-outlook]] · [[concepts/llm-inference]] · [[concepts/ai-guardrails]]

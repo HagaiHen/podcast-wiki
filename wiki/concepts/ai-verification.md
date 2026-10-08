@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-07
+sources: 10
+updated: 2026-10-08
 ---
 # AI Verification
 
@@ -31,6 +31,8 @@ updated: 2026-10-07
 - Generation and review have opposite incentives: coding agents are built to finish and please (they rarely refuse), while a reviewer must stop you and explore every case, a "criminal mind" like hardware verification. So review needs different technology (memory, context collection, continuous learning), not the coding agent with another prompt ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
 - "Code quality" becomes measurable by splitting it: direct intent (vs the ticket or Figma), architectural intent, maintainability and best-practice rules, testability, and compliance. Tribal knowledge (PR discussions, Slack, code later changed) can be mined into rules and skills, with violations tracked over time ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
 - Best practice: review during generation (inject "why CPU here when every past project used GPU?") rather than only at the end ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
+- Give remote agents a developer's self-testing tools as skills: deploy the microservice via MirrorD, test the backend with real production data, open a browser and run Playwright, and attach before/after screenshots and video to the PR so the reviewer sees the intent was met ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- The goal is a developer who arrives at a green PR with evidence and just merges; that visible proof builds trust, and FOMO, among developers ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
 
 ## Disagreements & open questions
 - Should the code generator also review its own code? Anthropic launched Claude Code review (validating that review is worth $15–25 each); Friedman calls its results underwhelming and argues for an independent reviewer because of expertise and conflict of interest, like observability and security that AWS never displaced ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).

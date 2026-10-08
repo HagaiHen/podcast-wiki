@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-07
+sources: 6
+updated: 2026-10-08
 ---
 # AI-SDLC (agents across the dev lifecycle)
 
-**Summary:** Running the software lifecycle with agent teams, from product idea to PRD, task breakdown, implementation, review, and QA, with existing artifacts (Jira tickets, PRDs, PRs, tests) as the source of truth and humans placed deliberately at feedback points. Two automation types: *passive* flows triggered by events (errors in logs, Zendesk tickets, code review) and the *core* flow of team requirements moving to remote execution. Most orgs are at "level 1"; start small at the edges and fix dev infrastructure first.
+**Summary:** Running the software lifecycle with agent teams, from product idea to PRD, task breakdown, implementation, review, and QA, with existing artifacts (Jira tickets, PRDs, PRs, tests) as the source of truth and humans placed deliberately at feedback points. Two automation types: *passive* flows triggered by events (errors in logs, support tickets, code review) and the *core* flow of team requirements moving to remote execution. Fire-and-forget remote agents fail; they need evals, self-testing tools, guardrails, and memory. When they work (~15% of monday's PRs come from remote agents), the bottleneck moves from writing code to reviewing it, and fixed two-week sprints stop fitting. Most orgs are at "level 1"; start with one concrete problem at the edges and fix dev infrastructure first.
 
 ## Key ideas
 - First questions: what's the source of truth, and where and how do humans give feedback ([[episodes/langtalks--68-ai-sdlc]], [[people/yonatan-maor]])?
@@ -23,6 +23,12 @@ updated: 2026-10-07
 - Scrum rituals (dailies, retros, sprints) will change when agents do most of an epic ([[episodes/langtalks--62-ai-rd-rollout]]).
 - Personas outside R&D can now skip lifecycle stages (product prototyping, ops building their own automations): great for prototypes and internal tools, risky for production ([[episodes/langtalks--56-n8n]]).
 - For complex software, more AI-written code brings more production bugs and less shared understanding, so leading companies apply AI across the whole SDLC (review, testing, governance) rather than celebrating generation alone ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).
+- Putting Claude Code in the cloud and throwing tasks at it failed: coding is never one-shot, and the agent produced thousands of terrible PRs nobody wanted to review ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- ~15% of monday's PRs are written and merged by *remote* agents (not local Claude Code or Cursor), and ~50% of agent PRs reach production with no human commit ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- The bottleneck moved from writing code to reviewing it: "we started working for the agents", which doesn't scale without trusted automated checks ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- Sprints are obsolete when execution time collapses and agents share the board: Brook's team dropped two-week sprints for kanban while still committing to deadlines and deliverables ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- Next steps: auto-merge with no human in the loop, then "agentic release", where agents run feature-flag rollouts and rollbacks up to the customer ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
+- Where to start: one concrete, simple problem such as the bug-duty rotation; add control mechanisms and guardrails, prove it works, then deepen each part and expand to harder problems ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
 
 ## Disagreements & open questions
 - Org knowledge and skill sharing remain unsolved; every team does it differently ([[episodes/langtalks--68-ai-sdlc]]).
@@ -31,6 +37,7 @@ updated: 2026-10-07
 - [ ] Define your SDLC source of truth and human feedback points before automating ([[episodes/langtalks--68-ai-sdlc]])
 - [ ] Start with peripheral flows: bug triage, on-call investigation ([[episodes/langtalks--68-ai-sdlc]])
 - [ ] Route agent tasks to human review by blast radius, not line count ([[episodes/langtalks--68-ai-sdlc]])
+- [ ] Start agent adoption with one concrete problem (e.g. bug duty) and its guardrails before expanding ([[episodes/ai-engineering-podcast--atlas-ai-teammate]])
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]] · [[concepts/ai-rd-rollout]] · [[concepts/workflow-automation]]
+[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]] · [[concepts/ai-rd-rollout]] · [[concepts/workflow-automation]] · [[concepts/agent-workspaces]] · [[concepts/ai-guardrails]]

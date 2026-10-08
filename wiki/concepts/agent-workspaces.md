@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-07
+sources: 8
+updated: 2026-10-08
 ---
 # Agent Workspaces (the new workplace)
 
-**Summary:** Work is moving into shared spaces where humans and agents collaborate: channels where agents work in loops, and boards where agents drive tasks and flag when they need a human. Agents increasingly get real identities (accounts, email, persona) and work as team members, or "digital employees" that own a KPI rather than wait for prompts, sharing skills and collective knowledge instead of per-person clones. Trust grows in stages, from read-only suggestions to manually assigned work to owning a queue, and once teams rely on them there's no going back. People shift from proactive to reactive, reviewing and unblocking at decision points. Chat is a transitional medium, and whoever owns the workspace controls where context is born.
+**Summary:** Work is moving into shared spaces where humans and agents collaborate: channels where agents work in loops, and boards where agents drive tasks and flag when they need a human. Agents increasingly get real identities (accounts, email, persona, near-human permissions) and work as team members, or "digital employees" that own a KPI rather than wait for prompts, sharing skills and collective knowledge instead of per-person clones. At monday.com, teammate agents pull tasks from the board overnight, know who the humans are, and ping the right person. Thousands of org-wide agents yielded only ~100 valuable ones, so depth on one team beat breadth. Trust grows in stages, from read-only suggestions to owning a queue, and once teams rely on them there's no going back. People shift from proactive to reactive, reviewing and unblocking at decision points. Chat is a transitional medium, and whoever owns the workspace controls where context is born.
 
 ## Key ideas
 - Agents increasingly do most of the work and humans give final tuning and approval, in shared channels with plug-ins (e.g. Grok Bots; an open-source workspace associated with Jack Dorsey) ([[episodes/ai-engineering-podcast--company-brain]], [[people/roi-zalta]]).
@@ -27,10 +27,14 @@ updated: 2026-10-07
 - Naming and identity change expectations: people hold a named agent to human standards and forgive its mistakes less ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
 - Digital employee vs copilot: you don't prompt it each time; it owns a KPI (Twine's "Alex": everyone has exactly the access they need) and works continuously, turning quarterly reviews into daily ones ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 - Onboarding an agent like an employee: it reverse-engineers practice from a year of tickets when policy is unwritten or a 150-page document. Customers' trust grows from comments on tickets, to manually assigned tickets, to the full queue; once employees rely on it, nobody wants to go back ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- monday's 2026 goals: 100% of code written by AI, 30% by autonomous agents end to end, and every support ticket handled within 24 hours. Of thousands of agents built org-wide, only ~100 delivered real value; they lost control of cost, value, and PR quality, so they took one team and one agent end to end ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
+- Teammates, not workflows: agents have accounts and identities in Slack, monday, and GitHub with almost the same permissions as humans, take tasks from the board while the team sleeps, and humans review, tune, or merge in the morning ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- A teammate agent knows the humans: it DMs the data scientist when it has a question and tags the task's human owner when a PR is ready. Built simply, with loops and a heartbeat ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
+- Closed loop through Slack: tag the team's agent about a customer bug ("Hey Ozzy") and it finds the issue, opens a monday task and a PR, and sends it to review and production ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
 
 ## Takeaways
 
 ## Related
-[[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]] · [[concepts/agent-architectures]]
+[[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/proactive-ai]] · [[concepts/future-of-software-engineering]] · [[concepts/personal-ai-assistants]] · [[concepts/solo-builders]] · [[concepts/agent-architectures]] · [[concepts/ai-sdlc]]
