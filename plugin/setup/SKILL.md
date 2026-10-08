@@ -14,7 +14,7 @@ Run `uname -sm; uv --version; ffmpeg -version | head -1`. Whisper transcription 
 ## 2. Copy the files
 
 ```bash
-mkdir -p tools raw wiki/{concepts,hubs,episodes,people,shows,answers,takeaways}
+mkdir -p tools raw wiki/{concepts,hubs,episodes,people,shows,takeaways}
 cp -n "${CLAUDE_PLUGIN_ROOT}"/tools/{spotify_mcp,fetch_transcript,lint_wiki,dream_replay}.py tools/
 cp -n "${CLAUDE_PLUGIN_ROOT}"/{pyproject.toml,uv.lock,.env.example} .
 ```
@@ -41,4 +41,4 @@ Walk the user through it one step at a time:
 
 ## 4. Finish
 
-Tell the user that `/podcast-wiki:ingest-podcasts` fetches the episodes they've finished and builds the wiki. Mention `/podcast-wiki:ask`, `/podcast-wiki:lint-wiki` and `/podcast-wiki:dream`. The wiki is plain Markdown, so `wiki/` opens as an Obsidian vault.
+Tell the user that `/podcast-wiki:ingest-podcasts` fetches the episodes they've finished and builds the wiki. Mention `/podcast-wiki:lint-wiki` and `/podcast-wiki:dream`. The wiki is plain Markdown, so `wiki/` opens as an Obsidian vault.
