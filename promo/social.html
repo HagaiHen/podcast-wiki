@@ -1,0 +1,49 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Podcast Wiki social card</title>
+<!-- 1280x640 social preview. Render: uv run --with playwright python promo/render_social.py -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root{--ink:#14112a;--panel:#211c3f;--line:#3a3366;--fg:#f3efff;--mute:#a49cc9;--coral:#ff7a59;--sky:#7cc6ff;--gold:#ffd166;--green:#7be0a5;
+--display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Instrument Sans",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+html,body{margin:0;background:var(--ink)}
+#card{width:1280px;height:640px;position:relative;overflow:hidden;box-sizing:border-box;padding:64px 72px;
+  background:radial-gradient(900px 520px at 85% 0%,#2a2154 0,var(--ink) 70%);color:var(--fg);font-family:var(--body);
+  display:grid;grid-template-columns:580px 1fr;gap:36px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:18px;letter-spacing:4px;text-transform:uppercase;color:var(--coral)}
+h1{font-family:var(--display);font-weight:800;font-size:104px;line-height:.95;letter-spacing:-2px;margin:18px 0 22px}
+.tag{font-family:var(--display);font-weight:500;font-size:34px;line-height:1.2;margin:0;text-wrap:balance}
+.tag b{color:var(--gold);font-weight:800}
+.flow{display:flex;align-items:center;gap:10px;margin-top:34px;font-family:var(--mono);font-size:17px;color:var(--mute)}
+.flow span{background:var(--panel);border:1.5px solid var(--line);border-radius:10px;padding:7px 12px;color:var(--fg)}
+.flow i{font-style:normal;color:var(--coral);font-weight:700}
+.install{margin-top:22px;font-family:var(--mono);font-size:19px;color:var(--green)}
+.install::before{content:"$ ";color:var(--coral)}
+.page{background:#fbfaff;color:#1d1838;border-radius:18px;padding:30px 34px;box-shadow:0 30px 90px #0009;transform:rotate(1.5deg);
+  display:flex;flex-direction:column;gap:12px;width:476px;justify-self:end;margin-right:6px}
+.fm{font-family:var(--mono);font-size:15px;color:#7a7499}
+.page h3{font-family:var(--display);font-weight:800;font-size:44px;margin:0;letter-spacing:-.5px}
+.page p{margin:0;font-size:18.5px;line-height:1.4}
+.chip{display:inline-block;font-family:var(--mono);font-size:13px;background:#ece7ff;color:#5a3fd6;border-radius:6px;padding:1px 7px;margin-left:4px;white-space:nowrap}
+.chip.p{background:#ffe9e2;color:#c2410c}
+.dis{border-left:4px solid var(--gold);padding-left:12px}
+.dis{border-color:var(--green)}
+.dis em{display:block;font-style:normal;font-family:var(--mono);font-size:13px;color:#178a4c;margin-bottom:2px}
+</style>
+<div id="card">
+  <div>
+    <div class="eyebrow">Claude Code plugin · open source</div>
+    <h1>Podcast<br>Wiki</h1>
+    <p class="tag">Every podcast you finish becomes a wiki, <b>organized by topic</b>, not by episode.</p>
+    <div class="flow"><span>Spotify</span><i>→</i><span>transcript</span><i>→</i><span>concept pages</span></div>
+    <div class="install">/plugin install podcast-wiki</div>
+  </div>
+  <div class="page">
+    <div class="fm">concepts/llm-evals · 18 sources</div>
+    <h3>LLM Evals</h3>
+    <p>Offline evals catch regressions and compare models on <i>your</i> use case <span class="chip">ai-infra-at-scale</span></p>
+    <p>Write evals first, like tests in TDD <span class="chip">the-ai-ux-paradox</span></p>
+    <p>Shadow-run new versions beside production, judged on real traffic <span class="chip">ai-sre</span></p>
+    <p class="dis"><em>Takeaway</em>&#9744; Run a small offline eval set in CI on every PR</p>
+  </div>
+</div>
