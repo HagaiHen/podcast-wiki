@@ -3,7 +3,7 @@ name: site
 on:
   push:
     branches: [podcast-wiki]
-    paths: [wiki/**, .github/workflows/site.yml]
+    paths: [wiki/**, promo/podcast-wiki-promo.mp4, .github/workflows/site.yml]
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +24,7 @@ jobs:
         run: |
           npm ci
           rm -rf content && cp -r ../wiki content
+          cp ../promo/podcast-wiki-promo.mp4 content/
           sed -i \
             -e 's|pageTitle: "Quartz 4"|pageTitle: "Podcast Wiki"|' \
             -e 's|baseUrl: "quartz.jzhao.xyz"|baseUrl: "hagaihen.github.io/podcast-wiki"|' \

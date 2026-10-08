@@ -6,6 +6,8 @@ description: What I learned from AI engineering, startup and investing podcasts,
 
 What I learned from the podcasts I listen to (AI engineering, startups, investing), organized by **topic**, not by episode. Each concept page merges every episode that touched it, keeps disagreements between guests side by side, and links each claim to its source. Maintained by Claude Code; [source on GitHub](https://github.com/HagaiHen/podcast-wiki).
 
+<video src="https://hagaihen.github.io/podcast-wiki/podcast-wiki-promo.mp4" controls playsinline width="100%"></video>
+
 ## Investing — [[hubs/investing]]
 - [[concepts/index-investing]]: buy-and-hold broad indexes
 - [[concepts/compound-interest]]: slow wealth by starting early
