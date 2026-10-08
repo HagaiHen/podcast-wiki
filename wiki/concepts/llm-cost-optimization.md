@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-07
+sources: 10
+updated: 2026-10-08
 ---
 # LLM Cost Optimization
 
@@ -42,6 +42,7 @@ updated: 2026-10-07
 - Every skill, hook, and plugin loaded into context costs tokens on each send; a big context window fills fast and burns the weekly quota ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Inference optimization is a growing role: minimize $/1M tokens while meeting the SLA, since every token costs GPU time and electricity ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Kubernetes FinOps beyond tokens: Riskified combined spot instances with reserved instances and savings plans, and built a controller that steers Karpenter's spot/on-demand mix by how well the org's commitments are being used. Almost no servers run at full price (all >50% off), saving 30–40% on Kubernetes. Installing a tool by its quick-start isn't enough; value comes from understanding your environment ([[episodes/osim-tochna--running-llms-at-scale]], [[people/kfir-schneider]]).
+- Margins differ by feature: agent features run close to raw LLM cost, especially when users can pick the priciest model, while non-AI automations keep software margins, so a product's blended margin depends on its usage mix ([[episodes/startup-for-startup--369-ai-pricing]], [[people/roy-mann]])
 
 ## Disagreements & open questions
 - Is cost even the issue? One host argues flat $200 subscriptions make it moot and the real question is business impact ([[episodes/langtalks--67-finops-for-ai]]).
@@ -62,4 +63,4 @@ updated: 2026-10-07
 - [ ] Match cloud commitments (reserved instances, savings plans) to actual usage, and steer the autoscaler's spot/on-demand mix by commitment utilization ([[episodes/osim-tochna--running-llms-at-scale]])
 
 ## Related
-[[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]] · [[concepts/harness-engineering]] · [[concepts/ai-engineering-metrics]] · [[concepts/decision-classifiers]]
+[[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]] · [[concepts/harness-engineering]] · [[concepts/ai-engineering-metrics]] · [[concepts/decision-classifiers]] · [[concepts/ai-pricing]]

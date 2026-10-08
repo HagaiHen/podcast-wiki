@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-07
+sources: 2
+updated: 2026-10-08
 ---
 # Enterprise AI Adoption (selling applied AI to enterprises)
 
-**Summary:** AI changes the economics of enterprise software: by doing tasks humans did rather than helping them work, it can deliver ~10× SaaS value and justify contracts of millions per year. That makes playbooks newly viable: a top-down enterprise motion in small non-US markets, country by country, exploiting the adoption lag outside the US. Forward-deployed engineers install and productize, and the ambition is to become an enterprise's single, horizontal AI partner, an "AI operating system", instead of one point solution among many.
+**Summary:** AI changes the economics of enterprise software: by doing tasks humans did rather than helping them work, it can deliver ~10× SaaS value and justify contracts of millions per year. That makes playbooks newly viable: a top-down enterprise motion in small non-US markets, country by country, exploiting the adoption lag outside the US. Forward-deployed engineers install and productize, and the ambition is to become an enterprise's single, horizontal AI partner, an "AI operating system", instead of one point solution among many. Usage-based AI spend clashes with how enterprises budget, so pricing that gives every employee room to try AI (per-user credit buckets) supports the AI transformation customers are buying.
 
 ## Key ideas
 - Value thesis: SaaS makes people more efficient; AI performs tasks done millions of times by thousands of people, so contract values reach millions ([[episodes/ignore-instructions--24-wonderful-road-to-100m]], [[people/roy-lazar]]).
@@ -19,6 +19,8 @@ updated: 2026-10-07
 - Horizontal over point solutions: Wonderful avoids being a "customer-support vendor" in RFPs and sells full AI transformation. Vision: one AI per enterprise owning whole functions (support, back office, HR, legal), and an AI OS per vertical (~11 verticals) in five years ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 - Outside the US, geography matters more than industry: a bank and a telco in Austria behave more alike than two banks in different countries ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 - North-star metric: must-win accounts across countries, not near-term revenue; initial contracts can expand 10–30× ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
+- Enterprises plan budgets in advance and struggle with usage-based AI spend. Today they have experimentation budgets; long term they'll have to plan usage (presentations, images, videos) or buy all-in solutions at a premium until they learn the real cost ([[episodes/startup-for-startup--369-ai-pricing]], [[people/roy-mann]])
+- Pricing for AI transformation: per-user credit buckets let every employee try AI without one power user exhausting the org's credits, and whoever builds a production agent moves to an uncapped pool ([[episodes/startup-for-startup--369-ai-pricing]], [[people/roy-mann]])
 
 ## Disagreements & open questions
 - Horizontal AI partner vs vertical point solutions: Wonderful argues buying separate AI for support, back office, and HR is a mistake; vertical vendors (e.g. support-only agent companies) compete on one slice ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
@@ -27,4 +29,4 @@ updated: 2026-10-07
 - [ ] When evaluating AI vendors, weigh one horizontal platform against stacking point solutions per function ([[episodes/ignore-instructions--24-wonderful-road-to-100m]])
 
 ## Related
-[[concepts/second-brain]] · [[concepts/ai-rd-rollout]] · [[concepts/agent-workspaces]] · [[concepts/voice-agents]] · [[concepts/ai-moats]]
+[[concepts/second-brain]] · [[concepts/ai-rd-rollout]] · [[concepts/agent-workspaces]] · [[concepts/voice-agents]] · [[concepts/ai-moats]] · [[concepts/ai-pricing]]

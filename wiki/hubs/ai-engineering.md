@@ -32,6 +32,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/ai-sre]]: AI for production reliability
 - [[concepts/llm-pipelines]]: when a pipeline beats an agent
 - [[concepts/llm-cost-optimization]]: measuring (FinOps attribution) and reducing LLM spend
+- [[concepts/ai-pricing]]: credits, buckets, and pools for pricing AI products
 - [[concepts/ai-sdlc]]: AI across the software lifecycle
 - [[concepts/agent-ready-products]]: make products discoverable and usable by agents
 - [[concepts/coding-agent-workflow]]: day-to-day coding-agent practices

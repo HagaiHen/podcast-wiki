@@ -50,6 +50,7 @@
 - [[concepts/llm-pipelines]]: deterministic LLM pipelines vs agents in production
 - [[concepts/ai-engineering-metrics]]: adoption → productivity → quality of AI coding
 - [[concepts/llm-cost-optimization]]: measuring (FinOps attribution) and reducing LLM spend
+- [[concepts/ai-pricing]]: pricing AI products: credits, per-user buckets, pools, margins
 - [[concepts/ai-gateway]]: central routing, metering, security for LLM calls
 - [[concepts/llm-evals]]: offline + online evals, LLM-as-judge, model A/B tests
 - [[concepts/llm-inference]]: what happens behind an API call and why it costs what it does
@@ -162,6 +163,7 @@
 - [[episodes/startup-for-startup--354-reliable-agents-lean-context]]: #354 Reliable Agents Without Overloading Context (2026-06-16)
 - [[episodes/startup-for-startup--362-agent-architecture-fit]]: #362 Matching Agent Architecture to the Problem (2026-08-11)
 - [[episodes/startup-for-startup--366-qa-for-agents]]: How Do You QA the Agents We Build? (2026-09-08)
+- [[episodes/startup-for-startup--369-ai-pricing]]: How Do You Price an AI Product? (2026-09-29)
 - [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)
 - [[episodes/startup-ideas--webmcp-clearly-explained]]: WebMCP Clearly Explained (2026-08-26)
 - [[episodes/startup-ideas--grok-bot-one-person-company]]: Grok Bot: One-Person Company with Agents (2026-08-21)

@@ -153,6 +153,8 @@
 - [ ] Encode team standards as machine-checkable rules and enforce them at spec, pre-commit, and PR — [[concepts/ai-guardrails]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
 - [ ] Replay each production failure as a test; if the judge doesn't fail it, fix the judge — [[concepts/llm-evals]] · [[episodes/startup-for-startup--366-qa-for-agents]]
 - [ ] Run each agent test many times and track pass rate per category over time — [[concepts/llm-evals]] · [[episodes/startup-for-startup--366-qa-for-agents]]
+- [ ] Model margin per service and the expected usage mix before choosing a pricing model — [[concepts/ai-pricing]] · [[episodes/startup-for-startup--369-ai-pricing]]
+- [ ] Consider committed per-user credit buckets with expiring credits to fund deep discounts, plus list-price pools for production use — [[concepts/ai-pricing]] · [[episodes/startup-for-startup--369-ai-pricing]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

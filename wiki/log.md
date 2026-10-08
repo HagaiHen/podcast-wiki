@@ -307,3 +307,8 @@ updated: concepts/{agent-workspaces, ai-sdlc, ai-guardrails, ai-verification, ll
 source: whisper
 created: episodes/startup-for-startup--366-qa-for-agents, people/matan-lach
 updated: concepts/{llm-evals, agent-architectures, context-engineering, ai-verification}, people/roy-mann, shows/startup-for-startup, index, takeaways/to-try
+
+## 2026-10-08 — Startup for Startup: #369 How Do You Price an AI Product?
+source: whisper
+created: episodes/startup-for-startup--369-ai-pricing, concepts/ai-pricing
+updated: concepts/{enterprise-ai-adoption, llm-cost-optimization}, people/roy-mann, shows/startup-for-startup, hubs/ai-engineering, index, takeaways/to-try
