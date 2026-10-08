@@ -6,6 +6,7 @@
   "author": { "name": "Hagai Hen", "url": "https://github.com/HagaiHen" },
   "homepage": "https://hagaihen.github.io/podcast-wiki/",
   "repository": "https://github.com/HagaiHen/podcast-wiki",
+  "license": "MIT",
   "keywords": ["llm-wiki", "podcasts", "spotify", "obsidian", "second-brain", "knowledge-base"],
   "skills": ["./.claude/skills/", "./plugin/"],
   "commands": ["./.claude/commands/ingest-podcasts.md"],
