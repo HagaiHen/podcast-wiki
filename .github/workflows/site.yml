@@ -30,6 +30,11 @@ jobs:
             -e 's|baseUrl: "quartz.jzhao.xyz"|baseUrl: "hagaihen.github.io/podcast-wiki"|' \
             -e 's|provider: "plausible",|provider: null,|' \
             quartz.config.ts
+          # footer on every page links back to the repo
+          sed -i \
+            -e 's|GitHub: "https://github.com/jackyzha0/quartz"|"⭐ Star on GitHub": "https://github.com/HagaiHen/podcast-wiki"|' \
+            -e 's|"Discord Community": "https://discord.gg/cRFFHYye7t"|"How it works": "https://github.com/HagaiHen/podcast-wiki#how-it-works"|' \
+            quartz.layout.ts
           npx quartz build
           # llms.txt: the index with wikilinks turned into absolute URLs, for LLM crawlers
           { echo "# Podcast Wiki"; echo; echo "> Topics learned from AI/tech podcasts, synthesized across episodes. Source: https://github.com/HagaiHen/podcast-wiki"; echo
