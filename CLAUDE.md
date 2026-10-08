@@ -84,7 +84,7 @@ For each raw file from `uv run tools/fetch_transcript.py --pending`, one at a ti
    - A claim that conflicts with an existing one goes under Disagreements & open questions with both sources. **Never silently overwrite an existing claim.**
    - Actionable items go in Takeaways.
    - Set `hubs` (1–2 domains), bump `sources`, set `updated`.
-4. Append each actionable item to `wiki/takeaways/to-try.md` as `- [ ] item — [[concepts/x]] · [[episodes/y]]`. Add recommended books/tools/people to `wiki/takeaways/recommendations.md` under the right heading, with the episode link.
+4. Append each actionable item to `wiki/takeaways/to-try.md` under the `## <Hub>` heading of the concept's first hub (`## Unsorted` if that hub has no page yet; same order as `wiki/index.md`) as `- [ ] item — [[concepts/x]] · [[episodes/y]]`. Add recommended books/tools/people to `wiki/takeaways/recommendations.md` under the right heading, with the episode link.
 5. Write the episode page (its `raw:` field must be the exact repo-relative raw path; this marks the raw file as done). Copy `spotify_url` and IDs verbatim from the raw frontmatter; never retype them. If `source: description`, add a line `> Thin source: based on the episode description only.`
 6. Create or update the show page and the people pages.
 7. Hubs: for each domain with ≥5 concepts and no `wiki/hubs/<domain>.md`, create it; otherwise update the existing hub's concept list.
