@@ -2,8 +2,5 @@
 .spotify_cache
 .venv/
 __pycache__/
-raw/.heard.json
-raw/.test3.json
-raw/.batch.json
 wiki/.obsidian/workspace*.json
-raw/.batch2.json
+raw/

@@ -12,5 +12,5 @@ if [ -n "$(uv run tools/fetch_transcript.py --pending)" ]; then
   claude -p "Follow the Wiki update procedure in CLAUDE.md for every file listed by \`uv run tools/fetch_transcript.py --pending\`." \
     --permission-mode default --allowedTools "Read,Glob,Grep,Edit(wiki/**),Write(wiki/**),Bash(uv run tools/fetch_transcript.py --pending)"
 fi
-git add raw wiki
+git add wiki
 git diff --cached --quiet || git commit -q -m "ingest: scheduled"

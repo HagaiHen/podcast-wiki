@@ -4,7 +4,7 @@ A Karpathy-style LLM wiki built from podcasts the user listens to on Spotify. Cl
 
 ## Layout
 
-- `raw/<show>/<date>-<slug>.md` — source text with frontmatter (`spotify_id, show, title, release_date, spotify_url, language, source, fetched`). Never edit.
+- `raw/<show>/<date>-<slug>.md` — local only (gitignored: third-party transcripts, repo is public). Source text with frontmatter (`spotify_id, show, title, release_date, spotify_url, language, source, fetched`). Never edit.
 - `wiki/concepts/<slug>.md` — PRIMARY. One topic, synthesized across all episodes.
 - `wiki/hubs/<domain>.md` — a domain (health, investing, …): overview + its concepts.
 - `wiki/episodes/<show-slug>--<episode-slug>.md` — short source note per episode.
