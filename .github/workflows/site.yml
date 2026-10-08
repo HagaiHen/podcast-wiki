@@ -37,6 +37,8 @@ jobs:
             -e 's|"Discord Community": "https://discord.gg/cRFFHYye7t"|"How it works": "https://github.com/HagaiHen/podcast-wiki#how-it-works"|' \
             quartz.layout.ts
           npx quartz build
+          # Google Search Console ownership check (homepage only)
+          sed -i 's|<head>|<head><meta name="google-site-verification" content="N6rDioCLCQDXwXQhTr70fFjqsuil13pR7IYemQqRm8I"/>|' public/index.html
           # llms.txt: the index with wikilinks turned into absolute URLs, for LLM crawlers
           { echo "# Podcast Wiki"; echo; echo "> Topics learned from AI/tech podcasts, synthesized across episodes. Source: https://github.com/HagaiHen/podcast-wiki"; echo; echo "Full text of every concept page: https://hagaihen.github.io/podcast-wiki/llms-full.txt"; echo
             awk 'NR==1&&/^---/{f=1;next} f&&/^---/{f=0;next} !f' content/index.md | grep -v '^<video' | sed -E 's#\[\[([^]|]+)\]\]#[\1](https://hagaihen.github.io/podcast-wiki/\1)#g'; } > public/llms.txt
