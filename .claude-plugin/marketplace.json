@@ -1,0 +1,15 @@
+{
+  "name": "podcast-wiki",
+  "description": "Podcast Wiki: an LLM wiki built from the podcasts you listen to, maintained by Claude Code.",
+  "owner": {
+    "name": "Hagai Hen",
+    "url": "https://github.com/HagaiHen"
+  },
+  "plugins": [
+    {
+      "name": "podcast-wiki",
+      "source": "./",
+      "description": "Turn the podcasts you listen to on Spotify into a Karpathy-style LLM wiki, maintained by Claude Code."
+    }
+  ]
+}
