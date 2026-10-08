@@ -1,12 +1,28 @@
 # Podcast Wiki
 
-A Karpathy-style LLM wiki built from the podcasts I listen to on Spotify, written and maintained by [Claude Code](https://claude.com/claude-code).
+**A Claude Code plugin that turns the podcasts you finish on Spotify into a wiki you can learn from:** one page per topic, synthesized across every episode that touched it, every claim linked to its episode, disagreements between guests kept side by side.
 
-Every episode I finish gets transcribed, and Claude folds what it taught into **concept pages**, one page per topic, synthesized across every episode that touched it, with disagreements between guests kept side by side. You stop remembering *an episode* and start knowing *a topic*.
+You stop remembering *an episode* and start knowing *a topic*. A Karpathy-style LLM wiki, written and maintained by [Claude Code](https://claude.com/claude-code).
+
+**[Browse the live wiki →](https://hagaihen.github.io/podcast-wiki/)** · [Try the demo](#install) · [How it works](#how-it-works)
 
 [![Podcast Wiki promo, 30s](promo/preview.gif)](https://github.com/HagaiHen/podcast-wiki/releases/download/v0.1.0/podcast-wiki-promo.mp4)
 
 *Click for the full video with sound.*
+
+## Install
+
+In Claude Code:
+
+```
+/plugin marketplace add HagaiHen/podcast-wiki
+/plugin install podcast-wiki@podcast-wiki
+```
+
+- **Try it first:** run `/podcast-wiki:demo` in an empty folder. In about a minute it builds a small wiki from 3 sample episodes, with no Spotify needed.
+- **Your own podcasts:** run `/podcast-wiki:setup` in an empty folder. It copies the tools, creates `wiki/`, and walks you through the Spotify login. After that, `/podcast-wiki:ingest-podcasts` builds your wiki.
+
+Requires macOS on Apple Silicon (for local Whisper), [uv](https://docs.astral.sh/uv/), `ffmpeg`, a Spotify account and Claude Code. The demo needs only Claude Code.
 
 ## How it works
 
@@ -43,19 +59,6 @@ Hebrew episodes are translated to English during synthesis.
 The wiki is plain Markdown with Obsidian wikilinks (`[[concepts/zone-2-training]]`), so it opens as an [Obsidian](https://obsidian.md) vault with a working graph view.
 
 > **Note:** `raw/` (the full transcripts) is kept local and is not in this repo. Those transcripts are the podcasters' content; the wiki is a synthesis in my own words, linking back to each episode on Spotify.
-
-## Install as a Claude Code plugin
-
-Requires macOS on Apple Silicon, [uv](https://docs.astral.sh/uv/), `ffmpeg`, and a Spotify account. In Claude Code:
-
-```
-/plugin marketplace add HagaiHen/podcast-wiki
-/plugin install podcast-wiki@podcast-wiki
-```
-
-To see it work first, run `/podcast-wiki:demo` in an empty folder. It builds a small wiki from 3 sample episodes in about a minute, with no Spotify needed.
-
-Then open Claude Code in an empty folder and run `/podcast-wiki:setup`. It copies the tools, creates `wiki/`, and walks you through the Spotify login. After that, `/podcast-wiki:ingest-podcasts` builds your wiki.
 
 ## Run it yourself
 
