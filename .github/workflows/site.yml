@@ -38,8 +38,15 @@ jobs:
             quartz.layout.ts
           npx quartz build
           # llms.txt: the index with wikilinks turned into absolute URLs, for LLM crawlers
-          { echo "# Podcast Wiki"; echo; echo "> Topics learned from AI/tech podcasts, synthesized across episodes. Source: https://github.com/HagaiHen/podcast-wiki"; echo
-            awk 'NR==1&&/^---/{f=1;next} f&&/^---/{f=0;next} !f' content/index.md | sed -E 's#\[\[([^]|]+)\]\]#[\1](https://hagaihen.github.io/podcast-wiki/\1)#g'; } > public/llms.txt
+          { echo "# Podcast Wiki"; echo; echo "> Topics learned from AI/tech podcasts, synthesized across episodes. Source: https://github.com/HagaiHen/podcast-wiki"; echo; echo "Full text of every concept page: https://hagaihen.github.io/podcast-wiki/llms-full.txt"; echo
+            awk 'NR==1&&/^---/{f=1;next} f&&/^---/{f=0;next} !f' content/index.md | grep -v '^<video' | sed -E 's#\[\[([^]|]+)\]\]#[\1](https://hagaihen.github.io/podcast-wiki/\1)#g'; } > public/llms.txt
+          # llms-full.txt: the full text of every concept page in one file
+          for f in content/concepts/*.md; do
+            echo "# $(sed -n 's/^title: "\(.*\)"$/\1/p' "$f" | head -1)"
+            echo "URL: https://hagaihen.github.io/podcast-wiki/concepts/$(basename "$f" .md)"
+            awk 'NR==1&&/^---/{f=1;next} f&&/^---/{f=0;next} !f' "$f" | sed -E 's#\[\[([^]|]+)\]\]#[\1](https://hagaihen.github.io/podcast-wiki/\1)#g'
+            echo
+          done > public/llms-full.txt
       - uses: actions/upload-pages-artifact@v3
         with: { path: quartz/public }
   deploy:
