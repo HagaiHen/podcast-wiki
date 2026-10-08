@@ -32,7 +32,7 @@ jobs:
           npx quartz build
           # llms.txt: the index with wikilinks turned into absolute URLs, for LLM crawlers
           { echo "# Podcast Wiki"; echo; echo "> Topics learned from AI/tech podcasts, synthesized across episodes. Source: https://github.com/HagaiHen/podcast-wiki"; echo
-            sed -E 's#\[\[([^]|]+)\]\]#[\1](https://hagaihen.github.io/podcast-wiki/\1)#g' content/index.md; } > public/llms.txt
+            awk 'NR==1&&/^---/{f=1;next} f&&/^---/{f=0;next} !f' content/index.md | sed -E 's#\[\[([^]|]+)\]\]#[\1](https://hagaihen.github.io/podcast-wiki/\1)#g'; } > public/llms.txt
       - uses: actions/upload-pages-artifact@v3
         with: { path: quartz/public }
   deploy:
