@@ -4,7 +4,7 @@ A Karpathy-style LLM wiki built from the podcasts I listen to on Spotify, writte
 
 Every episode I finish gets transcribed, and Claude folds what it taught into **concept pages**, one page per topic, synthesized across every episode that touched it, with disagreements between guests kept side by side. You stop remembering *an episode* and start knowing *a topic*.
 
-[![Podcast Wiki promo, 30s](promo/preview.gif)](promo/podcast-wiki-promo.mp4)
+[![Podcast Wiki promo, 30s](promo/preview.gif)](https://github.com/HagaiHen/podcast-wiki/releases/download/v0.1.0/podcast-wiki-promo.mp4)
 
 *Click for the full video with sound.*
 
