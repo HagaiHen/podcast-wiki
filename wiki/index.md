@@ -89,6 +89,8 @@
 
 ## People
 - [[people/amit-bendor]]: host of Osim Tochna
+- [[people/mike-erlihson]]: LLM inference optimizer, ExplAInable co-host
+- [[people/kfir-schneider]]: staff DevOps engineer, Riskified
 - [[people/andrej-karpathy]]: AI researcher, LLM Wiki pattern
 - [[people/doron-bleiberg]]: AWS solutions architect
 - [[people/dana-maman]]: AI builder, personal AI OS
@@ -152,6 +154,7 @@
 - [[episodes/hidden-layers--manifold-gilad-levi]]: Has a Replacement for Transformers Been Found? (2026-07-06)
 - [[episodes/hidden-layers--nvidia-gilad-shainer]]: Making Sense of Nvidia's Technology (2026-09-27)
 - [[episodes/osim-tochna--gong-ai-for-developers]]: Gong Rolls Out AI for Developers (2025-11-03)
+- [[episodes/osim-tochna--running-llms-at-scale]]: How Do You Really Run LLMs at Huge Scale? (2026-05-18)
 - [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]: AI in Production: Reality vs Imagination (2026-02-23)
 - [[episodes/startup-for-startup--353-self-updating-team-brain]]: #353 How We Built a Self-Updating Team Brain (2026-06-09)
 - [[episodes/startup-for-startup--354-reliable-agents-lean-context]]: #354 Reliable Agents Without Overloading Context (2026-06-16)

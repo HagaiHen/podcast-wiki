@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 7
 updated: 2026-10-07
 ---
 # Open-Weight Models
@@ -22,6 +22,7 @@ updated: 2026-10-07
 - Open models trail the frontier by roughly six months (with Chinese labs leading open benchmarks); you pick the model size yourself, unlike closed products with routers and system prompts. Kimi K2.5 comes close to Claude Code for coding ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 - Local isn't automatically cheaper: in Nexar's video-classification benchmark, Gemini Flash beat a strong Qwen *and* cost less than the A100 hour needed to host it ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 - Where open wins: real fine-tuning or LoRA on domain data (closed-model tuning barely changes behavior), privacy-sensitive subtasks routed from a main agent via a skill, and possibly future personal agents fine-tuned per user and run locally ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- Open-weight models now reach frontier size: Kimi at ~1T parameters, DeepSeek V3/V3.2 at ~670B, and DeepSeek V4 at reportedly ~1.4T with notable architectural changes. At that size you have to split them across GPUs ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 
 ## Disagreements & open questions
 

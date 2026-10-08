@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 7
 updated: 2026-10-07
 ---
 # Future of Software Engineering
@@ -30,6 +30,8 @@ updated: 2026-10-07
 - Build vs buy: buying SaaS offloads liability (security, compliance such as data-access requests under EU or Israeli law, with fines on revenue). Saving a few million by vibe-coding your own system exposes you to far larger risks ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 - AI as pair programmer brings back XP's pair programming, but you're only as good as your pair: seniors can hold a deeper dialogue with it. Gong keeps hiring aggressively ("hire 200, get the impact of 300") and calls fears of no more juniors "fake" ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Learning a language still matters: "vibe coding will bridge it" is shallow and fails in practice ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Inference optimization as job security: everyone builds agents, and they all have to run somewhere. Training is concentrated in few companies, but every company does inference, and low-level work (kernels, distributed serving) is still where coding agents are least autonomous ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
+- The new bottleneck is imagination, not coding skill: a mathematician who says he can't write code builds with Claude and Codex, and advises everyone to dream big because tools now realize much of it ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).
@@ -38,4 +40,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/agent-workspaces]] · [[concepts/autonomous-agents-outlook]]
+[[concepts/harness-engineering]] · [[concepts/agent-workspaces]] · [[concepts/autonomous-agents-outlook]] · [[concepts/llm-inference]]

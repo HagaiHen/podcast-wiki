@@ -12,5 +12,7 @@ Host of [[shows/osim-tochna]]; software developer building his own LLM knowledge
 
 - [[episodes/osim-tochna--gong-ai-for-developers]]
 
+- [[episodes/osim-tochna--running-llms-at-scale]]
+
 ## Concepts
-[[concepts/llm-wiki]] · [[concepts/context-engineering]] · [[concepts/wiki-retrieval]]
+[[concepts/llm-wiki]] · [[concepts/context-engineering]] · [[concepts/wiki-retrieval]] · [[concepts/llm-inference]] · [[concepts/llm-cost-optimization]]

@@ -292,3 +292,8 @@ updated: concepts/llm-cost-optimization (measuring / reducing), relinked episode
 ## 2026-10-07 — lint
 fixed: missing-cross-links 3 (llm-inference, model-selection, harness-engineering → llm-cost-optimization)
 suggested: none new
+
+## 2026-10-08 — Osim Tochna: How Do You Really Run LLMs at Huge Scale?
+source: whisper
+created: episodes/osim-tochna--running-llms-at-scale, people/{mike-erlihson, kfir-schneider}
+updated: concepts/{llm-inference, ai-infrastructure, open-weight-models, llm-cost-optimization, future-of-software-engineering}, people/amit-bendor, shows/osim-tochna, index, takeaways/{to-try, recommendations}

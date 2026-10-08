@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
+sources: 9
 updated: 2026-10-07
 ---
 # LLM Cost Optimization
@@ -41,10 +41,12 @@ updated: 2026-10-07
 - Subscriptions are subsidized: a heavy Claude Max $200 user would cost ~$1.5–2k at API prices (~1:10). If vendors switch to AWS-style metered billing, economics change ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Every skill, hook, and plugin loaded into context costs tokens on each send; a big context window fills fast and burns the weekly quota ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Inference optimization is a growing role: minimize $/1M tokens while meeting the SLA, since every token costs GPU time and electricity ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Kubernetes FinOps beyond tokens: Riskified combined spot instances with reserved instances and savings plans, and built a controller that steers Karpenter's spot/on-demand mix by how well the org's commitments are being used. Almost no servers run at full price (all >50% off), saving 30–40% on Kubernetes. Installing a tool by its quick-start isn't enough; value comes from understanding your environment ([[episodes/osim-tochna--running-llms-at-scale]], [[people/kfir-schneider]]).
 
 ## Disagreements & open questions
 - Is cost even the issue? One host argues flat $200 subscriptions make it moot and the real question is business impact ([[episodes/langtalks--67-finops-for-ai]]).
 - Flat subscriptions as the answer vs a temporary subsidy: a heavy Claude Max $200 user would cost ~$1.5–2k at API prices, and metered billing would change the economics ([[episodes/explainable--163-hidden-cost-of-agents]], [[episodes/langtalks--67-finops-for-ai]]).
+- How long will the subsidy last? Inference optimizer Mike Erlihson says LLM vendors lose huge sums (perhaps ~$1B a month) and expects $100–200 subscriptions could become ~$1,000 when the party ends; host Amit Bendor notes competition is still holding prices down ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]], [[people/amit-bendor]]).
 
 ## Takeaways
 - [ ] Require use-case/repo metadata on every LLM call via an internal proxy or gateway ([[episodes/langtalks--67-finops-for-ai]])
@@ -57,6 +59,7 @@ updated: 2026-10-07
 - [ ] Use cross-region inference (where compliant) to raise rate limits before buying capacity ([[episodes/langtalks--66-scaling-llmops]])
 - [ ] Keep the tool list stable and restrict choices via logit masking/constrained decoding rather than swapping tools mid-session ([[episodes/langtalks--55-context-engineering]])
 - [ ] Audit which skills, hooks, and plugins load into every agent session; drop the unused ones ([[episodes/explainable--163-hidden-cost-of-agents]])
+- [ ] Match cloud commitments (reserved instances, savings plans) to actual usage, and steer the autoscaler's spot/on-demand mix by commitment utilization ([[episodes/osim-tochna--running-llms-at-scale]])
 
 ## Related
 [[concepts/ai-gateway]] · [[concepts/llm-inference]] · [[concepts/model-selection]] · [[concepts/harness-engineering]] · [[concepts/ai-engineering-metrics]] · [[concepts/decision-classifiers]]

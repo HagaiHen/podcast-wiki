@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
+sources: 2
 updated: 2026-10-07
 ---
 # AI Infrastructure (AI factories, compute, and networking)
@@ -19,6 +19,8 @@ updated: 2026-10-07
 - Copper vs optics: copper is ~10× cheaper, nearly power-free, and robust, but only reaches ~2 m at these rates (inside the rack). Optics beyond that consume ~10% of compute power. Co-packaged optics put the optical engine next to the switch chip (micro-ring modulators, built with TSMC), cutting optical power ~5× and failures ~10×. Human touch causes ~3–4% of data-center downtime ([[episodes/hidden-layers--nvidia-gilad-shainer]], [[people/gilad-shainer]]).
 - Moore's law no longer delivers. New generations ship yearly, and Nvidia's Israel team works on two generations in parallel ([[episodes/hidden-layers--nvidia-gilad-shainer]], [[people/gilad-shainer]]).
 - A Vera Rubin system has seven chip types: three compute (CPU, GPU, LPU) and four networking (BlueField DPU, NIC, Spectrum switch, NVLink switch). The networking silicon is built in Israel ([[episodes/hidden-layers--nvidia-gilad-shainer]], [[people/gilad-shainer]]).
+- Cost of a serving node: an 8-GPU machine with ~200–300 GB per GPU runs from many tens to hundreds of thousands of dollars a month in the cloud, so it's mostly companies, not individuals, who work at this level ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
+- Scale is unprecedented: 1B+ people use LLMs, served by hundreds of thousands of GPUs across data centers, a scale that didn't exist five years ago ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 
 ## Disagreements & open questions
 
