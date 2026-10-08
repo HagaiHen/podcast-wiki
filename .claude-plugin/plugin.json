@@ -1,7 +1,7 @@
 {
   "name": "podcast-wiki",
   "displayName": "Podcast Wiki",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Turn the podcasts you listen to on Spotify into a Karpathy-style LLM wiki: one page per topic, synthesized across episodes, every claim cited.",
   "author": { "name": "Hagai Hen", "url": "https://github.com/HagaiHen" },
   "homepage": "https://hagaihen.github.io/podcast-wiki/",

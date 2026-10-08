@@ -53,6 +53,8 @@ Requires macOS on Apple Silicon, [uv](https://docs.astral.sh/uv/), `ffmpeg`, and
 /plugin install podcast-wiki@podcast-wiki
 ```
 
+To see it work first, run `/podcast-wiki:demo` in an empty folder. It builds a small wiki from 3 sample episodes in about a minute, with no Spotify needed.
+
 Then open Claude Code in an empty folder and run `/podcast-wiki:setup`. It copies the tools, creates `wiki/`, and walks you through the Spotify login. After that, `/podcast-wiki:ingest-podcasts` builds your wiki.
 
 ## Run it yourself

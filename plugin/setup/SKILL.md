@@ -7,6 +7,10 @@ description: Set up a new podcast wiki in the current project (copies the tools,
 
 The plugin's files are at `${CLAUDE_PLUGIN_ROOT}`. Work in the current project directory. Never overwrite an existing file without asking.
 
+## 0. Offer the demo first
+
+If this folder has no `wiki/` yet, ask once whether the user wants to see a demo before setting up Spotify. `/podcast-wiki:demo` builds a small wiki from 3 sample episodes in about 2 minutes, with no Spotify login. If they say yes, run the demo skill and stop here.
+
 ## 1. Check requirements
 
 Run `uname -sm; uv --version; ffmpeg -version | head -1`. Whisper transcription needs macOS on Apple Silicon (`Darwin arm64`), [uv](https://docs.astral.sh/uv/) and `ffmpeg`. If one is missing, say how to install it (`brew install uv ffmpeg`) and stop. On other platforms, warn that episodes without a published transcript fall back to the episode description.
