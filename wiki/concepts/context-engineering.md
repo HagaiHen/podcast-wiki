@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 10
-updated: 2026-10-07
+sources: 11
+updated: 2026-10-08
 ---
 # Context Engineering
 
@@ -36,6 +36,8 @@ updated: 2026-10-07
 - Prevention over correction: if-this-then-that patches added after failures fight attention already pointed the wrong way; shape the initial context instead ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 - Don't re-teach what the model knows: benchmark it several times and inject only what it gets wrong; known knowledge costs tokens, latency, and attention ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
 - Every prompt part has a cost: the system prompt rides on every request with high attention, so keep it minimal; load task instructions, skills, domain knowledge, and tool details only when needed, even injecting tool-specific knowledge via hooks at invocation ([[episodes/startup-for-startup--354-reliable-agents-lean-context]], [[people/doron-bleiberg]]).
+- Prompt tactics: keep hard "don'ts" to a few key ones (around four), repeat key instructions at both the start and end of the context, and watch the tool count, since piling on MCP tools overflows the context ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- Mann had an agent gather strong public agent prompts into a library and compare his prompt against them; the report taught him a lot, but without a working test framework he couldn't tell whether the changes helped ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
 
 ## Disagreements & open questions
 

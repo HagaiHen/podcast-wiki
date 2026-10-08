@@ -151,6 +151,8 @@
 - [ ] Match cloud commitments to actual usage and steer the autoscaler's spot/on-demand mix by commitment utilization — [[concepts/llm-cost-optimization]] · [[episodes/osim-tochna--running-llms-at-scale]]
 - [ ] Start agent adoption with one concrete problem (e.g. bug duty) and its guardrails before expanding — [[concepts/ai-sdlc]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
 - [ ] Encode team standards as machine-checkable rules and enforce them at spec, pre-commit, and PR — [[concepts/ai-guardrails]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
+- [ ] Replay each production failure as a test; if the judge doesn't fail it, fix the judge — [[concepts/llm-evals]] · [[episodes/startup-for-startup--366-qa-for-agents]]
+- [ ] Run each agent test many times and track pass rate per category over time — [[concepts/llm-evals]] · [[episodes/startup-for-startup--366-qa-for-agents]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

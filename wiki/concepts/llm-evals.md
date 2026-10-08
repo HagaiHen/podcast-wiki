@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 17
+sources: 18
 updated: 2026-10-08
 ---
 # LLM Evals
 
-**Summary:** How you know an AI feature works and keeps working, instead of "trust me bro" vibes after an hour of chatting. **Offline evals** run a curated dataset of representative cases before production: a lean set on every PR in CI, fuller runs on big changes, against a score threshold. **Online evals** and shadow runs score real production traffic. Checks are code where the answer is deterministic (~80%) and LLM-as-judge where it isn't. A typical maturity path: manual conversation review → intent clustering → automated evals in CI ("eval-driven design", like TDD) → discovering *unknown* intents. For agents, end-to-end labs with planted ground truth measure recall, precision, cost, and unsafe actions, and pick the model per sub-agent; they can cost hundreds of thousands a month. Proxy metrics mislead: training loss, public benchmarks, and user or arena preference often disagree, so treat the first two as alarms and judge by what users prefer.
+**Summary:** How you know an AI feature works and keeps working, instead of "trust me bro" vibes after an hour of chatting. **Offline evals** run a curated dataset of representative cases before production: a lean set on every PR in CI, fuller runs on big changes, against a score threshold. **Online evals** and shadow runs score real production traffic. Checks are code where the answer is deterministic (~80%) and LLM-as-judge where it isn't. Because agents are non-deterministic, run each test many times and separate "can it" from "will it always"; track pass rates by category over time. A typical maturity path: manual conversation review → intent clustering → automated evals in CI ("eval-driven design", like TDD) → discovering *unknown* intents; production failures are gold, replayed until the judge catches them, and simulated user personas can hunt for them nightly. For agents, end-to-end labs with planted ground truth measure recall, precision, cost, and unsafe actions, and pick the model per sub-agent. Proxy metrics mislead: training loss, public benchmarks, short test suites, and user or arena preference often disagree, so treat the first ones as alarms and judge by what users prefer.
 
 ## Key ideas
 - Offline evals guard against regressions from code, prompt, or ecosystem changes, and let you compare models on *your* use case ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
@@ -45,6 +45,15 @@ updated: 2026-10-08
 - Head-to-head trials against human experts produce a Venn diagram: each side finds things the other misses, and the human-only findings become the improvement backlog ([[episodes/hidden-layers--tenzai-ofri-ziv]], [[people/ofri-ziv]]).
 - "Council of the wise": several LLMs score each agent PR, combined with deterministic signals (did CI pass on the first try, did developers add commits afterwards) into a weighted score. At first it gave visibility more than quality; over time it enables before/after checks, such as whether adding a skill degraded the agent ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]], [[people/netanel-abergel]])
 - Failures feed back automatically: a failed CI check goes back into the same agent session that opened the PR, which fixes it and saves the lesson to memory (e.g. required PR labels and task links) ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
+- Three test levels at Taka: deterministic checks that each tool works, run on every merge like classic software tests; non-deterministic scenarios scored by an LLM judge; and real production moments where the agent failed ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/matan-lach]])
+- Production failures are gold: when the agent fails or a user is unhappy, save it, and the case becomes a test the agent must first fail. If the next run doesn't fail, the judge isn't good enough, so what you teach is the judge, not the agent ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/matan-lach]])
+- Run each test many times: a single run means nothing when outputs vary. Separate "can the agent do it" from "will it always": "add a cat to the image" should pass 100% of the time, while an open-ended creative process may be fine if it succeeds at all ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- Test design misleads: Mann's suite showed Sonnet beating Opus because most tests were short, transactional "bring hummus" checks; the few long scenarios were invented ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- Test traits and the engineering, not just answers: honesty ("send an email to Dave" should make the agent ask who Dave is), forbidden actions, and harness behavior such as loading and unloading tools mid-session, which silently confuses the agent ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- Plot pass rates over runs by category (model, plugin, trait): noisy per run, but the trend is clear, and improving across all models means the prompt really got better ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- Implicit feedback: whenever the agent's reasoning notes "the user is frustrated", pop up a feedback form that saves the conversation. In practice users curse agents constantly, so the signal floods and needs repeated runs to confirm ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]], [[people/matan-lach]])
+- "Monkey farm": every night LLM personas (the clumsy user, the power user, the lost user) hammer Taka with tasks, and each morning a report shows where it broke or quality dropped ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/matan-lach]])
+- Start quality work early, alongside the fun happy-path phase of adding features, not after it; the experience is the product, and monitoring after release still matters ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
 
 ## Disagreements & open questions
 
@@ -57,6 +66,8 @@ updated: 2026-10-08
 - [ ] Shadow-run candidate versions beside production and compare pairwise with an LLM judge ([[episodes/langtalks--65-ai-sre]])
 - [ ] Version custom agents against an explicit, rising success baseline ([[episodes/langtalks--64-ai-coding-metrics]])
 - [ ] Treat loss and benchmark drops as alarms, but pick releases by user or arena preference ([[episodes/explainable--157-training-hebatron]])
+- [ ] Replay each production failure as a test; if the judge doesn't fail it, fix the judge ([[episodes/startup-for-startup--366-qa-for-agents]])
+- [ ] Run each agent test many times and track pass rate per category over time ([[episodes/startup-for-startup--366-qa-for-agents]])
 
 ## Related
 [[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]] · [[concepts/ai-sre]] · [[concepts/ai-engineering-metrics]] · [[concepts/voice-agents]]

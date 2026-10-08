@@ -302,3 +302,8 @@ updated: concepts/{llm-inference, ai-infrastructure, open-weight-models, llm-cos
 source: whisper
 created: episodes/ai-engineering-podcast--atlas-ai-teammate, people/tomer-brook
 updated: concepts/{agent-workspaces, ai-sdlc, ai-guardrails, ai-verification, llm-evals, memory-consolidation, llm-wiki, future-of-software-engineering}, people/netanel-abergel, shows/ai-engineering-podcast, index, takeaways/to-try
+
+## 2026-10-08 — Startup for Startup: #366 How Do You QA the Agents We Build?
+source: whisper
+created: episodes/startup-for-startup--366-qa-for-agents, people/matan-lach
+updated: concepts/{llm-evals, agent-architectures, context-engineering, ai-verification}, people/roy-mann, shows/startup-for-startup, index, takeaways/to-try
