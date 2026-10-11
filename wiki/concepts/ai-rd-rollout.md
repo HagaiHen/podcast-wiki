@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-07
+sources: 6
+updated: 2026-10-11
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
 
-**Summary:** Rolling AI out to an R&D org is mostly change management. Start with education and licenses, let people try the main tools (Copilot, Cursor, Claude Code), converge on what works without locking in, and drive the mindset shift from "AI as a chat helper" to delegating whole features. A guild of early adopters spreads success stories and workshops; deliberate challenges (a sprint with no hand-written code) force the shift. Keep humans accountable throughout.
+**Summary:** Rolling AI out to an R&D org is mostly change management. Start with education and licenses, let people try the main tools (Copilot, Cursor, Claude Code), converge on what works without locking in, and drive the mindset shift from "AI as a chat helper" to delegating whole features. Mandates and licenses come from the top, but the spark usually comes from below: an enthusiast with a working POC who goes team to team, and a guild of early adopters that spreads success stories and workshops. Deliberate challenges (a sprint with no hand-written code) force the shift. Keep humans accountable throughout.
 
 ## Key ideas
 - Path at Salt Security: Copilot licenses → everyone tries all tools → three-month accelerator → mainly Claude Code (codebase understanding, plan mode), with Copilot kept for tab completion ([[episodes/langtalks--62-ai-rd-rollout]], [[people/iko-azoulay]]).
@@ -27,6 +27,7 @@ updated: 2026-10-07
 - Top-down mandate works: on one new product, an all-senior team *had* to work with Claude Code, and seniors became the most hooked; it shone on unfamiliar tech and less on integrating with existing React code ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - No caps on sessions or tokens; the cost stays reasonable ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Bottom-up: managers and team leads build weekend side projects (search features, prototypes), and the fast gratification is addictive and spreads ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- The spark comes from below: at Cato, licenses came from the top, but one curious engineer got poor results from Cursor at first, learned to work with rules and skills, realized they could be shared org-wide, and became the "missionary" going team to team with a POC in hand ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).

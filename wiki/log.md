@@ -312,3 +312,8 @@ updated: concepts/{llm-evals, agent-architectures, context-engineering, ai-verif
 source: whisper
 created: episodes/startup-for-startup--369-ai-pricing, concepts/ai-pricing
 updated: concepts/{enterprise-ai-adoption, llm-cost-optimization}, people/roy-mann, shows/startup-for-startup, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-11 — Hidden Layers: How Do You Handle the New AI-Driven Cyber Threats? (Avishai Zvinsky, Cato Networks)
+source: whisper
+created: episodes/hidden-layers--cato-networks-avishai-zvinsky, concepts/agentic-vulnerability-response, people/avishai-zvinsky
+updated: concepts/{ai-cybersecurity, agent-ready-codebase, ai-rd-rollout, llm-evals}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/to-try

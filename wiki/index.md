@@ -29,6 +29,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
 - [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
+- [[concepts/agentic-vulnerability-response]]: agent turns a new CVE into a deployed protection in ~45 min
 - [[concepts/image-generation]]: professional image generation; licensed data, JSON control
 - [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
@@ -114,6 +115,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/yizhar-gilboa]]: CTO of Finout
 - [[people/yonatan-maor]]: CTO of Clears.ai
 - [[people/avi-golan]]: Alice (AI safety, red teaming)
+- [[people/avishai-zvinsky]]: security-content group lead at Cato Networks
 - [[people/ben-mashiach]]: Director of Data & AI at Claroty
 - [[people/billy-howell]]: runs a newsletter with a GrokBot agent team
 - [[people/gilad-shainer]]: Nvidia SVP, networking
@@ -148,6 +150,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/warren-buffett]]: American investor
 
 ## Episodes
+- [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]: How Do You Handle the New AI-Driven Cyber Threats? (2026-10-08)
 - [[episodes/hidden-layers--tenzai-ofri-ziv]]: Building an AI Security Tester (2026-06-07)
 - [[episodes/hidden-layers--qodo-itamar-friedman]]: How Do You Review AI-Written Code? (2026-03-31)
 - [[episodes/hidden-layers--nexar-roni-goldshmidt]]: AI Models That Understand the World (2026-04-23)

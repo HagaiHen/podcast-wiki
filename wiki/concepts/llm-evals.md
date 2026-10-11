@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 18
-updated: 2026-10-08
+sources: 19
+updated: 2026-10-11
 ---
 # LLM Evals
 
@@ -54,6 +54,8 @@ updated: 2026-10-08
 - Implicit feedback: whenever the agent's reasoning notes "the user is frustrated", pop up a feedback form that saves the conversation. In practice users curse agents constantly, so the signal floods and needs repeated runs to confirm ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]], [[people/matan-lach]])
 - "Monkey farm": every night LLM personas (the clumsy user, the power user, the lost user) hammer Taka with tasks, and each morning a report shows where it broke or quality dropped ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/matan-lach]])
 - Start quality work early, alongside the fun happy-path phase of adding features, not after it; the experience is the product, and monitoring after release still matters ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- Years of labeled history are a ready-made eval set: Cato tested its signature-writing agent against every signature it had shipped, which showed where the agent choked, looped, or went off course ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- A "sweatshop" of the team reviewed what the agent did and gave each run a verdict, fed back into the agent or used as lessons. It's good at absorbing data and instructions, but not good where you haven't explained what good looks like; don't expect one-shot success ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
 
 ## Disagreements & open questions
 

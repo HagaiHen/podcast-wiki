@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-07
+sources: 5
+updated: 2026-10-11
 ---
 # AI and Cybersecurity
 
-**Summary:** Frontier models are getting much better at finding vulnerabilities, which erodes cybersecurity's old premise that scarce expert knowledge can be packaged into products that protect people who lack it. Code is now written faster by agents, legacy is vast, and attackers use LLMs too, so periodic manual testing no longer keeps up. The response is continuous, automated testing plus fast remediation. How labs should release cyber-capable models is contested: restricted access versus broad access with identity verification. Demand for security is expected to *rise*, since organizational risk is growing, not shrinking.
+**Summary:** Frontier models are getting much better at finding vulnerabilities, which erodes cybersecurity's old premise that scarce expert knowledge can be packaged into products that protect people who lack it. Code is now written faster by agents, legacy is vast, and attackers use LLMs and agents too: reported attacks already ran end to end through an agent, and one unskilled, motivated person can now do what took a skilled team. Defenders answer in kind with continuous automated testing, fast remediation, protections shipped in under an hour, and behavioral and agentic defenses that look at the pace and shape of activity. Protocols don't change, so attacks still look familiar, just faster. How labs should release cyber-capable models is contested (restricted access versus broad verified access), and demand for security is expected to *rise*.
 
 ## Key ideas
 - Traditional pentesting comes in two forms: external audits for compliance (a two-week engagement ending in a PDF; expensive, infrequent, and dependent on the team's day) or scarce internal red teams. Neither scales to agent-speed code ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
@@ -23,13 +23,20 @@ updated: 2026-10-07
 - AI commoditizes attackers and turns zero-days into hours while patching can take months, so defense must respond faster and grow more autonomous: "don't bring a knife to a gunfight". Containment should be fine-grained (block one rule or endpoint) rather than "disconnect everything" ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - Cyber-physical systems (hospital devices, factory robots, data-center power and cooling) are increasingly network-connected, so the risk is physical harm, not just data loss. Defense starts with a precise inventory and behavioral baseline of every asset; AI-lowered attack barriers make knowing your own "home field" matter more ([[episodes/hidden-layers--claroty-ben-mashiach]], [[people/ben-mashiach]]).
 - Finding is no longer the bottleneck; fixing is. Useful tools now hand coding agents full remediation context and apply temporary mitigations through existing security tools until the real fix ships ([[episodes/hidden-layers--tenzai-ofri-ziv]], [[people/ofri-ziv]]).
+- Agentic attackers are already in the news: a Ynet-reported ransomware attack entered via a CVE (a Langflow vulnerability was also exploited by an agentic attacker), found keys in a database, encrypted the data, and demanded ransom, all driven by an agent. Investigators spotted it from the code's detailed, agent-style comments ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- Attackers are human too: someone has to give the attacking agent context and train it, and that agent blundered by asking for ransom to a generic example Bitcoin wallet. The fear-mongering tone overstates it, yet the fear is justified: one case fixed script errors on the victim's machine in 31 seconds, so the 12-hour response windows defenders once allowed themselves are gone ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- Protocols stay the same (TCP, UDP, Active Directory logins), so agentic attacks look like familiar attacks at a different pace and with more on-the-fly course changes. Inhuman speed can give the attacker away ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- Cato built an agentic attack lab: an agent drives Kali Linux, a distribution bundled with pentest tools, against a lab network, given a goal, background, and an entry point, so defenders can study the agentic modus operandi ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- Behavioral defenses watch pace and attack sequence, not just signatures. A coming in-line defensive agent watches each customer's traffic over time and tightens restrictions on a device at early signs, e.g. someone in sales running PsExec (remote code execution across Active Directory: fine for IT, loved by attackers, so not blocked outright) ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- Democratized attack: Zvinsky expects massive "exploitation of stupidity" by agents that quickly produce good-looking output, cheaper models, and fear-mongering that is nonetheless justified. The host adds that targets once "not worth the hassle", like the website of someone you argued with on the road, are now in reach ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
 
 ## Disagreements & open questions
 - Restricted release vs broad verified access: the host argues that with very high-stakes capabilities (state actors), caution and responsible-disclosure-style delays make sense; Gurevich counters that selective early access isn't disclosure and leaves most defenders blind ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]).
 
 ## Takeaways
 - [ ] Add automated security testing to the release process for agent-written code ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]])
+- [ ] Add behavioral detections on pace and sequence (e.g. who runs remote-execution tools like PsExec) on top of signatures ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]])
 - [ ] Raise human pentest frequency from yearly to quarterly or monthly, and test integrated staging, not just code ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]])
 
 ## Related
-[[concepts/agent-security]] · [[concepts/harness-engineering]] · [[concepts/open-weight-models]] · [[concepts/ai-verification]] · [[concepts/ai-red-teaming]]
+[[concepts/agent-security]] · [[concepts/harness-engineering]] · [[concepts/open-weight-models]] · [[concepts/ai-verification]] · [[concepts/ai-red-teaming]] · [[concepts/agentic-vulnerability-response]]

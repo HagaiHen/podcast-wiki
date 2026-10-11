@@ -155,6 +155,10 @@
 - [ ] Run each agent test many times and track pass rate per category over time — [[concepts/llm-evals]] · [[episodes/startup-for-startup--366-qa-for-agents]]
 - [ ] Model margin per service and the expected usage mix before choosing a pricing model — [[concepts/ai-pricing]] · [[episodes/startup-for-startup--369-ai-pricing]]
 - [ ] Consider committed per-user credit buckets with expiring credits to fund deep discounts, plus list-price pools for production use — [[concepts/ai-pricing]] · [[episodes/startup-for-startup--369-ai-pricing]]
+- [ ] Before building an agentic workflow, write down the human process step by step, then hand each step to the agent with explicit bounds — [[concepts/agentic-vulnerability-response]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
+- [ ] Ship new automated detections in silent mode and validate them against historical data before they block anything — [[concepts/agentic-vulnerability-response]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
+- [ ] Add behavioral detections on pace and sequence (e.g. who runs PsExec) on top of signatures — [[concepts/ai-cybersecurity]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
+- [ ] After a session that taught the agent something new, ask it to record the lessons as skills or rules and commit them — [[concepts/agent-ready-codebase]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

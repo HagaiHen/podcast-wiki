@@ -13,6 +13,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/multimodal-llms]]: vision LLMs in production
 - [[concepts/agent-architectures]]: matching agent structure to the job
 - [[concepts/ai-cybersecurity]]: AI's impact on security testing and defense
+- [[concepts/agentic-vulnerability-response]]: agentic CVE-to-protection pipeline in minutes, not days
 - [[concepts/hebrew-llms]]: building Hebrew language models
 - [[concepts/continual-learning]]: learning after deployment
 - [[concepts/llm-pretraining]]: pre-training craft

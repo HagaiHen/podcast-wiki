@@ -6,6 +6,8 @@ type: person
 Host of Hidden Layers, an Israeli AI interview podcast.
 
 ## Appearances
+- [[episodes/hidden-layers--cato-networks-avishai-zvinsky]] (host)
+
 - [[episodes/hidden-layers--nvidia-gilad-shainer]] (host)
 
 - [[episodes/hidden-layers--manifold-gilad-levi]] (host)
