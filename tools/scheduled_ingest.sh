@@ -9,9 +9,10 @@ uv run tools/spotify_mcp.py --list > raw/.heard.json
 uv run tools/fetch_transcript.py raw/.heard.json  # also appends skipped episodes to wiki/log.md
 if [ -n "$(uv run tools/fetch_transcript.py --pending)" ]; then
   # Claude reads untrusted transcripts, so it may only write inside wiki/ and run no git itself.
-  # Edit(wiki/**) also covers creating files; a Write(...) rule is ignored by Claude Code.
+  # Edit(...) also covers creating files; a Write(...) rule is ignored by Claude Code.
+  # Absolute path (//...): a relative rule breaks once Claude cd's into wiki/.
   claude -p "Follow the Wiki update procedure in CLAUDE.md for every file listed by \`uv run tools/fetch_transcript.py --pending\`. You run unattended: never ask questions or offer options; if a step is blocked, skip that episode and say why in one line." \
-    --permission-mode default --allowedTools "Read,Glob,Grep,Edit(wiki/**),Bash(uv run tools/fetch_transcript.py --pending)"
+    --permission-mode default --allowedTools "Read,Glob,Grep,Edit(/$PWD/wiki/**),Bash(uv run tools/fetch_transcript.py --pending)"
 fi
 # A half-done ingest stays local (uncommitted) so it never reaches GitHub or the site; the next run finishes it.
 if [ -n "$(uv run tools/fetch_transcript.py --pending)" ]; then
