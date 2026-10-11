@@ -17,4 +17,4 @@ Lessons: no shortcuts, understand what (and how concentrated) you invest in, rel
 
 **Show:** [[shows/lazy-investing]]
 
-**Concepts:** [[concepts/leverage]] · [[concepts/margin-call]] · [[concepts/leveraged-etfs]] · [[concepts/index-investing]] · [[concepts/concentration-risk]] · [[concepts/compound-interest]] · [[concepts/survivorship-bias]] · [[concepts/fomo]]
+**Concepts:** [[concepts/leverage]] · [[concepts/index-investing]] · [[concepts/concentration-risk]] · [[concepts/compound-interest]] · [[concepts/survivorship-bias]] · [[concepts/fomo]]

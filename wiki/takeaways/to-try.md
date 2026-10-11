@@ -3,7 +3,7 @@
 ## Investing — [[hubs/investing]]
 
 - [ ] Don't use leverage (margin, loans, leveraged funds) for long-term investing — [[concepts/leverage]] · [[episodes/lazy-investing--108-the-leverage-trap]]
-- [ ] Avoid leveraged ETFs on any index — [[concepts/leveraged-etfs]] · [[episodes/lazy-investing--108-the-leverage-trap]]
+- [ ] Avoid leveraged ETFs on any index — [[concepts/leverage]] · [[episodes/lazy-investing--108-the-leverage-trap]]
 - [ ] Before investing, define volatility tolerance, emergency fund, index, equity exposure, fees, horizon, goals — [[concepts/index-investing]] · [[episodes/lazy-investing--108-the-leverage-trap]]
 - [ ] Check top holdings and weights of any index fund you buy — [[concepts/concentration-risk]] · [[episodes/lazy-investing--108-the-leverage-trap]]
 - [ ] Start investing young in broad indexes and let compounding work — [[concepts/compound-interest]] · [[episodes/lazy-investing--108-the-leverage-trap]]

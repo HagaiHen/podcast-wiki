@@ -317,3 +317,5 @@ updated: concepts/{enterprise-ai-adoption, llm-cost-optimization}, people/roy-ma
 source: whisper
 created: episodes/hidden-layers--cato-networks-avishai-zvinsky, concepts/agentic-vulnerability-response, people/avishai-zvinsky
 updated: concepts/{ai-cybersecurity, agent-ready-codebase, ai-rd-rollout, llm-evals}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-11 — dream: merged leveraged-etfs, margin-call → leverage

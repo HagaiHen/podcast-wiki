@@ -20,4 +20,4 @@ updated: 2026-10-06
 - [ ] Before investing, define volatility tolerance, emergency fund, index, equity exposure, fees, horizon, and goals ([[episodes/lazy-investing--108-the-leverage-trap]])
 
 ## Related
-[[concepts/compound-interest]] · [[concepts/concentration-risk]] · [[concepts/leveraged-etfs]]
+[[concepts/compound-interest]] · [[concepts/concentration-risk]] · [[concepts/leverage]]

@@ -9,4 +9,4 @@ Host of [[shows/lazy-investing]] and author of the book *Investing for the Lazy*
 - [[episodes/lazy-investing--108-the-leverage-trap]]
 
 ## Concepts
-[[concepts/index-investing]] · [[concepts/leverage]] · [[concepts/leveraged-etfs]] · [[concepts/fomo]]
+[[concepts/index-investing]] · [[concepts/leverage]] · [[concepts/fomo]]

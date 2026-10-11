@@ -17,4 +17,4 @@ updated: 2026-10-06
 ## Takeaways
 
 ## Related
-[[concepts/fomo]] · [[concepts/leveraged-etfs]]
+[[concepts/fomo]] · [[concepts/leverage]]

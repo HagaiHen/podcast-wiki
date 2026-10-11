@@ -9,4 +9,4 @@ American investor. Quoted: the stock market transfers money from the impatient t
 - Quoted in [[episodes/lazy-investing--108-the-leverage-trap]]
 
 ## Concepts
-[[concepts/index-investing]] · [[concepts/margin-call]]
+[[concepts/index-investing]] · [[concepts/leverage]]
