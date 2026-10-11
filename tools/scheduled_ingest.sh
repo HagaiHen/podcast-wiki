@@ -3,7 +3,7 @@
 # then have headless Claude update the wiki for pending raw files.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-echo "=== $(date) ==="
+echo "=== $(date -Iseconds) ==="  # tools/dream_replay.py parses this header
 mkdir -p raw
 uv run tools/spotify_mcp.py --list > raw/.heard.json
 uv run tools/fetch_transcript.py raw/.heard.json  # also appends skipped episodes to wiki/log.md

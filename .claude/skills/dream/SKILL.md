@@ -29,7 +29,7 @@ The brain replays the day during sleep, keeps what matters, generalizes, and wak
 Memory lives at `~/.claude/projects/<cwd with / replaced by ->/memory/` (the replay header prints it). Read `MEMORY.md` and every memory file. The format and the four types (`user`, `feedback`, `project`, `reference`) are defined in the system prompt's memory section. Follow it exactly.
 
 ### 1. Replay
-Run `uv run tools/dream_replay.py`. It prints each human prompt since the last dream, after the tail of what Claude said just before, so a short "no, too heavy" reads in context. It ends with an `# outcomes` list: commits in the window whose subject reads like a fix or revert. Use `--since YYYY-MM-DD` to widen the window. If it prints no prompts and no outcomes, skip to step 4.
+Run `uv run tools/dream_replay.py`. It prints each human prompt since the last dream, after the tail of what Claude said just before, so a short "no, too heavy" reads in context. It ends with two `# outcomes` lists: commits in the window whose subject reads like a fix or revert (dream's own commits excluded), and failure lines from scheduled-ingest runs (`~/Library/Logs/podcast-wiki.log`). Use `--since YYYY-MM-DD` to widen the window. If it prints no prompts and no outcomes, skip to step 4.
 
 ### 2. Extract
 Go through the replay and list candidates. Look for:
@@ -38,7 +38,7 @@ Go through the replay and list candidates. Look for:
 - **Preferences and identity:** language, tone, review style, role. Write them as `user`.
 - **Decisions and constraints:** what the project is for, what was ruled out and why. Write them as `project`, with absolute dates.
 - **Pointers:** dashboards, URLs, artifacts the user will come back to. Write them as `reference`.
-- **Outcomes:** for each commit in `# outcomes`, run `git show <hash>` and ask what Claude did wrong the first time (a headless run that lacked a permission, a transcript that dropped content, a lint failure after ingest). The lesson is the rule that would have prevented it. If the fix already wrote that rule into a skill, tool or CLAUDE.md, the repo records it; drop it. Otherwise it's a `feedback` candidate, with the commit hash as evidence. Ignore commits whose subject only matched a keyword.
+- **Outcomes:** for each commit, run `git show <hash>` and ask what Claude did wrong the first time (a headless run that lacked a permission, a transcript that dropped content, a lint failure after ingest). The lesson is the rule that would have prevented it. If the fix already wrote that rule into a skill, tool or CLAUDE.md, the repo records it; drop it. Otherwise it's a `feedback` candidate, with the commit hash as evidence. Ignore commits whose subject only matched a keyword. For each job failure, check `git log` after that run for a fix. **Fixed:** drop it. **Recurring and unfixed** (the same failure in 2+ runs): put it in the report as an open problem, since a memory can't fix a broken job. A one-off network error is noise.
 
 Salience test: *would a future session act differently knowing this?* If not, drop it. Also drop anything the repo already records (code, git history, CLAUDE.md, the wiki itself), one-off task details, and secrets.
 
@@ -49,7 +49,7 @@ For each candidate:
 - **Conflicts with an existing memory:** keep the one with more and more-consistent evidence. If the user explicitly reversed themselves, the reversal wins. If it's genuinely unclear, keep both in the file under `**Open:**` and ask in the report.
 
 ### 3b. Promote
-A memory that is really a rule for **one specific task** shouldn't stay a note every session rereads. Move it into the file that defines that task: a skill's `SKILL.md`, a tool, or a `CLAUDE.md` procedure. For example, "progress bar during transcription" goes into the `ingest-podcasts` transcription step.
+A memory that is really a rule for **one specific task** shouldn't stay a note every session rereads. Move it into the file that defines that task: a skill's `SKILL.md`, a tool, or a `CLAUDE.md` procedure. For example, "progress bar during transcription" goes into step 2 of `.claude/commands/ingest-podcasts.md`.
 
 Candidates: `feedback` (or `project` constraint) memories tied to one task, with repeat evidence (3+ sessions or commits) or that the user stated as a standing rule ("always", "never"). Keep in memory: `user` memories, preferences that cut across tasks (tone, numbered options), and anything personal. **The repo is public**, so never promote handles, emails, private URLs or names.
 

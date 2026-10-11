@@ -1,8 +1,9 @@
 """Replay recent Claude Code sessions for the /dream skill.
 
 Prints each human prompt since the last dream, paired with the tail of the assistant text
-that preceded it, so corrections ("no, too heavy") read in context. Then lists commits in the
-window that look like fixes or reverts: lessons nobody typed out.
+that preceded it, so corrections ("no, too heavy") read in context. Then lists outcomes nobody
+typed out: commits in the window that look like fixes or reverts, and failures logged by the
+scheduled ingest job.
 
   uv run tools/dream_replay.py            # sessions since memory/.last-dream (default: 7 days)
   uv run tools/dream_replay.py --since 2026-10-01
@@ -14,8 +15,11 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 PROJECTS = Path.home() / ".claude" / "projects"
+JOB_LOG = Path.home() / "Library" / "Logs" / "podcast-wiki.log"  # tools/scheduled_ingest.sh
 CTX = 300  # chars of preceding assistant text to show
 # ponytail: keyword heuristic on commit subjects; misses silent fixes, read `git show` for the why
+# ponytail: keyword heuristic on log lines; the full run is in the log if a line needs context
+FAILURE = re.compile(r"\w+(Error|Exception):|refused|not allowed|permission|incomplete|failed|blocked|stopped|didn't ingest", re.I)
 OUTCOME = re.compile(r"\b(fix\w*|revert\w*|broke\w*|break|breaks|repair\w*|undo|regress\w*|wrong)\b", re.I)
 
 
@@ -77,7 +81,33 @@ def outcomes(since, log=None):
     if log is None:
         log = subprocess.run(["git", "log", f"--since={since.isoformat()}", "--date=short", "--format=%h %ad %s"],
                              capture_output=True, text=True).stdout
-    return [l for l in log.splitlines() if OUTCOME.search(l.split(" ", 2)[-1])]
+    return [l for l in log.splitlines()
+            if OUTCOME.search(s := l.split(" ", 2)[-1]) and not s.startswith("dream:")]
+
+
+def run_start(header):
+    """Datetime of a `=== <date> ===` job-log header: ISO, or the old `date` default format."""
+    d = header.strip("= \n")
+    try:
+        return datetime.fromisoformat(d)
+    except ValueError:
+        parts = d.split()  # Tue Oct  6 22:02:04 IDT 2026: drop the zone name, read as local time
+        return datetime.strptime(" ".join(parts[:4] + parts[5:]), "%a %b %d %H:%M:%S %Y").astimezone()
+
+
+def failures(since, text=None):
+    """[(run header, [failure lines])] for scheduled-ingest runs since `since`."""
+    if text is None:
+        text = JOB_LOG.read_text(errors="replace") if JOB_LOG.exists() else ""
+    out, cur = [], None
+    for line in text.splitlines():
+        if line.startswith("=== "):
+            cur = (line.strip("= "), []) if run_start(line) >= since else None
+            if cur:
+                out.append(cur)
+        elif cur and FAILURE.search(line) and line.strip()[:200] not in cur[1]:
+            cur[1].append(line.strip()[:200])
+    return [r for r in out if r[1]]
 
 
 def render(sessions):
@@ -111,7 +141,15 @@ def selftest():
         assert replay(p, datetime.now(timezone.utc) + timedelta(days=1)) == []
         assert project_dir("/a/b") == PROJECTS / "-a-b"
         log = "b0be0ce 2026-10-10 scheduled ingest: absolute Edit rule so a cd doesn't break write\n705daae 2026-10-10 ingest: 1 episodes\nabc1234 2026-10-09 Revert \"promo: x\""
+        log += "\ne6cb107 2026-10-11 dream: learn from fix commits"
         assert [l[:7] for l in outcomes(None, log)] == ["b0be0ce", "abc1234"]
+        joblog = ("=== Thu Oct  8 10:15:05 IDT 2026 ===\nThe run stopped: no permission\nok line\n"
+                  "=== 2026-10-11T10:15:01+03:00 ===\nTraceback (most recent call last):\n"
+                  "requests.exceptions.ConnectionError: aborted\nrequests.exceptions.ConnectionError: aborted\n"
+                  "=== 2026-10-12T10:15:01+03:00 ===\nall good\n")
+        got = failures(parse_ts("2026-10-09T00:00:00Z"), joblog)
+        assert got == [("2026-10-11T10:15:01+03:00", ["requests.exceptions.ConnectionError: aborted"])], got
+        assert len(failures(parse_ts("2026-10-01T00:00:00Z"), joblog)) == 2
     print("selftest ok")
 
 
@@ -139,6 +177,8 @@ def main():
     print(render(replay(pdir, since)))
     print("\n# outcomes: fix/revert commits since then (`git show <hash>` for the why)")
     print("\n".join(outcomes(since)) or "none")
+    print(f"\n# outcomes: scheduled-ingest failures since then ({JOB_LOG})")
+    print("\n".join(f"{h}\n  " + "\n  ".join(ls) for h, ls in failures(since)) or "none")
 
 
 if __name__ == "__main__":
