@@ -1,19 +1,22 @@
 """Replay recent Claude Code sessions for the /dream skill.
 
 Prints each human prompt since the last dream, paired with the tail of the assistant text
-that preceded it, so corrections ("no, too heavy") read in context.
+that preceded it, so corrections ("no, too heavy") read in context. Then lists commits in the
+window that look like fixes or reverts: lessons nobody typed out.
 
   uv run tools/dream_replay.py            # sessions since memory/.last-dream (default: 7 days)
   uv run tools/dream_replay.py --since 2026-10-01
   uv run tools/dream_replay.py --stamp    # record now as the last dream
   uv run tools/dream_replay.py --selftest
 """
-import argparse, json, os, sys, tempfile
+import argparse, json, os, re, subprocess, sys, tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 PROJECTS = Path.home() / ".claude" / "projects"
 CTX = 300  # chars of preceding assistant text to show
+# ponytail: keyword heuristic on commit subjects; misses silent fixes, read `git show` for the why
+OUTCOME = re.compile(r"\b(fix\w*|revert\w*|broke\w*|break|breaks|repair\w*|undo|regress\w*|wrong)\b", re.I)
 
 
 def project_dir(cwd=None):
@@ -69,6 +72,14 @@ def replay(pdir, since):
     return out
 
 
+def outcomes(since, log=None):
+    """Commit lines (hash date subject) since `since` whose subject reads like a fix or revert."""
+    if log is None:
+        log = subprocess.run(["git", "log", f"--since={since.isoformat()}", "--date=short", "--format=%h %ad %s"],
+                             capture_output=True, text=True).stdout
+    return [l for l in log.splitlines() if OUTCOME.search(l.split(" ", 2)[-1])]
+
+
 def render(sessions):
     lines = []
     for sid, title, turns in sessions:
@@ -99,6 +110,8 @@ def selftest():
         assert "claude: …Here is a synth track." in render(got)
         assert replay(p, datetime.now(timezone.utc) + timedelta(days=1)) == []
         assert project_dir("/a/b") == PROJECTS / "-a-b"
+        log = "b0be0ce 2026-10-10 scheduled ingest: absolute Edit rule so a cd doesn't break write\n705daae 2026-10-10 ingest: 1 episodes\nabc1234 2026-10-09 Revert \"promo: x\""
+        assert [l[:7] for l in outcomes(None, log)] == ["b0be0ce", "abc1234"]
     print("selftest ok")
 
 
@@ -124,6 +137,8 @@ def main():
         since = datetime.now(timezone.utc) - timedelta(days=7)
     print(f"# replay since {since.isoformat()[:16]} · memory dir: {pdir / 'memory'}\n")
     print(render(replay(pdir, since)))
+    print("\n# outcomes: fix/revert commits since then (`git show <hash>` for the why)")
+    print("\n".join(outcomes(since)) or "none")
 
 
 if __name__ == "__main__":

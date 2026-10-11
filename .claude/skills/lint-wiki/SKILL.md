@@ -29,7 +29,7 @@ Re-run until it prints `clean`.
 Read `wiki/index.md`, then the concept pages (prioritise those with the most sources and those updated most recently). Look for:
 
 - **Near-duplicate concepts:** two pages covering the same topic. Merge into the better slug, then redirect every link to it and delete the other.
-- **Silent contradictions:** claims in Key ideas that conflict, within one page or across pages, but aren't under Disagreements & open questions. Move them there with both sources. Never delete either claim.
+- **Silent contradictions:** claims in Key ideas that conflict within one page but aren't under Disagreements & open questions. Move them there with both sources. Never delete either claim. (`/dream` step 10 does the systematic cross-page pass.)
 - **Stale summaries:** a Summary that no longer reflects its Key ideas (e.g. written at 1 source, now 5). Rewrite it.
 - **Missing cross-links:** concepts that clearly relate but don't link each other in `## Related`.
 - **Unlinked claims:** Key ideas with no episode link.
