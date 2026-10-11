@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-07
+sources: 5
+updated: 2026-10-11
 ---
 # Coding-Agent Workflow (practical setup)
 
@@ -25,6 +25,7 @@ updated: 2026-10-07
 - The fun of Claude Code produces "project inflation": many half-finished side projects, feeling spread too thin ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
 
 ## Disagreements & open questions
+- Can you hop between harnesses freely? A LangTalks host finds switching between Cursor, Claude Code and Codex nearly free with a harness-agnostic spec/plan/implement flow ([[episodes/langtalks--70-our-claude-code-tips]]); Gavriel Cohen follows Anthropic's view that agents aren't portable across providers and built no model-switching ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
 
 ## Takeaways
 - [ ] Use a harness-agnostic workflow plugin (e.g. Superpowers) so switching tools is cheap ([[episodes/langtalks--70-our-claude-code-tips]])

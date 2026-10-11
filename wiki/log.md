@@ -319,3 +319,14 @@ created: episodes/hidden-layers--cato-networks-avishai-zvinsky, concepts/agentic
 updated: concepts/{ai-cybersecurity, agent-ready-codebase, ai-rd-rollout, llm-evals}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/to-try
 
 ## 2026-10-11 — dream: merged leveraged-etfs, margin-call → leverage
+
+## 2026-10-11 — dream: contradictions
+- multi-agent-orchestration ↔ skill-engineering: specialist agent team vs one agent with skills
+- ai-rd-rollout ↔ future-of-software-engineering: measured speedup 10–20% vs ~5× today
+- agent-memory ↔ autonomous-agents-outlook: natural-language memory files vs consolidation into weights
+- coding-agent-workflow ↔ model-selection: free harness hopping vs agents not portable
+- ai-hype ↔ ai-rd-rollout: wait a month vs try hands-on now
+- agent-workspaces ↔ ai-guardrails: near-human permissions vs least privilege
+- agent-workspaces ↔ ai-guardrails: agent-to-agent messaging vs limiting it
+- agent-workspaces ↔ future-of-software-engineering: SaaS not dead vs software moats commoditized
+- context-engineering ↔ human-vs-ai-memory: newest wins vs frequency and consistency

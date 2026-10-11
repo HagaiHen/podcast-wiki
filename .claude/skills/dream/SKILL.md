@@ -97,7 +97,7 @@ Run after merging, so the comparison uses the merged pages. Go **neighborhood by
 
 The test: *could a reader who read only one of the two pages act wrongly?* Different scales or contexts that both hold (solo vs team, 2024 vs 2026) aren't contradictions. Skip them, or note the context difference only if a reader would misread it. Pairs already in a Disagreements section are done.
 
-For each real contradiction, add one bullet to **both** pages' `## Disagreements & open questions`, naming who says what and linking both episodes and people: `- A says X; B says Y … ([[episodes/a]], [[people/a]], [[episodes/b]], [[people/b]])`. Never delete or reword the original claims. Bump `updated`. This only adds text, so apply it in headless runs too.
+For each real contradiction, add one bullet to **both** pages' `## Disagreements & open questions`, naming who says what and linking both episodes and people: `- A says X; B says Y … ([[episodes/a]], [[people/a]], [[episodes/b]], [[people/b]])`. Never delete or reword the original claims. Bump `updated`, and set `sources` to the number of distinct episodes the page now links. This only adds text, so apply it in headless runs too.
 
 Log `## YYYY-MM-DD — dream: contradictions` with one line per pair (`page-a ↔ page-b: topic`), run `uv run tools/lint_wiki.py` until it prints `clean`, and commit as `dream: surface N contradictions`.
 

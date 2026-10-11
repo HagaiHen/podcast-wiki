@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [knowledge-management, ai-engineering]
-sources: 2
-updated: 2026-10-06
+sources: 3
+updated: 2026-10-11
 ---
 # Human vs AI Memory
 
@@ -22,6 +22,7 @@ updated: 2026-10-06
 
 ## Disagreements & open questions
 - Should AI memory imitate human memory at all, given its decay and distortions, or aim for precise but salience-aware storage ([[episodes/langtalks--60-brain-memory]])?
+- Which version wins a conflict? The harness-engineering hosts reconcile Slack threads with specs by "newest wins" ([[episodes/langtalks--73-harness-engineering]]); the brain-memory hosts reject newest-wins for memory and prefer frequency and consistency ([[episodes/langtalks--60-brain-memory]], [[people/meytar-zemer]]).
 
 ## Takeaways
 - [ ] Make memory extraction task-aware (what matters differs for coding vs SQL vs Q&A) ([[episodes/langtalks--60-brain-memory]])

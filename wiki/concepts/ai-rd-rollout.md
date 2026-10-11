@@ -1,7 +1,7 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
+sources: 9
 updated: 2026-10-11
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
@@ -31,6 +31,8 @@ updated: 2026-10-11
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).
+- How big is the speedup today? The Ignore the Instructions host measures ~10–20% overall at Mixtiles, and Pavel Gurevich ~3× only on new products ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]); a LangTalks host estimates ~5× today, rising to ~20× by end of 2026 ([[episodes/langtalks--63-wake-up]]).
+- Wait or try now? Sharon Dahan's rule is to talk about a tool only once it has survived a month, and an Osim Tochna guest waits about two weeks ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]], [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]); Roy Mann urges trying things hands-on because month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 
 ## Takeaways
 - [ ] Start a GenAI guild of early adopters to share success stories and run workshops ([[episodes/langtalks--62-ai-rd-rollout]])

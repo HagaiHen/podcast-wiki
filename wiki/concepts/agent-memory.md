@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering, knowledge-management]
-sources: 4
-updated: 2026-10-07
+sources: 5
+updated: 2026-10-11
 ---
 # Agent Memory (short- and long-term, governed)
 
@@ -26,6 +26,7 @@ updated: 2026-10-07
 
 ## Disagreements & open questions
 - Bitter lesson (scale data and compute) versus algorithmic innovation: Friedman expects new memory architectures; the hosts sense today's memory is feature engineering awaiting a learned solution ([[episodes/langtalks--57-memory]]).
+- Files or weights? Itamar Friedman prefers natural-language memory files for now because you can read and veto what was learned ([[episodes/langtalks--57-memory]], [[people/itamar-friedman]]); the LangTalks hosts want models that learn during use and consolidate into weights overnight instead of "clunky markdown memory" ([[episodes/langtalks--63-wake-up]]), and Gilad Levi argues file-based memory is ill-posed ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 
 ## Takeaways
 - [ ] Track each rule's usage and acceptance rate and prune rules that don't earn their place ([[episodes/langtalks--57-memory]])

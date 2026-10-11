@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-07
+sources: 11
+updated: 2026-10-11
 ---
 # Skill Engineering
 
@@ -28,6 +28,7 @@ updated: 2026-10-07
 - Scoped per-page agents broke because users ask anything anywhere; one agent selecting from well-described skills improved evals immediately. A "screen awareness" skill lets users ask about what they're looking at ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Disagreements & open questions
+- One agent with skills, or a team of specialist agents? Billy Howell builds a chief-of-staff agent that spins out dedicated agents per task, and the LangTalks hosts see orchestrators over many specialists as the direction ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]], [[episodes/langtalks--58-reinvent-predictions]]). Vega and Twine went the other way: per-alert workflows and per-page agents broke, and a single agent selecting skills improved evals ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]], [[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Takeaways
 - [ ] Build skills as composable pieces and keep personal preferences in a separate per-user workflow layer ([[episodes/langtalks--72-personal-assistant-agent]])

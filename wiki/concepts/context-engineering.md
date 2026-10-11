@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
-updated: 2026-10-08
+sources: 12
+updated: 2026-10-11
 ---
 # Context Engineering
 
@@ -40,6 +40,7 @@ updated: 2026-10-08
 - Mann had an agent gather strong public agent prompts into a library and compare his prompt against them; the report taught him a lot, but without a working test framework he couldn't tell whether the changes helped ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
 
 ## Disagreements & open questions
+- Which version wins a conflict? The harness-engineering hosts reconcile Slack threads with specs by "newest wins" ([[episodes/langtalks--73-harness-engineering]]); the brain-memory hosts reject newest-wins for memory and prefer frequency and consistency ([[episodes/langtalks--60-brain-memory]], [[people/meytar-zemer]]).
 
 ## Takeaways
 - [ ] Ask your agent to diagram what it loads on each request; keep always-loaded files (CLAUDE.md) small ([[episodes/osim-tochna--second-brain-and-llm-wiki]])

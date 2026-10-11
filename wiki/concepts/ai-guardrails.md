@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 13
-updated: 2026-10-08
+sources: 15
+updated: 2026-10-11
 ---
 # AI Guardrails
 
@@ -38,6 +38,8 @@ updated: 2026-10-08
 - Three gates, shifted left: standards exposed at spec time through an MCP and plugin skill, checks in the agent's pre-commit (guardrails, lint, security), and the PR as the final gate ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
+- How much access should an agent get? monday's teammate agents hold accounts in Slack, monday and GitHub with almost the same permissions as humans ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]]); the ExplAInable hosts treat least privilege as basic hygiene, read-only where possible ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Should agents talk to each other? GrokBot agent teams message each other and report to a chief of staff, and a 30–40-agent WhatsApp group shared skills ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]], [[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); after one agent's research request left three people blocked, another team now limits agent-to-agent communication ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
 
 ## Takeaways
 - [ ] Never let the agent install external skills directly; have it read, judge, and rewrite them in its own words ([[episodes/osim-tochna--second-brain-and-llm-wiki]])

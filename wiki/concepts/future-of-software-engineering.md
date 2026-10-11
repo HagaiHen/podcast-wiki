@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
-updated: 2026-10-08
+sources: 11
+updated: 2026-10-11
 ---
 # Future of Software Engineering
 
@@ -38,6 +38,8 @@ updated: 2026-10-08
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).
 - Optimistic take (Matan Cohen) versus the widespread view that AI will sharply reduce developer jobs ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- How big is the speedup today? The Ignore the Instructions host measures ~10–20% overall at Mixtiles, and Pavel Gurevich ~3× only on new products ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]); a LangTalks host estimates ~5× today, rising to ~20× by end of 2026 ([[episodes/langtalks--63-wake-up]]).
+- Is SaaS dead? The company-brain guests and the LangTalks marketing episode say no: the application layer and domain knowledge gain value, and agents add demand ([[episodes/ai-engineering-podcast--company-brain]], [[episodes/langtalks--69-marketing-for-agents]]); the LangTalks hosts expect companies whose moat was the software itself to be commoditized ([[episodes/langtalks--63-wake-up]]).
 
 ## Takeaways
 

@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
-updated: 2026-10-08
+sources: 11
+updated: 2026-10-11
 ---
 # Agent Workspaces (the new workplace)
 
@@ -33,6 +33,9 @@ updated: 2026-10-08
 - Closed loop through Slack: tag the team's agent about a customer bug ("Hey Ozzy") and it finds the issue, opens a monday task and a PR, and sends it to review and production ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 
 ## Disagreements & open questions
+- How much access should an agent get? monday's teammate agents hold accounts in Slack, monday and GitHub with almost the same permissions as humans ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]]); the ExplAInable hosts treat least privilege as basic hygiene, read-only where possible ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- Should agents talk to each other? GrokBot agent teams message each other and report to a chief of staff, and a 30–40-agent WhatsApp group shared skills ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]], [[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); after one agent's research request left three people blocked, another team now limits agent-to-agent communication ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]]).
+- Is SaaS dead? The company-brain guests and the LangTalks marketing episode say no: the application layer and domain knowledge gain value, and agents add demand ([[episodes/ai-engineering-podcast--company-brain]], [[episodes/langtalks--69-marketing-for-agents]]); the LangTalks hosts expect companies whose moat was the software itself to be commoditized ([[episodes/langtalks--63-wake-up]]).
 
 ## Takeaways
 

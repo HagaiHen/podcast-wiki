@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-07
+sources: 7
+updated: 2026-10-11
 ---
 # Multi-Agent Orchestration
 
@@ -23,6 +23,7 @@ updated: 2026-10-07
 
 ## Disagreements & open questions
 - Hosts' caution: most successful agents in practice are *single* agents with narrow helper sub-agents (e.g. answer a question from one document), not full multi-agent systems ([[episodes/langtalks--55-context-engineering]]).
+- One agent with skills, or a team of specialist agents? Billy Howell builds a chief-of-staff agent that spins out dedicated agents per task, and the LangTalks hosts see orchestrators over many specialists as the direction ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]], [[episodes/langtalks--58-reinvent-predictions]]). Vega and Twine went the other way: per-alert workflows and per-page agents broke, and a single agent selecting skills improved evals ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]], [[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
 
 ## Takeaways
 - [ ] Keep each sub-agent's capability description auto-generated from its actual tools so the orchestrator stays current ([[episodes/langtalks--58-reinvent-predictions]])

@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-07
+sources: 7
+updated: 2026-10-11
 ---
 # AI Hype & Durable Value
 
@@ -20,6 +20,7 @@ updated: 2026-10-07
 - Veteran's rule: wait about two weeks before chasing a new tool; if it's still exciting, try it. Remember the 80/20 gap between a hackathon POC and production. Like the client-side framework churn of the past, nobody gets fired for learning a trend a month later ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 
 ## Disagreements & open questions
+- Wait or try now? Sharon Dahan's rule is to talk about a tool only once it has survived a month, and an Osim Tochna guest waits about two weeks ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]], [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]); Roy Mann urges trying things hands-on because month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 
 ## Takeaways
 - [ ] Wait a month before adopting a new AI tool or model ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])

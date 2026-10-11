@@ -1,8 +1,8 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 12
-updated: 2026-10-07
+sources: 13
+updated: 2026-10-11
 ---
 # Model Selection
 
@@ -35,6 +35,7 @@ updated: 2026-10-07
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).
+- Can you hop between harnesses freely? A LangTalks host finds switching between Cursor, Claude Code and Codex nearly free with a harness-agnostic spec/plan/implement flow ([[episodes/langtalks--70-our-claude-code-tips]]); Gavriel Cohen follows Anthropic's view that agents aren't portable across providers and built no model-switching ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
 
 ## Takeaways
 - [ ] Before upgrading a model, narrow the task and rephrase the question; retest on the small model ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
