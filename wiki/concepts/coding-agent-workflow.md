@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-11
+sources: 6
+updated: 2026-10-12
 ---
 # Coding-Agent Workflow (practical setup)
 
-**Summary:** Day-to-day practices for working with coding agents (Claude Code, Codex, Cursor, Pi). Keep the workflow harness-agnostic with a plugin like Superpowers (spec → plan → implement), so you can hop between tools as models and pricing change. Plan visually and at the right altitude. Tune harness settings, and build small personal tools and skills for the friction you hit: losing track across many terminals, vague agent questions, the laptop sleeping mid-run.
+**Summary:** Day-to-day practices for working with coding agents (Claude Code, Codex, Cursor, Pi). Spec-driven development has become the consensus starting point (GitHub Spec Kit, OpenSpec, Superpowers), often with a skill that grills you with questions to sharpen the spec. Keep the workflow harness-agnostic with a plugin like Superpowers (spec → plan → implement), so you can hop between tools as models and pricing change. Plan visually and at the right altitude. Tune harness settings, and build small personal tools and skills for the friction you hit: losing track across many terminals, vague agent questions, the laptop sleeping mid-run.
 
 ## Key ideas
 - Harness hopping: one host moved to Codex after an enterprise pricing change and found GPT 5.5 stronger than Opus for long autonomous tasks, though slower ([[episodes/langtalks--70-our-claude-code-tips]]).
@@ -23,6 +23,9 @@ updated: 2026-10-11
 - BMAD (a spec-driven framework) is overkill end to end, but its early analyst stage (Five Whys, Six Thinking Hats) surfaces product angles before code ([[episodes/langtalks--62-ai-rd-rollout]]).
 - Not every heavy user wants orchestration UIs: Idan runs 6–7 terminal tabs of Claude Code side by side and skips worktree-based tools ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - The fun of Claude Code produces "project inflation": many half-finished side projects, feeling spread too thin ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
+- Spec-driven development (SDD) is the hosts' consensus, with GitHub Spec Kit, OpenSpec and Superpowers as the frameworks named ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
+- A "grill me" skill that fires many questions at you before building is "simply fantastic" for surfacing what you hadn't thought through ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
+- For UI work: Claude Design, or a product-design skill used from another chat tool ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
 
 ## Disagreements & open questions
 - Can you hop between harnesses freely? A LangTalks host finds switching between Cursor, Claude Code and Codex nearly free with a harness-agnostic spec/plan/implement flow ([[episodes/langtalks--70-our-claude-code-tips]]); Gavriel Cohen follows Anthropic's view that agents aren't portable across providers and built no model-switching ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
@@ -33,6 +36,7 @@ updated: 2026-10-11
 - [ ] Add a "context recap" output style: task, done, numbered next steps, open threads ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] Raise Claude Code's skill-listing budget if you have many skills; extend session cleanup period ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] Schedule heavy reviews and maintenance as nightly routines ([[episodes/langtalks--70-our-claude-code-tips]])
+- [ ] Before building, have the agent grill you with questions to sharpen the spec ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]])
 
 ## Related
 [[concepts/harness-engineering]] · [[concepts/skill-engineering]] · [[concepts/ai-verification]]

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-07
+sources: 7
+updated: 2026-10-12
 ---
 # Personal AI Assistants ("claws")
 
-**Summary:** Personal assistants such as OpenClaw sit a level above coding harnesses: an orchestrator, often for non-developers, that automates daily operational work (calendar, meetings, email, tasks) through conversation rather than code. Their power comes from closed loops: access to your data and tools, cron jobs, skills as playbooks, and learning from your corrections. They need real setup, and they create identity and noise problems inside teams.
+**Summary:** Personal assistants such as OpenClaw sit a level above coding harnesses: an orchestrator, often for non-developers, that automates daily operational work (calendar, meetings, email, tasks) through conversation rather than code. Their power comes from closed loops: access to your data and tools, cron jobs, skills as playbooks, and learning from your corrections. They need real setup, and they create identity and noise problems inside teams. The idea is spreading beyond work: one politician proposes a government-provided agent per citizen, wired to state services by API.
 
 ## Key ideas
 - Mental model: never do an operational task twice. Teach it once in conversation, like training a digital employee ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -27,6 +27,7 @@ updated: 2026-10-07
 - Why claws work: coding agent + persistent environment (files, scripts, installed packages survive) + messaging app + internet. From that, memory, self-built tools, scheduled jobs, and initiative emerge, e.g. an agent that set itself a daily cron job to check stroller prices and message when they drop ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 - Within a day of joining a two-founder WhatsApp group, an agent was running the sales pipeline: morning summaries, task assignments, and follow-up reminders from forwarded emails ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 - Next step: from one assistant per employee to teams managing dozens or hundreds of agents (CI/CD, error triage, leads) ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Government version: every citizen gets a personal AI agent with APIs to all government services ("check if I owe tax", "check I'm not overpaying municipal tax"), replacing bureaucracy runs; a campaign proposal ([[episodes/micha-stocks--naftali-bennett-economic-interview]], [[people/naftali-bennett]]).
 
 ## Disagreements & open questions
 - Would you trust a skill-level change for something critical? Skill changes rarely "break compilation" but are harder to evaluate ([[episodes/langtalks--72-personal-assistant-agent]]).

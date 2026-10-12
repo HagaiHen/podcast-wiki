@@ -330,3 +330,18 @@ updated: concepts/{ai-cybersecurity, agent-ready-codebase, ai-rd-rollout, llm-ev
 - agent-workspaces ↔ ai-guardrails: agent-to-agent messaging vs limiting it
 - agent-workspaces ↔ future-of-software-engineering: SaaS not dead vs software moats commoditized
 - context-engineering ↔ human-vs-ai-memory: newest wins vs frequency and consistency
+
+## 2026-10-12 — Developers Outside the Box: #185 Let's Talk About Our Tools
+source: transcript (mostly garbled auto transcript)
+created: episodes/developers-outside-the-box--185-lets-talk-about-our-tools, shows/developers-outside-the-box
+updated: concepts/{coding-agent-workflow, context-engineering}, index, takeaways/{to-try, recommendations}
+
+## 2026-10-12 — Investing for the Lazy: #111 The AI Bubble
+source: whisper
+created: episodes/lazy-investing--111-the-ai-bubble, concepts/{market-bubbles, cape-ratio, market-timing}
+updated: concepts/{concentration-risk, index-investing, compound-interest, fomo}, people/tamir, shows/lazy-investing, hubs/investing, index, takeaways/{to-try, recommendations}
+
+## 2026-10-12 — Micha Stocks: Special Economic Interview: Naftali Bennett Commits to One Number
+source: whisper
+created: episodes/micha-stocks--naftali-bennett-economic-interview, concepts/cost-of-living, shows/micha-stocks, people/{micha-stocks, naftali-bennett}
+updated: concepts/{open-weight-models, personal-ai-assistants}, index

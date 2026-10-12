@@ -7,6 +7,9 @@
 - [ ] Before investing, define volatility tolerance, emergency fund, index, equity exposure, fees, horizon, goals — [[concepts/index-investing]] · [[episodes/lazy-investing--108-the-leverage-trap]]
 - [ ] Check top holdings and weights of any index fund you buy — [[concepts/concentration-risk]] · [[episodes/lazy-investing--108-the-leverage-trap]]
 - [ ] Start investing young in broad indexes and let compounding work — [[concepts/compound-interest]] · [[episodes/lazy-investing--108-the-leverage-trap]]
+- [ ] Get AI exposure through broad indexes, not AI-themed or leveraged AI ETFs — [[concepts/market-bubbles]] · [[episodes/lazy-investing--111-the-ai-bubble]]
+- [ ] Don't sell or delay investing over bubble talk; decide by horizon and volatility tolerance — [[concepts/market-timing]] · [[episodes/lazy-investing--111-the-ai-bubble]]
+- [ ] Compare 5.6% vs 11% over 30 years in a compound-interest calculator — [[concepts/compound-interest]] · [[episodes/lazy-investing--111-the-ai-bubble]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
@@ -159,6 +162,9 @@
 - [ ] Ship new automated detections in silent mode and validate them against historical data before they block anything — [[concepts/agentic-vulnerability-response]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
 - [ ] Add behavioral detections on pace and sequence (e.g. who runs PsExec) on top of signatures — [[concepts/ai-cybersecurity]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
 - [ ] After a session that taught the agent something new, ask it to record the lessons as skills or rules and commit them — [[concepts/agent-ready-codebase]] · [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]
+
+- [ ] Before building, have the agent grill you with questions to sharpen the spec — [[concepts/coding-agent-workflow]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
+- [ ] Give coding agents current library docs (e.g. Context7 MCP) when a library changed after the model's cutoff — [[concepts/context-engineering]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

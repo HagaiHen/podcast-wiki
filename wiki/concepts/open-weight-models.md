@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-07
+sources: 8
+updated: 2026-10-12
 ---
 # Open-Weight Models
 
-**Summary:** Open-weight models, notably Chinese ones like GLM, Kimi, and Qwen, trail the frontier by roughly six months at a fraction of the price, pushing proprietary providers to cut prices. Enterprise fear has faded since weights can run inside trusted clouds or your own VPC. They win where you need real fine-tuning or LoRA on domain data, privacy (local subtasks routed from a main agent), or edge deployment. "Open" varies (weights only vs data and recipes too). Self-hosting isn't automatically cheaper than a cheap hosted model. Choose use cases carefully: conversational answers can reflect different training values.
+**Summary:** Open-weight models, notably Chinese ones like GLM, Kimi, and Qwen, trail the frontier by roughly six months at a fraction of the price, pushing proprietary providers to cut prices. Enterprise fear has faded since weights can run inside trusted clouds or your own VPC. They win where you need real fine-tuning or LoRA on domain data, privacy (local subtasks routed from a main agent), or edge deployment. "Open" varies (weights only vs data and recipes too). Self-hosting isn't automatically cheaper than a cheap hosted model. They are also the basis of "sovereign AI": governments running adapted open models in their own isolated data centers. Choose use cases carefully: conversational answers can reflect different training values.
 
 ## Key ideas
 - Chinese models (GLM, Kimi) "give a phenomenal fight"; proprietary prices are starting to drop ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -23,6 +23,7 @@ updated: 2026-10-07
 - Local isn't automatically cheaper: in Nexar's video-classification benchmark, Gemini Flash beat a strong Qwen *and* cost less than the A100 hour needed to host it ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 - Where open wins: real fine-tuning or LoRA on domain data (closed-model tuning barely changes behavior), privacy-sensitive subtasks routed from a main agent via a skill, and possibly future personal agents fine-tuned per user and run locally ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 - Open-weight models now reach frontier size: Kimi at ~1T parameters, DeepSeek V3/V3.2 at ~670B, and DeepSeek V4 at reportedly ~1.4T with notable architectural changes. At that size you have to split them across GPUs ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
+- Sovereign AI for defense: build national data centers, install open-source models, and adapt them under your own control, isolated from the internet. Open source is ~6 months behind the frontier, "good enough for 99% of use cases" ([[episodes/micha-stocks--naftali-bennett-economic-interview]], [[people/naftali-bennett]]).
 
 ## Disagreements & open questions
 

@@ -13,6 +13,9 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/concentration-risk]]: when an index is really 2–3 stocks
 - [[concepts/survivorship-bias]]: you only see the winners
 - [[concepts/fomo]]: others' gains push you into risk
+- [[concepts/market-bubbles]]: tech-wave bubbles (dot-com, AI); welcome the burst
+- [[concepts/cape-ratio]]: Shiller P/E; high means lower expected returns
+- [[concepts/market-timing]]: why selling before crashes usually fails
 
 ## AI Engineering — [[hubs/ai-engineering]]
 - [[concepts/ai-sre]]: agents that investigate and heal production
@@ -81,6 +84,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/biohacking]]: N=1 self-experiments, sensors, caveats (health)
 - [[concepts/personal-genomics]]: whole-genome sequencing, drug responses (health)
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
+- [[concepts/cost-of-living]]: competition vs price caps; subsidies captured by sellers (economics)
 
 ## Shows
 - [[shows/hidden-layers]]: Hidden Layers
@@ -92,6 +96,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[shows/langtalks]]: LangTalks
 - [[shows/osim-tochna]]: Osim Tochna (עושים תוכנה)
 - [[shows/lazy-investing]]: Investing for the Lazy (השקעות לעצלנים)
+- [[shows/developers-outside-the-box]]: Developers Outside the Box (מפתחים מחוץ לקופסה)
+- [[shows/micha-stocks]]: Micha Stocks (מיכה סטוקס מגיש: שוק ההון)
 
 ## People
 - [[people/amit-bendor]]: host of Osim Tochna
@@ -146,6 +152,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/tom-barnea]]: AI-security detections at Tenable
 - [[people/uri-eliabayev]]: host of Hidden Layers
 - [[people/warren-buffett]]: American investor
+- [[people/micha-stocks]]: host of Micha Stocks
+- [[people/naftali-bennett]]: former Israeli PM, ex-tech CEO
 
 ## Episodes
 - [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]: How Do You Handle the New AI-Driven Cyber Threats? (2026-10-08)
@@ -209,3 +217,6 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/langtalks--73-harness-engineering]]: #73 Harness Engineering (2026-09-15)
 - [[episodes/osim-tochna--second-brain-and-llm-wiki]]: Second Brain & LLM Wiki (2026-08-03)
 - [[episodes/lazy-investing--108-the-leverage-trap]]: #108 The Leverage Trap (2026-08-04)
+- [[episodes/lazy-investing--111-the-ai-bubble]]: #111 The AI Bubble (2026-10-11)
+- [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]: #185 Let's Talk About Our Tools (2026-10-10)
+- [[episodes/micha-stocks--naftali-bennett-economic-interview]]: Naftali Bennett Economic Interview (2026-10-11)

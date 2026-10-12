@@ -20,6 +20,9 @@
 - Playwright MCP: lets agents drive a browser and record proof-of-work videos — [[concepts/ai-verification]] · [[episodes/langtalks--73-harness-engineering]]
 - OpenTelemetry / VictoriaLogs: tracing the agent can query — [[concepts/ai-verification]] · [[episodes/langtalks--73-harness-engineering]]
 - Obsidian (+ Web Clipper browser extension + mobile app): read/edit the wiki, graph view for orphan notes — [[concepts/second-brain]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]
+- Context7: open-source MCP serving current library docs to coding agents — [[concepts/context-engineering]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
+- GitHub Spec Kit, OpenSpec: spec-driven development frameworks — [[concepts/coding-agent-workflow]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
+- Investing for the Lazy blog post on the Shiller CAPE and its compound-interest calculator — [[concepts/cape-ratio]] · [[episodes/lazy-investing--111-the-ai-bubble]]
 - Ollama, then vLLM: run models locally, then learn real serving (continuous batching) — [[concepts/llm-inference]] · [[episodes/osim-tochna--running-llms-at-scale]]
 
 ## People
