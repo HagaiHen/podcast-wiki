@@ -1,6 +1,6 @@
 ---
 type: episode
-show: Micha Stocks (מיכה סטוקס מגיש: שוק ההון)
+show: "Micha Stocks (מיכה סטוקס מגיש: שוק ההון)"
 date: 2026-10-11
 guests: ["[[people/naftali-bennett]]"]
 spotify_url: https://open.spotify.com/episode/4BHrh8A3HP1bXmX8SCRScD
