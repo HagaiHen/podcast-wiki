@@ -345,3 +345,8 @@ updated: concepts/{concentration-risk, index-investing, compound-interest, fomo}
 source: whisper
 created: episodes/micha-stocks--naftali-bennett-economic-interview, concepts/cost-of-living, shows/micha-stocks, people/{micha-stocks, naftali-bennett}
 updated: concepts/{open-weight-models, personal-ai-assistants}, index
+
+## 2026-10-13 — The Startup Ideas Podcast: 8 GitHub Repos To Go Viral and Make Money
+source: transcript
+created: episodes/startup-ideas--8-github-repos-viral-money, concepts/customer-pain-research
+updated: concepts/{ai-growth-marketing, solo-builders, skill-engineering, multi-agent-orchestration, coding-agent-workflow}, people/greg-isenberg, shows/the-startup-ideas-podcast, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

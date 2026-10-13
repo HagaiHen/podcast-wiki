@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-07
+sources: 3
+updated: 2026-10-13
 ---
 # AI Growth Marketing (agentic growth hacking)
 
-**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Today this succeeds in organic and unconventional channels, SEO/GEO, and modest-context SDRs; paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
+**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and modest-context SDRs; paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
 
 ## Key ideas
 - New marketing, not 10× old marketing: hunt "distribution loopholes" the way security people hunt vulnerabilities ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
@@ -23,6 +23,11 @@ updated: 2026-10-07
 - AI content engines: small teams auto-generate natural-looking TikTok videos (e.g. motion-graphics skills, AI avatars), post across several accounts, plug their app every few posts, and run 3–4 apps through the engine to see what catches. One three-to-four-person team makes hundreds of thousands of dollars a year ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
 - Open source as distribution: Postiz went open source in late 2024 and reached ~$50k MRR. When copying is easy, giving it away so everyone builds on top of you may be the moat; Chinese open-weight labs use the same logic ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]], [[people/nevo-david]]).
 - Reddit gives honest feedback from strangers, and posting there is less exposing than to your own network ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
+- Launch videos: funded startups spend $100–300k on launch videos; the Brag skill makes a short one from a project or URL (tone, aspect ratio, thumbnail, post copy, per-scene redo) for model cost only ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Permissionless outreach: instead of a cold email, do the work and send it, e.g. a launch video for a Product Hunt launch that has none, or a few concrete fixes to a confusing pricing page. At worst it starts a conversation that leads to other work ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Free tools as lead magnets: a packaging supplier's box-quantity cost calculator attracts the right buyers, and a quote request then arrives already qualified. Show the result before asking for an email, then turn the estimate into a quote without re-entry ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Customer language is copy: a complaint like "payroll takes my entire Friday" is a ready-made headline if your product solves it ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Localized onboarding: voice-cloning and dubbing tools (e.g. the local, open-source Voice Studio) can turn English tutorials into other languages, with a fluent speaker checking. Start with the three questions support hears most. Clone only voices you have permission to use and check the license ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Host vs guest: the host keeps iterating copy with an AI collaborator; Haslavsky suspects copy barely matters to virality versus timing and early engagement ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
@@ -31,6 +36,8 @@ updated: 2026-10-07
 - [ ] Give an autonomous agent an outcome (e.g. reach a person, find converting copy) plus tools, and ask it to report what it learned ([[episodes/ignore-instructions--28-ai-marketing-enso]])
 - [ ] Feed post performance data back into your AI copywriting loop ([[episodes/ignore-instructions--28-ai-marketing-enso]])
 - [ ] Build in public: post weekly about what you build day to day ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
+- [ ] Make a 20-second launch video for something you built (e.g. with Brag) and share it ([[episodes/startup-ideas--8-github-repos-viral-money]])
+- [ ] Build one free calculator or tool for your audience; show the result before asking for an email ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
 [[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]]

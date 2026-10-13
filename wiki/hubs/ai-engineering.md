@@ -20,6 +20,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/llm-reasoning]]: how models reason
 - [[concepts/ai-moats]]: defensibility beyond the model
 - [[concepts/solo-builders]]: building and shipping products without VC
+- [[concepts/customer-pain-research]]: finding paid-software workarounds as business ideas
 - [[concepts/enterprise-ai-adoption]]: enterprise AI go-to-market
 - [[concepts/ai-growth-marketing]]: AI-driven growth and marketing
 - [[concepts/workflow-automation]]: no-code automations and agents

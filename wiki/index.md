@@ -40,6 +40,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/llm-reasoning]]: token-space vs latent reasoning; RL reasoning
 - [[concepts/ai-moats]]: tech as business card; good-enough products; lab economics
 - [[concepts/solo-builders]]: AI builders without VC; shipping, finishing, distribution
+- [[concepts/customer-pain-research]]: mining workaround posts for business ideas; validate by talking
 - [[concepts/enterprise-ai-adoption]]: selling applied AI to enterprises; FDEs; AI OS
 - [[concepts/ai-growth-marketing]]: agentic growth hacking, autonomous outreach, personalization
 - [[concepts/agent-ready-products]]: selling to agents: skills, MCP, marketplaces, CLI auth
@@ -156,6 +157,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/naftali-bennett]]: former Israeli PM, ex-tech CEO
 
 ## Episodes
+- [[episodes/startup-ideas--8-github-repos-viral-money]]: 8 GitHub Repos To Go Viral and Make Money (2026-10-08)
 - [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]: How Do You Handle the New AI-Driven Cyber Threats? (2026-10-08)
 - [[episodes/hidden-layers--tenzai-ofri-ziv]]: Building an AI Security Tester (2026-06-07)
 - [[episodes/hidden-layers--qodo-itamar-friedman]]: How Do You Review AI-Written Code? (2026-03-31)

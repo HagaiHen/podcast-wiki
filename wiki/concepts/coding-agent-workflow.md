@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-12
+sources: 7
+updated: 2026-10-13
 ---
 # Coding-Agent Workflow (practical setup)
 
-**Summary:** Day-to-day practices for working with coding agents (Claude Code, Codex, Cursor, Pi). Spec-driven development has become the consensus starting point (GitHub Spec Kit, OpenSpec, Superpowers), often with a skill that grills you with questions to sharpen the spec. Keep the workflow harness-agnostic with a plugin like Superpowers (spec → plan → implement), so you can hop between tools as models and pricing change. Plan visually and at the right altitude. Tune harness settings, and build small personal tools and skills for the friction you hit: losing track across many terminals, vague agent questions, the laptop sleeping mid-run.
+**Summary:** Day-to-day practices for working with coding agents (Claude Code, Codex, Cursor, Pi). Spec-driven development has become the consensus starting point (GitHub Spec Kit, OpenSpec, Superpowers), often with a "grill me" skill that interviews you before building and logs the assumptions you're making. Keep the workflow harness-agnostic with a plugin like Superpowers (spec → plan → implement), so you can hop between tools as models and pricing change. Plan visually and at the right altitude, and give agents dedicated design guidance (e.g. Impeccable) since default AI-generated UI is weak. Tune harness settings, and build small personal tools and skills for the friction you hit: losing track across many terminals, vague agent questions, the laptop sleeping mid-run.
 
 ## Key ideas
 - Harness hopping: one host moved to Codex after an enterprise pricing change and found GPT 5.5 stronger than Opus for long autonomous tasks, though slower ([[episodes/langtalks--70-our-claude-code-tips]]).
@@ -26,6 +26,8 @@ updated: 2026-10-12
 - Spec-driven development (SDD) is the hosts' consensus, with GitHub Spec Kit, OpenSpec and Superpowers as the frameworks named ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
 - A "grill me" skill that fires many questions at you before building is "simply fantastic" for surfacing what you hadn't thought through ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
 - For UI work: Claude Design, or a product-design skill used from another chat tool ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
+- Grill Me (Matt Pocock) interviews you in rounds and follows up on your answers. Use it when you're most excited, which is when you skip awkward questions, and for small decisions too (annual plan? feature for one big client?). Add an instruction to log every "probably" (they probably have budget, probably gave access) as an assumption, then ask which to check first with a customer ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Impeccable (Paul Bakaus) gives coding agents specific design guidance: set it up with who the product is for, then run commands like critique, polish, bolder and quieter. Start with critique on an existing page and fix only the parts you agree with ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Can you hop between harnesses freely? A LangTalks host finds switching between Cursor, Claude Code and Codex nearly free with a harness-agnostic spec/plan/implement flow ([[episodes/langtalks--70-our-claude-code-tips]]); Gavriel Cohen follows Anthropic's view that agents aren't portable across providers and built no model-switching ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
@@ -37,6 +39,8 @@ updated: 2026-10-12
 - [ ] Raise Claude Code's skill-listing budget if you have many skills; extend session cleanup period ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] Schedule heavy reviews and maintenance as nightly routines ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] Before building, have the agent grill you with questions to sharpen the spec ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]])
+- [ ] When grilling an idea, have the agent log every "probably" as an assumption and rank which to verify first ([[episodes/startup-ideas--8-github-repos-viral-money]])
+- [ ] Run a design-critique skill (e.g. Impeccable's critique) on a page you already built before asking for fixes ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
 [[concepts/harness-engineering]] · [[concepts/skill-engineering]] · [[concepts/ai-verification]]

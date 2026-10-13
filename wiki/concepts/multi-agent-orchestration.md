@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-11
+sources: 8
+updated: 2026-10-13
 ---
 # Multi-Agent Orchestration
 
-**Summary:** An orchestrator agent breaks a complex task into sub-tasks and routes each to a specialized agent that executes with its own tools. Its sole job is decomposition and delegation, so it's trained and tuned differently. Benefits: context isolation and focus, with promising quality gains in domains like healthcare. Pitfalls: agents whose scopes overlap in unforeseen ways, and capability descriptions that go stale as agents gain tools. Expect models to be trained to delegate, as they're now trained to use CLIs.
+**Summary:** An orchestrator agent breaks a complex task into sub-tasks and routes each to a specialized agent that executes with its own tools. Its sole job is decomposition and delegation, so it's trained and tuned differently. The simplest form is a builder/checker pair, which tools like OpenRig wire up so you stop copying results between chat windows by hand. Benefits: context isolation and focus, with promising quality gains in domains like healthcare. Pitfalls: agents whose scopes overlap in unforeseen ways, and capability descriptions that go stale as agents gain tools. Expect models to be trained to delegate, as they're now trained to use CLIs.
 
 ## Key ideas
 - "Orchestrator" barely came up for a year, then returned at re:Invent 2025 ([[episodes/langtalks--58-reinvent-predictions]], [[people/shuki-cohen]]).
@@ -20,6 +20,7 @@ updated: 2026-10-11
 - Four-week ramp: build the team → execute with no tinkering → hire and fire agents → automate ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 - "Sous-chef" decomposition: an orchestrator draws on a company knowledge base of how expert researchers approach a task, breaks it into steps, dispatches them to specialized agents, and an aggregator draws the conclusion. Dream reuses this pattern well beyond cyber ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - Risk moves to the connections: in orchestrated multi-agent workflows each agent may be safe and correctly permissioned alone, while the links between them open new paths ([[episodes/hidden-layers--tenable-tom-barnea]], [[people/tom-barnea]]).
+- Builder + checker: OpenRig organizes Claude Code and Codex agents into a team, one making a change and another checking it, with a way to pass work between them. It pays off once you're the one copying output into a second chat for review and carrying feedback back. Its two-agent starter needs Mac or Linux with Node and tmux ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Hosts' caution: most successful agents in practice are *single* agents with narrow helper sub-agents (e.g. answer a question from one document), not full multi-agent systems ([[episodes/langtalks--55-context-engineering]]).
@@ -28,6 +29,7 @@ updated: 2026-10-11
 ## Takeaways
 - [ ] Keep each sub-agent's capability description auto-generated from its actual tools so the orchestrator stays current ([[episodes/langtalks--58-reinvent-predictions]])
 - [ ] Add a five-line daily brief (done / blocked / needs me) to each recurring agent ([[episodes/startup-ideas--grok-bot-one-person-company]])
+- [ ] Try a builder + checker agent pair on a small job (e.g. a quote calculator checked against real pricing) in a test project ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
 [[concepts/harness-engineering]] · [[concepts/small-language-models]] · [[concepts/autonomous-agents-outlook]]

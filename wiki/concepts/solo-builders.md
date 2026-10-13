@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-10-07
+sources: 4
+updated: 2026-10-13
 ---
 # Solo Builders (Build → Ship → Grow)
 
-**Summary:** Coding agents and no-code AI builders created a new founder profile: people who build and run real products alone or in tiny teams, often without VC money and often outside software. Domain experts and go-to-market people are especially strong, because building got cheap while distribution and intimate market knowledge didn't. Communities of builders spread practices faster than companies adopt them. The hard parts are psychological and commercial: *shipping* unfinished work, *finishing* projects instead of starting new ones, and getting heard when 10× more software means 10× more noise.
+**Summary:** Coding agents and no-code AI builders created a new founder profile: people who build and run real products alone or in tiny teams, often without VC money and often outside software. Domain experts and go-to-market people are especially strong, because building got cheap while distribution and intimate market knowledge didn't. A common on-ramp is services first: free skills and repos let one person sell launch videos, decks, design fixes or dubbing on retainer, then turn that cash flow and customer knowledge into technology. The hard parts are psychological and commercial: *shipping* unfinished work, *finishing* projects instead of starting new ones, and getting heard when 10× more software means 10× more noise.
 
 ## Key ideas
 - Builder communities (Build Ship Grow, Squid Club, 10X Marketers, AI Agents) push the ecosystem; inside them everyone uses Claude Code and skills, while big companies lag (e.g. ~3 of a room of Apple engineers used skills) ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
@@ -23,6 +23,8 @@ updated: 2026-10-07
 - Agent-run small businesses: a 6,000-subscriber local newsletter run by a GrokBot team found its own sponsor from the inbox. Niche newsletters, AI-sourced Shopify stores, and SEO directories reinforce each other (a directory feeds a newsletter, referral leads become sponsors) ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]]).
 - Pitfalls: agents stall on choices (three weeks undecided on where content lives), so the human decides; open-ended research runs for weeks, so ask for top-3 recommendations ([[episodes/startup-ideas--grok-bot-one-person-company]]).
 - Agent-readiness services as a business: an agent-conversion agency for local businesses ($2–10k setup plus a monthly retainer) or an "agent mystery shopper" that reports where agents get stuck. The arbitrage exists while the tech is experimental ([[episodes/startup-ideas--webmcp-clearly-explained]], [[people/greg-isenberg]]).
+- Services → technology: use free skills to sell recurring work, such as keeping translated tutorial videos current as a product changes, rebuilding a sales team's standard slides, or design fixes. $1,000/month × 10 clients is $10k/month; every big business starts small, and the moat comes later. Your judgment is still what clients pay for ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- "SaaS is dead" is wrong; SaaS is evolving. Boring businesses leave gaps around the software they already pay for, e.g. cleaning companies exporting schedules every Friday to compute pay. A small tool that takes the export keeps them on the software they know ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Do bootstrapped AI products need VC at all? Both agree big funds aren't going anywhere, but a parallel non-VC layer is forming and its financing model is still unclear ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).

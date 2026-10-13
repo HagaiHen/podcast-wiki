@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
-updated: 2026-10-11
+sources: 12
+updated: 2026-10-13
 ---
 # Skill Engineering
 
-**Summary:** Agent skills are mini software: a prompt describing a workflow (what, how, when) plus resources such as scripts, CLIs, or MCP calls. They combine deterministic code with LLM flexibility and let non-developers, especially domain experts, contribute and measure improvements. In practice one orchestrator agent loading skills by scenario beats a separate agent per page or alert type. Skills are also a cost and attention tool: load them progressively, not all up front. They have a ceiling, after which teams fine-tune models. Sharing is still hard: forks diverge, external APIs change, and versioning and dependency management are immature.
+**Summary:** Agent skills are mini software: a prompt describing a workflow (what, how, when) plus resources such as scripts, CLIs, or MCP calls, a reusable process instead of a giant prompt each time. They combine deterministic code with LLM flexibility and let non-developers, especially domain experts, contribute and measure improvements. A public ecosystem of free skills and repos (launch videos, design critique, decks, research) now packages whole service jobs, so the cost is mostly model usage. In practice one orchestrator agent loading skills by scenario beats a separate agent per page or alert type. Skills are also a cost and attention tool: load them progressively, not all up front. They have a ceiling, after which teams fine-tune models. Sharing is still hard: forks diverge, external APIs change, and versioning and dependency management are immature.
 
 ## Key ideas
 - Even "complex" capabilities, like letting an agent message you, can be a few lines of skill plus an API or CLI and token setup ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -26,6 +26,9 @@ updated: 2026-10-11
 - Skills split system prompts and speed ramp-up, but hit a ceiling; past it, fine-tune models on collected context and data, sometimes automatically at the customer site in a feedback loop ([[episodes/hidden-layers--dream-eran-hoffman]], [[people/eran-hoffman]]).
 - One orchestrator plus skills beat a dedicated workflow per alert type: the investigation agent loads skills by scenario (cloud → AWS or GCP). Domain experts, not R&D, should be able to add or edit skills and measure their impact on evals ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]]).
 - Scoped per-page agents broke because users ask anything anywhere; one agent selecting from well-described skills improved evals immediately. A "screen awareness" skill lets users ask about what they're looking at ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- A skill is a set of instructions your agent reuses for a particular job, sometimes with scripts and examples: you hand it a process rather than writing a massive prompt every time. Examples now circulating: Brag (launch videos from a project or URL), PPT Master (notes → editable deck in your own template), Free Tools (Corey Haynes' marketing collection), Grill Me (Matt Pocock), Impeccable (Paul Bakaus). Most are free; you pay for the model ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Plain LLMs are weak at pulling insight from the social web, so tool-setup skills like Agent Reach wire up access to YouTube, Reddit and X for cross-source research ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Third-party skills and repos can change agent settings (OpenRig does): read what an install changes before running it, and try it on a test project or a copy of your site first ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - One agent with skills, or a team of specialist agents? Billy Howell builds a chief-of-staff agent that spins out dedicated agents per task, and the LangTalks hosts see orchestrators over many specialists as the direction ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]], [[episodes/langtalks--58-reinvent-predictions]]). Vega and Twine went the other way: per-alert workflows and per-page agents broke, and a single agent selecting skills improved evals ([[episodes/hidden-layers--vega-gili-kanfo]], [[people/gili-kanfo]], [[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
@@ -34,6 +37,7 @@ updated: 2026-10-11
 - [ ] Build skills as composable pieces and keep personal preferences in a separate per-user workflow layer ([[episodes/langtalks--72-personal-assistant-agent]])
 - [ ] Keep shared skills in one versioned repo with a contribution norm, not personal forks ([[episodes/langtalks--72-personal-assistant-agent]])
 - [ ] Make your project agent-operable: CLAUDE.md for context + a CLI agents can call ([[episodes/langtalks--71-claw-architectures]])
+- [ ] Before installing a third-party skill or repo, read which agent settings it changes and test it in a scratch project ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
 [[concepts/personal-ai-assistants]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-guardrails]] · [[concepts/agent-security]] · [[concepts/agent-ready-products]]
