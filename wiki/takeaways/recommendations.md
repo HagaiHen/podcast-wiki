@@ -12,6 +12,7 @@
 - ideabrowser.com: Greg Isenberg's free idea-of-the-day and validation site — [[episodes/startup-ideas--8-github-repos-viral-money]]
 - Hebatron: open Hebrew LLM (Nemotron-based) — [[episodes/explainable--157-training-hebatron]]
 - Manus blog post "Context Engineering for AI Agents: Lessons from Building Manus" and LangChain's "Context Engineering for Agents" — [[episodes/langtalks--55-context-engineering]]
+- LangChain Deep Agents: open-source agent framework under monday.com's AgentOS — [[concepts/harness-engineering]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
 - LangSmith / Langfuse: tracing to audit agent context — [[episodes/langtalks--55-context-engineering]]
 - n8n: no-code automation + AI agents; start on cloud, self-host later — [[concepts/workflow-automation]] · [[episodes/langtalks--56-n8n]]
 - Pencil.dev: design UI with your design system before agent implementation — [[episodes/langtalks--70-our-claude-code-tips]]

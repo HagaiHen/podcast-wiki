@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-07
+sources: 8
+updated: 2026-10-15
 ---
 # Harness Engineering
 
-**Summary:** Designing the environment around a coding agent, or any task agent, so it can work autonomously for long sessions and converge on correct, production-ready results. The agent must understand the project, act like a practitioner (run code, tests, environments, browsers), and get reward signals telling it whether it's on track. Guardrails are *enforced* in the flow rather than requested. A harness is built and torn down at once: add scaffolding where the model falls short, and remove it as new models make it redundant. Purpose-built harnesses beat generic ones, measuring where you stand matters as much as the harness, and infrastructure (durable objects, sandboxes) is catching up for long-running agents.
+**Summary:** Designing the environment around a coding agent, or any task agent, so it can work autonomously for long sessions and converge on correct, production-ready results. The agent must understand the project, act like a practitioner (run code, tests, environments, browsers), and get reward signals telling it whether it's on track. Guardrails are *enforced* in the flow rather than requested. A harness is built and torn down at once: add scaffolding where the model falls short, and remove it as new models make it redundant. Purpose-built harnesses beat generic ones, measuring where you stand matters as much as the harness, and infrastructure (durable objects, sandboxes) is catching up for long-running agents. For business agents, an internal platform can also separate the two jobs: a definition language lets non-engineers change agents in a day, while engineers harden the runtime.
 
 ## Key ideas
 - Terminology: the harness is Claude Code, Codex, Cursor agent; tools like NanoClaw/OpenClaw are orchestrators that *use* a harness ([[episodes/langtalks--73-harness-engineering]]).
@@ -29,6 +29,11 @@ updated: 2026-10-07
 - "Harness" is overloaded: Mann reserves it for the loop that runs skills and tools, with an OS-like layer, applications, and plugins built above it, like CPU → OS → apps ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 - 3D-printer analogy: early printers needed constant fixing; modern ones add a hundred engineering layers (laser bed scans) so a 40-hour print just works. Agents "don't fully work yet", and roughly a decade of engineering above the LLM is the opportunity (and why forward-deployed engineers exist) ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 
+- From rails to a cage: monday's first sales agents ran "on train tracks", predictable but unable to use what models can do. AgentOS gives the agent maximum freedom inside system-enforced policies. Krispin prefers a Pac-Man image: the agent chases its goal, hits a wall, turns back and keeps going ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]], [[people/moshe-krispin]])
+- Decouple business from engineering: every small agent change used to need code, PR, merge and tests. An Agent Definition Language (ADL), compiled into a runtime on LangChain's Deep Agents, lets go-to-market engineers change policies, skills and tools or build a new agent themselves, cutting agent build time from a month to a day. Engineers work on platform scale and robustness instead ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]], [[people/raz-diskin]])
+- Platform capabilities such as properly used long-term memory are hard engineering problems with direct business impact; building them once serves every agent on the platform ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]])
+- Next step: self-improving agents that analyze hundreds of variables (lead type, origin, timing) and suggest changes to their own instructions, or ask for a missing tool ("can I send this customer a bottle of wine?") ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]])
+
 ## Disagreements & open questions
 - Cost: providers moved from flat ~$200/month plans to token billing, and companies push to cut spend (cheaper models, open source). The hosts argue against blind token minimization, but warn against "token-maxing" too: use harness hooks and OpenTelemetry to evaluate what's actually happening ([[episodes/langtalks--73-harness-engineering]]).
 
@@ -37,6 +42,7 @@ updated: 2026-10-07
 - [ ] Track productivity per token over time as the harness KPI ([[episodes/langtalks--73-harness-engineering]])
 - [ ] Give each agent PR its own preview environment (IaC or container mirroring) ([[episodes/langtalks--70-our-claude-code-tips]])
 - [ ] Map every copy-paste step in your dev loop and replace it with agent-accessible tooling ([[episodes/langtalks--68-ai-sdlc]])
+- [ ] If business people queue agent tweaks through engineers, give them a declarative agent definition (prompt, skills, tools, policies) they can edit and ship themselves ([[episodes/startup-for-startup--370-agentos-month-to-day]])
 
 ## Related
 [[concepts/agent-ready-codebase]] · [[concepts/test-driven-development]] · [[concepts/ai-guardrails]] · [[concepts/ai-verification]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-sdlc]] · [[concepts/ai-cybersecurity]] · [[concepts/agent-architectures]] · [[concepts/llm-cost-optimization]]

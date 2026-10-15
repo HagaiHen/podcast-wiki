@@ -350,3 +350,8 @@ updated: concepts/{open-weight-models, personal-ai-assistants}, index
 source: transcript
 created: episodes/startup-ideas--8-github-repos-viral-money, concepts/customer-pain-research
 updated: concepts/{ai-growth-marketing, solo-builders, skill-engineering, multi-agent-orchestration, coding-agent-workflow}, people/greg-isenberg, shows/the-startup-ideas-podcast, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-15 — Startup for Startup: 370: How We Cut Agent Building From a Month to a Day
+source: whisper
+created: episodes/startup-for-startup--370-agentos-month-to-day, people/{raz-diskin, moshe-krispin}
+updated: concepts/{ai-guardrails, harness-engineering, ai-growth-marketing, agent-memory, llm-cost-optimization, ai-hype}, shows/startup-for-startup, index, takeaways/{to-try, recommendations}

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering, knowledge-management]
-sources: 5
-updated: 2026-10-11
+sources: 6
+updated: 2026-10-15
 ---
 # Agent Memory (short- and long-term, governed)
 
-**Summary:** Memory is a frontier problem for agents, especially coding agents, which must follow a team's practices consistently. *Short-term* memory keeps a long session faithful to its early instructions; *long-term* memory holds personal preferences, repo conventions, org practices, and non-technical context (Slack, PRDs). Natural-language files keep it inspectable, but you need a lifecycle: creation, retrieval at the right moment, and *evidence of value*. Governance (usage and acceptance stats, whose feedback counts) is what tools lack most.
+**Summary:** Memory is a frontier problem for agents, especially coding agents, which must follow a team's practices consistently. *Short-term* memory keeps a long session faithful to its early instructions; *long-term* memory holds personal preferences, repo conventions, org practices, and non-technical context (Slack, PRDs). Natural-language files keep it inspectable, but you need a lifecycle: creation, retrieval at the right moment, and *evidence of value*. Governance (usage and acceptance stats, whose feedback counts) is what tools lack most. Outside coding, memory of each customer (how and when they like to be contacted) is what makes customer-facing agents feel personal.
 
 ## Key ideas
 - Memory dimensions: short vs long term; personal, team, company; updating vs static; transparent vs opaque ([[episodes/langtalks--57-memory]], [[people/itamar-friedman]]).
@@ -23,6 +23,7 @@ updated: 2026-10-11
 - Claude Code memory levels: project, user, enterprise ([[episodes/langtalks--55-context-engineering]]).
 - Critique of memory systems: retrieval, memory graphs, and summarization only choose which notes to re-read from an ever-growing stack, like an employee rereading all their notes each morning. The problem is ill-posed because data isn't distilled as it arrives. Humans change a little with every input ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Two layers for a domain agent: a constantly enriched data layer (what permissions actually allow) and a knowledge layer of org policies and exceptions ("never auto-disable the CEO"), learned from every interaction so customers needn't repeat themselves ([[episodes/hidden-layers--twine-nadav-erez]], [[people/nadav-erez]]).
+- Per-customer memory: what a person would jot in a notebook ("doesn't like morning calls", "has five kids") has to be given to agents as a capability. monday's AgentOS bakes in long-term memory, so an agent knows months later to phone a lead at 9 a.m. instead of emailing ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]], [[people/moshe-krispin]])
 
 ## Disagreements & open questions
 - Bitter lesson (scale data and compute) versus algorithmic innovation: Friedman expects new memory architectures; the hosts sense today's memory is feature engineering awaiting a learned solution ([[episodes/langtalks--57-memory]]).

@@ -155,6 +155,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/warren-buffett]]: American investor
 - [[people/micha-stocks]]: host of Micha Stocks
 - [[people/naftali-bennett]]: former Israeli PM, ex-tech CEO
+- [[people/raz-diskin]]: GTM engineer, monday.com RevAI
+- [[people/moshe-krispin]]: tech lead, monday.com RevAI (AgentOS)
 
 ## Episodes
 - [[episodes/startup-ideas--8-github-repos-viral-money]]: 8 GitHub Repos To Go Viral and Make Money (2026-10-08)
@@ -181,6 +183,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/startup-for-startup--362-agent-architecture-fit]]: #362 Matching Agent Architecture to the Problem (2026-08-11)
 - [[episodes/startup-for-startup--366-qa-for-agents]]: How Do You QA the Agents We Build? (2026-09-08)
 - [[episodes/startup-for-startup--369-ai-pricing]]: How Do You Price an AI Product? (2026-09-29)
+- [[episodes/startup-for-startup--370-agentos-month-to-day]]: #370 How We Cut Agent Building From a Month to a Day (2026-10-13)
 - [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)
 - [[episodes/startup-ideas--webmcp-clearly-explained]]: WebMCP Clearly Explained (2026-08-26)
 - [[episodes/startup-ideas--grok-bot-one-person-company]]: Grok Bot: One-Person Company with Agents (2026-08-21)

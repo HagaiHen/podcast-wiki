@@ -173,6 +173,9 @@
 
 - [ ] Before building, have the agent grill you with questions to sharpen the spec — [[concepts/coding-agent-workflow]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
 - [ ] Give coding agents current library docs (e.g. Context7 MCP) when a library changed after the model's cutoff — [[concepts/context-engineering]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
+- [ ] Move a business rule from the prompt into an enforced policy whose block message explains the reason, then delete it from the prompt — [[concepts/ai-guardrails]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
+- [ ] If business people queue agent tweaks through engineers, give them a declarative agent definition (prompt, skills, tools, policies) they can edit and ship themselves — [[concepts/harness-engineering]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
+- [ ] When a new tool makes you feel behind, spend an hour on a tiny POC to learn its core idea — [[concepts/ai-hype]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

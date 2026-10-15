@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 10
-updated: 2026-10-08
+sources: 11
+updated: 2026-10-15
 ---
 # LLM Cost Optimization
 
-**Summary:** Managing LLM spend has two halves: measuring it and reducing it. **Measuring (AI FinOps)** treats AI like any cloud cost. Provider bills lump calls together, so tag every call at a gateway or internal proxy, log the telemetry, and compute full unit economics per use case: tokens plus observability, subscriptions, databases and infrastructure. **Reducing** comes down to engineering habits. Put stable content first so prompt caching works (cached tokens cost roughly a tenth). Output costs more than input, so ask for short, structured answers. Plan with a strong model and execute with a cheap one, and trim whole traces, not single prompts. For coding agents, spend per developer is rising; the goal is value per dollar, not cutting to zero.
+**Summary:** Managing LLM spend has two halves: measuring it and reducing it. **Measuring (AI FinOps)** treats AI like any cloud cost. Provider bills lump calls together, so tag every call at a gateway or internal proxy, log the telemetry, and compute full unit economics per use case: tokens plus observability, subscriptions, databases and infrastructure. **Reducing** comes down to engineering habits. Put stable content first so prompt caching works (cached tokens cost roughly a tenth). Output costs more than input, so ask for short, structured answers. Plan with a strong model and execute with a cheap one (or route each step to the cheapest model that can do it), and trim whole traces, not single prompts. Cost tends to become the main problem once agents reach scale, when a dollar or two per run is multiplied by thousands of runs. For coding agents, spend per developer is rising; the goal is value per dollar, not cutting to zero.
 
 ## Key ideas
 
@@ -30,6 +30,7 @@ updated: 2026-10-08
 - Personalization context that rarely changes (who the user is, their boards) belongs in the stable prefix ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Output tokens cost more than input. Chatty, over-explaining answers cost you and the user, so constrain structure and length ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Plan vs execute: plan with Opus, execute with Sonnet, Haiku, or another model, in products as in your own dev workflow ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Cost arrives after scale: monday's sales-agent team first fought scale (hundreds of thousands of concurrent events), then cost, at ~$1.50 per agent run across thousands of leads. The infra group is building a model router that sends each step to Opus, Sonnet or Haiku as needed ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]]).
 - Prompt routing mid-session breaks the model's cache. A gateway-level cache can add consistency ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - For pure classification at scale, a dedicated classifier can be ~30–100× cheaper and far faster than a small LLM with thinking (see [[concepts/decision-classifiers]], [[episodes/langtalks--74-jev]]).
 - Optimize whole traces, not single prompts: fewer tool calls, and smaller tool responses that keep the needed context (strip headers, reformat JSON to YAML) ([[episodes/langtalks--67-finops-for-ai]]).

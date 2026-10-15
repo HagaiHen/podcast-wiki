@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-10-13
+sources: 4
+updated: 2026-10-15
 ---
 # AI Growth Marketing (agentic growth hacking)
 
-**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and modest-context SDRs; paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
+**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
 
 ## Key ideas
 - New marketing, not 10× old marketing: hunt "distribution loopholes" the way security people hunt vulnerabilities ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
@@ -29,6 +29,10 @@ updated: 2026-10-13
 - Customer language is copy: a complaint like "payroll takes my entire Friday" is a ready-made headline if your product solves it ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 - Localized onboarding: voice-cloning and dubbing tools (e.g. the local, open-source Voice Studio) can turn English tutorials into other languages, with a fluent speaker checking. Start with the three questions support hears most. Clone only voices you have permission to use and check the license ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 
+- monday's SDR agents: Amanda handles leads who asked to talk to sales, qualifies them and books a meeting with a human rep; Jax works new signups, helps them get value and spots commercial intent. Amanda gets a 35–45% meeting rate (about 2,500–2,700 meetings from ~7,000 leads a month), Jax hundreds of meetings, and sourced pipeline rose from $3–4M to $8.5M a month after the AgentOS platform ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]], [[people/raz-diskin]])
+- The unit of automation moves from segment or cohort to the individual: no two leads get the same treatment. Leads often ask whether they're talking to a human, and the agent has to say it's an AI ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]], [[people/moshe-krispin]])
+- In sales, where personal connection matters most, agents have an edge: they remember. Six months later an agent knows to phone Jacob at 9 a.m. instead of emailing him ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]])
+
 ## Disagreements & open questions
 - Host vs guest: the host keeps iterating copy with an AI collaborator; Haslavsky suspects copy barely matters to virality versus timing and early engagement ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
 
@@ -40,4 +44,4 @@ updated: 2026-10-13
 - [ ] Build one free calculator or tool for your audience; show the result before asking for an email ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
-[[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]]
+[[concepts/agent-memory]] · [[concepts/ai-guardrails]] · [[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]]

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-11
+sources: 8
+updated: 2026-10-15
 ---
 # AI Hype & Durable Value
 
-**Summary:** AI tooling churns weekly, and every week there's a "best model in the world". Chasing each one wastes time; most don't survive. Wait to see whether something lasts a month. And when building products: anything someone can recreate with a prompt in 10 minutes has no value.
+**Summary:** AI tooling churns weekly, and every week there's a "best model in the world". Chasing each one wastes time; most don't survive, so some practitioners wait a month before adopting anything. Others say the answer to feeling behind is a quick hands-on POC, since most tools share the same principles. And when building products: anything someone can recreate with a prompt in 10 minutes has no value.
 
 ## Key ideas
 - "If it survived the month, then talk about it": most tools don't survive (e.g. a once-viral open-source agent that vanished) ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -18,13 +18,16 @@ updated: 2026-10-11
 - Example of churn: a colleague told Levi to switch to Codex ("Claude Code is dead"), then back to Claude Code a week later. Tools like alphaXiv feel five years old a week after launch; you're expected to be a year-long expert in something released this week ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Gartner-style peak of inflated expectations: there may be a dip, but the long-tail compounding effect is large and shows up in unexpected places ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
 - Veteran's rule: wait about two weeks before chasing a new tool; if it's still exciting, try it. Remember the 80/20 gap between a hackathon POC and production. Like the client-side framework churn of the past, nobody gets fired for learning a trend a month later ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
+- It's harder to decide you *don't* need a new technology than to say "let's try it"; a team running production agents asks that question constantly ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]]).
+- "Don't be afraid": many engineers feel behind and freeze. Build a small POC to grasp the principle; most products are similar, so understanding one explains the next ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]]).
 
 ## Disagreements & open questions
-- Wait or try now? Sharon Dahan's rule is to talk about a tool only once it has survived a month, and an Osim Tochna guest waits about two weeks ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]], [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]); Roy Mann urges trying things hands-on because month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
+- Wait or try now? Sharon Dahan's rule is to talk about a tool only once it has survived a month, and an Osim Tochna guest waits about two weeks ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]], [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]); Roy Mann urges trying things hands-on because month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]), and Moshe Krispin says to build a quick POC rather than fear the churn ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]]).
 
 ## Takeaways
 - [ ] Wait a month before adopting a new AI tool or model ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 - [ ] Sanity-check product ideas: could a prompt recreate this in 10 minutes? ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
+- [ ] When a new tool makes you feel behind, spend an hour on a tiny POC to learn its core idea ([[episodes/startup-for-startup--370-agentos-month-to-day]])
 
 ## Related
 [[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/ai-moats]]
