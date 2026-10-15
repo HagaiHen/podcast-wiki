@@ -8,7 +8,8 @@ with sync_playwright() as p:
     pg.goto(page.as_uri()); pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready")
     w,h=pg.evaluate("[window.W||1920,window.H||1080]"); pg.set_viewport_size({"width":w,"height":h})  # the vertical demo is 1080x1920
     dur=pg.evaluate("DUR")
-    ff=subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","image2pipe","-framerate",str(FPS),"-i","-","-stream_loop","-1","-i",str(here/"soundtrack.mp3"),"-af",f"afade=t=out:st={dur-2:.2f}:d=2","-c:a","aac","-b:a","160k","-shortest","-c:v","libx264","-pix_fmt","yuv420p","-crf","18","-movflags","+faststart",out],stdin=subprocess.PIPE)
+    audio=[] if pg.evaluate("!!window.SILENT") else ["-stream_loop","-1","-i",str(here/"soundtrack.mp3"),"-af",f"afade=t=out:st={dur-2:.2f}:d=2","-c:a","aac","-b:a","160k","-shortest"]  # launch.html is silent
+    ff=subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","image2pipe","-framerate",str(FPS),"-i","-",*audio,"-c:v","libx264","-pix_fmt","yuv420p","-crf","18","-movflags","+faststart",out],stdin=subprocess.PIPE)
     for i in range(int(dur*FPS)):
         pg.evaluate(f"seek({i/FPS})"); ff.stdin.write(pg.screenshot(type="png"))
         if i%150==0: print(f"{i/FPS:.0f}s/{dur}s",flush=True)

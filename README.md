@@ -6,9 +6,9 @@ You stop remembering *an episode* and start knowing *a topic*. A Karpathy-style 
 
 **[Browse the live wiki →](https://hagaihen.github.io/podcast-wiki/)** · [Try the demo](#install) · [How it works](#how-it-works)
 
-[![Podcast Wiki promo, 30s](promo/preview.gif)](https://github.com/HagaiHen/podcast-wiki/releases/download/v0.1.0/podcast-wiki-promo.mp4)
+[![Podcast Wiki launch film, 62s](promo/preview.gif)](https://github.com/HagaiHen/podcast-wiki/releases/download/v0.1.2/podcast-wiki-launch.mp4)
 
-*Click for the full video with sound.*
+*Click for the full 62s video.*
 
 ## Install
 
