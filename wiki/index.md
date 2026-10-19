@@ -15,6 +15,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/fomo]]: others' gains push you into risk
 - [[concepts/market-bubbles]]: tech-wave bubbles (dot-com, AI); welcome the burst
 - [[concepts/cape-ratio]]: Shiller P/E; high means lower expected returns
+- [[concepts/market-breadth]]: index near highs while most stocks fall
+- [[concepts/equity-risk-premium]]: earnings yield vs bond yields
 - [[concepts/market-timing]]: why selling before crashes usually fails
 
 ## AI Engineering — [[hubs/ai-engineering]]
@@ -225,3 +227,4 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/lazy-investing--111-the-ai-bubble]]: #111 The AI Bubble (2026-10-11)
 - [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]: #185 Let's Talk About Our Tools (2026-10-10)
 - [[episodes/micha-stocks--naftali-bennett-economic-interview]]: Naftali Bennett Economic Interview (2026-10-11)
+- [[episodes/micha-stocks--index-bull-portfolio-bear]]: The Index Says Bull, Your Portfolio Says Bear (2026-10-18)

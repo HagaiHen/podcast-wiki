@@ -10,6 +10,11 @@
 - [ ] Get AI exposure through broad indexes, not AI-themed or leveraged AI ETFs — [[concepts/market-bubbles]] · [[episodes/lazy-investing--111-the-ai-bubble]]
 - [ ] Don't sell or delay investing over bubble talk; decide by horizon and volatility tolerance — [[concepts/market-timing]] · [[episodes/lazy-investing--111-the-ai-bubble]]
 - [ ] Compare 5.6% vs 11% over 30 years in a compound-interest calculator — [[concepts/compound-interest]] · [[episodes/lazy-investing--111-the-ai-bubble]]
+- [ ] Track RSP vs the S&P 500 to see if a rally is broad or carried by a few stocks — [[concepts/market-breadth]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
+- [ ] In a range-bound, narrow market, trade less, not more — [[concepts/market-breadth]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
+- [ ] Watch whether the ten biggest S&P 500 companies start to weaken — [[concepts/concentration-risk]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
+- [ ] Don't buy stocks just because they fell; beaten-down names often keep lagging — [[concepts/index-investing]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
+- [ ] Compare the index earnings yield (1/PE) with the 10-year Treasury yield before calling stocks cheap or expensive — [[concepts/equity-risk-premium]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 

@@ -355,3 +355,8 @@ updated: concepts/{ai-growth-marketing, solo-builders, skill-engineering, multi-
 source: whisper
 created: episodes/startup-for-startup--370-agentos-month-to-day, people/{raz-diskin, moshe-krispin}
 updated: concepts/{ai-guardrails, harness-engineering, ai-growth-marketing, agent-memory, llm-cost-optimization, ai-hype}, shows/startup-for-startup, index, takeaways/{to-try, recommendations}
+
+## 2026-10-19 — Micha Stocks: The Index Says Bull Market, Your Portfolio Says Bear. Who's Right?
+source: whisper
+created: episodes/micha-stocks--index-bull-portfolio-bear, concepts/{market-breadth, equity-risk-premium}
+updated: concepts/{concentration-risk, index-investing, market-bubbles, cape-ratio}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
