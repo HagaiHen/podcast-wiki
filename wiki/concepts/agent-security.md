@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
-updated: 2026-10-07
+sources: 9
+updated: 2026-10-20
 ---
 # Agent Security
 
-**Summary:** Assume your agent will be turned against you. Anything it reads (an email, a PR, a website, a calendar invite) can carry a prompt injection, and with several users or agents on one machine, users can't be trusted either. Secure designs don't rely on the agent behaving: isolate it at the OS level, keep credentials out of its environment, hard-wire what it can reach, and execute sensitive actions outside its sandbox under policy and human approval. Small, auditable codebases beat trust in the author. In enterprises the risk compounds: workspace assistants turn latent over-permissioning into one-question leaks, employee-built agents get shared too widely, and intent depends on who asks and when. Map each agent against the "lethal trifecta" (untrusted input, sensitive data, ability to act), keep an inventory, and detect out-of-scope actions.
+**Summary:** Assume your agent will be turned against you. Anything it reads (an email, a PR, a website, a calendar invite) can carry a prompt injection, and with several users or agents on one machine, users can't be trusted either. Secure designs don't rely on the agent behaving: isolate it at the OS level, keep credentials out of its environment, hard-wire what it can reach, and execute sensitive actions outside its sandbox under policy and human approval. Small, auditable codebases beat trust in the author. In enterprises the risk compounds: workspace assistants turn latent over-permissioning into one-question leaks, employee-built agents get shared too widely, and intent depends on who asks and when. Map each agent against the "lethal trifecta" (untrusted input, sensitive data, ability to act), keep an inventory, and detect out-of-scope actions. For consumer agents, the risks are the vendor's data retention and the agent's spending, so contain the blast radius with limited payment cards.
 
 ## Key ideas
 - Threat model: once connected to email, anyone who mails you can prompt-inject it. The agent lives in "red" territory, working for you but in a hostile environment ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
@@ -33,9 +33,14 @@ updated: 2026-10-07
 - Security through auditability: keep the codebase small (about 20 files, readable in an hour with Claude's help) so users needn't trust the author; capabilities are hard-wired (an agent physically can't message an unconnected group) rather than instructed ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 - Principle: isolate the agent, let it act freely inside its environment, and enforce the perimeter, rather than trying to vet every tool call ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 
+- Consumer agents may keep your data: Instinct AI users reported getting an email summary an hour after disconnecting Google, implying it had indexed and retained their emails, and its terms allow retaining private data ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Spending blast radius: before giving an agent a card, create a separate virtual card (e.g. Wise) with a daily limit (~$500), so a runaway agent's worst case is bounded ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+
 ## Disagreements & open questions
 
 ## Takeaways
+- [ ] Give agents a dedicated virtual card with a daily spending limit, never your main card ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]])
+- [ ] Before connecting email to a consumer agent, read its data-retention terms ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]])
 - [ ] Run each agent in its own container with only mounted directories persistent ([[episodes/langtalks--71-claw-architectures]])
 - [ ] Keep API keys out of agent environments; inject them via an outbound proxy per host ([[episodes/langtalks--71-claw-architectures]])
 - [ ] Require human approval for outbound actions (sending email, messages) at the network layer, not by prompt ([[episodes/langtalks--71-claw-architectures]])

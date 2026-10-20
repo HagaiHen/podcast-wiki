@@ -360,3 +360,8 @@ updated: concepts/{ai-guardrails, harness-engineering, ai-growth-marketing, agen
 source: whisper
 created: episodes/micha-stocks--index-bull-portfolio-bear, concepts/{market-breadth, equity-risk-premium}
 updated: concepts/{concentration-risk, index-investing, market-bubbles, cape-ratio}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-10-20 — The Startup Ideas Podcast: Instinct AI: The AI Assistant for normal people
+source: transcript
+created: episodes/startup-ideas--instinct-ai-assistant-for-normal-people, people/remy
+updated: concepts/{personal-ai-assistants, proactive-ai, agent-security, ai-moats, ai-growth-marketing}, people/greg-isenberg, shows/the-startup-ideas-podcast, index, takeaways/{to-try, recommendations}

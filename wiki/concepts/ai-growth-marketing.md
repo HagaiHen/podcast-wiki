@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-15
+sources: 5
+updated: 2026-10-20
 ---
 # AI Growth Marketing (agentic growth hacking)
 
-**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
+**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Scarcity still works: Instinct AI's invite-only rollout cut through the flood of "introducing X agent" launches. Paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
 
 ## Key ideas
 - New marketing, not 10× old marketing: hunt "distribution loopholes" the way security people hunt vulnerabilities ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
@@ -32,6 +32,8 @@ updated: 2026-10-15
 - monday's SDR agents: Amanda handles leads who asked to talk to sales, qualifies them and books a meeting with a human rep; Jax works new signups, helps them get value and spots commercial intent. Amanda gets a 35–45% meeting rate (about 2,500–2,700 meetings from ~7,000 leads a month), Jax hundreds of meetings, and sourced pipeline rose from $3–4M to $8.5M a month after the AgentOS platform ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]], [[people/raz-diskin]])
 - The unit of automation moves from segment or cohort to the individual: no two leads get the same treatment. Leads often ask whether they're talking to a human, and the agent has to say it's an AI ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]], [[people/moshe-krispin]])
 - In sales, where personal connection matters most, agents have an edge: they remember. Six months later an agent knows to phone Jacob at 9 a.m. instead of emailing him ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]])
+
+- Invite-only launch: amid endless agent launches, Remy says he wouldn't have signed up if Instinct AI were open; being locked out made an invite feel special. The stated reason is compute, but it doubles as marketing, like Clubhouse in 2020. Features also roll out gradually to subsets of users ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Host vs guest: the host keeps iterating copy with an AI collaborator; Haslavsky suspects copy barely matters to virality versus timing and early engagement ([[episodes/ignore-instructions--28-ai-marketing-enso]]).

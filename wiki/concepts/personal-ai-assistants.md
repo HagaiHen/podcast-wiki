@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-12
+sources: 8
+updated: 2026-10-20
 ---
 # Personal AI Assistants ("claws")
 
-**Summary:** Personal assistants such as OpenClaw sit a level above coding harnesses: an orchestrator, often for non-developers, that automates daily operational work (calendar, meetings, email, tasks) through conversation rather than code. Their power comes from closed loops: access to your data and tools, cron jobs, skills as playbooks, and learning from your corrections. They need real setup, and they create identity and noise problems inside teams. The idea is spreading beyond work: one politician proposes a government-provided agent per citizen, wired to state services by API.
+**Summary:** Personal assistants such as OpenClaw sit a level above coding harnesses: an orchestrator, often for non-developers, that automates daily operational work (calendar, meetings, email, tasks) through conversation rather than code. Their power comes from closed loops: access to your data and tools, cron jobs, skills as playbooks, and learning from your corrections. Power-user claws (OpenClaw, Hermes) need real setup and drift further from normal people with every feature; consumer products like Instinct AI package the same idea as a phone-number login in iMessage or WhatsApp, with a vault for cards and logins, its own email inbox, and fast hidden computer use. Many small errands (haircuts, restaurant tables, a visa) add up to hours a week. They create identity and noise problems inside teams. The idea is spreading beyond work: one politician proposes a government-provided agent per citizen, wired to state services by API.
 
 ## Key ideas
 - Mental model: never do an operational task twice. Teach it once in conversation, like training a digital employee ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -27,12 +27,21 @@ updated: 2026-10-12
 - Why claws work: coding agent + persistent environment (files, scripts, installed packages survive) + messaging app + internet. From that, memory, self-built tools, scheduled jobs, and initiative emerge, e.g. an agent that set itself a daily cron job to check stroller prices and message when they drop ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 - Within a day of joining a two-founder WhatsApp group, an agent was running the sales pipeline: morning summaries, task assignments, and follow-up reminders from forwarded emails ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
 - Next step: from one assistant per employee to teams managing dozens or hundreds of agents (CI/CD, error triage, leads) ([[episodes/hidden-layers--nanoclaw-gavriel-cohen]], [[people/gavriel-cohen]]).
+- Instinct AI is "OpenClaw or Hermes for regular people": every feature added for power users moves those tools further from normal users. Setting up Hermes for a parent meant a VPS, Docker, Composio for tool connections, and a gateway that crashes and needs updates ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Instinct's setup: sign in with a phone number and you're in iMessage; a small workspace lists contact channels (iMessage, WhatsApp), connectors (email, Slack, Granola, Link for payments), a vault (site logins, cards, addresses), and data controls. Most people need little more than email and a payment method ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Each Instinct gets its own email address, so it handles bookings without cluttering your inbox, and you can CC it into a thread to finish a task ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Real errands: when booking needed a Danish phone number, it emailed the salon instead and reported back hours later; it booked a restaurant (asking for a card for the no-show hold), signed up for an airline loyalty program, and filled a Bali visa-on-arrival from a passport photo, listing countries visited in the last three months from emails and Airbnb receipts ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Memory carries across tasks: an oversize monitor mentioned in an earlier chat showed up in the visa form's luggage field ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Computer use is fast and invisible, unlike slow GrokBot computer use. The split: GrokBot, Codex, and Claude Code for work; Instinct for personal admin ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- No single task is life-changing (10–15 minutes each), but together they save hours a week of hated chores, freeing attention for high-leverage work ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]], [[people/greg-isenberg]]).
 - Government version: every citizen gets a personal AI agent with APIs to all government services ("check if I owe tax", "check I'm not overpaying municipal tax"), replacing bureaucracy runs; a campaign proposal ([[episodes/micha-stocks--naftali-bennett-economic-interview]], [[people/naftali-bennett]]).
 
 ## Disagreements & open questions
+- Trust a startup with all your personal data? Isenberg would rather the assistant come from Apple, but Apple isn't there yet and the time saved wins for now ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]]).
 - Would you trust a skill-level change for something critical? Skill changes rarely "break compilation" but are harder to evaluate ([[episodes/langtalks--72-personal-assistant-agent]]).
 
 ## Takeaways
+- [ ] Give a non-technical family member a consumer agent (e.g. Instinct) for errands instead of self-hosting a claw for them ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]])
 - [ ] Have your assistant learn nightly from your corrections (tags, edited drafts) instead of re-explaining ([[episodes/langtalks--72-personal-assistant-agent]])
 - [ ] Give agents their own identities in shared tools so their output is distinguishable ([[episodes/langtalks--72-personal-assistant-agent]])
 - [ ] Route user complaints about an internal agent into structured issues that an agent can triage and fix ([[episodes/langtalks--72-personal-assistant-agent]])

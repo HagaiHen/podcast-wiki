@@ -9,6 +9,7 @@
 - GrokBot (agent teams), Beehiiv, Astro + Cloudflare + Porkbun site stack, Import Yeti — [[episodes/startup-ideas--grok-bot-one-person-company]]
 - Brag (launch-video skill), Agent Reach (social-web research), Voice Studio (local voice cloning/dubbing), PPT Master (docs → editable decks), OpenRig (agent teams for Claude Code/Codex) — [[episodes/startup-ideas--8-github-repos-viral-money]]
 - Skills: Free Tools (Corey Haynes' marketing collection), Grill Me (Matt Pocock), Impeccable (Paul Bakaus; design guidance for coding agents) — [[episodes/startup-ideas--8-github-repos-viral-money]]
+- Instinct AI (invite-only personal agent in iMessage/WhatsApp), Wise virtual cards with daily limits (for agent spending) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]
 - ideabrowser.com: Greg Isenberg's free idea-of-the-day and validation site — [[episodes/startup-ideas--8-github-repos-viral-money]]
 - Hebatron: open Hebrew LLM (Nemotron-based) — [[episodes/explainable--157-training-hebatron]]
 - Manus blog post "Context Engineering for AI Agents: Lessons from Building Manus" and LangChain's "Context Engineering for Agents" — [[episodes/langtalks--55-context-engineering]]
@@ -30,6 +31,7 @@
 - Ollama, then vLLM: run models locally, then learn real serving (continuous batching) — [[concepts/llm-inference]] · [[episodes/osim-tochna--running-llms-at-scale]]
 
 ## People
+- AI with Remy (agent-product walkthroughs) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]
 - Build Ship Grow and Squid Club: Israeli AI-builder communities — [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [[people/andrej-karpathy]]: his LLM Wiki post is the basis of this pattern — [[concepts/llm-wiki]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]
 - [[people/mike-erlihson]]: Hebrew deep-learning paper reviews (Telegram/LinkedIn) — [[episodes/osim-tochna--running-llms-at-scale]]

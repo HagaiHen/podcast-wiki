@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-07
+sources: 5
+updated: 2026-10-20
 ---
 # AI Moats (beyond the model)
 
-**Summary:** A technical edge in AI is a "business card", not a moat: once users touch it, competitors have about six months to catch up, in the good case. Selling tokens with public benchmarks invites endless one-upping and one-click switching (OpenRouter is the worst case). The durable path is a "good enough" product whose value lives beyond the specific model, like Spotify knowing your music, or a car that fits your family rather than one with the highest top speed. The frontier labs are in a money-losing arms race whose trillion-dollar IPOs strain growth math.
+**Summary:** A technical edge in AI is a "business card", not a moat: once users touch it, competitors have about six months to catch up, in the good case. Selling tokens with public benchmarks invites endless one-upping and one-click switching (OpenRouter is the worst case). The durable path is a "good enough" product whose value lives beyond the specific model, like Spotify knowing your music, or a car that fits your family rather than one with the highest top speed. Agents add a new kind of network effect: letting your agent coordinate with the agents of people you trust, as in Instinct AI's trusted-person network. The frontier labs are in a money-losing arms race whose trillion-dollar IPOs strain growth math.
 
 ## Key ideas
 - "Good enough" wins: nobody switches between Waze and Google Maps for five seconds, or buys a car for its 240 km/h top speed ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -21,7 +21,10 @@ updated: 2026-10-07
 - Frontier LLMs have "zero distribution moat": no migration cost and precise benchmarks mean users switch weekly, so labs fight brutally; even toilet paper has more stickiness. Technology that learns its user continually is sticky by design ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
 - Frontier models commoditize their users: everyone using the same model gets the same results as their competitors. Differentiation needs access to the model's guts (inject your data, fine-tune) ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 
+- Network effects for the agentic era: Instinct AI's trusted-person network lets users allow-list other people's agents so agents talk to each other; capturing the market early could become the moat many people ask about. Open question: will it interoperate with other agents or stay closed ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]], [[people/remy]])?
+
 ## Disagreements & open questions
+- Is Instinct AI (rumored to be raising at a $10B valuation) a Clubhouse moment? Clubhouse raised at about $4B on invite-only hype and never lived up to it ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]]).
 - Will one frontier lab collapse? The host expects one to; Levi doubts the causality but agrees the market is moving in an unhealthy direction ([[episodes/explainable--164-gilad-levi-continual-learning]]).
 
 ## Takeaways
