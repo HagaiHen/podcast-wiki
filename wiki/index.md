@@ -46,6 +46,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/enterprise-ai-adoption]]: selling applied AI to enterprises; FDEs; AI OS
 - [[concepts/ai-growth-marketing]]: agentic growth hacking, autonomous outreach, personalization
 - [[concepts/agent-ready-products]]: selling to agents: skills, MCP, marketplaces, CLI auth
+- [[concepts/llm-advertising]]: paid ads in ChatGPT: intent campaigns, OCPC, measurement gaps
 - [[concepts/agent-security]]: assume the agent is compromised; isolate, proxy credentials, approve
 - [[concepts/workflow-automation]]: no-code automation + agents (n8n)
 - [[concepts/personal-ai-assistants]]: OpenClaw-style assistants automating daily work
@@ -160,6 +161,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/raz-diskin]]: GTM engineer, monday.com RevAI
 - [[people/moshe-krispin]]: tech lead, monday.com RevAI (AgentOS)
 - [[people/remy]]: AI with Remy, agent-product reviewer
+- [[people/yoav-rubin]]: growth marketing, monday.com (ChatGPT ads)
+- [[people/tamar-hazoli]]: senior growth marketing, monday.com (ChatGPT ads)
 
 ## Episodes
 - [[episodes/startup-ideas--8-github-repos-viral-money]]: 8 GitHub Repos To Go Viral and Make Money (2026-10-08)
@@ -187,6 +190,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/startup-for-startup--366-qa-for-agents]]: How Do You QA the Agents We Build? (2026-09-08)
 - [[episodes/startup-for-startup--369-ai-pricing]]: How Do You Price an AI Product? (2026-09-29)
 - [[episodes/startup-for-startup--370-agentos-month-to-day]]: #370 How We Cut Agent Building From a Month to a Day (2026-10-13)
+- [[episodes/startup-for-startup--371-chatgpt-ads]]: #371 Advertising in ChatGPT: A Channel With No Playbook (2026-10-20)
 - [[episodes/startup-ideas--jev-is-here]]: Jev Is Here (2026-09-18)
 - [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]: Instinct AI: The AI Assistant for Normal People (2026-09-15)
 - [[episodes/startup-ideas--webmcp-clearly-explained]]: WebMCP Clearly Explained (2026-08-26)

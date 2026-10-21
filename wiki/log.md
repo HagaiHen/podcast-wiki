@@ -365,3 +365,8 @@ updated: concepts/{concentration-risk, index-investing, market-bubbles, cape-rat
 source: transcript
 created: episodes/startup-ideas--instinct-ai-assistant-for-normal-people, people/remy
 updated: concepts/{personal-ai-assistants, proactive-ai, agent-security, ai-moats, ai-growth-marketing}, people/greg-isenberg, shows/the-startup-ideas-podcast, index, takeaways/{to-try, recommendations}
+
+## 2026-10-21 — Startup for Startup: 371: Advertising in ChatGPT — Building a Marketing Channel With No Playbook
+source: whisper
+created: episodes/startup-for-startup--371-chatgpt-ads, concepts/llm-advertising, people/{yoav-rubin, tamar-hazoli}
+updated: concepts/{ai-growth-marketing, agent-ready-products}, shows/startup-for-startup, hubs/ai-engineering, index, takeaways/to-try

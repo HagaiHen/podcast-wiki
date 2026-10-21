@@ -37,6 +37,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/ai-pricing]]: credits, buckets, and pools for pricing AI products
 - [[concepts/ai-sdlc]]: AI across the software lifecycle
 - [[concepts/agent-ready-products]]: make products discoverable and usable by agents
+- [[concepts/llm-advertising]]: paid advertising inside ChatGPT and other AI assistants
 - [[concepts/coding-agent-workflow]]: day-to-day coding-agent practices
 - [[concepts/agent-security]]: secure agents against prompt injection and misuse
 - [[concepts/personal-ai-assistants]]: assistants for operational work

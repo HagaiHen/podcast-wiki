@@ -184,6 +184,10 @@
 - [ ] Move a business rule from the prompt into an enforced policy whose block message explains the reason, then delete it from the prompt — [[concepts/ai-guardrails]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
 - [ ] If business people queue agent tweaks through engineers, give them a declarative agent definition (prompt, skills, tools, policies) they can edit and ship themselves — [[concepts/harness-engineering]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
 - [ ] When a new tool makes you feel behind, spend an hour on a tiny POC to learn its core idea — [[concepts/ai-hype]] · [[episodes/startup-for-startup--370-agentos-month-to-day]]
+- [ ] Before advertising in ChatGPT, list what your users do in chat (searches, work tasks, advice) and build one campaign per intent — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
+- [ ] Send conversion events to OpenAI and bid with OCPC rather than CPC/CPM — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
+- [ ] Write many chat-specific ads that lead with an action verb; don't copy your Google ads — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
+- [ ] Measure view-through and cross-channel lift (e.g. a geo test), not just last click — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

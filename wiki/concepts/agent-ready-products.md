@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-10-07
+sources: 4
+updated: 2026-10-21
 ---
 # Agent-Ready Products (marketing to agents)
 
-**Summary:** Agents are becoming customers: they research, choose, and integrate tools on users' behalf, and consumers increasingly decide inside ChatGPT. Products that expose themselves to agents (skills or CLI for personal agents, MCP for remote ones) and get listed where agents look capture demand that most SaaS still ignores. Postiz jumped from $21k to $103k MRR in two months this way. Developers and early adopters here pay fast for things that solve problems.
+**Summary:** Agents are becoming customers: they research, choose, and integrate tools on users' behalf, and consumers increasingly decide inside ChatGPT. Products that expose themselves to agents (skills or CLI for personal agents, MCP for remote ones) and get listed where agents look capture demand that most SaaS still ignores. Postiz jumped from $21k to $103k MRR in two months this way. Developers and early adopters here pay fast for things that solve problems. Paid placement is following: ChatGPT is piloting sponsored agents, company agents that answer a prospect's questions inside the chat in place of a landing page.
 
 ## Key ideas
 - Two surfaces: a *skill* (just an MD file, e.g. built from your public API docs, the most popular endpoints first) for personal agents like OpenClaw and Claude Code; an *MCP server* for remote agents like ChatGPT and Claude ([[episodes/langtalks--69-marketing-for-agents]], [[people/nevo-david]]).
@@ -24,6 +24,7 @@ updated: 2026-10-07
 - Users want their one agent, carrying their context, to use your product, rather than your in-app agent (whose tokens you pay for) ([[episodes/startup-ideas--webmcp-clearly-explained]]).
 - SEO (can Google understand it?) → AEO (can AI cite it?) → agent readiness (can the agent finish the job?) ([[episodes/startup-ideas--webmcp-clearly-explained]], [[people/greg-isenberg]]).
 - Best early fits: compatibility-heavy commerce (espresso gear, camera systems, car parts), SaaS admin consoles, read-only self-service in banking and insurance, and internal tools ([[episodes/startup-ideas--webmcp-clearly-explained]]).
+- Sponsored agents (ChatGPT alpha): an ad's call to action opens the advertiser's agent in the chat, briefed on product, pros and cons and pricing, so the prospect can ask questions and even convert without leaving. Unlike regular ads, the advertiser sees what the user asked ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/tamar-hazoli]], [[people/yoav-rubin]]).
 
 ## Disagreements & open questions
 
@@ -34,4 +35,4 @@ updated: 2026-10-07
 - [ ] Pick your product's top 3 user journeys and test whether an agent can complete them end to end ([[episodes/startup-ideas--webmcp-clearly-explained]])
 
 ## Related
-[[concepts/skill-engineering]] · [[concepts/agent-security]] · [[concepts/agent-workspaces]] · [[concepts/ai-growth-marketing]]
+[[concepts/skill-engineering]] · [[concepts/agent-security]] · [[concepts/agent-workspaces]] · [[concepts/ai-growth-marketing]] · [[concepts/llm-advertising]]

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-20
+sources: 6
+updated: 2026-10-21
 ---
 # AI Growth Marketing (agentic growth hacking)
 
-**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Scarcity still works: Instinct AI's invite-only rollout cut through the flood of "introducing X agent" launches. Paid ads and huge-context enterprise outreach don't work yet. Many tactics lean on platform gray areas.
+**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Scarcity still works: Instinct AI's invite-only rollout cut through the flood of "introducing X agent" launches. Agent-run paid ads and huge-context enterprise outreach don't work yet, though AI chat itself is becoming a new paid channel: ChatGPT ads, with no playbook yet, are cheap and reward many varied, intent-specific ads (see [[concepts/llm-advertising]]). Many tactics lean on platform gray areas.
 
 ## Key ideas
 - New marketing, not 10× old marketing: hunt "distribution loopholes" the way security people hunt vulnerabilities ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
@@ -35,8 +35,11 @@ updated: 2026-10-20
 
 - Invite-only launch: amid endless agent launches, Remy says he wouldn't have signed up if Instinct AI were open; being locked out made an invite feel special. The stated reason is compute, but it doubles as marketing, like Clubhouse in 2020. Features also roll out gradually to subsets of users ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]], [[people/greg-isenberg]]).
 
+- AI itself is now an ad channel. monday splits ChatGPT campaigns by user intent and runs ~100 ad variants per group, which AI makes cheap to produce, against Google's three; see [[concepts/llm-advertising]] ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/yoav-rubin]], [[people/tamar-hazoli]]).
+
 ## Disagreements & open questions
 - Host vs guest: the host keeps iterating copy with an AI collaborator; Haslavsky suspects copy barely matters to virality versus timing and early engagement ([[episodes/ignore-instructions--28-ai-marketing-enso]]).
+- Paid ads: Haslavsky says agent-driven paid ads don't work yet (video quality, iteration cost, platform reluctance). monday's growth team reports that ChatGPT ads with OCPC bidding work, and are its best channel on some metrics, though lead quality is still unclear. The claims differ in scope: agents running ads versus ads inside an AI ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[episodes/startup-for-startup--371-chatgpt-ads]]).
 
 ## Takeaways
 - [ ] Give an autonomous agent an outcome (e.g. reach a person, find converting copy) plus tools, and ask it to report what it learned ([[episodes/ignore-instructions--28-ai-marketing-enso]])
@@ -46,4 +49,4 @@ updated: 2026-10-20
 - [ ] Build one free calculator or tool for your audience; show the result before asking for an email ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
-[[concepts/agent-memory]] · [[concepts/ai-guardrails]] · [[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]]
+[[concepts/agent-memory]] · [[concepts/ai-guardrails]] · [[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]] · [[concepts/llm-advertising]]
