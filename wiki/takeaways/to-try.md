@@ -15,9 +15,17 @@
 - [ ] Watch whether the ten biggest S&P 500 companies start to weaken — [[concepts/concentration-risk]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
 - [ ] Don't buy stocks just because they fell; beaten-down names often keep lagging — [[concepts/index-investing]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
 - [ ] Compare the index earnings yield (1/PE) with the 10-year Treasury yield before calling stocks cheap or expensive — [[concepts/equity-risk-premium]] · [[episodes/micha-stocks--index-bull-portfolio-bear]]
+- [ ] Don't treat a calendar statistic (e.g. "Uptober") as a buy signal by itself — [[concepts/seasonality]] · [[episodes/micha-stocks--bitcoin-uptober]]
+- [ ] Treat crypto as a high-volatility asset for experts; size it so a 70–80% drawdown is survivable — [[concepts/bitcoin]] · [[episodes/micha-stocks--yaron-zelicha-economic-interview]]
+- [ ] Before entering a trade, write down both the confirming price and the price that proves you wrong — [[concepts/technical-analysis]] · [[episodes/micha-stocks--bitcoin-uptober]]
+- [ ] Judge a report by EPS, revenue, guidance, margins and call tone, then wait for the market's reaction — [[concepts/earnings-season]] · [[episodes/micha-stocks--earnings-week-meta-tesla-netflix]]
+- [ ] Each earnings week, load one or two companies' transcript, slides and release into NotebookLM for a summary deck — [[concepts/earnings-season]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
+- [ ] Ignore "bloody Monday" crash posts; circuit breakers halt index trading at −7%/−13% and close it at −20% — [[concepts/circuit-breakers]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
+- [ ] Keep your platform on your main cloud and send GPU workloads to a GPU cloud in the same region — [[concepts/neoclouds]] · [[episodes/tsarot-baheitek--88-neoclouds-nebius]]
+- [ ] Israeli startup or researcher? Apply for Innovation Authority subsidized GPU capacity (30% off industry, 80% academia) — [[concepts/neoclouds]] · [[episodes/tsarot-baheitek--88-neoclouds-nebius]]
 - [ ] Never let the agent install external skills; have it rewrite them in its own words — [[concepts/ai-guardrails]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]
 - [ ] Enforce critical rules with hooks/checks, not instructions alone — [[concepts/ai-guardrails]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]
 - [ ] Debrief every unexpected agent behavior and add a preventing mechanism — [[concepts/ai-guardrails]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]]

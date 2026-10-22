@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-08
+sources: 3
+updated: 2026-10-22
 ---
 # Enterprise AI Adoption (selling applied AI to enterprises)
 
-**Summary:** AI changes the economics of enterprise software: by doing tasks humans did rather than helping them work, it can deliver ~10× SaaS value and justify contracts of millions per year. That makes playbooks newly viable: a top-down enterprise motion in small non-US markets, country by country, exploiting the adoption lag outside the US. Forward-deployed engineers install and productize, and the ambition is to become an enterprise's single, horizontal AI partner, an "AI operating system", instead of one point solution among many. Usage-based AI spend clashes with how enterprises budget, so pricing that gives every employee room to try AI (per-user credit buckets) supports the AI transformation customers are buying.
+**Summary:** AI changes the economics of enterprise software: by doing tasks humans did rather than helping them work, it can deliver ~10× SaaS value and justify contracts of millions per year. That makes playbooks newly viable: a top-down enterprise motion in small non-US markets, country by country, exploiting the adoption lag outside the US. Forward-deployed engineers install and productize, and the ambition is to become an enterprise's single, horizontal AI partner, an "AI operating system", instead of one point solution among many. The scarce skill is AI transformation: understanding a business's processes and rebuilding them as controlled agentic pipelines, which isn't the same skill set that drove the cloud-era digital transformation. Usage-based AI spend clashes with how enterprises budget, so pricing that gives every employee room to try AI (per-user credit buckets) supports the AI transformation customers are buying.
 
 ## Key ideas
 - Value thesis: SaaS makes people more efficient; AI performs tasks done millions of times by thousands of people, so contract values reach millions ([[episodes/ignore-instructions--24-wonderful-road-to-100m]], [[people/roy-lazar]]).
@@ -22,6 +22,7 @@ updated: 2026-10-08
 - Enterprises plan budgets in advance and struggle with usage-based AI spend. Today they have experimentation budgets; long term they'll have to plan usage (presentations, images, videos) or buy all-in solutions at a premium until they learn the real cost ([[episodes/startup-for-startup--369-ai-pricing]], [[people/roy-mann]])
 - Pricing for AI transformation: per-user credit buckets let every employee try AI without one power user exhausting the org's credits, and whoever builds a production agent moves to an uncapped pool ([[episodes/startup-for-startup--369-ai-pricing]], [[people/roy-mann]])
 
+- AI transformation capability is in high demand and differs from digital transformation (on-prem → cloud): it takes a business and a technical mindset to map processes into agentic pipelines with harnesses, connect company systems, and keep control so agents don't go off and do damage ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 ## Disagreements & open questions
 - Horizontal AI partner vs vertical point solutions: Wonderful argues buying separate AI for support, back office, and HR is a mistake; vertical vendors (e.g. support-only agent companies) compete on one slice ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]).
 

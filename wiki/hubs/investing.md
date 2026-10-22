@@ -3,7 +3,7 @@ type: hub
 ---
 # Investing
 
-Personal investing: how to build wealth slowly with broad index funds, and the traps (leverage, concentration, social-media FOMO) that wipe people out. Also how to think about bubbles and expensive markets without trying to time them, and how to read what an index hides: narrow breadth and the pull of bond yields.
+Personal investing: how to build wealth slowly with broad index funds, and the traps (leverage, concentration, social-media FOMO) that wipe people out. Also how to think about bubbles and expensive markets without trying to time them, how to read what an index hides (narrow breadth, the pull of bond yields), and the trader's toolkit: earnings reports, charts, calendar statistics, crypto, and the circuit breakers that stop one-day index crashes.
 
 ## Concepts
 - [[concepts/index-investing]]: buy-and-hold broad indexes; learn the basics first
@@ -17,3 +17,8 @@ Personal investing: how to build wealth slowly with broad index funds, and the t
 - [[concepts/market-breadth]]: index near highs while most stocks are in a bear market; equal-weight vs cap-weight
 - [[concepts/equity-risk-premium]]: earnings yield (1/PE) vs bond yields; why high rates cap stocks
 - [[concepts/market-timing]]: selling or waiting for a crash usually costs more than it saves
+- [[concepts/earnings-season]]: EPS vs revenue vs guidance, expected moves; learn companies with NotebookLM
+- [[concepts/technical-analysis]]: moving averages, support/resistance, ambiguous patterns
+- [[concepts/seasonality]]: calendar stats like "Uptober" aren't causal
+- [[concepts/bitcoin]]: extreme volatility; why it won't replace sovereign money
+- [[concepts/circuit-breakers]]: halts at −7%/−13%/−20% make a 1987-style index day impossible

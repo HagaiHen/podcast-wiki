@@ -370,3 +370,28 @@ updated: concepts/{personal-ai-assistants, proactive-ai, agent-security, ai-moat
 source: whisper
 created: episodes/startup-for-startup--371-chatgpt-ads, concepts/llm-advertising, people/{yoav-rubin, tamar-hazoli}
 updated: concepts/{ai-growth-marketing, agent-ready-products}, shows/startup-for-startup, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-10-22 — Troubles in High-Tech: #88 Neoclouds, GPU Data Centers, and a Thousand GPUs From the State, With Ido From Nebius
+source: whisper
+created: episodes/tsarot-baheitek--88-neoclouds-nebius, concepts/neoclouds, shows/tsarot-baheitek, people/ido
+updated: concepts/{ai-infrastructure, open-weight-models, llm-inference, enterprise-ai-adoption}, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-22 — Micha Stocks: Bitcoin Is Negative, but October Rose in 11 of 16 Years. An Opportunity?
+source: whisper
+created: episodes/micha-stocks--bitcoin-uptober, concepts/{bitcoin, seasonality, technical-analysis}
+updated: concepts/market-timing, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-10-22 — Micha Stocks: Meta, Tesla, Netflix and More Report, and the Stock I Forgot Turns Around
+source: whisper
+created: episodes/micha-stocks--earnings-week-meta-tesla-netflix, concepts/earnings-season
+updated: concepts/{technical-analysis, market-breadth}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-10-22 — Micha Stocks: "Bloody Monday"? The Rule Nobody Told You About
+source: whisper
+created: episodes/micha-stocks--bloody-monday-circuit-breakers, concepts/circuit-breakers
+updated: concepts/{market-breadth, earnings-season, index-investing}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/{to-try, recommendations}
+
+## 2026-10-22 — Micha Stocks: Special Economic Interview: Prof. Yaron Zelicha — Will He Really Lower the Cost of Living?
+source: whisper
+created: episodes/micha-stocks--yaron-zelicha-economic-interview, concepts/housing-prices, people/yaron-zelicha
+updated: concepts/{cost-of-living, bitcoin}, people/{micha-stocks, naftali-bennett}, shows/micha-stocks, index

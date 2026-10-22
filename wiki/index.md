@@ -18,6 +18,11 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/market-breadth]]: index near highs while most stocks fall
 - [[concepts/equity-risk-premium]]: earnings yield vs bond yields
 - [[concepts/market-timing]]: why selling before crashes usually fails
+- [[concepts/earnings-season]]: reading quarterly reports and the market's reaction
+- [[concepts/technical-analysis]]: moving averages, support and resistance
+- [[concepts/seasonality]]: calendar effects like "Uptober"
+- [[concepts/bitcoin]]: crypto volatility; sovereign digital currencies
+- [[concepts/circuit-breakers]]: why an index can't crash 22% in a day
 
 ## AI Engineering — [[hubs/ai-engineering]]
 - [[concepts/ai-sre]]: agents that investigate and heal production
@@ -29,6 +34,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/agent-ready-codebase]]: docs as files, self-updating skills, agent-launchable envs
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
 - [[concepts/ai-infrastructure]]: AI factories, GPU networking, power and optics
+- [[concepts/neoclouds]]: GPU clouds (Nebius); multi-cloud GPU workloads
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
 - [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
@@ -88,7 +94,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/biohacking]]: N=1 self-experiments, sensors, caveats (health)
 - [[concepts/personal-genomics]]: whole-genome sequencing, drug responses (health)
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
-- [[concepts/cost-of-living]]: competition vs price caps; subsidies captured by sellers (economics)
+- [[concepts/cost-of-living]]: competition vs price caps; import barriers; subsidies captured by sellers (economics)
+- [[concepts/housing-prices]]: interest rates vs growth; investor demand (economics)
 
 ## Shows
 - [[shows/hidden-layers]]: Hidden Layers
@@ -102,6 +109,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[shows/lazy-investing]]: Investing for the Lazy (השקעות לעצלנים)
 - [[shows/developers-outside-the-box]]: Developers Outside the Box (מפתחים מחוץ לקופסה)
 - [[shows/micha-stocks]]: Micha Stocks (מיכה סטוקס מגיש: שוק ההון)
+- [[shows/tsarot-baheitek]]: Troubles in High-Tech (צרות בהייטק)
 
 ## People
 - [[people/amit-bendor]]: host of Osim Tochna
@@ -163,6 +171,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/remy]]: AI with Remy, agent-product reviewer
 - [[people/yoav-rubin]]: growth marketing, monday.com (ChatGPT ads)
 - [[people/tamar-hazoli]]: senior growth marketing, monday.com (ChatGPT ads)
+- [[people/yaron-zelicha]]: economist, former Israeli Accountant General
+- [[people/ido]]: technical partner solutions manager, Nebius
 
 ## Episodes
 - [[episodes/startup-ideas--8-github-repos-viral-money]]: 8 GitHub Repos To Go Viral and Make Money (2026-10-08)
@@ -234,3 +244,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]: #185 Let's Talk About Our Tools (2026-10-10)
 - [[episodes/micha-stocks--naftali-bennett-economic-interview]]: Naftali Bennett Economic Interview (2026-10-11)
 - [[episodes/micha-stocks--index-bull-portfolio-bear]]: The Index Says Bull, Your Portfolio Says Bear (2026-10-18)
+- [[episodes/tsarot-baheitek--88-neoclouds-nebius]]: #88 Neoclouds and GPU Data Centers, With Ido From Nebius (2026-10-12)
+- [[episodes/micha-stocks--bitcoin-uptober]]: Bitcoin Is Negative, but October Usually Rises (2026-10-19)
+- [[episodes/micha-stocks--earnings-week-meta-tesla-netflix]]: Meta, Tesla, Netflix Earnings Week (2026-10-19)
+- [[episodes/micha-stocks--bloody-monday-circuit-breakers]]: "Bloody Monday"? The Rule Nobody Told You About (2026-10-20)
+- [[episodes/micha-stocks--yaron-zelicha-economic-interview]]: Yaron Zelicha Economic Interview (2026-10-21)

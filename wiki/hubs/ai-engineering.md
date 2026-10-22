@@ -10,6 +10,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/ai-red-teaming]]: breaking models before attackers do
 - [[concepts/world-models]]: models of the physical world
 - [[concepts/ai-infrastructure]]: AI factories and GPU networking
+- [[concepts/neoclouds]]: GPU clouds; multi-cloud for GPU workloads; subsidized reserved capacity
 - [[concepts/multimodal-llms]]: vision LLMs in production
 - [[concepts/agent-architectures]]: matching agent structure to the job
 - [[concepts/ai-cybersecurity]]: AI's impact on security testing and defense

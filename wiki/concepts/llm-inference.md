@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-07
+sources: 3
+updated: 2026-10-22
 ---
 # LLM Inference
 
-**Summary:** Training is expensive, but inference (actually serving models) is where most cost now lives, and where most companies work: few train, everyone serves. A model's memory need is roughly parameters × bits per parameter. Frontier open models now reach 1T+ parameters, so they're split across GPUs and even across 8-GPU machines (tensor parallelism), small ones are replicated (data parallelism), and mixture-of-experts models route each token to a few experts that must be placed across GPUs. The KV cache, which trades memory for recomputation, can reach terabytes with long contexts and many users, so it's managed in a hierarchy (GPU → host DRAM → SSD) and shared across users for common prefixes like system prompts. The job reduces to one number: minimize $ per million tokens while meeting a latency SLA (e.g. time to first token). Price comes down to utilization, and a rich, fast-growing framework stack (vLLM, SGLang, Mooncake, LMCache, llm-d) is itself an optimization dimension.
+**Summary:** Training is expensive, but inference (actually serving models) is where most cost now lives, and where most companies work: few train, everyone serves, and the AI market has shifted from training toward inference and the agentic platforms built on it. A model's memory need is roughly parameters × bits per parameter. Frontier open models now reach 1T+ parameters, so they're split across GPUs and even across 8-GPU machines (tensor parallelism), small ones are replicated (data parallelism), and mixture-of-experts models route each token to a few experts that must be placed across GPUs. The KV cache, which trades memory for recomputation, can reach terabytes with long contexts and many users, so it's managed in a hierarchy (GPU → host DRAM → SSD) and shared across users for common prefixes like system prompts. The job reduces to one number: minimize $ per million tokens while meeting a latency SLA (e.g. time to first token). Price comes down to utilization, and a rich, fast-growing framework stack (vLLM, SGLang, TensorRT-LLM, Mooncake, LMCache, llm-d) is itself an optimization dimension. "Download from Hugging Face and run vLLM on Kubernetes" makes a demo, not a production service.
 
 ## Key ideas
 - "120B", "30B" means parameter count; × quantization (4- or 8-bit) gives the memory required ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -31,6 +31,9 @@ updated: 2026-10-07
 - Kernel work becomes accessible: someone who understands low-level GPU behavior can now use coding agents to tune AMD or NVIDIA kernels for a specific model, even selecting or generating kernels on the fly ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 - Learning path: understand transformers enough to see why a KV cache exists, then MoE, then systems concerns like scheduling, where backend engineers have an edge over algorithm people. Start by running small models locally (Ollama, then vLLM) and push on what's slow ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 
+- Demo vs production: Kubernetes + vLLM + a Hugging Face model was how inference started and still works for a YouTube demo, but production inference is a deep specialty: choosing the engine (TensorRT-LLM, SGLang, vLLM), distillation and other optimizations, token throughput, high availability, KV-cache and session management, and fast cold start. Whole companies do only that ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
+- Managed inference services let teams deploy open models without running Kubernetes and serving engines themselves; this is where research meets product ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
+- Over the past 1–2 years the AI market moved from training toward inference, agentic platforms making many inference calls, and AI-solutions firms rebuilding business processes on them ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 ## Disagreements & open questions
 
 ## Takeaways
@@ -39,4 +42,4 @@ updated: 2026-10-07
 - [ ] Keep fixed system prompts identical across requests so their KV cache can be shared and kept near the GPU ([[episodes/osim-tochna--running-llms-at-scale]])
 
 ## Related
-[[concepts/model-selection]] · [[concepts/open-weight-models]] · [[concepts/ai-infrastructure]] · [[concepts/llm-cost-optimization]] · [[concepts/small-language-models]] · [[concepts/future-of-software-engineering]]
+[[concepts/model-selection]] · [[concepts/open-weight-models]] · [[concepts/ai-infrastructure]] · [[concepts/llm-cost-optimization]] · [[concepts/small-language-models]] · [[concepts/future-of-software-engineering]] · [[concepts/neoclouds]]

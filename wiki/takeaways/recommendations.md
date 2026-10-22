@@ -29,6 +29,8 @@
 - GitHub Spec Kit, OpenSpec: spec-driven development frameworks — [[concepts/coding-agent-workflow]] · [[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]
 - Investing for the Lazy blog post on the Shiller CAPE and its compound-interest calculator — [[concepts/cape-ratio]] · [[episodes/lazy-investing--111-the-ai-bubble]]
 - Ollama, then vLLM: run models locally, then learn real serving (continuous batching) — [[concepts/llm-inference]] · [[episodes/osim-tochna--running-llms-at-scale]]
+- NotebookLM + Perplexity Finance (free earnings transcripts, slides, releases) for learning companies each earnings season — [[concepts/earnings-season]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
+- Israel Innovation Authority subsidized GPU program at Nebius (H200s; 30% off industry, 80% academia) — [[concepts/neoclouds]] · [[episodes/tsarot-baheitek--88-neoclouds-nebius]]
 
 ## People
 - AI with Remy (agent-product walkthroughs) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]
