@@ -395,3 +395,8 @@ updated: concepts/{market-breadth, earnings-season, index-investing}, people/mic
 source: whisper
 created: episodes/micha-stocks--yaron-zelicha-economic-interview, concepts/housing-prices, people/yaron-zelicha
 updated: concepts/{cost-of-living, bitcoin}, people/{micha-stocks, naftali-bennett}, shows/micha-stocks, index
+
+## 2026-10-23 — AI Engineering (AI אנג׳נירינג): How Do You Choose the Right Model? With Keren Kushman
+source: whisper
+created: episodes/ai-engineering-podcast--choosing-the-right-model, people/keren-kushman
+updated: concepts/{model-selection, llm-evals, harness-engineering, llm-cost-optimization, ai-gateway, open-weight-models, workflow-automation, ai-guardrails}, shows/ai-engineering-podcast, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

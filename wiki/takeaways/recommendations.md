@@ -31,6 +31,7 @@
 - Ollama, then vLLM: run models locally, then learn real serving (continuous batching) — [[concepts/llm-inference]] · [[episodes/osim-tochna--running-llms-at-scale]]
 - NotebookLM + Perplexity Finance (free earnings transcripts, slides, releases) for learning companies each earnings season — [[concepts/earnings-season]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
 - Israel Innovation Authority subsidized GPU program at Nebius (H200s; 30% off industry, 80% academia) — [[concepts/neoclouds]] · [[episodes/tsarot-baheitek--88-neoclouds-nebius]]
+- Cursor's model-agnostic benchmark (cited at the Opus 5.5 launch); AWS Bedrock as a trusted route to open-weight models — [[concepts/llm-evals]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
 
 ## People
 - AI with Remy (agent-product walkthroughs) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]

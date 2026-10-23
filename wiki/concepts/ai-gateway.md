@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-07
+sources: 6
+updated: 2026-10-23
 ---
 # AI Gateway
 
-**Summary:** A central layer every product calls instead of holding vendor API keys. It routes each request to the right model and vendor (by availability, cost, limits, real-time vs async), meters and caps spend per feature and per customer, and adds security (PII stripping, prompt-injection defense, usage policies) plus trust features (audit logs, data residency). Good AI infra is the kind you don't notice. A key in code is fastest, until it breaks.
+**Summary:** A central layer every product calls instead of holding vendor API keys. It routes each request to the right model and vendor (by availability, cost, limits, real-time vs async), meters and caps spend per feature and per customer, and adds security (PII stripping, prompt-injection defense, usage policies) plus trust features (audit logs, data residency). At high scale it becomes critical architecture: the place for optimization, intent-based routing, security, and an identity for every agent, possibly also for caching state so models become interchangeable engines. Design it so it isn't a single point of failure. Good AI infra is the kind you don't notice. A key in code is fastest, until it breaks.
 
 ## Key ideas
 - An experimental product in a monday.com lab environment burned **$50k in one day** through a loop, with no visibility. That's the case for a gateway ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
@@ -23,6 +23,9 @@ updated: 2026-10-07
 - MCP gateways: tools are now the API for models, so they need provisioning (central auth, add/remove tools, policies, guardrails). Server-side tool execution (OpenAI Responses API, AWS AgentCore) cuts round-trips. AgentCore bundles memory, code runtime, browser, identity, and policy for production ([[episodes/langtalks--58-reinvent-predictions]]).
 - Vendor lock-in has more than one face: vendors ship features (managed agents, vaults) to pull you deeper; under load a vendor may silently serve a weaker model; outages stop teams cold ("Claude is down, go home"); and an account can be banned outright (an Argentinian company reportedly lost all Anthropic access). Plan a fallback ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - The same prompt can break across two models from the same vendor; OpenRouter and OpenAI-compatible APIs reduce switching cost ([[episodes/explainable--163-hidden-cost-of-agents]]).
+- For orgs at high scale the AI gateway architecture is critical: it's where optimization, routing, security, and identity per agent (who built it, who runs it) happen. Avoid making it a single point of failure, as with any gateway ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- A host expects caching to move from the model vendors to the gateway eventually, so the model becomes more of an engine and the gateway manages state ([[episodes/ai-engineering-podcast--choosing-the-right-model]]).
+- monday's applied-AI infrastructure pairs AI brains with an MCP gateway so the org can move fast with AI without hitting walls over what's allowed ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 
 ## Disagreements & open questions
 

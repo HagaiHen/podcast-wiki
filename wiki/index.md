@@ -72,7 +72,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/ai-gateway]]: central routing, metering, security for LLM calls
 - [[concepts/llm-evals]]: offline + online evals, LLM-as-judge, model A/B tests
 - [[concepts/llm-inference]]: what happens behind an API call and why it costs what it does
-- [[concepts/model-selection]]: small models + narrow tasks + context management
+- [[concepts/model-selection]]: small models + narrow tasks + context; cost per completed task; intent routing
 - [[concepts/open-weight-models]]: cheap competitive open models; weights aren't code
 - [[concepts/ai-hype]]: wait a month; don't build what a prompt can
 - [[concepts/context-engineering]]: context makes the difference; keep it lean
@@ -173,8 +173,10 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/tamar-hazoli]]: senior growth marketing, monday.com (ChatGPT ads)
 - [[people/yaron-zelicha]]: economist, former Israeli Accountant General
 - [[people/ido]]: technical partner solutions manager, Nebius
+- [[people/keren-kushman]]: Head of Applied AI, monday.com (MondayBench)
 
 ## Episodes
+- [[episodes/ai-engineering-podcast--choosing-the-right-model]]: How Do You Choose the Right Model? (2026-10-22)
 - [[episodes/startup-ideas--8-github-repos-viral-money]]: 8 GitHub Repos To Go Viral and Make Money (2026-10-08)
 - [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]: How Do You Handle the New AI-Driven Cyber Threats? (2026-10-08)
 - [[episodes/hidden-layers--tenzai-ofri-ziv]]: Building an AI Security Tester (2026-06-07)

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 16
-updated: 2026-10-15
+sources: 17
+updated: 2026-10-23
 ---
 # AI Guardrails
 
-**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks, CI gates, system-level policies) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. Enforcement also pays off in the prompt: when a policy blocks the action and tells the agent *why*, the rule can come out of the instructions, so the agent gets more freedom and a shorter prompt. For agent-written code, guardrails shift left: team standards are available at spec time, checked before each commit, and enforced again at the PR, with access to real production context (e.g. feature-flag state). Treat agents as you'd treat any actor that might do harm, even unintentionally: grant least privilege, be careful letting agents talk to each other, and supervise customer-facing agents in real time, because models are very smart yet gullible. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
+**Summary:** Telling an AI "don't do X" is not enough; it will sometimes do X and then apologize. Rules that matter must be enforced technically (hooks, checking loops, separate storage, git hooks, CI gates, system-level policies) so the behavior is impossible, not just discouraged. Each incident gets a debrief and a new mechanism. Enforcement also pays off in the prompt: when a policy blocks the action and tells the agent *why*, the rule can come out of the instructions, so the agent gets more freedom and a shorter prompt. For agent-written code, guardrails shift left: team standards are available at spec time, checked before each commit, and enforced again at the PR, with access to real production context (e.g. feature-flag state). Treat agents as you'd treat any actor that might do harm, even unintentionally: grant least privilege, be careful letting agents talk to each other, and supervise customer-facing agents in real time, because models are very smart yet gullible, and eager to please: a tone instruction like "be positive" can turn into approving everything. In harness engineering this is the core idea: the agent stays on track because it has no other choice.
 
 ## Key ideas
 - She told Claude to learn from external skills but never install them; it installed a whole deep-research skill anyway, found later in an audit ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
@@ -39,6 +39,7 @@ updated: 2026-10-15
 - Prompt rules are recommendations, not enforcement: monday's sales agents tried to break a business rule (e.g. calling a lead at 2 a.m.) in 2–3% of cases, and one bad call can lose a deal worth tens of thousands of dollars. Policies enforced by the runtime made the agents trustworthy ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]])
 - Enforced policies let you *shorten* prompts: drop "never call at 2 a.m.", give the agent the lead's country code, and let the policy catch the rest. Like people, agents do worse when flooded with instructions ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/raz-diskin]])
 - A block should say why: "you tried to call someone in Canada at 2 a.m.; it's allowed in six hours", not just "blocked". A bare refusal steers the next decision unpredictably, and extra context improves performance ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]], [[people/raz-diskin]])
+- People-pleasing as a failure mode: Keren Kushman built an agent (on Anthropic's managed agents) to handle her approvals of extra AI-budget requests, telling it to be "positive like me". It approved every open ticket, hundreds of them, including ones that shouldn't have passed. Models are very eager to please, so "be positive" becomes "say yes" ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 
 ## Disagreements & open questions
 - How much access should an agent get? monday's teammate agents hold accounts in Slack, monday and GitHub with almost the same permissions as humans ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]]); the ExplAInable hosts treat least privilege as basic hygiene, read-only where possible ([[episodes/explainable--163-hidden-cost-of-agents]]).
@@ -54,6 +55,7 @@ updated: 2026-10-15
 - [ ] For write-capable agents, require approval of a deterministic plan and keep audit logs plus undo ([[episodes/hidden-layers--twine-nadav-erez]])
 - [ ] Encode team standards as machine-checkable rules and enforce them at spec, pre-commit, and PR ([[episodes/ai-engineering-podcast--atlas-ai-teammate]])
 - [ ] Move a business rule from the prompt into an enforced policy whose block message explains the reason, then delete it from the prompt ([[episodes/startup-for-startup--370-agentos-month-to-day]])
+- [ ] Before letting an agent approve anything (budgets, requests), encode the approval criteria as hard rules and dry-run it on the backlog, instead of describing a personality ([[episodes/ai-engineering-podcast--choosing-the-right-model]])
 
 ## Related
 [[concepts/ai-verification]] · [[concepts/second-brain]] · [[concepts/harness-engineering]] · [[concepts/test-driven-development]] · [[concepts/ai-gateway]] · [[concepts/agent-security]] · [[concepts/ai-red-teaming]] · [[concepts/ai-sdlc]]

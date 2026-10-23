@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
-updated: 2026-10-15
+sources: 12
+updated: 2026-10-23
 ---
 # LLM Cost Optimization
 
-**Summary:** Managing LLM spend has two halves: measuring it and reducing it. **Measuring (AI FinOps)** treats AI like any cloud cost. Provider bills lump calls together, so tag every call at a gateway or internal proxy, log the telemetry, and compute full unit economics per use case: tokens plus observability, subscriptions, databases and infrastructure. **Reducing** comes down to engineering habits. Put stable content first so prompt caching works (cached tokens cost roughly a tenth). Output costs more than input, so ask for short, structured answers. Plan with a strong model and execute with a cheap one (or route each step to the cheapest model that can do it), and trim whole traces, not single prompts. Cost tends to become the main problem once agents reach scale, when a dollar or two per run is multiplied by thousands of runs. For coding agents, spend per developer is rising; the goal is value per dollar, not cutting to zero.
+**Summary:** Managing LLM spend has two halves: measuring it and reducing it. **Measuring (AI FinOps)** treats AI like any cloud cost. Provider bills lump calls together, so tag every call at a gateway or internal proxy, log the telemetry, and compute full unit economics per use case: tokens plus observability, subscriptions, databases and infrastructure. **Reducing** comes down to engineering habits. Put stable content first so prompt caching works (cached tokens cost roughly a tenth). Output costs more than input, so ask for short, structured answers. Plan with a strong model and execute with a cheap one (or route each step to the cheapest model that can do it), and trim whole traces, not single prompts. Cost tends to become the main problem once agents reach scale, when a dollar or two per run is multiplied by thousands of runs; at monday it reached millions of dollars a month in tokens. The goal is to break the link between AI usage growth and cost without slowing adoption: know your costs down to agent and person, then optimize with your own evals and by routing each task to the most cost-effective model. For coding agents, spend per developer is rising; the goal is value per dollar, not cutting to zero.
 
 ## Key ideas
 
@@ -21,6 +21,9 @@ updated: 2026-10-15
 - Prediction: the theoretical $1–2k/month per-developer ceiling will break; money becomes tokens, intelligence, energy ([[episodes/langtalks--67-finops-for-ai]]).
 - Mandatory project tags on an internal LLM API answer whether, say, the back office is half the Bedrock bill or negligible ([[episodes/langtalks--66-scaling-llmops]]).
 - Spend should be read alongside productivity metrics: productivity per dollar ([[episodes/langtalks--64-ai-coding-metrics]]).
+- monday spends millions of dollars a month on tokens alone. Its applied-AI goal is to decouple AI usage growth from cost while still pushing everyone to use AI and build autonomous agents ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Small tasks add up: ~350 AI deck requests a day at monday, with one deck costing tens of dollars on a frontier model ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Her tips for orgs: first know your AI costs and where they come from, with attribution down to the agent and the person (few orgs are there); then optimize, which requires your own model evaluations. Seat-based pricing is ending: Cursor and Microsoft Copilot moved to consumption, so prepare for the painful moment the bill spikes ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 - Hidden production costs demos skip: calling a model on another cloud (e.g. Gemini from AWS infrastructure) adds data egress fees; EU customers may forbid data leaving Europe, so global routing for capacity overflow is off-limits; you must verify the vendor isn't logging or retaining data ([[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]).
 
 ### Reducing: engineering habits
@@ -32,6 +35,8 @@ updated: 2026-10-15
 - Plan vs execute: plan with Opus, execute with Sonnet, Haiku, or another model, in products as in your own dev workflow ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
 - Cost arrives after scale: monday's sales-agent team first fought scale (hundreds of thousands of concurrent events), then cost, at ~$1.50 per agent run across thousands of leads. The infra group is building a model router that sends each step to Opus, Sonnet or Haiku as needed ([[episodes/startup-for-startup--370-agentos-month-to-day]], [[people/moshe-krispin]]).
 - Prompt routing mid-session breaks the model's cache. A gateway-level cache can add consistency ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]).
+- Without caching, every turn resends all prior output as input and cost explodes, as early agent tools showed, burning money "just to say hello". So route once from the initial intent and stick with that model. Opus 5.5 no longer breaks the cache when the effort level changes ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Price per token is misleading: compare the cost of a completed task at the target quality, since token counts per task differ widely between models (see [[concepts/model-selection]], [[episodes/ai-engineering-podcast--choosing-the-right-model]]).
 - For pure classification at scale, a dedicated classifier can be ~30–100× cheaper and far faster than a small LLM with thinking (see [[concepts/decision-classifiers]], [[episodes/langtalks--74-jev]]).
 - Optimize whole traces, not single prompts: fewer tool calls, and smaller tool responses that keep the needed context (strip headers, reformat JSON to YAML) ([[episodes/langtalks--67-finops-for-ai]]).
 - Prompt compression is back: a community repo reportedly raised GPT 5.2 quality ~30% without extra cost or latency; startups mine traces for cheaper call patterns and caching ([[episodes/langtalks--67-finops-for-ai]]).
@@ -60,6 +65,7 @@ updated: 2026-10-15
 - [ ] Trim and reformat tool responses (drop unused fields; JSON → YAML) before they reach the model ([[episodes/langtalks--67-finops-for-ai]])
 - [ ] Use cross-region inference (where compliant) to raise rate limits before buying capacity ([[episodes/langtalks--66-scaling-llmops]])
 - [ ] Keep the tool list stable and restrict choices via logit masking/constrained decoding rather than swapping tools mid-session ([[episodes/langtalks--55-context-engineering]])
+- [ ] Attribute AI spend down to the individual agent and person before optimizing ([[episodes/ai-engineering-podcast--choosing-the-right-model]])
 - [ ] Audit which skills, hooks, and plugins load into every agent session; drop the unused ones ([[episodes/explainable--163-hidden-cost-of-agents]])
 - [ ] Match cloud commitments (reserved instances, savings plans) to actual usage, and steer the autoscaler's spot/on-demand mix by commitment utilization ([[episodes/osim-tochna--running-llms-at-scale]])
 

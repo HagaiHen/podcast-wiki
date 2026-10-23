@@ -52,7 +52,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/agent-workspaces]]: shared human+agent workspaces
 - [[concepts/second-brain]]: also Knowledge Management
 - [[concepts/llm-inference]]: GPUs, parallelism, KV cache, and price per token
-- [[concepts/model-selection]]: right-size the model; narrow the task
+- [[concepts/model-selection]]: right-size the model; narrow the task; compare cost per completed task
 - [[concepts/open-weight-models]]: open models as a cost lever
 - [[concepts/ai-hype]]: filter hype; build durable value
 - [[concepts/harness-engineering]]: environment that lets agents run long and correctly

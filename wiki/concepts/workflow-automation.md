@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-07
+sources: 6
+updated: 2026-10-23
 ---
 # Workflow Automation (no-code + AI agents)
 
-**Summary:** Platforms like n8n, Make, and Zapier let people, including non-developers, build automations and AI agents visually. They remove the coding plumbing but not the other half of technical work: deciding the output, splitting logic into steps, writing prompts, wiring tools, and debugging to production quality. Start small and grow step by step. For developers they're fast MVP and internal-tool builders, and an org can assign an automation owner to serve non-technical teams. Conversational assistants ("claws") are now competing for the same jobs.
+**Summary:** Platforms like n8n, Make, and Zapier let people, including non-developers, build automations and AI agents visually. They remove the coding plumbing but not the other half of technical work: deciding the output, splitting logic into steps, writing prompts, wiring tools, and debugging to production quality. Start small and grow step by step. For developers they're fast MVP and internal-tool builders, and an org can assign an automation owner to serve non-technical teams. Conversational assistants ("claws") are now competing for the same jobs. The reverse mistake is common too: fully deterministic processes (a thank-you email to a customer) need automation, not AI, which only adds uncertainty where you need a certain outcome.
 
 ## Key ideas
 - Start from the output: what counts as a successful workflow ([[episodes/langtalks--56-n8n]], [[people/shay-shitrit]])?
@@ -20,6 +20,9 @@ updated: 2026-10-07
 - Haslavsky's split: ~99% of production agents are scripted agentic workflows (n8n to Lovable-built scripts); autonomous agents (OpenClaw, Hermes) add learning by iteration ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
 - Build → execute → automate: once an agent workflow works, move deterministic steps (formatting 100 two-sentence blurbs) to a cheap Make.com + API automation for consistency and lower cost, keeping the agent for judgment (filtering the best items) ([[episodes/startup-ideas--grok-bot-one-person-company]], [[people/billy-howell]]).
 - Replace deterministic agent steps with scripts: monday saw sessions asking agents to open PRs, so they shipped a deterministic skill wrapping a script ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/netanel-abergel]]).
+- Automation, not AI, for deterministic processes: AI may help with the wording, a tiny part, but pushing it everywhere brings statistics and uncertainty where you need a certain result. "When you have a hammer, everything looks like a nail." People also build agents because it's cool, sometimes for negative value ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Example of the waste: an internal Claude-driven job posts the same reminder every morning, reworded each time with lots of text, where a fixed message would do ([[episodes/ai-engineering-podcast--choosing-the-right-model]]).
+- Don't produce AI slop, in code, decks, or Slack ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 
 ## Disagreements & open questions
 - No-code builders vs conversational assistants: n8n's visual interface is easy to read but unnatural to build in; chat-built dynamic workflows may replace it ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -27,6 +30,7 @@ updated: 2026-10-07
 ## Takeaways
 - [ ] Build automations incrementally: get one step reliable (e.g. labeling), then chain the next ([[episodes/langtalks--56-n8n]])
 - [ ] Assign an automation owner to serve non-technical teams' small workflow requests ([[episodes/langtalks--56-n8n]])
+- [ ] For each AI workflow, ask whether the process is fully deterministic; if so, replace the LLM with plain automation ([[episodes/ai-engineering-podcast--choosing-the-right-model]])
 
 ## Related
 [[concepts/personal-ai-assistants]] · [[concepts/ai-sdlc]] · [[concepts/llm-evals]] · [[concepts/ai-growth-marketing]]

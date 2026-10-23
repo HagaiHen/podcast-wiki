@@ -196,6 +196,16 @@
 - [ ] Send conversion events to OpenAI and bid with OCPC rather than CPC/CPM — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
 - [ ] Write many chat-specific ads that lead with an action verb; don't copy your Google ads — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
 - [ ] Measure view-through and cross-channel lift (e.g. a geo test), not just last click — [[concepts/llm-advertising]] · [[episodes/startup-for-startup--371-chatgpt-ads]]
+- [ ] Compare models on cost per completed task at your quality bar, not on price per token — [[concepts/model-selection]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Don't fix a weak model by raising its effort level; test a stronger model instead — [[concepts/model-selection]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Route by intent at the start of a session and keep that model for the session, so the cache holds — [[concepts/model-selection]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Build a private benchmark from your org's most frequent real requests (with short and verbose variants) and rerun it on every model release — [[concepts/llm-evals]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Use judges from several labs, never only the family that produced the output — [[concepts/llm-evals]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] With each new model generation, try removing harness scaffolding; put lasting effort into context and memory instead — [[concepts/harness-engineering]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Attribute AI spend down to the individual agent and person before optimizing — [[concepts/llm-cost-optimization]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Introduce open models through a trusted provider, internal traffic first, opt-in for customers — [[concepts/open-weight-models]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] For each AI workflow, ask whether the process is fully deterministic; if so, replace the LLM with plain automation — [[concepts/workflow-automation]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] Before letting an agent approve anything (budgets, requests), encode the approval criteria as hard rules and dry-run it on the backlog, instead of describing a personality — [[concepts/ai-guardrails]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

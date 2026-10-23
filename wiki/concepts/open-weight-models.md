@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-22
+sources: 10
+updated: 2026-10-23
 ---
 # Open-Weight Models
 
-**Summary:** Open-weight models, notably Chinese ones like GLM, Kimi, and Qwen, trail the frontier by a gap estimated at four to six months and shrinking, at a fraction of the price, pushing proprietary providers to cut prices. Enterprise fear has faded since weights can run inside trusted clouds or your own VPC. A GPU-cloud view sums up three reasons companies move from closed frontier APIs to open models they deploy themselves: cost, model-level differentiation (if everyone calls the same Anthropic model, only your own data-tuned model sets you apart), and sovereignty over data and region. They win where you need real fine-tuning or LoRA on domain data, privacy (local subtasks routed from a main agent), or edge deployment. "Open" varies (weights only vs data and recipes too). Self-hosting isn't automatically cheaper than a cheap hosted model. They are also the basis of "sovereign AI": governments running adapted open models in their own isolated data centers. Choose use cases carefully: conversational answers can reflect different training values.
+**Summary:** Open-weight models, notably Chinese ones like GLM, Kimi, and Qwen, trail the frontier by a gap estimated at four to six months and shrinking, at a fraction of the price, pushing proprietary providers to cut prices. Enterprise fear has faded since weights can run inside trusted clouds or your own VPC; monday already routes ~10% of its internal traffic to untuned open models via Bedrock, starting internally and keeping them opt-in for customers, though worries about Chinese backdoors and malicious generated code persist, and one view is that frontier labs amplify that fear to win regulation. NVIDIA's Nemotron is a non-Chinese alternative. A GPU-cloud view sums up three reasons companies move from closed frontier APIs to open models they deploy themselves: cost, model-level differentiation (if everyone calls the same Anthropic model, only your own data-tuned model sets you apart), and sovereignty over data and region. They win where you need real fine-tuning or LoRA on domain data, privacy (local subtasks routed from a main agent), or edge deployment. "Open" varies (weights only vs data and recipes too). Self-hosting isn't automatically cheaper than a cheap hosted model. They are also the basis of "sovereign AI": governments running adapted open models in their own isolated data centers. Choose use cases carefully: conversational answers can reflect different training values.
 
 ## Key ideas
 - Chinese models (GLM, Kimi) "give a phenomenal fight"; proprietary prices are starting to drop ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -28,12 +28,18 @@ updated: 2026-10-22
 - Three reasons companies move from proprietary frontier models to self-deployed open ones: cost; differentiation at the model level, since with closed APIs you can't fine-tune or post-train and "the whole world uses the same model"; and sovereignty, both regional (European and UAE firms reluctant to send data to US servers) and control over what happens to the data ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 - Common pattern: keep your stack on AWS, and deploy your own open model on GPU infrastructure in the same region instead of sending inference calls to Anthropic ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 - Differentiation requires maturity: startups start on closed APIs, but once a company collects its own data it can tune an open model to its needs ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
+- ~10% of monday's internal traffic already goes to open-source models with good results, generic and not fine-tuned (though they could be); Chinese models and NVIDIA's Nemotron do well on its internal benchmark ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Safe adoption path: consume them through a known provider (AWS Bedrock, not the Chinese vendor directly), start with internal use, and make customer use opt-in after security and legal review. If worried, use Nemotron or keep them to tasks without customer or business data ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- How they got so good is debated; there are many suspicions they copy (distill) frontier models ([[episodes/ai-engineering-podcast--choosing-the-right-model]]).
+
 ## Disagreements & open questions
+- Are open weights safe? Sharon Dahan argues weights aren't executable code, so the old panic is misplaced ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]); Keren Kushman cites fears of backdoors in Chinese weights that leak data, and a host worries such a model could write code that runs through a local coding agent while nobody reviews every PR. Kushman also thinks frontier labs sow these fears to win regulation ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 - How far behind is open source? Earlier guests put it at ~6 months ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[episodes/micha-stocks--naftali-bennett-economic-interview]]); a Nebius guest says estimates fell from a year to seven months to ~four months recently ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 
 ## Takeaways
 - [ ] Benchmark an open-weight model (e.g. GLM, Kimi, Qwen) on your workload for cost savings ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 - [ ] Route privacy-sensitive subtasks (e.g. bank statements) to a local open model from your main agent via a skill ([[episodes/hidden-layers--nexar-roni-goldshmidt]])
+- [ ] Introduce open models through a trusted provider, internal traffic first, opt-in for customers ([[episodes/ai-engineering-podcast--choosing-the-right-model]])
 
 ## Related
 [[concepts/model-selection]] · [[concepts/llm-inference]] · [[concepts/ai-guardrails]] · [[concepts/ai-gateway]] · [[concepts/hebrew-llms]] · [[concepts/neoclouds]]

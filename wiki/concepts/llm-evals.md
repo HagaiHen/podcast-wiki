@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 19
-updated: 2026-10-11
+sources: 20
+updated: 2026-10-23
 ---
 # LLM Evals
 
-**Summary:** How you know an AI feature works and keeps working, instead of "trust me bro" vibes after an hour of chatting. **Offline evals** run a curated dataset of representative cases before production: a lean set on every PR in CI, fuller runs on big changes, against a score threshold. **Online evals** and shadow runs score real production traffic. Checks are code where the answer is deterministic (~80%) and LLM-as-judge where it isn't. Because agents are non-deterministic, run each test many times and separate "can it" from "will it always"; track pass rates by category over time. A typical maturity path: manual conversation review → intent clustering → automated evals in CI ("eval-driven design", like TDD) → discovering *unknown* intents; production failures are gold, replayed until the judge catches them, and simulated user personas can hunt for them nightly. For agents, end-to-end labs with planted ground truth measure recall, precision, cost, and unsafe actions, and pick the model per sub-agent. Proxy metrics mislead: training loss, public benchmarks, short test suites, and user or arena preference often disagree, so treat the first ones as alarms and judge by what users prefer.
+**Summary:** How you know an AI feature works and keeps working, instead of "trust me bro" vibes after an hour of chatting. **Offline evals** run a curated dataset of representative cases before production: a lean set on every PR in CI, fuller runs on big changes, against a score threshold. **Online evals** and shadow runs score real production traffic. Checks are code where the answer is deterministic (~80%) and LLM-as-judge where it isn't. Because agents are non-deterministic, run each test many times and separate "can it" from "will it always"; track pass rates by category over time. A typical maturity path: manual conversation review → intent clustering → automated evals in CI ("eval-driven design", like TDD) → discovering *unknown* intents; production failures are gold, replayed until the judge catches them, and simulated user personas can hunt for them nightly. For agents, end-to-end labs with planted ground truth measure recall, precision, cost, and unsafe actions, and pick the model per sub-agent. Proxy metrics mislead: training loss, public benchmarks, short test suites, and user or arena preference often disagree, so treat the first ones as alarms and judge by what users prefer. Public benchmarks are also suspect because labs have interests and models can learn them, which is why a company can keep its own private benchmark built from real employee requests, call the raw API to isolate the model from any harness, and judge with a panel of models from different labs, since judges favor their own family.
 
 ## Key ideas
 - Offline evals guard against regressions from code, prompt, or ecosystem changes, and let you compare models on *your* use case ([[episodes/ai-engineering-podcast--ai-infra-at-scale]], [[people/dor-cohen]]).
@@ -56,6 +56,12 @@ updated: 2026-10-11
 - Start quality work early, alongside the fun happy-path phase of adding features, not after it; the experience is the product, and monitoring after release still matters ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
 - Years of labeled history are a ready-made eval set: Cato tested its signature-writing agent against every signature it had shipped, which showed where the agent choked, looped, or went off course ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
 - A "sweatshop" of the team reviewed what the agent did and gave each run a verdict, fed back into the agent or used as lessons. It's good at absorbing data and instructions, but not good where you haven't explained what good looks like; don't expect one-shot success ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- "MondayBench": monday clustered real requests from across the company (decks, meeting summaries, unit tests) into ~20 golden-dataset prompts weighted by real frequency (~350 deck requests a day), each in small, medium, and large variants to mimic terse vs verbose users. It reruns whenever a new model ships, plus weekly ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Benchmark the model, not model + harness: most industry benchmarks run through a harness, adding its system prompt and skills as input tokens, which doesn't isolate the model. MondayBench calls each model's API directly from Python ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Models favor their own family: an Opus judge prefers Anthropic models, so the judge is a panel of three frontier models. Same in code review: GPT reviewing Anthropic-written code finds far more than Opus reviewing Opus ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Keep your benchmark private: publishing it would let models learn it and contaminate it; labs (including Meta) have asked why their models aren't on it ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Labs feel the distrust: Anthropic's Opus 5.5 launch cited Cursor's model-agnostic benchmark, whose results roughly match MondayBench. Differences come from Cursor measuring engineering work through its own harness, versus monday measuring all company work ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Hard-task levels: take real heavy engineering PRs and progressively strip detail from the task description; each level down, non-frontier models fail more ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 
 ## Disagreements & open questions
 
@@ -70,6 +76,8 @@ updated: 2026-10-11
 - [ ] Treat loss and benchmark drops as alarms, but pick releases by user or arena preference ([[episodes/explainable--157-training-hebatron]])
 - [ ] Replay each production failure as a test; if the judge doesn't fail it, fix the judge ([[episodes/startup-for-startup--366-qa-for-agents]])
 - [ ] Run each agent test many times and track pass rate per category over time ([[episodes/startup-for-startup--366-qa-for-agents]])
+- [ ] Build a private benchmark from your org's most frequent real requests (with short and verbose variants) and rerun it on every model release ([[episodes/ai-engineering-podcast--choosing-the-right-model]])
+- [ ] Use judges from several labs, never only the family that produced the output ([[episodes/ai-engineering-podcast--choosing-the-right-model]])
 
 ## Related
 [[concepts/ai-gateway]] · [[concepts/ai-verification]] · [[concepts/model-selection]] · [[concepts/proactive-ai]] · [[concepts/llm-pipelines]] · [[concepts/ai-sre]] · [[concepts/ai-engineering-metrics]] · [[concepts/voice-agents]]
