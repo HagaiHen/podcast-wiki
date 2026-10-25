@@ -96,6 +96,10 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
 - [[concepts/cost-of-living]]: competition vs price caps; import barriers; subsidies captured by sellers (economics)
 - [[concepts/housing-prices]]: interest rates vs growth; investor demand (economics)
+- [[concepts/outcome-metrics]]: outcome KPIs over inputs; Goodhart's law; north-star metrics (startups)
+- [[concepts/fundraising]]: pitching investors; work in parallel; ask why "no" (startups)
+- [[concepts/defense-tech]]: Israel as defense-tech hub; government as design partner (startups)
+- [[concepts/ai-in-education]]: personal AI tutor per child; teacher as mentor (education)
 
 ## Shows
 - [[shows/hidden-layers]]: Hidden Layers
@@ -251,3 +255,4 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/micha-stocks--earnings-week-meta-tesla-netflix]]: Meta, Tesla, Netflix Earnings Week (2026-10-19)
 - [[episodes/micha-stocks--bloody-monday-circuit-breakers]]: "Bloody Monday"? The Rule Nobody Told You About (2026-10-20)
 - [[episodes/micha-stocks--yaron-zelicha-economic-interview]]: Yaron Zelicha Economic Interview (2026-10-21)
+- [[episodes/tsarot-baheitek--90-naftali-bennett]]: #90 Naftali Bennett, the Only Tech Person Who Was Prime Minister (2026-10-22)

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
-updated: 2026-10-20
+sources: 9
+updated: 2026-10-25
 ---
 # Personal AI Assistants ("claws")
 
-**Summary:** Personal assistants such as OpenClaw sit a level above coding harnesses: an orchestrator, often for non-developers, that automates daily operational work (calendar, meetings, email, tasks) through conversation rather than code. Their power comes from closed loops: access to your data and tools, cron jobs, skills as playbooks, and learning from your corrections. Power-user claws (OpenClaw, Hermes) need real setup and drift further from normal people with every feature; consumer products like Instinct AI package the same idea as a phone-number login in iMessage or WhatsApp, with a vault for cards and logins, its own email inbox, and fast hidden computer use. Many small errands (haircuts, restaurant tables, a visa) add up to hours a week. They create identity and noise problems inside teams. The idea is spreading beyond work: one politician proposes a government-provided agent per citizen, wired to state services by API.
+**Summary:** Personal assistants such as OpenClaw sit a level above coding harnesses: an orchestrator, often for non-developers, that automates daily operational work (calendar, meetings, email, tasks) through conversation rather than code. Their power comes from closed loops: access to your data and tools, cron jobs, skills as playbooks, and learning from your corrections. Power-user claws (OpenClaw, Hermes) need real setup and drift further from normal people with every feature; consumer products like Instinct AI package the same idea as a phone-number login in iMessage or WhatsApp, with a vault for cards and logins, its own email inbox, and fast hidden computer use. Many small errands (haircuts, restaurant tables, a visa) add up to hours a week. They create identity and noise problems inside teams. The idea is spreading beyond work: one politician proposes a government-provided agent per citizen, wired to state services by API, built through two-week startup-style iterations rather than a long-term master plan.
 
 ## Key ideas
 - Mental model: never do an operational task twice. Teach it once in conversation, like training a digital employee ([[episodes/langtalks--72-personal-assistant-agent]]).
@@ -35,6 +35,7 @@ updated: 2026-10-20
 - Computer use is fast and invisible, unlike slow GrokBot computer use. The split: GrokBot, Codex, and Claude Code for work; Instinct for personal admin ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
 - No single task is life-changing (10–15 minutes each), but together they save hours a week of hated chores, freeing attention for high-leverage work ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]], [[people/greg-isenberg]]).
 - Government version: every citizen gets a personal AI agent with APIs to all government services ("check if I owe tax", "check I'm not overpaying municipal tax"), replacing bureaucracy runs; a campaign proposal ([[episodes/micha-stocks--naftali-bennett-economic-interview]], [[people/naftali-bennett]]).
+- Same proposal, more detail: fill in your details once and the agent pays taxes and fines, claims refunds and entitlements, and renews licenses. Built by an AI cabinet in short iterations (meet every two weeks: what moved, what's blocked), with the government as first customer and sandbox rather than a funder of AI companies ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
 
 ## Disagreements & open questions
 - Trust a startup with all your personal data? Isenberg would rather the assistant come from Apple, but Apple isn't there yet and the time saved wins for now ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]]).

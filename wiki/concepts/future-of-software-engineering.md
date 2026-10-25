@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
-updated: 2026-10-11
+sources: 12
+updated: 2026-10-25
 ---
 # Future of Software Engineering
 
-**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential.
+**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential. For students facing an entry-level "employment tsunami" that starts in software, one piece of career advice splits the path: the top ~10% should aim for frontier labs, and the rest should master the newest tools and start companies, now that starting costs almost nothing.
 
 ## Key ideas
 - "Coding is dead, but engineering definitely isn't" ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/netanel-abergel]]).
@@ -34,6 +34,8 @@ updated: 2026-10-11
 - The new bottleneck is imagination, not coding skill: a mathematician who says he can't write code builds with Claude and Codex, and advises everyone to dream big because tools now realize much of it ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]]).
 - "Writing code is dead; the engineering of how a system should look, behave, and run is where our value is." As with open source, why write code an agent has already written ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 - Thought experiment: adding 1,000 developers a year breaks the senior-mentors-junior review model; only AI guardrails that encode learned standards can support that growth ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
+- AI brings an employment "tsunami" for juniors, starting in software and later everywhere via robotics ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
+- Career advice for CS students (self-described "off the cuff"): if you're honestly in the top 5–10%, aim for a frontier lab; if you're good but not a genius, dive into massive learning of the newest tools and go into entrepreneurship, if you lean that way. Starting a software company once took ~$2M for servers and offices; today it's near zero ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).
@@ -42,6 +44,7 @@ updated: 2026-10-11
 - Is SaaS dead? The company-brain guests and the LangTalks marketing episode say no: the application layer and domain knowledge gain value, and agents add demand ([[episodes/ai-engineering-podcast--company-brain]], [[episodes/langtalks--69-marketing-for-agents]]); the LangTalks hosts expect companies whose moat was the software itself to be commoditized ([[episodes/langtalks--63-wake-up]]).
 
 ## Takeaways
+- [ ] If you're not aiming for a frontier lab, invest heavily in learning the newest AI tools and try building a company ([[episodes/tsarot-baheitek--90-naftali-bennett]])
 
 ## Related
 [[concepts/harness-engineering]] · [[concepts/agent-workspaces]] · [[concepts/autonomous-agents-outlook]] · [[concepts/llm-inference]] · [[concepts/ai-guardrails]]

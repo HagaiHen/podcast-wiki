@@ -17,4 +17,4 @@ His checkable pledge: daycare costs (ages 0–3) for working, reserve-serving co
 
 **Show:** [[shows/micha-stocks]]
 
-**Concepts:** [[concepts/cost-of-living]] · [[concepts/open-weight-models]] · [[concepts/personal-ai-assistants]]
+**Concepts:** [[concepts/cost-of-living]] · [[concepts/open-weight-models]] · [[concepts/personal-ai-assistants]] · [[concepts/defense-tech]]

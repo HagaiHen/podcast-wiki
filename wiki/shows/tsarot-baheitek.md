@@ -6,4 +6,5 @@ type: show
 Hebrew podcast about the Israeli tech industry, with guests from companies across the stack.
 
 ## Episodes
+- [[episodes/tsarot-baheitek--90-naftali-bennett]] (2026-10-22)
 - [[episodes/tsarot-baheitek--88-neoclouds-nebius]] (2026-10-12)

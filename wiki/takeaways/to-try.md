@@ -206,6 +206,7 @@
 - [ ] Introduce open models through a trusted provider, internal traffic first, opt-in for customers — [[concepts/open-weight-models]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
 - [ ] For each AI workflow, ask whether the process is fully deterministic; if so, replace the LLM with plain automation — [[concepts/workflow-automation]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
 - [ ] Before letting an agent approve anything (budgets, requests), encode the approval criteria as hard rules and dry-run it on the backlog, instead of describing a personality — [[concepts/ai-guardrails]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- [ ] If you're not aiming for a frontier lab, invest heavily in learning the newest AI tools and try building a company — [[concepts/future-of-software-engineering]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 
@@ -234,3 +235,8 @@
 - [ ] Self-experiments: alternate conditions A-B-A-B to reduce time effects — [[concepts/biohacking]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Consider whole-genome sequencing and check pharmacogenomic variants before you need the drugs — [[concepts/personal-genomics]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Ask whether a medical risk number accounts for evidence you already have — [[concepts/bayesian-updating]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
+- [ ] Rewrite goals as outcomes, not inputs (customers gained, not budget spent) — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Send a monthly update on 2–3 metrics: hit, missed, and why — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Before adopting a metric, ask how it could be gamed (e.g. shrinking the denominator) and pair it with a counter-metric — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Run investor conversations in parallel until money is in the bank — [[concepts/fundraising]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] After a rejection, ask for the reason and commit not to argue with it — [[concepts/fundraising]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]

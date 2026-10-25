@@ -400,3 +400,8 @@ updated: concepts/{cost-of-living, bitcoin}, people/{micha-stocks, naftali-benne
 source: whisper
 created: episodes/ai-engineering-podcast--choosing-the-right-model, people/keren-kushman
 updated: concepts/{model-selection, llm-evals, harness-engineering, llm-cost-optimization, ai-gateway, open-weight-models, workflow-automation, ai-guardrails}, shows/ai-engineering-podcast, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-25 — Troubles in High-Tech (צרות בהייטק): #90 Naftali Bennett, the Only Tech Person Who Was Prime Minister
+source: whisper
+created: episodes/tsarot-baheitek--90-naftali-bennett, concepts/{outcome-metrics, fundraising, defense-tech, ai-in-education}
+updated: concepts/{personal-ai-assistants, future-of-software-engineering}, episodes/micha-stocks--naftali-bennett-economic-interview, people/naftali-bennett, shows/tsarot-baheitek, index, takeaways/to-try
