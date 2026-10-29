@@ -23,6 +23,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/seasonality]]: calendar effects like "Uptober"
 - [[concepts/bitcoin]]: crypto volatility; sovereign digital currencies
 - [[concepts/circuit-breakers]]: why an index can't crash 22% in a day
+- [[concepts/interest-rate-expectations]]: market-implied Fed odds; why the Fed waits for elections
 
 ## AI Engineering — [[hubs/ai-engineering]]
 - [[concepts/ai-sre]]: agents that investigate and heal production
@@ -59,6 +60,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/skill-engineering]]: skills as mini software; sharing and versioning
 - [[concepts/voice-agents]]: speech-to-speech vs chained; latency, state machines, audio evals
 - [[concepts/small-language-models]]: fine-tuned small models for narrow tasks
+- [[concepts/synthetic-data]]: diverse, consensus-labeled generated data; regenerate on drift
 - [[concepts/decision-classifiers]]: fast calibrated classifiers (e.g. Jev) for bulk decisions
 - [[concepts/rag]]: retrieval-augmented generation; enough for ~99% of cases
 - [[concepts/agent-workspaces]]: humans and agents sharing channels and boards
@@ -178,8 +180,15 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/yaron-zelicha]]: economist, former Israeli Accountant General
 - [[people/ido]]: technical partner solutions manager, Nebius
 - [[people/keren-kushman]]: Head of Applied AI, monday.com (MondayBench)
+- [[people/yuval-avidani]]: AI builder and content creator, GitHub Star
+- [[people/ilan-kedar]]: co-founder of Plurai (agent simulation, SLMs)
 
 ## Episodes
+- [[episodes/micha-stocks--fed-rate-hike-odds]]: 78% Odds of a December Rate Hike (2026-10-28)
+- [[episodes/hidden-layers--plurai-ilan-kedar]]: Testing Whether AI Agents Are Ready for Production (2026-10-28)
+- [[episodes/micha-stocks--anthropic-s1-numbers]]: Anthropic's Numbers Are Out (2026-10-27)
+- [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]: The 9 Stages of AI Agent Adoption (2026-10-21)
+- [[episodes/explainable--167-yuval-avidani-agent-harness]]: #167 The AI Harness and the Power of Persistence (2026-10-18)
 - [[episodes/ai-engineering-podcast--choosing-the-right-model]]: How Do You Choose the Right Model? (2026-10-22)
 - [[episodes/startup-ideas--8-github-repos-viral-money]]: 8 GitHub Repos To Go Viral and Make Money (2026-10-08)
 - [[episodes/hidden-layers--cato-networks-avishai-zvinsky]]: How Do You Handle the New AI-Driven Cyber Threats? (2026-10-08)

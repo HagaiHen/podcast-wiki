@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 12
-updated: 2026-10-23
+sources: 14
+updated: 2026-10-29
 ---
 # LLM Cost Optimization
 
-**Summary:** Managing LLM spend has two halves: measuring it and reducing it. **Measuring (AI FinOps)** treats AI like any cloud cost. Provider bills lump calls together, so tag every call at a gateway or internal proxy, log the telemetry, and compute full unit economics per use case: tokens plus observability, subscriptions, databases and infrastructure. **Reducing** comes down to engineering habits. Put stable content first so prompt caching works (cached tokens cost roughly a tenth). Output costs more than input, so ask for short, structured answers. Plan with a strong model and execute with a cheap one (or route each step to the cheapest model that can do it), and trim whole traces, not single prompts. Cost tends to become the main problem once agents reach scale, when a dollar or two per run is multiplied by thousands of runs; at monday it reached millions of dollars a month in tokens. The goal is to break the link between AI usage growth and cost without slowing adoption: know your costs down to agent and person, then optimize with your own evals and by routing each task to the most cost-effective model. For coding agents, spend per developer is rising; the goal is value per dollar, not cutting to zero.
+**Summary:** Managing LLM spend has two halves: measuring it and reducing it. **Measuring (AI FinOps)** treats AI like any cloud cost. Provider bills lump calls together, so tag every call at a gateway or internal proxy, log the telemetry, and compute full unit economics per use case: tokens plus observability, subscriptions, databases and infrastructure. **Reducing** comes down to engineering habits. Put stable content first so prompt caching works (cached tokens cost roughly a tenth). Output costs more than input, so ask for short, structured answers. Plan with a strong model and execute with a cheap one (or route each step to the cheapest model that can do it), and trim whole traces, not single prompts. Cost tends to become the main problem once agents reach scale, when a dollar or two per run is multiplied by thousands of runs; at monday it reached millions of dollars a month in tokens. The "token-maxing" mood of 2025–26 is ending for production agents: a frontier model on every boolean check also adds latency that drives churn, which pushes companies toward small task-specific models. The goal is to break the link between AI usage growth and cost without slowing adoption: know your costs down to agent and person, then optimize with your own evals and by routing each task to the most cost-effective model. For coding agents, spend per developer is rising; the goal is value per dollar, not cutting to zero.
 
 ## Key ideas
 
@@ -48,12 +48,14 @@ updated: 2026-10-23
 - Every skill, hook, and plugin loaded into context costs tokens on each send; a big context window fills fast and burns the weekly quota ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Inference optimization is a growing role: minimize $/1M tokens while meeting the SLA, since every token costs GPU time and electricity ([[episodes/explainable--163-hidden-cost-of-agents]]).
 - Kubernetes FinOps beyond tokens: Riskified combined spot instances with reserved instances and savings plans, and built a controller that steers Karpenter's spot/on-demand mix by how well the org's commitments are being used. Almost no servers run at full price (all >50% off), saving 30–40% on Kubernetes. Installing a tool by its quick-start isn't enough; value comes from understanding your environment ([[episodes/osim-tochna--running-llms-at-scale]], [[people/kfir-schneider]]).
+- From token-maxing to cost shock: after a period when people competed over who spent the most tokens (Jensen Huang's GTC token budgets), companies running complex agents find costs exploding. You can't put Opus on every pass, boolean flag, PII check or policy check; it also makes answers take minutes, and users churn ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]], [[people/uri-eliabayev]]).
+- API math vs subscriptions: at a quoted $10 per million input tokens and $50 per million output tokens for Fable 5, a million tokens each way already costs ~$60, three times a $20 monthly plan, and a developer's context fills that fast ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 - Margins differ by feature: agent features run close to raw LLM cost, especially when users can pick the priciest model, while non-AI automations keep software margins, so a product's blended margin depends on its usage mix ([[episodes/startup-for-startup--369-ai-pricing]], [[people/roy-mann]])
 
 ## Disagreements & open questions
 - Is cost even the issue? One host argues flat $200 subscriptions make it moot and the real question is business impact ([[episodes/langtalks--67-finops-for-ai]]).
 - Flat subscriptions as the answer vs a temporary subsidy: a heavy Claude Max $200 user would cost ~$1.5–2k at API prices, and metered billing would change the economics ([[episodes/explainable--163-hidden-cost-of-agents]], [[episodes/langtalks--67-finops-for-ai]]).
-- How long will the subsidy last? Inference optimizer Mike Erlihson says LLM vendors lose huge sums (perhaps ~$1B a month) and expects $100–200 subscriptions could become ~$1,000 when the party ends; host Amit Bendor notes competition is still holding prices down ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]], [[people/amit-bendor]]).
+- How long will the subsidy last? Inference optimizer Mike Erlihson says LLM vendors lose huge sums (perhaps ~$1B a month) and expects $100–200 subscriptions could become ~$1,000 when the party ends; host Amit Bendor notes competition is still holding prices down ([[episodes/osim-tochna--running-llms-at-scale]], [[people/mike-erlihson]], [[people/amit-bendor]]). Yuval Avidani says there's "no chance" $20 subscriptions cover what users consume and labs bet on pricier tiers and API work ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 
 ## Takeaways
 - [ ] Require use-case/repo metadata on every LLM call via an internal proxy or gateway ([[episodes/langtalks--67-finops-for-ai]])

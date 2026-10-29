@@ -405,3 +405,28 @@ updated: concepts/{model-selection, llm-evals, harness-engineering, llm-cost-opt
 source: whisper
 created: episodes/tsarot-baheitek--90-naftali-bennett, concepts/{outcome-metrics, fundraising, defense-tech, ai-in-education}
 updated: concepts/{personal-ai-assistants, future-of-software-engineering}, episodes/micha-stocks--naftali-bennett-economic-interview, people/naftali-bennett, shows/tsarot-baheitek, index, takeaways/to-try
+
+## 2026-10-29 — ExplAInable: #167 The AI Harness and the Power of Persistence: Yuval Avidani on Agent Harnesses, the Future of Development, and Not Giving Up
+source: whisper
+created: episodes/explainable--167-yuval-avidani-agent-harness, people/yuval-avidani
+updated: concepts/{harness-engineering, model-selection, ai-moats, market-bubbles, llm-cost-optimization, future-of-software-engineering, image-generation, solo-builders}, people/mike-erlihson, shows/explainable, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-10-29 — The Startup Ideas Podcast: The 9 Stages of AI Agent Adoption, Explained
+source: transcript
+created: episodes/startup-ideas--9-stages-of-ai-agent-adoption
+updated: concepts/{agent-ready-products, agent-security, llm-advertising}, people/greg-isenberg, shows/the-startup-ideas-podcast, index, takeaways/to-try
+
+## 2026-10-29 — Micha Stocks: Anthropic's Numbers Are Out, and They Should Scare You
+source: whisper
+created: episodes/micha-stocks--anthropic-s1-numbers
+updated: concepts/{ai-moats, market-bubbles, neoclouds, market-breadth, technical-analysis}, people/micha-stocks, shows/micha-stocks, index
+
+## 2026-10-29 — Micha Stocks: 78% Odds of a December Rate Hike: Prepare Before the Market Wakes Up
+source: whisper
+created: episodes/micha-stocks--fed-rate-hike-odds, concepts/interest-rate-expectations
+updated: concepts/{market-breadth, technical-analysis, earnings-season}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-10-29 — Hidden Layers: How Do You Test Whether AI Agents Are Ready for Production? With Ilan Kedar of Plurai
+source: whisper
+created: episodes/hidden-layers--plurai-ilan-kedar, concepts/synthetic-data, people/ilan-kedar
+updated: concepts/{small-language-models, llm-evals, harness-engineering, llm-cost-optimization, model-selection, ai-moats}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

@@ -6,6 +6,8 @@ type: show
 Hebrew podcast on capital markets, Wall Street, and investing, hosted by [[people/micha-stocks]].
 
 ## Episodes
+- [[episodes/micha-stocks--fed-rate-hike-odds]] (2026-10-28)
+- [[episodes/micha-stocks--anthropic-s1-numbers]] (2026-10-27)
 - [[episodes/micha-stocks--yaron-zelicha-economic-interview]] (2026-10-21)
 - [[episodes/micha-stocks--bloody-monday-circuit-breakers]] (2026-10-20)
 - [[episodes/micha-stocks--earnings-week-meta-tesla-netflix]] (2026-10-19)

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 12
-updated: 2026-10-25
+sources: 13
+updated: 2026-10-29
 ---
 # Future of Software Engineering
 
-**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential. For students facing an entry-level "employment tsunami" that starts in software, one piece of career advice splits the path: the top ~10% should aim for frontier labs, and the rest should master the newest tools and start companies, now that starting costs almost nothing.
+**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential. The disruption isn't limited to code: the data scientists who trained the models were hit first, and QA, research reports, web and graphic design follow, because "good enough" generic output is all most buyers want, though a human eye for context and critique is still needed. For students facing an entry-level "employment tsunami" that starts in software, one piece of career advice splits the path: the top ~10% should aim for frontier labs, and the rest should master the newest tools and start companies, now that starting costs almost nothing.
 
 ## Key ideas
 - "Coding is dead, but engineering definitely isn't" ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/netanel-abergel]]).
@@ -36,6 +36,9 @@ updated: 2026-10-25
 - Thought experiment: adding 1,000 developers a year breaks the senior-mentors-junior review model; only AI guardrails that encode learned standards can support that growth ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 - AI brings an employment "tsunami" for juniors, starting in software and later everywhere via robotics ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
 - Career advice for CS students (self-described "off the cuff"): if you're honestly in the top 5–10%, aim for a frontier lab; if you're good but not a genius, dive into massive learning of the newest tools and go into entrepreneurship, if you lean that way. Starting a software company once took ~$2M for servers and offices; today it's near zero ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
+- Who falls next: the first hit were data scientists and developers who labeled data and trained the models. Then development and QA (products hold tens of thousands of AI-written lines, at best AI-reviewed, a pace humans can't match), research (seminar-level reports for Knesset members that Claude Code, Perplexity and GPT do in ~10 minutes), and design: a generic AI site in two hours saves ~₪80k, and most clients aren't designers ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
+- Humans remain for what AI lacks: the critical eye, context and human understanding; "AI hallucinates", so researchers are still needed ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
+- Mathematics may be next: AI tools prove claims "left and right", and some predict Riemann or P vs NP will fall by 2027. Mike Erlihson is skeptical. Yuval Avidani refuses to forecast at all: "we're in such a singular world" ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/mike-erlihson]], [[people/yuval-avidani]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).

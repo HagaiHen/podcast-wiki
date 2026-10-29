@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 4
-updated: 2026-10-21
+sources: 5
+updated: 2026-10-29
 ---
 # Agent-Ready Products (marketing to agents)
 
-**Summary:** Agents are becoming customers: they research, choose, and integrate tools on users' behalf, and consumers increasingly decide inside ChatGPT. Products that expose themselves to agents (skills or CLI for personal agents, MCP for remote ones) and get listed where agents look capture demand that most SaaS still ignores. Postiz jumped from $21k to $103k MRR in two months this way. Developers and early adopters here pay fast for things that solve problems. Paid placement is following: ChatGPT is piloting sponsored agents, company agents that answer a prospect's questions inside the chat in place of a landing page.
+**Summary:** Agents are becoming customers: they research, choose, and integrate tools on users' behalf, and consumers increasingly decide inside ChatGPT. An agent is "a customer with a credit card and no eyes": it reads prices, shipping, compatibility and return policies, ignores banners and videos, and stays loyal to whatever worked last time. Products that expose themselves to agents (skills or CLI for personal agents, MCP for remote ones) and get listed where agents look capture demand that most SaaS still ignores. Postiz jumped from $21k to $103k MRR in two months this way. Commerce is resisting for now in a "war on agents": big stores like Amazon block outside agents that skip their ads and upsells, while platforms with big audiences (Meta, OpenAI) push the door open. Greg Isenberg expects it to end like Plaid and the banks, with a trusted layer for agent identity and payments and selling to agents becoming as normal as having a website. Paid placement is following: ChatGPT is piloting sponsored agents, company agents that answer a prospect's questions inside the chat in place of a landing page.
 
 ## Key ideas
 - Two surfaces: a *skill* (just an MD file, e.g. built from your public API docs, the most popular endpoints first) for personal agents like OpenClaw and Claude Code; an *MCP server* for remote agents like ChatGPT and Claude ([[episodes/langtalks--69-marketing-for-agents]], [[people/nevo-david]]).
@@ -25,14 +25,26 @@ updated: 2026-10-21
 - SEO (can Google understand it?) → AEO (can AI cite it?) → agent readiness (can the agent finish the job?) ([[episodes/startup-ideas--webmcp-clearly-explained]], [[people/greg-isenberg]]).
 - Best early fits: compatibility-heavy commerce (espresso gear, camera systems, car parts), SaaS admin consoles, read-only self-service in banking and insurance, and internal tools ([[episodes/startup-ideas--webmcp-clearly-explained]]).
 - Sponsored agents (ChatGPT alpha): an ad's call to action opens the advertiser's agent in the chat, briefed on product, pros and cons and pricing, so the prospect can ask questions and even convert without leaving. Unlike regular ads, the advertiser sees what the user asked ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/tamar-hazoli]], [[people/yoav-rubin]]).
+- The "war on agents" has three camps: blockers (Amazon blocks Meta's Muse agent, as it did Perplexity's shopping agent; Delta treats outside agents as unauthorized automated activity; Yelp admits agents only through paid data licensing), accidental blockers (Zillow and Walmart, where anti-scraping defenses can't tell a personal assistant from a scraper), and welcomers (Meta's open agent-to-business standard with Walmart and Stripe, Shopify's agentic storefronts) ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- An agent is a customer with a credit card and no eyes: everything designed for human eyes is invisible to it. It's the most disciplined shopper (no impulse buys, finds the hidden shipping fee, compares five suppliers at once) and loyal to whatever worked last time; if it got stuck at your checkout, it goes elsewhere and you never know ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- Follow the money: agents don't steal the sale, they skip what happens on the way to it, such as Amazon's sponsored products and airlines' seat, bag and credit-card upsells, often the highest-margin parts. The deeper fear is Meta or OpenAI sitting between store and customer. The blockers build their own agents (Amazon's Rufus, Delta's concierge): agents are fine "as long as they work for us" ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- Each player's bet: Amazon a walled garden; Meta open doors because it owns the agents walking through them; Walmart, as number two, partners to take share; OpenAI checkout inside the conversation (Etsy, Shopify); Google agents and payments in Gemini while protecting a click-based ads business; Shopify the arms dealer; Visa, Mastercard and Cloudflare the toll booth and bouncer ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- His stages: (1) block agents that skip ads and upsells (today); (2) agents imitate humans, an arms race; (3) the market splits: sales businesses let agents in, data businesses charge, giants build their own; (4) a trusted identity-and-payments layer becomes the standard way in, the "Plaid moment"; (5) welcoming companies win customers from blockers; (7) everyone competes for agents with agent prices, faster checkouts and SEO for agents; (8) ads come back; (9) selling to agents is as normal as having a website. The stages will blend, and stage 6 isn't described in the episode ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- The Plaid precedent: banks fought Mint.com, then Plaid built a proper connection and banks went from blocking to signing deals to charging for access ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- Make your advantage readable, not just your offer: put total price, delivery date, compatibility and return terms in plain text, not a PDF or the last checkout screen. If an agent sees only price you lose to cheaper rivals; if it sees next-day delivery you may win, since agents' bosses still value speed and reliability ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- Startup openings: agent readiness for one niche industry (fix it by hand 10 times, then build the software); a "Plaid for one vertical" (contractors, restaurant supplies, vet appointments); insurance for agent mistakes; analytics that separate agent from human traffic; being the specialist agents reward. Avoid businesses whose edge is a trick to get mentioned by AI ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
+- Is blocking agents protecting the customer or a habit? Isenberg grants real reasons (fraud, unauthorized bookings, scrapers posing as agents) and says a temporary block can be responsible, but asks whether "own the customer relationship" has become "make the customer deal with me my way" ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
 
 ## Takeaways
 - [ ] Publish a skill (MD from your API docs) and an MCP server for your product ([[episodes/langtalks--69-marketing-for-agents]])
 - [ ] Submit to GitHub awesome lists, ClawHub, and the ChatGPT/Claude marketplaces ([[episodes/langtalks--69-marketing-for-agents]])
 - [ ] Ship a CLI with OAuth login so tokens never enter the agent's context ([[episodes/langtalks--69-marketing-for-agents]])
 - [ ] Pick your product's top 3 user journeys and test whether an agent can complete them end to end ([[episodes/startup-ideas--webmcp-clearly-explained]])
+- [ ] Pull ~10 real buying questions from your support inbox, give each to two or three agents on your site and a competitor's, and note where they get stuck ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]])
+- [ ] Review bot-protection settings so you block or allow agents on purpose, not by accident ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]])
+- [ ] Put total price, delivery date, compatibility and returns in plain text on product pages ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]])
 
 ## Related
 [[concepts/skill-engineering]] · [[concepts/agent-security]] · [[concepts/agent-workspaces]] · [[concepts/ai-growth-marketing]] · [[concepts/llm-advertising]]

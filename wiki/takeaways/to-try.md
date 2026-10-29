@@ -21,6 +21,7 @@
 - [ ] Judge a report by EPS, revenue, guidance, margins and call tone, then wait for the market's reaction — [[concepts/earnings-season]] · [[episodes/micha-stocks--earnings-week-meta-tesla-netflix]]
 - [ ] Each earnings week, load one or two companies' transcript, slides and release into NotebookLM for a summary deck — [[concepts/earnings-season]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
 - [ ] Ignore "bloody Monday" crash posts; circuit breakers halt index trading at −7%/−13% and close it at −20% — [[concepts/circuit-breakers]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
+- [ ] Before a Fed decision, check market-implied odds for this meeting and the next one rather than relying on commentary — [[concepts/interest-rate-expectations]] · [[episodes/micha-stocks--fed-rate-hike-odds]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
@@ -207,6 +208,17 @@
 - [ ] For each AI workflow, ask whether the process is fully deterministic; if so, replace the LLM with plain automation — [[concepts/workflow-automation]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
 - [ ] Before letting an agent approve anything (budgets, requests), encode the approval criteria as hard rules and dry-run it on the backlog, instead of describing a personality — [[concepts/ai-guardrails]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
 - [ ] If you're not aiming for a frontier lab, invest heavily in learning the newest AI tools and try building a company — [[concepts/future-of-software-engineering]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Prototype a simple agent on a managed harness (e.g. Bedrock AgentCore Harness) with a code-interpreter tool before wiring model, memory and sessions yourself — [[concepts/harness-engineering]] · [[episodes/explainable--167-yuval-avidani-agent-harness]]
+- [ ] Cluster production agent traces by failure point and turn each cluster into simulator scenarios — [[concepts/harness-engineering]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
+- [ ] Post consistently about what you're actually building, with the step-by-step how, regardless of early engagement — [[concepts/solo-builders]] · [[episodes/explainable--167-yuval-avidani-agent-harness]]
+- [ ] When generating synthetic data, list the task's dimensions first and generate across their combinations, not "give me ten examples" — [[concepts/synthetic-data]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
+- [ ] Label synthetic data with several models and keep only examples they agree on — [[concepts/synthetic-data]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
+- [ ] List the repetitive checks in your agent (PII, policy, boolean flags) still running on a frontier model and price an SLM per check — [[concepts/small-language-models]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
+- [ ] Serve many task-specific SLMs as adapters on one shared base model rather than one GPU per model — [[concepts/small-language-models]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
+- [ ] Pull ~10 real buying questions from your support inbox, give each to two or three agents on your site and a competitor's, and note where they get stuck — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
+- [ ] Review bot-protection settings so you block or allow agents on purpose, not by accident — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
+- [ ] Put total price, delivery date, compatibility and returns in plain text on product pages — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
+- [ ] If you sell online, decide per rung what agents may do: research freely, build carts or quotes, and add an extra check before money moves — [[concepts/agent-security]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

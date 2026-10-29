@@ -6,6 +6,7 @@ type: show
 Hebrew interview podcast on AI and the people behind it, hosted by [[people/uri-eliabayev]].
 
 ## Episodes
+- [[episodes/hidden-layers--plurai-ilan-kedar]] (2026-10-28)
 - [[episodes/hidden-layers--cato-networks-avishai-zvinsky]] (2026-10-08)
 - [[episodes/hidden-layers--nvidia-gilad-shainer]] (2026-09-27)
 - [[episodes/hidden-layers--manifold-gilad-levi]] (2026-07-06)

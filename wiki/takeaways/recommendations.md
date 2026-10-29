@@ -32,8 +32,12 @@
 - NotebookLM + Perplexity Finance (free earnings transcripts, slides, releases) for learning companies each earnings season — [[concepts/earnings-season]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
 - Israel Innovation Authority subsidized GPU program at Nebius (H200s; 30% off industry, 80% academia) — [[concepts/neoclouds]] · [[episodes/tsarot-baheitek--88-neoclouds-nebius]]
 - Cursor's model-agnostic benchmark (cited at the Opus 5.5 launch); AWS Bedrock as a trusted route to open-weight models — [[concepts/llm-evals]] · [[episodes/ai-engineering-podcast--choosing-the-right-model]]
+- Amazon Bedrock AgentCore Harness (managed agent harness: model, tools, memory, skills, sessions); Hermes (personal-assistant harness) — [[concepts/harness-engineering]] · [[episodes/explainable--167-yuval-avidani-agent-harness]]
+- LTX (Lightricks) and Flux video models, run locally on an RTX 4090; Higgsfield (multi-vendor video generation) — [[concepts/image-generation]] · [[episodes/explainable--167-yuval-avidani-agent-harness]]
+- Plurai agent simulator and Vibe Training (self-serve SLM training on synthetic data) — [[concepts/synthetic-data]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
 
 ## People
+- [[people/yuval-avidani]]: AI builder content (LinkedIn, an open-source skills repo, Channel 12 AI segment) — [[episodes/explainable--167-yuval-avidani-agent-harness]]
 - AI with Remy (agent-product walkthroughs) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]
 - Build Ship Grow and Squid Club: Israeli AI-builder communities — [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [[people/andrej-karpathy]]: his LLM Wiki post is the basis of this pattern — [[concepts/llm-wiki]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]

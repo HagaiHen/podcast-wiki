@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-20
+sources: 10
+updated: 2026-10-29
 ---
 # Agent Security
 
-**Summary:** Assume your agent will be turned against you. Anything it reads (an email, a PR, a website, a calendar invite) can carry a prompt injection, and with several users or agents on one machine, users can't be trusted either. Secure designs don't rely on the agent behaving: isolate it at the OS level, keep credentials out of its environment, hard-wire what it can reach, and execute sensitive actions outside its sandbox under policy and human approval. Small, auditable codebases beat trust in the author. In enterprises the risk compounds: workspace assistants turn latent over-permissioning into one-question leaks, employee-built agents get shared too widely, and intent depends on who asks and when. Map each agent against the "lethal trifecta" (untrusted input, sensitive data, ability to act), keep an inventory, and detect out-of-scope actions. For consumer agents, the risks are the vendor's data retention and the agent's spending, so contain the blast radius with limited payment cards.
+**Summary:** Assume your agent will be turned against you. Anything it reads (an email, a PR, a website, a calendar invite) can carry a prompt injection, and with several users or agents on one machine, users can't be trusted either. Secure designs don't rely on the agent behaving: isolate it at the OS level, keep credentials out of its environment, hard-wire what it can reach, and execute sensitive actions outside its sandbox under policy and human approval. Small, auditable codebases beat trust in the author. In enterprises the risk compounds: workspace assistants turn latent over-permissioning into one-question leaks, employee-built agents get shared too widely, and intent depends on who asks and when. Map each agent against the "lethal trifecta" (untrusted input, sensitive data, ability to act), keep an inventory, and detect out-of-scope actions. For consumer agents, the risks are the vendor's data retention and the agent's spending, so contain the blast radius with limited payment cards. Merchants face the mirror problem: proving a customer authorized what their agent bought. A "ladder of trust" (research, prepare, pay) lets them allow the first two rungs freely and add a check only where money moves.
 
 ## Key ideas
 - Threat model: once connected to email, anyone who mails you can prompt-inject it. The agent lives in "red" territory, working for you but in a hostile environment ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).
@@ -35,11 +35,15 @@ updated: 2026-10-20
 
 - Consumer agents may keep your data: Instinct AI users reported getting an email summary an hour after disconnecting Google, implying it had indexed and retained their emails, and its terms allow retaining private data ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
 - Spending blast radius: before giving an agent a card, create a separate virtual card (e.g. Wise) with a daily limit (~$500), so a runaway agent's worst case is bounded ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
+- Ladder of trust for buying agents: research (find and compare), prepare (fill the cart, hold seats, get a quote), pay (spend the money). Users set a goal, rules and a limit ("check with me before anything over $50"). Almost every company is fine with rung one; the whole fight is over rung three, yet many block all three ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- Merchant-side risks are real: an agent ordering 50 instead of 5 lands on the store's support line, not the AI company's; an airline that can't prove you authorized a booking has a fraud problem; much "agent" traffic is scrapers pulling prices or training data ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
+- Trusted agent identity: Visa and Mastercard are building ways for stores to recognize trusted agents, working with Cloudflare, which also lets agents pay their way in. Insurance for agent mistakes could unlock nervous businesses, since nobody knows who pays when an agent orders the wrong thing ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 
 ## Takeaways
 - [ ] Give agents a dedicated virtual card with a daily spending limit, never your main card ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]])
+- [ ] If you sell online, decide per rung what agents may do: research freely, build carts or quotes, and add an extra check before money moves, especially on big orders ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]])
 - [ ] Before connecting email to a consumer agent, read its data-retention terms ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]])
 - [ ] Run each agent in its own container with only mounted directories persistent ([[episodes/langtalks--71-claw-architectures]])
 - [ ] Keep API keys out of agent environments; inject them via an outbound proxy per host ([[episodes/langtalks--71-claw-architectures]])

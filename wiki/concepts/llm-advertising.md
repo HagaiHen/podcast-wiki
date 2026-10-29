@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-21
+sources: 2
+updated: 2026-10-29
 ---
 # Advertising in ChatGPT (LLM ads)
 
-**Summary:** Chat assistants are becoming a paid marketing channel with no playbook yet. ChatGPT shows a small sponsored banner under an answer the advertiser can't influence, and it sits between push and pull: users search, but they also work and ask for advice, so the ad catches them earlier in the journey than Google Search does. monday.com has advertised there since the first day of ads (February 2026) and found that most Google habits fail. Targeting comes mostly from the ad's content, so they run many varied ads split by user intent (tool seekers, chat actions, solution seekers). Action-verb, high-contrast ads and content-heavy landing pages win. Bidding on a conversion event (OCPC) made the channel work. Measurement is the big gap: OpenAI shares almost nothing about what users asked, so click-based attribution undercounts and view-through and geo tests are needed. Competition is low and CPC is about a quarter of Google's, so early entrants learn cheaply before prices rise. Sponsored in-chat agents may replace landing pages.
+**Summary:** Chat assistants are becoming a paid marketing channel with no playbook yet. ChatGPT shows a small sponsored banner under an answer the advertiser can't influence, and it sits between push and pull: users search, but they also work and ask for advice, so the ad catches them earlier in the journey than Google Search does. monday.com has advertised there since the first day of ads (February 2026) and found that most Google habits fail. Targeting comes mostly from the ad's content, so they run many varied ads split by user intent (tool seekers, chat actions, solution seekers). Action-verb, high-contrast ads and content-heavy landing pages win. Bidding on a conversion event (OCPC) made the channel work. Measurement is the big gap: OpenAI shares almost nothing about what users asked, so click-based attribution undercounts and view-through and geo tests are needed. Competition is low and CPC is about a quarter of Google's, so early entrants learn cheaply before prices rise. Sponsored in-chat agents may replace landing pages. Longer term, ads are the reason stores block shopping agents (agents skip sponsored products and upsells), and also the likely way the conflict ends: companies paying to be the first thing your agent recommends.
 
 ## Key ideas
 - Old split: *push* channels create intent (YouTube, LinkedIn, Facebook); *pull* channels catch existing intent (Google Search, SEO, affiliates, partnerships). ChatGPT is a hybrid: most users who clicked were seeing a monday ad for the first time, which reads like push ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/yoav-rubin]], [[people/tamar-hazoli]]).
@@ -21,6 +21,7 @@ updated: 2026-10-21
 - Cheap for now: CPC is about a quarter of Google's because there are many more searches (follow-up prompts count) and far fewer advertisers, and prompts don't all compete for the same two keywords. Expect prices and competition to rise within a year or two ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/yoav-rubin]], [[people/tamar-hazoli]]).
 - Budget: monday carved a share out of other channels for Q4. On some metrics ChatGPT is its best channel, on others among its worst ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/yoav-rubin]]).
 - Next: *sponsored agents* (alpha). The ad's call to action opens a company agent inside ChatGPT, briefed on pros, cons and pricing, so the user arrives at signup with clearer intent. It also eases privacy, since users know they're talking to the advertiser ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/tamar-hazoli]], [[people/yoav-rubin]]).
+- Ads come back for agents: companies block shopping agents because agents skip ads (Amazon earns tens of billions a year, largely from sponsored products atop search). Advertising won't vanish but evolve, as it did from print to TV to digital, so companies will pay to be the first thing an agent recommends; ChatGPT's and reportedly Google's AI-search ads are the start. "What's the equivalent of a billboard for an AI agent?" ([[episodes/startup-ideas--9-stages-of-ai-agent-adoption]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Who sees ads: only logged-out, free and lowest-tier users (about 50% of US users). Hazoli sees this as B2B's big fear, because monday's most valuable users work in enterprise accounts that never see ads. Rubin counters that small firms use free or cheap tiers, and that people research on a personal phone account and then sign up from work ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/tamar-hazoli]], [[people/yoav-rubin]]).
@@ -33,4 +34,4 @@ updated: 2026-10-21
 - [ ] Measure view-through and cross-channel lift (e.g. a geo test), not just last click ([[episodes/startup-for-startup--371-chatgpt-ads]])
 
 ## Related
-[[concepts/ai-growth-marketing]] · [[concepts/agent-ready-products]]
+[[concepts/ai-growth-marketing]] · [[concepts/agent-ready-products]] · [[concepts/agent-security]]

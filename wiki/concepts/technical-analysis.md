@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 2
-updated: 2026-10-22
+sources: 4
+updated: 2026-10-29
 ---
 # Technical Analysis (moving averages, support and resistance)
 
-**Summary:** Technical analysis reads price charts rather than business fundamentals. A trader's basic toolkit: where the price sits relative to its 50- and 150-day moving averages, support levels the price keeps bouncing off, resistance levels it fails to break, and named patterns (cup and handle, head and shoulders, triple bottom). The value is in defining in advance which price confirms a thesis and which invalidates it. The weakness is ambiguity: the same chart can honestly be read as two opposite patterns.
+**Summary:** Technical analysis reads price charts rather than business fundamentals. A trader's basic toolkit: where the price sits relative to its 50- and 150-day moving averages, support levels the price keeps bouncing off, resistance levels it fails to break, trend lines, volume that confirms a breakdown, and named patterns (cup and handle, head and shoulders, triple bottom). The value is in defining in advance which price confirms a thesis and which invalidates it. The weakness is ambiguity: the same chart can honestly be read as two opposite patterns.
 
 ## Key ideas
 - Moving averages as a trend filter: below both the 50- and 150-day averages is a "falling knife" until proven otherwise (Netflix before earnings); crossing back above both is classically bullish (Intuitive Surgical) ([[episodes/micha-stocks--earnings-week-meta-tesla-netflix]], [[people/micha-stocks]]).
@@ -16,6 +16,9 @@ updated: 2026-10-22
 - Set the invalidation level too: below ~$74k "we probably haven't found the bottom" ([[episodes/micha-stocks--bitcoin-uptober]], [[people/micha-stocks]]).
 - A chart at a decision point can resolve either way: Lam Research was forming a possible triple bottom or about to break down ([[episodes/micha-stocks--earnings-week-meta-tesla-netflix]], [[people/micha-stocks]]).
 - He doesn't buy right before an earnings report, even when the chart looks great ([[episodes/micha-stocks--earnings-week-meta-tesla-netflix]], [[people/micha-stocks]]).
+- Trend lines: Nvidia bounced off its trend line with a bullish candle, "let's hope it lasts more than a day" ([[episodes/micha-stocks--anthropic-s1-numbers]], [[people/micha-stocks]]).
+- Support and resistance on an index: QQQ bounced from support around 700 after a Friday doji, with resistance expected around 731 ([[episodes/micha-stocks--fed-rate-hike-odds]], [[people/micha-stocks]]).
+- Volume confirms a breakdown: Boeing had already broken its line, and its 10.6% drop on heavy volume showed investors "throwing the stock down the stairs"; it trades where it was in 2020 ([[episodes/micha-stocks--fed-rate-hike-odds]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - Pattern ambiguity: the same Ethereum chart reads as a head and shoulders (bearish) or a tilted cup and handle (bullish). "Everything is possible right now" ([[episodes/micha-stocks--bitcoin-uptober]], [[people/micha-stocks]]).
@@ -24,4 +27,4 @@ updated: 2026-10-22
 - [ ] Before entering a trade, write down both the confirming price and the price that would prove you wrong ([[episodes/micha-stocks--bitcoin-uptober]])
 
 ## Related
-[[concepts/bitcoin]] · [[concepts/earnings-season]] · [[concepts/market-timing]]
+[[concepts/bitcoin]] · [[concepts/earnings-season]] · [[concepts/market-timing]] · [[concepts/interest-rate-expectations]]

@@ -6,6 +6,7 @@ type: show
 Greg Isenberg's English podcast on startup ideas, AI tools, and one-person businesses.
 
 ## Episodes
+- [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]] (2026-10-21)
 - [[episodes/startup-ideas--8-github-repos-viral-money]] (2026-10-08)
 - [[episodes/startup-ideas--jev-is-here]] (2026-09-18)
 - [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]] (2026-09-15)

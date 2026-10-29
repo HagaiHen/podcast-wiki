@@ -6,7 +6,7 @@ type: hub
 Building reliable, useful systems with LLMs and agents: what goes into context, how knowledge is retrieved, and how to make agent behavior trustworthy.
 
 ## Concepts
-- [[concepts/image-generation]]: controllable image models
+- [[concepts/image-generation]]: controllable image models; one-prompt and local video generation
 - [[concepts/ai-red-teaming]]: breaking models before attackers do
 - [[concepts/world-models]]: models of the physical world
 - [[concepts/ai-infrastructure]]: AI factories and GPU networking
@@ -28,6 +28,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/agent-memory]]: agent memory and its governance
 - [[concepts/multi-agent-orchestration]]: orchestrating specialist agents
 - [[concepts/small-language-models]]: when to train small models
+- [[concepts/synthetic-data]]: diverse, consensus-labeled generated data for edge cases and small models
 - [[concepts/voice-agents]]: building phone/voice agents
 - [[concepts/ai-rd-rollout]]: org-wide AI adoption
 - [[concepts/autonomous-agents-outlook]]: speculation on autonomy and AGI

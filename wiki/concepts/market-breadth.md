@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 3
-updated: 2026-10-22
+sources: 5
+updated: 2026-10-29
 ---
 # Market Breadth
 
-**Summary:** Market breadth asks how many stocks take part in a move, not just where the index ends up. A cap-weighted index like the S&P 500 can sit within 5% of its all-time high while most of its stocks are in a correction or a bear market, because a handful of giants carry it. It works in both directions: in a week when tech and chips fell hard and the Nasdaq dropped 5%, most S&P 500 sectors were green, and on a later up day for the indexes the equal-weight version fell. That gap is why an index investor and a stock picker can feel opposite things on the same day. The usual way to see it is to compare the cap-weighted S&P 500 with its equal-weight version (RSP), count how many stocks are well below their highs, and look at sectors.
+**Summary:** Market breadth asks how many stocks take part in a move, not just where the index ends up. A cap-weighted index like the S&P 500 can sit within 5% of its all-time high while most of its stocks are in a correction or a bear market, because a handful of giants carry it. It works in both directions: in a week when tech and chips fell hard and the Nasdaq dropped 5%, most S&P 500 sectors were green, and on a later up day for the indexes the equal-weight version fell. Broad and narrow rallies alternate from day to day: one day RSP rises with the indexes, the next it barely moves while the Nasdaq jumps on the giants. That gap is why an index investor and a stock picker can feel opposite things on the same day. The usual way to see it is to compare the cap-weighted S&P 500 with its equal-weight version (RSP), count how many stocks are well below their highs, and look at sectors.
 
 ## Key ideas
 - In October 2026 the S&P 500 was <5% from its high, yet 84% of its stocks were 10%+ below their own highs and 59% were 20%+ below, i.e. in a bear market. By sector: real estate 97%, materials 96%, utilities 94%, consumer discretionary 92%, staples 91%, financials 87% ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
@@ -16,6 +16,8 @@ updated: 2026-10-22
 - A sideways, narrow market is a time to trade less: stops keep getting hit when there's no clear direction ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
 - The reverse case: in a week when the Nasdaq fell 5% (S&P 500 −1.95%), tech fell 7.7% and chips 12%, yet most sectors rose: staples +5%, energy +4.8%, health care +3.5%, materials +3%, utilities +1.9%. "Tech gets hit, and we're exposed to tech" ([[episodes/micha-stocks--earnings-week-meta-tesla-netflix]], [[people/micha-stocks]]).
 - A good-feeling day can be a bad day underneath: the Nasdaq rose 1.2% and the S&P 500 0.42%, but equal-weight RSP fell 0.32% and only three sectors were green. Chips (+1.7%) and the Magnificent 7 (+1.7%, 30–40% of the index) did all the lifting, so he rated it worse than the down Friday before ([[episodes/micha-stocks--bloody-monday-circuit-breakers]], [[people/micha-stocks]]).
+- A broad day: Nasdaq +1.1%, S&P 500 +0.7%, Russell +0.45% and equal-weight RSP +0.35%, "meaning a lot of stocks took part" ([[episodes/micha-stocks--anthropic-s1-numbers]], [[people/micha-stocks]]).
+- A narrow day right after: the Nasdaq rose ~1.27% while RSP barely moved, so the big caps did the work, with tech (+1.7%) and Tesla-driven consumer discretionary leading ([[episodes/micha-stocks--fed-rate-hike-odds]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - Whether "bear market" is the right word is a measurement question: specific sectors and stocks are in one, but the S&P 500 as a market is not ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).

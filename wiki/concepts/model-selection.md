@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 14
-updated: 2026-10-23
+sources: 16
+updated: 2026-10-29
 ---
 # Model Selection
 
-**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks: start with the biggest model, then find the smallest that meets the KPI, and compare cost per *completed task* at the quality you need, not price per token. Knowledge work (decks, docs, dashboards) is largely saturated and runs fine on cheap or open models; hard engineering tasks still need frontier models. Turning up a weak model's reasoning effort doesn't make it smarter. Since average users and engineers can't track every model and effort level, the org can route by intent instead, choosing once at the start of a session so the cache survives. Plan with a strong model and execute with a cheaper one, and keep prompts tuned per model version. Whether to build model-agnostic (swap per component, keep a tested fallback) or commit to one lab's models is contested, as is how much the model matters relative to the harness.
+**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks: start with the biggest model, then find the smallest that meets the KPI, and compare cost per *completed task* at the quality you need, not price per token. Knowledge work (decks, docs, dashboards) is largely saturated and runs fine on cheap or open models; hard engineering tasks still need frontier models. Turning up a weak model's reasoning effort doesn't make it smarter. Since average users and engineers can't track every model and effort level, the org can route by intent instead, choosing once at the start of a session so the cache survives. Plan with a strong model and execute with a cheaper one, and keep prompts tuned per model version. Lock-in to one closed vendor is becoming a business risk (access can be cut, quality can quietly change), which pushes companies toward open models they control; managed harnesses make swapping a hosted model a one-click change. Whether to build model-agnostic (swap per component, keep a tested fallback) or commit to one lab's models is contested, as is how much the model matters relative to the harness.
 
 ## Key ideas
 - A ~35B Qwen model insisted a car in a video wasn't changing lanes; a big model got it right but at negative ROI. Asking instead "does the line move from the left of the frame to the right?" made the small model correct ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -41,6 +41,8 @@ updated: 2026-10-23
 - Intent-based model routing: a small language model reads the prompt and context, classifies the task, and sends it to the most cost-effective model that can do it (a product-strategy deck may go to Kimi or GLM instead of Opus or Fable). The user doesn't see it; framing routes as "quality" or "cost" makes it easier to accept ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 - Route once, then stick: switching models mid-session breaks prompt caching, so pick the model from the first intent and stay with it. Opus 5.5 keeps the cache across effort-level changes, and labs say cross-model caching is coming ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 - Choosing an effort level is unreasonable for users; she says Anthropic told her it will soon go away ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
+- Lock-in fear is growing: a company that ran only on Gemini came to Plurai worried about depending on one vendor. Closed vendors can cut access (as with the most powerful restricted models) or seem to degrade a model for a week or two; open small models you trained yourself avoid both ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]], [[people/uri-eliabayev]]).
+- On a managed harness, swapping models is one click instead of reworking a brittle API integration, so when Claude 5 ships you just switch ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).

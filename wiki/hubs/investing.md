@@ -22,3 +22,4 @@ Personal investing: how to build wealth slowly with broad index funds, and the t
 - [[concepts/seasonality]]: calendar stats like "Uptober" aren't causal
 - [[concepts/bitcoin]]: extreme volatility; why it won't replace sovereign money
 - [[concepts/circuit-breakers]]: halts at −7%/−13%/−20% make a 1987-style index day impossible
+- [[concepts/interest-rate-expectations]]: market-implied Fed odds; politics in the timing; 10-year yield and oil as keys
