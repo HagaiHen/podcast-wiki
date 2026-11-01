@@ -21,7 +21,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/earnings-season]]: reading quarterly reports and the market's reaction
 - [[concepts/technical-analysis]]: moving averages, support and resistance
 - [[concepts/seasonality]]: calendar effects like "Uptober"
-- [[concepts/bitcoin]]: crypto volatility; sovereign digital currencies
+- [[concepts/bitcoin]]: crypto volatility; custody vs ETFs; sovereign digital currencies
 - [[concepts/circuit-breakers]]: why an index can't crash 22% in a day
 - [[concepts/interest-rate-expectations]]: market-implied Fed odds; why the Fed waits for elections
 
@@ -46,6 +46,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/world-models]]: JEPA, video and 3D world models, beyond next-token
 - [[concepts/continual-learning]]: models that keep learning after training
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
+- [[concepts/llm-post-training]]: SFT and RL on open models; when vertical AI companies should train their own
 - [[concepts/llm-reasoning]]: token-space vs latent reasoning; RL reasoning
 - [[concepts/ai-moats]]: tech as business card; good-enough products; lab economics
 - [[concepts/solo-builders]]: AI builders without VC; shipping, finishing, distribution
@@ -182,8 +183,11 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/keren-kushman]]: Head of Applied AI, monday.com (MondayBench)
 - [[people/yuval-avidani]]: AI builder and content creator, GitHub Star
 - [[people/ilan-kedar]]: co-founder of Plurai (agent simulation, SLMs)
+- [[people/dan-padnos]]: Head of AI at Novee Security (post-training)
 
 ## Episodes
+- [[episodes/micha-stocks--feels-like-bear-market]]: Let's Talk About the Situation: It Feels Like a Bear Market (2026-10-31)
+- [[episodes/langtalks--75-post-training-dan-padnos-novee]]: #75 Post-Training, With Dan Padnos of Novee (2026-10-31)
 - [[episodes/micha-stocks--fed-rate-hike-odds]]: 78% Odds of a December Rate Hike (2026-10-28)
 - [[episodes/hidden-layers--plurai-ilan-kedar]]: Testing Whether AI Agents Are Ready for Production (2026-10-28)
 - [[episodes/micha-stocks--anthropic-s1-numbers]]: Anthropic's Numbers Are Out (2026-10-27)

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-10-07
+sources: 4
+updated: 2026-11-01
 ---
 # LLM Pre-training
 
-**Summary:** Pre-training is the stage where a model compresses a massive, unlabeled, scraped dataset. Because the data can't fit perfectly into the weights, the model is forced to learn regularities (ideally "expected value", not memorized labels). Generalization sometimes appears suddenly (grokking), and no one knows exactly why. Much of the craft is unpublished folklore passed between labs by word of mouth. Small academic experiments rarely transfer to scale, so only organizations that have actually trained large models hold the know-how. Few in Israel do (AI21, Lightricks for diffusion, a few others).
+**Summary:** Pre-training is the first and most famous stage, before mid-training and post-training: over months on GPUs, a model compresses a massive, unlabeled, scraped dataset. Because the data can't fit perfectly into the weights, the model is forced to learn regularities (ideally "expected value", not memorized labels). Generalization sometimes appears suddenly (grokking), and no one knows exactly why. Much of the craft is unpublished folklore passed between labs by word of mouth. Small academic experiments rarely transfer to scale, so only organizations that have actually trained large models hold the know-how. Few in Israel do (AI21, Lightricks for diffusion, a few others).
 
 ## Key ideas
 - Recipe: scrape the biggest dataset possible, pick a model size by a rough ratio (Chinchilla-style, ~1:20 tokens per parameter as a "good enough" rule of thumb), and train it to reproduce the data ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -21,6 +21,7 @@ updated: 2026-10-07
 - SFT needs loss masking (loss only on responses, not user input), which complicates sequence packing (filling the context with several texts to avoid padding); NeMo/Megatron Bridge handles packing for pre-training but not masked SFT well ([[episodes/explainable--157-training-hebatron]]).
 - Infra economics: NeMo/Megatron Bridge doubled throughput vs DeepSpeed (halving cost). B300 Blackwell GPUs cost ~2× H200 but ran ~7× faster (2k → 14k tokens/s), cutting a full CPT run from a projected ~$200k to tens of thousands. Budget-capped bookings (e.g. ~$20k per two-day 64-GPU cluster) force experiments to be planned a week ahead ([[episodes/explainable--157-training-hebatron]]).
 - Transformers have dominated for nine years (RNNs lasted about two) because of parallelism and scale, which brought emergent in-context learning and reasoning. Diminishing returns (10× compute for 99% → 99.9%) leave room for cheaper rivals ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
+- Stages: pre-training pushes internet-scale knowledge into the weights over months; mid-training strengthens particular knowledge or abilities, such as long context or science; post-training makes the model good at user tasks, not just predicting text. See [[concepts/llm-post-training]] ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
 
 ## Disagreements & open questions
 - Can transformers be understood from inside? Interpretability researchers (e.g. at Anthropic) try to localize facts in MLPs; Levi thinks the general problem is like predicting a three-body system: sub-problems yes, the whole no ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -28,4 +29,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]] · [[concepts/ai-infrastructure]] · [[concepts/world-models]]
+[[concepts/continual-learning]] · [[concepts/llm-reasoning]] · [[concepts/small-language-models]] · [[concepts/open-weight-models]] · [[concepts/hebrew-llms]] · [[concepts/ai-infrastructure]] · [[concepts/world-models]] · [[concepts/llm-post-training]]

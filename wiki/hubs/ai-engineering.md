@@ -18,6 +18,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/hebrew-llms]]: building Hebrew language models
 - [[concepts/continual-learning]]: learning after deployment
 - [[concepts/llm-pretraining]]: pre-training craft
+- [[concepts/llm-post-training]]: SFT and RL on open models; when vertical AI companies should train their own
 - [[concepts/llm-reasoning]]: how models reason
 - [[concepts/ai-moats]]: defensibility beyond the model
 - [[concepts/solo-builders]]: building and shipping products without VC

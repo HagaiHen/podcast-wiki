@@ -35,6 +35,8 @@
 - Amazon Bedrock AgentCore Harness (managed agent harness: model, tools, memory, skills, sessions); Hermes (personal-assistant harness) — [[concepts/harness-engineering]] · [[episodes/explainable--167-yuval-avidani-agent-harness]]
 - LTX (Lightricks) and Flux video models, run locally on an RTX 4090; Higgsfield (multi-vendor video generation) — [[concepts/image-generation]] · [[episodes/explainable--167-yuval-avidani-agent-harness]]
 - Plurai agent simulator and Vibe Training (self-serve SLM training on synthetic data) — [[concepts/synthetic-data]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
+- Unsloth and Axolotl (supervised fine-tuning libraries); Tinker and Fireworks (more managed RL training) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- Novee's blog post on agents in sandboxes and RL training architecture (linked in the LangTalks newsletter) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 
 ## People
 - [[people/yuval-avidani]]: AI builder content (LinkedIn, an open-source skills repo, Channel 12 AI segment) — [[episodes/explainable--167-yuval-avidani-agent-harness]]

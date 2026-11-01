@@ -26,3 +26,4 @@ Hebrew podcast on LLMs, agents, and AI engineering practice (langtalks.ai).
 - [[episodes/langtalks--72-personal-assistant-agent]] (2026-08-16)
 - [[episodes/langtalks--74-jev]] (2026-09-22)
 - [[episodes/langtalks--73-harness-engineering]] (2026-09-15)
+- [[episodes/langtalks--75-post-training-dan-padnos-novee]] (2026-10-31)

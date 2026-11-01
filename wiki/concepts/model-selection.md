@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 16
-updated: 2026-10-29
+sources: 17
+updated: 2026-11-01
 ---
 # Model Selection
 
-**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks: start with the biggest model, then find the smallest that meets the KPI, and compare cost per *completed task* at the quality you need, not price per token. Knowledge work (decks, docs, dashboards) is largely saturated and runs fine on cheap or open models; hard engineering tasks still need frontier models. Turning up a weak model's reasoning effort doesn't make it smarter. Since average users and engineers can't track every model and effort level, the org can route by intent instead, choosing once at the start of a session so the cache survives. Plan with a strong model and execute with a cheaper one, and keep prompts tuned per model version. Lock-in to one closed vendor is becoming a business risk (access can be cut, quality can quietly change), which pushes companies toward open models they control; managed harnesses make swapping a hosted model a one-click change. Whether to build model-agnostic (swap per component, keep a tested fallback) or commit to one lab's models is contested, as is how much the model matters relative to the harness.
+**Summary:** Bigger isn't automatically better: there's no bad model, only a model that hasn't been taught the task. Before upgrading, narrow the task, reframe the question, and manage context, which often lets a small, cheap, fast model do the job. Choose on *your* evals, not public benchmarks: start with the biggest model, then find the smallest that meets the KPI, and compare cost per *completed task* at the quality you need, not price per token. Knowledge work (decks, docs, dashboards) is largely saturated and runs fine on cheap or open models; hard engineering tasks still need frontier models. Turning up a weak model's reasoning effort doesn't make it smarter. Since average users and engineers can't track every model and effort level, the org can route by intent instead, choosing once at the start of a session so the cache survives. Plan with a strong model and execute with a cheaper one, and keep prompts tuned per model version. When testing fixes, try other frontier models first and your own trained model last. Lock-in to one closed vendor is becoming a business risk (access can be cut, quality can quietly change), which pushes companies toward open models they control; managed harnesses make swapping a hosted model a one-click change. Whether to build model-agnostic (swap per component, keep a tested fallback) or commit to one lab's models is contested, as is how much the model matters relative to the harness.
 
 ## Key ideas
 - A ~35B Qwen model insisted a car in a video wasn't changing lanes; a big model got it right but at negative ROI. Asking instead "does the line move from the left of the frame to the right?" made the small model correct ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]]).
@@ -43,6 +43,7 @@ updated: 2026-10-29
 - Choosing an effort level is unreasonable for users; she says Anthropic told her it will soon go away ([[episodes/ai-engineering-podcast--choosing-the-right-model]], [[people/keren-kushman]]).
 - Lock-in fear is growing: a company that ran only on Gemini came to Plurai worried about depending on one vendor. Closed vendors can cut access (as with the most powerful restricted models) or seem to degrade a model for a week or two; open small models you trained yourself avoid both ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]], [[people/uri-eliabayev]]).
 - On a managed harness, swapping models is one click instead of reworking a brittle API integration, so when Claude 5 ships you just switch ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
+- A host's order when a simulated agent keeps failing: knowledge and skills, then the harness, then a different frontier model (GPT to Claude to Grok), and only then your own model. Changing several at once is an equation with many unknowns, so isolate variables ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
 
 ## Disagreements & open questions
 - Portability: Dor Cohen urges avoiding vendor lock-in with tested fallbacks ([[episodes/ai-engineering-podcast--ai-infra-at-scale]]); Wonderful builds every component model-agnostic and swaps per component ([[episodes/ignore-instructions--24-wonderful-road-to-100m]]); Gavriel Cohen argues agents can't simply swap models ([[episodes/langtalks--71-claw-architectures]]).
@@ -59,4 +60,4 @@ updated: 2026-10-29
 - [ ] Set reasoning-token budgets instead of default effort levels where available ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]])
 
 ## Related
-[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/llm-pipelines]] · [[concepts/small-language-models]] · [[concepts/llm-cost-optimization]]
+[[concepts/context-engineering]] · [[concepts/llm-inference]] · [[concepts/open-weight-models]] · [[concepts/llm-evals]] · [[concepts/ai-gateway]] · [[concepts/llm-pipelines]] · [[concepts/small-language-models]] · [[concepts/llm-cost-optimization]] · [[concepts/llm-post-training]]

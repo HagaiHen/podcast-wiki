@@ -22,6 +22,9 @@
 - [ ] Each earnings week, load one or two companies' transcript, slides and release into NotebookLM for a summary deck — [[concepts/earnings-season]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
 - [ ] Ignore "bloody Monday" crash posts; circuit breakers halt index trading at −7%/−13% and close it at −20% — [[concepts/circuit-breakers]] · [[episodes/micha-stocks--bloody-monday-circuit-breakers]]
 - [ ] Before a Fed decision, check market-implied odds for this meeting and the next one rather than relying on commentary — [[concepts/interest-rate-expectations]] · [[episodes/micha-stocks--fed-rate-hike-odds]]
+- [ ] Before calling a bear market, compare giants, equal-weight, value vs growth, and sectors for the same period — [[concepts/market-breadth]] · [[episodes/micha-stocks--feels-like-bear-market]]
+- [ ] In a selloff, separate companies with intact results and no warnings from those cutting guidance, and accept you won't catch the low — [[concepts/market-timing]] · [[episodes/micha-stocks--feels-like-bear-market]]
+- [ ] Decide whether you want the crypto itself or only its price exposure: exchange or wallet custody vs an ETF — [[concepts/bitcoin]] · [[episodes/micha-stocks--feels-like-bear-market]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
@@ -219,6 +222,11 @@
 - [ ] Review bot-protection settings so you block or allow agents on purpose, not by accident — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
 - [ ] Put total price, delivery date, compatibility and returns in plain text on product pages — [[concepts/agent-ready-products]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
 - [ ] If you sell online, decide per rung what agents may do: research freely, build carts or quotes, and add an extra check before money moves — [[concepts/agent-security]] · [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
+- [ ] Before training a model, make the task measurable, then work through harness, knowledge, skills and frontier model swaps — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- [ ] Make the first post-training run a deliberate overfit: a small, established model on a one-example dataset — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- [ ] When two trajectories both pass, add reward penalties for errors and episode length — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- [ ] Build a simulated environment with persona agents for outside parties, then rerun the same case to measure consistency and change one variable at a time — [[concepts/llm-evals]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- [ ] If an agent misuses a tool at one workflow stage, remove that tool at that stage and rerun simulations — [[concepts/harness-engineering]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

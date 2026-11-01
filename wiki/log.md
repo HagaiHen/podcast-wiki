@@ -430,3 +430,13 @@ updated: concepts/{market-breadth, technical-analysis, earnings-season}, people/
 source: whisper
 created: episodes/hidden-layers--plurai-ilan-kedar, concepts/synthetic-data, people/ilan-kedar
 updated: concepts/{small-language-models, llm-evals, harness-engineering, llm-cost-optimization, model-selection, ai-moats}, people/uri-eliabayev, shows/hidden-layers, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-11-01 — Micha Stocks: Let's Talk About the Situation: It Feels Like a Bear Market
+source: whisper
+created: episodes/micha-stocks--feels-like-bear-market
+updated: concepts/{market-breadth, market-timing, bitcoin, market-bubbles, concentration-risk, cape-ratio, ai-cybersecurity}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-11-01 — LangTalks: #75 Post-Training, With Dan Padnos of Novee
+source: whisper
+created: episodes/langtalks--75-post-training-dan-padnos-novee, concepts/llm-post-training, people/dan-padnos
+updated: concepts/{open-weight-models, ai-moats, llm-evals, harness-engineering, small-language-models, llm-pretraining, ai-red-teaming, model-selection, ai-cybersecurity}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

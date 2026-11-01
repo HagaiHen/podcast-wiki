@@ -1,0 +1,36 @@
+---
+type: concept
+hubs: [ai-engineering]
+sources: 3
+updated: 2026-11-01
+---
+# LLM Post-Training
+
+**Summary:** Post-training is the last stage of training an LLM: pre-training compresses internet-scale text into weights, mid-training strengthens areas such as long context or scientific knowledge, and post-training makes the model good at carrying out the tasks users actually ask for. It comes in two main forms: supervised fine-tuning (SFT) raises the probability of a static set of good examples, while reinforcement learning (RL) runs the model on tasks, scores the outcomes, and favors the sequences that earned high rewards. Vertical AI companies do it on strong open-weight models to strengthen the exact actions their product depends on, usually after the product has matured, as Cursor and Harvey did. It is a slow, strategic R&D investment rather than a first step: harness, knowledge and memory are more flexible, and they hold the easier wins. Owning a model also commits you to retraining as open models improve, while frontier labs keep advancing. The recommended path is to measure the task first, peel back the easier layers, and test your own model only when the measurements point to it.
+
+## Key ideas
+- Why go below the harness: a vertical product's core action sits on a stack of harness, prompts, data and tools, with a model underneath that must take the right action, or long sequence of actions, given that context. Open models are excellent, not far behind the frontier, and can be strengthened on exactly your use case ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Two kinds of task favor your own model: repetitive, domain-specific tasks, and domains where general models are weaker. Labs deliberately limit models in sensitive areas such as cybersecurity for safety reasons ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
+- Look for a task with a comparative advantage that frontier labs care less about. Cursor trained models well before Composer, starting with tab completion, which had to run locally and very fast, a different use case from the biggest, slower cloud models ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- SFT vs RL: SFT learns from a static dataset of text the model should produce, including user messages, tool calls and reasoning. RL learns from experience: run several independent rollouts of a task to an end point, score each, and increase the probability of sequences that led to a high-reward outcome ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- When to choose RL: supervised training needs a well-defined, differentiable loss. A reward only has to be concrete, so it can combine goals such as code correctness and the number of PR review comments. It is harder to get converging, and a model can exploit a badly defined reward ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
+- RL is close to evaluation as engineering: if you can run agents on tasks at scale, generate those tasks and score them, you have the ingredients. Many frozen-model rollouts run in parallel, a deterministic or LLM judge scores them, and the results flow back to the trainer, with separate resources for each ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Start small and overfit on purpose: use a smaller, established model (not one released last week, whose engineering is still settling) and a dataset of perhaps one example, and prove the model can memorize it and reproduce the solution ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Tooling: for SFT, Unsloth and Axolotl are good starting points, and most of your work is building the dataset. RL has fewer easy tools and needs more building yourself, though Tinker and Fireworks are starting to offer more managed options ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Shaping behavior through the outcome: language-model training often does no credit assignment and looks only at the final result. Heuristics can still be folded into it, such as penalizing errors or episode length when two coding trajectories both pass the unit tests, which pushes the model to solve faster and with less friction ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Simulated environments ("gyms") find what to train: failures such as an agent that always misjudges damage in insurance claims can be tackled in order through knowledge, skills, harness changes, a different frontier model, and only then your own model ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
+- Labs have moved from RLHF to RL gyms, with failures such as tool misuse, broken reasoning or an indirect prompt injection feeding post-training ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- With closed frontier APIs you can't fine-tune or post-train, so "the whole world uses the same model"; startups begin on them and can tune an open model once they have collected their own data ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
+
+## Disagreements & open questions
+- When is it worth it? A host wouldn't make it an application company's first, second or probably third priority: other layers have lower-hanging fruit, you end up chasing retraining on each new base model, and staying on your own model forfeits the frontier's progress. Padnos agrees on the reasons but argues the slower R&D path can pay off greatly over time ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]). The closing view from a host is that it's worth investing as early as you can if you are vertical and need a moat ([[episodes/langtalks--75-post-training-dan-padnos-novee]]). Avi Golan predicted more enterprises would fine-tune open models on their agents' failures within 6–12 months ([[episodes/hidden-layers--alice-avi-golan]]).
+- Credit assignment is an open research question: a result comes from many steps, some clever and some mistaken, as in a chess game, yet training often doesn't apportion credit among them ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Terminology is loose: pre-, mid- and post-training are all just stages of training a language model, as Padnos notes ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
+
+## Takeaways
+- [ ] Before training a model, make the task measurable, then work through harness, knowledge, skills and frontier model swaps ([[episodes/langtalks--75-post-training-dan-padnos-novee]])
+- [ ] Make the first post-training run a deliberate overfit: a small, established model on a one-example dataset ([[episodes/langtalks--75-post-training-dan-padnos-novee]])
+- [ ] When two trajectories both pass, add reward penalties for errors and episode length ([[episodes/langtalks--75-post-training-dan-padnos-novee]])
+
+## Related
+[[concepts/llm-pretraining]] · [[concepts/open-weight-models]] · [[concepts/small-language-models]] · [[concepts/ai-moats]] · [[concepts/llm-evals]] · [[concepts/harness-engineering]] · [[concepts/model-selection]] · [[concepts/ai-red-teaming]]

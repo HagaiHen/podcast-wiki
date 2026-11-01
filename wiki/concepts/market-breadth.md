@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 5
-updated: 2026-10-29
+sources: 6
+updated: 2026-11-01
 ---
 # Market Breadth
 
-**Summary:** Market breadth asks how many stocks take part in a move, not just where the index ends up. A cap-weighted index like the S&P 500 can sit within 5% of its all-time high while most of its stocks are in a correction or a bear market, because a handful of giants carry it. It works in both directions: in a week when tech and chips fell hard and the Nasdaq dropped 5%, most S&P 500 sectors were green, and on a later up day for the indexes the equal-weight version fell. Broad and narrow rallies alternate from day to day: one day RSP rises with the indexes, the next it barely moves while the Nasdaq jumps on the giants. That gap is why an index investor and a stock picker can feel opposite things on the same day. The usual way to see it is to compare the cap-weighted S&P 500 with its equal-weight version (RSP), count how many stocks are well below their highs, and look at sectors.
+**Summary:** Market breadth asks how many stocks take part in a move, not just where the index ends up. A cap-weighted index like the S&P 500 can sit within 5% of its all-time high while most of its stocks are in a correction or a bear market, because a handful of giants carry it. It works in both directions: in a week when tech and chips fell hard and the Nasdaq dropped 5%, most S&P 500 sectors were green, and on a later up day for the indexes the equal-weight version fell. Broad and narrow rallies alternate from day to day: one day RSP rises with the indexes, the next it barely moves while the Nasdaq jumps on the giants. A month can split the same way: in October 2026 the Nasdaq fell 6% and the giants slid into deep drawdowns while equal-weight, value and nine sectors rose, so the pain felt like a bear market without the indexes showing one. That gap is why an index investor and a stock picker can feel opposite things on the same day. The usual way to see it is to compare the cap-weighted S&P 500 with its equal-weight version (RSP), count how many stocks are well below their highs, and look at sectors.
 
 ## Key ideas
 - In October 2026 the S&P 500 was <5% from its high, yet 84% of its stocks were 10%+ below their own highs and 59% were 20%+ below, i.e. in a bear market. By sector: real estate 97%, materials 96%, utilities 94%, consumer discretionary 92%, staples 91%, financials 87% ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
@@ -18,6 +18,8 @@ updated: 2026-10-29
 - A good-feeling day can be a bad day underneath: the Nasdaq rose 1.2% and the S&P 500 0.42%, but equal-weight RSP fell 0.32% and only three sectors were green. Chips (+1.7%) and the Magnificent 7 (+1.7%, 30–40% of the index) did all the lifting, so he rated it worse than the down Friday before ([[episodes/micha-stocks--bloody-monday-circuit-breakers]], [[people/micha-stocks]]).
 - A broad day: Nasdaq +1.1%, S&P 500 +0.7%, Russell +0.45% and equal-weight RSP +0.35%, "meaning a lot of stocks took part" ([[episodes/micha-stocks--anthropic-s1-numbers]], [[people/micha-stocks]]).
 - A narrow day right after: the Nasdaq rose ~1.27% while RSP barely moved, so the big caps did the work, with tech (+1.7%) and Tesla-driven consumer discretionary leading ([[episodes/micha-stocks--fed-rate-hike-odds]], [[people/micha-stocks]]).
+- It feels like a bear market, but not in the indexes: by the end of October 2026 the S&P 500 was +10.7% and the Nasdaq +12.4% for the year, while Google (−30%), Meta (−20%), Amazon (−15%), Nvidia (−14.4%) and the chip sector (−28%) sat well below their highs, against Apple and Microsoft within about 4%. The MAGS fund was only −7.8% because strong and weak giants offset each other ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
+- October was a rotation: equal-weight RSP almost +5% vs Nasdaq −6%, S&P 500 value +4.9% vs growth −5.4%, and nine sectors clearly green, while chips fell 14%, communication services 9.9% and tech 8.3% ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - Whether "bear market" is the right word is a measurement question: specific sectors and stocks are in one, but the S&P 500 as a market is not ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
@@ -25,6 +27,7 @@ updated: 2026-10-29
 ## Takeaways
 - [ ] Track RSP vs the S&P 500 to see if a rally is broad or carried by a few stocks ([[episodes/micha-stocks--index-bull-portfolio-bear]])
 - [ ] In a range-bound, narrow market, trade less, not more ([[episodes/micha-stocks--index-bull-portfolio-bear]])
+- [ ] Before calling a bear market, compare giants, equal-weight, value vs growth, and sectors for the same period ([[episodes/micha-stocks--feels-like-bear-market]])
 
 ## Related
 [[concepts/concentration-risk]] · [[concepts/index-investing]] · [[concepts/equity-risk-premium]] · [[concepts/earnings-season]] · [[concepts/circuit-breakers]]

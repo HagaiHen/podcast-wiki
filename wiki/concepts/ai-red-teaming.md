@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-07
+sources: 2
+updated: 2026-11-01
 ---
 # AI Red Teaming (adversarial testing of models and agents)
 
-**Summary:** Before release, labs and enterprises pay specialists to break their models, harnesses, and agents: finding jailbreaks, harmful content, and policy violations, then turning the failures into training data. Labs have moved from human preference labels (RLHF) to RL "gyms": simulated environments with realistic tasks and evaluators where agents can fail safely. Models got markedly harder to break in 2026, shifting the work from automated attacks to expert craft. For enterprises the hard part is often defining what the agent may and may not do at all. Agents fail differently from bare models, for example under pressure from other agents.
+**Summary:** Before release, labs and enterprises pay specialists to break their models, harnesses, and agents: finding jailbreaks, harmful content, and policy violations, then turning the failures into training data. Labs have moved from human preference labels (RLHF) to RL "gyms": simulated environments with realistic tasks and evaluators where agents can fail safely. The same engineering pattern, running agents in parallel and scoring them, now also drives post-training at vertical companies. Models got markedly harder to break in 2026, shifting the work from automated attacks to expert craft. For enterprises the hard part is often defining what the agent may and may not do at all. Agents fail differently from bare models, for example under pressure from other agents.
 
 ## Key ideas
 - Alice (formerly ActiveFence) works with 8 of the 10 largest model labs, testing models *and* harnesses (Claude Code- or Cursor-style wrappers) on safety and security before production ("model hardening") ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
@@ -16,6 +16,7 @@ updated: 2026-10-07
 - A model that passes alone can fail inside a harness or multi-agent setup: agents can pressure other agents into actions the vanilla model would refuse ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 - Enterprise red teaming starts with policy: what may the bot say (a Chevrolet chatbot recommended a Tesla)? Financial-advice rules differ by country, and the model doesn't know your rules ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
 - Testing a non-deterministic system can't rely on fixed prompt-answer evals, since any change of characters or pixels can flip a safe answer to unsafe. After launch you need observability for drift ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- Agent rollouts are the shared base of RL and testing: many sessions run tasks in parallel against the model being trained, and a judge scores the results. See [[concepts/llm-post-training]] ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
 
 ## Disagreements & open questions
 
@@ -23,4 +24,4 @@ updated: 2026-10-07
 - [ ] Before launching an agent, write down its policy: what it may say and do, including competitors and regulated advice by country ([[episodes/hidden-layers--alice-avi-golan]])
 
 ## Related
-[[concepts/agent-security]] · [[concepts/ai-guardrails]] · [[concepts/llm-evals]] · [[concepts/ai-cybersecurity]]
+[[concepts/agent-security]] · [[concepts/ai-guardrails]] · [[concepts/llm-evals]] · [[concepts/ai-cybersecurity]] · [[concepts/llm-post-training]]

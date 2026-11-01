@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-29
+sources: 8
+updated: 2026-11-01
 ---
 # Small Language Models (SLMs)
 
-**Summary:** Models from a few million to a few billion parameters (BERT/RoBERTa up to Qwen, Gemma, Phi, Llama sizes), fine-tuned for one task. Against general LLMs they trade breadth for speed, cost, privacy, and often *higher* accuracy on the target task, because the loss measures exactly that task. They also enable non-generative heads (segmentation, classification) that generative LLMs only imitate. In advanced production agents the pattern is an LLM as the planning "brain" plus hundreds or thousands of SLM specialists, each owning one repetitive task where consistency matters. Open SLMs also reduce vendor lock-in and build IP. The price is classic data-science work: datasets (often synthetic), training, evaluation, and serving, where hundreds of adapters must share one GPU to be economical. Lessons from the LLM era (distillation, chain-of-thought, RLHF, LLM-labeled data) make today's SLMs far stronger than same-size models of five years ago.
+**Summary:** Models from a few million to a few billion parameters (BERT/RoBERTa up to Qwen, Gemma, Phi, Llama sizes), fine-tuned for one task. Against general LLMs they trade breadth for speed, cost, privacy, and often *higher* accuracy on the target task, because the loss measures exactly that task. They also enable non-generative heads (segmentation, classification) that generative LLMs only imitate. In advanced production agents the pattern is an LLM as the planning "brain" plus hundreds or thousands of SLM specialists, each owning one repetitive task where consistency matters. Open SLMs also reduce vendor lock-in and build IP. The price is classic data-science work: datasets (often synthetic), training, evaluation, and serving, where hundreds of adapters must share one GPU to be economical. Cursor's fast, local tab-completion models show the opening: a task frontier labs care less about. Lessons from the LLM era (distillation, chain-of-thought, RLHF, LLM-labeled data) make today's SLMs far stronger than same-size models of five years ago.
 
 ## Key ideas
 - Latency, cost, and accuracy triangle: SLMs usually win latency and cost, and can win accuracy on a narrow task ([[episodes/langtalks--59-slms]], [[people/elad-granot]]).
@@ -32,6 +32,7 @@ updated: 2026-10-29
 - Serving many task models: one H100 per SLM defeats the purpose and leaves it underused. Run hundreds of models on one GPU that share base weights with different adapters, and cache per task ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]]).
 - Ownership: open SLMs mean nobody can cut your access tomorrow or quietly degrade the model, you know how it was trained, and fine-tuning on your data builds IP competitors can't copy ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]], [[people/uri-eliabayev]]).
 - Plurai's self-serve "vibe training" product packages synthetic data creation, curation and serving so teams can train an SLM without months of data-science work ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]]).
+- Cursor began training its own models with tab completion, which had to run locally and very fast, a niche the largest, slower cloud models don't serve ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
 
 ## Disagreements & open questions
 - Regression or evolution? Granot argues returning to small models is evolution, built on what LLMs taught us ([[episodes/langtalks--59-slms]]). Kedar calls it inevitable for anyone with a complex agent in production: AI-native companies are there now, and he expects everyone else within about six months ([[episodes/hidden-layers--plurai-ilan-kedar]]).
@@ -44,4 +45,4 @@ updated: 2026-10-29
 - [ ] Serve many task-specific SLMs as adapters on one shared base model rather than one GPU per model ([[episodes/hidden-layers--plurai-ilan-kedar]])
 
 ## Related
-[[concepts/synthetic-data]] · [[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/llm-pipelines]] · [[concepts/open-weight-models]] · [[concepts/multi-agent-orchestration]] · [[concepts/hebrew-llms]] · [[concepts/world-models]]
+[[concepts/synthetic-data]] · [[concepts/model-selection]] · [[concepts/decision-classifiers]] · [[concepts/llm-pipelines]] · [[concepts/open-weight-models]] · [[concepts/multi-agent-orchestration]] · [[concepts/hebrew-llms]] · [[concepts/world-models]] · [[concepts/llm-post-training]]

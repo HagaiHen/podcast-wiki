@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 3
-updated: 2026-10-19
+sources: 4
+updated: 2026-11-01
 ---
 # Concentration Risk
 
-**Summary:** An "index" stops being diversified when a few stocks dominate it. In 2026 Samsung and SK Hynix grew to about half of the KOSPI only because they were the stocks retail investors could leverage; when they fell, the whole index fell with them. The S&P 500 is also unusually concentrated: seven tech companies make up ~36% of it, above the ~25% of the dot-com peak, and ten stocks delivered ~70% of its 2026 gain. Yet concentration alone has never been a reliable bubble signal, and for an index holder it can even be protective, since cap weighting rides the winners while most stocks fall. The real risk is fragility: if one of the few leaders stumbles, nothing else is holding the index up.
+**Summary:** An "index" stops being diversified when a few stocks dominate it. In 2026 Samsung and SK Hynix grew to about half of the KOSPI only because they were the stocks retail investors could leverage; when they fell, the whole index fell with them. The S&P 500 is also unusually concentrated: seven tech companies make up ~36% of it, above the ~25% of the dot-com peak, and ten stocks delivered ~70% of its 2026 gain. Yet concentration alone has never been a reliable bubble signal, and for an index holder it can even be protective, since cap weighting rides the winners while most stocks fall. The real risk is fragility: if one of the few leaders stumbles, nothing else may be holding the index up, although money rotating into other sectors can cushion the fall.
 
 ## Key ideas
 - Concentration is never good; the KOSPI effectively became a 2–3 stock index ([[episodes/lazy-investing--108-the-leverage-trap]], [[people/tamir]]).
@@ -16,10 +16,12 @@ updated: 2026-10-19
 - Ten stocks drove ~70% of the S&P 500's 2026 rise (Nvidia ~13%, Micron, Apple and Microsoft ~9% each, AMD and Alphabet 7–8%, Intel and Amazon 5%, Broadcom and Meta 3%); the other 490 contributed ~30% ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
 - "Right fact, wrong conclusion": the S&P 500 is concentrated, but if your goal is returns that doesn't matter; if your own stock picks lagged, that's your problem, not the index's ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
 - Fragility: with so few stocks carrying the index, one of them faltering is enough to hurt it ([[episodes/micha-stocks--index-bull-portfolio-bear]], [[people/micha-stocks]]).
+- Weak giants, buoyant index: most Magnificent 7 stocks were in corrections or bear markets by the end of October 2026, yet the S&P 500 stayed +10.7% for the year while equal-weight, value and most sectors rose that month ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - How dangerous is concentration? In #108 Tamir called it "never good", tying it to the KOSPI crash ([[episodes/lazy-investing--108-the-leverage-trap]]); in #111 he argues it has never by itself signaled a bubble or poor long-term returns ([[episodes/lazy-investing--111-the-ai-bubble]]). The difference may be leverage: KOSPI concentration came from leveraged retail flows.
 - Concentration as risk vs protection: Tamir warns about it ([[episodes/lazy-investing--108-the-leverage-trap]]); Micha argues cap weighting is what shielded index holders while most stocks fell, though he also calls the top-10 dependence a problem ([[episodes/micha-stocks--index-bull-portfolio-bear]]).
+- Can anything else lift the index? Micha warned that if the top ten falter nothing else can ([[episodes/micha-stocks--index-bull-portfolio-bear]]); weeks later he showed equal-weight and nine sectors rising through the giants' October slide ([[episodes/micha-stocks--feels-like-bear-market]]). That is one month of cushion, not proof others can replace the giants.
 
 ## Takeaways
 - [ ] Check the top holdings and their weights in any index fund you buy ([[episodes/lazy-investing--108-the-leverage-trap]])

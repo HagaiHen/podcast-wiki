@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 5
-updated: 2026-10-11
+sources: 7
+updated: 2026-11-01
 ---
 # AI and Cybersecurity
 
-**Summary:** Frontier models are getting much better at finding vulnerabilities, which erodes cybersecurity's old premise that scarce expert knowledge can be packaged into products that protect people who lack it. Code is now written faster by agents, legacy is vast, and attackers use LLMs and agents too: reported attacks already ran end to end through an agent, and one unskilled, motivated person can now do what took a skilled team. Defenders answer in kind with continuous automated testing, fast remediation, protections shipped in under an hour, and behavioral and agentic defenses that look at the pace and shape of activity. Protocols don't change, so attacks still look familiar, just faster. How labs should release cyber-capable models is contested (restricted access versus broad verified access), and demand for security is expected to *rise*.
+**Summary:** Frontier models are getting much better at finding vulnerabilities, which erodes cybersecurity's old premise that scarce expert knowledge can be packaged into products that protect people who lack it. Code is now written faster by agents, legacy is vast, and attackers use LLMs and agents too: reported attacks already ran end to end through an agent, a market commentator expects many more breaches in finance, and one unskilled, motivated person can now do what took a skilled team. Defenders answer in kind with continuous automated testing, fast remediation, protections shipped in under an hour, and behavioral and agentic defenses that look at the pace and shape of activity. Protocols don't change, so attacks still look familiar, just faster. How labs should release cyber-capable models is contested (restricted access versus broad verified access), labs holding back cyber capability gives security companies a reason to train open models themselves, and demand for security is expected to *rise*.
 
 ## Key ideas
 - Traditional pentesting comes in two forms: external audits for compliance (a two-week engagement ending in a PDF; expensive, infrequent, and dependent on the team's day) or scarce internal red teams. Neither scales to agent-speed code ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]).
@@ -29,6 +29,8 @@ updated: 2026-10-11
 - Cato built an agentic attack lab: an agent drives Kali Linux, a distribution bundled with pentest tools, against a lab network, given a goal, background, and an entry point, so defenders can study the agentic modus operandi ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
 - Behavioral defenses watch pace and attack sequence, not just signatures. A coming in-line defensive agent watches each customer's traffic over time and tightens restrictions on a device at early signs, e.g. someone in sales running PsExec (remote code execution across Active Directory: fine for IT, loved by attackers, so not blocked outright) ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
 - Democratized attack: Zvinsky expects massive "exploitation of stupidity" by agents that quickly produce good-looking output, cheaper models, and fear-mongering that is nonetheless justified. The host adds that targets once "not worth the hassle", like the website of someone you argued with on the road, are now in reach ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- High-value crypto platforms are live targets: Binance's reported $6.3B loss is estimated to trace to North Korean hackers who took over a DevOps employee's computer, and Polymarket also reported a theft. Micha, who admits this isn't his field, expects many more breaches in the AI era and suggests banks prepare ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
+- A LangTalks host notes that many labs try to keep models out of cyber because it can be malicious and raises safety and alignment problems, which is one reason a vertical security company like Novee (AI pentesting) would post-train its own model ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
 
 ## Disagreements & open questions
 - Restricted release vs broad verified access: the host argues that with very high-stakes capabilities (state actors), caution and responsible-disclosure-style delays make sense; Gurevich counters that selective early access isn't disclosure and leaves most defenders blind ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]]).
@@ -39,4 +41,4 @@ updated: 2026-10-11
 - [ ] Raise human pentest frequency from yearly to quarterly or monthly, and test integrated staging, not just code ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]])
 
 ## Related
-[[concepts/agent-security]] · [[concepts/harness-engineering]] · [[concepts/open-weight-models]] · [[concepts/ai-verification]] · [[concepts/ai-red-teaming]] · [[concepts/agentic-vulnerability-response]]
+[[concepts/agent-security]] · [[concepts/harness-engineering]] · [[concepts/open-weight-models]] · [[concepts/ai-verification]] · [[concepts/ai-red-teaming]] · [[concepts/agentic-vulnerability-response]] · [[concepts/llm-post-training]]

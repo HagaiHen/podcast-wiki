@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 8
-updated: 2026-10-29
+sources: 9
+updated: 2026-11-01
 ---
 # AI Moats (beyond the model)
 
-**Summary:** A technical edge in AI is a "business card", not a moat: once users touch it, competitors have about six months to catch up, in the good case. Selling tokens with public benchmarks invites endless one-upping and one-click switching (OpenRouter is the worst case). The durable path is a "good enough" product whose value lives beyond the specific model, like Spotify knowing your music. For an AI application that means adapting the system to your own data and customers faster than anyone else, ideally in models you own; otherwise a competitor takes a slightly better model, adds a prompt, and copies you. Agents add a new kind of network effect: letting your agent coordinate with the agents of people you trust. The frontier labs themselves are in a money-losing arms race. Anthropic's S-1 shows revenue up ~15× year over year alongside losses, ~$270B of committed cloud contracts, and an IPO target of $1.5–2T, which strains growth math.
+**Summary:** A technical edge in AI is a "business card", not a moat: once users touch it, competitors have about six months to catch up, in the good case. Selling tokens with public benchmarks invites endless one-upping and one-click switching (OpenRouter is the worst case). The durable path is a "good enough" product whose value lives beyond the specific model, like Spotify knowing your music. For an AI application that means adapting the system to your own data and customers faster than anyone else, ideally in models you own; otherwise a competitor takes a slightly better model, adds a prompt, and copies you. Owning a model is a slow bet that suits a mature product and comes with a retraining treadmill. Agents add a new kind of network effect: letting your agent coordinate with the agents of people you trust. The frontier labs themselves are in a money-losing arms race. Anthropic's S-1 shows revenue up ~15× year over year alongside losses, ~$270B of committed cloud contracts, and an IPO target of $1.5–2T, which strains growth math.
 
 ## Key ideas
 - "Good enough" wins: nobody switches between Waze and Google Maps for five seconds, or buys a car for its 240 km/h top speed ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -28,14 +28,16 @@ updated: 2026-10-29
 - The real moat for an AI application is how fast it adapts the system to its own world. Fine-tuning your own models on your data and customers builds accumulated IP; staying on the same frontier APIs as everyone means paying the premium and the latency while keeping no knowledge in-house ([[episodes/hidden-layers--plurai-ilan-kedar]], [[people/ilan-kedar]], [[people/uri-eliabayev]]).
 
 - Network effects for the agentic era: Instinct AI's trusted-person network lets users allow-list other people's agents so agents talk to each other; capturing the market early could become the moat many people ask about. Open question: will it interoperate with other agents or stay closed ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]], [[people/remy]])?
+- A wave of mature vertical AI companies (Harvey, Cursor with Composer) now trains models in-house. The investment takes longer to ripen but can yield very large returns ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
 
 ## Disagreements & open questions
 - Is Instinct AI (rumored to be raising at a $10B valuation) a Clubhouse moment? Clubhouse raised at about $4B on invite-only hype and never lived up to it ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]]).
 - Will one frontier lab collapse? The host expects one to; Levi doubts the causality but agrees the market is moving in an unhealthy direction ([[episodes/explainable--164-gilad-levi-continual-learning]]).
 - Are lab losses temporary? Anthropic projects customer commitments reaching trillions of dollars; Micha calls much of it fantasy and asks whether spending that buys customers is sustainable ([[episodes/micha-stocks--anthropic-s1-numbers]], [[people/micha-stocks]]). Yuval Avidani had heard rumors Anthropic was profitable but assumed it loses money too ([[episodes/explainable--167-yuval-avidani-agent-harness]]).
+- Own model: moat or marriage? Kedar calls fine-tuning accumulated IP ([[episodes/hidden-layers--plurai-ilan-kedar]]) and Padnos sees a long-term payoff ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]). A LangTalks host warns that you "marry" the model, chase retraining on each new base, and lose out on frontier progress if you stay put ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
 
 ## Takeaways
 - [ ] When building on AI, write down what value remains if a competitor swaps in a better model tomorrow ([[episodes/explainable--164-gilad-levi-continual-learning]])
 
 ## Related
-[[concepts/market-bubbles]] · [[concepts/small-language-models]] · [[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]] · [[concepts/solo-builders]] · [[concepts/image-generation]]
+[[concepts/market-bubbles]] · [[concepts/small-language-models]] · [[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]] · [[concepts/solo-builders]] · [[concepts/image-generation]] · [[concepts/llm-post-training]]
