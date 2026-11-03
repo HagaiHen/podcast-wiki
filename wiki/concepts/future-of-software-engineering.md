@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 13
-updated: 2026-10-29
+sources: 14
+updated: 2026-11-03
 ---
 # Future of Software Engineering
 
-**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential. The disruption isn't limited to code: the data scientists who trained the models were hit first, and QA, research reports, web and graphic design follow, because "good enough" generic output is all most buyers want, though a human eye for context and critique is still needed. For students facing an entry-level "employment tsunami" that starts in software, one piece of career advice splits the path: the top ~10% should aim for frontier labs, and the rest should master the newest tools and start companies, now that starting costs almost nothing.
+**Summary:** AI replaces coding, not engineering. The value of AI arrives *with* an engineering layer around it: memory, context, evals, harnesses, guardrails. As with past shifts (network engineers became DevOps, platform engineers, and SREs when virtualization arrived), roles move one level of abstraction up: "writing code is dead", but designing how a system should look, behave, and run is where engineers add value. Growth that would break human mentoring and review can only be absorbed by AI-enforced standards. Developers may absorb product and UX work, but security, legal, and real product depth keep engineering essential. The disruption isn't limited to code: the data scientists who trained the models were hit first, and QA, research reports, web and graphic design follow, because "good enough" generic output is all most buyers want, though a human eye for context and critique is still needed. For students facing an entry-level "employment tsunami" that starts in software, one piece of career advice splits the path: the top ~10% should aim for frontier labs, and the rest should master the newest tools and start companies, now that starting costs almost nothing. The shift is personal as well as economic: for mid-career people it raises the question of who they are if their profession stops being relevant.
 
 ## Key ideas
 - "Coding is dead, but engineering definitely isn't" ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/netanel-abergel]]).
@@ -39,6 +39,7 @@ updated: 2026-10-29
 - Who falls next: the first hit were data scientists and developers who labeled data and trained the models. Then development and QA (products hold tens of thousands of AI-written lines, at best AI-reviewed, a pace humans can't match), research (seminar-level reports for Knesset members that Claude Code, Perplexity and GPT do in ~10 minutes), and design: a generic AI site in two hours saves ~₪80k, and most clients aren't designers ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 - Humans remain for what AI lacks: the critical eye, context and human understanding; "AI hallucinates", so researchers are still needed ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 - Mathematics may be next: AI tools prove claims "left and right", and some predict Riemann or P vs NP will fall by 2027. Mike Erlihson is skeptical. Yuval Avidani refuses to forecast at all: "we're in such a singular world" ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/mike-erlihson]], [[people/yuval-avidani]]).
+- Identity, not just employment: "who am I without my profession?" is a question for people in mid-career who wonder whether they'll stay relevant, and the change demands something of "literally everyone" (garbled transcript, approximate; [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]], [[people/lior-frankel]]).
 
 ## Disagreements & open questions
 - How far will it go? Matan Cohen is bullish that developers stay essential, moving up a level of abstraction ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]); the LangTalks hosts expect agents to eventually write everything, with even product decisions automatable ([[episodes/langtalks--63-wake-up]]).

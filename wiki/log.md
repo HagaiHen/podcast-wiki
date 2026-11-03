@@ -440,3 +440,8 @@ updated: concepts/{market-breadth, market-timing, bitcoin, market-bubbles, conce
 source: whisper
 created: episodes/langtalks--75-post-training-dan-padnos-novee, concepts/llm-post-training, people/dan-padnos
 updated: concepts/{open-weight-models, ai-moats, llm-evals, harness-engineering, small-language-models, llm-pretraining, ai-red-teaming, model-selection, ai-cybersecurity}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-11-03 — Developers Outside the Box: #187 Who Am I Without My Profession? With Lior Frankel
+source: transcript (mostly garbled auto transcript)
+created: episodes/developers-outside-the-box--187-who-am-i-without-my-profession, people/lior-frankel
+updated: concepts/{future-of-software-engineering, solo-builders}, shows/developers-outside-the-box, index

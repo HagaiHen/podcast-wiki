@@ -184,8 +184,10 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/yuval-avidani]]: AI builder and content creator, GitHub Star
 - [[people/ilan-kedar]]: co-founder of Plurai (agent simulation, SLMs)
 - [[people/dan-padnos]]: Head of AI at Novee Security (post-training)
+- [[people/lior-frankel]]: guest on Developers Outside the Box (career identity, bootstrapping)
 
 ## Episodes
+- [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]: #187 Who Am I Without My Profession? With Lior Frankel (2026-10-24)
 - [[episodes/micha-stocks--feels-like-bear-market]]: Let's Talk About the Situation: It Feels Like a Bear Market (2026-10-31)
 - [[episodes/langtalks--75-post-training-dan-padnos-novee]]: #75 Post-Training, With Dan Padnos of Novee (2026-10-31)
 - [[episodes/micha-stocks--fed-rate-hike-odds]]: 78% Odds of a December Rate Hike (2026-10-28)
