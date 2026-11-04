@@ -227,6 +227,13 @@
 - [ ] When two trajectories both pass, add reward penalties for errors and episode length — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 - [ ] Build a simulated environment with persona agents for outside parties, then rerun the same case to measure consistency and change one variable at a time — [[concepts/llm-evals]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 - [ ] If an agent misuses a tool at one workflow stage, remove that tool at that stage and rerun simulations — [[concepts/harness-engineering]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- [ ] Score each AI opportunity on hours saved, risk, impact, compliance scope, reuse across teams, and whether a champion exists — [[concepts/ai-work-redesign]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Start agent building with low-effort tasks outside compliance scope, then move toward regulated work — [[concepts/ai-work-redesign]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Pick one high-impact area and sketch how you'd build it today from scratch, rather than adding another agent to the current process — [[concepts/ai-work-redesign]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Ask non-technical teams what stops them using AI, then publish clear data rules and have the rollout owner take responsibility for honest mistakes — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Train AI enthusiasts from each team as local champions, and show each team's usage where they can see it — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Put an internal agent's outputs in a table with a good/bad column and reasons, and have its users review a few iterations before wider launch — [[concepts/llm-evals]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Put an agent's output in a tool the team already uses, and let each person choose their own view — [[concepts/proactive-ai]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

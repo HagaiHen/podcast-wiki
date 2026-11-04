@@ -32,6 +32,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/synthetic-data]]: diverse, consensus-labeled generated data for edge cases and small models
 - [[concepts/voice-agents]]: building phone/voice agents
 - [[concepts/ai-rd-rollout]]: org-wide AI adoption
+- [[concepts/ai-work-redesign]]: from adoption to agents to rebuilding work around AI
 - [[concepts/autonomous-agents-outlook]]: speculation on autonomy and AGI
 - [[concepts/ai-engineering-metrics]]: measuring coding-agent impact
 - [[concepts/ai-sre]]: AI for production reliability

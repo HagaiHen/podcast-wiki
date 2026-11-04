@@ -445,3 +445,8 @@ updated: concepts/{open-weight-models, ai-moats, llm-evals, harness-engineering,
 source: transcript (mostly garbled auto transcript)
 created: episodes/developers-outside-the-box--187-who-am-i-without-my-profession, people/lior-frankel
 updated: concepts/{future-of-software-engineering, solo-builders}, shows/developers-outside-the-box, index
+
+## 2026-11-04 — Startup for Startup: 3 Stages of Adopting AI: From First Adoption to Rebuilding Processes
+source: whisper
+created: episodes/startup-for-startup--3-stages-of-ai-adoption, concepts/ai-work-redesign, people/dror-adi
+updated: concepts/{ai-rd-rollout, ai-engineering-metrics, outcome-metrics, ai-guardrails, llm-evals, proactive-ai, enterprise-ai-adoption}, shows/startup-for-startup, hubs/ai-engineering, index, takeaways/to-try

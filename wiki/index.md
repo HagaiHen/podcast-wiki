@@ -28,6 +28,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 ## AI Engineering — [[hubs/ai-engineering]]
 - [[concepts/ai-sre]]: agents that investigate and heal production
 - [[concepts/ai-rd-rollout]]: adopting AI across an engineering org
+- [[concepts/ai-work-redesign]]: three stages from adoption to rebuilding work around AI
 - [[concepts/ai-sdlc]]: agent teams across the dev lifecycle; start at the edges
 - [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
 - [[concepts/multi-agent-orchestration]]: orchestrator + specialist agents; pitfalls
@@ -185,8 +186,10 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/ilan-kedar]]: co-founder of Plurai (agent simulation, SLMs)
 - [[people/dan-padnos]]: Head of AI at Novee Security (post-training)
 - [[people/lior-frankel]]: guest on Developers Outside the Box (career identity, bootstrapping)
+- [[people/dror-adi]]: AI Innovation Lead, monday.com finance
 
 ## Episodes
+- [[episodes/startup-for-startup--3-stages-of-ai-adoption]]: 3 Stages of Adopting AI: From First Adoption to Rebuilding Processes (2026-11-03)
 - [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]: #187 Who Am I Without My Profession? With Lior Frankel (2026-10-24)
 - [[episodes/micha-stocks--feels-like-bear-market]]: Let's Talk About the Situation: It Feels Like a Bear Market (2026-10-31)
 - [[episodes/langtalks--75-post-training-dan-padnos-novee]]: #75 Post-Training, With Dan Padnos of Novee (2026-10-31)

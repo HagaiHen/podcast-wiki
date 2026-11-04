@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-07
+sources: 3
+updated: 2026-11-04
 ---
 # AI Engineering Metrics (measuring coding-agent impact)
 
-**Summary:** If you can't measure it, you can't improve it. Classic engineering metrics (PR cycle time, review time, DORA) are built on metadata and blind to context and complexity: a frontend team shipping five features a week can't be compared with a backend team shipping two a month. With GenAI, the content itself (code, git blame, tickets, agent events) is analyzable, enabling per-commit attribution of AI use. A three-layer framework: **adoption**, **productivity** (with versus without AI), and **quality** (does AI-assisted code survive in production?).
+**Summary:** If you can't measure it, you can't improve it. Classic engineering metrics (PR cycle time, review time, DORA) are built on metadata and blind to context and complexity: a frontend team shipping five features a week can't be compared with a backend team shipping two a month. With GenAI, the content itself (code, git blame, tickets, agent events) is analyzable, enabling per-commit attribution of AI use. A three-layer framework: **adoption**, **productivity** (with versus without AI), and **quality** (does AI-assisted code survive in production?). Adoption and hours saved are useful early signals, but neither is the goal: adoption is a proxy for readiness, and an hours-saved target can favor local efficiency over deeper change.
 
 ## Key ideas
 - Stage zero: measure baseline engineering productivity regardless of AI (e.g. DORA) ([[episodes/langtalks--64-ai-coding-metrics]], [[people/liad-elidan]]).
@@ -18,8 +18,10 @@ updated: 2026-10-07
 - If a developer's agents rarely use the internal MCP and their bug rate is high, that's concrete coaching feedback ([[episodes/langtalks--64-ai-coding-metrics]]).
 - "Cursor vs Claude Code?" is answerable per org only with these metrics ([[episodes/langtalks--64-ai-coding-metrics]]).
 - Token usage per developer as an adoption metric: it shows usage, not quality, and can reward junk code or wasted context. Gong is still deciding between time-to-maturity of features, bug counts, and refactoring capability ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
+- Adoption isn't value: monday.com finance's AI lead treats it as a proxy that prepares teams for agents, and hours saved as a metric that rewards the "here and now" over rethinking a process ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 
 ## Disagreements & open questions
+- Should usage be a visible score? monday.com finance's team race ranks teams and people by how many use AI and how much, and is credited with pushing adoption ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]); Gong warns token usage shows volume, not quality, and can reward junk ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 
 ## Takeaways
 - [ ] Measure baseline engineering productivity before attributing changes to AI ([[episodes/langtalks--64-ai-coding-metrics]])
@@ -27,4 +29,4 @@ updated: 2026-10-07
 - [ ] Check whether bug-prone code came from spec-driven sessions and used internal tools ([[episodes/langtalks--64-ai-coding-metrics]])
 
 ## Related
-[[concepts/ai-sdlc]] · [[concepts/llm-cost-optimization]] · [[concepts/llm-evals]]
+[[concepts/ai-sdlc]] · [[concepts/llm-cost-optimization]] · [[concepts/llm-evals]] · [[concepts/outcome-metrics]] · [[concepts/ai-work-redesign]]

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [startups]
-sources: 1
-updated: 2026-10-25
+sources: 2
+updated: 2026-11-04
 ---
 # Outcome Metrics & Goodhart's Law
 
-**Summary:** Managing by metrics means picking a small set of measurable, ambitious-but-achievable *outcome* goals, publishing them, and reporting regularly on which were hit and why not. Inputs (budget, spend) aren't results: "I raised the budget 30%" says nothing about what students, customers, or users got. Choosing the metric is the critical decision, because a single wrong metric gets gamed (Goodhart's law: once a measure becomes the target, it stops being a good measure). The fix is a balanced set of metrics, and a good north-star metric (like MRR) folds many others into it and reshapes how the whole organization works. Stopping measurement because results are bad is the worst option. Source so far: a politician and ex-tech CEO, speaking during an election campaign.
+**Summary:** Managing by metrics means picking a small set of measurable, ambitious-but-achievable *outcome* goals, publishing them, and reporting regularly on which were hit and why not. Inputs (budget, spend) aren't results: "I raised the budget 30%" says nothing about what students, customers, or users got. Choosing the metric is the critical decision, because a single wrong metric gets gamed (Goodhart's law: once a measure becomes the target, it stops being a good measure). The fix is a balanced set of metrics, and a good north-star metric (like MRR) folds many others into it and reshapes how the whole organization works. Stopping measurement because results are bad is the worst option. A metric can also be honest and still narrow your thinking: hours saved rewarded quick AI automation at monday.com, but didn't point toward rethinking the work. Sources so far: a politician and ex-tech CEO speaking during an election campaign, and a monday.com AI lead describing an internal program.
 
 ## Key ideas
 - Set outcome metrics, not input metrics: a minister boasting of a 30% bigger budget is like a marketer boasting of spend without counting customers; ask what the investment returned ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
@@ -18,6 +18,7 @@ updated: 2026-10-25
 - Goodhart's law: once a measure becomes the target, it ceases to be a good measure ([[episodes/tsarot-baheitek--90-naftali-bennett]]).
 - A good north-star metric changes everything downstream: moving his company from revenue to MRR (recurring revenue, before "ARR" was common, on investor Michael Eisenberg's advice) changed what they sold and how they built, because it folds many other metrics into one ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
 - Not measuring is the easiest way to always "succeed": the hosts and guest criticize a decision to stop national standardized tests after falling results ([[episodes/tsarot-baheitek--90-naftali-bennett]]).
+- A north star can limit ambition: hours saved drove fast agent building in monday.com's finance department, but Dror Adi came to see it as encouraging the "here and now" rather than innovation. Asked about the idea that hours saved is a KPI rather than a strategy, he agreed ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 
 ## Disagreements & open questions
 - One KPI or several? Bennett names a single national north-star metric (share of Haredi men in productive jobs), then concedes one KPI isn't enough for a country, unlike ARR for a company ([[episodes/tsarot-baheitek--90-naftali-bennett]], [[people/naftali-bennett]]).
@@ -28,4 +29,4 @@ updated: 2026-10-25
 - [ ] Before adopting a metric, ask how it could be gamed (e.g. shrinking the denominator) and pair it with a counter-metric ([[episodes/tsarot-baheitek--90-naftali-bennett]])
 
 ## Related
-[[concepts/ai-engineering-metrics]] · [[concepts/llm-evals]] · [[concepts/fundraising]]
+[[concepts/ai-engineering-metrics]] · [[concepts/llm-evals]] · [[concepts/fundraising]] · [[concepts/ai-work-redesign]]

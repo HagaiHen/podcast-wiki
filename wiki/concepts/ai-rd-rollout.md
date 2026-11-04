@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-10-11
+sources: 10
+updated: 2026-11-04
 ---
 # AI R&D Rollout (adopting AI across an engineering org)
 
-**Summary:** Rolling AI out to an R&D org is mostly change management. Start with education and licenses, let people try the main tools (Copilot, Cursor, Claude Code), converge on what works without locking in, and drive the mindset shift from "AI as a chat helper" to delegating whole features. Mandates and licenses come from the top, but the spark usually comes from below: an enthusiast with a working POC who goes team to team, and a guild of early adopters that spreads success stories and workshops. Deliberate challenges (a sprint with no hand-written code) force the shift. Keep humans accountable throughout.
+**Summary:** Rolling AI out to an R&D org is mostly change management. Start with education and licenses, let people try the main tools (Copilot, Cursor, Claude Code), converge on what works without locking in, and drive the mindset shift from "AI as a chat helper" to delegating whole features. Mandates and licenses come from the top, but the spark usually comes from below: an enthusiast with a working POC who goes team to team, and a guild of early adopters that spreads success stories and workshops. Deliberate challenges (a sprint with no hand-written code) force the shift. Keep humans accountable throughout. The same playbook reaches beyond engineering: monday.com's finance department took usage near 100% by removing fear of blame while locking down data access, making team progress visible, and training enthusiasts from each team.
 
 ## Key ideas
 - Path at Salt Security: Copilot licenses → everyone tries all tools → three-month accelerator → mainly Claude Code (codebase understanding, plan mode), with Copilot kept for tab completion ([[episodes/langtalks--62-ai-rd-rollout]], [[people/iko-azoulay]]).
@@ -28,10 +28,14 @@ updated: 2026-10-11
 - No caps on sessions or tokens; the cost stays reasonable ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - Bottom-up: managers and team leads build weekend side projects (search features, prototypes), and the fast gratification is addictive and spreads ([[episodes/osim-tochna--gong-ai-for-developers]], [[people/ohad-parush]]).
 - The spark comes from below: at Cato, licenses came from the top, but one curious engineer got poor results from Cursor at first, learned to work with rules and skills, realized they could be shared org-wide, and became the "missionary" going team to team with a POC in hand ([[episodes/hidden-layers--cato-networks-avishai-zvinsky]], [[people/avishai-zvinsky]]).
+- User interviews showed finance staff feared breaking privacy rules by asking the chat the wrong thing. A "#BlameDror" slide moved the responsibility onto the AI lead, who said usage rose sharply as a result; behind it, technical teams vetted connections and wrote clear rules on what may enter the chat ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
+- Gamified visibility: a car-race app on office screens gave each team a car, advancing by how many people use AI and how much; clicking one showed each person against their team. It created FOMO and pushed managers not to finish last, though it scared off some people ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
+- A finance-only pioneers program trained people from each team who were already excited by AI, to spread it and to use their business knowledge to find pain points ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 
 ## Disagreements & open questions
 - Copilot-style tab completion versus Claude Code: one host notes Cursor's cheap Composer model and agent editor are compelling, and that picking the right model per task is itself a skill ([[episodes/langtalks--62-ai-rd-rollout]]).
 - How big is the speedup today? The Ignore the Instructions host measures ~10–20% overall at Mixtiles, and Pavel Gurevich ~3× only on new products ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]); a LangTalks host estimates ~5× today, rising to ~20× by end of 2026 ([[episodes/langtalks--63-wake-up]]).
+- Does AI help outside engineering? Pavel Gurevich sees little acceleration in sales and G&A ([[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]], [[people/pavel-gurevich]]); Dror Adi reports agents saving hundreds of work hours in monday.com's finance teams ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 - Wait or try now? Sharon Dahan's rule is to talk about a tool only once it has survived a month, and an Osim Tochna guest waits about two weeks ([[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]], [[people/sharon-dahan]], [[episodes/osim-tochna--ai-in-production-reality-vs-imagination]]); Roy Mann urges trying things hands-on because month-old verdicts are already history ([[episodes/startup-for-startup--362-agent-architecture-fit]], [[people/roy-mann]]).
 
 ## Takeaways
@@ -40,6 +44,8 @@ updated: 2026-10-11
 - [ ] Give product managers read access to the codebase via an AI tool ([[episodes/langtalks--62-ai-rd-rollout]])
 - [ ] Give agents the goal and review their plan, instead of dictating micro-tasks ([[episodes/startup-for-startup--362-agent-architecture-fit]])
 - [ ] Name an owner (e.g. developer-experience team) for AI adoption, with hands-on sessions on real code ([[episodes/osim-tochna--gong-ai-for-developers]])
+- [ ] Ask non-technical teams what stops them using AI, then publish clear data rules and have the rollout owner take responsibility for honest mistakes ([[episodes/startup-for-startup--3-stages-of-ai-adoption]])
+- [ ] Train AI enthusiasts from each team as local champions, and show each team's usage where they can see it ([[episodes/startup-for-startup--3-stages-of-ai-adoption]])
 
 ## Related
-[[concepts/ai-sdlc]] · [[concepts/ai-engineering-metrics]] · [[concepts/coding-agent-workflow]]
+[[concepts/ai-sdlc]] · [[concepts/ai-engineering-metrics]] · [[concepts/coding-agent-workflow]] · [[concepts/ai-work-redesign]]

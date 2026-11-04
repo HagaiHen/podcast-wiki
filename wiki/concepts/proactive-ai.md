@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-20
+sources: 3
+updated: 2026-11-04
 ---
 # Proactive AI (the AI UX paradox)
 
-**Summary:** A chat box looks simple but is a hard interface: users can ask anything and expect anything, yet nothing in the UI shows what the AI can actually do, and backend upgrades (new tools, skills, reasoning) are invisible. Unlike deterministic products, there's no clear funnel. "Proactive AI" closes the gap by designing features that tell users what's possible, inside and outside the text box, and by bringing AI answers to people where they already work, avoiding cognitive leaps that lose users. Consumer agents push this furthest: Instinct AI onboards with a phone number inside iMessage, immediately demos what it can do, uses native reactions and effects, keeps replies short, and reaches out on its own when a deadline matters, so it feels like a human assistant. Hiding the work has a cost: users can't see progress and mistake silence for failure.
+**Summary:** A chat box looks simple but is a hard interface: users can ask anything and expect anything, yet nothing in the UI shows what the AI can actually do, and backend upgrades (new tools, skills, reasoning) are invisible. Unlike deterministic products, there's no clear funnel. "Proactive AI" closes the gap by designing features that tell users what's possible, inside and outside the text box, and by bringing AI answers to people where they already work, avoiding cognitive leaps that lose users. Consumer agents push this furthest: Instinct AI onboards with a phone number inside iMessage, immediately demos what it can do, uses native reactions and effects, keeps replies short, and reaches out on its own when a deadline matters, so it feels like a human assistant. Hiding the work has a cost: users can't see progress and mistake silence for failure. At work, the same principle favors a single familiar interface over many systems, with each person controlling how they see the data.
 
 ## Key ideas
 - The paradox: the text box allows anything, so users can't know what they can or can't get ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]], [[people/matan-cohen]]).
@@ -20,6 +20,8 @@ updated: 2026-10-20
 - Knowing when to react instead of reply avoids the verbosity of most models; "so human it's scary" is the aha moment ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]], [[people/greg-isenberg]]).
 - Proactivity: after a desk-rental search, the agent messaged the next morning that same-day delivery required ordering before noon ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
 - Products moved from top-down, high-touch rollout to bottom-up and self-serve as users matured ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]]).
+- One agreed UI: monday.com's collections agent pulls NetSuite, Salesforce, internal systems and email into one monday view, chosen because the team already knew the tool. The agent itself isn't all built on monday ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
+- Control fights overload: early feedback was "there's so much data, how do I keep my way of working?", which led to letting each person control the UI and visualization, so the tool feels personal ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 
 ## Disagreements & open questions
 - Invisible execution keeps the product simple, but when Instinct went silent for five minutes the user kept checking whether it was broken; trust came only with experience ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]]).
@@ -27,6 +29,7 @@ updated: 2026-10-20
 ## Takeaways
 - [ ] For each new AI capability, add a visible entry point (button, suggestion) instead of relying on users to discover it in chat ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]])
 - [ ] Deliver AI answers where users already ask (channels, search), privately first ([[episodes/ai-engineering-podcast--the-ai-ux-paradox]])
+- [ ] Put an agent's output in a tool the team already uses, and let each person choose their own view ([[episodes/startup-for-startup--3-stages-of-ai-adoption]])
 
 ## Related
 [[concepts/personal-ai-assistants]] · [[concepts/agent-workspaces]] · [[concepts/llm-evals]] · [[concepts/context-engineering]]
