@@ -49,7 +49,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
 - [[concepts/llm-post-training]]: SFT and RL on open models; when vertical AI companies should train their own
 - [[concepts/llm-reasoning]]: token-space vs latent reasoning; RL reasoning
-- [[concepts/ai-moats]]: tech as business card; good-enough products; lab economics
+- [[concepts/ai-moats]]: tech as business card; good-enough products; lab economics; AI-proof business categories
 - [[concepts/solo-builders]]: AI builders without VC; shipping, finishing, distribution
 - [[concepts/customer-pain-research]]: mining workaround posts for business ideas; validate by talking
 - [[concepts/enterprise-ai-adoption]]: selling applied AI to enterprises; FDEs; AI OS
@@ -189,6 +189,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/dror-adi]]: AI Innovation Lead, monday.com finance
 
 ## Episodes
+- [[episodes/startup-ideas--8-ai-proof-businesses-2027]]: 8 AI-Proof Businesses I'd Build in 2027 (2026-11-04)
 - [[episodes/startup-for-startup--3-stages-of-ai-adoption]]: 3 Stages of Adopting AI: From First Adoption to Rebuilding Processes (2026-11-03)
 - [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]: #187 Who Am I Without My Profession? With Lior Frankel (2026-10-24)
 - [[episodes/micha-stocks--feels-like-bear-market]]: Let's Talk About the Situation: It Feels Like a Bear Market (2026-10-31)

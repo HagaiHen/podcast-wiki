@@ -40,6 +40,7 @@
 
 ## People
 - [[people/yuval-avidani]]: AI builder content (LinkedIn, an open-source skills repo, Channel 12 AI segment) — [[episodes/explainable--167-yuval-avidani-agent-harness]]
+- Sam Parr's Hampton: paid founder community with in-person meetups, cited as a model for belonging businesses — [[concepts/solo-builders]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
 - AI with Remy (agent-product walkthroughs) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]
 - Build Ship Grow and Squid Club: Israeli AI-builder communities — [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]
 - [[people/andrej-karpathy]]: his LLM Wiki post is the basis of this pattern — [[concepts/llm-wiki]] · [[episodes/osim-tochna--second-brain-and-llm-wiki]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]

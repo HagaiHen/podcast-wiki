@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-10-13
+sources: 2
+updated: 2026-11-06
 ---
 # Customer Pain Research
 
-**Summary:** The best small-business ideas hide in work customers still do by hand around software they already pay for. Agents with social-web access (Agent Reach for YouTube, Reddit and X) can mine posts for workaround phrases like "I export it" or "does anyone know a workaround" and bring back the original posts. Research only produces hypotheses: you still talk to the people posting before assuming there's a customer. An interviewing skill like Grill Me helps you list the assumptions to take into that conversation.
+**Summary:** The best small-business ideas hide in work customers still do by hand around software they already pay for. Agents with social-web access (Agent Reach for YouTube, Reddit and X) can mine posts for workaround phrases like "I export it" or "does anyone know a workaround" and bring back the original posts. The same agents can run as a standing trend monitor over your niches, so you build first while few others have. Research only produces hypotheses: you still talk to the people posting before assuming there's a customer. An interviewing skill like Grill Me helps you list the assumptions to take into that conversation.
 
 ## Key ideas
 - Ask an agent: for software people already pay for, what are customers still doing by hand? Bring back the original posts ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
@@ -15,6 +15,7 @@ updated: 2026-10-13
 - Research isn't validation: ask one poster to show what they actually do. The skill helps you prepare; the customer tells you what's happening ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 - Surface hidden buyer questions early: for local franchise ads, who pays (owner or HQ) and who approves? You don't want to build a dashboard and then learn every ad goes through head office ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 - The same research improves positioning for an existing product: customers' own complaint wording becomes copy ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Trend machines: use ideabrowser.com or a personal agent platform (GrokBot, Claude) to watch micro-niches for emerging trends; it's surprising how few people have built anything when you're early ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - None yet.
@@ -22,6 +23,7 @@ updated: 2026-10-13
 ## Takeaways
 - [ ] Have an agent search Reddit/X/YouTube for "I export it" / "workaround" posts about a paid tool and bring back originals ([[episodes/startup-ideas--8-github-repos-viral-money]])
 - [ ] Before building, contact one poster and ask them to show their workaround ([[episodes/startup-ideas--8-github-repos-viral-money]])
+- [ ] Set up a personal agent to monitor trends in 2–3 micro-niches you care about and report weekly ([[episodes/startup-ideas--8-ai-proof-businesses-2027]])
 
 ## Related
 [[concepts/solo-builders]] · [[concepts/ai-growth-marketing]] · [[concepts/coding-agent-workflow]] · [[concepts/skill-engineering]]

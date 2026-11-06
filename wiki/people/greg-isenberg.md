@@ -6,6 +6,7 @@ type: person
 Host of The Startup Ideas Podcast.
 
 ## Appearances
+- [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
 - [[episodes/startup-ideas--9-stages-of-ai-agent-adoption]]
 - [[episodes/startup-ideas--8-github-repos-viral-money]]
 - [[episodes/startup-ideas--jev-is-here]]

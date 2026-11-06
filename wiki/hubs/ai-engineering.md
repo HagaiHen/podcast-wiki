@@ -20,7 +20,7 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/llm-pretraining]]: pre-training craft
 - [[concepts/llm-post-training]]: SFT and RL on open models; when vertical AI companies should train their own
 - [[concepts/llm-reasoning]]: how models reason
-- [[concepts/ai-moats]]: defensibility beyond the model
+- [[concepts/ai-moats]]: defensibility beyond the model; AI-proof business categories
 - [[concepts/solo-builders]]: building and shipping products without VC
 - [[concepts/customer-pain-research]]: finding paid-software workarounds as business ideas
 - [[concepts/enterprise-ai-adoption]]: enterprise AI go-to-market

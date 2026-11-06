@@ -450,3 +450,8 @@ updated: concepts/{future-of-software-engineering, solo-builders}, shows/develop
 source: whisper
 created: episodes/startup-for-startup--3-stages-of-ai-adoption, concepts/ai-work-redesign, people/dror-adi
 updated: concepts/{ai-rd-rollout, ai-engineering-metrics, outcome-metrics, ai-guardrails, llm-evals, proactive-ai, enterprise-ai-adoption}, shows/startup-for-startup, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-11-06 — The Startup Ideas Podcast: 8 AI-Proof Businesses I'd Build in 2027
+source: transcript
+created: episodes/startup-ideas--8-ai-proof-businesses-2027
+updated: concepts/{ai-moats, solo-builders, customer-pain-research}, people/greg-isenberg, shows/the-startup-ideas-podcast, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

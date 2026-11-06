@@ -234,6 +234,9 @@
 - [ ] Train AI enthusiasts from each team as local champions, and show each team's usage where they can see it — [[concepts/ai-rd-rollout]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
 - [ ] Put an internal agent's outputs in a table with a good/bad column and reasons, and have its users review a few iterations before wider launch — [[concepts/llm-evals]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
 - [ ] Put an agent's output in a tool the team already uses, and let each person choose their own view — [[concepts/proactive-ai]] · [[episodes/startup-for-startup--3-stages-of-ai-adoption]]
+- [ ] Score a business idea against the eight AI-proof categories and combine at least two (e.g. attention + liquidity) — [[concepts/ai-moats]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
+- [ ] Ask "what's the Hampton for X?" for a niche you know: goal, curated group, experience, no-brainer price — [[concepts/solo-builders]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
+- [ ] Set up a personal agent to monitor trends in 2–3 micro-niches and report weekly — [[concepts/customer-pain-research]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

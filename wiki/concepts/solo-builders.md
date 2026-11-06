@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-11-03
+sources: 7
+updated: 2026-11-06
 ---
 # Solo Builders (Build → Ship → Grow)
 
-**Summary:** Coding agents and no-code AI builders created a new founder profile: people who build and run real products alone or in tiny teams, often without VC money and often outside software. Domain experts and go-to-market people are especially strong, because building got cheap while distribution and intimate market knowledge didn't. A common on-ramp is services first: free skills and repos let one person sell launch videos, decks, design fixes or dubbing on retainer, then turn that cash flow and customer knowledge into technology. The hard parts are psychological and commercial: *shipping* unfinished work, *finishing* projects instead of starting new ones (AI makes it easy to "procrastinate exponentially"), learning to enjoy the struggle, picking up business skills like pricing and sales, and getting heard when 10× more software means 10× more noise. One answer to the noise is consistent, authentic content about what you genuinely care about, showing exactly how you built something, even when the networks reward it with zero likes for a long time.
+**Summary:** Coding agents and no-code AI builders created a new founder profile: people who build and run real products alone or in tiny teams, often without VC money and often outside software. Domain experts and go-to-market people are especially strong, because building got cheap while distribution and intimate market knowledge didn't. A common on-ramp is services first: free skills and repos let one person sell launch videos, decks, design fixes or dubbing on retainer, then turn that cash flow and customer knowledge into technology. The hard parts are psychological and commercial: *shipping* unfinished work, *finishing* projects instead of starting new ones (AI makes it easy to "procrastinate exponentially"), learning to enjoy the struggle, picking up business skills like pricing and sales, and getting heard when 10× more software means 10× more noise. One answer to the noise is consistent, authentic content about what you genuinely care about, showing exactly how you built something, even when the networks reward it with zero likes for a long time. AI also lowers the cost of running businesses that used to need big teams: an AI editor makes a one-person media machine practical, and agents handle enough marketplace support that a team of a few people could run millions in GMV.
 
 ## Key ideas
 - Builder communities (Build Ship Grow, Squid Club, 10X Marketers, AI Agents) push the ecosystem; inside them everyone uses Claude Code and skills, while big companies lag (e.g. ~3 of a room of Apple engineers used skills) ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]], [[people/idan-benyon]]).
@@ -30,6 +30,9 @@ updated: 2026-11-03
 - Generative AI lets you "procrastinate exponentially": there's always another new thing to try (garbled transcript, approximate; [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]).
 - Satisfaction comes from the struggle: without it there's no satisfaction or meaning, so you need to fall in love with the struggle (garbled transcript, approximate; [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]).
 - Bootstrapping means learning the whole business: pricing, brand, marketing, sales, business and law come up as areas to pick up (garbled transcript, approximate; [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]).
+- Media is underrated: newsletters, meme pages, founder-led content. With an AI model as video editor the host started short-form videos he used to hate making and got hundreds of thousands of views in a week. Aim for a media company in a micro-niche, a trusted brand, with a human face helping but not required ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Belonging: people are more connected and feel more disconnected than ever. Paid communities (Circle, Skool, weekly accountability calls) and IRL events around a shared goal can charge hundreds or thousands of dollars; Hampton, Sam Parr's meetups for founders at $3M+ revenue, is the model ("what's the Hampton for X?"). His own Nashville founder event had more demand than it could meet ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Marketplaces aren't dead: they are among the stickiest businesses (Cars & Bids sold for many millions). Look for a new mechanic or underserved niche, e.g. a friend's weekly curated collectible-car auction marketed to his Instagram audience. Partner with creators who already have the attention, or incubate the attention yourself first ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Do bootstrapped AI products need VC at all? Both agree big funds aren't going anywhere, but a parallel non-VC layer is forming and its financing model is still unclear ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]).
@@ -40,6 +43,7 @@ updated: 2026-11-03
 - [ ] Finish one side project end to end, even a symbolic launch ([[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]])
 - [ ] Run one project with an agent team for a month: build, execute, hire and fire, automate ([[episodes/startup-ideas--grok-bot-one-person-company]])
 - [ ] Post consistently about what you're actually building, with the step-by-step how, regardless of early engagement ([[episodes/explainable--167-yuval-avidani-agent-harness]])
+- [ ] Ask "what's the Hampton for X?" for a niche you know: goal, curated group, experience, no-brainer price ([[episodes/startup-ideas--8-ai-proof-businesses-2027]])
 
 ## Related
 [[concepts/ai-growth-marketing]] · [[concepts/coding-agent-workflow]] · [[concepts/agent-ready-products]] · [[concepts/future-of-software-engineering]] · [[concepts/ai-moats]]

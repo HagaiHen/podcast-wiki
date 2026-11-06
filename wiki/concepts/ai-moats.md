@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 9
-updated: 2026-11-01
+sources: 10
+updated: 2026-11-06
 ---
 # AI Moats (beyond the model)
 
-**Summary:** A technical edge in AI is a "business card", not a moat: once users touch it, competitors have about six months to catch up, in the good case. Selling tokens with public benchmarks invites endless one-upping and one-click switching (OpenRouter is the worst case). The durable path is a "good enough" product whose value lives beyond the specific model, like Spotify knowing your music. For an AI application that means adapting the system to your own data and customers faster than anyone else, ideally in models you own; otherwise a competitor takes a slightly better model, adds a prompt, and copies you. Owning a model is a slow bet that suits a mature product and comes with a retraining treadmill. Agents add a new kind of network effect: letting your agent coordinate with the agents of people you trust. The frontier labs themselves are in a money-losing arms race. Anthropic's S-1 shows revenue up ~15× year over year alongside losses, ~$270B of committed cloud contracts, and an IPO target of $1.5–2T, which strains growth math.
+**Summary:** A technical edge in AI is a "business card", not a moat: once users touch it, competitors have about six months to catch up, in the good case. Selling tokens with public benchmarks invites endless one-upping and one-click switching (OpenRouter is the worst case). The durable path is a "good enough" product whose value lives beyond the specific model, like Spotify knowing your music. For an AI application that means adapting the system to your own data and customers faster than anyone else, ideally in models you own; otherwise a competitor takes a slightly better model, adds a prompt, and copies you. When software, content and answers become nearly free, whole businesses can be made "AI-proof" by what AI can't clone overnight: physical work (atoms), licenses, regulation and exclusive partnerships, an audience, community and belonging, marketplace liquidity, and unique data, often mixed together; pay-for-results agent services are the weakest of these. Owning a model is a slow bet that suits a mature product and comes with a retraining treadmill. Agents add a new kind of network effect: letting your agent coordinate with the agents of people you trust. The frontier labs themselves are in a money-losing arms race. Anthropic's S-1 shows revenue up ~15× year over year alongside losses, ~$270B of committed cloud contracts, and an IPO target of $1.5–2T, which strains growth math.
 
 ## Key ideas
 - "Good enough" wins: nobody switches between Waze and Google Maps for five seconds, or buys a car for its 240 km/h top speed ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -29,6 +29,12 @@ updated: 2026-11-01
 
 - Network effects for the agentic era: Instinct AI's trusted-person network lets users allow-list other people's agents so agents talk to each other; capturing the market early could become the moat many people ask about. Open question: will it interoperate with other agents or stay closed ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]], [[people/remy]])?
 - A wave of mature vertical AI companies (Harvey, Cursor with Composer) now trains models in-house. The investment takes longer to ripen but can yield very large returns ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
+- Eight "AI-proof" business categories: atoms (physical work like plumbing or a coffee shop), permission (licenses, regulation, preferred-vendor deals), attention (media), timing (first mover on a niche trend), belonging (paid communities, IRL events), liquidity (marketplaces), unique data, and outcomes (automated AI services). Mixing categories is encouraged ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Atoms: physical businesses are harder to run but AI can't clone them overnight, and their valuations may rise as AI money hunts for moats; "boring business" content is already booming ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Permission: a preferred-vendor deal with Salesforce, Microsoft or even a mid-size company can't be copied on day one. Where only licensed professionals may own a firm (law, bookkeeping in some countries), partner with one and run the marketing, growth and AI side ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Timing: the first product on a niche trend may itself be the least AI-proof thing you build, but the data, brand, and trust it collects are not ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Unique data: data brokers (Mercor, Micro1) sell data the frontier labs don't have, first coding data, now new kinds. A second play is a paid curated directory: as LLMs and feeds give infinite content, people will pay for trustworthy curation, e.g. restaurant reviews that aren't gamed five-or-one-star noise. Sell to users, to labs, or both ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
+- Ranking: physical and license/regulation businesses are strongest; outcomes (agent-run services) are the weakest, defensible only through the best context, data and system, or an exclusive deal ([[episodes/startup-ideas--8-ai-proof-businesses-2027]], [[people/greg-isenberg]]).
 
 ## Disagreements & open questions
 - Is Instinct AI (rumored to be raising at a $10B valuation) a Clubhouse moment? Clubhouse raised at about $4B on invite-only hype and never lived up to it ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/greg-isenberg]]).
@@ -38,6 +44,7 @@ updated: 2026-11-01
 
 ## Takeaways
 - [ ] When building on AI, write down what value remains if a competitor swaps in a better model tomorrow ([[episodes/explainable--164-gilad-levi-continual-learning]])
+- [ ] Score a business idea against the eight AI-proof categories and pick at least two to combine (e.g. attention + liquidity) ([[episodes/startup-ideas--8-ai-proof-businesses-2027]])
 
 ## Related
 [[concepts/market-bubbles]] · [[concepts/small-language-models]] · [[concepts/ai-hype]] · [[concepts/enterprise-ai-adoption]] · [[concepts/model-selection]] · [[concepts/ai-cybersecurity]] · [[concepts/solo-builders]] · [[concepts/image-generation]] · [[concepts/llm-post-training]]
