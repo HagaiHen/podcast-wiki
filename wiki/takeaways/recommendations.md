@@ -39,6 +39,7 @@
 - Novee's blog post on agents in sandboxes and RL training architecture (linked in the LangTalks newsletter) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 
 ## People
+- [[people/ran-erez]]: "Productive" (פרודקטיבי), a product-management podcast — [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
 - [[people/yuval-avidani]]: AI builder content (LinkedIn, an open-source skills repo, Channel 12 AI segment) — [[episodes/explainable--167-yuval-avidani-agent-harness]]
 - Sam Parr's Hampton: paid founder community with in-person meetups, cited as a model for belonging businesses — [[concepts/solo-builders]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
 - AI with Remy (agent-product walkthroughs) — [[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]]

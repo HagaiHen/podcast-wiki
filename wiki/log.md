@@ -455,3 +455,8 @@ updated: concepts/{ai-rd-rollout, ai-engineering-metrics, outcome-metrics, ai-gu
 source: transcript
 created: episodes/startup-ideas--8-ai-proof-businesses-2027
 updated: concepts/{ai-moats, solo-builders, customer-pain-research}, people/greg-isenberg, shows/the-startup-ideas-podcast, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-11-11 — Startup for Startup: 5 Product–Engineering Mistakes in the Agentic Era
+source: description
+created: episodes/startup-for-startup--5-product-dev-mistakes-agentic-era, people/ran-erez
+updated: concepts/{ai-sdlc, llm-evals}, shows/startup-for-startup, index, takeaways/{to-try, recommendations}

@@ -187,8 +187,10 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/dan-padnos]]: Head of AI at Novee Security (post-training)
 - [[people/lior-frankel]]: guest on Developers Outside the Box (career identity, bootstrapping)
 - [[people/dror-adi]]: AI Innovation Lead, monday.com finance
+- [[people/ran-erez]]: host of the Productive product podcast
 
 ## Episodes
+- [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]: 5 Product–Engineering Mistakes in the Agentic Era (2026-11-10)
 - [[episodes/startup-ideas--8-ai-proof-businesses-2027]]: 8 AI-Proof Businesses I'd Build in 2027 (2026-11-04)
 - [[episodes/startup-for-startup--3-stages-of-ai-adoption]]: 3 Stages of Adopting AI: From First Adoption to Rebuilding Processes (2026-11-03)
 - [[episodes/developers-outside-the-box--187-who-am-i-without-my-profession]]: #187 Who Am I Without My Profession? With Lior Frankel (2026-10-24)

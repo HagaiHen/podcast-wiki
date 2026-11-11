@@ -237,6 +237,9 @@
 - [ ] Score a business idea against the eight AI-proof categories and combine at least two (e.g. attention + liquidity) — [[concepts/ai-moats]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
 - [ ] Ask "what's the Hampton for X?" for a niche you know: goal, curated group, experience, no-brainer price — [[concepts/solo-builders]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
 - [ ] Set up a personal agent to monitor trends in 2–3 micro-niches and report weekly — [[concepts/customer-pain-research]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]
+- [ ] When handing work to engineering, bring the evidence (customer data, examples) instead of a long spec or a ready-made conclusion — [[concepts/ai-sdlc]] · [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
+- [ ] Before showing a near-done prototype, agree who will own it in production — [[concepts/ai-sdlc]] · [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
+- [ ] For each eval, ask whether it measures customer outcome or only answer shape; add at least one outcome check — [[concepts/llm-evals]] · [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

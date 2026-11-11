@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-08
+sources: 7
+updated: 2026-11-11
 ---
 # AI-SDLC (agents across the dev lifecycle)
 
-**Summary:** Running the software lifecycle with agent teams, from product idea to PRD, task breakdown, implementation, review, and QA, with existing artifacts (Jira tickets, PRDs, PRs, tests) as the source of truth and humans placed deliberately at feedback points. Two automation types: *passive* flows triggered by events (errors in logs, support tickets, code review) and the *core* flow of team requirements moving to remote execution. Fire-and-forget remote agents fail; they need evals, self-testing tools, guardrails, and memory. When they work (~15% of monday's PRs come from remote agents), the bottleneck moves from writing code to reviewing it, and fixed two-week sprints stop fitting. Most orgs are at "level 1"; start with one concrete problem at the edges and fix dev infrastructure first.
+**Summary:** Running the software lifecycle with agent teams, from product idea to PRD, task breakdown, implementation, review, and QA, with existing artifacts (Jira tickets, PRDs, PRs, tests) as the source of truth and humans placed deliberately at feedback points. Two automation types: *passive* flows triggered by events (errors in logs, support tickets, code review) and the *core* flow of team requirements moving to remote execution. Fire-and-forget remote agents fail; they need evals, self-testing tools, guardrails, and memory. When they work (~15% of monday's PRs come from remote agents), the bottleneck moves from writing code to reviewing it, and fixed two-week sprints stop fitting. Most orgs are at "level 1"; start with one concrete problem at the edges and fix dev infrastructure first. The product–engineering line is blurring too: developers write more code than ever and product managers build prototypes or even ship to production, yet "not enough engineering resources" is still PMs' top complaint. So the scarce work is making sure the team solves the right problem, with evidence and clear ownership, rather than producing more specs and near-done prototypes.
 
 ## Key ideas
 - First questions: what's the source of truth, and where and how do humans give feedback ([[episodes/langtalks--68-ai-sdlc]], [[people/yonatan-maor]])?
@@ -29,6 +29,8 @@ updated: 2026-10-08
 - Sprints are obsolete when execution time collapses and agents share the board: Brook's team dropped two-week sprints for kanban while still committing to deadlines and deliverables ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
 - Next steps: auto-merge with no human in the loop, then "agentic release", where agents run feature-flag rollouts and rollbacks up to the customer ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/netanel-abergel]])
 - Where to start: one concrete, simple problem such as the bug-duty rotation; add control mechanisms and guardrails, prove it works, then deepen each part and expand to harder problems ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
+- Five common product–engineering mistakes in the agentic era, among them: bring engineering the *evidence*, not your conclusions; don't hand over a 70-page AI-written spec nobody reads; an "almost finished" prototype pressures engineering to ship it; and whoever *creates* something isn't automatically the one *responsible* for it ([[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]], [[people/ran-erez]]).
+- Everyone can run faster while the product doesn't advance; a PM's most important job now is making sure they solve the right problem (examples from monday.com, Elementor and Stripe) ([[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]], [[people/ran-erez]]).
 
 ## Disagreements & open questions
 - Org knowledge and skill sharing remain unsolved; every team does it differently ([[episodes/langtalks--68-ai-sdlc]]).
@@ -38,6 +40,8 @@ updated: 2026-10-08
 - [ ] Start with peripheral flows: bug triage, on-call investigation ([[episodes/langtalks--68-ai-sdlc]])
 - [ ] Route agent tasks to human review by blast radius, not line count ([[episodes/langtalks--68-ai-sdlc]])
 - [ ] Start agent adoption with one concrete problem (e.g. bug duty) and its guardrails before expanding ([[episodes/ai-engineering-podcast--atlas-ai-teammate]])
+- [ ] When handing work to engineering, bring the evidence (customer data, examples) instead of a long spec or a ready-made conclusion ([[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]])
+- [ ] Before showing a near-done prototype, agree who will own it in production ([[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]])
 
 ## Related
-[[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]] · [[concepts/ai-rd-rollout]] · [[concepts/workflow-automation]] · [[concepts/agent-workspaces]] · [[concepts/ai-guardrails]]
+[[concepts/customer-pain-research]] · [[concepts/harness-engineering]] · [[concepts/ai-verification]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-codebase]] · [[concepts/ai-engineering-metrics]] · [[concepts/ai-rd-rollout]] · [[concepts/workflow-automation]] · [[concepts/agent-workspaces]] · [[concepts/ai-guardrails]]
