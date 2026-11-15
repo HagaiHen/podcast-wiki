@@ -23,6 +23,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/seasonality]]: calendar effects like "Uptober"
 - [[concepts/bitcoin]]: crypto volatility; custody vs ETFs; sovereign digital currencies
 - [[concepts/circuit-breakers]]: why an index can't crash 22% in a day
+- [[concepts/key-person-risk]]: when a stock rests on one person (Nvidia CEO case)
 - [[concepts/interest-rate-expectations]]: market-implied Fed odds; why the Fed waits for elections
 
 ## AI Engineering — [[hubs/ai-engineering]]
@@ -94,15 +95,19 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/knowledge-graphs]]: ontologies agents use to understand an org
 - [[concepts/knowledge-rot]]: stale knowledge; routines that check themselves
 
+## Startups — [[hubs/startups]]
+- [[concepts/outcome-metrics]]: outcome KPIs over inputs; Goodhart's law; north-star metrics
+- [[concepts/fundraising]]: pitching investors; work in parallel; ask why "no"
+- [[concepts/defense-tech]]: Israel as defense-tech hub; government as design partner
+- [[concepts/founder-leadership]]: the CEO is always selling; officers' leadership; focus
+- [[concepts/startup-exits]]: when to sell; each raise removes buyers; win-win sell point
+
 ## Unsorted
 - [[concepts/biohacking]]: N=1 self-experiments, sensors, caveats (health)
 - [[concepts/personal-genomics]]: whole-genome sequencing, drug responses (health)
 - [[concepts/bayesian-updating]]: priors, posteriors, test errors (health)
 - [[concepts/cost-of-living]]: competition vs price caps; import barriers; subsidies captured by sellers (economics)
 - [[concepts/housing-prices]]: interest rates vs growth; investor demand (economics)
-- [[concepts/outcome-metrics]]: outcome KPIs over inputs; Goodhart's law; north-star metrics (startups)
-- [[concepts/fundraising]]: pitching investors; work in parallel; ask why "no" (startups)
-- [[concepts/defense-tech]]: Israel as defense-tech hub; government as design partner (startups)
 - [[concepts/ai-in-education]]: personal AI tutor per child; teacher as mentor (education)
 
 ## Shows
@@ -118,6 +123,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[shows/developers-outside-the-box]]: Developers Outside the Box (מפתחים מחוץ לקופסה)
 - [[shows/micha-stocks]]: Micha Stocks (מיכה סטוקס מגיש: שוק ההון)
 - [[shows/tsarot-baheitek]]: Troubles in High-Tech (צרות בהייטק)
+- [[shows/yasmins-living-room]]: In Yasmin's Living Room (בסלון של יסמין)
 
 ## People
 - [[people/amit-bendor]]: host of Osim Tochna
@@ -188,8 +194,12 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/lior-frankel]]: guest on Developers Outside the Box (career identity, bootstrapping)
 - [[people/dror-adi]]: AI Innovation Lead, monday.com finance
 - [[people/ran-erez]]: host of the Productive product podcast
+- [[people/yasmin]]: host of In Yasmin's Living Room
+- [[people/amir-elichai]]: founder-CEO of Carbyne (sold to Axon)
 
 ## Episodes
+- [[episodes/yasmins-living-room--amir-elichai-carbyne]]: How a Combat Soldier With No Tech Background Built a Company That Sold for Over $600M (2026-11-12)
+- [[episodes/micha-stocks--breaking-nvidia-ceo]]: Breaking: Nvidia (2026-11-12)
 - [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]: 5 Product–Engineering Mistakes in the Agentic Era (2026-11-10)
 - [[episodes/startup-ideas--8-ai-proof-businesses-2027]]: 8 AI-Proof Businesses I'd Build in 2027 (2026-11-04)
 - [[episodes/startup-for-startup--3-stages-of-ai-adoption]]: 3 Stages of Adopting AI: From First Adoption to Rebuilding Processes (2026-11-03)

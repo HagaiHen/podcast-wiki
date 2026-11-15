@@ -37,6 +37,7 @@
 - Plurai agent simulator and Vibe Training (self-serve SLM training on synthetic data) — [[concepts/synthetic-data]] · [[episodes/hidden-layers--plurai-ilan-kedar]]
 - Unsloth and Axolotl (supervised fine-tuning libraries); Tinker and Fireworks (more managed RL training) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 - Novee's blog post on agents in sandboxes and RL training architecture (linked in the LangTalks newsletter) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
+- Robofun: monthly robotics kits for kids, from basics up to hacking — [[episodes/yasmins-living-room--amir-elichai-carbyne]]
 
 ## People
 - [[people/ran-erez]]: "Productive" (פרודקטיבי), a product-management podcast — [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]

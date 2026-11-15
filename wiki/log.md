@@ -460,3 +460,13 @@ updated: concepts/{ai-moats, solo-builders, customer-pain-research}, people/greg
 source: description
 created: episodes/startup-for-startup--5-product-dev-mistakes-agentic-era, people/ran-erez
 updated: concepts/{ai-sdlc, llm-evals}, shows/startup-for-startup, index, takeaways/{to-try, recommendations}
+
+## 2026-11-15 — Micha Stocks: Breaking: Nvidia
+source: whisper
+created: episodes/micha-stocks--breaking-nvidia-ceo, concepts/key-person-risk
+updated: concepts/{market-timing, technical-analysis, market-breadth}, people/micha-stocks, shows/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-11-15 — In Yasmin's Living Room: How a Combat Soldier With No Tech Background Built a Company That Sold for Over $600M | Amir Elichai
+source: whisper
+created: episodes/yasmins-living-room--amir-elichai-carbyne, concepts/{startup-exits, founder-leadership}, people/{yasmin, amir-elichai}, shows/yasmins-living-room, hubs/startups
+updated: concepts/{fundraising, defense-tech, customer-pain-research}, index, takeaways/{to-try, recommendations}

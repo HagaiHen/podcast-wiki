@@ -25,6 +25,9 @@
 - [ ] Before calling a bear market, compare giants, equal-weight, value vs growth, and sectors for the same period — [[concepts/market-breadth]] · [[episodes/micha-stocks--feels-like-bear-market]]
 - [ ] In a selloff, separate companies with intact results and no warnings from those cutting guidance, and accept you won't catch the low — [[concepts/market-timing]] · [[episodes/micha-stocks--feels-like-bear-market]]
 - [ ] Decide whether you want the crypto itself or only its price exposure: exchange or wallet custody vs an ETF — [[concepts/bitcoin]] · [[episodes/micha-stocks--feels-like-bear-market]]
+- [ ] For any single stock you hold, ask what happens if the CEO leaves tomorrow, and size the position for that case — [[concepts/key-person-risk]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
+- [ ] When a stock falls on news, overlay its chart on a similar stock without that news before deciding the news is the cause — [[concepts/technical-analysis]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
+- [ ] If you're betting on a theme's comeback, compare the upside of several stocks in it instead of asking only whether to buy the famous one — [[concepts/market-timing]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
@@ -261,6 +264,19 @@
 - [ ] Prototype a team brain locally (note-taker + Slack MCPs into a small git wiki) before automating — [[concepts/second-brain]] · [[episodes/startup-for-startup--353-self-updating-team-brain]]
 - [ ] Run a retro on each finished agent session and write the lessons back to memory — [[concepts/memory-consolidation]] · [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
 
+## Startups — [[hubs/startups]]
+
+- [ ] Rewrite goals as outcomes, not inputs (customers gained, not budget spent) — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Send a monthly update on 2–3 metrics: hit, missed, and why — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Before adopting a metric, ask how it could be gamed (e.g. shrinking the denominator) and pair it with a counter-metric — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Run investor conversations in parallel until money is in the bank — [[concepts/fundraising]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] After a rejection, ask for the reason and commit not to argue with it — [[concepts/fundraising]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
+- [ ] Don't turn down other term sheets until closing, even after a signed one from a top fund — [[concepts/fundraising]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+- [ ] If you're non-technical with a validated problem, pitch one technologist to join before pitching investors — [[concepts/founder-leadership]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+- [ ] Pick one target market and stay in it until it works before expanding — [[concepts/founder-leadership]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+- [ ] Before each raise, list who could still afford to buy you at the new valuation — [[concepts/startup-exits]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+- [ ] If an acquisition is a realistic exit, let likely buyers know when you're about to raise — [[concepts/startup-exits]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+
 ## Unsorted
 
 - [ ] Don't act on investment success stories from Instagram/TikTok — [[concepts/fomo]] · [[episodes/lazy-investing--108-the-leverage-trap]]
@@ -268,8 +284,3 @@
 - [ ] Self-experiments: alternate conditions A-B-A-B to reduce time effects — [[concepts/biohacking]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Consider whole-genome sequencing and check pharmacogenomic variants before you need the drugs — [[concepts/personal-genomics]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
 - [ ] Ask whether a medical risk number accounts for evidence you already have — [[concepts/bayesian-updating]] · [[episodes/explainable--152-biohacking-like-a-data-scientist]]
-- [ ] Rewrite goals as outcomes, not inputs (customers gained, not budget spent) — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
-- [ ] Send a monthly update on 2–3 metrics: hit, missed, and why — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
-- [ ] Before adopting a metric, ask how it could be gamed (e.g. shrinking the denominator) and pair it with a counter-metric — [[concepts/outcome-metrics]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
-- [ ] Run investor conversations in parallel until money is in the bank — [[concepts/fundraising]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
-- [ ] After a rejection, ask for the reason and commit not to argue with it — [[concepts/fundraising]] · [[episodes/tsarot-baheitek--90-naftali-bennett]]
