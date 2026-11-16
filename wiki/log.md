@@ -470,3 +470,13 @@ updated: concepts/{market-timing, technical-analysis, market-breadth}, people/mi
 source: whisper
 created: episodes/yasmins-living-room--amir-elichai-carbyne, concepts/{startup-exits, founder-leadership}, people/{yasmin, amir-elichai}, shows/yasmins-living-room, hubs/startups
 updated: concepts/{fundraising, defense-tech, customer-pain-research}, index, takeaways/{to-try, recommendations}
+
+## 2026-11-16 — AI Engineering: How Do You Turn the Whole Company Into a Development Team?
+source: whisper
+created: episodes/ai-engineering-podcast--big-brain-studio-non-developers, concepts/{citizen-developers, natural-language-data-access}, people/{doron, oded}
+updated: concepts/{agent-security, ai-work-redesign, agent-ready-products}, people/netanel-abergel, shows/ai-engineering-podcast, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-11-16 — ExplAInable: #169 Breaking Agents From the Inside: Prompt Injection, Red Teaming and Models That Lie
+source: whisper
+created: episodes/explainable--169-itay-nakash-red-teaming-agents, concepts/llm-safety, people/itay-nakash
+updated: concepts/{agent-security, ai-red-teaming, llm-evals, llm-reasoning, llm-cost-optimization, personal-ai-assistants}, people/mike-erlihson, shows/explainable, hubs/ai-engineering, index, takeaways/to-try

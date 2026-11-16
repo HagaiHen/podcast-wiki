@@ -6,6 +6,7 @@ type: show
 Hebrew podcast on AI, data science, and machine learning.
 
 ## Episodes
+- [[episodes/explainable--169-itay-nakash-red-teaming-agents]] (2026-11-15)
 - [[episodes/explainable--167-yuval-avidani-agent-harness]] (2026-10-18)
 - [[episodes/explainable--164-gilad-levi-continual-learning]] (2026-09-22)
 - [[episodes/explainable--163-hidden-cost-of-agents]] (2026-09-13)

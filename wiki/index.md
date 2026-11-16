@@ -30,6 +30,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/ai-sre]]: agents that investigate and heal production
 - [[concepts/ai-rd-rollout]]: adopting AI across an engineering org
 - [[concepts/ai-work-redesign]]: three stages from adoption to rebuilding work around AI
+- [[concepts/citizen-developers]]: non-developers build and deploy apps on company data (Big Brain Studio)
+- [[concepts/natural-language-data-access]]: ask company data in plain language with permissions enforced
 - [[concepts/ai-sdlc]]: agent teams across the dev lifecycle; start at the edges
 - [[concepts/coding-agent-workflow]]: practical setup: plans, settings, skills, terminals
 - [[concepts/multi-agent-orchestration]]: orchestrator + specialist agents; pitfalls
@@ -39,7 +41,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/ai-infrastructure]]: AI factories, GPU networking, power and optics
 - [[concepts/neoclouds]]: GPU clouds (Nebius); multi-cloud GPU workloads
 - [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
-- [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms
+- [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms; foot-in-the-door, CRAFT
+- [[concepts/llm-safety]]: unfaithful explanations, model opinions, shallow safety alignment
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
 - [[concepts/agentic-vulnerability-response]]: agent turns a new CVE into a deployed protection in ~45 min
 - [[concepts/image-generation]]: professional image generation; licensed data, JSON control
@@ -196,8 +199,13 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/ran-erez]]: host of the Productive product podcast
 - [[people/yasmin]]: host of In Yasmin's Living Room
 - [[people/amir-elichai]]: founder-CEO of Carbyne (sold to Axon)
+- [[people/doron]]: PM, AI Foundation, monday.com Big Brain
+- [[people/oded]]: tech lead, monday.com Big Brain Studio
+- [[people/itay-nakash]]: agent-security researcher, IBM Research
 
 ## Episodes
+- [[episodes/explainable--169-itay-nakash-red-teaming-agents]]: #169 Breaking Agents From the Inside: Prompt Injection, Red Teaming and Models That Lie (2026-11-15)
+- [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]: How Do You Turn the Whole Company Into a Development Team? (2026-11-04)
 - [[episodes/yasmins-living-room--amir-elichai-carbyne]]: How a Combat Soldier With No Tech Background Built a Company That Sold for Over $600M (2026-11-12)
 - [[episodes/micha-stocks--breaking-nvidia-ceo]]: Breaking: Nvidia (2026-11-12)
 - [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]: 5 Product–Engineering Mistakes in the Agentic Era (2026-11-10)

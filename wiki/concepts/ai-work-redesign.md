@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-11-04
+sources: 2
+updated: 2026-11-16
 ---
 # AI Work Redesign (reinventing work around AI)
 
-**Summary:** Adding agents to existing processes saves hours, but the larger value may come from rebuilding the work itself around what AI can do. monday.com's finance AI lead describes three stages: get nearly everyone using AI, build many agents on existing processes, then pick one area and redesign it as if building it today. Each stage prepares the next: teams need daily AI habits before they can accept agents, and they need working agents before their role can change. The trigger for stage three was a department leader asking where all the disconnected agents were heading, which he couldn't answer. This is one company's self-reported experience, and the first redesigned process hadn't yet reached its full team, so its results are still open.
+**Summary:** Adding agents to existing processes saves hours, but the larger value may come from rebuilding the work itself around what AI can do. monday.com's finance AI lead describes three stages: get nearly everyone using AI, build many agents on existing processes, then pick one area and redesign it as if building it today. Each stage prepares the next: teams need daily AI habits before they can accept agents, and they need working agents before their role can change. The trigger for stage three was a department leader asking where all the disconnected agents were heading, which he couldn't answer. This is one company's self-reported experience, and the first redesigned process hadn't yet reached its full team, so its results are still open. A second monday.com team reached a related conclusion from the platform side: rather than a central team building tools for each function, give domain experts simple building blocks and let them build the tools themselves, because they know the work best.
 
 ## Key ideas
 - Stage 1, adoption: without people using AI daily, you can't go deeper to agents. Adoption is a proxy for value and prepares the ground; it isn't value in itself ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
@@ -23,6 +23,7 @@ updated: 2026-11-04
 - The knowledge sits with the team: he says he doesn't and won't have their finance expertise, so they shape decisions. The work included neighboring pains (e.g. with sales), and one rep iterated closely with him until the agent's answers, decisions and customer wording earned trust ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 - Cadence: one area at a time, apparently per quarter (the transcript is unclear here). After money coming in (collections) comes money going out (accounts payable) ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
 - For a small company with no dedicated lead: find the person already building things on their own, back them, give them product skills such as user interviews, and make progress data visible ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
+- From building for functions to enabling them: the Big Brain data group's first AI product, a meeting-prep deck for account managers, needed a request and a prompt change for every new data point or meeting type. Two years later its view is that the account manager, who reads the document, builds the best version, and the central team's job is to make that easy. The change is about people more than technology ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]], [[people/netanel-abergel]]).
 
 ## Disagreements & open questions
 - Does redesign beat incremental automation? The case for it here rests on an analogy and a rollout that was only approaching global launch, with no outcome numbers yet ([[episodes/startup-for-startup--3-stages-of-ai-adoption]], [[people/dror-adi]]).
@@ -33,4 +34,4 @@ updated: 2026-11-04
 - [ ] Pick one high-impact area and sketch how you'd build it today from scratch, rather than adding another agent to the current process ([[episodes/startup-for-startup--3-stages-of-ai-adoption]])
 
 ## Related
-[[concepts/ai-rd-rollout]] · [[concepts/enterprise-ai-adoption]] · [[concepts/outcome-metrics]] · [[concepts/ai-engineering-metrics]] · [[concepts/llm-pipelines]] · [[concepts/ai-guardrails]]
+[[concepts/ai-rd-rollout]] · [[concepts/enterprise-ai-adoption]] · [[concepts/outcome-metrics]] · [[concepts/ai-engineering-metrics]] · [[concepts/llm-pipelines]] · [[concepts/ai-guardrails]] · [[concepts/citizen-developers]]

@@ -7,7 +7,8 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 
 ## Concepts
 - [[concepts/image-generation]]: controllable image models; one-prompt and local video generation
-- [[concepts/ai-red-teaming]]: breaking models before attackers do
+- [[concepts/ai-red-teaming]]: breaking models before attackers do; foot-in-the-door and adversarial simulated users
+- [[concepts/llm-safety]]: model honesty, opinions, shallow alignment, interpretability
 - [[concepts/world-models]]: models of the physical world
 - [[concepts/ai-infrastructure]]: AI factories and GPU networking
 - [[concepts/neoclouds]]: GPU clouds; multi-cloud for GPU workloads; subsidized reserved capacity
@@ -33,6 +34,8 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/voice-agents]]: building phone/voice agents
 - [[concepts/ai-rd-rollout]]: org-wide AI adoption
 - [[concepts/ai-work-redesign]]: from adoption to agents to rebuilding work around AI
+- [[concepts/citizen-developers]]: non-developers building apps on company data; deploy brokers
+- [[concepts/natural-language-data-access]]: permission-aware plain-language questions over company data
 - [[concepts/autonomous-agents-outlook]]: speculation on autonomy and AGI
 - [[concepts/ai-engineering-metrics]]: measuring coding-agent impact
 - [[concepts/ai-sre]]: AI for production reliability

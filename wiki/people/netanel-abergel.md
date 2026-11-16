@@ -10,6 +10,7 @@ R&D director at monday.com leading AI Engineering; co-host of [[shows/ai-enginee
 
 - [[episodes/startup-for-startup--362-agent-architecture-fit]]
 - [[episodes/ai-engineering-podcast--atlas-ai-teammate]]
+- [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
 
 ## Concepts
-[[concepts/agent-workspaces]] · [[concepts/future-of-software-engineering]] · [[concepts/agent-architectures]] · [[concepts/memory-consolidation]] · [[concepts/ai-sdlc]]
+[[concepts/agent-workspaces]] · [[concepts/future-of-software-engineering]] · [[concepts/agent-architectures]] · [[concepts/memory-consolidation]] · [[concepts/ai-sdlc]] · [[concepts/ai-work-redesign]]

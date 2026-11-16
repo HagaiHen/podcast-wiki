@@ -1,0 +1,37 @@
+---
+type: concept
+hubs: [ai-engineering]
+sources: 1
+updated: 2026-11-16
+---
+# AI App Building for Non-Developers (citizen developers)
+
+**Summary:** Coding agents let marketing, sales, HR or finance staff build working apps on company data, but only if the platform removes the developer process around the code. monday.com's Big Brain Studio first gave non-developers the engineering stack as-is through skills (pull requests, CI, deploy approvals), and it failed: it felt like bureaucracy next to instant vibe coding, and many users lacked GitHub or deploy access. The fix was a "broker": everything happens from the user's local Claude, Cursor or Cowork, and the platform hands out short-lived scoped credentials, deploys in about 20 seconds, and gives each app previews, versions, rollback, a backend runner and a managed database. The documentation is written for the user's LLM, not the user. About 2,900 apps in three months show the demand, and they create a new problem: many dashboards that disagree, so verification and deduplication come next. The underlying lesson is that domain experts build better tools for themselves than a central team can, so the platform team's job is to supply simple, secure building blocks.
+
+## Key ideas
+- Phase 1 failed: exposing the internal stack (micro-frontends, CI, micro-services) to non-developers as skill-orchestrated plugins meant their changes still went through pull requests, CI, merges and deploys. Compared with vibe coding's instant feedback it was "a nightmare", and many lacked GitHub or deploy-tool access ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]], [[people/doron]]).
+- Relax developer standards on purpose: these apps are small, scoped to one business owner or group, and have an isolated blast radius, so code review and robust CI add little ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- The golden rule: all work happens end to end from the user's own machine, in whatever agent they choose (Claude, Cursor, Cowork), with no pull request, CI or deploy pipeline ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- Broker pattern: users authenticate once (OAuth around the internal platform) and a broker issues temporary credentials for one specific location, such as an S3 prefix served by CDN, replacing an approval-and-grant process. The same goes for npm packages. Onboarding shrank from many steps to a one-line prompt pasted into Cursor or Claude ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- User experience: a marketing employee asks Claude for a visualization of their pipeline, gets it in the company's design components, says "deploy", and it's live in about 20 seconds. Previews, pre-releases, version history and rollback are developer practices offered "from a non-tech angle" ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- Each app gets a stateless backend runner for integrations (monday, Snowflake) and a managed, app-scoped database. Owners manage their own packages, so 2,900 apps aren't a maintenance burden for the platform team ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- Write the platform for the user's LLM: the user never learns which packages or APIs exist; their agent must know the scope it can operate in, the API surface, the latest features and best practices, and explain them. "The database is managed by us, the code by the LLM in our sandbox, the intent by the user" ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- Scale: about 2,900 apps in three months, more than monday.com's headcount. Office TVs show them, meetings use them, decks are built on them, and a group's homepage is one ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]]).
+- Dashboards expand beyond charts: AI components that summarize the dashboard, or a chat over the app's data. Developers adopted it too, because it's easy ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]]).
+- MCP servers are available both to the user's Claude and as building blocks for apps, so a salesperson can join Gong call transcripts with Salesforce lead data and turn a one-off analysis into a live app. That mixes qualitative signals (what customers say) with quantitative ones (product events) ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- Before and after: two years ago the central team built "Prep Me", a meeting-prep deck for account managers, and every new data point or meeting type (renewals, sales, support) meant another request and system-prompt change. Now the best version is built by the account manager who reads it ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]]).
+- Two layers: a product layer, where domain experts (marketing, sales, HR, finance) build the products, and an infrastructure layer, where the platform team exposes the simplest possible secure building blocks. Reuse existing infrastructure (here, the Trident micro-frontend platform) and add an agentic bridge instead of rebuilding ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]]).
+- Loose guardrails bite builders too: early on, a guest used AI to delete the micro-frontend manifest that points to every app, taking all apps down until a restore about 20 minutes later ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/oded]]).
+- Next: make the platform a sub-agent for autonomous agents, so a coding agent that adds tracking events can finish with a dashboard measuring their impact, or a market-research agent can end with a prototype. Generated apps must show which agent built them and its role ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]], [[people/oded]]).
+
+## Disagreements & open questions
+- Democratization vs one source of truth: if anyone can build a dashboard and define a metric, which number is right? The team is working with BI on verification at scale and on preventing duplicate apps ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]], [[people/doron]]).
+
+## Takeaways
+- [ ] For non-developer builders, remove PRs, CI and approval steps; issue short-lived, scoped credentials from a broker and allow deploys straight from the user's machine ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]])
+- [ ] Keep onboarding to an internal building platform down to one prompt the user pastes into their agent ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]])
+- [ ] Write the platform's docs and skills for the user's LLM: scope, API surface, latest features, best practices ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]])
+- [ ] Give user-built apps previews, versions and rollback, plus guardrails on shared config such as manifests ([[episodes/ai-engineering-podcast--big-brain-studio-non-developers]])
+
+## Related
+[[concepts/natural-language-data-access]] · [[concepts/agent-security]] · [[concepts/ai-work-redesign]] · [[concepts/skill-engineering]] · [[concepts/agent-ready-products]] · [[concepts/workflow-automation]]

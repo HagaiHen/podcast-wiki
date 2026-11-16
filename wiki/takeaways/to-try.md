@@ -243,6 +243,17 @@
 - [ ] When handing work to engineering, bring the evidence (customer data, examples) instead of a long spec or a ready-made conclusion — [[concepts/ai-sdlc]] · [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
 - [ ] Before showing a near-done prototype, agree who will own it in production — [[concepts/ai-sdlc]] · [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
 - [ ] For each eval, ask whether it measures customer outcome or only answer shape; add at least one outcome check — [[concepts/llm-evals]] · [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
+- [ ] For non-developer builders, remove PRs, CI and approval steps; issue short-lived, scoped credentials from a broker and allow deploys straight from the user's machine — [[concepts/citizen-developers]] · [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
+- [ ] Keep onboarding to an internal building platform down to one prompt the user pastes into their agent — [[concepts/citizen-developers]] · [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
+- [ ] Write the platform's docs and skills for the user's LLM: scope, API surface, latest features, best practices — [[concepts/citizen-developers]] · [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
+- [ ] Give user-built apps previews, versions and rollback, plus guardrails on shared config such as manifests — [[concepts/citizen-developers]] · [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
+- [ ] Put a natural-language data agent in front of your warehouse that enforces each user's existing table permissions per question — [[concepts/natural-language-data-access]] · [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
+- [ ] Discourage static HTML exports of internal data; offer live apps that re-check each viewer's access — [[concepts/natural-language-data-access]] · [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]
+- [ ] Add a reflection check before high-risk tool calls, run by a model that never sees the untrusted external content — [[concepts/agent-security]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
+- [ ] Run personal agents (OpenClaw-style) only in a full sandbox, ideally a separate machine, with throwaway accounts — [[concepts/agent-security]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
+- [ ] Pick agent models by current direct and indirect prompt-injection benchmark results, not reputation — [[concepts/agent-security]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
+- [ ] Red-team policy-following agents with adversarial simulated users who invent pretexts, not only polite ones — [[concepts/ai-red-teaming]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
+- [ ] Add forbidden, ambiguous and adversarial cases to every agent eval set, with realistic mocked tools and user data — [[concepts/llm-evals]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

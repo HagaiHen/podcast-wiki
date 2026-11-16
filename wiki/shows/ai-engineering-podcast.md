@@ -6,6 +6,7 @@ type: show
 Hebrew podcast on building AI agents at scale, powered by monday.com; hosted by Ido and [[people/netanel-abergel]].
 
 ## Episodes
+- [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]] (2026-11-04)
 - [[episodes/ai-engineering-podcast--choosing-the-right-model]] (2026-10-22)
 - [[episodes/ai-engineering-podcast--why-your-llm-costs-so-much]] (2026-09-30)
 - [[episodes/ai-engineering-podcast--company-brain]] (2026-09-06)
