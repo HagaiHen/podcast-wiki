@@ -28,6 +28,8 @@
 - [ ] For any single stock you hold, ask what happens if the CEO leaves tomorrow, and size the position for that case — [[concepts/key-person-risk]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
 - [ ] When a stock falls on news, overlay its chart on a similar stock without that news before deciding the news is the cause — [[concepts/technical-analysis]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
 - [ ] If you're betting on a theme's comeback, compare the upside of several stocks in it instead of asking only whether to buy the famous one — [[concepts/market-timing]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
+- [ ] After a founder-CEO leaves, judge the stock by the next report's guidance rather than the headlines — [[concepts/key-person-risk]] · [[episodes/micha-stocks--nvidia-beats-without-jensen]]
+- [ ] Before calling a tech selloff an AI-bubble burst, compare defensive sectors with the Nasdaq over the same period — [[concepts/market-bubbles]] · [[episodes/micha-stocks--nvidia-beats-without-jensen]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
@@ -254,6 +256,9 @@
 - [ ] Pick agent models by current direct and indirect prompt-injection benchmark results, not reputation — [[concepts/agent-security]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
 - [ ] Red-team policy-following agents with adversarial simulated users who invent pretexts, not only polite ones — [[concepts/ai-red-teaming]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
 - [ ] Add forbidden, ambiguous and adversarial cases to every agent eval set, with realistic mocked tools and user data — [[concepts/llm-evals]] · [[episodes/explainable--169-itay-nakash-red-teaming-agents]]
+- [ ] When judging a model on a hard problem, count how many uncertain, non-trivial steps it needs, and expect reliability to drop sharply after 3–5 — [[concepts/ai-scientist]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
+- [ ] When an agent speeds up code, check its output matches the original across many inputs, not just the benchmark timing — [[concepts/ai-performance-engineering]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
+- [ ] Before picking a robotics niche, run and fine-tune an open robot model yourself to see what it can actually do — [[concepts/robotics-foundation-models]] · [[episodes/ignore-instructions--30-enigma-gal-niv]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 
@@ -287,6 +292,11 @@
 - [ ] Pick one target market and stay in it until it works before expanding — [[concepts/founder-leadership]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
 - [ ] Before each raise, list who could still afford to buy you at the new valuation — [[concepts/startup-exits]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
 - [ ] If an acquisition is a realistic exit, let likely buyers know when you're about to raise — [[concepts/startup-exits]] · [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+- [ ] Use a cheap, funny AI ad for reach, then remarket its engaged viewers with a real customer or founder testimonial — [[concepts/ai-video-ads]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
+- [ ] Before prompting a video, ask Claude to reverse-engineer a reference frame you like (lens, lighting, angle, film look) — [[concepts/ai-video-ads]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
+- [ ] For your next ad, turn your product's key statistic into one specific person's story — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
+- [ ] Reserve 10–20% of the marketing budget for odd experiments, and agree up front that they may sound stupid — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
+- [ ] Ask users to create something for your brand (e.g. an AI ad) for a prize with recognition, instead of a share-to-win giveaway — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
 
 ## Unsorted
 

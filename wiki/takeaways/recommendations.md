@@ -38,8 +38,12 @@
 - Unsloth and Axolotl (supervised fine-tuning libraries); Tinker and Fireworks (more managed RL training) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 - Novee's blog post on agents in sandboxes and RL training architecture (linked in the LangTalks newsletter) — [[concepts/llm-post-training]] · [[episodes/langtalks--75-post-training-dan-padnos-novee]]
 - Robofun: monthly robotics kits for kids, from basics up to hacking — [[episodes/yasmins-living-room--amir-elichai-carbyne]]
+- Warp Speed (AAI's verified code-optimization system); Lean (formal proof language with mechanical proof checking) — [[concepts/ai-performance-engineering]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
+- OpenPilot (open self-driving model, used to generate game driving data); Unitree robots (open SDK) — [[concepts/robotics-foundation-models]] · [[episodes/ignore-instructions--30-enigma-gal-niv]]
+- Seedance (AI video engine); Pinterest and Shotdeck for look-and-feel reference frames — [[concepts/ai-video-ads]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
 
 ## People
+- Gary Vaynerchuk: "day trading attention", riding each day's top topic — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
 - [[people/ran-erez]]: "Productive" (פרודקטיבי), a product-management podcast — [[episodes/startup-for-startup--5-product-dev-mistakes-agentic-era]]
 - [[people/yuval-avidani]]: AI builder content (LinkedIn, an open-source skills repo, Channel 12 AI segment) — [[episodes/explainable--167-yuval-avidani-agent-harness]]
 - Sam Parr's Hampton: paid founder community with in-person meetups, cited as a model for belonging businesses — [[concepts/solo-builders]] · [[episodes/startup-ideas--8-ai-proof-businesses-2027]]

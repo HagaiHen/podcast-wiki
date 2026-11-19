@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 5
-updated: 2026-11-01
+sources: 6
+updated: 2026-11-19
 ---
 # Market Bubbles
 
-**Summary:** Bubbles are a normal, human part of every big technology wave: railways, cars, credit cards, email, the dot-com internet, and now AI. Investor expectations rise for a reason that is partly justified, then overshoot, and anything with the hot label attracts money out of fear of missing out. Whether the 2026 AI boom is one is contested: one view points to debt-funded capex with little profit yet, extreme index concentration, and a CAPE last seen in the dot-com era; the other notes that tech now trades at roughly the S&P 500's P/E, versus a 100%+ premium in 2000. The weak point is the private frontier labs: their valuations rest on profitability that keeps being pushed out (2027 → 2029), and Anthropic's IPO filing pairs explosive revenue growth with large losses and a target of hundreds of times last year's revenue. Sentiment can also swing the other way: by the end of October 2026 about $4T had left the public giants, which Micha read as AI being priced in for free. Either way, a bubble can run for years before it pops, and for a long-term index investor a crash is a chance to buy cheaper, not a reason to stay out.
+**Summary:** Bubbles are a normal, human part of every big technology wave: railways, cars, credit cards, email, the dot-com internet, and now AI. Investor expectations rise for a reason that is partly justified, then overshoot, and anything with the hot label attracts money out of fear of missing out. Whether the 2026 AI boom is one is contested: one view points to debt-funded capex with little profit yet, extreme index concentration, and a CAPE last seen in the dot-com era; the other notes that tech now trades at roughly the S&P 500's P/E, versus a 100%+ premium in 2000. The weak point is the private frontier labs: their valuations rest on profitability that keeps being pushed out (2027 → 2029), and Anthropic's IPO filing pairs explosive revenue growth with large losses and a target of hundreds of times last year's revenue. Sentiment can also swing the other way: by the end of October 2026 about $4T had left the public giants, which Micha read as AI being priced in for free. By mid-November defensive sectors led the Nasdaq by the widest gap in 25 years, a pattern last seen in late 2001; Micha reads that as a broad rotation, not proof that the AI bubble burst. Either way, a bubble can run for years before it pops, and for a long-term index investor a crash is a chance to buy cheaper, not a reason to stay out.
 
 ## Key ideas
 - Since ChatGPT's launch, AI stocks account for ~75% of S&P 500 returns, ~80% of earnings growth, and ~90% of the growth in capital investment ([[episodes/lazy-investing--111-the-ai-bubble]], [[people/tamir]]).
@@ -21,6 +21,7 @@ updated: 2026-11-01
 - Lab profitability is the hinge: no lab has shown it's profitable, forecasts moved from 2027 to 2029, and if they don't get there "the whole bubble can burst", taking pensions and savings with it ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 - About $4T moved out of big tech into other stocks in a few weeks. Micha calls that roughly AI's whole valuation, so AI is now "priced for free" in those stocks and the drop looks overdone ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
 - The market is pricing the infrastructure bill: heavy capex means negative cash flow, which it reads forward as lower future profits, although he says EPS isn't falling and the giants haven't warned about coming quarters. Intel, which fell 30% in a day, is his contrast ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
+- Rotation, not a burst: Morgan Stanley's derivatives desk found that from October 1 to November 17 the S&P 500's defensive sectors (consumer staples, healthcare, utilities) rose 13% while the Nasdaq fell 13%. A 26% gap hadn't been seen in 25 years, since September–October 2001. Micha's reading: if you think the recent drops are the AI bubble bursting, "it's not related at all"; they look like part of a broader move ([[episodes/micha-stocks--nvidia-beats-without-jensen]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - Is the AI boom a bubble? The host says it's not yet proven: it may be the early days of a decade-long rally, or it may pop next year ([[episodes/lazy-investing--111-the-ai-bubble]]).
@@ -29,6 +30,7 @@ updated: 2026-11-01
 
 ## Takeaways
 - [ ] Get AI exposure through broad indexes rather than AI-themed or leveraged AI ETFs ([[episodes/lazy-investing--111-the-ai-bubble]])
+- [ ] Before calling a tech selloff an AI-bubble burst, compare defensive sectors with the Nasdaq over the same period ([[episodes/micha-stocks--nvidia-beats-without-jensen]])
 
 ## Related
 [[concepts/ai-moats]] · [[concepts/neoclouds]] · [[concepts/cape-ratio]] · [[concepts/market-timing]] · [[concepts/concentration-risk]] · [[concepts/fomo]] · [[concepts/index-investing]] · [[concepts/equity-risk-premium]]

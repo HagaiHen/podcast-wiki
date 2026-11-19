@@ -6,6 +6,8 @@ type: show
 Hebrew podcast on AI startups and builders, hosted by Eitan (from Mixtiles).
 
 ## Episodes
+- [[episodes/ignore-instructions--30-enigma-gal-niv]] (2026-11-18)
+- [[episodes/ignore-instructions--29-aai-yoav-levine]] (2026-10-15)
 - [[episodes/ignore-instructions--28-ai-marketing-enso]] (2026-09-08)
 - [[episodes/ignore-instructions--26-ai-cyber-pavel-gurevich]] (2026-07-20)
 - [[episodes/ignore-instructions--24-wonderful-road-to-100m]] (2026-06-18)

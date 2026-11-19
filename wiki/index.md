@@ -49,6 +49,9 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/multimodal-llms]]: vision models in production; hallucinations, injection, visual hints
 - [[concepts/hebrew-llms]]: adapting LLMs to Hebrew; tokenizers, base-model choice
 - [[concepts/world-models]]: JEPA, video and 3D world models, beyond next-token
+- [[concepts/robotics-foundation-models]]: physical AI; general robot brains vs classical robotics and task skills
+- [[concepts/ai-scientist]]: AI at the research frontier; data, verification, reasoning depth, vaporizing intelligence
+- [[concepts/ai-performance-engineering]]: AI rewrites code for the hardware, verified correct (Warp Speed)
 - [[concepts/continual-learning]]: models that keep learning after training
 - [[concepts/llm-pretraining]]: how pre-training works; folklore, grokking, context curricula
 - [[concepts/llm-post-training]]: SFT and RL on open models; when vertical AI companies should train their own
@@ -104,6 +107,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/defense-tech]]: Israel as defense-tech hub; government as design partner
 - [[concepts/founder-leadership]]: the CEO is always selling; officers' leadership; focus
 - [[concepts/startup-exits]]: when to sell; each raise removes buyers; win-win sell point
+- [[concepts/attention-marketing]]: winning attention cheaply: unexpected uses, one person's story, contests, room to experiment
+- [[concepts/ai-video-ads]]: cinematic AI ads as attention arbitrage; human insight and taste
 
 ## Unsorted
 - [[concepts/biohacking]]: N=1 self-experiments, sensors, caveats (health)
@@ -127,6 +132,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[shows/micha-stocks]]: Micha Stocks (מיכה סטוקס מגיש: שוק ההון)
 - [[shows/tsarot-baheitek]]: Troubles in High-Tech (צרות בהייטק)
 - [[shows/yasmins-living-room]]: In Yasmin's Living Room (בסלון של יסמין)
+- [[shows/talking-entrepreneurship]]: Talking Entrepreneurship (מדברים יזמות)
 
 ## People
 - [[people/amit-bendor]]: host of Osim Tochna
@@ -202,8 +208,15 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/doron]]: PM, AI Foundation, monday.com Big Brain
 - [[people/oded]]: tech lead, monday.com Big Brain Studio
 - [[people/itay-nakash]]: agent-security researcher, IBM Research
+- [[people/yoav-levine]]: Tel Aviv University CS faculty, AAI co-founder (AI scientist)
+- [[people/gal-niv]]: CTO and co-founder of Enigma (robotics foundation models)
+- [[people/erez-strauss]]: creative lead at ExpressVPN (AI video ads)
 
 ## Episodes
+- [[episodes/micha-stocks--nvidia-beats-without-jensen]]: Nvidia Without Jensen Beats Forecasts, and the Board Says He's Not Coming Back (2026-11-18)
+- [[episodes/ignore-instructions--30-enigma-gal-niv]]: #30 Building the Brain of Robots, With Gal Niv of Enigma (2026-11-18)
+- [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]: How to Capture Attention for Your Brand on a Minimal Budget, With Erez Strauss (2026-11-18)
+- [[episodes/ignore-instructions--29-aai-yoav-levine]]: #29 Behind AAI, the Israeli Company Building an AI Scientist, With Yoav Levine (2026-10-15)
 - [[episodes/explainable--169-itay-nakash-red-teaming-agents]]: #169 Breaking Agents From the Inside: Prompt Injection, Red Teaming and Models That Lie (2026-11-15)
 - [[episodes/ai-engineering-podcast--big-brain-studio-non-developers]]: How Do You Turn the Whole Company Into a Development Team? (2026-11-04)
 - [[episodes/yasmins-living-room--amir-elichai-carbyne]]: How a Combat Soldier With No Tech Background Built a Company That Sold for Over $600M (2026-11-12)

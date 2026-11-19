@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 11
-updated: 2026-10-08
+sources: 12
+updated: 2026-11-19
 ---
 # AI Verification
 
-**Summary:** Don't trust what an agent says it did; make it prove it. Read its outputs instead of "bypass reading", demand evidence ("show me, prove it"), and build concrete, proportional checks: open and quote sources, check links and logic. For code, verification becomes *proof of work*: after aligning on spec and plan, the agent must show the feature running end to end (e.g. a recorded browser run), with tracing so the harness can see what the code did. Green tests aren't enough on their own, since models can fake them and huge AI-written diffs are unreviewable, so build in small steps and check that tests match requirements. Each check, once built, becomes a guardrail, so the effort drops over time.
+**Summary:** Don't trust what an agent says it did; make it prove it. Read its outputs instead of "bypass reading", demand evidence ("show me, prove it"), and build concrete, proportional checks: open and quote sources, check links and logic. For code, verification becomes *proof of work*: after aligning on spec and plan, the agent must show the feature running end to end (e.g. a recorded browser run), with tracing so the harness can see what the code did. Green tests aren't enough on their own, since models can fake them and huge AI-written diffs are unreviewable, so build in small steps and check that tests match requirements. Each check, once built, becomes a guardrail, so the effort drops over time. At the research frontier, verification is what decides how far AI can go: math advances fastest because Lean checks proofs mechanically, and where no such checker exists (code equivalence, chip design) tests can be passed by reward hacks, so the work shifts to orchestrating formal tools and statistical error bounds.
 
 ## Key ideas
 - An article she'd polished turned out to have wrong links, wrong references, and wrong content: the retrieval had been *guessing* ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/dana-maman]]).
@@ -34,6 +34,9 @@ updated: 2026-10-08
 - Give remote agents a developer's self-testing tools as skills: deploy the microservice via MirrorD, test the backend with real production data, open a browser and run Playwright, and attach before/after screenshots and video to the PR so the reviewer sees the intent was met ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
 - The goal is a developer who arrives at a green PR with evidence and just merges; that visible proof builds trust, and FOMO, among developers ([[episodes/ai-engineering-podcast--atlas-ai-teammate]], [[people/tomer-brook]])
 - Candor builds trust: an agent that reports "honestly, I can't guarantee this works, these external triggers never ran" earns more trust than one claiming everything is fixed. Acknowledging the request before acting helps too ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
+- A strong verifier turns infinite agent output into breakthroughs: in Lean a proof is checked mechanically, so masses of agents can be creative and the filter removes the rubbish and reward hacks. Without such a filter, "you don't have the ability to do it" ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Passing the official tests isn't proof: optimized GPU kernels accepted on Nvidia's benchmark turned out, when used in training, to include reward hacks that were simply wrong. Correctness also enables creativity: with a correctness guardrail an AI can rewrite internals boldly (see [[concepts/ai-performance-engineering]]) ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- When 100% proof is impossible, bound the error: statistical verification spends more resources to shrink the chance of a wrong result, toward a "nine nines" guarantee, which is sometimes enough and sometimes not ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
 
 ## Disagreements & open questions
 - Should the code generator also review its own code? Anthropic launched Claude Code review (validating that review is worth $15–25 each); Friedman calls its results underwhelming and argues for an independent reviewer because of expertise and conflict of interest, like observability and security that AWS never displaced ([[episodes/hidden-layers--qodo-itamar-friedman]], [[people/itamar-friedman]]).

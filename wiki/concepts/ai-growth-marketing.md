@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 6
-updated: 2026-10-21
+sources: 7
+updated: 2026-11-19
 ---
 # AI Growth Marketing (agentic growth hacking)
 
-**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Scarcity still works: Instinct AI's invite-only rollout cut through the flood of "introducing X agent" launches. Agent-run paid ads and huge-context enterprise outreach don't work yet, though AI chat itself is becoming a new paid channel: ChatGPT ads, with no playbook yet, are cheap and reward many varied, intent-specific ads (see [[concepts/llm-advertising]]). Many tactics lean on platform gray areas.
+**Summary:** AI isn't just automating existing marketing; it opens channels humans can't work at scale. Agents can read whole subreddits, find gaps in Wikipedia, hit platform ranking windows, and hyper-personalize messages for thousands of micro-segments. Autonomous agents act as a *thinking multiplier*: they iterate experiments (copy, offers, outreach paths) and report what worked. Cheap assets change the playbook too: launch videos that once cost six figures, cinematic AI ads that out-hold human UGC (see [[concepts/ai-video-ads]]), contests where users make the ads, free calculators as lead magnets, and "permissionless" outreach where you send the finished work instead of a cold email. Today this succeeds in organic and unconventional channels, SEO/GEO, and SDR agents: monday's sales agents book thousands of meetings a month by treating each lead as an individual rather than a segment. Scarcity still works: Instinct AI's invite-only rollout cut through the flood of "introducing X agent" launches. Agent-run paid ads and huge-context enterprise outreach don't work yet, though AI chat itself is becoming a new paid channel: ChatGPT ads, with no playbook yet, are cheap and reward many varied, intent-specific ads (see [[concepts/llm-advertising]]). Many tactics lean on platform gray areas.
 
 ## Key ideas
 - New marketing, not 10× old marketing: hunt "distribution loopholes" the way security people hunt vulnerabilities ([[episodes/ignore-instructions--28-ai-marketing-enso]], [[people/micky-haslavsky]]).
@@ -35,6 +35,9 @@ updated: 2026-10-21
 
 - Invite-only launch: amid endless agent launches, Remy says he wouldn't have signed up if Instinct AI were open; being locked out made an invite feel special. The stated reason is compute, but it doubles as marketing, like Clubhouse in 2020. Features also roll out gradually to subsets of users ([[episodes/startup-ideas--instinct-ai-assistant-for-normal-people]], [[people/remy]], [[people/greg-isenberg]]).
 
+- Users as the creative team: since anyone can now make an AI ad, ExpressVPN ran a contest for AI ads of up to 30 seconds around its World Cup sponsorship, with match tickets and a Times Square billboard as prizes, flooding the web with its brand (see [[concepts/attention-marketing]]) ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Cinematic AI ads held viewers about twice as long as human UGC in ExpressVPN's YouTube test (19–25% vs 9–13% reaching 75% of the video); see [[concepts/ai-video-ads]] ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+
 - AI itself is now an ad channel. monday splits ChatGPT campaigns by user intent and runs ~100 ad variants per group, which AI makes cheap to produce, against Google's three; see [[concepts/llm-advertising]] ([[episodes/startup-for-startup--371-chatgpt-ads]], [[people/yoav-rubin]], [[people/tamar-hazoli]]).
 
 ## Disagreements & open questions
@@ -49,4 +52,4 @@ updated: 2026-10-21
 - [ ] Build one free calculator or tool for your audience; show the result before asking for an email ([[episodes/startup-ideas--8-github-repos-viral-money]])
 
 ## Related
-[[concepts/agent-memory]] · [[concepts/ai-guardrails]] · [[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]] · [[concepts/llm-advertising]]
+[[concepts/agent-memory]] · [[concepts/ai-guardrails]] · [[concepts/agent-ready-products]] · [[concepts/personal-ai-assistants]] · [[concepts/workflow-automation]] · [[concepts/solo-builders]] · [[concepts/llm-advertising]] · [[concepts/ai-video-ads]] · [[concepts/attention-marketing]]

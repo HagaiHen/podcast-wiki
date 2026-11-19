@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 3
-updated: 2026-10-29
+sources: 4
+updated: 2026-11-19
 ---
 # Earnings Season (reading quarterly reports)
 
-**Summary:** Each quarter, companies report results before the open or after the close, and the stock's reaction often matters more than the numbers. Read earnings per share against revenue and against guidance for the next quarter, then margins and the tone of the call, and wait for the market's verdict before acting. Beating estimates isn't enough; history is full of beats followed by drops, so a company also needs a convincing story. Which line misses matters too: a profit miss at a company already in trouble (Boeing) is punished far harder than a revenue miss. Options markets price an "expected move" for each report, and a company's past reactions show how the market treats it. Earnings season is also a cheap way to learn: with AI tools, digesting a CEO's call takes minutes.
+**Summary:** Each quarter, companies report results before the open or after the close, and the stock's reaction often matters more than the numbers. Read earnings per share against revenue and against guidance for the next quarter, then margins and the tone of the call, and wait for the market's verdict before acting. The call can matter as much as the release: when Nvidia reported after its CEO's removal, management's comments on demand and the board's statement about him did as much to set the reaction as the beat itself. Beating estimates isn't enough; history is full of beats followed by drops, so a company also needs a convincing story. Which line misses matters too: a profit miss at a company already in trouble (Boeing) is punished far harder than a revenue miss. Options markets price an "expected move" for each report, and a company's past reactions show how the market treats it. Earnings season is also a cheap way to learn: with AI tools, digesting a CEO's call takes minutes.
 
 ## Key ideas
 - Checklist: EPS vs revenue vs guidance; margins; what management says on the call and its tone; then wait for the market's reaction ([[episodes/micha-stocks--earnings-week-meta-tesla-netflix]], [[people/micha-stocks]]).
@@ -17,6 +17,8 @@ updated: 2026-10-29
 - Learning routine: each week pick one or two reporting companies; download the call transcript, slides, and earnings release (free on Perplexity Finance), upload them to NotebookLM, and ask for a simple summary or a deck focused on what the CEO said. After a 5–6 week season you understand ~12 companies ([[episodes/micha-stocks--bloody-monday-circuit-breakers]], [[people/micha-stocks]]).
 - Which miss matters: Robinhood missed on revenue and fell ~5%; Boeing missed on profitability, not revenue, and fell 10.6%; a double miss on revenue and profit (Enphase) fell ~9%. A company in trouble gets no benefit of the doubt: Boeing's new CEO hasn't turned it around ([[episodes/micha-stocks--fed-rate-hike-odds]], [[people/micha-stocks]]).
 - Some stocks the market can't price swing hard on every report either way (SoFi +13.4%) ([[episodes/micha-stocks--fed-rate-hike-odds]], [[people/micha-stocks]]).
+- Wait for the call: Micha records after Nvidia's investor call because the release alone (beat on revenue and profit, both forecasts raised, data center $107B vs ~$101B expected) doesn't tell you how the company frames it. On the call, CFO Colette Kress cited data center readiness and the strength and durability of customer demand, and said China is still out of the picture ([[episodes/micha-stocks--nvidia-beats-without-jensen]], [[people/micha-stocks]]).
+- One report moves a whole group: a 4% after-hours rise in Nvidia turned chip stocks green (TSMC leading, then Dell and SanDisk) after a red day ([[episodes/micha-stocks--nvidia-beats-without-jensen]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 

@@ -6,6 +6,7 @@ type: person
 Host of [[shows/micha-stocks]], a Hebrew capital-markets podcast.
 
 ## Appearances
+- [[episodes/micha-stocks--nvidia-beats-without-jensen]]
 - [[episodes/micha-stocks--breaking-nvidia-ceo]]
 - [[episodes/micha-stocks--feels-like-bear-market]]
 - [[episodes/micha-stocks--fed-rate-hike-odds]]

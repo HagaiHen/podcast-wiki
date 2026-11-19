@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 3
-updated: 2026-11-01
+sources: 4
+updated: 2026-11-19
 ---
 # LLM Post-Training
 
-**Summary:** Post-training is the last stage of training an LLM: pre-training compresses internet-scale text into weights, mid-training strengthens areas such as long context or scientific knowledge, and post-training makes the model good at carrying out the tasks users actually ask for. It comes in two main forms: supervised fine-tuning (SFT) raises the probability of a static set of good examples, while reinforcement learning (RL) runs the model on tasks, scores the outcomes, and favors the sequences that earned high rewards. Vertical AI companies do it on strong open-weight models to strengthen the exact actions their product depends on, usually after the product has matured, as Cursor and Harvey did. It is a slow, strategic R&D investment rather than a first step: harness, knowledge and memory are more flexible, and they hold the easier wins. Owning a model also commits you to retraining as open models improve, while frontier labs keep advancing. The recommended path is to measure the task first, peel back the easier layers, and test your own model only when the measurements point to it.
+**Summary:** Post-training is the last stage of training an LLM: pre-training compresses internet-scale text into weights, mid-training strengthens areas such as long context or scientific knowledge, and post-training makes the model good at carrying out the tasks users actually ask for. It comes in two main forms: supervised fine-tuning (SFT) raises the probability of a static set of good examples, while reinforcement learning (RL) runs the model on tasks, scores the outcomes, and favors the sequences that earned high rewards. Vertical AI companies do it on strong open-weight models to strengthen the exact actions their product depends on, usually after the product has matured, as Cursor and Harvey did. It is a slow, strategic R&D investment rather than a first step: harness, knowledge and memory are more flexible, and they hold the easier wins. Owning a model also commits you to retraining as open models improve, while frontier labs keep advancing. The recommended path is to measure the task first, peel back the easier layers, and test your own model only when the measurements point to it. RL has two hard limits: it needs a reliable verifier at every stage, from generating data to scoring answers, and it learns nothing from tasks the model never solves even once in many tries.
 
 ## Key ideas
 - Why go below the harness: a vertical product's core action sits on a stack of harness, prompts, data and tools, with a model underneath that must take the right action, or long sequence of actions, given that context. Open models are excellent, not far behind the frontier, and can be strengthened on exactly your use case ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
@@ -20,6 +20,8 @@ updated: 2026-11-01
 - Shaping behavior through the outcome: language-model training often does no credit assignment and looks only at the final result. Heuristics can still be folded into it, such as penalizing errors or episode length when two coding trajectories both pass the unit tests, which pushes the model to solve faster and with less friction ([[episodes/langtalks--75-post-training-dan-padnos-novee]], [[people/dan-padnos]]).
 - Simulated environments ("gyms") find what to train: failures such as an agent that always misjudges damage in insurance claims can be tackled in order through knowledge, skills, harness changes, a different frontier model, and only then your own model ([[episodes/langtalks--75-post-training-dan-padnos-novee]]).
 - Labs have moved from RLHF to RL gyms, with failures such as tool misuse, broken reasoning or an indirect prompt injection feeding post-training ([[episodes/hidden-layers--alice-avi-golan]], [[people/avi-golan]]).
+- The verifier is needed throughout the pipeline: to generate data in a hard domain (without one you produce X→Y examples without knowing Y is right), to give RL its reward, and to grade the final answer. Correctness signals in RL largely determine model quality ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- The pass@k barrier: RL needs at least occasional success. If the model fails in all K samples, and keeps failing as K grows, there's no signal to learn from. Curricula that grow ability step by step are the common workaround; AAI says it has new methods to surface those signals ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
 - With closed frontier APIs you can't fine-tune or post-train, so "the whole world uses the same model"; startups begin on them and can tune an open model once they have collected their own data ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 
 ## Disagreements & open questions

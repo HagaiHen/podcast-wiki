@@ -480,3 +480,23 @@ updated: concepts/{agent-security, ai-work-redesign, agent-ready-products}, peop
 source: whisper
 created: episodes/explainable--169-itay-nakash-red-teaming-agents, concepts/llm-safety, people/itay-nakash
 updated: concepts/{agent-security, ai-red-teaming, llm-evals, llm-reasoning, llm-cost-optimization, personal-ai-assistants}, people/mike-erlihson, shows/explainable, hubs/ai-engineering, index, takeaways/to-try
+
+## 2026-11-19 — Micha Stocks: Nvidia Without Jensen Beats Forecasts, and the Board Says He's Not Coming Back
+source: whisper
+created: episodes/micha-stocks--nvidia-beats-without-jensen
+updated: concepts/{key-person-risk, earnings-season, market-bubbles, market-timing}, people/micha-stocks, shows/micha-stocks, index, takeaways/to-try
+
+## 2026-11-19 — Ignore the Instructions: #29 Behind AAI, the Israeli Company Building an AI Scientist, With Yoav Levine
+source: whisper
+created: episodes/ignore-instructions--29-aai-yoav-levine, concepts/{ai-scientist, ai-performance-engineering}, people/yoav-levine
+updated: concepts/{llm-reasoning, llm-post-training, continual-learning, ai-verification, llm-safety}, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-11-19 — Ignore the Instructions: #30 Building the Brain of Robots, With Gal Niv of Enigma
+source: whisper
+created: episodes/ignore-instructions--30-enigma-gal-niv, concepts/robotics-foundation-models, people/gal-niv
+updated: concepts/{world-models, llm-safety, llm-reasoning}, shows/ignore-instructions, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-11-19 — Talking Entrepreneurship: How to Capture Attention for Your Brand on a Minimal Budget, With Erez Strauss
+source: whisper
+created: episodes/talking-entrepreneurship--erez-strauss-brand-attention, concepts/{ai-video-ads, attention-marketing}, people/erez-strauss, shows/talking-entrepreneurship
+updated: concepts/{ai-growth-marketing, image-generation}, hubs/startups, index, takeaways/{to-try, recommendations}

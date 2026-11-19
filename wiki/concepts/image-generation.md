@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-29
+sources: 3
+updated: 2026-11-19
 ---
 # Image Generation for Professionals
 
-**Summary:** Generation now covers video too: one-line prompts give 20-second teasers that fill in dates and logos themselves, open models run realistic video on a consumer GPU, and a feature-length AI film reportedly cost about $0.5M. For most buyers that "good enough" output is enough to replace a designer or studio. Consumer image generators optimize for "anything plausible", but professionals (brand marketers, studios) need exact control. That means a specific product kept at 100% pixel fidelity, an exact brand color, and one element changed without everything else drifting. They also need legally clean training data. Bria's approach shows the design space: licensed data paid by attribution-based revenue share, training on structured JSON scene descriptions instead of short captions so each attribute can be edited independently, and open weights so customers can fine-tune on their own assets, even extending the description vocabulary. As quality plateaus, cost, latency, and on-prem deployment become the battleground.
+**Summary:** Generation now covers video too: one-line prompts give 20-second teasers that fill in dates and logos themselves, open models run realistic video on a consumer GPU, engines generate up to about 30 seconds in one go, and a feature-length AI film reportedly cost about $0.5M. Unless you specify a style, engines fall back on a default look (Seedance's Pixar-like 3D), which is why so many AI videos look alike; reference frames and precise camera and lighting vocabulary fix that (see [[concepts/ai-video-ads]]). For most buyers that "good enough" output is enough to replace a designer or studio. Consumer image generators optimize for "anything plausible", but professionals (brand marketers, studios) need exact control. That means a specific product kept at 100% pixel fidelity, an exact brand color, and one element changed without everything else drifting. They also need legally clean training data. Bria's approach shows the design space: licensed data paid by attribution-based revenue share, training on structured JSON scene descriptions instead of short captions so each attribute can be edited independently, and open weights so customers can fine-tune on their own assets, even extending the description vocabulary. As quality plateaus, cost, latency, and on-prem deployment become the battleground.
 
 ## Key ideas
 - Professional pixels: a director already sees the frame in their head, and anything off is unusable. A brand's exact green (the "Nvidia green" story) or a single RGB value matters ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
@@ -19,6 +19,7 @@ updated: 2026-10-29
 - Next frontier: from images to production-ready assets (layered ads), and from algorithms to engineering ([[episodes/hidden-layers--bria-misha-feinstein]], [[people/misha-feinstein]]).
 - Video is near "falling" to AI: Flux video, Seedance 2.5 and Grok produce clips; open models such as Lightricks' LTX run realistic video with effects locally on an RTX 4090 (24 GB VRAM). Higgsfield, which wraps several vendors' models, reportedly produced a feature-length film for about half a million dollars ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 - A one-line prompt ("GitHub has its Universe conference, create a 20-second video teaser inviting people") gave a usable clip that pulled the dates, logo and name on its own ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
+- Default looks: Seedance, the leading video engine at the time, renders animation as Pixar-like 3D unless told otherwise, and the more direction you give, the further it moves from the default. Up to ~30 seconds can be generated continuously, though usually only parts are used ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
 - A non-designer now makes his own conference posters, upscales roll-ups and edits videos with tools ([[episodes/explainable--167-yuval-avidani-agent-harness]], [[people/yuval-avidani]]).
 
 ## Disagreements & open questions
@@ -27,4 +28,4 @@ updated: 2026-10-29
 ## Takeaways
 
 ## Related
-[[concepts/multimodal-llms]] · [[concepts/open-weight-models]] · [[concepts/ai-moats]] · [[concepts/world-models]]
+[[concepts/multimodal-llms]] · [[concepts/open-weight-models]] · [[concepts/ai-moats]] · [[concepts/world-models]] · [[concepts/ai-video-ads]]

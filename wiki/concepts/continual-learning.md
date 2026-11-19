@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-07
+sources: 3
+updated: 2026-11-19
 ---
 # Continual Learning
 
-**Summary:** Today's LLMs are trained once on a frozen dataset and then shipped as a fixed point. Afterwards they "learn" only through the context window, like an employee who must reread a growing stack of notes every morning. Humans update continuously from sparse signals: one fact or one scare can change behavior for life. Continual learning aims at models that absorb a constantly changing world (enterprise data, conversations, facts that drift) into their weights, without catastrophic forgetting, and that memorize only what they need for planning while retrieving the rest. Frontier labs mostly don't pursue it: they're busy with benchmark fire-fighting, and it would need a huge bet on a new architecture.
+**Summary:** Today's LLMs are trained once on a frozen dataset and then shipped as a fixed point. Afterwards they "learn" only through the context window, like an employee who must reread a growing stack of notes every morning. That wastes a lot: over a model's life, inference compute is 10–100× its training compute, and the problem-specific understanding a model builds in a long session "vaporizes" when the session ends; skill files keep only a summary. Humans update continuously from sparse signals: one fact or one scare can change behavior for life. Continual learning aims at models that absorb a constantly changing world (enterprise data, conversations, facts that drift) into their weights, without catastrophic forgetting, and that memorize only what they need for planning while retrieving the rest. Frontier labs mostly don't pursue it: they're busy with benchmark fire-fighting, and it would need a huge bet on a new architecture.
 
 ## Key ideas
 - Human learning runs on sparse, rare signals (a life-threatening situation, a PhD), yet people build around them for life; models need enormous data and can't learn from a few examples ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
@@ -18,6 +18,8 @@ updated: 2026-10-07
 - Interpretability comes from engineering the system (e.g. a sniffer for when the model reads a database), not from opening the weights; whether a transformer's knowledge can be localized is likely unsolvable ([[episodes/explainable--164-gilad-levi-continual-learning]], [[people/gilad-levi]]).
 - Manifold's framing: humans live one endless stream of experience, not millions of small contexts. They learn as *explorers* who act (drop a ball to learn physics), whereas LLMs are observers ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
 - No model learns as fast as a three-year-old, from either data volume or compute; robots can't tell when breaking a door is justified (a book behind it vs an EpiPen) ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
+- Vaporizing intelligence: training a frontier model with ~10¹² parameters costs ~10²⁶ FLOPs, ~10¹⁴ operations per parameter. Over its year or so of relevance, inference uses 10–100× that. In a long session (a million tokens of context, tests, experiments) the model reaches a high level on the user's problem, and then the KV cache is discarded. "We develop intelligence against the hardest problems and destroy it, again and again" ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Skills are a partial fix: developers compress a session's insights into a skill file, so it isn't washed away completely. But that is a summary, not the model's own understanding, like reading a scientist's paper instead of talking to the scientist. Levine argues for a persistent "second form of intelligence" next to the model ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
 
 ## Disagreements & open questions
 - Can a model update its weights continuously without forgetting? The host's intuition says fixing one thing breaks another; Levi argues it's solvable with the right definition of what to memorize ([[episodes/explainable--164-gilad-levi-continual-learning]]).
@@ -26,4 +28,4 @@ updated: 2026-10-07
 - [ ] Before fine-tuning on company data, decide what must be memorized (needed for planning) vs retrieved ([[episodes/explainable--164-gilad-levi-continual-learning]])
 
 ## Related
-[[concepts/agent-memory]] · [[concepts/rag]] · [[concepts/llm-pretraining]] · [[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/world-models]]
+[[concepts/agent-memory]] · [[concepts/rag]] · [[concepts/llm-pretraining]] · [[concepts/memory-consolidation]] · [[concepts/human-vs-ai-memory]] · [[concepts/world-models]] · [[concepts/ai-scientist]] · [[concepts/skill-engineering]]

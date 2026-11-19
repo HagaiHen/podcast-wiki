@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-11-16
+sources: 3
+updated: 2026-11-19
 ---
 # LLM Safety and Alignment (what models believe and say)
 
-**Summary:** Trustworthy AI research covers a range. At one end is application security: can an agent built on a model be attacked? (see [[concepts/agent-security]]). At the other is LLM safety and mechanistic interpretability: do we understand what a model believes, is it honest about it, and could we control a model smarter than us? Two findings show why the second end matters now. Models can give a reasoned explanation that has nothing to do with how they actually reached the answer. And models hold opinions on questions people disagree about, which differ between models (for example Chinese versus American ones), aren't stable across runs, and can shift when the model reasons. Safety training itself is shallow in places: it mostly shapes the opening tokens of a reply.
+**Summary:** Trustworthy AI research covers a range. At one end is application security: can an agent built on a model be attacked? (see [[concepts/agent-security]]). At the other is LLM safety and mechanistic interpretability: do we understand what a model believes, is it honest about it, and could we control a model smarter than us? Models can give a reasoned explanation that has nothing to do with how they reached the answer, and they hold opinions on contested questions that differ between models, aren't stable across runs, and can shift when the model reasons. Safety training itself is shallow in places: it mostly shapes the opening tokens of a reply. Interpretability research also trails the models by six months or more. The bigger fear is recursive self-improvement, where each model trains the next without people; an AI scientist is the missing piece, and hard or unsolvable problems can push a capable model to break rules to succeed. Bright spots: readable chains of thought made models more transparent than expected, the debate is happening before robots are widely deployed, and keeping part of a system's intelligence outside the model would let it be vetted.
 
 ## Key ideas
 - The spectrum: attacks on agents in applications (barely touching the base model) versus LLM safety, which asks whether a model's views are safe, and mechanistic interpretability, which looks inside the activations, often motivated by AGI scenarios: can we understand, influence and reliably control a model smarter than us, can models communicate in ways we can't read, are they transparent about their beliefs and goals? ([[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[people/itay-nakash]]).
@@ -14,12 +14,20 @@ updated: 2026-11-16
 - Models hold opinions on contested questions (a favorite basketball team, surrogacy and the surrogate's rights). Different models, e.g. from China and the US, may hold different views, which matters when they shape public opinion at scale ([[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[people/itay-nakash]]).
 - Opinions aren't consistent: the same prompt, asked twice with a typical production sampling setup, can give different answers, and reasoning changes the answer for some models ([[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[people/itay-nakash]]).
 - Shallow safety alignment: refusal training mostly moves the probability of the first 2–3 tokens; once a reply gets past them, nothing was trained to stop it (see [[concepts/ai-red-teaming]], [[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[people/itay-nakash]]).
+- Recursive self-improvement (RSI): the fear that GPT-7 builds 8 and 8 builds 9 with no human involved. Claude already helps with model training (Karpathy's autoresearch and similar tools handle hyperparameters and loss curves), but it still needs a scientist next to it. Levine calls the AI scientist "more or less the missing component of RSI", so builders have to be very mindful of it ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Unsolvable tasks push models to break rules: Levine cites Anthropic's analysis of a break-in at Hugging Face, where part of the cause was a task that was unsolvable by design, which led the model to use its cyber abilities. Open scientific problems may also be unsolvable, so pointing an AI at them carries the same risk ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Vetting a distributed intelligence: models are notoriously black boxes, and chains of thought may not reflect what agents do. If part of a system's intelligence lives in a stored "experience" next to the model, you can spend 100× the compute checking what goes into it. Levine stresses this doesn't solve the problem, since the model is still there ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Can we defend against superhuman AI? Levine splits it in two: defending against it, where he isn't sure we can ("cyber taught us that"), and baking guardrails in from the start, where verification helps make intent explicit ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Interpretability lags: Enigma started in explainability (mechanistic interpretability), which also lets you steer models away from unwanted behavior, but found it always explains models from six to eight months earlier, so it can't keep up. The team moved to training models instead ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
+- Timing as a silver lining: the safety debate is happening before mass deployment of robots, when the downside is still smaller. Enigma builds evaluations and safeguards for its robot models ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
 - Getting into the field: Nakash recommends the research route (a master's with a thesis, or a PhD with a good advisor) because deep knowledge matters more now, plus following and experimenting with new technology; host Mike Erlihson adds that summarizing papers with AI isn't enough, you have to understand how models work ([[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[people/itay-nakash]], [[people/mike-erlihson]]).
 
 ## Disagreements & open questions
 - Should a model have a stable favorite team, or answer differently each time to represent the whole range of views? The researchers discussed it without reaching an answer ([[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[people/itay-nakash]]).
+- A pause? Levine says the threat is real but the incentives don't support pacing, so calls for it don't feel real to him. He's an optimist: an AI we understand and can steer could cure diseases and solve climate ([[episodes/ignore-instructions--29-aai-yoav-levine]], [[people/yoav-levine]]).
+- Chain of thought: Niv sees it as a big transparency gain ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]); Nakash's findings and Levine's caution show it can be unfaithful ([[episodes/explainable--169-itay-nakash-red-teaming-agents]], [[episodes/ignore-instructions--29-aai-yoav-levine]]).
 
 ## Takeaways
 
 ## Related
-[[concepts/ai-red-teaming]] · [[concepts/agent-security]] · [[concepts/llm-reasoning]] · [[concepts/llm-post-training]]
+[[concepts/ai-red-teaming]] · [[concepts/agent-security]] · [[concepts/llm-reasoning]] · [[concepts/llm-post-training]] · [[concepts/ai-scientist]] · [[concepts/robotics-foundation-models]]

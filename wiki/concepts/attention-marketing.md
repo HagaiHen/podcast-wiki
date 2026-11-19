@@ -1,0 +1,37 @@
+---
+type: concept
+hubs: [startups]
+sources: 1
+updated: 2026-11-19
+---
+# Attention Marketing (grabbing attention on a small budget)
+
+**Summary:** "All you have left is attention." Erez Strauss, who led creative at ExpressVPN, turns a brand insight into an ad idea with old psychological tools: attach an unexpected use to it, or shrink a statistic to one person's tragedy. To borrow attention you can't buy, ride the day's news and the big recurring topics of the moment, or combine two existing tactics into something that looks new, like an AI-ad contest around a World Cup sponsorship. A separate pure-entertainment channel can carry the brand's message (privacy and security) better than the brand's own channel; one grew to 300k subscribers in a few months. There's no secret recipe, because "what works" depends on the goal metric. The real obstacle is organizational: good ideas sound stupid in a meeting, so marketers fall back on the familiar playbook unless someone gives them room to experiment, for example 10–20% of the budget.
+
+## Key ideas
+- Tool 1, an unexpected use: start from the insight ("ExpressVPN protects you from hackers") and ask what the most embarrassing secret would be. A woman's private photos are scary, not funny; a man who secretly does mermaid cosplay with his friends is funny, and the laugh carries the message ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Tool 2, shrink a statistic to one person: people don't react to statistics, they react to a specific person's tragedy (a plane crash vs a five-year-old orphaned by it). A US law letting ISPs sell your browsing data became an auction ad: one man's blurred search history goes on the block, and pharma, the government and an online casino raise their hands ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Day-trading attention (Gary Vaynerchuk's term): every day a new topic takes the headlines, and you need the least cringe-worthy way to join it. Every few years there are also macro topics (work-life balance, COVID, now AI) that lift attention whenever you mention them ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- The Big Ad Contest: as an official World Cup sponsor, ExpressVPN invited anyone, user or not, to make an AI ad of up to 30 seconds, post it and tag the brand. The top five won Category 1 tickets to the knockout rounds, and the winner's ad ran on Times Square billboards. The earned media rivaled the sponsorship package itself ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Giveaways 2.0: unlike "share my post to win", asking people to create something adds friction but gives far better results, and recognition is part of the prize ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Combine two existing things: neither an AI video contest nor a World Cup sponsorship was new, but joining them made the brand look like the innovator that reinvented something ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- A separate entertainment channel: keep the brand's YouTube channel for features and tutorials, but don't count on it to reach new audiences. ExpressVPN launched a pure-entertainment channel about privacy and security: a dating show where the woman's friend, sitting with a hacker, feeds her the date's browsing history over unsecured studio Wi-Fi (all with consent), and a blind-date format where each man's phone is projected behind him ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- The point was to show the problem, not pitch a VPN: like watching someone get hit where it hurts, you feel "I don't want that risk in my life" ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Four formats × four episodes took the channel from 0 to 300k subscribers in a few months, and the long-form episodes were cut into dozens of clips that doubled social followers. YouTube subscribers expect the same kind of content every time, while Instagram audiences tolerate several content pillars ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- "Works" depends on the goal: a golden retriever video will outperform a 50-year-old man, but did it meet your goal? Influencers, AI video and sports sponsorships all work; the question is for which metric ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Experiments sound stupid until they work: "advertise in fortune cookies" or "a privacy dating show" sound idiotic on a meeting-room screen. Nobody blames the person who rolled out the standard tool, but the one who picked the risky alternative is first out if it fails, so marketers choose more of the same. Give your CMO, creative director or head of social the credit to experiment ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Founders feel it too: with investors, employees and family as stakeholders, a startup slides from growth into survival mode and reaches for the playbook investors know, even when it calls itself innovative (the host) ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]).
+- Budget split: the host puts 80–90% of an influencer budget on what's known to work and 10–20% on tests; Strauss applies the same to creative, with the planned strategy taking 80–90% and cheap stunts, such as riding a Taylor Swift Super Bowl moment, the rest ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- Trends vs DNA: copying a viral trend (brands remaking the "Storm" dance clip) is a cheap stunt that may get reach but rarely serves efficiency. The line between bold and cringe is thin, and keeping your positioning matters; the host cites Wiz as a company that rethought how cyber companies market themselves ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- The feed is a bubble: LinkedIn makes it look like 90% of the world runs 30 agents; at Friday dinner nobody does ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+
+## Disagreements & open questions
+- Is there a recipe? Strauss says anyone claiming a secret recipe for creative that works is lying: everything works for some goal, and combinations work best ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+
+## Takeaways
+- [ ] For your next ad, turn your product's key statistic into one specific person's story ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]])
+- [ ] Reserve 10–20% of the marketing budget for odd experiments, and agree up front that they may sound stupid ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]])
+- [ ] Ask users to create something for your brand (e.g. an AI ad) for a prize with recognition, instead of a share-to-win giveaway ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]])
+
+## Related
+[[concepts/ai-video-ads]] · [[concepts/ai-growth-marketing]] · [[concepts/founder-leadership]] · [[concepts/llm-advertising]]

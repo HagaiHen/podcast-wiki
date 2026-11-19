@@ -10,6 +10,9 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/ai-red-teaming]]: breaking models before attackers do; foot-in-the-door and adversarial simulated users
 - [[concepts/llm-safety]]: model honesty, opinions, shallow alignment, interpretability
 - [[concepts/world-models]]: models of the physical world
+- [[concepts/robotics-foundation-models]]: general robot brains vs classical robotics and task skills; arms, quadrupeds, humanoids
+- [[concepts/ai-scientist]]: AI at the research frontier; data, verification, reasoning depth, vaporizing intelligence
+- [[concepts/ai-performance-engineering]]: AI rewriting code for the hardware with verified correctness (Warp Speed)
 - [[concepts/ai-infrastructure]]: AI factories and GPU networking
 - [[concepts/neoclouds]]: GPU clouds; multi-cloud for GPU workloads; subsidized reserved capacity
 - [[concepts/multimodal-llms]]: vision LLMs in production

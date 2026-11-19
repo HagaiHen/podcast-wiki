@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-07
+sources: 3
+updated: 2026-11-19
 ---
 # World Models (beyond next-token prediction)
 
-**Summary:** A push to move AI from predicting the next text token toward models that understand the physical world, for robotics, autonomous driving, and long-term planning. "World model" is overloaded: it covers video generators that predict frames (Decart, Genie), 3D scene builders (Fei-Fei Li's Gaussian splats), and Yann LeCun's JEPA family, which predicts abstract latent representations instead of pixels. Critics of frame prediction argue it's wasteful and weakly tied to intelligence. Latent approaches can represent uncertainty properly but are not yet proven at scale.
+**Summary:** A push to move AI from predicting the next text token toward models that understand the physical world, for robotics, autonomous driving, and long-term planning. "World model" is overloaded: it covers video generators that predict frames (Decart, Genie), 3D scene builders (Fei-Fei Li's Gaussian splats), and Yann LeCun's JEPA family, which predicts abstract latent representations instead of pixels. Games became the common demo, with models that "play" Minecraft or Doom from pixels and actions; the next step is several agents sharing one simulated world. Critics of frame prediction argue it's wasteful and weakly tied to intelligence. Latent approaches can represent uncertainty properly but are not yet proven at scale. World models are also a route into robotics (see [[concepts/robotics-foundation-models]]).
 
 ## Key ideas
 - Plato's cave: LLMs learn from a text projection of the world, like prisoners seeing shadows. They don't know what a person is, or how beer tastes ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
@@ -20,6 +20,10 @@ updated: 2026-10-07
 - Latent prediction skips unpredictable detail: an autoregressive model wastes capacity tracing a falling leaf's exact path, while a latent model learns "the leaf swirled and fell" ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 - Vision models need far fewer parameters than language: V-JEPA tops out around 1B (with 300M and 700M variants), perhaps because physics is lawful while language is ambiguous ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
 - Attention maps show the model looking ahead along each moving object's path, anticipating where it will be ([[episodes/hidden-layers--nexar-roni-goldshmidt]], [[people/roni-goldshmidt]]).
+- Games as the testbed: you feed the model pixels and an action ("forward") and it predicts the next frames, as in Decart's Minecraft and Google's Doom demos ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
+- Multiplayer world model: before founding Enigma, Gal Niv's team trained one model that runs a two-player Gran Turismo race, one brain operating two cars. Academically this is a "multi-agent shared-context world model", described in papers as open. The hard part was shared physics: when car A hits car B it must affect B's outcome, while each player's inputs and frames stay consistent ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
+- Scrappy data collection: they patched the game and plugged in OpenPilot, an open self-driving model, to play it and generate driving data. The paper went viral, drew attention from AI labs and investors, and led to the company ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
+- Writing a paper is a way to learn a deep research field fast, even outside academia ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
 
 ## Disagreements & open questions
 - More compute vs new architectures: Levi grants that "add compute and data" keeps working for many cases (ViT, AlphaFold 3) but argues diminishing returns (10× compute for 99% → 99.9%) open the door to cheaper approaches ([[episodes/hidden-layers--manifold-gilad-levi]], [[people/gilad-levi]]).
@@ -27,4 +31,4 @@ updated: 2026-10-07
 ## Takeaways
 
 ## Related
-[[concepts/continual-learning]] · [[concepts/llm-pretraining]] · [[concepts/multimodal-llms]] · [[concepts/image-generation]] · [[concepts/small-language-models]]
+[[concepts/continual-learning]] · [[concepts/llm-pretraining]] · [[concepts/multimodal-llms]] · [[concepts/image-generation]] · [[concepts/small-language-models]] · [[concepts/robotics-foundation-models]]
