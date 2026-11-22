@@ -18,6 +18,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/market-breadth]]: index near highs while most stocks fall
 - [[concepts/equity-risk-premium]]: earnings yield vs bond yields
 - [[concepts/market-timing]]: why selling before crashes usually fails
+- [[concepts/bear-market]]: living through a 20% drawdown; stops, no leverage, upside math
 - [[concepts/earnings-season]]: reading quarterly reports and the market's reaction
 - [[concepts/technical-analysis]]: moving averages, support and resistance
 - [[concepts/seasonality]]: calendar effects like "Uptober"
@@ -108,7 +109,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/founder-leadership]]: the CEO is always selling; officers' leadership; focus
 - [[concepts/startup-exits]]: when to sell; each raise removes buyers; win-win sell point
 - [[concepts/attention-marketing]]: winning attention cheaply: unexpected uses, one person's story, contests, room to experiment
-- [[concepts/ai-video-ads]]: cinematic AI ads as attention arbitrage; human insight and taste
+- [[concepts/ai-video-ads]]: cinematic AI ads and videos as attention arbitrage; human insight and taste; Nas Daily's 100 AI videos
 
 ## Unsorted
 - [[concepts/biohacking]]: N=1 self-experiments, sensors, caveats (health)
@@ -211,8 +212,10 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/yoav-levine]]: Tel Aviv University CS faculty, AAI co-founder (AI scientist)
 - [[people/gal-niv]]: CTO and co-founder of Enigma (robotics foundation models)
 - [[people/erez-strauss]]: creative lead at ExpressVPN (AI video ads)
+- [[people/nuseir-yassin]]: Nas Daily creator, Nas.io founder
 
 ## Episodes
+- [[episodes/micha-stocks--nasdaq-bear-market]]: The Nasdaq Enters a Bear Market: Is This the Time to Buy? (2026-11-21)
 - [[episodes/micha-stocks--nvidia-beats-without-jensen]]: Nvidia Without Jensen Beats Forecasts, and the Board Says He's Not Coming Back (2026-11-18)
 - [[episodes/ignore-instructions--30-enigma-gal-niv]]: #30 Building the Brain of Robots, With Gal Niv of Enigma (2026-11-18)
 - [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]: How to Capture Attention for Your Brand on a Minimal Budget, With Erez Strauss (2026-11-18)
@@ -269,6 +272,7 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[episodes/explainable--163-hidden-cost-of-agents]]: #163 A Million Dollars a Month: The Expensive Secret of AI Agents (2026-09-13)
 - [[episodes/explainable--164-gilad-levi-continual-learning]]: #164 Child Prodigy, Transformers and Continual Learning (2026-09-22)
 - [[episodes/ignore-instructions--20-idan-benyon-build-ship-grow]]: #20 The Man Behind the AI Builders Community (2026-03-24)
+- [[episodes/ignore-instructions--12-nas-daily-ai-videos]]: #12 How Did Nas Daily Reach 450 Million Views With 100 AI Videos? (2025-12-22)
 - [[episodes/ignore-instructions--24-wonderful-road-to-100m]]: #24 On the Way to $100M Revenue (2026-06-18)
 - [[episodes/ignore-instructions--28-ai-marketing-enso]]: #28 How AI Is Changing Marketing (2026-09-08)
 - [[episodes/langtalks--55-context-engineering]]: #55 Context Engineering (2025-10-11)

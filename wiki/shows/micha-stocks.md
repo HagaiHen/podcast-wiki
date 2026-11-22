@@ -6,6 +6,7 @@ type: show
 Hebrew podcast on capital markets, Wall Street, and investing, hosted by [[people/micha-stocks]].
 
 ## Episodes
+- [[episodes/micha-stocks--nasdaq-bear-market]] (2026-11-21)
 - [[episodes/micha-stocks--nvidia-beats-without-jensen]] (2026-11-18)
 - [[episodes/micha-stocks--breaking-nvidia-ceo]] (2026-11-12)
 - [[episodes/micha-stocks--feels-like-bear-market]] (2026-10-31)

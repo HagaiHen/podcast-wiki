@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 5
-updated: 2026-11-19
+sources: 6
+updated: 2026-11-22
 ---
 # Market Timing
 
-**Summary:** Trying to sell before a crash or wait for one before buying usually fails, even when the argument is well reasoned and data-backed. Nobody, however smart, knows whether a bubble pops in three months or thirteen years, and the bottom of a future crash can still be higher than today's price, while you miss dividends on the way. A year's returns also cluster in a handful of exceptional days, in stocks and crypto alike, and nobody knows in advance which ones they'll be. Charts flatter hindsight: a buy at the exact low looks obvious afterward, but almost nobody can know it was the low, and even someone arguing that a selloff is a buying opportunity has to concede that. Bottom-callers look for capitulation, the point where even analysts throw in the towel, but cutting price targets is not yet capitulation, and a one-day rally can be a dead cat bounce. Crowd mood is another rough gauge: a flood of negativity from ordinary investors can mark "peak disgust", which often signals stress near a bottom without promising that prices only go up from there. What you can control is your time horizon and your volatility tolerance; diversification, "the only free lunch", handles the rest.
+**Summary:** Trying to sell before a crash or wait for one before buying usually fails, even when the argument is well reasoned and data-backed. Nobody, however smart, knows whether a bubble pops in three months or thirteen years, and the bottom of a future crash can still be higher than today's price, while you miss dividends on the way. A year's returns also cluster in a handful of exceptional days, in stocks and crypto alike, and nobody knows in advance which ones they'll be. Charts flatter hindsight: a buy at the exact low looks obvious afterward, but almost nobody can know it was the low, and even someone arguing that a selloff is a buying opportunity has to concede that. Bottom-callers look for capitulation, the point where even analysts throw in the towel, but cutting price targets is not yet capitulation, and a one-day rally can be a dead cat bounce. Crowd mood is another rough gauge: a flood of negativity from ordinary investors can mark "peak disgust", which often signals stress near a bottom without promising that prices only go up from there. Fear gauges help the same limited way: when the Nasdaq entered a bear market, the VIX hit 40 and the Fear & Greed index stood at 10, both extreme but short of past panics (VIX 60–65, Fear & Greed 3), so even then capitulation was "very hard to know". What you can control is your time horizon and your volatility tolerance; diversification, "the only free lunch", handles the rest.
 
 ## Key ideas
 - Even if a crash comes in three years, its bottom might be ~8,000 on the S&P 500, above the ~7,722 at recording, and you'd also have missed the dividends ([[episodes/lazy-investing--111-the-ai-bubble]], [[people/tamir]]).
@@ -21,6 +21,7 @@ updated: 2026-11-19
 - One strong day doesn't prove a bottom: the AI trade's return on November 11 might mark it, or it might be a dead cat bounce ([[episodes/micha-stocks--breaking-nvidia-ceo]], [[people/micha-stocks]]).
 - "Should I buy Nvidia now?" is the wrong question: if you believe the AI trade is back, many related stocks (e.g. GE Vernova, with a huge order backlog) have similar or better upside, so pick the best risk/reward rather than fighting over one name. Holders were split, with some trimming, many on the fence, and few buying aggressively, which is why it rose 2.8% and not 18% ([[episodes/micha-stocks--breaking-nvidia-ceo]], [[people/micha-stocks]]).
 - Sentiment as a signal: the amount of negativity about the market in his Instagram and YouTube comments and live streams tells Micha that investors are at "peak disgust", out of patience. That doesn't mean prices only rise from here, but it often shows how stressed everyone is, close to capitulation. He expects calm once a run of outages and news passes, and maybe the start of a year-end rally ([[episodes/micha-stocks--nvidia-beats-without-jensen]], [[people/micha-stocks]]).
+- Fear gauges at the November 2026 bear market: the Fear & Greed index ended at 10, against 3 during the 2025 tariff tantrum, "so in theory there's still room to go". The VIX reached 40 and closed a gap left open since the tariff tantrum; it tends to close its gaps, even if this one took a year and a half. It could have gone higher, to 60 as in April 2025 or 65 as in August 2024, so whether everyone has capitulated is "very hard to know" ([[episodes/micha-stocks--nasdaq-bear-market]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - Is buying a selloff a form of timing? Micha says bottoms can't be timed, yet calls this a great opportunity because "when everyone is negative, it's the time to be positive" ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]). Tamir says only your horizon and volatility tolerance, not forecasts, should drive decisions ([[episodes/lazy-investing--111-the-ai-bubble]], [[people/tamir]]).
@@ -31,4 +32,4 @@ updated: 2026-11-19
 - [ ] If you're betting on a theme's comeback, compare the upside of several stocks in it instead of asking only whether to buy the famous one ([[episodes/micha-stocks--breaking-nvidia-ceo]])
 
 ## Related
-[[concepts/market-bubbles]] · [[concepts/cape-ratio]] · [[concepts/index-investing]] · [[concepts/fomo]] · [[concepts/seasonality]] · [[concepts/circuit-breakers]] · [[concepts/market-breadth]] · [[concepts/key-person-risk]]
+[[concepts/market-bubbles]] · [[concepts/cape-ratio]] · [[concepts/index-investing]] · [[concepts/fomo]] · [[concepts/seasonality]] · [[concepts/circuit-breakers]] · [[concepts/market-breadth]] · [[concepts/key-person-risk]] · [[concepts/bear-market]]

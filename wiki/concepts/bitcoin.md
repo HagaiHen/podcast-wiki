@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [investing]
-sources: 3
-updated: 2026-11-01
+sources: 4
+updated: 2026-11-22
 ---
 # Bitcoin (and crypto as an asset)
 
-**Summary:** Bitcoin is an extremely volatile asset: 70–80% drawdowns happen, and in 2025–2026 it fell from ~$126k to ~$57k and rebounded to ~$82k, roughly where it stood a year earlier. Its October record is strong ("Uptober"), but the price doesn't read the calendar; moves come from sentiment, and October says even less about Ethereum. On the macro side, a former Israeli Accountant General expects states to issue their own digital currencies and doesn't think Bitcoin or any private coin will displace sovereign money, because governments won't give up seigniorage. How you hold it is its own risk decision: buying on an exchange leaves you exposed to hacks like the reported $6.3B Binance theft, while an ETF cuts the risk of theft to nearly zero but means you own the coin only indirectly. Both speakers frame crypto as a high-risk asset, not something ordinary savers need.
+**Summary:** Bitcoin is an extremely volatile asset: 70–80% drawdowns happen, and in 2025–2026 it fell from ~$126k to ~$57k, rebounded to ~$82k, roughly where it stood a year earlier, and was back near $58k (−33% for the year) when the Nasdaq entered a bear market in November 2026. Its October record is strong ("Uptober"), but the price doesn't read the calendar; moves come from sentiment, and October says even less about Ethereum. On the macro side, a former Israeli Accountant General expects states to issue their own digital currencies and doesn't think Bitcoin or any private coin will displace sovereign money, because governments won't give up seigniorage. How you hold it is its own risk decision: buying on an exchange leaves you exposed to hacks like the reported $6.3B Binance theft, while an ETF cuts the risk of theft to nearly zero but means you own the coin only indirectly. Both speakers frame crypto as a high-risk asset, not something ordinary savers need.
 
 ## Key ideas
 - Bitcoin rose ~126.2k → fell to ~57k → ~82k by mid-October 2026, about its November 2025 price: "a year of doing nothing", which a buy-and-hold investor who ignores volatility shrugs off ([[episodes/micha-stocks--bitcoin-uptober]], [[people/micha-stocks]]).
@@ -18,6 +18,7 @@ updated: 2026-11-01
 - Zelicha holds no crypto and calls it a "roller coaster": very risky and volatile, for experts rather than ordinary citizens ([[episodes/micha-stocks--yaron-zelicha-economic-interview]], [[people/yaron-zelicha]]).
 - Related stance: he opposes abolishing cash, both for privacy and because more payment methods mean more competition; a cashless economy is "the banks' dream" of fees on every payment ([[episodes/micha-stocks--yaron-zelicha-economic-interview]], [[people/yaron-zelicha]]).
 - A reported $6.3B theft from Binance in late October 2026 (Ethereum and other coins; early estimates point to North Korean hackers) helped drive Bitcoin down to about $77k. Binance said it would make users whole ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
+- On November 20, 2026, the day the Nasdaq entered a bear market, Bitcoin was at about $58,227, −33% year to date ([[episodes/micha-stocks--nasdaq-bear-market]], [[people/micha-stocks]]).
 - Coin or exposure? Before ETFs, holding crypto meant opening an exchange account and buying the asset yourself. ETFs cut your theft risk almost to zero, the upside being risk management and the downside that the coins are directly the fund's and only indirectly yours. So decide whether you want the coin or just its price movement ([[episodes/micha-stocks--feels-like-bear-market]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions

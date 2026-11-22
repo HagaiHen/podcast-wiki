@@ -12,4 +12,4 @@ Building and running a startup: raising money (rejections, parallel conversation
 - [[concepts/outcome-metrics]]: outcome KPIs over inputs; Goodhart's law; north-star metrics
 - [[concepts/defense-tech]]: government as design partner; AI and drones in 911 and public safety
 - [[concepts/attention-marketing]]: unexpected uses, one person's story, contests, entertainment channels, room to experiment
-- [[concepts/ai-video-ads]]: cinematic AI ads as attention arbitrage; human insight and taste; remarket with real people
+- [[concepts/ai-video-ads]]: cinematic AI ads and videos as attention arbitrage; Nas Daily's 100 AI videos; human taste and editing; remarket with real people

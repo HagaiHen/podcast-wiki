@@ -41,6 +41,7 @@
 - Warp Speed (AAI's verified code-optimization system); Lean (formal proof language with mechanical proof checking) — [[concepts/ai-performance-engineering]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
 - OpenPilot (open self-driving model, used to generate game driving data); Unitree robots (open SDK) — [[concepts/robotics-foundation-models]] · [[episodes/ignore-instructions--30-enigma-gal-niv]]
 - Seedance (AI video engine); Pinterest and Shotdeck for look-and-feel reference frames — [[concepts/ai-video-ads]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
+- Nas Daily's AI video stack: Veo 3, Kling, Runway, Seedance (via Higgsfield), Sora for ads, ElevenLabs (not yet good enough for full voiceovers), Final Cut Pro; Gemini + Nano Banana for infographics; Nas.io (AI landing pages, ads and payments for solopreneurs) — [[concepts/ai-video-ads]] · [[episodes/ignore-instructions--12-nas-daily-ai-videos]]
 
 ## People
 - Gary Vaynerchuk: "day trading attention", riding each day's top topic — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]

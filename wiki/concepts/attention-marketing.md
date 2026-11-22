@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [startups]
-sources: 1
-updated: 2026-11-19
+sources: 2
+updated: 2026-11-22
 ---
 # Attention Marketing (grabbing attention on a small budget)
 
-**Summary:** "All you have left is attention." Erez Strauss, who led creative at ExpressVPN, turns a brand insight into an ad idea with old psychological tools: attach an unexpected use to it, or shrink a statistic to one person's tragedy. To borrow attention you can't buy, ride the day's news and the big recurring topics of the moment, or combine two existing tactics into something that looks new, like an AI-ad contest around a World Cup sponsorship. A separate pure-entertainment channel can carry the brand's message (privacy and security) better than the brand's own channel; one grew to 300k subscribers in a few months. There's no secret recipe, because "what works" depends on the goal metric. The real obstacle is organizational: good ideas sound stupid in a meeting, so marketers fall back on the familiar playbook unless someone gives them room to experiment, for example 10–20% of the budget.
+**Summary:** "All you have left is attention." Erez Strauss, who led creative at ExpressVPN, turns a brand insight into an ad idea with old psychological tools: attach an unexpected use to it, or shrink a statistic to one person's tragedy. To borrow attention you can't buy, ride the day's news and the big recurring topics of the moment, or combine two existing tactics into something that looks new, like an AI-ad contest around a World Cup sponsorship. A separate pure-entertainment channel can carry the brand's message (privacy and security) better than the brand's own channel; one grew to 300k subscribers in a few months. There's no secret recipe, because "what works" depends on the goal metric. The real obstacle is organizational: good ideas sound stupid in a meeting, so marketers fall back on the familiar playbook unless someone gives them room to experiment, for example 10–20% of the budget. Nas Daily adds two moves: when a new medium appears, go all in at volume (100 AI videos, not one) and aim it at stories nobody could film before; and if the goal is revenue online, learn performance marketing rather than only building a brand.
 
 ## Key ideas
 - Tool 1, an unexpected use: start from the insight ("ExpressVPN protects you from hackers") and ask what the most embarrassing secret would be. A woman's private photos are scary, not funny; a man who secretly does mermaid cosplay with his friends is funny, and the laugh carries the message ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
@@ -24,6 +24,8 @@ updated: 2026-11-19
 - Budget split: the host puts 80–90% of an influencer budget on what's known to work and 10–20% on tests; Strauss applies the same to creative, with the planned strategy taking 80–90% and cheap stunts, such as riding a Taylor Swift Super Bowl moment, the rest ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
 - Trends vs DNA: copying a viral trend (brands remaking the "Storm" dance clip) is a cheap stunt that may get reach but rarely serves efficiency. The line between bold and cringe is thin, and keeping your positioning matters; the host cites Wiz as a company that rethought how cyber companies market themselves ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
 - The feed is a bubble: LinkedIn makes it look like 90% of the world runs 30 agents; at Friday dinner nobody does ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
+- New tech, big volume: "a new technology, you don't make one, you make 100." Being first at scale with Veo 3 made Nas Daily's series the story ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- Performance over brand: about six years ago the host (from Mixtiles) taught Nas that to make money online you must do performance marketing; Nas came from the brand world and struggled at first to make 15-second ads that sold. Mixtiles cares about its brand but does no brand advertising such as Super Bowl spots ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
 
 ## Disagreements & open questions
 - Is there a recipe? Strauss says anyone claiming a secret recipe for creative that works is lying: everything works for some goal, and combinations work best ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).

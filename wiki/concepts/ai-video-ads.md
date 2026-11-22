@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [startups, ai-engineering]
-sources: 1
-updated: 2026-11-19
+sources: 2
+updated: 2026-11-22
 ---
 # AI Video Ads (cinematic AI creative)
 
-**Summary:** AI video tools let one creative person produce in days an ad that used to need months of approvals and tens of thousands in production. At ExpressVPN, cinematic, funny AI ads held viewers about twice as long as human UGC ads in a YouTube A/B test. Erez Strauss calls it an "attention arbitrage": feeds are saturated with UGC, so something that looks like a Hollywood production stops the scroll, and people who say they hate AI ads are drawn to them anyway. He doesn't expect the edge to last long. The craft stays human at both ends. A human insight and synopsis start the work and human editing finishes it, while AI produces the shot list, prompts and footage in between. Taste, knowing which version is better and being able to say why, is the human edge. Attention isn't trust, so pair the cheap AI scroll-stopper with remarketing that uses real people.
+**Summary:** AI video tools let one creative person produce in days an ad or short video that used to need months of approvals and tens of thousands in production. The evidence so far is on attention. At ExpressVPN, cinematic, funny AI ads held viewers about twice as long as human UGC ads in a YouTube A/B test. Nas Daily's 100 AI videos in 100 days drew roughly 450M views and outperformed his filmed videos, because AI let him tell stories no camera could reach: history, proverbs, children's tales. Erez Strauss calls it an "attention arbitrage": feeds are saturated with UGC, so something that looks like a Hollywood production stops the scroll, and people who say they hate AI ads are drawn to them anyway. He doesn't expect the edge to last long. The craft stays human at both ends. A human idea and script or synopsis start the work, an LLM turns it into shots and prompts, several video engines generate the footage, and a human editor spends real time finishing it (about 48 hours per minute of video at Nas Daily). Taste is the human edge. Costs are falling, from $500–1,000 to about $200 of credits per video, but organic AI content still doesn't pay for itself. Attention isn't trust, so pair the cheap AI scroll-stopper with remarketing that uses real people.
 
 ## Key ideas
 - The threshold collapsed: a copywriter's idea used to pass through account managers, planners, the client, a director and an influencer, each with their own take, plus two months of approvals and tens of thousands of shekels. Now one person can make it ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
@@ -21,12 +21,24 @@ updated: 2026-11-19
 - Attention first, then trust: use the funny AI ad to reach an audience cheaply, save viewers who completed an engaged view as an audience, then remarket to them with real people (a past customer, an enthusiastic user, the founder) in an action-oriented ad ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
 - A separate all-AI account can be the funnel: a job-board app runs an account of animated sketches about creatures with the worst jobs, ending with the app; it has ~240k followers. Strauss estimates months of work and tens of thousands of dollars in tokens and people ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]).
 
+### Nas Daily's 100 AI videos (garbled transcript; figures approximate)
+- The playbook for a new technology: when Google's Veo 3 came out, don't make one video, make 100. Nas Daily ran 100 AI videos in 100 days, echoing its original 1,000 daily videos ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- Results: about 450–467M views, and the AI videos did better than his human ones; on Instagram his filmed videos averaged 1–2M views while some AI videos reached 22–23M ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- The biggest win was videos that were impossible to film: Nas Daily could only show where he is today, but with AI he can show what happened 100 or 1,000 years ago ("you became a historian"). History of a place (ancient Israel, about 7M views; Singapore and Dubai, which locals share as their own story), proverbs such as the boy who cried wolf, and children's stories everyone knows but has never seen as video ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- Pipeline: about 70% of each script comes from ChatGPT and 30% from him, roughly 10 minutes. He records the voiceover himself because ElevenLabs couldn't yet carry a whole script. Editors generate a first frame of him as a reference image, have ChatGPT propose the visual style and write the video prompts, then generate clips across four engines (Runway, Kling, Veo 3 and Seedance, the last via Higgsfield) and cut them in Final Cut Pro ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- AI is "media for media": it doesn't replace the edit. About 48 hours of editing per one-minute video, one editor per video, with 4–5 editors to keep a daily pace. Given an unlimited budget, his editors chose better over cheaper ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- Cost: $500–1,000 of AI credits per video at first, about $200 later, roughly $100k for the series. It earned almost nothing directly, since platforms barely pay for one-minute videos, so he wouldn't move Nas Daily fully to AI: "I don't see the economic model" ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- AI suits performance ads: he says about 60% of Nas Daily's ads were made with Sora (approximate) ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+
 ## Disagreements & open questions
 - Public hate vs private behavior: AI ads draw loud criticism (e.g. a politician's AI dance video), yet the data shows people watch them more. How long the edge lasts as feeds fill with cinematic AI is open; Strauss frames it as months ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]).
+- Does an AI face hurt trust? Strauss keeps AI for the scroll-stopper and uses real people for the trust-building remarketing ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]], [[people/erez-strauss]]). Nas Daily, whose brand is a real person, used an AI version of himself for a whole series and says most of its ads were AI-made ([[episodes/ignore-instructions--12-nas-daily-ai-videos]], [[people/nuseir-yassin]]).
+- Attention vs money: both report strong reach, but Nas Daily's $100k series made almost no direct revenue, so the business case still rests on ads or a product behind the content ([[episodes/ignore-instructions--12-nas-daily-ai-videos]]).
 
 ## Takeaways
 - [ ] Use a cheap, funny AI ad for reach, then remarket its engaged viewers with a real customer or founder testimonial ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]])
 - [ ] Before prompting a video, ask Claude to reverse-engineer a reference frame you like (lens, lighting, angle, film look) ([[episodes/talking-entrepreneurship--erez-strauss-brand-attention]])
+- [ ] Use AI video for a story you can't film (a place's history, a well-known proverb) rather than re-creating footage you could shoot ([[episodes/ignore-instructions--12-nas-daily-ai-videos]])
 
 ## Related
 [[concepts/image-generation]] · [[concepts/ai-growth-marketing]] · [[concepts/attention-marketing]] · [[concepts/llm-advertising]]

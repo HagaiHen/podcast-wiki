@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 2
-updated: 2026-10-29
+sources: 3
+updated: 2026-11-22
 ---
 # Neoclouds (GPU clouds)
 
-**Summary:** Neoclouds are clouds built for GPU workloads, ranging from ex-crypto miners renting bare-metal GPUs to full "hyperscalers of AI" like Nebius that offer the familiar cloud stack (VMs, managed Kubernetes, S3-style storage, managed inference) tuned for GPUs. Their reason to exist: an on-prem GPU data center is hard on money, Nvidia delivery times, and expertise, and the big clouds don't always have GPUs to give. Few companies move their whole platform; the multi-cloud pattern is to keep microservices on AWS/Azure/GCP and send training, fine-tuning, and inference to a GPU specialist. Capacity, not price, is the scarce resource, which is why Israel's Innovation Authority subsidized *reserved* GPU capacity for local startups and academia rather than paying to build a data center. The financial risk is debt: building ahead of demand is financed with borrowing, and by October 2026 Elon Musk was warning that credit markets had closed to neoclouds and some won't survive. Investors began separating winners from losers rather than selling the whole group.
+**Summary:** Neoclouds are clouds built for GPU workloads, ranging from ex-crypto miners renting bare-metal GPUs to full "hyperscalers of AI" like Nebius that offer the familiar cloud stack (VMs, managed Kubernetes, S3-style storage, managed inference) tuned for GPUs. Their reason to exist: an on-prem GPU data center is hard on money, Nvidia delivery times, and expertise, and the big clouds don't always have GPUs to give. Few companies move their whole platform; the multi-cloud pattern is to keep microservices on AWS/Azure/GCP and send training, fine-tuning, and inference to a GPU specialist. Capacity, not price, is the scarce resource, which is why Israel's Innovation Authority subsidized *reserved* GPU capacity for local startups and academia rather than paying to build a data center. The financial risk is debt: building ahead of demand is financed with borrowing, and by October 2026 Elon Musk was warning that credit markets had closed to neoclouds and some won't survive. Investors began separating winners from losers rather than selling the whole group. Policy is a second risk: in November 2026 President Trump said he won't let American providers build data centers outside the US without paying a very heavy tax, a direct threat to neoclouds' overseas sites. Nebius fell 16% that day (73% below its high) and IREN stood 84% below its high.
 
 ## Key ideas
 - Spectrum: bare-metal GPU resellers (often former crypto miners) at one end; full, GPU-dedicated cloud ecosystems at the other ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
@@ -21,6 +21,7 @@ updated: 2026-10-29
 - Demand outlook: he sees no cooling. Every API call becomes GPU work, and agents and harnesses have caused a token explosion; training's share shrinks while inference is "only at its beginning" ([[episodes/tsarot-baheitek--88-neoclouds-nebius]], [[people/ido]]).
 - Musk's warning: credit markets are closed to neoclouds because they raised too much debt and may not repay it, so some won't survive. Micha notes Musk has an agenda, since SpaceX is itself becoming a neocloud and the subtext is "I won't collapse" ([[episodes/micha-stocks--anthropic-s1-numbers]], [[people/micha-stocks]]).
 - The market reacted by picking: neocloud stocks fell at the open, then split, with IREN and others recovering while Cipher stayed red and Nebius slipped after hours ([[episodes/micha-stocks--anthropic-s1-numbers]], [[people/micha-stocks]]).
+- Policy risk: at a November 20, 2026 press conference Trump said he won't allow American providers to set up data centers outside America; building abroad would carry a very heavy tax. Investors immediately asked what that means for Nebius and IREN: Nebius fell 16% that day and is 73% below its high, IREN 84% ([[episodes/micha-stocks--nasdaq-bear-market]], [[people/micha-stocks]]).
 
 ## Disagreements & open questions
 - Building ahead of demand assumes it keeps growing; the audience asked what happens if GPU demand cools, given convertible bonds and Nvidia as both supplier and investor. The guest's answer is that he doesn't see it falling ([[episodes/tsarot-baheitek--88-neoclouds-nebius]]). Musk says the debt is already a problem for some players ([[episodes/micha-stocks--anthropic-s1-numbers]]).

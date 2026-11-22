@@ -500,3 +500,13 @@ updated: concepts/{world-models, llm-safety, llm-reasoning}, shows/ignore-instru
 source: whisper
 created: episodes/talking-entrepreneurship--erez-strauss-brand-attention, concepts/{ai-video-ads, attention-marketing}, people/erez-strauss, shows/talking-entrepreneurship
 updated: concepts/{ai-growth-marketing, image-generation}, hubs/startups, index, takeaways/{to-try, recommendations}
+
+## 2026-11-22 — Micha Stocks: The Nasdaq Enters a Bear Market: Is This the Time to Buy?
+source: whisper
+created: episodes/micha-stocks--nasdaq-bear-market, concepts/bear-market
+updated: concepts/{market-timing, leverage, market-bubbles, neoclouds, bitcoin}, shows/micha-stocks, people/micha-stocks, hubs/investing, index, takeaways/to-try
+
+## 2026-11-22 — Ignore the Instructions: #12 How Did Nas Daily Reach 450 Million Views With 100 AI Videos?
+source: whisper
+created: episodes/ignore-instructions--12-nas-daily-ai-videos, people/nuseir-yassin
+updated: concepts/{ai-video-ads, solo-builders, attention-marketing, image-generation}, shows/ignore-instructions, hubs/startups, index, takeaways/{to-try, recommendations}

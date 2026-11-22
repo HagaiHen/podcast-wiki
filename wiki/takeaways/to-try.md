@@ -30,6 +30,9 @@
 - [ ] If you're betting on a theme's comeback, compare the upside of several stocks in it instead of asking only whether to buy the famous one — [[concepts/market-timing]] · [[episodes/micha-stocks--breaking-nvidia-ceo]]
 - [ ] After a founder-CEO leaves, judge the stock by the next report's guidance rather than the headlines — [[concepts/key-person-risk]] · [[episodes/micha-stocks--nvidia-beats-without-jensen]]
 - [ ] Before calling a tech selloff an AI-bubble burst, compare defensive sectors with the Nasdaq over the same period — [[concepts/market-bubbles]] · [[episodes/micha-stocks--nvidia-beats-without-jensen]]
+- [ ] Before adding to a position in a bear market, write down the upside to the previous high and the next downside level, and size for being wrong — [[concepts/bear-market]] · [[episodes/micha-stocks--nasdaq-bear-market]]
+- [ ] If you trade single stocks, set a stop-loss on every position when you enter it — [[concepts/bear-market]] · [[episodes/micha-stocks--nasdaq-bear-market]]
+- [ ] In a drawdown, wait for a strong green week with buyers in control before reading it as a turn — [[concepts/bear-market]] · [[episodes/micha-stocks--nasdaq-bear-market]]
 
 ## AI Engineering — [[hubs/ai-engineering]]
 
@@ -259,6 +262,7 @@
 - [ ] When judging a model on a hard problem, count how many uncertain, non-trivial steps it needs, and expect reliability to drop sharply after 3–5 — [[concepts/ai-scientist]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
 - [ ] When an agent speeds up code, check its output matches the original across many inputs, not just the benchmark timing — [[concepts/ai-performance-engineering]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
 - [ ] Before picking a robotics niche, run and fine-tune an open robot model yourself to see what it can actually do — [[concepts/robotics-foundation-models]] · [[episodes/ignore-instructions--30-enigma-gal-niv]]
+- [ ] Export a group chat to text, have Gemini pull its best moments, and turn that into a Nano Banana infographic — [[concepts/image-generation]] · [[episodes/ignore-instructions--12-nas-daily-ai-videos]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 
@@ -297,6 +301,7 @@
 - [ ] For your next ad, turn your product's key statistic into one specific person's story — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
 - [ ] Reserve 10–20% of the marketing budget for odd experiments, and agree up front that they may sound stupid — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
 - [ ] Ask users to create something for your brand (e.g. an AI ad) for a prize with recognition, instead of a share-to-win giveaway — [[concepts/attention-marketing]] · [[episodes/talking-entrepreneurship--erez-strauss-brand-attention]]
+- [ ] Use AI video for a story you can't film (a place's history, a well-known proverb) rather than re-creating footage you could shoot — [[concepts/ai-video-ads]] · [[episodes/ignore-instructions--12-nas-daily-ai-videos]]
 
 ## Unsorted
 
