@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 7
-updated: 2026-10-13
+sources: 8
+updated: 2026-11-23
 ---
 # Coding-Agent Workflow (practical setup)
 
-**Summary:** Day-to-day practices for working with coding agents (Claude Code, Codex, Cursor, Pi). Spec-driven development has become the consensus starting point (GitHub Spec Kit, OpenSpec, Superpowers), often with a "grill me" skill that interviews you before building and logs the assumptions you're making. Keep the workflow harness-agnostic with a plugin like Superpowers (spec → plan → implement), so you can hop between tools as models and pricing change. Plan visually and at the right altitude, and give agents dedicated design guidance (e.g. Impeccable) since default AI-generated UI is weak. Tune harness settings, and build small personal tools and skills for the friction you hit: losing track across many terminals, vague agent questions, the laptop sleeping mid-run.
+**Summary:** Day-to-day practices for working with coding agents (Claude Code, Codex, Cursor, Pi). Spec-driven development has become the consensus starting point (GitHub Spec Kit, OpenSpec, Superpowers), often with a "grill me" skill that interviews you before building and logs the assumptions you're making. Keep the workflow harness-agnostic with a plugin like Superpowers (spec → plan → implement), so you can hop between tools as models and pricing change. Plan visually and at the right altitude, and give agents dedicated design guidance (e.g. Impeccable) since default AI-generated UI is weak. Tune harness settings, and build small personal tools and skills for the friction you hit: losing track across many terminals, vague agent questions, the laptop sleeping mid-run. Heavy users keep a few agents running nonstop, feature after feature, up to their token quota. Which harness suits you (Claude Code or Codex) is largely personal fit.
 
 ## Key ideas
 - Harness hopping: one host moved to Codex after an enterprise pricing change and found GPT 5.5 stronger than Opus for long autonomous tasks, though slower ([[episodes/langtalks--70-our-claude-code-tips]]).
@@ -28,6 +28,8 @@ updated: 2026-10-13
 - For UI work: Claude Design, or a product-design skill used from another chat tool ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
 - Grill Me (Matt Pocock) interviews you in rounds and follows up on your answers. Use it when you're most excited, which is when you skip awkward questions, and for small decisions too (annual plan? feature for one big client?). Add an instruction to log every "probably" (they probably have budget, probably gave access) as an assumption, then ask which to check first with a customer ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
 - Impeccable (Paul Bakaus) gives coding agents specific design guidance: set it up with who the product is for, then run commands like critique, polish, bolder and quieter. Start with critique on an existing page and fix only the parts you agree with ([[episodes/startup-ideas--8-github-repos-viral-money]], [[people/greg-isenberg]]).
+- Run to the quota: Nachum mostly uses Claude Code and keeps about 1.5–1.7 agents running nonstop, feature after feature, as far as his token quota allows. He expects about three once limits double. He gets very good results even on days when others say the model got dumber ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
+- Personal fit: he also has Codex but works less well with it, which doesn't make it worse. Everyone seems to prefer one of the two, and neither is better ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
 
 ## Disagreements & open questions
 - Can you hop between harnesses freely? A LangTalks host finds switching between Cursor, Claude Code and Codex nearly free with a harness-agnostic spec/plan/implement flow ([[episodes/langtalks--70-our-claude-code-tips]]); Gavriel Cohen follows Anthropic's view that agents aren't portable across providers and built no model-switching ([[episodes/langtalks--71-claw-architectures]], [[people/gavriel-cohen]]).

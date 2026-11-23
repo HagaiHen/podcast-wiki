@@ -263,6 +263,13 @@
 - [ ] When an agent speeds up code, check its output matches the original across many inputs, not just the benchmark timing — [[concepts/ai-performance-engineering]] · [[episodes/ignore-instructions--29-aai-yoav-levine]]
 - [ ] Before picking a robotics niche, run and fine-tune an open robot model yourself to see what it can actually do — [[concepts/robotics-foundation-models]] · [[episodes/ignore-instructions--30-enigma-gal-niv]]
 - [ ] Export a group chat to text, have Gemini pull its best moments, and turn that into a Nano Banana infographic — [[concepts/image-generation]] · [[episodes/ignore-instructions--12-nas-daily-ai-videos]]
+- [ ] Connect one home appliance that has an API (e.g. a smart AC controller) to an agent, and add a daily weather alert to your messaging app — [[concepts/personal-ai-assistants]] · [[episodes/explainable--170-uri-nachum-agents-that-work-for-you]]
+- [ ] Wrap a repeated agent chore in a small CLI with agent-friendly output instead of a plugin, so any harness can use it — [[concepts/harness-engineering]] · [[episodes/explainable--170-uri-nachum-agents-that-work-for-you]]
+- [ ] Run an agent on the Reachy Mini simulation (or a small local robot) to learn real-time agent constraints — [[concepts/robotics-foundation-models]] · [[episodes/explainable--170-uri-nachum-agents-that-work-for-you]]
+- [ ] Give any robot or device agent local compute so it keeps working offline — [[concepts/robotics-foundation-models]] · [[episodes/explainable--170-uri-nachum-agents-that-work-for-you]]
+- [ ] If an agent needs a specific voice, try it on several model families before adding more prompt rules — [[concepts/model-personality]] · [[episodes/explainable--170-uri-nachum-agents-that-work-for-you]]
+- [ ] When asking an agent for a security review, scope each run to one function or flow and one bug class or impact, not "find vulnerabilities" — [[concepts/ai-cybersecurity]] · [[episodes/langtalks--76-kritt-gabi-balko-bug-bounties]]
+- [ ] For a large search task, fan out one agent per entry point or flow with a narrow question, then judge, dedupe and rank the findings — [[concepts/multi-agent-orchestration]] · [[episodes/langtalks--76-kritt-gabi-balko-bug-bounties]]
 
 ## Knowledge Management — [[hubs/knowledge-management]]
 

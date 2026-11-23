@@ -16,8 +16,9 @@ Building reliable, useful systems with LLMs and agents: what goes into context, 
 - [[concepts/ai-infrastructure]]: AI factories and GPU networking
 - [[concepts/neoclouds]]: GPU clouds; multi-cloud for GPU workloads; subsidized reserved capacity
 - [[concepts/multimodal-llms]]: vision LLMs in production
-- [[concepts/agent-architectures]]: matching agent structure to the job
-- [[concepts/ai-cybersecurity]]: AI's impact on security testing and defense
+- [[concepts/agent-architectures]]: what an agent is (config, loop, tools); matching agent structure to the job
+- [[concepts/model-personality]]: model character that survives prompting; personalization via fine-tuning
+- [[concepts/ai-cybersecurity]]: AI's impact on security testing and defense; agents winning bug bounties
 - [[concepts/agentic-vulnerability-response]]: agentic CVE-to-protection pipeline in minutes, not days
 - [[concepts/hebrew-llms]]: building Hebrew language models
 - [[concepts/continual-learning]]: learning after deployment

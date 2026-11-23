@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 13
-updated: 2026-10-12
+sources: 14
+updated: 2026-11-23
 ---
 # Context Engineering
 
-**Summary:** Getting all and *only* the relevant context into each model call: prompts, retrieved knowledge, memory, conversation history, tool results, and output schemas. Context is what separates generic output from "gold". It's also the lever on cost (lean context lets small models succeed) and on reliability (irrelevant tokens measurably lower task success, and unmanaged context makes any model dumb). Treat the context window like RAM: *write* (what enters state, scratchpads, long-term memory), *select* (retrieve the right thing at the right moment), *compress* (offload to files, summarize with intent), and isolate work in sub-agents. Keep always-loaded files small, prefer discoverable files over tools the agent must remember, feed current library docs to beat the model's knowledge cutoff, keep prompt prefixes stable for caching, and capture off-repo context (meetings, Slack) with the reasons behind decisions.
+**Summary:** Getting all and *only* the relevant context into each model call: prompts, retrieved knowledge, memory, conversation history, tool results, and output schemas. Context is what separates generic output from "gold". It's also the lever on cost (lean context lets small models succeed) and on reliability (irrelevant tokens measurably lower task success, and unmanaged context makes any model dumb). Treat the context window like RAM: *write* (what enters state, scratchpads, long-term memory), *select* (retrieve the right thing at the right moment), *compress* (offload to files, summarize with intent), and isolate work in sub-agents. Splitting a task into narrow subtasks is context engineering too: a huge context with a vague question ("find vulnerabilities in this repo") fails where a narrow context with a precise one ("find a buffer overflow in this function") succeeds. Keep always-loaded files small, prefer discoverable files over tools the agent must remember, feed current library docs to beat the model's knowledge cutoff, keep prompt prefixes stable for caching, and capture off-repo context (meetings, Slack) with the reasons behind decisions.
 
 ## Key ideas
 - Context is the difference between generic and excellent output; the craft is what to include without bloating it ([[episodes/osim-tochna--second-brain-and-llm-wiki]], [[people/amit-bendor]]).
@@ -39,6 +39,7 @@ updated: 2026-10-12
 - Prompt tactics: keep hard "don'ts" to a few key ones (around four), repeat key instructions at both the start and end of the context, and watch the tool count, since piling on MCP tools overflows the context ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
 - Mann had an agent gather strong public agent prompts into a library and compare his prompt against them; the report taught him a lot, but without a working test framework he couldn't tell whether the changes helped ([[episodes/startup-for-startup--366-qa-for-agents]], [[people/roy-mann]])
 - Knowledge cutoff: a model trained before Tailwind 4 keeps writing Tailwind 3. Context7, an open-source MCP, serves current, version-specific library docs to Claude Code, Codex and others ([[episodes/developers-outside-the-box--185-lets-talk-about-our-tools]]).
+- Subtasks sharpen both context and question: instead of one big amorphous task, give each agent a small one that answers a single question, such as "find a vulnerability with this impact in this flow". The narrower context and clearer definition make a find much more likely ([[episodes/langtalks--76-kritt-gabi-balko-bug-bounties]], [[people/gabi-balko]]).
 
 ## Disagreements & open questions
 - Which version wins a conflict? The harness-engineering hosts reconcile Slack threads with specs by "newest wins" ([[episodes/langtalks--73-harness-engineering]]); the brain-memory hosts reject newest-wins for memory and prefer frequency and consistency ([[episodes/langtalks--60-brain-memory]], [[people/meytar-zemer]]).

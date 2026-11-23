@@ -510,3 +510,13 @@ updated: concepts/{market-timing, leverage, market-bubbles, neoclouds, bitcoin},
 source: whisper
 created: episodes/ignore-instructions--12-nas-daily-ai-videos, people/nuseir-yassin
 updated: concepts/{ai-video-ads, solo-builders, attention-marketing, image-generation}, shows/ignore-instructions, hubs/startups, index, takeaways/{to-try, recommendations}
+
+## 2026-11-23 — ExplAInable: #170 Uri Nachum on AI Agents That Work for You
+source: whisper
+created: episodes/explainable--170-uri-nachum-agents-that-work-for-you, concepts/model-personality, people/uri-nachum
+updated: concepts/{agent-architectures, personal-ai-assistants, harness-engineering, open-weight-models, robotics-foundation-models, coding-agent-workflow}, shows/explainable, hubs/ai-engineering, index, takeaways/{to-try, recommendations}
+
+## 2026-11-23 — LangTalks: #76 Agents That Win Bug Bounties, With Gabi Balko of Kritt
+source: whisper
+created: episodes/langtalks--76-kritt-gabi-balko-bug-bounties, people/gabi-balko
+updated: concepts/{ai-cybersecurity, multi-agent-orchestration, skill-engineering, context-engineering, llm-cost-optimization, harness-engineering}, shows/langtalks, hubs/ai-engineering, index, takeaways/{to-try, recommendations}

@@ -1,12 +1,12 @@
 ---
 type: concept
 hubs: [ai-engineering]
-sources: 1
-updated: 2026-11-19
+sources: 2
+updated: 2026-11-23
 ---
 # Robotics Foundation Models (physical AI)
 
-**Summary:** Language models output text, images and audio, artifacts that stay in software. Robots need actions in the physical world, and robotics is still before its "ChatGPT moment": there's no general solution, and the field mixes AI with hardware and physics. Robot software comes in three kinds: classical robotics (deterministic code for one machine in one place), task-specific learned policies or "skills" (often trained from teleoperation demos), and general foundation models meant to run on any robot. In practice today you fine-tune a generic model on the customer's task, and companies like Enigma try to shrink that step by building models that generalize to new environments and tasks. Most deployments are robot arms and four-legged robots, not humanoids. Large enterprises with labor shortages (retail, logistics, factories) are the first buyers, and real deployments teach what lab demos can't.
+**Summary:** Language models output text, images and audio, artifacts that stay in software. Robots need actions in the physical world, and robotics is still before its "ChatGPT moment": there's no general solution, and the field mixes AI with hardware and physics. Robot software comes in three kinds: classical robotics (deterministic code for one machine in one place), task-specific learned policies or "skills" (often trained from teleoperation demos), and general foundation models meant to run on any robot. In practice today you fine-tune a generic model on the customer's task, and companies like Enigma try to shrink that step by building models that generalize to new environments and tasks. Most deployments are robot arms and four-legged robots, not humanoids. Large enterprises with labor shortages (retail, logistics, factories) are the first buyers, and real deployments teach what lab demos can't. A robot also needs local compute (edge devices such as NVIDIA's Jetson line), because one that loses its connection in a basement simply stops. For engineers, a small desktop robot like Reachy Mini is a cheap way to learn how hard real-time agent systems are.
 
 ## Key ideas
 - Why not GPT? It's a great product, but it emits artifacts that stay in software; robots need actions with motion in the real world. Language models are only starting to enter that space ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
@@ -23,12 +23,20 @@ updated: 2026-11-19
 - In three years Niv expects major breakthroughs, robots in stores and workplaces rather than humanoids in homes, and companies that become the base layer running them ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
 - Room at every layer: infrastructure, cyber, hardware, software, brains and applications, such as a robot cleaning service that comes while you're out, or Israel's Bellboy, which builds robots for hotel tasks such as room inspection ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
 - "Everyone does everything all the time" (Palo Alto Networks in cyber, Google in its cloud), so a big player in a space isn't a reason to stay out. Startups win by speed and by having no big organization or prior commitments to protect ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
+- Local compute is non-negotiable: Nachum brought a robot head (a screen and a Raspberry Pi) to a conference held in an underground hall with no internet, and it didn't work. Even the strongest robot stops if it loses the network on its way down to a storeroom, which is dangerous and costly for a machine worth tens of thousands ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
+- Jetson is NVIDIA's line of edge computers meant to be a robot's brain, from simple machines like a moving conveyor up to Jetson Thor for walking humanoids ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
+- Learn on a small robot: get a local robot or start with the Reachy Mini simulation. Reachy Mini is a static, kettle-sized robot that moves its head and body. Running an agent system on one robot is very hard because real time is critical, and it exposes edge cases that improve any agent work ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
+- Robot-based thinking: just as messy code makes an agent's job harder, Nachum notices messy corners at home that would be hard for robots (and people), and now thinks of home tasks in terms of robot systems ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
+- Career advice: physical AI isn't a passing gimmick. Anyone in AI should first build agent systems, safe and local ones are fine, then work with a local robot to feel where things will be in one to three years. The host urges listeners to learn physical AI and vision-language-action models (VLA) ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
+- Community: the Jetson AI Lab Discord, founded by NVIDIA edge-computing expert Dustin Franklin, gathers people at the bleeding edge of Jetson, AI and robotics, from home-built Iron Man suits to NVIDIA hires. Nachum runs it and a parallel Israeli WhatsApp group, open to Raspberry Pi and Arduino hobbyists too ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]], [[people/uri-nachum]]).
 
 ## Disagreements & open questions
 - Humanoids or specialized robots? The host argues the world is built for humans, so humanoids are the natural form. Niv agrees in principle, but says that when you look at each use case separately you can usually solve it more easily with other hardware, and many jobs (climbing power lines, deep diving) are ones you don't want a human-shaped body doing ([[episodes/ignore-instructions--30-enigma-gal-niv]], [[people/gal-niv]]).
 
 ## Takeaways
 - [ ] Before picking a robotics niche, run and fine-tune an open robot model yourself to see what it can actually do ([[episodes/ignore-instructions--30-enigma-gal-niv]])
+- [ ] Run an agent on the Reachy Mini simulation (or a small local robot) to learn real-time agent constraints ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]])
+- [ ] Give any robot or device agent local compute so it keeps working offline ([[episodes/explainable--170-uri-nachum-agents-that-work-for-you]])
 
 ## Related
-[[concepts/world-models]] · [[concepts/continual-learning]] · [[concepts/llm-safety]] · [[concepts/ai-moats]] · [[concepts/multimodal-llms]]
+[[concepts/world-models]] · [[concepts/model-personality]] · [[concepts/continual-learning]] · [[concepts/llm-safety]] · [[concepts/ai-moats]] · [[concepts/multimodal-llms]]

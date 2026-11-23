@@ -41,7 +41,8 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[concepts/test-driven-development]]: frozen failing tests so agents can't cheat
 - [[concepts/ai-infrastructure]]: AI factories, GPU networking, power and optics
 - [[concepts/neoclouds]]: GPU clouds (Nebius); multi-cloud GPU workloads
-- [[concepts/agent-architectures]]: fitting agent structure to the job; shared-brain agents
+- [[concepts/agent-architectures]]: what an agent is; fitting agent structure to the job; shared-brain agents
+- [[concepts/model-personality]]: model character that survives prompting; personalization via fine-tuning
 - [[concepts/ai-red-teaming]]: adversarial testing of models and agents; RL gyms; foot-in-the-door, CRAFT
 - [[concepts/llm-safety]]: unfaithful explanations, model opinions, shallow safety alignment
 - [[concepts/ai-cybersecurity]]: AI vulnerability finding, model access debate, continuous testing
@@ -213,8 +214,12 @@ What I learned from the podcasts I listen to (AI engineering, startups, investin
 - [[people/gal-niv]]: CTO and co-founder of Enigma (robotics foundation models)
 - [[people/erez-strauss]]: creative lead at ExpressVPN (AI video ads)
 - [[people/nuseir-yassin]]: Nas Daily creator, Nas.io founder
+- [[people/uri-nachum]]: AI expert at Tipalti, Jetson AI Lab community lead
+- [[people/gabi-balko]]: vulnerability researcher, co-founder of Kritt (AI bug bounties)
 
 ## Episodes
+- [[episodes/langtalks--76-kritt-gabi-balko-bug-bounties]]: #76 Agents That Win Bug Bounties, With Gabi Balko of Kritt (2026-11-23)
+- [[episodes/explainable--170-uri-nachum-agents-that-work-for-you]]: #170 Uri Nachum on AI Agents That Work for You (2026-11-22)
 - [[episodes/micha-stocks--nasdaq-bear-market]]: The Nasdaq Enters a Bear Market: Is This the Time to Buy? (2026-11-21)
 - [[episodes/micha-stocks--nvidia-beats-without-jensen]]: Nvidia Without Jensen Beats Forecasts, and the Board Says He's Not Coming Back (2026-11-18)
 - [[episodes/ignore-instructions--30-enigma-gal-niv]]: #30 Building the Brain of Robots, With Gal Niv of Enigma (2026-11-18)
