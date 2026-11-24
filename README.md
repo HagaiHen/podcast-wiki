@@ -1,5 +1,7 @@
 # Podcast Wiki
 
+[![HagaiHen/podcast-wiki MCP server](https://glama.ai/mcp/servers/HagaiHen/podcast-wiki/badges/score.svg)](https://glama.ai/mcp/servers/HagaiHen/podcast-wiki)
+
 **A Claude Code plugin that turns the podcasts you finish on Spotify into a wiki you can learn from:** one page per topic, synthesized across every episode that touched it, every claim linked to its episode, disagreements between guests kept side by side.
 
 You stop remembering *an episode* and start knowing *a topic*. A Karpathy-style LLM wiki, written and maintained by [Claude Code](https://claude.com/claude-code).
