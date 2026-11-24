@@ -9,7 +9,7 @@ The plugin's files are at `${CLAUDE_PLUGIN_ROOT}`. Work in the current project d
 
 ## 0. Offer the demo first
 
-If this folder has no `wiki/` yet, ask once whether the user wants to see a demo before setting up Spotify. `/podcast-wiki:demo` builds a small wiki from 3 sample episodes in about 2 minutes, with no Spotify login. If they say yes, run the demo skill and stop here.
+If this folder has no `wiki/` yet, ask once whether the user wants to see a demo before setting up Spotify. `/podcast-wiki:demo` builds a small wiki from 3 sample episodes, with no Spotify login. If they say yes, run the demo skill and stop here.
 
 ## 1. Check requirements
 
