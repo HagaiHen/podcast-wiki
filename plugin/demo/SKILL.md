@@ -1,6 +1,6 @@
 ---
 name: demo
-description: Build a small throwaway podcast wiki from 3 bundled sample transcripts, in about 2 minutes, with no Spotify, Whisper or Apple Silicon needed. Use on /podcast-wiki:demo, or when the user wants to try Podcast Wiki before setting it up.
+description: Build a small throwaway podcast wiki from 3 bundled sample transcripts, with no Spotify, Whisper or Apple Silicon needed. Use on /podcast-wiki:demo, or when the user wants to try Podcast Wiki before setting it up.
 ---
 
 # Try Podcast Wiki on sample episodes
@@ -42,4 +42,4 @@ Then run `cd podcast-wiki-demo && python3 tools/lint_wiki.py` and fix what it re
 - Say that `podcast-wiki-demo/wiki/` opens as an Obsidian vault, with a working graph view.
 - Remind them the shows and people are fictional, and that `rm -rf podcast-wiki-demo` removes everything.
 - Offer `/podcast-wiki:setup` to build a wiki from their own Spotify listening.
-- Don't mention the plugin's Spotify server status. It only connects after `/podcast-wiki:setup`, so a failure here is expected.
+- If `/mcp` shows the plugin's `spotify` server as failed, say so in one short line: the demo doesn't use it, and it only connects after `/podcast-wiki:setup`.
