@@ -21,7 +21,7 @@ In Claude Code:
 /plugin install podcast-wiki@podcast-wiki
 ```
 
-- **Try it first:** run `/podcast-wiki:demo` in an empty folder. In about a minute it builds a small wiki from 3 sample episodes, with no Spotify needed.
+- **Try it first:** run `/podcast-wiki:demo` in an empty folder. It builds a small wiki from 3 sample episodes, with no Spotify needed.
 - **Your own podcasts:** run `/podcast-wiki:setup` in an empty folder. It copies the tools, creates `wiki/`, and walks you through the Spotify login. After that, `/podcast-wiki:ingest-podcasts` builds your wiki.
 
 Requires macOS on Apple Silicon (for local Whisper), [uv](https://docs.astral.sh/uv/), `ffmpeg`, a Spotify account and Claude Code. The demo needs only Claude Code.
@@ -69,8 +69,7 @@ Requires macOS on Apple Silicon (for mlx-whisper), [uv](https://docs.astral.sh/u
 1. Create an app at the [Spotify developer dashboard](https://developer.spotify.com/dashboard) with redirect URI `http://127.0.0.1:8888/callback`.
 2. `cp .env.example .env` and set `SPOTIFY_CLIENT_ID`. No client secret is needed because the login uses PKCE.
 3. `uv run tools/spotify_mcp.py --auth` to log in to Spotify once.
-4. Update the absolute paths in `.mcp.json` to your checkout.
-5. In Claude Code, run `/ingest-podcasts`.
+4. In Claude Code, run `/ingest-podcasts`.
 
 | Command | What it does |
 |---|---|
