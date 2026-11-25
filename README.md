@@ -21,10 +21,10 @@ In Claude Code:
 /plugin install podcast-wiki@podcast-wiki
 ```
 
-- **Try it first:** run `/podcast-wiki:demo` in an empty folder. It builds a small wiki from 3 sample episodes, with no Spotify needed.
+- **Try it first:** run `/podcast-wiki:demo` in an empty folder. The demo needs Claude Code and Python 3. It builds a small wiki from 3 fictional sample episodes, including a topic page that keeps conflicting views separate. No Spotify account is needed.
 - **Your own podcasts:** run `/podcast-wiki:setup` in an empty folder. It copies the tools, creates `wiki/`, and walks you through the Spotify login. After that, `/podcast-wiki:ingest-podcasts` builds your wiki.
 
-Requires macOS on Apple Silicon (for local Whisper), [uv](https://docs.astral.sh/uv/), `ffmpeg`, a Spotify account and Claude Code. The demo needs only Claude Code.
+For your own podcasts you also need macOS on Apple Silicon (for local Whisper), [uv](https://docs.astral.sh/uv/), `ffmpeg`, a Spotify account and Claude Code.
 
 ## How it works
 
